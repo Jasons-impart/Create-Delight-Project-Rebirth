@@ -1,0 +1,9 @@
+# 脚本
+
+仓库辅助脚本放在这里。
+
+- 根目录 `devtool.bat` 会打开交互式命令行菜单，安装开发组的 packwiz 构建，并封装常用 packwiz 命令。
+- `scripts/devtool.ps1` 是实际实现，一般不需要直接运行。
+- `devtool.bat modlist` 会从 `*.pw.toml` 和本地 `mods/*.jar` 生成 Markdown / CSV 模组清单。
+- 跨平台入口脚本直接放在 `scripts/` 下。
+- 开发组 Windows 环境固定使用 `scripts/bin/packwiz.exe`；除此之外的本地二进制默认会被 git 忽略。
