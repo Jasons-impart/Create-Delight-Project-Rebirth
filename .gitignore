@@ -1,0 +1,90 @@
+# Repository allowlist. Runtime files are ignored by default.
+/*
+
+# Repo metadata
+!/.editorconfig
+!/.gitattributes
+!/.gitignore
+!/.github/
+!/.github/**
+!/.agents/
+!/.agents/**
+
+# Pack metadata
+!/pack.toml
+!/index.toml
+!/.packwizignore
+
+# Docs and project assets
+!/README.md
+!/AGENTS.md
+!/MIGRATION.md
+!/LICENSE
+!/docs/
+!/docs/**
+!/icon.png
+!/server-icon.png
+!/modpack-analysis-report.md
+
+# Launchers and local examples
+!/devtool.bat
+!/start.bat
+!/start.sh
+!/variables.txt
+!/variables.nix.txt
+
+# Packwiz-managed downloads. Track descriptors, never downloaded jars/zips.
+!/mods/
+!/mods/*.pw.toml
+!/resourcepacks/
+!/resourcepacks/**
+!/shaderpacks/
+!/shaderpacks/**
+
+# Maintained pack data
+!/config/
+!/config/**
+!/defaultconfigs/
+!/defaultconfigs/**
+!/kubejs/
+!/kubejs/**
+!/ldlib/
+!/ldlib/**
+!/schematics/
+!/schematics/**
+!/tacz/
+!/tacz/**
+!/minemenu/
+!/minemenu/**
+!/PCL/
+!/PCL/**
+!/scripts/
+!/scripts/**
+!/server/
+!/server/**
+
+# Explicit runtime exclusions inside allowed directories.
+scripts/bin/*
+!scripts/bin/packwiz.exe
+!scripts/bin/packwiz.VERSION.txt
+*.mrpack
+*.zip
+mods/*.jar
+logs/
+crash-reports/
+saves/
+world/
+world*/
+libraries/
+versions/
+downloads/
+server.properties
+eula.txt
+user_jvm_args.txt
+run.bat
+run.sh
+neoforge.jar
+minecraft_server*.jar
+*.log
+*.lock
+*.tmp
