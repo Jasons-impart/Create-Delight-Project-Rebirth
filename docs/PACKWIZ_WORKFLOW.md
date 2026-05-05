@@ -78,6 +78,7 @@ git status --short --untracked-files=all
 ```
 
 `<name-or-metadata-file>` 可以是 packwiz 列表里的名称，也可以是 `mods/example.pw.toml` 这类元数据文件路径。删除后如果本地 `mods/` 里还残留旧 jar，手动删掉对应 jar 即可；它是本地运行文件，不进 Git。
+菜单 `11` / `devtool.bat remove-mod` 只修改 packwiz 清单并刷新索引；要让本地 `mods/` 文件夹也同步删除旧 jar，必须再运行菜单 `12` 或 `13`，也就是 `devtool.bat install-files` 或 `devtool.bat install-files-headless`。
 
 更新单个 mod：
 

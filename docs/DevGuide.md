@@ -86,7 +86,7 @@ devtool.bat
 - 新增 CurseForge mod 使用菜单 `8. 添加 CurseForge 项目`，或命令 `devtool.bat add-curseforge <project>`。
 - 新增 Modrinth mod 使用菜单 `7. 添加 Modrinth 项目`，或命令 `devtool.bat add-modrinth <project>`。
 - 新增直链或 GitHub Release 文件使用菜单 `9` 或 `10`。
-- 删除 mod 使用菜单 `11. 移除 packwiz 管理文件`，或命令 `devtool.bat remove-mod <name-or-metadata-file>`。
+- 删除 mod 使用菜单 `11. 移除 packwiz 管理文件`，或命令 `devtool.bat remove-mod <name-or-metadata-file>`。菜单 `11` 只会修改 packwiz 清单；删除后必须再运行菜单 `12` 或 `13` 同步本地文件夹，旧 jar 才会从本机 `mods/` 中清掉。
 - `add-*`、`update`、`remove-mod` 会自动刷新 `index.toml`；之后运行 `devtool.bat install-files`。无桌面环境使用 `devtool.bat install-files-headless`；网络不稳时使用 `devtool.bat install-files-retry`。
 - 提交 `mods/*.pw.toml`、`pack.toml`、`index.toml` 的变化，不提交 `mods/*.jar`。
 

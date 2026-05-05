@@ -138,11 +138,11 @@ function Start-DevMenu {
     Write-Host "  8. 添加 CurseForge 项目"
     Write-Host "  9. 添加直链 URL"
     Write-Host " 10. 添加 GitHub Release 项目"
-    Write-Host " 11. 移除 packwiz 管理文件"
-    Write-Host " 12. 安装文件到本地（GUI，自动重试）"
-    Write-Host " 13. 安装文件到本地（无 GUI，自动重试）"
-    Write-Host " 14. 下载直链 packwiz 管理文件到本地（不清理无关文件）"
-    Write-Host " 15. 扫描 mods 目录生成 CurseForge meta（迁移专用，非必要不使用）" -ForegroundColor Yellow
+    Write-Host " 11. 移除 packwiz 管理文件" -ForegroundColor Yellow
+    Write-Host " 12. 安装文件到本地（GUI，自动重试）" -ForegroundColor Yellow
+    Write-Host " 13. 安装文件到本地（无 GUI，自动重试）" -ForegroundColor Yellow
+    Write-Host " 14. 下载直链 packwiz 管理文件到本地（不清理无关文件）" -ForegroundColor Yellow
+    Write-Host " 15. 扫描 mods 目录生成 CurseForge meta（迁移专用，非必要不使用）"
     Write-Host " 16. 生成 modlist 清单"
     Write-Host " 17. 启动 packwiz 本地服务器"
     Write-Host " 18. 导出 Modrinth .mrpack"
@@ -237,6 +237,7 @@ function Start-DevMenu {
           }
           else {
             Invoke-PackwizAndRefresh (@("remove", $name) + (Read-PackwizExtraArgs))
+            Write-Warn "已更新 packwiz 清单。请继续运行菜单 12 或 13，同步本地 mods 文件夹并清理旧 jar。"
           }
           Pause-Menu
         }
@@ -1280,6 +1281,7 @@ switch ($Command) {
   }
   "remove-mod" {
     Invoke-PackwizAndRefresh (@("remove") + $Rest)
+    Write-Warn "已更新 packwiz 清单。请继续运行 devtool.bat install-files 或 install-files-headless，同步本地 mods 文件夹并清理旧 jar。"
   }
   "install-files" {
     Invoke-PackwizInstallerWithRetry -InstallerArgs @() -RawRetryArgs $Rest
