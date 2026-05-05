@@ -1,0 +1,13 @@
+name = "Citadel (Unofficial Port)"
+filename = "citadel-1.21.1-2.7.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e0392370117ec16a721f8d65728944398de77607"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7982052
+project-id = 1415723

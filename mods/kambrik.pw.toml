@@ -1,0 +1,13 @@
+name = "Kambrik"
+filename = "kambrik-neoforge-8.0.0-beta.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9e41688287925e7a65375d96f32eefca7ab2a821"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7919192
+project-id = 455585

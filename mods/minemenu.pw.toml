@@ -1,0 +1,13 @@
+name = "MineMenu"
+filename = "MineMenu-neoforge-1.21-1.14.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5d55b4d6eee0716e3807f047ddf6a62b931ec736"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5447274
+project-id = 222378

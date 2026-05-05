@@ -1,0 +1,13 @@
+name = "Create: Liquid Fuel"
+filename = "createliquidfuel-2.1.1-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a29f65eb4bbded2ca977a1453f90b6570e812b85"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6521990
+project-id = 840734

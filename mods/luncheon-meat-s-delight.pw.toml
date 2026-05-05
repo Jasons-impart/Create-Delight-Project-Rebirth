@@ -1,0 +1,13 @@
+name = "Luncheon Meat 'S Delight"
+filename = "luncheon-meat-s-delight-1.0.6-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d19a6ff944e2fa8c02dc8a511612bb6252f31d8c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6979233
+project-id = 1218605

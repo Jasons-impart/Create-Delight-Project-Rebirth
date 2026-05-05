@@ -1,0 +1,13 @@
+name = "Screenshot Viewer"
+filename = "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "55eb706279d561d33c7709cfc2517a8388fb73e7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6743822
+project-id = 693961

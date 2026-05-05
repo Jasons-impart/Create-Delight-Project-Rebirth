@@ -1,0 +1,13 @@
+name = "FastBoot"
+filename = "fastboot-1.21.x-v1.3neo.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1c9101baf7e4b111fc55e0b5a8687e67be2f626c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6998687
+project-id = 1030285

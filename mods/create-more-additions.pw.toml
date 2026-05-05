@@ -1,0 +1,13 @@
+name = "Create: Crafts & (More) Additions"
+filename = "create_more_additions-2.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9f53d7b797d22f0c6995ff5c3e0a3145a86a0795"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7950356
+project-id = 1096395

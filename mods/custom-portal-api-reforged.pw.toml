@@ -1,0 +1,13 @@
+name = "Custom Portal API Reforged"
+filename = "cpapireforged-neo-1.21.1-1.2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9535f872717c530b9638fe49a8fcac9b58b3cc54"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6744404
+project-id = 902717

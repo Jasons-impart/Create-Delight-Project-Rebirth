@@ -1,0 +1,13 @@
+name = "Always Eat"
+filename = "AlwaysEat-neoforge-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5948137fed00d7bf3fe688e1aecc310b4fa5aaf7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6498183
+project-id = 1259229

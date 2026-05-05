@@ -1,0 +1,13 @@
+name = "Create: Improved Display Link Experience"
+filename = "createidlx-1.21.1-1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5be0dd098af952e9cd046deef43976cf24df04ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7947091
+project-id = 1456715

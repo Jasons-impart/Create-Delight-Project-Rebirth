@@ -1,0 +1,13 @@
+name = "Bakeries"
+filename = "bakeries-1.21.1-NeoForge-1.0.0-beta4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5d1c66e6d1bc4ea51532782e37a69fc0ac63dd7d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7914995
+project-id = 1191781

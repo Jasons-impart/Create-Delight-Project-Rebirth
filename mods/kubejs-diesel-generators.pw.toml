@@ -1,0 +1,13 @@
+name = "KubeJS Diesel Generators"
+filename = "dg_js-1.21.1-1.1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e5a7d088dd23c6922f37928fe297b41d956475c7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7275713
+project-id = 1152400

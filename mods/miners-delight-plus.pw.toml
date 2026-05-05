@@ -1,0 +1,13 @@
+name = "Miner's Delight +"
+filename = "minersdelight-1.21.1-1.4.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9361a43c3b2cfeda977d34a28e25a6e089465dcc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8011049
+project-id = 689630

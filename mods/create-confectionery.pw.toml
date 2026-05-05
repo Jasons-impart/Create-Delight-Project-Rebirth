@@ -1,0 +1,13 @@
+name = "Create Confectionery"
+filename = "create-confectionery1.21.1_v1.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a38bfe8c4b4dde5e61d79785328b51b5687d1b1a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8009433
+project-id = 531834

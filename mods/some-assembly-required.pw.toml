@@ -1,0 +1,13 @@
+name = "Create: Some Assembly Required"
+filename = "someassemblyrequired-5.2.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e7fc02b85c7c6f128bdebd65b6133734fce7088"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7701961
+project-id = 422951

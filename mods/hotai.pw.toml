@@ -1,0 +1,13 @@
+name = "Hotai"
+filename = "hotai-2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "06cc83cbef743b984b0ff838d8cc048709b560af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5802032
+project-id = 969060

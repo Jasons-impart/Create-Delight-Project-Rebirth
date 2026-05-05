@@ -1,0 +1,13 @@
+name = "Create: Bigger Storage [NeoFork]"
+filename = "biggerstorage1.21.1-neoforge-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c41c05f7f8cd846e67386b7cc2e9f166cc0c0210"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7736186
+project-id = 1482261

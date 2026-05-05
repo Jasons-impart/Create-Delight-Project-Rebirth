@@ -1,0 +1,13 @@
+name = "KubeJS Delight"
+filename = "kubejsdelight-1.21.1-1.1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "edcc642777852b7f3ab102fe625185c63eaa9ff4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7615398
+project-id = 864875

@@ -1,0 +1,13 @@
+name = "OWorld2Create: Refoxed"
+filename = "0world2create-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bb13c9d0c79c16cddcfb1e17350065405c303706"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6075204
+project-id = 1177037

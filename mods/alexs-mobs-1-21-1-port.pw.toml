@@ -1,0 +1,13 @@
+name = "Alex's Mobs (Unofficial Port)"
+filename = "alexsmobs-1.22.17.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5070e8070f60650d773bfd9f1d031496f8f50259"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7528193
+project-id = 1415721

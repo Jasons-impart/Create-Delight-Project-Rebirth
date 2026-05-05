@@ -1,0 +1,13 @@
+name = "Item Borders [Neo/Forge]"
+filename = "ItemBorders-1.21-neoforge-1.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b5ae56007c0bbb86b9a05f9f12b522ed485d7884"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5591010
+project-id = 513769

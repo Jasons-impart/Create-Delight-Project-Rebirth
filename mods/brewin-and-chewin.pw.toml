@@ -1,0 +1,13 @@
+name = "Brewin' And Chewin'"
+filename = "BrewinAndChewin-neoforge-4.4.2+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c01b9e39b4c116c3ce4b1b66f87c1921997337a5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7523542
+project-id = 637808

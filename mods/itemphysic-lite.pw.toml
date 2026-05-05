@@ -1,0 +1,13 @@
+name = "ItemPhysic Lite"
+filename = "ItemPhysicLite_NEOFORGE_v1.6.10_mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "75e86a45b49d1e90530a35c10b53649cef06596a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8004804
+project-id = 270441

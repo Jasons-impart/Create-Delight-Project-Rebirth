@@ -1,0 +1,13 @@
+name = "LAN World Plug-n-Play"
+filename = "mcwifipnp-1.9.0-1.21-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d03f342db41c738252cb9fa932c77616ac1d5ebc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6732588
+project-id = 450250

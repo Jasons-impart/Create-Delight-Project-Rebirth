@@ -1,0 +1,13 @@
+name = "Schematicannon Processing Pattern"
+filename = "schematicanon_processing_pattern-1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9ba264c42607dfb40bf17da7eed11cc63af263ae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7784746
+project-id = 1490857

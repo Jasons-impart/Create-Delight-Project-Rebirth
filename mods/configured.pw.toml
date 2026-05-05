@@ -1,0 +1,13 @@
+name = "Configured"
+filename = "configured-neoforge-1.21.1-2.6.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e977d86eec39d49295df4e2c4265d6710ae065e8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7276577
+project-id = 457570
