@@ -5,10 +5,6 @@ file = "icon.png"
 hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
 [[files]]
-file = "mods/PowerfulJS-2.4.0.jar.disabled"
-hash = "408d40f68bfbf4f4dbfdabb06459e6e7df0b0a3f675458080dedc70baee1f477"
-
-[[files]]
 file = "mods/abnormals-delight.pw.toml"
 hash = "56700c848266c1b129a324e285db6ad16ed19fc33f91aea9268659350bddeef7"
 metafile = true
@@ -634,10 +630,6 @@ hash = "8ed05d8afc47431512aeec8f974c4ca6b462f24db14c08347ef1777d808b3fd6"
 metafile = true
 
 [[files]]
-file = "mods/fancymenu_neoforge_3.9.0_MC_1.21.1.jar"
-hash = "0d562ad4b89b962082210258bebd8db39dba8b8218ad6d8cbb4d023fd811161c"
-
-[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "8df2e6a30e0d24b7d3f48ba777241dfe2a7479323ec03be2a09fd816666b77f2"
 metafile = true
@@ -951,10 +943,6 @@ metafile = true
 file = "mods/lootjs.pw.toml"
 hash = "2bf24ba89ee34b9c0f698a2d3ca2c64eb7676407b56ab311fa91a8dd7a1ad4a9"
 metafile = true
-
-[[files]]
-file = "mods/lootr-neoforge-1.21.1-1.11.37.120.jar"
-hash = "f7b80bf86e02a1107fb1600aa6a02608ebcddb140b123a42d5ee199e5db65c8d"
 
 [[files]]
 file = "mods/lootr.pw.toml"
