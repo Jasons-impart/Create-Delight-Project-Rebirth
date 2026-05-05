@@ -40,7 +40,7 @@
 | --- | --- | --- |
 | `farmersrespite` | `farmersrespite-1.20.1-2.1.2.jar` | Farmer's Delight |
 | `vintage_kubejs` | `vintage_kubejs-1.20.1-1.0.0rc-2.jar` | Vintage / KubeJS |
-| `vvaddon` | `vvaddon-1.20.1-alpha3.0.1.jar` | Vintage |
+| `vvaddon` | `vvaddon-1.20.1-alpha3.0.1.jar` | Tetra |
 | `taczaddon` | `taczaddon-1.20.1-1.1.4-for1.1.4.jar` | TaCZ |
 | `createfluidstuffs` | `createfluidstuffs-1.2.0-all.jar` | Create |
 | `create_utilities_j` | `Create-Utilities-J-1.20.1-0.3.3.jar` | Create |
@@ -59,6 +59,9 @@
 | `solapplepie` | 未列出明确 jar | 食物信息 |
 | `solcarrot` | 未列出明确 jar | 食物玩法 |
 | `sqlite_jdbc` | `sqlite-jdbc-3.36.0.3+20211227-all.jar` | 库 |
+| `youkaishomecoming_curios` | `youkaishomecoming_curios-0.03.jar` | Youkai's Homecoming |
+| `cobblefordays` | `CobbleForDays-1.8.0.jar` | 刷石机 |
+| `nethervinery` | `letsdo-nethervinery-forge-1.2.19.jar` | 食物内容 |
 
 ## 🟡 替代/非官方
 
@@ -79,6 +82,8 @@
 | `lucent` | `lucent-1.20.1-1.5.5.jar` | 动态光源替代需谨慎。 |
 | `world_preview` | `world_preview-forge-1.20.1-1.3.1.jar` | 可评估 NeoForged。 |
 | `0world2create` | `0World2Create-Universal-1.19-1.20.X-1.0.0.jar` | 有 refoxed 版。 |
+| `icterine` | `Icterine-forge-1.20.0-1-1.3.0.jar` | 可评估Cerulean。 |
+| `youkaishomecoming` | `youkaishomecoming-2.4.16.jar` | 1.21版本有战斗内容等缺失。 |
 
 ## ⚠️ 可先排除
 
