@@ -91,7 +91,7 @@
 
 | 序号 | 模组名称 | 文件名 | 版本 | 功能说明 | 1.21.1状态 |
 |------|---------|--------|------|---------|-----------|
-| 46 | **Create: Steam 'n' Rails** | Steam_Rails-1.7.2+forge-mc1.20.1.jar | 1.7.2 | 火车/铁路扩展，添加各种铁轨、信号灯、单轨等 | 🟡 → Steam 'n' Rails NeoForge 官方移植版 |
+| 46 | **Create: Steam 'n' Rails** | Steam_Rails-1.7.2+forge-mc1.20.1.jar | 1.7.2 | 火车/铁路扩展，添加各种铁轨、信号灯、单轨等 | 🟡 → Steam 'n' Rails NeoForge 社区移植版 |
 | 47 | **Create: Crafts & Additions** | createaddition-1.20.1-1.3.3.jar | 1.3.3 | 电力系统(FE)，电动机/发电机/线缆/储能 | ✅ 官方NeoForge版 |
 | 48 | **Create: New Age** | create-new-age-1.1.7f+forge-mc1.20.1.jar | 1.1.7f | 核能/清洁能源扩展 | ✅ 有NeoForge版 |
 | 49 | **Create: Connected** | create_connected-1.1.13-mc1.20.1-all.jar | 1.1.13 | 增加各种连接器、传动轴、离心机等机械组件 | ✅ 有NeoForge版 |
@@ -212,7 +212,7 @@
 | 123 | **Trail and Tales Delight** | trailandtales_delight-1.3-all.jar | 1.3 | 1.20考古/樱花主题联动食物 | ✅ 有1.21.1 |
 | 124 | **Vintage Delight** | vintagedelight-0.1.6.jar | 0.1.6 | Vintage系列联动食物 | 🔴 未知 |
 | 125 | **Dungeons Delight** | forge-dungeonsdelight-1.20.1-1.2.10.jar | 1.2.10 | 地下城主题食物 | ✅ 有1.21.1 |
-| 126 | **Nether Vinery** | letsdo-nethervinery-forge-1.2.19.jar | 1.2.19 | 下界葡萄酒/葡萄园 (Let's Do系列) | ✅ 有NeoForge版 |
+| 126 | **Nether Vinery** | letsdo-nethervinery-forge-1.2.19.jar | 1.2.19 | 下界葡萄酒/葡萄园 (Let's Do系列) | 🔴 确认无1.21.1版本 |
 | 127 | **Vinery** | letsdo-vinery-forge-1.4.41.jar | 1.4.41 | 葡萄酒/葡萄种植酿造 (Let's Do系列) | ✅ 有NeoForge版 |
 
 ---
@@ -267,9 +267,9 @@
 | 150 | **YUNG's Better End Island** | YungsBetterEndIsland-1.20-Forge-2.0.6.jar | 2.0.6 | 更好的末地主岛 | ✅ 有NeoForge版 |
 | 151 | **YUNG's Extras** | YungsExtras-1.20-Forge-4.0.3.jar | 4.0.3 | YUNG系列结构的额外配置 | ✅ 有NeoForge版 |
 | 152 | **Towns and Towers** | Towns-and-Towers-1.12-Fabric+Forge.jar | 1.12 | 新的村镇和塔楼结构 | ✅ 有NeoForge版 |
-| 153 | **Integrated API** | integrated_api-1.7.4+1.20.1-forge.jar | 1.7.4 | 集成结构API | ✅ 有NeoForge版 |
-| 154 | **Integrated Stronghold** | integrated_stronghold-1.1.2+1.20.1-forge.jar | 1.1.2 | 改进的要塞结构 | ✅ 有NeoForge版 |
-| 155 | **Integrated Villages** | integrated_villages-1.3.2+1.20.1-forge.jar | 1.3.2 | 改进的村庄结构 | ✅ 有NeoForge版 |
+| 153 | **Integrated API** | 在tegrated_api-1.7.4+1.20.1-forge.jar | 1.7.4 | 集成结构API | ✅ 有NeoForge版 |
+| 154 | **Integrated Stronghold** | 在tegrated_stronghold-1.1.2+1.20.1-forge.jar | 1.1.2 | 改进的要塞结构 | ✅ 有NeoForge版 |
+| 155 | **Integrated Villages** | 在tegrated_villages-1.3.2+1.20.1-forge.jar | 1.3.2 | 改进的村庄结构 | ✅ 有NeoForge版 |
 | 156 | **IDAS** | idas_forge-1.13.0+1.20.1.jar | 1.13.0 | 集成地下城与结构 | ✅ 有NeoForge版 |
 | 157 | **TOTW Modded** | totw_modded-forge-1.20.1-1.0.6.jar | 1.0.6 | 模组化的天空之城(Towers of the Wild) | ✅ 有1.21.1 |
 | 158 | **Waystones** | waystones-forge-1.20.1-14.1.20.jar | 14.1.20 | 传送石碑，快速旅行 | ✅ 有NeoForge版 |
@@ -294,8 +294,8 @@
 |------|---------|--------|------|---------|-----------|
 | 164 | **Ice and Fire** | iceandfire-2.1.13-1.20.1-beta-5.jar | 2.1.13-beta5 | 冰与火之歌，龙/海怪/蛇发女妖等神话生物 | 🟡 → IceAndFire Community Edition (CE) |
 | 165 | **The Bumblezone** | the_bumblezone-7.11.1+1.20.1-forge.jar | 7.11.1 | 蜜蜂维度/蜂巢世界 | ✅ 有NeoForge版 |
-| 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 东方Project主题，妖怪/幻想乡 | ✅ 有1.21.1 |
-| 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 妖怪归宅的Curios兼容 | ✅ 有1.21.1 |
+| 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 东方Project主题，妖怪/幻想乡 | 🟡 有1.21.1，但缺少战斗等内容 |
+| 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 妖怪归宅的Curios兼容 | 🔴 确认无1.21.1 |
 
 ### 6.3 原版生物改进
 
@@ -323,7 +323,7 @@
 | 180 | **One Enough Value** | OneEnoughValue-1.0.2.jar | 1.0.2 | 物品数值/信息显示 | ✅ 有1.21.1 |
 | 181 | **JEED** | jeed-1.20-2.2.5.jar | 2.2.5 | Just Enough Effect Descriptions，药水效果说明 | ✅ 有1.21.1 |
 | 182 | **Just Enough Breeding** | justenoughbreeding-forge-1.20-1.20.1-2.5.0.jar | 2.5.0 | 生物繁殖信息JEI集成 | ✅ 有1.21.1 |
-| 183 | **Just Enough Couriers** | just_enough_couriers-1.0.1.jar | 1.0.1 | 包裹/Courier模组的JEI集成 | 🔴 未知 |
+| 183 | **Just Enough Couriers** | just_enough_couriers-1.0.1.jar | 1.0.1 | 包裹/Courier模组的JEI集成 | 🟡 制作组成员内容，后续可升级 |
 | 184 | **AppleSkin** | appleskin-forge-mc1.20.1-2.5.1.jar | 2.5.1 | 食物饱和度/饥饿值详细显示 | ✅ 有NeoForge版 |
 | 185 | **Enchantment Descriptions** | EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar | 17.1.21 | 附魔描述显示 | ✅ 有NeoForge版 |
 | 186 | **Controlling** | Controlling-forge-1.20.1-12.0.2.jar | 12.0.2 | 键位搜索/管理 | ✅ 有NeoForge版 |
@@ -359,7 +359,7 @@
 | 216 | **General Feedback** | GeneralFeedback-1.0.1.jar | 1.0.1 | 通用反馈信息收集 | ✅ 有1.21.1 |
 | 217 | **Trade Refresh** | traderefresh-2.5.1.jar | 2.5.1 | 村民交易刷新 | ✅ 有1.21.1 |
 | 218 | **Construction Wand** | constructionwand-1.20.1-2.11.jar | 2.11 | 建筑魔杖（快速批量放置方块） | 🔴 → 用 Construction Wands Revived 替代 |
-| 219 | **Harium** | Harium-mc1.20.1-1.0.0.jar | 1.0.0 | 辅助工具模组（可用锂替代） | 🔴 确认无1.21.1 |
+| 219 | **Harium** | Harium-mc1.20.1-1.0.0.jar | 1.0.0 | 辅助工具模组（锂的分支版本） | 🟡 可用锂替代 |
 | 220 | **MoesTweaks** | moestweaks-forge-1.20.1-1.1.2.jar | 1.1.2 | 微调/优化 | 🔴 确认无1.21.1 |
 
 ---
@@ -368,7 +368,7 @@
 
 | 序号 | 模组名称 | 文件名 | 版本 | 功能说明 | 1.21.1状态 |
 |------|---------|--------|------|---------|-----------|
-| 221 | **Embeddium** | embeddium-0.3.31+mc1.20.1.jar | 0.3.31 | Sodium的Forge移植，大幅提升FPS | ✅ 有NeoForge版 |
+| 221 | **Embeddium** | embeddium-0.3.31+mc1.20.1.jar | 0.3.31 | Sodium的Forge移植，大幅提升FPS | 🟡 可直接用钠 |
 | 222 | **Oculus** | oculus-mc1.20.1-1.8.0.jar | 1.8.0 | Iris的Forge移植，光影支持 | 🔴 → 1.21.1 用 Iris Shaders 替代 |
 | 223 | **ModernFix** | modernfix-forge-5.27.8+mc1.20.1.jar | 5.27.8 | 全面性能修复（加载/内存/tick） | ✅ 有NeoForge版 |
 | 224 | **FerriteCore** | ferritecore-6.0.1-forge.jar | 6.0.1 | 内存使用优化 | ✅ 有NeoForge版 |
@@ -385,8 +385,8 @@
 | 235 | **Spark** | spark-1.10.53-forge.jar | 1.10.53 | 性能分析器（CPU/RAM/TPS） | ✅ 有NeoForge版 |
 | 236 | **Accelerated Rendering** | acceleratedrendering-1.0.7-1.20.1-alpha.jar | 1.0.7-alpha | 渲染加速 | ✅ 有1.21.1 |
 | 237 | **Sodium Extras** | sodiumextras-forge-1.0.7-1.20.1.jar | 1.0.7 | Embeddium的额外功能配置 | ✅ 有1.21.1 |
-| 238 | **Canary** | (可能已移除) | - | 服务器性能优化 | - |
-| 239 | **Smooth Boot** | (可能已替换) | - | 平滑启动 | - |
+| 238 | **Canary** | (已移除) | - | 服务器性能优化 | - |
+| 239 | **Smooth Boot** | (无) | - | 平滑启动 | - |
 | 240 | **AttributeFix** | AttributeFix-Forge-1.20.1-21.0.5.jar | 21.0.5 | 修复属性上限问题 | ✅ 有NeoForge版 |
 | 241 | **PolyEng** | polyeng-forge-0.1.1-1.20.1.jar | 0.1.1 | 多态引擎优化 | ✅ 有1.21.1 |
 
@@ -454,7 +454,7 @@
 | 283 | **Charm of Undying** | charmofundying-forge-6.5.0+1.20.1.jar | 6.5.0 | 不死图腾饰品化（Curios槽位） | ✅ 有NeoForge版 |
 | 284 | **Comforts** | comforts-forge-6.4.0+1.20.1.jar | 6.4.0 | 睡袋/吊床（不设重生点） | ✅ 有NeoForge版 |
 | 285 | **Carry On** | carryon-forge-1.20.1-2.1.2.7.jar | 2.1.2.7 | 徒手搬运方块/生物 | ✅ 有NeoForge版 |
-| 286 | **Corpse** | (可能已替换) | - | 死亡尸体 | - |
+| 286 | **VVAddon** | vvaddon-1.20.1-alpha3.0.1.jar | alpha3.0.1 | Tetra强化属性拓展 | 🔴 确认无1.21.1 |
 
 ---
 
@@ -481,7 +481,7 @@
 | 296 | **Gateways to Eternity** | GatewaysToEternity-1.20.1-4.2.6.jar | 4.2.6 | 传送门挑战 | ✅ 有NeoForge版 |
 | 297 | **Soul Fire'd** | soul-fire-d-forge-1.20.1-4.0.11.jar | 4.0.11 | 灵魂火扩展 | ✅ 有NeoForge版 |
 | 298 | **Ice and Fire** | iceandfire-2.1.13-1.20.1-beta-5.jar | 2.1.13-beta5 | 神话生物/龙 | 🟡 CE版有NeoForge版 |
-| 299 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 东方Project/妖怪 | ✅ 有1.21.1 |
+| 299 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 东方Project/妖怪 | 🟡 有1.21.1，但缺失战斗等内容 |
 | 300 | **Custom Portal API** | customportalapi-0.0.1-forge-1.20.jar | 0.0.1 | 自定义传送门API | 🔴 → 用 Custom Portal API Reforged 替代 |
 
 ---
@@ -514,7 +514,6 @@
 | 315 | **MoreJS** | morejs-forge-1.20.1-0.10.1.jar | 0.10.1 | KubeJS更多功能 | ✅ 有1.21.1 |
 | 316 | **RenderJS** | renderjs-forge-2001.2.1.jar | 2001.2.1 | KubeJS渲染扩展 | ✅ 有1.21.1 |
 | 317 | **LootJS** | lootjs-forge-1.20.1-2.13.1.jar | 2.13.1 | KubeJS战利品表修改 | ✅ 有NeoForge版 |
-| 318 | **VVAddon** | vvaddon-1.20.1-alpha3.0.1.jar | alpha3.0.1 | Vintage系列附加 | 🔴 确认无1.21.1 |
 
 ---
 
@@ -551,7 +550,7 @@
 
 | 序号 | 模组名称 | 文件名 | 版本 | 功能说明 | 1.21.1状态 |
 |------|---------|--------|------|---------|-----------|
-| 333 | **0World2Create** | 0World2Create-Universal-1.19-1.20.X-1.0.0.jar | 1.0.0 | 存档转换工具 | 🔴 确认无1.21.1（有refoxed版） |
+| 333 | **0World2Create** | 0World2Create-Universal-1.19-1.20.X-1.0.0.jar | 1.0.0 | 存档转换工具 | 🟡 确认无1.21.1（有refoxed版） |
 | 334 | **Custom Skin Loader** | CustomSkinLoader_ForgeV2-14.28.jar | 14.28 | 自定义皮肤加载（离线皮肤） | ✅ 有NeoForge版 |
 | 335 | **Skin Layers 3D** | skinlayers3d-forge-1.11.1-mc1.20.1.jar | 1.11.1 | 3D皮肤层渲染 | ✅ 有NeoForge版 |
 | 336 | **Drippy Loading Screen** | drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar | 3.0.12 | 自定义加载界面 | ✅ 有1.21.1 |
@@ -567,8 +566,8 @@
 | 346 | **ZstdNet** | zstdnet-1.20.1-forge-1.3.9.jar | 1.3.9 | Zstd压缩网络传输 | ✅ 有1.21.1 |
 | 347 | **DSBG** | dsbg-1.0-1.20.1.jar | 1.0.0 | 未知功能 | ✅ 有1.21.1 |
 | 348 | **hotai** | hotai-1.0.jar | 1.0 | 未知功能 | ✅ 有1.21.1 |
-| 349 | **Fragmentum** | fragmentum-forge-1.20.1-1.1.4.jar | 1.1.4 | 碎片/残片系统 | 🔴 → Fragmentum (NeoForge) 官方版 |
-| 350 | **Lucent** | lucent-1.20.1-1.5.5.jar | 1.5.5 | 光照/视觉效果增强 | 🔴 未知 |
+| 349 | **Fragmentum** | fragmentum-forge-1.20.1-1.1.4.jar | 1.1.4 | 碎片/残片系统 | 🟡 → Fragmentum (NeoForge) 官方版 |
+| 350 | **Lucent** | lucent-1.20.1-1.5.5.jar | 1.5.5 | 光照/视觉效果增强 | 🔴 确认无1.21.1 |
 | 351 | **Kinetic Pixel** | kinetic_pixel-1.0.3-forge-1.20.1.jar | 1.0.3 | 像素渲染 | 🔴 未知 |
 | 352 | **Extra Gauges** | extra_gauges-2.0.7.jar | 2.0.7 | 额外仪表/测量工具 | ✅ 有1.21.1 |
 | 353 | **GuideME** | guideme-20.1.14.jar | 20.1.14 | 游戏内指南系统 | ✅ 有NeoForge版 |
@@ -581,8 +580,8 @@
 
 ### 模组 (TACZ)
 - **TACZ** (`tacz-1.20.1-1.1.4-hotfix-all.jar`) — 永恒枪械工坊：零，高质量枪械模组
-- **TACZ Addon** (`taczaddon-1.20.1-1.1.4-for1.1.4.jar`) — TACZ附加内容
 - 1.21.1替代：→ **Gunsmith Lib**（v5.1.2+分内置/非内置版，非内置版需额外安装TaCZ NeoForge Port）
+- **TACZ Addon** (`taczaddon-1.20.1-1.1.4-for1.1.4.jar`) — TACZ附加内容
 
 ### 轻型货币 (Lightman's Currency)
 - `lightmanscurrency-1.20.1-2.3.0.4e.jar` — 完整的货币/交易/商店系统
