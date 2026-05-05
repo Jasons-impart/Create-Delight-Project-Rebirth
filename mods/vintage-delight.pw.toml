@@ -1,0 +1,9 @@
+name = "Vintage Delight"
+filename = "vintagedelight-1.21.1-0.1.6.jar"
+side = "both"
+
+[download]
+url = "https://logistics.aisaveworld.tech/d/share/maven/vintagedelight-1.21.1-0.1.6.jar"
+hash-format = "sha256"
+hash = "078899ad688fd590eaedada6a0ba9b3235d7ce74b5c460cae705b8a06ba01b2c"
+mode = "url"

@@ -1,0 +1,9 @@
+name = "Collector's Reap"
+filename = "collectorsreap-1.21.1-1.5.5.jar"
+side = "both"
+
+[download]
+url = "https://logistics.aisaveworld.tech/d/share/maven/collectorsreap-1.21.1-1.5.5.jar"
+hash-format = "sha256"
+hash = "14161565b25ab57453945f5df904bdfdac14ea79f6af72807e7f2c279ea12fd0"
+mode = "url"

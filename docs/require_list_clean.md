@@ -27,7 +27,7 @@
 
 | mod id | 1.20.1 jar | 备注                                   |
 | --- | --- |--------------------------------------|
-| `casualness_delight` | `casualness_delight-1.20.1-0.4n.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。  |
+| `casualness_delight` | `casualness_delight-1.20.1-0.4n.jar` | 已采用官方新版 `casualnessdelight-0.6.jar`；需执行 ID 前缀替换。  |
 | `vintagedelight` | `vintagedelight-0.1.6.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。  |
 | `mutil` | `mutil-1.20.1-6.2.0.jar` | 已有可用 1.21.1 NeoForge 社区版本（PinkCats）。   |
 | `tetra` | `tetra-1.20.1-6.11.0.jar` | 已有可用 1.21.1 NeoForge 社区版本（PinkCats）。 |

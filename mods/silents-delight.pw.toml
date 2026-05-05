@@ -1,0 +1,9 @@
+name = "Silent's Delight"
+filename = "silentsdelight-1.21.1-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://logistics.aisaveworld.tech/d/share/maven/silentsdelight-1.21.1-1.0.1.jar"
+hash-format = "sha256"
+hash = "0d7bde6ba7022a8c0e627bcbea2ac56b7b5680ec40cad9f2fa759b2a905c102b"
+mode = "url"

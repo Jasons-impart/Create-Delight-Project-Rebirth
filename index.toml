@@ -1,6 +1,42 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".idea/Create-Delight-Project-Rebirth.iml"
+hash = "c96ea0b5b29abb7d5807671dd208fd63f63694dd236335d2fe8c074e89e94aa6"
+
+[[files]]
+file = ".idea/deployment.xml"
+hash = "aff27fc928f193c2956ce90f71d31e78e07428be3a0ce04b3aac1818f349891e"
+
+[[files]]
+file = ".idea/inspectionProfiles/Project_Default.xml"
+hash = "4f89929a8144d47538494f96c6afc0778d6345178a5e7f7c31d611e7603a5816"
+
+[[files]]
+file = ".idea/misc.xml"
+hash = "30db24295e8bc3f242bfba2281c8f001d45c46e0801965c9b7e35f300ee95ab6"
+
+[[files]]
+file = ".idea/modules.xml"
+hash = "df561f9aa4e71595aca3bc92fd27339227b41474a921e007b8046911fca70658"
+
+[[files]]
+file = ".idea/shelf/_2026_5_5_12_17____.xml"
+hash = "ab76ede12d6f0ac7c7f3760c202d7fb100e0e2e628ce87c6404bb8ded1f12438"
+
+[[files]]
+file = ".idea/shelf/在进行更新之前于_2026_5_5_12_17_取消提交了更改_[更改]/shelved.patch"
+hash = "0a4f031dd8a56e152cfbbc9c12c39c942a0214a0470f450d9accf8d81eda3ed7"
+
+[[files]]
+file = ".idea/vcs.xml"
+hash = "62be7e0a7f84ab3c35b4d4bafb890a4951d061eadafde1a10aa3f5d0406db5df"
+
+[[files]]
+file = ".idea/workspace.xml"
+hash = "8cbd083d7777b0244452bbf0b09304f0f2265a3b8db8964707cde1db31d63349"
+
+[[files]]
 file = "icon.png"
 hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
@@ -232,6 +268,11 @@ metafile = true
 [[files]]
 file = "mods/cobweb.pw.toml"
 hash = "40802547d9f1f916dfeefea8e0c52499edfc6940daca5b7f60e5c365a4ead296"
+metafile = true
+
+[[files]]
+file = "mods/collectors-reap.pw.toml"
+hash = "9aeab71c92cbe8805800b19fa5a23de15d9bfa6162fd1654c63afc48b0aae03e"
 metafile = true
 
 [[files]]
@@ -1230,6 +1271,11 @@ hash = "8a2c8a56253773cd8af37805f0fc12b8cfbfd659270a551003b1676396c2fa55"
 metafile = true
 
 [[files]]
+file = "mods/silents-delight.pw.toml"
+hash = "91f0ada95dcb5a27336eb21a21d74f9aec17c15b67f81f15811af07d2be419ad"
+metafile = true
+
+[[files]]
 file = "mods/simple-backups.pw.toml"
 hash = "243033139e54f4ed31c168d45ac50e1ec9085fd88d9cc1f3949f52300525a02a"
 metafile = true
@@ -1397,6 +1443,11 @@ metafile = true
 [[files]]
 file = "mods/uranus.pw.toml"
 hash = "871c2c9e058c001c3eae91d7f6329fae068d284defb758a7c9552a919ee78f21"
+metafile = true
+
+[[files]]
+file = "mods/vintage-delight.pw.toml"
+hash = "51cf5abb4b804f0a1d451e8dcf227929000be73a13be9f3d011b2afb0a63e963"
 metafile = true
 
 [[files]]
