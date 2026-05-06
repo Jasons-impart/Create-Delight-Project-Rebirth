@@ -75,8 +75,8 @@ Create Delight Project Rebirth 开发工具
   devtool.bat add-url <url> [packwiz args...]
   devtool.bat add-github <owner/repo|url> [packwiz args...]
   devtool.bat remove-mod <name|metadata-file> [packwiz args...]
-  devtool.bat install-files [attempts] [delay-seconds]           # GUI 模式，默认重试 5 次
-  devtool.bat install-files-headless [attempts] [delay-seconds]  # 无 GUI，默认重试 5 次
+  devtool.bat install-files [attempts] [delay-seconds]           # 安装/同步 mod 文件到本地，GUI 模式，默认重试 5 次
+  devtool.bat install-files-headless [attempts] [delay-seconds]  # 安装/同步 mod 文件到本地，无 GUI，默认重试 5 次
   devtool.bat install-files-retry [attempts] [delay-seconds]     # install-files-headless 的兼容别名
   devtool.bat download-files [-Force] [-CurseForgeApiKey <key>] [-CurseForgeApiBaseUrl <url>]
   devtool.bat detect-curseforge [-Yes]  # 迁移专用，非必要不使用
@@ -139,8 +139,8 @@ function Start-DevMenu {
     Write-Host "  9. 添加直链 URL"
     Write-Host " 10. 添加 GitHub Release 项目"
     Write-Host " 11. 移除 packwiz 管理文件" -ForegroundColor Yellow
-    Write-Host " 12. 安装文件到本地（GUI，自动重试）" -ForegroundColor Yellow
-    Write-Host " 13. 安装文件到本地（无 GUI，自动重试）" -ForegroundColor Yellow
+    Write-Host " 12. 安装/同步 mod 文件到本地（GUI，自动重试）" -ForegroundColor Yellow
+    Write-Host " 13. 安装/同步 mod 文件到本地（无 GUI，自动重试）" -ForegroundColor Yellow
     Write-Host " 14. 下载直链 packwiz 管理文件到本地（不清理无关文件）" -ForegroundColor Yellow
     Write-Host " 15. 扫描 mods 目录生成 CurseForge meta（迁移专用，非必要不使用）"
     Write-Host " 16. 生成 modlist 清单"
@@ -825,7 +825,7 @@ function Invoke-PackwizInstaller {
     Pop-Location
   }
 
-  Write-Success "packwiz-installer 已完成。下载的 mods/*.jar 会保留在本地并被 git 忽略。"
+  Write-Success "packwiz-installer 已完成。本地 mods/*.jar 已按 packwiz 清单安装/同步，并会被 git 忽略。"
 }
 
 function Invoke-PackwizInstallerHeadless {
@@ -872,7 +872,7 @@ function Invoke-PackwizInstallerWithRetry {
   $options = ConvertTo-InstallerRetryOptions $RawRetryArgs
   $lastError = $null
   for ($i = 1; $i -le $options.Attempts; $i++) {
-    Write-Info "安装尝试 $i/$($options.Attempts)"
+    Write-Info "安装/同步尝试 $i/$($options.Attempts)"
     try {
       Invoke-PackwizInstaller $InstallerArgs
       return
@@ -883,7 +883,7 @@ function Invoke-PackwizInstallerWithRetry {
         break
       }
 
-      Write-Warn "安装失败：$($_.Exception.Message)"
+      Write-Warn "安装/同步失败：$($_.Exception.Message)"
       if ($options.DelaySeconds -gt 0) {
         Write-Info "等待 $($options.DelaySeconds) 秒后重试。"
         Start-Sleep -Seconds $options.DelaySeconds
@@ -891,7 +891,7 @@ function Invoke-PackwizInstallerWithRetry {
     }
   }
 
-  Write-Fail "安装仍然失败。请检查上方 packwiz-installer 输出；若是 CurseForge 手动下载项，请按提示下载到 mods/ 后重试。"
+  Write-Fail "安装/同步仍然失败。请检查上方 packwiz-installer 输出；若是 CurseForge 手动下载项，请按提示下载到 mods/ 后重试。"
   throw $lastError
 }
 

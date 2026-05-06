@@ -105,13 +105,13 @@ git diff -- pack.toml index.toml mods
 
 应该提交的是 `mods/*.pw.toml`、`pack.toml`、`index.toml`，以及确认要共享的 `config/`、`defaultconfigs/`、`kubejs/` 等源码文件。不要提交 `mods/*.jar`、导出 zip、`.mrpack`、NeoForge 运行文件、世界、日志或本地配置。
 
-下载 packwiz 元数据声明的本地文件：
+安装/同步 packwiz 元数据声明的本地 mod 文件：
 
 ```powershell
 devtool.bat install-files
 ```
 
-该命令使用内置的 `scripts/bin/packwiz-installer-bootstrap.jar`，会先刷新 packwiz 索引，再按 `pack.toml` 安装 `mods/*.jar` 等本地开发文件。默认是 GUI 模式，适合本机开发；遇到需要手动下载的 CurseForge 文件时会弹出页面。安装失败会自动重试，默认 5 次、每次间隔 10 秒。下载得到的 `mods/*.jar` 只作为本地开发文件保留，仍然由 `.gitignore` 忽略。
+该命令使用内置的 `scripts/bin/packwiz-installer-bootstrap.jar`，会先刷新 packwiz 索引，再按 `pack.toml` 安装/同步 `mods/*.jar` 等本地开发文件。默认是 GUI 模式，适合本机开发；遇到需要手动下载的 CurseForge 文件时会弹出页面。安装/同步失败会自动重试，默认 5 次、每次间隔 10 秒。下载得到的 `mods/*.jar` 只作为本地开发文件保留，仍然由 `.gitignore` 忽略。
 
 CI、服务器或无桌面环境使用无 GUI 模式：
 
