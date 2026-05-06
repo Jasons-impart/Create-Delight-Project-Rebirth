@@ -1,28 +1,51 @@
-.editorconfig
-.gitattributes
-.github/
-.agents/
-.gitignore
-.tmp*/
-**/.gitkeep
-README.md
-LICENSE
-AGENTS.md
-docs/
-devtool.bat
-scripts/
-start.bat
-start.sh
-variables.txt
-server-icon.png
-Create-Delight-Project-Rebirth.jar
-Create-Delight-Project-Rebirth.json
-packwiz.json
-*.jar
-*.jar.disabled
+# Pack distribution allowlist. Runtime files and repository-only files are
+# ignored by default; use ! rules below for files that belong in the pack index.
+/*
+
+# Pack icon.
+!/icon.png
+
+# Packwiz-managed descriptors. Local downloaded jars/zips are ignored below.
+!/mods/
+!/mods/**
+!/resourcepacks/
+!/resourcepacks/**
+!/shaderpacks/
+!/shaderpacks/**
+
+# Shared Minecraft configuration and authored pack data.
+!/config/
+!/config/**
+/config/*
+!/defaultconfigs/
+!/defaultconfigs/**
+/defaultconfigs/*
+!/kubejs/
+!/kubejs/**
+!/ldlib/
+!/ldlib/**
+!/schematics/
+!/schematics/**
+!/tacz/
+!/tacz/**
+!/minemenu/
+!/minemenu/**
+
+# Runtime/downloaded artifacts must not be distributed through packwiz index.
+mods/*.jar
+mods/*.jar.disabled
+resourcepacks/*.zip
+shaderpacks/*.zip
 *.mrpack
 *.zip
 *.7z
+
+# Repository/local state files inside otherwise allowed directories.
+**/.gitignore
+**/.DS_Store
+Thumbs.db
+
+# Local generated state.
 logs/
 crash-reports/
 saves/
@@ -41,3 +64,8 @@ minecraft_server*.jar
 *.log
 *.lock
 *.tmp
+
+# ProbeJS/local dev settings.
+.probe
+kubejs/config/probe-settings.json
+kubejs/config/web_server.json

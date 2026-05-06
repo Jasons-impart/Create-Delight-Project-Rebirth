@@ -89,3 +89,7 @@ minecraft_server*.jar
 *.log
 *.lock
 *.tmp
+
+.probe
+kubejs/config/probe-settings.json
+kubejs/config/web_server.json

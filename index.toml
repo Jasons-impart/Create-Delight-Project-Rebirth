@@ -5,6 +5,34 @@ file = "icon.png"
 hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
 [[files]]
+file = "kubejs/README.txt"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+
+[[files]]
+file = "kubejs/client_scripts/jsconfig.json"
+hash = "f47c419ee3372e99593a1faf771e0f8eb6a422b0fd81c8634c89efd8c15b277a"
+
+[[files]]
+file = "kubejs/config/client.json"
+hash = "0aeb4cb329b896e33a0777a1683b0b813a6f2f0adc5bc2cf3e6d10e18e442fef"
+
+[[files]]
+file = "kubejs/config/common.json"
+hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
+
+[[files]]
+file = "kubejs/server_scripts/jsconfig.json"
+hash = "bda1bdb91bec3fa51f1b7603c582604ab876e89678982e35d8722138e60c8574"
+
+[[files]]
+file = "kubejs/startup_scripts/jsconfig.json"
+hash = "5d1d34f9763eb77f2e30b9fb62a8f4f056149b2c162b113157265ddef1b8dad3"
+
+[[files]]
+file = "minemenu/menu.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
 file = "mods/abnormals-delight.pw.toml"
 hash = "56700c848266c1b129a324e285db6ad16ed19fc33f91aea9268659350bddeef7"
 metafile = true
