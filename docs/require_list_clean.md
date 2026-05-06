@@ -33,6 +33,7 @@
 | `tetra` | `tetra-1.20.1-6.11.0.jar` | 已有可用 1.21.1 NeoForge 社区版本（PinkCats）。 |
 | `collectorsreap` | `collectorsreap-1.20.1-1.5.5.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。 |
 | `silentsdelight` | `silentsdelight-forge-1.0.1-1.20.1.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。 |
+| `createfluidstuffs` | `createfluidstuffs-1.2.0-all.jar` | 已完成 1.21.1 NeoForge 迁移验证（KazeShukufuku）。 |
 
 ## 🔴 缺失/需移植
 
@@ -42,7 +43,6 @@
 | `vintage_kubejs` | `vintage_kubejs-1.20.1-1.0.0rc-2.jar` | Vintage / KubeJS |
 | `vvaddon` | `vvaddon-1.20.1-alpha3.0.1.jar` | Tetra |
 | `taczaddon` | `taczaddon-1.20.1-1.1.4-for1.1.4.jar` | TaCZ |
-| `createfluidstuffs` | `createfluidstuffs-1.2.0-all.jar` | Create |
 | `create_utilities_j` | `Create-Utilities-J-1.20.1-0.3.3.jar` | Create |
 | `cave_delight` | `Cave-Delight-1.20.1-2.0.1.jar` | Farmer's Delight |
 | `cosmopolitan` | `cosmopolitan-1.20.1-1.1.0.jar` | Farmer's Delight |

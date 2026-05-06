@@ -127,7 +127,7 @@
 | 69 | **Create: Better Storages** | Create-Better-Storages-Forge-1.20.1-1.0b.Release.jar | 1.0b | 更好的存储方案 | 🔴 → 用 Create: Bigger Storage [NeoFork] 替代 |
 | 70 | **Create: Bigger Storage** | createbiggerstoragetocreate6-1.1.jar | 1.1 | 更大容量的存储容器 | 🔴 → 用 Create: Bigger Storage [NeoFork] 替代 |
 | 71 | **Create: Transmission** | createtransmission-1.1.0+forge-create6-1.20.1.jar | 1.1.0 | 物品/流体远程传输 | ✅ 有1.21.1 |
-| 72 | **Create: Fluid Stuffs** | createfluidstuffs-1.2.0-all.jar | 1.2.0 | 流体处理增强 | 🔴 确认无1.21.1 |
+| 72 | **Create: Fluid Stuffs** | createfluidstuffs-1.2.0-all.jar | 1.2.0 | 流体处理增强 | ✅ 已完成1.21.1迁移 |
 | 73 | **Create: Additional Logistics** | createadditionallogistics-1.20.1-1.4.5.jar | 1.4.5 | 额外的物流组件 | ✅ 有1.21.1 |
 | 74 | **Create: Stock Bridge** | createstockbridge-1.20-0.1.5.jar | 0.1.5 | 仓储桥接 | ✅ 有1.21.1 |
 
@@ -655,7 +655,7 @@
 | 12 | Botarium | **疑似无用模组** |
 | 13 | Cosmopolitan | 无 |
 | 14 | CreateBiggerStorageToCreate6 | → Create: Bigger Storage [NeoFork] |
-| 15 | CreateFluidStuffs | 无 |
+| 15 | CreateFluidStuffs | 已完成迁移 |
 | 16 | Curious Lanterns | 替代需Lambd动态光源（含强制内容） |
 | 17 | Dreadsteel | 无 |
 | 18 | Endergetic | 无 |
