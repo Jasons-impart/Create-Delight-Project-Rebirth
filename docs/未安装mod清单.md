@@ -6,7 +6,6 @@
 |------|---------|--------|------|------|---------|-----------|
 | 58 | **Create: Metallurgy** | createmetallurgy-1.0.1-1.20.1.jar | 1.0.1 | Create 附属 | 冶金/金属冶炼扩展 | 🔴 等作者更新 |
 | 59 | **Create-Delight-Core** | Create-Delight-Core-1.20.1-2.2.14.jar | 2.2.14 | Create 附属 | 本整合包核心！Create与Farmer's Delight的桥接模组 | ✅ 官方持续更新 |
-| 72 | **Create: Fluid Stuffs** | createfluidstuffs-1.2.0-all.jar | 1.2.0 | Create 附属 | 流体处理增强 | 🔴 确认无1.21.1 |
 | 80 | **Create: Utilities-J** | Create-Utilities-J-1.20.1-0.3.3.jar | 0.3.3 | Create 附属 | 实用工具合集 | ✅ 作者是开发组成员，可向上移植 |
 | 88 | **Create: Oppenheimered** | create_oppenheimered-1.0.5.jar | 1.0.5 | Create 附属 | 核弹/爆炸物，致敬奥本海默 | 🔴 仅提供配方，可KubeJS实现 |
 | 90 | **Create: Railways Navigator** | createrailwaysnavigator-forge-1.20.1-alpha-0.9.0-C6+2.jar | 0.9.0 | Create 附属 | 铁路导航系统 | ✅ 有1.21.1 ⚠️可能有性能问题 |
@@ -30,7 +29,7 @@
 | 172 | **Endergetic** | endergetic-1.20.1-5.0.1.jar | 5.0.1 | 生物 | 末地生物群系/生物扩展 (TeamAbnormals) | 🔴 确认无1.21.1版本 |
 | 173 | **Endertrigon** | endertrigon-1.20.1-1.1-all.jar | 1.1 | 生物 | 末影龙战斗改进 | 🔴 确认无1.21.1 |
 | 179 | **One Enough Item** | OneEnoughItem-1.0.7-hotfix.jar | 1.0.7 | QoL/UI | | ✅ 有1.21.1 |
-| 180 | **One Enough Value** | OneEnoughValue-1.0.2.jar | 1.0.2 | QoL/UI | | ✅ 有1.21.1 |
+| 180 | **One Enough Value** | OneEnoughValue-1.0.2.jar | 1.0.2 | QoL/UI | | 🔴 确认无1.21.1 |
 | 183 | **Just Enough Couriers** | just_enough_couriers-1.0.1.jar | 1.0.1 | QoL/UI | 包裹/Courier模组的JEI集成 | 🟡 制作组成员内容，后续可升级 |
 | 192 | **Advancements Tracker** | advancements_tracker_1.20.1-6.1.0.jar | 6.1.0 | QoL/UI | 成就追踪器 | 🔴 确认无1.21.1 |
 | 212 | **SolCarrot** | solcarrot-1.20.1-1.15.1.jar | 1.15.1 | QoL/UI | 多样化饮食奖励系统 | 🔴 确认无1.21.1版本 |

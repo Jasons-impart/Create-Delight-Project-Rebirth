@@ -1,42 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".idea/Create-Delight-Project-Rebirth.iml"
-hash = "c96ea0b5b29abb7d5807671dd208fd63f63694dd236335d2fe8c074e89e94aa6"
-
-[[files]]
-file = ".idea/deployment.xml"
-hash = "aff27fc928f193c2956ce90f71d31e78e07428be3a0ce04b3aac1818f349891e"
-
-[[files]]
-file = ".idea/inspectionProfiles/Project_Default.xml"
-hash = "4f89929a8144d47538494f96c6afc0778d6345178a5e7f7c31d611e7603a5816"
-
-[[files]]
-file = ".idea/misc.xml"
-hash = "30db24295e8bc3f242bfba2281c8f001d45c46e0801965c9b7e35f300ee95ab6"
-
-[[files]]
-file = ".idea/modules.xml"
-hash = "df561f9aa4e71595aca3bc92fd27339227b41474a921e007b8046911fca70658"
-
-[[files]]
-file = ".idea/shelf/_2026_5_5_12_17____.xml"
-hash = "ab76ede12d6f0ac7c7f3760c202d7fb100e0e2e628ce87c6404bb8ded1f12438"
-
-[[files]]
-file = ".idea/shelf/在进行更新之前于_2026_5_5_12_17_取消提交了更改_[更改]/shelved.patch"
-hash = "0a4f031dd8a56e152cfbbc9c12c39c942a0214a0470f450d9accf8d81eda3ed7"
-
-[[files]]
-file = ".idea/vcs.xml"
-hash = "62be7e0a7f84ab3c35b4d4bafb890a4951d061eadafde1a10aa3f5d0406db5df"
-
-[[files]]
-file = ".idea/workspace.xml"
-hash = "8cbd083d7777b0244452bbf0b09304f0f2265a3b8db8964707cde1db31d63349"
-
-[[files]]
 file = "icon.png"
 hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
@@ -428,6 +392,11 @@ metafile = true
 [[files]]
 file = "mods/create-fishery-industry.pw.toml"
 hash = "2fd26dee809f3f52283bb59523719442721782d3e68e2d845bf3baaabcce7f9f"
+metafile = true
+
+[[files]]
+file = "mods/create-fluid-stuffs-neoforge.pw.toml"
+hash = "11e9a3dbaf5ef4aed2e48857cbe08ea7fb4675779a983939ef079fe32b75b8bc"
 metafile = true
 
 [[files]]
