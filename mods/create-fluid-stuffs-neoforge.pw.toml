@@ -1,13 +1,13 @@
 name = "Create:Fluid Stuffs [NeoForge]"
-filename = "createfluidstuffs-neoforge-1.2.0.jar"
+filename = "createfluidstuffs-neoforge-1.2.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "200f15ce9dfa878afaa41b6a14e1f3d937c1426a"
+hash = "642ee6d7c911ccb3d986280cd37b37ebdfb671fe"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8047089
+file-id = 8053121
 project-id = 1535283

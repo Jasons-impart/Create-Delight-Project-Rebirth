@@ -18,7 +18,7 @@ hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
 [[files]]
 file = "kubejs/README.txt"
-hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+hash = "050df4dac58ebda30a898e6c65e91cc4f4e15bcd7c2a19b58ab1c05082e36556"
 
 [[files]]
 file = "kubejs/client_scripts/jsconfig.json"
@@ -426,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fluid-stuffs-neoforge.pw.toml"
-hash = "11e9a3dbaf5ef4aed2e48857cbe08ea7fb4675779a983939ef079fe32b75b8bc"
+hash = "8dbcf61885e382d9cdfe0aaf4c657d55df6c5ef551e75830f741439a3f022342"
 metafile = true
 
 [[files]]
