@@ -83,11 +83,6 @@ hash = "e3bbf8c3650fd5fc795b36b0b38fdb5bd287b22b6b7d94cde7e35561b0bf5000"
 metafile = true
 
 [[files]]
-file = "mods/alexs-mobs.pw.toml"
-hash = "5e1239fd67c97c042d09cf38664698c9d1a3cfbc50d779fc550c461cf6aeb565"
-metafile = true
-
-[[files]]
 file = "mods/always-eat.pw.toml"
 hash = "8db3f2a65c6a9577cd586e8b3ef4a486a4aef82d0f14556c29e45092eb689b17"
 metafile = true
@@ -240,11 +235,6 @@ metafile = true
 [[files]]
 file = "mods/citadel-1-21-1-port.pw.toml"
 hash = "3a0f7208a7863c154b7dbc6418c4686a7e5956444d6f9b05d9a33b0393cbafef"
-metafile = true
-
-[[files]]
-file = "mods/citadel.pw.toml"
-hash = "24709360eba177b48ec78aecaa27ba6ea5ad68e13f4e2c582c8e877fc6b49013"
 metafile = true
 
 [[files]]
