@@ -14,6 +14,7 @@
 - Windows
 - Java 21
 - Git
+- Node.js / npm，用于 KubeJS 脚本格式化和 Git hook
 - 推荐编辑器：VSCode / IntelliJ IDEA Community Edition / 其他支持 TOML、JSON、JavaScript 的编辑器
 
 根目录内置开发工具：
@@ -103,6 +104,38 @@ devtool.bat
 ## KubeJS 开发规范
 
 当前阶段不要直接批量搬运旧仓库 KubeJS。旧仓库是 Forge 1.20.1，新仓库目标是 NeoForge 1.21.1，模组 ID、标签、配方类型、KubeJS API 和配置结构都可能变化。
+
+### KubeJS JS 格式化
+
+仓库根目录提供 `.prettierrc`，用于统一 KubeJS JavaScript 的基础格式。VSCode 用户建议安装工作区推荐插件里的 `Prettier - Code formatter`。
+
+首次拉取仓库后运行：
+
+```powershell
+npm install
+```
+
+`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，并把格式化后的结果重新加入提交。该 hook 只处理 KubeJS JavaScript，不格式化 packwiz TOML、JSON 配置或其他资源文件。
+
+也可以手动运行：
+
+```powershell
+npm run format:js
+npm run format:js:check
+```
+
+本仓库不提交 `.vscode/settings.json`，避免把个人编辑器设置、插件生成配置或本机偏好带给其他开发者。需要保存时自动格式化的开发者，可以在自己的 VSCode 用户设置或本地工作区设置中加入：
+
+```json
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
+```
+
+也可以在打开 `kubejs/**/*.js` 后手动执行 `Format Document`。Prettier 只负责格式化，不会把现代 JavaScript 语法转换成 KubeJS/Rhino 可用语法；脚本写法仍需按当前 KubeJS 运行环境保持兼容。
 
 通用规范：
 

@@ -5,15 +5,24 @@
 !/.editorconfig
 !/.gitattributes
 !/.gitignore
+!/.prettierrc
+!/.prettierignore
 !/.github/
 !/.github/**
 !/.agents/
 !/.agents/**
+!/.husky/
+!/.husky/**
+!/.vscode/
+/.vscode/*
+!/.vscode/extensions.json
 
 # Pack metadata
 !/pack.toml
 !/index.toml
 !/.packwizignore
+!/package.json
+!/package-lock.json
 
 # Docs and project assets
 !/README.md
@@ -80,6 +89,7 @@ world*/
 libraries/
 versions/
 downloads/
+node_modules/
 server.properties
 eula.txt
 user_jvm_args.txt

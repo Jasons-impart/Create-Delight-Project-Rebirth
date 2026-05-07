@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "format:js": "prettier --write \"kubejs/**/*.js\"",
+    "format:js:check": "prettier --check \"kubejs/**/*.js\"",
+    "precommit:js": "lint-staged"
+  },
+  "lint-staged": {
+    "kubejs/**/*.js": "prettier --write"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "3.7.4"
+  }
+}

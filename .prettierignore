@@ -1,0 +1,15 @@
+node_modules/
+mods/
+resourcepacks/
+shaderpacks/
+libraries/
+versions/
+downloads/
+logs/
+crash-reports/
+saves/
+world*/
+*.jar
+*.zip
+*.7z
+*.mrpack

@@ -1,5 +1,6 @@
 * text=auto
 
+.gitattributes text eol=lf
 *.sh text eol=lf
 *.bat text eol=crlf
 *.ps1 text eol=crlf
@@ -9,6 +10,7 @@
 *.snbt text eol=lf
 *.js text eol=lf
 *.md text eol=lf
+.husky/* text eol=lf
 
 *.png binary
 *.jpg binary
