@@ -1,0 +1,33 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 48
+    },
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "c:gems/quartz"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_smg_freedom"
+  }
+}

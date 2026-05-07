@@ -1,0 +1,7 @@
+{
+    "name": "create_armorer.gun.cannon_40mm_salamander",
+    "display": "create_armorer:cannon_40mm_salamander_display",
+    "data": "create_armorer:cannon_40mm_salamander_data",
+    "type": "rpg",
+    "sort": 351
+}

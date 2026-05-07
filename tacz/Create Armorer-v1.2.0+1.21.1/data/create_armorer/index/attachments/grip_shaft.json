@@ -1,0 +1,6 @@
+{
+  "name": "create_armorer.attachment.grip_shaft.name",
+  "display": "create_armorer:grip_shaft_display",
+  "data": "create_armorer:grip_shaft_data",
+  "type": "grip"
+}

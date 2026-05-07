@@ -1,0 +1,59 @@
+{
+    "model": "create_armorer:gun/gl_revolver_devastator_geo",
+    "texture": "create_armorer:gun/uv/gl_revolver_devastator",
+    "lod": {
+        "model": "create_armorer:gun/lod/gl_revolver_devastator_lod",
+        "texture": "create_armorer:gun/lod/gl_revolver_devastator_lod"
+    },
+    "hud": "create_armorer:gun/hud/gl_revolver_devastator",
+    "slot": "create_armorer:gun/slot/gl_revolver_devastator",
+    "animation": "create_armorer:gl_revolver_devastator",
+    "use_default_animation": "rifle",
+    "state_machine": "create_armorer:gl_revolver_devastator_state_machine",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                1,
+                1,
+                1
+            ],
+            "ground": [
+                1,
+                1,
+                1
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+      "ammo":{
+    "particle": {
+    "name": "mycelium",
+    "delta": [
+      0,
+      0,
+      0
+    ],
+    "speed": 0.0,
+    "life_time": 25,
+    "count": 25
+    }
+  },
+    "sounds": {
+        "shoot": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_shoot",
+        "shoot_3p": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_shoot_3p",
+        "reload_empty": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_reload_empty",
+        "reload_tactical": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_reload_tactical",
+        "inspect": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_inspect",
+        "inspect_empty": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_inspect_empty",
+        "draw": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_draw",
+        "dry_fire": "create_armorer:misc/dry_fire",
+        "put_away": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_put_away",
+        "silence": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_shoot",
+        "silence_3p": "create_armorer:gl_revolver_devastator/gl_revolver_devastator_shoot_3p"
+    }
+}

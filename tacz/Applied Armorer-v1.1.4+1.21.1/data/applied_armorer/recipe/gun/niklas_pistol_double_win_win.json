@@ -1,0 +1,20 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "GunId": "applied_armorer:niklas_pistol_semi_union"
+        },
+        "partial": true,
+        "items": "tacz:modern_kinetic_gun"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_pistol_double_win_win"
+  }
+}

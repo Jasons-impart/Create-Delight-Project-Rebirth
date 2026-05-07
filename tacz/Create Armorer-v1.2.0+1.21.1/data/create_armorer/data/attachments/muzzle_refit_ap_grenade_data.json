@@ -1,0 +1,41 @@
+{
+  "weight": 0.5,
+  "recoil": {
+    "yaw": {
+      "multiplier": 2
+    },
+    "pitch": {
+      "multiplier": 2
+    }
+  },
+  "armor_ignore":{
+    "addend": 0.25
+  },
+  "explosion": {
+    "explode": true,
+    "radius": {
+      "addend": -3
+    },
+    "damage": {
+      "addend": -40
+    },
+    "knockback": true,
+    "destroy_block": true,
+    "delay": {}
+  },
+  "inaccuracy": {
+    "multiplier": 0
+  },
+  "aim_inaccuracy": {
+    "multiplier": 0
+  },
+  "ammo_speed": {
+    "addend": 60
+  },
+  "damage": {
+    "addend": 40
+  },
+  "head_shot":{
+    "addend": 0.5
+  }
+}

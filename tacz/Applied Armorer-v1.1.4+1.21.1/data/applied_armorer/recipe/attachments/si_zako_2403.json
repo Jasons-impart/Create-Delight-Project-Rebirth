@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "minecraft:soul_fire_base_blocks"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "c:heads"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:si_zako_2403"
+  }
+}

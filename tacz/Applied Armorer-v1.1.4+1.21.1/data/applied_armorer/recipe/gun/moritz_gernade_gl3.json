@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 72
+    },
+    {
+      "item": {
+        "tag": "c:gems/quartz"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "c:gems/diamond"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_gernade_gl3"
+  }
+}

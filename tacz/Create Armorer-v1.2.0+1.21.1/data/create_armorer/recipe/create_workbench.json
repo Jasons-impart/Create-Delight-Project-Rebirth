@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "minecraft:planks"
+    },
+    "0": {
+      "tag": "c:storage_blocks/copper"
+    },
+    "2": {
+      "item": "minecraft:deepslate_bricks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "202",
+    "2 2"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tacz:workbench_b",
+    "components": {
+      "minecraft:custom_data": {
+        "BlockId": "create_armorer:create_workbench"
+      }
+    }
+  }
+}

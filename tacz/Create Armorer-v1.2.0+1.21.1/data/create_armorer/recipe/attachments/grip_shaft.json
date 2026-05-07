@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:andesite"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:grip_shaft"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

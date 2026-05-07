@@ -1,0 +1,149 @@
+{
+  "filter": "create_armorer:default",
+  "tabs": [
+    {
+      "id": "tacz:pistol",
+      "name": "create_armorer.type.pistol.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:pistol_revolver_torque"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:shotgun",
+      "name": "create_armorer.type.shotgun.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:shotgun_pump_bearing"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:rifle",
+      "name": "create_armorer.type.rifle.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:rifle_assult_crane"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:sniper",
+      "name": "create_armorer.type.sniper.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:sniper_semi_m1"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:smg",
+      "name": "create_armorer.type.smg.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:smg_auto_crank"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:mg",
+      "name": "create_armorer.type.mg.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:mg_platemag_flywheel"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:rpg",
+      "name": "create_armorer.type.rpg.name",
+      "icon": {
+        "id": "tacz:modern_kinetic_gun",
+        "components": {
+          "minecraft:custom_data": {
+            "GunId": "create_armorer:special_melee_wrench"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:ammo",
+      "name": "create_armorer.type.ammo.name",
+      "icon": {
+        "id": "tacz:ammo",
+        "components": {
+          "minecraft:custom_data": {
+            "AmmoId": "create_armorer:rbapb"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:scope",
+      "name": "create_armorer.type.scope.name",
+      "icon": {
+        "id": "tacz:attachment",
+        "components": {
+          "minecraft:custom_data": {
+            "AttachmentId": "create_armorer:scope_telephoto"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:extended_mag",
+      "name": "create_armorer.type.extended_mag.name",
+      "icon": {
+        "id": "tacz:attachment",
+        "components": {
+          "minecraft:custom_data": {
+            "AttachmentId": "create_armorer:extended_mag_ca_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:grip",
+      "name": "create_armorer.type.grip.name",
+      "icon": {
+        "id": "tacz:attachment",
+        "components": {
+          "minecraft:custom_data": {
+            "AttachmentId": "create_armorer:grip_gantry_shaft"
+          }
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle",
+      "name": "create_armorer.type.muzzle.name",
+      "icon": {
+        "id": "tacz:attachment",
+        "components": {
+          "minecraft:custom_data": {
+            "AttachmentId": "create_armorer:muzzle_refit_lava_perfusion_bottle"
+          }
+        }
+      }
+    }
+  ]
+}

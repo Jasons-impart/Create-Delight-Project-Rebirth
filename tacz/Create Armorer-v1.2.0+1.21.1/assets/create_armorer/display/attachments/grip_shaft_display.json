@@ -1,0 +1,9 @@
+{
+  "slot": "create_armorer:attachment/slot/grip_shaft",
+  "model": "create_armorer:attachment/grip_shaft",
+  "texture": "create_armorer:attachment/uv/grip_shaft",
+  "sounds": {
+    "install": "create_armorer:misc/attachment_install_small",
+    "uninstall": "create_armorer:misc/attachment_uninstall"
+  }
+}

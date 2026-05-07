@@ -1,0 +1,7 @@
+{
+  "name": "create_armorer.attachment.refit_blasting_protocol.name",
+  "display": "create_armorer:refit_blasting_protocol_display",
+  "data": "create_armorer:refit_blasting_protocol_data",
+  "tooltip": "create_armorer.tooltip.attachment.refit_blasting_protocol",
+  "type": "muzzle"
+}

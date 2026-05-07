@@ -1,0 +1,28 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:cluster_quartz_bullet",
+    "count": 24
+  }
+}

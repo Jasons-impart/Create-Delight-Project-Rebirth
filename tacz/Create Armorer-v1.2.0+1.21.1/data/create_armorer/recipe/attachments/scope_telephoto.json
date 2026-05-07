@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 14
+    },
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 3
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:scope_telephoto"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

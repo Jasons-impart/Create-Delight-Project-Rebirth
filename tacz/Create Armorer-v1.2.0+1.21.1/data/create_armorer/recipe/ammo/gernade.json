@@ -1,0 +1,28 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "create_armorer:gernade",
+    "count": 8
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,7 @@
+{
+  "whitelist": [
+  ],
+  "blacklist": [
+    "^create_armorer:.*$"
+  ]
+}

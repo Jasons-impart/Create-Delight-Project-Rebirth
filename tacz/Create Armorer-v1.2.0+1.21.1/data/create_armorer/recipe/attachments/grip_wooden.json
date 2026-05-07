@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:grip_wooden"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

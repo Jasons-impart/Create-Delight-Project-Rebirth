@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 48
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:rifle_assult_crane"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

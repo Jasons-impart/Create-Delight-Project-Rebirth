@@ -1,0 +1,33 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:dusts/glowstone"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:scope_xgs_905"
+  }
+}

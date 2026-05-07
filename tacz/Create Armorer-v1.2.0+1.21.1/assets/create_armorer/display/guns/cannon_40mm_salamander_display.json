@@ -1,0 +1,59 @@
+{
+    "model": "create_armorer:gun/cannon_40mm_salamander_geo",
+    "texture": "create_armorer:gun/uv/cannon_40mm_salamander",
+    "lod": {
+        "model": "create_armorer:gun/lod/cannon_40mm_salamander_lod",
+        "texture": "create_armorer:gun/lod/cannon_40mm_salamander_lod"
+    },
+    "hud": "create_armorer:gun/hud/cannon_40mm_salamander",
+    "slot": "create_armorer:gun/slot/cannon_40mm_salamander",
+    "animation": "create_armorer:cannon_40mm_salamander",
+    "use_default_animation": "rifle",
+    //"state_machine": "create_armorer:cannon_40mm_salamander_state_machine",
+    "third_person_animation": "default",
+    "muzzle_flash": {
+        "texture": "tacz:flash/common_muzzle_flash",
+        "scale": 4
+    },
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                1,
+                1,
+                1
+            ],
+            "ground": [
+                1,
+                1,
+                1
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+    "ammo":{
+        "particle": {
+        "name": "mycelium",
+        "delta": [
+            0,
+            0,
+            0
+        ],
+        "speed": 0.0,
+        "life_time": 25,
+        "count": 75
+        }
+    },
+    "sounds": {
+        "shoot": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_shoot",
+        "shoot_3p": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_shoot_3p",
+        "draw": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_draw",
+        "dry_fire": "create_armorer:misc/dry_fire",
+        "put_away": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_put_away",
+        "silence": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_shoot",
+        "silence_3p": "create_armorer:cannon_40mm_salamander/cannon_40mm_salamander_shoot_3p"
+    }
+}

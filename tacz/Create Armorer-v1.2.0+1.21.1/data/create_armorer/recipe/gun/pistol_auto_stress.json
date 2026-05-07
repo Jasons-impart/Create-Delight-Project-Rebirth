@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:pistol_auto_stress"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "create_armorer.gun.gl_revolver_devastator",
+    "display": "create_armorer:gl_revolver_devastator_display",
+    "data": "create_armorer:gl_revolver_devastator_data",
+    "type": "rpg",
+    "sort": 350
+}

@@ -1,0 +1,6 @@
+{
+  "name": "create_armorer.attachment.muzzle_refit_ap_grenade.name",
+  "display": "create_armorer:muzzle_refit_ap_grenade_display",
+  "data": "create_armorer:muzzle_refit_ap_grenade_data",
+  "type": "muzzle"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:wither_skeleton_skull"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_atm_x2"
+  }
+}

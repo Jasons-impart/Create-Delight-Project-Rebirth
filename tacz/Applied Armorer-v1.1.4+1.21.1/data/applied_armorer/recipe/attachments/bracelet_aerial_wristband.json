@@ -1,0 +1,15 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:prismarine_shard"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:bracelet_aerial_wristband"
+  }
+}

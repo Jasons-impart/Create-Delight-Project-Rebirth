@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "tag": "c:gems/lapis"
+    },
+    "2": {
+      "tag": "c:ingots/iron"
+    },
+    "3": {
+      "tag": "c:glass_panes"
+    },
+    "4": {
+      "tag": "c:storage_blocks/iron"
+    }
+  },
+  "pattern": [
+    "121",
+    "232",
+    "242"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tacz:workbench_c",
+    "components": {
+      "minecraft:custom_data": {
+        "BlockId": "applied_armorer:worckbench_applied_armorer"
+      }
+    }
+  }
+}

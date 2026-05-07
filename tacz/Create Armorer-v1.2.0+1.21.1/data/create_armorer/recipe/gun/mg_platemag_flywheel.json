@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 40
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:mg_platemag_flywheel"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

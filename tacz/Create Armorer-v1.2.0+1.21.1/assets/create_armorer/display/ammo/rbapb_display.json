@@ -1,0 +1,27 @@
+{
+  "slot": "create_armorer:ammo/slot/rbapb",
+  "tracer_color": "#fff37b",
+  "shell": {
+    "model": "create_armorer:shell/rbapb_shell",
+    "texture": "create_armorer:shell/rbapb_shell"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "ground": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "fixed": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

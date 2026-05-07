@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:gems/quartz"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:extended_mag_aa_3"
+  }
+}

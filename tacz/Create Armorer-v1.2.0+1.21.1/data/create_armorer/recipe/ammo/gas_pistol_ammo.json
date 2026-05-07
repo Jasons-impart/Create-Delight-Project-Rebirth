@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "create_armorer:gas_pistol_ammo",
+    "count": 60
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

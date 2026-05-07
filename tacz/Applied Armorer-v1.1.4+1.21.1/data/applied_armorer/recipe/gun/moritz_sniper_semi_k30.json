@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 120
+    },
+    {
+      "item": {
+        "tag": "c:gems/diamond"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:rods/blaze"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_sniper_semi_k30"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_pcs_x1"
+  }
+}

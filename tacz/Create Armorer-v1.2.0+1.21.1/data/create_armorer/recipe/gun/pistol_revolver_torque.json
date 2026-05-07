@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 32
+    },
+    {
+      "item": {
+        "item": "minecraft:blaze_rod"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:pistol_revolver_torque"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

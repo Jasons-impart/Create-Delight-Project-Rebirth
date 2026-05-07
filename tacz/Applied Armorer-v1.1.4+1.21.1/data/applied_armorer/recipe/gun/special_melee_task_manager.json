@@ -1,0 +1,30 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/netherite"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:special_melee_task_manager",
+    "nbt": {
+      "GunCurrentAmmoCount": 1
+    }
+  }
+}

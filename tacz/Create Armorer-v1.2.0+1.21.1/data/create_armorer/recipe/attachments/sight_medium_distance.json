@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "item": "minecraft:dried_kelp"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:glass_panes"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:sight_medium_distance"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

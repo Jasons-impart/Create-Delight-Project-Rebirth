@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:leather"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:dyes/pink"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "minecraft:chain"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:bracelet_broken_handcuffs"
+  }
+}

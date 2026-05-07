@@ -1,0 +1,7 @@
+{
+  "slot": "create_armorer:attachment/slot/refit_blasting_protocol",
+  "sounds": {
+    "install": "create_armorer:misc/attachment_install_big",
+    "uninstall": "create_armorer:misc/attachment_uninstall"
+  }
+}

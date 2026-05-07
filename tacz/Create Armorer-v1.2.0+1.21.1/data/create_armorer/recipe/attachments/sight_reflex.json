@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:glass_panes"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:sight_reflex"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

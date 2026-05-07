@@ -1,0 +1,28 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 3
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "create_armorer:slap",
+    "count": 60
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

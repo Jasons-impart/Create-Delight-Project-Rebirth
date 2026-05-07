@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:muzzle_refit_bigger_cylinder"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

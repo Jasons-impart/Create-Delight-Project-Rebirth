@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:gems/lapis"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:dusts/glowstone"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:blaze_powder"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_tutorial_sword_mastery"
+  }
+}

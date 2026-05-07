@@ -1,0 +1,26 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:muzzle_chip_toxic_sword"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:wither_skeleton_skull"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_wither_sword"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:nether_star"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_fat_boy"
+  }
+}

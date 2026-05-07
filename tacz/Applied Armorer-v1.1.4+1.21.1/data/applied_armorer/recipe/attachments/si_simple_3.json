@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:gems/amethyst"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:si_simple_3"
+  }
+}

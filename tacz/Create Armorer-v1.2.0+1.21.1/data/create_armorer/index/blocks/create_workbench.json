@@ -1,0 +1,7 @@
+{
+  "name": "create_armorer.block.create_workbench.name",
+  "display": "create_armorer:create_workbench_display",
+  "data": "create_armorer:create_workbench",
+  "id": "tacz:workbench_b",
+  "sort": 41
+}

@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 80
+    },
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:rods/blaze"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_mg_hmg22"
+  }
+}

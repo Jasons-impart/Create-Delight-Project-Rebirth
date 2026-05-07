@@ -1,0 +1,8 @@
+{
+    "name": "create_armorer.gun.rifle_assult_roller",
+    "display": "create_armorer:rifle_assult_roller_display",
+    "data": "create_armorer:rifle_assult_roller_data",
+    "tooltip": "create_armorer.tooltip.rifle_assult_roller",
+    "type": "rifle",
+    "sort": 351
+}

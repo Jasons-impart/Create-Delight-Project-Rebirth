@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:shotgun_db_stone"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

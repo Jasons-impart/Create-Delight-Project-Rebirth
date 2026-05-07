@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "create_armorer:special_melee_wrench"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

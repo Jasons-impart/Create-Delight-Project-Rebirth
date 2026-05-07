@@ -1,0 +1,15 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:light_blue_stained_glass"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:muzzle_refit_energy_blade"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

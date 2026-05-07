@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:lava_bucket"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:muzzle_refit_lava_perfusion_bottle"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

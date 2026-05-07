@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:ingots/iron"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:extended_mag_ca_2"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,15 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:muzzle_refit_brass_retractor"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

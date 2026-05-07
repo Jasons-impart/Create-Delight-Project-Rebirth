@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "c:ingots/gold"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "create_armorer:refit_blasting_protocol"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

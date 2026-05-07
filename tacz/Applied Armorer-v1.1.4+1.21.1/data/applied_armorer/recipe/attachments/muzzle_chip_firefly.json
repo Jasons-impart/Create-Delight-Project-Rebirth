@@ -1,0 +1,27 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:heavy_weighted_pressure_plate"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "minecraft:fire_charge"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_firefly"
+  }
+}

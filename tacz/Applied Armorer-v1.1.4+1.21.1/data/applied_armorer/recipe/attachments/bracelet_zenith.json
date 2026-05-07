@@ -1,0 +1,86 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_aerial_wristband"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_magma_wristband"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_broken_handcuffs"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_broken_watch"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_exo"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_koeis_armband"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "type": "tacz:nbt",
+        "nbt": {
+          "AttachmentId": "applied_armorer:bracelet_niklas"
+        },
+        "partial": true,
+        "items": "tacz:attachment"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:bracelet_zenith"
+  }
+}

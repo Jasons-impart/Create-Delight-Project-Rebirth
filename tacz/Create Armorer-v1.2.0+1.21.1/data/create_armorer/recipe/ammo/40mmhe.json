@@ -1,0 +1,34 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:netherite_scrap"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "c:ingots/copper"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "c:gunpowders"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "c:dusts/redstone"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "create_armorer:40mmhe",
+    "count": 12
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}
