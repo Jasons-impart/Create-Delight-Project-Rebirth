@@ -70,6 +70,7 @@ scripts/bin/*
 *.zip
 *.7z
 mods/*.jar
+mods/*.jar.disabled
 !scripts/bin/packwiz-installer-bootstrap.jar
 logs/
 crash-reports/
