@@ -928,11 +928,6 @@ hash = "3c13beafeb69d23d2a43805cfa3d79b7e458cfb8f9ce603075b84d95da630d4b"
 metafile = true
 
 [[files]]
-file = "mods/krypton-hybrid.pw.toml"
-hash = "df265a906ae79c266c4c37bb1e167b23fb427bc3533d10e8d27483a0bcde6255"
-metafile = true
-
-[[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "21a5deb5da882d9f3eb4eaf7f0cf77f52737e1e6b44d2f691bf10fda9c86d790"
 metafile = true
