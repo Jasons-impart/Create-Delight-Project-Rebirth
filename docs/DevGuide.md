@@ -115,7 +115,7 @@ devtool.bat
 npm install
 ```
 
-`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，并把格式化后的结果重新加入提交。该 hook 只处理 KubeJS JavaScript，不格式化 packwiz TOML、JSON 配置或其他资源文件。
+`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 packwiz 索引。提交前仍需检查并手动暂存需要提交的 `pack.toml` 和 `index.toml` 变化。
 
 也可以手动运行：
 
