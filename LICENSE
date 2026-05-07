@@ -21,6 +21,20 @@ This project includes these third-party parts:
   - Detailed provenance record: `scripts/bin/packwiz-installer-bootstrap.VERSION.txt`
   - The vendored binary is excluded from packwiz exports through `.packwizignore` and should not be shipped as part of the modpack runtime.
 
+- TACZ Create Armorer Koei
+  - Author page: https://www.curseforge.com/members/koei/projects
+  - Project page: https://www.curseforge.com/minecraft/customization/tacz-create-armorer-koei
+  - License: Creative Commons Attribution 4.0 International Public License (CC BY 4.0)
+  - License details: https://www.curseforge.com/minecraft/customization/tacz-create-armorer-koei#license
+  - This project references content from the above source and includes modifications.
+
+- TACZ Applied Armorer Koei
+  - Author page: https://www.curseforge.com/members/koei/projects
+  - Project page: https://www.curseforge.com/minecraft/customization/tacz-applied-armorer-koei
+  - License: Creative Commons Attribution 4.0 International Public License (CC BY 4.0)
+  - License details: https://www.curseforge.com/minecraft/customization/tacz-applied-armorer-koei#license
+  - This project references content from the above source and includes modifications.
+
 This project's code defaults to the MIT License:
 
 MIT License
