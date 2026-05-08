@@ -50,7 +50,6 @@
 
 # Maintained pack data
 !/config/
-!/config/**
 !/defaultconfigs/
 !/defaultconfigs/**
 !/kubejs/

@@ -1,0 +1,519 @@
+#Block Settings
+[blockSettings]
+	#The chance for buried fossil ore to convert into fossil fuel every random tick
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	fossilOreConversionChance = 0.02
+	#Intensity of movement speed reduction when submerged in soul glass
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	soulGlassMovementSlowdown = 0.6
+	#Defines how long it should take for the soul swirls to deactivate in seconds
+	# Default: 50
+	# Range: > 0
+	soulSwirlsCooldown = 50
+	#Duration of unbounded speed when it is inflicted from soul swirls
+	#Setting to 0 functionally disables it
+	# Default: 10
+	# Range: > 0
+	unboundedSpeedDuration = 10
+	#Weather soul swirls can be bone-mealed to duplicate or not
+	boneMealSoulSwirls = true
+	#If enabled wisps can be forced out of ecto soul sand with a brush
+	brushWispsOut = true
+	#The chance for a wisp to come out of ecto soul sand
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	wispEmergingChance = 0.02
+	#The chance for a wisp to be tickled out of ecto soul sand with a brush
+	# Default: 0.07
+	# Range: 0.0 ~ 1.0
+	wispEmergingChanceBrush = 0.07
+	#Durability penalty for tickling ecto soul sand to force wisps out
+	# Default: 4
+	# Range: > 0
+	ectoSoulSandBrushDamage = 4
+	#Weather ecto soul sand converts to suspicious soul sand by exiting wisps
+	convertsToSuspiciousSoulSand = true
+	#Defines the loot table which the game will use when no registry is found for that particular biome or structure context
+	wispArchaeologyDefaultLootTable = "netherexp:archaeology/wisp_arch_default"
+	#The chance for non-persistent suspicious soul sand block to decay
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	suspiciousSoulSandDecayChance = 0.05
+	#The amount of decay required for suspicious soul sand to revert back to soul sand
+	# Default: 5
+	# Range: > 0
+	suspiciousSoulSandMaxDecay = 5
+	#The chance for lesion blocks to grow a layer back
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	lesionGrowthChance = 0.1
+	#The amount of wraithing flesh dropped by a lesion upon harvesting
+	# Default: 12
+	# Range: > 0
+	lesionDropsPerHarvest = 12
+	#Vertical velocity gained from bouncing on a sporeshroom block
+	# Default: 1.0
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	sporeshroomHeightVelocity = 1.0
+	#Vertical velocity gained from stepping on a geyser block
+	# Default: 1.2
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	geyserHeightVelocity = 1.2
+	#Defines how long it should take for the geyser to become active again in seconds
+	# Default: 5
+	# Range: > 0
+	geyserCooldown = 5
+	#When submerged underwater black icicles will have the specified chance to grow longer
+	# Default: 0.28
+	# Range: 0.0 ~ 1.0
+	blackIcicleGrowthChance = 0.28
+	#Chance for thin black ice to break when stood on
+	# Default: 0.015
+	# Range: 0.0 ~ 1.0
+	thinIceBreakingChance = 0.015
+	#Chance for thin black ice to break when sprinting on
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	thinIceBreakingChanceSprinting = 0.2
+	#Chance for nearby thin black ice to shatter
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	nearbyThinIceBreakingChance = 0.4
+	#Chance for black ice or thin black ice to freeze nearby water into more thin black ice
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	blackIceFrostsWaterChance = 0.6
+	#Black ice will taint netherrack into pale soul slate
+	blackIceTainting = true
+	#Sorrowsquash taints nearby soul ground blocks into sorroweed when bone-mealed
+	sorrowsquashTainting = true
+	#Weather sorrowsquashes fall if the stem it's attached to breaks
+	shouldSorrowsquashFall = true
+	#Damage multiplier per block the sorrowsquash falls to be inflicted as sorrowsquished
+	# Default: 1.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	sorrowsquishedDamageMultiplier = 1.5
+	#Maximum damage that can be accumulated form sorrowsquash to be inflicted as sorrowsquished
+	# Default: 30
+	# Range: > 0
+	sorrowsquishedMaxDamage = 30
+	#Chance for sorrowsquashes to grow from a sorrowsquash stem 
+	#If sorrowsquash fails to grow then the stem will attempt to grow upwards instead
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	sorrowsquashGrowthChance = 0.2
+	#Chance for cerebrage skulls to grow to their next stage
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	cerebrageGrowthChance = 0.1
+	#Minimum amount of cerebrage dropped when harvesting a cerebrage skull
+	# Default: 3
+	# Range: > 0
+	minCerebrageDropped = 3
+	#Maximum amount of cerebrage dropped when harvesting a cerebrage skull
+	# Default: 6
+	# Range: > 0
+	maxCerebrageDropped = 6
+	#Chance for cerebrage skulls to drop an additional seed upon harvesting
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	cerebrageSeedsDropChance = 0.05
+	#If cerebrage skulls are bone-mealed past their last growth stage then a brain tree can grow from it
+	cerebrageGrowsBrainTrees = true
+	#The amount of shotgun pellets fired from a shotgun barrel
+	# Default: 10
+	# Range: > 0
+	shotgunBarrelBullets = 10
+	#Normally frogmists can only be broken when other frogmist or a hoe is held in hand 
+	#This config makes it breakable with anything regardless of what's in your hand
+	canAnythingBreakFrogmist = false
+
+#Item Settings
+[itemSettings]
+	#Amount of duration depleted when immunity effects protect against infliction
+	# Default: 600
+	# Range: > 0
+	immunityConsumption = 600
+	#Weather the amount of duration depleted multiplies with the infliction's amplifier
+	amplifierScalesImmunityConsumption = true
+	#Backports the tears music disc from 1.21.6+
+	backportTearsMusicDisc = true
+	#Makes obtaining the tears music disc harder, when enabled requires you to slay a ghast in the overworld 
+	#If disabled then the disc is obtained by redirecting a fireball into a ghast like in vanilla
+	tweakObtainingTearsMusicDisc = true
+	#The amount of self-pushback experienced upon firing a shotgun
+	#Enchantments can influence the final total of bullets fired
+	# Default: 0.35
+	# Range: 0.0 ~ 1.7976931348623157E308
+	shotgunSelfRecoil = 0.35
+	#The amount of additional self-recoil gained from hitting a target point-blank
+	# Default: 0.45
+	# Range: 0.0 ~ 1.7976931348623157E308
+	pointBlankSelfRecoilBonus = 0.45
+	#How close you need to be to a target in blocks to get a point-blank self recoil bonus
+	# Default: 18.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	pointBlankSelfRecoilDistance = 18.0
+	#The base amount of shotgun pellets fired from a shotgun-fist
+	#Enchantments can influence the final total of bullets fired
+	# Default: 25
+	# Range: > 0
+	shotgunFistBullets = 25
+	#The base amount of ticks the shotgun-fist will go into cooldown upon firing
+	#Enchantments can influence the final total of cooldown
+	# Default: 40
+	# Range: > 0
+	shotgunFistCooldown = 40
+	#The base amount of shotgun pellets fired from a pump-charge shotgun
+	#Enchantments and pumps can influence the final total of bullets fired
+	# Default: 10
+	# Range: > 0
+	pumpChargeShotgunBullets = 10
+	#The base amount of ticks the pump-charge shotgun will go into cooldown upon firing
+	#Enchantments can influence the final total of cooldown
+	# Default: 15
+	# Range: > 0
+	pumpChargeShotgunCooldown = 15
+	#The amount of damage a slug pellet will deal to a block upon impact
+	#Negative values will disable block destruction with slugs
+	# Default: 1.0
+	# Range: -1.0 ~ 1.7976931348623157E308
+	slugBlockDamageStrength = 1.0
+	#When a counterforce shotgun is used it'll grant you immunity frames for the specified number of ticks
+	# Default: 20
+	# Range: > 0
+	counterforce_iframes = 20
+	#The number of will o' wisps that can be stored in a single stack
+	# Default: 64
+	# Range: 1 ~ 99
+	willOWispStackSize = 64
+
+#Entity Settings
+[entitySettings]
+	#The chance for a wisp's boredom counter to increase each second
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	wispBoredomChance = 0.02
+	#The amount of freezing in ticks that all black ices can inflict
+	# Default: 100
+	# Range: > 0
+	blackIceFreezingTicks = 100
+	#Upon death skeletons will fossilize soul soil blocks they are standing on into fossil ore
+	skeletonFossilization = true
+	#Upon death wither skeletons will fossilize soul soil blocks they are standing on into fossil fuel ore
+	witherSkeletonFossilization = true
+	#The amount of wisps which disperse out of an apparition upon its death
+	# Default: 2
+	# Range: > 0
+	wispsDroppedByApparition = 2
+	#Cooldown in ticks for how long an apparition needs to wait before re-possessing a mob 
+	#If set to -1 then apparitions unleashed from a possessed mob cannot repossess anything
+	# Default: 300
+	# Range: > -1
+	apparitionPossessionCooldown = 300
+	#Apparitions can be salted... or erm, "waxed" until actual salt is added in the future 
+	#Salted apparitions cannot possess any mobs, although will still attack them
+	apparitionsCanBeSalted = true
+	#Apparitions can take control of certain mobs they kill and turn into possessed variants
+	apparitionsCanPossessMobs = true
+	#Apparitions can use certain gargoyle statues to turn themselves into their possessed variants
+	apparitionsCanPossessGargoyles = true
+	#Upon death possessed mobs have a chance to unleash an apparition out into the world
+	possessedMobsUnleashApparition = true
+	#Multiplies the individual unleashing odds of a possessed mob by the specified amount
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	hardDifficultyUnleashingMultiplier = 2.0
+	#Most projectiles will phase through apparitions and wisps except for a few specific kinds 
+	#Projectiles specified in the "phantasm_hull_protects_blacklist" tag still hit these entities regardless
+	projectilesPhaseThroughGhosts = true
+	#Blazes will visibly become dimmer the lower their health is much like Minecraft: Dungeons
+	diminishingBlazes = true
+	#The minimum amount of shotgun pellets fired from a vessel
+	# Default: 16
+	# Range: > 0
+	minVesselBullets = 16
+	#The maximum amount of shotgun pellets fired from a vessel
+	# Default: 20
+	# Range: > 0
+	maxVesselBullets = 20
+	#Attack timer is a value that decrements when a vessel is aggroed 
+	#It dictates the wait-time between each shotgun blast the vessel does
+	# Default: 110
+	# Range: > 0
+	vesselAttackTime = 110
+	#At the specified attack time the vessel will take aim preparing to fire 
+	#This value cannot go any lower than 50 to prevent animation issues
+	# Default: 100
+	# Range: > 50
+	vesselShootsAtAttackTime = 100
+	#When a target is at or closer to the specified distance in blocks the vessel's aim will be more accurate and will almost always hit a perfect point-blank
+	# Default: 5
+	# Range: > 0
+	vesselAccurateDistance = 5
+	#Banshees hurt by an entity will try to teleport away to a random spot or their anchor
+	bansheeTeleportsAfterHit = true
+	#The number of teleports a banshee can do before returning to its anchor point 
+	#This config value is influenced by the world difficulty adding: 
+	#-1 on Easy 
+	#+1 on Hard
+	#
+	# Default: 3
+	# Range: > 1
+	bansheeAnchorInterval = 3
+	#The base attack interval of a banshee, which constantly ticks down. when the value reaches "0" it'll fire a will o' wisp 
+	#After which the specified value will be added to the attack interval for it to continue ticking down
+	# Default: 40
+	# Range: > 0
+	bansheeAttackInterval = 40
+	#This value gets added on top of the base attack interval adding to further randomization in its attack patterns
+	# Default: 30
+	# Range: > 0
+	bansheeAttackIntervalBonus = 30
+	#When hurt the banshee's attack interval can be staggered by the specified amount in ticks
+	# Default: 10
+	# Range: > 0
+	bansheeAttackIntervalStagger = 10
+	#Specify what behavior should take place if a banshee gets hit with its own will o' wisp projectile
+	#Allowed Values: DO_NOTHING, STUN, INSTAKILL
+	bansheeRedirectBehavior = "STUN"
+	#Defines how long a banshee hit with its own projectile will be stunned for 
+	#During this it is unable to fire will o' wisps
+	# Default: 100
+	# Range: > 0
+	bansheeStunTimer = 100
+	#How well a will o' wisp shot by a player or dispenser can turn sharp corners
+	# Default: 0.22
+	# Range: 0.0 ~ 1.7976931348623157E308
+	genericWillOWispManoeuvrability = 0.22
+	#How well a will o' wisp shot by a banshee can turn sharp corners
+	# Default: 0.2
+	# Range: 0.0 ~ 1.7976931348623157E308
+	bansheeWillOWispManoeuvrability = 0.2
+	#Weather world difficulty will have any affect on a banshee will o' wisps' manoeuvrability 
+	#The values below are added onto whatever is specifed in "bansheeWillOWispManoeuvrability" 
+	#-0.05 on Easy 
+	#+0.04 on Hard
+	#
+	manoeuvrabilityAffectedByDifficulty = true
+	#When a will o' wisp is hit with a wind charge it'll accelerate the its speed and manoeuvrability greatly
+	willOWispWindPropulsion = true
+	#The chance for vessels to unleash apparitions upon death
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	vesselUnleashingOdds = 0.25
+	#The chance for stampedes to unleash apparitions upon death
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	stampedeUnleashingOdds = 0.5
+	#The chance for banshees to unleash apparitions upon death
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	bansheeUnleashingOdds = 0.15
+	#Stampedes will shed stridite upon running over any entity
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	stampedeStriditeSheddingChance = 0.1
+	#The minimum number of stridite that can be shed by a stampede
+	# Default: 1
+	# Range: > 0
+	minStampedeStriditeDrops = 1
+	#The maximum number of stridite that can be shed by a stampede
+	# Default: 5
+	# Range: > 0
+	maxStampedeStriditeDrops = 5
+
+#World Settings
+[worldSettings]
+	#Improves the vanilla nether terrain generation with better multilayered-ness and height changes 
+	#The Height changes include: 
+	#-Base Nether being extended to 192 blocks tall 
+	#-Underlava sections extended by -32 blocks of depth 
+	#-And the area above the roof will be 64 blocks tall instead 
+	# 
+	#§cNOTE: If Amplified Nether is installed then that mod's generation will take priority regardless of config value
+	#
+	netherWorldGenOverhaul = true
+	#Brightens up the nether fog of most vanilla and modded biomes to compliment their environments better 
+	#It overall makes the nether feel more warmer and helps make out shapes in the distance like actual fog
+	brighterNetherFog = true
+	#Changes the nether wastes fog back to being red like in vanilla
+	redNetherWastesFog = false
+	#Dust like particles will blow in the soul sand valley instead of the occasional falling ash
+	betterSoulSandValleyParticles = true
+
+#Visual & Sound Settings
+[visualAndSoundSettings]
+	#Usually in vanilla the nether fog cannot exceed past 12 chunks, this config removes that limiter
+	uncappedNetherFogDistance = true
+	#Black ice blocks will produce black flake particles underneath
+	blackIceParticles = true
+	#Ectoplasm will produce rays of light and rising particles from its surface
+	ectoplasmParticles = true
+	#Ectoplasm will whisper incomprehensible gibberish to players
+	ectoplasmSounds = true
+	#Periodically misty particles will form around the distance fog
+	netherMistParticles = true
+	#Controls the tick intervals of nether mist spawning
+	# Default: 6
+	# Range: > 0
+	netherMistSpawnRate = 6
+	#Minimum distance at which the nether mist particles spawn
+	# Default: 32.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	netherMistMinDistance = 32.0
+	#Maximum distance at which the nether mist particles spawn
+	# Default: 80.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	netherMistMaxDistance = 80.0
+	#The size of nether mist particles
+	# Default: 60.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	netherMistScale = 60.0
+	#The opacity of nether mist particles
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	netherMistOpacity = 0.5
+	#Influences the nether mist particle to go off in random directions at the defined speed
+	# Default: 0.05
+	# Range: 0.0 ~ 1.7976931348623157E308
+	netherMistMotionMultiplier = 0.05
+	#Makes the nether mist particles disappear faster if you get close enough to them 
+	#You may disable this functionality entirely by just setting the value to 0.0
+	# Default: 20.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	netherMistDissipateDistance = 20.0
+	#Influences the wind speed of ash particles in the soul sand valley
+	# Default: 0.2
+	# Range: 0.0 ~ 1.7976931348623157E308
+	soulSandValleyWindSpeed = 0.2
+	#Multiplies the size of windy ash particles
+	# Default: 1.6
+	# Range: 0.0 ~ 1.7976931348623157E308
+	windyAshScaleMultiplier = 1.6
+	#Number of drifting soul particles which can spawn from a single block
+	# Default: 4
+	# Range: > 0
+	driftingSoulsSpawnQuantity = 4
+	#The radius of particles a single drifting souls block can spawn around in each direction
+	# Default: 32
+	# Range: > 0
+	driftingSoulsSpawnRadius = 32
+	#Fired will o' wisps will produce wisp-like trail particles behind them
+	willOWispParticles = true
+	#Fired will o' wisps will make a weeping sound that helps with knowing if one is homing in on you
+	willOWispSounds = true
+	#Adds more dynamic and animated particles to all fire blocks
+	improvedFireParticles = true
+	#Enables new smoke particles for fire
+	fireSmokeParticles = true
+	#Enables new ember particles for fire
+	fireEmberParticles = true
+	#Adds slight color variation gradients to lava to break up the repetitive texture in large areas
+	lavaPerlinNoiseGradient = true
+	#The first color that is applied to the lava perlin noise gradient
+	#Color §cMUST§r be in #RRGGBB or #AARRGGBB format
+	lavaGradientColorA = "#FFFFFFFF"
+	#The second color that is applied to the lava perlin noise gradient
+	#Color §cMUST§r be in #RRGGBB or #AARRGGBB format
+	LavaGradientColorB = "#FFE28001"
+	#Scale factor that determines how big the perlin noise streaks are
+	# Default: 14.0
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	LavaGradientNoiseScale = 14.0
+	#Toggle the screenshake when a shotgun is fired
+	shotgunScreenshake = true
+	#Toggles all heat distortion effects in JNE; To disable individual heat distortion effects check the below configs
+	enableHeatDistortion = true
+	#Heat distortion is applied to far away objects when in certain biomes such as the nether
+	biomeHeatDistortion = true
+	#A much stronger heat distortion is applied when close to lava source blocks
+	lavaHeatDistortion = true
+	#Intensity of heat distortion wobbling
+	# Default: 0.003
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionIntensity = 0.003
+	#Speed of heat distortion wobbling
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionSpeed = 2.0
+	#Minimum distance from the camera that heat distortion starts at
+	# Default: 12.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionMinDistance = 12.0
+	#Maximum distance from the camera that heat distortion reaches its max intensity at
+	# Default: 128.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionMaxDistance = 128.0
+	#Intensity of heat distortion wobbling when close to lava sources
+	# Default: 0.006000000052154064
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionLavaIntensity = 0.006000000052154064
+	#Speed of heat distortion wobbling when close to lava sources
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionLavaSpeed = 2.0
+	#Minimum distance from the camera that heat distortion starts at when close to lava sources
+	# Default: 0.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionLavaMinDistance = 0.0
+	#Maximum distance from the camera that heat distortion reaches its max intensity at when close to lava sources
+	# Default: 64.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionLavaMaxDistance = 64.0
+	#How often the game will check around the player for lava heat distortion in ticks 
+	#§cWARNING: Lower numbers can increase lag especially when paired with high proximity distances to iterate through
+	# Default: 100
+	# Range: > 0
+	heatDistortionLavaCheckPeriod = 100
+	#How far the game will check around the player for heat distortion lava sources 
+	#§cWARNING: Increasing the distance can add some latency to performance! as it needs to iterate through all the specified blocks in-range
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatDistortionLavaProximity = 2.0
+	#The number of source blocks that need to be around the player to cause heat distortion
+	# Default: 12
+	# Range: > 0
+	requiredSourceBlocksForLavaHeatDistortion = 12
+	#Toggles the on-screen filter when submerged inside soul glass
+	enableSoulGlassScreenFilter = true
+	#Removes the ripple effect from soul glass entirely and leaves just the frosted glass effect for people who find the distortion uneasy
+	noSoulGlassRipple = false
+	#Improves the brewing stand's particles
+	improvedBrewingStandParticles = true
+	#Adds a particle effect around the player after drinking from a potion or antidote similar to Minecraft Dungeons
+	potionConsumptionParticles = true
+	#Improves the nether portal's particles
+	improvedNetherPortalParticles = true
+	#Adds new JNE inspired splash texts alongside the vanilla ones if enabled
+	enableJNESplashTexts = true
+	#Splash texts added by JNE will be a wonderful red color opposed to the usual yellow
+	redSplashText = true
+	#JNE has swearing, and lots of it too but is normally censored 
+	#If you'd like to disable profanity entirely or uncensor it you may do so with this config
+	#Allowed Values: DISABLED, CENSORED, UNFILTERED
+	profanity = "CENSORED"
+
+#Game Mechanic Settings
+[gameMechanicSettings]
+	#Ectoplasm will slowly start to deal freezing damage when submerged
+	ectoplasmFreezes = true
+	#Ectoplasm will rust all netherite upon contact
+	ectoplasmRustsNetherite = true
+	#Silver weapons will deal multiplied damage to possessed and ghost mobs
+	# Default: 1.8
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	silverParanormalDamageMultiplier = 1.8
+	#Silver armor will damage possessed and ghost mobs which damaged you in melee
+	# Default: 5.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	silverParanormalProtectionDamage = 5.0
+	#Silver armor and weapons will inflict possessed and ghost mobs with slowness
+	silverInflictsParanormalSlowness = true
+	#Turns on various developer loggers, technical information and such for debugging purposes 
+	#I suggest you keep this disabled if you're just a casual player
+	developerMode = false
+	#Pretty self-explanatory; When running beta builds of JNE, a pop-up will appear on screen warning you upon joining worlds
+	showBetaWarningPopUp = true

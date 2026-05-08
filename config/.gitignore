@@ -1,5 +1,99 @@
 /*
 !/.gitignore
+
+# Top-level config files allowed for the current pack.
+!/MouseTweaks.cfg
+!/ae2-client.toml
+!/ae2-common.toml
+!/alexscaves-client.toml
+!/alexscaves-general.toml
+!/alexsmobs-common.toml
+!/bcc-common.toml
+!/butchercraft-common.toml
+!/carryon-common.toml
+!/chat_heads.json5
+!/collectorsreap-common.toml
+!/colorfulhearts.toml
+!/createlazytick-client.toml
+!/createlazytick-server.toml
+!/curios-client.toml
+!/curios-common.toml
+!/dynamiccrosshair.json5
+!/eclipticseasons-common.toml
+!/fml.toml
+!/generalfeedback_config.toml
+!/imblocker.json
+!/iris-excluded.json
+!/iris.properties
+!/itemborders.toml
+!/kaleidoscope_doll-common.toml
+!/netherexp-common.toml
+!/quark-common.toml
+!/refurbished_furniture.server.toml
+!/shouldersurfing-client.toml
+!/simplebackups-common.toml
+!/skinlayers.json
+!/supplementaries-client.toml
+!/supplementaries-common.toml
+!/tipsmod.json
+!/vinery.toml
+!/waystones-common.toml
+!/tacz-common.toml
+
+# Directory configs are allowlisted here, then filtered by nested .gitignore
+# files in each directory.
+!/alexscaves_biome_generation/
+!/alexsmobs/
+!/bettercombat/
+!/bountiful/
+!/fancymenu/
+!/ftbquests/
+!/GeneralFeedback/
+!/iceandfire/
+!/improvedmobs/
 !/jei/
-/jei/*
-!/jei/jei-client.ini
+!/lightmanscurrency/
+!/NoChatReports/
+!/obscuria/
+!/pickupnotifier/
+!/servercore/
+!/the_bumblezone/
+!/trades/
+
+# paths not present in this config tree; not allowed as-is.
+# - acceleratedrendering-client.toml
+# - attributeslib.cfg
+# - modernui/
+# - openloader/
+# - sound_physics_remastered/
+# - starterkit/
+# - ae2/ (current paths: ae2-client.toml, ae2-common.toml)
+# - alexsmobs.toml (current path: alexsmobs-common.toml)
+# - c2me.toml
+# - endertrigon-common.toml
+# - ftbquests/
+# - iceandfire-client.toml (current path: iceandfire/iaf-client.json)
+# - iceandfire-common.toml (current path: iceandfire/iaf-common.json)
+# - imblocker-client.toml
+# - tacz/
+# - tacz-common.toml
+# - tips.json (current path: tipsmod.json)
+# - treechop-common.toml
+# - watut-server.toml
+# - vinery/ (current path: vinery.toml)
+# - vintageimprovements-client.toml
+# - world-gen.json
+# - youkaishomecoming-common.toml
+# - ad_astra*
+# - xbob.json
+# - farmersrespite-common.toml
+# - DistantHorizons.toml
+# - itemborders-common.toml (current path: itemborders.toml)
+# - vvaddon.toml
+# - biome_replacer.properties
+# - iris_shader_folder.properties (current paths: iris.properties, iris-excluded.json)
+# - advancements_tracker-client.toml
+# - generalfeedback-common.toml (current path: generalfeedback_config.toml)
+# - create_cyber_goggles.toml
+# - tab/
+# - createlazytick-common.toml (current paths: createlazytick-client.toml, createlazytick-server.toml)

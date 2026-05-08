@@ -1,0 +1,365 @@
+{
+  "TradesLevel1": [
+    {
+      "Type": "lightmanscurrency:enchanted_book_for_coins",
+      "Coin": "lightmanscurrency:coin_gold",
+      "StartCoinCount": 5,
+      "EnchantmentTag": "minecraft:tradeable",
+      "MaxTrades": 12,
+      "XP": 1,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 3,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:iron_sword",
+      "MaxTrades": 12,
+      "XP": 1,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel2": [
+    {
+      "Type": "lightmanscurrency:enchanted_book_for_coins",
+      "Coin": "lightmanscurrency:coin_gold",
+      "StartCoinCount": 5,
+      "EnchantmentTag": "minecraft:tradeable",
+      "MaxTrades": 12,
+      "XP": 5,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:items_for_map",
+      "Price": {
+        "id": "lightmanscurrency:coin_gold",
+        "count": 3
+      },
+      "MaxTrades": 12,
+      "XP": 5,
+      "PriceMult": 0.05,
+      "Destination": "minecraft:on_ocean_explorer_maps",
+      "MapName": "filled_map.monument",
+      "Decoration": "minecraft:monument"
+    }
+  ],
+  "TradesLevel3": [
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 2,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:fishing_rod",
+      "MaxTrades": 3,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_book_for_coins",
+      "Coin": "lightmanscurrency:coin_gold",
+      "StartCoinCount": 5,
+      "EnchantmentTag": "minecraft:tradeable",
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:items_for_map",
+      "Price": {
+        "id": "lightmanscurrency:coin_gold",
+        "count": 4
+      },
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05,
+      "Destination": "minecraft:on_woodland_explorer_maps",
+      "MapName": "filled_map.mansion",
+      "Decoration": "minecraft:mansion"
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 5,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:iron_axe",
+      "MaxTrades": 3,
+      "XP": 12,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 4,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:iron_shovel",
+      "MaxTrades": 3,
+      "XP": 12,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 6,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:iron_pickaxe",
+      "MaxTrades": 3,
+      "XP": 12,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel4": [
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:night_vision",
+              "duration": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:jump_boost"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:weakness",
+              "duration": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:blindness",
+              "duration": 120
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:poison",
+              "duration": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "id": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05,
+      "Sell": {
+        "id": "minecraft:suspicious_stew",
+        "count": 1,
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "id": "minecraft:saturation",
+              "duration": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 5,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:bow",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_book_for_coins",
+      "Coin": "lightmanscurrency:coin_gold",
+      "StartCoinCount": 5,
+      "EnchantmentTag": "minecraft:tradeable",
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 7,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_leggings",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 5,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_boots",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 4,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_axe",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 3,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_axe",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 2,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_shovel",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel5": [
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_iron",
+      "BaseCoinCount": 10,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:crossbow",
+      "MaxTrades": 3,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 8,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_chestplate",
+      "MaxTrades": 3,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 6,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_helmet",
+      "MaxTrades": 3,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 4,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_sword",
+      "MaxTrades": 3,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:enchanted_item_for_coins",
+      "Coin": "lightmanscurrency:coin_diamond",
+      "BaseCoinCount": 4,
+      "EnchantmentValueModifier": 0.25,
+      "Sell": "minecraft:diamond_pickaxe",
+      "MaxTrades": 3,
+      "XP": 30,
+      "PriceMult": 0.05
+    }
+  ]
+}
