@@ -8,7 +8,15 @@ AI agent 修改 packwiz 元数据前，也应该阅读 `.agents/skills/packwiz-m
 
 1. 安装 Java 21。
 2. 克隆仓库。
-3. 双击或运行根目录开发工具：
+3. 首次拉取后先展开本地 packwiz 根目录文件：
+
+```powershell
+devtool.bat prepare-pack
+```
+
+该命令会从 `pack/` 模板生成根目录 `pack.toml`、`index.toml`、`.packwizignore`、图标、启动脚本和变量文件。这些是本地生成文件，不提交。
+
+4. 双击或运行根目录开发工具：
 
 ```powershell
 devtool.bat

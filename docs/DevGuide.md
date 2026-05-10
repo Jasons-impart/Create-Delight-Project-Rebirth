@@ -72,10 +72,11 @@ devtool.bat
 
 首次准备开发环境时：
 
-1. 从开发群文件下载需要手动补齐的 mod jar。
-2. 把这些 jar 放进仓库根目录的 `mods/` 文件夹。
-3. 双击根目录的 `devtool.bat`。
-4. 在菜单里选择 `12` 或 `13` 安装/同步 packwiz 管理的本地 mod 文件：
+1. 运行一次 `devtool.bat prepare-pack`，把 `pack/` 模板展开到根目录并生成 `pack.toml`、`index.toml`、`.packwizignore` 等本地发布文件。
+2. 从开发群文件下载需要手动补齐的 mod jar。
+3. 把这些 jar 放进仓库根目录的 `mods/` 文件夹。
+4. 双击根目录的 `devtool.bat`。
+5. 在菜单里选择 `12` 或 `13` 安装/同步 packwiz 管理的本地 mod 文件：
    - `12. 安装/同步 mod 文件到本地（GUI，自动重试）`：推荐本机开发使用。需要手动下载的 CurseForge 文件会弹页面；网络不稳时会自动重试。
    - `13. 安装/同步 mod 文件到本地（无 GUI，自动重试）`：适合服务器、远程终端或不想弹窗口时使用。
 
@@ -115,7 +116,7 @@ devtool.bat
 npm install
 ```
 
-`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 packwiz 索引。提交前仍需检查并手动暂存需要提交的 `pack.toml` 和 `index.toml` 变化。
+`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 packwiz 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
 
 也可以手动运行：
 

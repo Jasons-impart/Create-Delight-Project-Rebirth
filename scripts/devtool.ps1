@@ -130,6 +130,7 @@ Create Delight Project Rebirth 开发工具
   - packwiz 默认使用仓库内置的 scripts\bin\packwiz.exe。
   - 本地工具二进制、mod jar、服务端运行产物都会被 git 忽略。
   - pack.toml/index.toml/icon/start/variables 是由 pack/ 模板和 refresh 生成的本地发布根文件，默认不提交。
+  - 首次拉取仓库后必须主动运行一次 prepare-pack，展开本地 packwiz 根目录文件。
   - 添加、删除或修改 packwiz 文件后，请运行 refresh，并提交 *.pw.toml、pack/ 模板和需要共享的资源/配置变更。
 "@ | Write-Host
 }
@@ -169,7 +170,7 @@ function Show-MenuHeader {
 function Start-DevMenu {
   while ($true) {
     Show-MenuHeader
-    Write-Host "  P. 生成/刷新根目录发布文件"
+    Write-Host "  P. 生成/刷新根目录发布文件（首次拉仓库必须先跑一次）"
     Write-Host "  1. 安装或更新内置 packwiz"
     Write-Host "  2. 检查仓库结构"
     Write-Host "  3. 刷新 packwiz 索引"

@@ -5,13 +5,11 @@
 ## 应提交
 
 - `pack/`: 发布根目录模板。`pack/pack.toml`、`pack/.packwizignore.source`、`pack/icon.png`、`pack/server-icon.png`、`pack/start.bat`、`pack/start.sh`、`pack/variables.txt` 会由 `devtool.bat prepare-pack` / packwiz 操作同步或生成到根目录。
-- `pack.toml`、`index.toml`、`.packwizignore`: 本地生成的 packwiz 入口、索引和发布忽略规则，不提交。
 - `mods/*.pw.toml`: packwiz mod 描述文件。
 - `resourcepacks/*.pw.toml`、`shaderpacks/*.pw.toml`: packwiz 管理的资源包/光影包描述文件。
 - `config/`、`defaultconfigs/`: 确认需要团队共享的配置。
 - `kubejs/`: 已确认适配目标版本的脚本、数据、资源和自定义注册。
 - `ldlib/`、`tacz/`、`schematics/`、`minemenu/`: 目标整合包仍使用对应 mod 时维护的数据。
-- `start.bat`、`start.sh`、`variables.txt`: 从 `pack/` 同步到根目录的本地发布/运行文件，不提交。
 - `devtool.bat`: 根目录开发工具入口。
 - `scripts/devtool.ps1`: 开发工具实际实现。
 - `LICENSE`、`scripts/bin/packwiz.VERSION.txt`、`scripts/bin/packwiz-installer-bootstrap.VERSION.txt`: 内置 packwiz 工具的协议和来源记录。
@@ -28,6 +26,7 @@
 - `libraries/`, `versions/`, `logs/`, `crash-reports/`, `saves/`, `world*`
 - 本地服务端状态，如 `server.properties`、`eula.txt`、`user_jvm_args.txt`
 - `scripts/bin/` 下下载的其它工具二进制，已允许的 `scripts/bin/packwiz.exe` 和 `scripts/bin/packwiz-installer-bootstrap.jar` 除外
+- 根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`。这些由 `devtool.bat prepare-pack` / `refresh` 从 `pack/` 模板生成。
 
 ## 原则
 
