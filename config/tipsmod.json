@@ -9,7 +9,7 @@
   },
   "ignored_namespaces": {
     "//": "Tips from an ignored namespace will not be displayed in game.",
-    "value": []
+    "value": ["tipsmod"]
   },
   "ignored_tip_ids": {
     "//": "Adding a tip ID here will prevent it from being displayed.",

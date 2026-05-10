@@ -15,14 +15,14 @@ fullBackupTimer = 525960
 #The max amount of backup files to keep.
 # Default: 10
 # Range: 1 ~ 32767
-backupsToKeep = 10
+backupsToKeep = 5
 #The time between two backups in minutes
 #5 = each 5 minutes
 #60 = each hour
 #1440 = each day
 # Default: 120
 # Range: 1 ~ 32767
-timer = 120
+timer = 180
 #Compression level:
 #  0  = no compression (low CPU usage, larger files)
 #  9  = maximum compression (high CPU usage, smaller files)
@@ -35,14 +35,14 @@ sendMessages = true
 #The max size of storage the backup folder. If it takes more storage, old files will be deleted.
 #Needs to be written as <number><space><storage type>
 #Valid storage types: B, KB, MB, GB, TB
-maxDiskSize = "25 GB"
+maxDiskSize = "10 GB"
 #Used to define the output path.
 outputPath = "simplebackups"
 #Create backups, even if nobody is online
 noPlayerBackups = false
 #Should sub-directories be generated for each world?
 #Keep in mind that all configs above, including backupsToKeep and maxDiskSize, will be calculated for each sub directory.
-createSubDirs = true
+createSubDirs = false
 #Use an internal tick counter instead of the real world time. The value of the timer will be converted to ticks. When the timer is over, the backup will be created.
 #Keep in mind that lagging servers will result in larger gaps between two backups, e.g. 10 FPS in average will result in double the time set between backups.
 useTickCounter = false

@@ -1,5 +1,5 @@
 [general]
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#How many advancements deep you can see in the advancement screen. Vanilla is 2.
@@ -45,16 +45,16 @@
 	oddities = true
 
 [automation]
-	"Chains Connect Blocks" = true
-	Chute = true
-	"Dispensers Place Blocks" = true
+	"Chains Connect Blocks" = false
+	Chute = false
+	"Dispensers Place Blocks" = false
 	"Ender Watcher" = true
 	"Feeding Trough" = true
 	Gravisand = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
+	"Pistons Move Tile Entities" = false
 	"Redstone Randomizer" = true
 
 	[automation.dispensers_place_blocks]
@@ -94,13 +94,13 @@
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
 [building]
-	"Celebratory Lamps" = true
+	"Celebratory Lamps" = false
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
 	"Glass Item Frame" = true
 	"Gold Bars" = true
-	Grate = true
+	Grate = false
 	Hedges = true
 	"Hollow Logs" = true
 	"Industrial Palette" = true
@@ -111,18 +111,18 @@
 	"More Mud Blocks" = true
 	"More Potted Plants" = true
 	"Nether Brick Fence Gate" = true
-	"Rainbow Lamps" = true
+	"Rainbow Lamps" = false
 	"Raw Metal Bricks" = true
 	Rope = true
 	"Shear Vines" = true
 	Shingles = true
 	"Soul Sandstone" = true
-	Stools = true
-	"Sturdy Stone" = true
+	Stools = false
+	"Sturdy Stone" = false
 	Thatch = true
 	"Variant Bookshelves" = true
 	"Variant Chests" = true
-	"Variant Furnaces" = true
+	"Variant Furnaces" = false
 	"Variant Ladders" = true
 	"Vertical Planks" = true
 	"Vertical Slabs" = true
@@ -298,7 +298,7 @@
 		"Ignore Anti Overlap" = false
 
 	[management.easy_transferring]
-		"Enable Shift Lock" = true
+		"Enable Shift Lock" = false
 
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
@@ -331,11 +331,11 @@
 	"Ambient Discs" = true
 	"Ancient Tomes" = true
 	"Beacon Redirection" = true
-	"Bottled Cloud" = true
+	"Bottled Cloud" = false
 	"Color Runes" = true
 	"Endermosh Music Disc" = true
 	"Parrot Eggs" = true
-	"Pathfinder Maps" = true
+	"Pathfinder Maps" = false
 	Pickarang = true
 	"Seed Pouch" = true
 	"Skull Pikes" = true
@@ -500,7 +500,7 @@
 
 [tweaks]
 	"Armed Armor Stands" = true
-	"Automatic Recipe Unlock" = true
+	"Automatic Recipe Unlock" = false
 	"Better Elytra Rocket" = true
 	"Campfires Boost Elytra" = true
 	"Compasses Work Everywhere" = true
@@ -513,12 +513,12 @@
 	"Enhanced Ladders" = true
 	"Glass Shard" = true
 	"Gold Tools Have Fortune" = true
-	"Grab Chickens" = true
+	"Grab Chickens" = false
 	"Hoe Harvesting" = true
 	"Horses Swim" = true
 	"Improved Sponges" = true
 	"Lock Rotation" = true
-	"Magma Keeps Concrete Powder" = true
+	"Magma Keeps Concrete Powder" = false
 	"Map Washing" = true
 	"More Banner Layers" = true
 	"More Note Block Sounds" = true
@@ -532,7 +532,7 @@
 	"Renewable Spore Blossoms" = true
 	"Replace Scaffolding" = true
 	"Safer Creatures" = true
-	"Shulker Packing" = true
+	"Shulker Packing" = false
 	"Simple Harvest" = true
 	"Slabs To Blocks" = true
 	"Slimes To Magma Cubes" = true
@@ -755,17 +755,17 @@
 		"Smelt Raw Ore Blocks" = true
 
 [world]
-	"Ancient Wood" = true
-	"Azalea Wood" = true
+	"Ancient Wood" = false
+	"Azalea Wood" = false
 	"Big Stone Clusters" = true
-	"Blossom Trees" = true
+	"Blossom Trees" = false
 	"Cherry Grove Water Petals" = true
-	"Chorus Vegetation" = true
+	"Chorus Vegetation" = false
 	Corundum = true
 	"Fairy Rings" = true
 	"Fallen Logs" = true
 	"Glimmering Weald" = true
-	"Monster Box" = true
+	"Monster Box" = false
 	"Nether Obsidian Spikes" = true
 	"New Stone Types" = true
 	"No More Lava Pockets" = true
@@ -1174,9 +1174,9 @@
 			Dimensions = ["minecraft:the_nether"]
 
 	[world.new_stone_types]
-		"Enable Limestone" = true
-		"Enable Jasper" = true
-		"Enable Shale" = true
+		"Enable Limestone" = false
+		"Enable Jasper" = false
+		"Enable Shale" = false
 		"Enable Myalite" = true
 		"Add New Stones To Mason Trades" = true
 
@@ -1335,12 +1335,12 @@
 				"Is Blacklist" = false
 
 [mobs]
-	Crabs = true
+	Crabs = false
 	Forgotten = true
 	Foxhound = true
 	Shiba = true
 	Stonelings = true
-	Toretoise = true
+	Toretoise = false
 	Wraith = true
 
 	[mobs.crabs]
@@ -1531,7 +1531,7 @@
 	"Buckets Show Inhabitants" = true
 	Camera = true
 	"Chest Searching" = true
-	"Elytra Indicator" = true
+	"Elytra Indicator" = false
 	"Greener Grass" = true
 	"Improved Tooltips" = true
 	"Long Range Pick Block" = true
@@ -1580,7 +1580,7 @@
 
 	[client.improved_tooltips]
 		"Attribute Tooltips" = true
-		"Food Tooltips" = true
+		"Food Tooltips" = false
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true
 		"Enchanting Tooltips" = true
@@ -1775,13 +1775,13 @@
 		"Reroll Even If Not Out Of Stock" = false
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
-	Magnets = true
-	"Matrix Enchanting" = true
-	Pipes = true
+	Magnets = false
+	"Matrix Enchanting" = false
+	Pipes = false
 	"Tiny Potato" = true
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 
 	[oddities.backpack]
 		#Set this to true to allow the backpacks to be unequipped even with items in them

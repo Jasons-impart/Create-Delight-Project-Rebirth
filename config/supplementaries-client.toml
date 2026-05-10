@@ -112,7 +112,7 @@
 
 	[blocks.turn_table]
 		#Display visual particles when a block is rotated
-		turn_particles = true
+		turn_particles = false
 
 	[blocks.speaker_block]
 		#Mute speaker block incoming narrator messages and displays them in chat instead
@@ -251,7 +251,7 @@
 
 	[items.wrench]
 		#Display visual particles when a block is rotated
-		turn_particles = true
+		turn_particles = false
 
 	[items.flute]
 		#Display visual particles when a playing a flute

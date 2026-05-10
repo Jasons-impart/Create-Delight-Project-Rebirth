@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"blacksmith_objs"
+	],
+	"rewards": [
+		"_money_rews",
+		"blacksmith_rews"
+	]
+}

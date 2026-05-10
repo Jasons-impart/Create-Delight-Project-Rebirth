@@ -32,7 +32,7 @@
 	#幻翼附带玩偶的生成概率
 	# Default: 0.03
 	# Range: 0.0 ~ 1.0
-	PhantomDollSpawnChance = 0.03
+	PhantomDollSpawnChance = 0.01
 	#Ticks for phantom spawned doll to exist, set to 0 to disable despawn
 	#幻翼附带玩偶的存在时间，设为 -1 则不会消失
 	# Default: 3600

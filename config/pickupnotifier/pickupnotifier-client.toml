@@ -8,7 +8,7 @@
 	#Mode for drawing a background behind entries for better visibility. 'CHAT' is similar to the chat background, 'TOOLTIP' uses the tooltip background rendering instead.
 	#Default Value: NONE
 	#Allowed Values: NONE, CHAT, TOOLTIP
-	entry_background = "NONE"
+	entry_background = "CHAT"
 	#Add the name of the item to the entry.
 	#Default Value: true
 	display_item_name = true
@@ -41,7 +41,7 @@
 	#Scale of entries. A lower scale will make room for more rows to show. Works together with "GUI Scale" option in "Video Settings".
 	# Default: 4
 	# Range: 1 ~ 24
-	scale = 4
+	scale = 6
 
 [general]
 	#Prevent items from being added to the pick-up log when in creative mode.

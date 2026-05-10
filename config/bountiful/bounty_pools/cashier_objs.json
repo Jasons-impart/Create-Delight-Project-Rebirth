@@ -1,0 +1,4574 @@
+{
+    "content": {
+        "cashier_obj_spicy_strips": {
+            "type": "item",
+            "content": "casualness_delight:spicy_strips",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_cubed_raw": {
+            "type": "item_tag",
+            "content": "forge:meat/cubed/raw",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_meat_scrap_cooked": {
+            "type": "item_tag",
+            "content": "forge:meat/scrap/cooked",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_jello": {
+            "type": "item_tag",
+            "content": "fruitsdelight:jello",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200
+        },
+        "cashier_obj_tortilla_chips": {
+            "type": "item",
+            "content": "culturaldelights:tortilla_chips",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200
+        },
+        "cashier_obj_tortilla_raw": {
+            "type": "item",
+            "content": "corn_delight:tortilla_raw",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_dried_kelp": {
+            "type": "item",
+            "content": "minecraft:dried_kelp",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200
+        },
+        "cashier_obj_maggot_salad": {
+            "type": "item",
+            "content": "alexsdelight:maggot_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200
+        },
+        "cashier_obj_coral_crunch": {
+            "type": "item",
+            "content": "crabbersdelight:coral_crunch",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_nether_wart_sourdough": {
+            "type": "item",
+            "content": "farmersrespite:nether_wart_sourdough",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_offal_cooked": {
+            "type": "item_tag",
+            "content": "forge:offal/cooked",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_chorus_sauce": {
+            "type": "item",
+            "content": "ends_delight:chorus_sauce",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500
+        },
+        "cashier_obj_hawberry_stick": {
+            "type": "item",
+            "content": "fruitsdelight:hawberry_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 600
+        },
+        "cashier_obj_meat_cubed": {
+            "type": "item_tag",
+            "content": "forge:meat/cubed/raw",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500
+        },
+        "cashier_obj_sausage": {
+            "type": "item_tag",
+            "content": "forge:sausage",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 700
+        },
+        "cashier_obj_ground_meat": {
+            "type": "item_tag",
+            "content": "forge:ground_meat/cooked",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500
+        },
+        "cashier_obj_cookies": {
+            "type": "item_tag",
+            "content": "supplementaries:cookies",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_bar_of_caramel": {
+            "type": "item",
+            "content": "create_confectionery:bar_of_caramel",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_tortilla": {
+            "type": "item",
+            "content": "culturaldelights:tortilla",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_cornbread": {
+            "type": "item",
+            "content": "corn_delight:cornbread",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_hawberry_sheet": {
+            "type": "item",
+            "content": "fruitsdelight:hawberry_sheet",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_kiwi_popsicle": {
+            "type": "item",
+            "content": "fruitsdelight:kiwi_popsicle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_hamimelon_popsicle": {
+            "type": "item",
+            "content": "fruitsdelight:hamimelon_popsicle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_hawberry_roll": {
+            "type": "item",
+            "content": "fruitsdelight:hawberry_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_smoked_tomato": {
+            "type": "item",
+            "content": "culturaldelights:smoked_tomato",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_jar_of_pickles": {
+            "type": "item",
+            "content": "crabbersdelight:jar_of_pickles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_kelp_shake": {
+            "type": "item",
+            "content": "crabbersdelight:kelp_shake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_sea_pickle_juice": {
+            "type": "item",
+            "content": "crabbersdelight:sea_pickle_juice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_chocolate_cake_slice": {
+            "type": "item",
+            "content": "create_central_kitchen:chocolate_cake_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 600
+        },
+        "cashier_obj_honey_cake_slice": {
+            "type": "item",
+            "content": "create_central_kitchen:honey_cake_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500
+        },
+        "cashier_obj_bread_slice": {
+            "type": "item",
+            "content": "some_assembly_required:bread_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 700
+        },
+        "cashier_obj_toasted_bread_slice": {
+            "type": "item",
+            "content": "some_assembly_required:toasted_bread_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_toasted_green_tongue": {
+            "type": "item",
+            "content": "casualness_delight:green_tongue",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1100
+        },
+        "cashier_obj_toasted_roast_gluten": {
+            "type": "item",
+            "content": "casualness_delight:roast_gluten",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_candy_cane": {
+            "type": "item",
+            "content": "alexscaves:candy_cane",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_pumpkin_pie_slice": {
+            "type": "item",
+            "content": "create_central_kitchen:pumpkin_pie_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500
+        },
+        "cashier_obj_raw_hotdog": {
+            "type": "item_tag",
+            "rarity": "UNCOMMON",
+            "content": "createdelight:raw_hotdog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1300
+        },
+        "cashier_obj_cooked_hotdog": {
+            "type": "item_tag",
+            "rarity": "UNCOMMON",
+            "content": "createdelight:cooked_hotdog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_juice": {
+            "type": "item_tag",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:juice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1700
+        },
+        "cashier_obj_jelly": {
+            "type": "item_tag",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:jelly",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_hot_chocolate_bottle": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "create_confectionery:hot_chocolate_bottle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_bread": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:bread",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_kimchi": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:kimchi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_roasted_peanut": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:roasted_peanut",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1100
+        },
+        "cashier_obj_pickled_pepper": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:pickled_pepper",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_pickled_onion": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:pickled_onion",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_pickled_beetroot": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:pickled_beetroot",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_oatmeal": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:oatmeal",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_creamy_corn_drink": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "corn_delight:creamy_corn_drink",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_roast_ear": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "mynethersdelight:roast_ear",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_smoked_cut_eggplant": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:smoked_cut_eggplant",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000
+        },
+        "cashier_obj_grilled_corn": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "corn_delight:grilled_corn",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1100
+        },
+        "cashier_obj_boiled_corn": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "corn_delight:boiled_corn",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_blueberry_muffin": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:blueberry_muffin",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1600
+        },
+        "cashier_obj_honey_candy": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "create_confectionery:honey_candy",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_soothing_hot_chocolate": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "create_confectionery:soothing_hot_chocolate",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_potato_chip": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "casualness_delight:potato_chip",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_quiche_lorraine_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "casualness_delight:quiche_lorraine_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_stargazy_pie_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "casualness_delight:stargazy_pie_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1600
+        },
+        "cashier_obj_mosquito_repellent_stew": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "alexsmobs:mosquito_repellent_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_bowl_of_jelly_bread": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:jelly_bread",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_cooked_salmon_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:cooked_salmon_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_cooked_cod_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:cooked_cod_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_cooked_bacon": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:cooked_bacon",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_hot_cocoa": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:hot_cocoa",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_apple_cider": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:apple_cider",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_melon_juice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:melon_juice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_cooked_tropical_fish": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "crabbersdelight:cooked_tropical_fish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_cooked_pufferfish_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "crabbersdelight:cooked_pufferfish_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_cooked_tropical_fish_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "crabbersdelight:cooked_tropical_fish_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200
+        },
+        "cashier_obj_cooked_mutton_chops": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:cooked_mutton_chops",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_nether_salad": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "farmersdelight:nether_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_avocado_toast": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:avocado_toast",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1600
+        },
+        "cashier_obj_pickle": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:pickle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_smoked_eggplant": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:smoked_eggplant",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_calamari_roll": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:calamari_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_elote": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "culturaldelights:elote",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_caramel_popcorn": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "corn_delight:caramel_popcorn",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_salted_salmon": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:salted_salmon",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_baked_pear": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:baked_pear",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_baked_durian": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "fruitsdelight:baked_durian",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500
+        },
+        "cashier_obj_honey_roasted_peanut": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:honey_roasted_peanut",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_salted_cod": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:salted_cod",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_surstromming": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "vintagedelight:surstromming",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_cooked_lobster_tail": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsmobs:cooked_lobster_tail",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_cooked_crab_leg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "quark:cooked_crab_leg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_cooked_salmon": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_salmon",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_cooked_cod": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_cod",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_cooked_rabbit": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_rabbit",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_cooked_chicken": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_chicken",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_cooked_mutton": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_mutton",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_phantom_puff": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:phantom_puff",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_baked_potato": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:baked_potato",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_durian_pie": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:durian_pie",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_fig_tart": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:fig_tart",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_lemon_tart": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:lemon_tart",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_chorus_flower_pie": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:chorus_flower_pie",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_roasted_shulker_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:roasted_shulker_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_dried_endermite_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:dried_endermite_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_roasted_dragon_meat_cuts": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:roasted_dragon_meat_cuts",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_chocolate_candy": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "createdelight:chocolate_candy",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3600
+        },
+        "cashier_obj_spring_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:spring_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_chocolate": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "forge:bars/chocolate",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_glazed_berries": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "createdelight:glazed_berries",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_caramelized_marshmellow_on_a_stick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "create_confectionery:caramelized_marshmellow_on_a_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_mixed_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:mixed_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_creamed_corn": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:creamed_corn",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_tropical_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:tropical_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_pufferfish_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:pufferfish_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_corn_dog": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "corn_delight:corn_dog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_oreo": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "createcafe:oreo",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_milk_tea": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "createdelight:milk_tea",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cafe": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "createdelight:cafe",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_blazing_chili": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersrespite:blazing_chili",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_boiled_dumpling": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "createdelight:boiled_dumpling",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_pineapple_pie": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:pineapple_pie",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_cooked_moose_ribs": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsmobs:cooked_moose_ribs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_kangaroo_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsmobs:cooked_kangaroo_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_catfish": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsmobs:cooked_catfish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_donkey_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:cooked_donkey_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_beef": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:cooked_beef",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_cheese": {
+            "type": "item_tag",
+            "rarity": "RARE",
+            "content": "forge:cheese",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_tonkatsu": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:tonkatsu",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_fried_fish": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:fried_fish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_pb_j": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:pb_j",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3600
+        },
+        "cashier_obj_cucumber_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:cucumber_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_pickled_egg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:pickled_egg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_pickled_pitcher_pod": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:pickled_pitcher_pod",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_deluxe_granola_bar": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:deluxe_granola_bar",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_empanada": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:empanada",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_fried_chicken_chip": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:fried_chicken_chip",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_bison": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:cooked_bison",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_cooked_bunfungus": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:cooked_bunfungus",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_bison_patty": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:bison_patty",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_gongylidia_bruschetta": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:gongylidia_bruschetta",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_ratatouille": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:ratatouille",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_bacon_and_eggs": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:bacon_and_eggs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_bone_broth": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:bone_broth",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_cabbage_rolls": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:cabbage_rolls",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_salmon_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:salmon_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_hot_cream_cone": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:hot_cream_cone",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_fish_stick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:fish_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_bisque": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:bisque",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_clam_chowder": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:clam_chowder",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_shrimp_fried_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:shrimp_fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_cooked_goat_chop": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "butchercraft:cooked_goat_chop",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_cooked_loin": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:cooked_loin",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_sausage_and_potatoes": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:sausage_and_potatoes",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_hotdog": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:hotdog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_crab_legs": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:crab_legs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_cooked_frog_leg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:cooked_frog_leg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_cooked_shrimp": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:cooked_shrimp",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_cooked_clawster": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:cooked_clawster",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 4500
+        },
+        "cashier_obj_cooked_crab": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:cooked_crab",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 4500
+        },
+        "cashier_obj_cooked_clam_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:cooked_clam_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_cooked_loose_moose_rib": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:cooked_loose_moose_rib",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_cooked_bunfungus_drumstick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:cooked_bunfungus_drumstick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_cooked_catfish_slice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:cooked_catfish_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_boiled_egg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:boiled_egg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_donkey_burger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:donkey_burger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_kangaroo_burger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsmobs:kangaroo_burger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_golden_carrot": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:golden_carrot",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_lightning_dragon_flesh": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "iceandfire:lightning_dragon_flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6000
+        },
+        "cashier_obj_ice_dragon_flesh": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "iceandfire:ice_dragon_flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6200
+        },
+        "cashier_obj_fire_dragon_flesh": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "iceandfire:fire_dragon_flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6000
+        },
+        "cashier_obj_pear_with_rock_sugar": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:pear_with_rock_sugar",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_orange_chicken": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:orange_chicken",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_fig_chicken_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:fig_chicken_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_orange_marinated_pork": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:orange_marinated_pork",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_lychee_chicken": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:lychee_chicken",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_pineapple_marinated_pork": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:pineapple_marinated_pork",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_bowl_of_pineapple_fried_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "fruitsdelight:bowl_of_pineapple_fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_mango_milk_tea": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "createcafe:mango_milk_tea",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_bowl_of_sweet_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "casualness_delight:bowl_of_sweet_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_stuffed_rice_cake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:stuffed_rice_cake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_ender_bamboo_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:ender_bamboo_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_ender_sausage": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:ender_sausage",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_shulker_omelette": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:shulker_omelette",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_smoked_dragon_leg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:smoked_dragon_leg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5200
+        },
+        "cashier_obj_roasted_dragon_meat": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "ends_delight:roasted_dragon_meat",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5000
+        },
+        "cashier_obj_mutton_sandwich": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:mutton_sandwich",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_hearty_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:hearty_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_fish_taco": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:fish_taco",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_eggplant_burger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:eggplant_burger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_pork_wrap": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:pork_wrap",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_chocolate_nut_granola_bar": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "vintagedelight:chocolate_nut_granola_bar",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1800
+        },
+        "cashier_obj_midori_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "culturaldelights:midori_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_classic_corn_dog": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "corn_delight:classic_corn_dog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_corn_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "corn_delight:corn_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_pumpkin_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:pumpkin_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_baked_cod_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:baked_cod_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_noodle_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:noodle_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_pasta_with_meatballs": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:pasta_with_meatballs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_pasta_with_mutton_chop": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:pasta_with_mutton_chop",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_mushroom_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:mushroom_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_roasted_mutton_chops": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:roasted_mutton_chops",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_vegetable_noodles": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:vegetable_noodles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_steak_and_potatoes": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:steak_and_potatoes",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_fried_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_fish_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:fish_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_vegetable_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:vegetable_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_chicken_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:chicken_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_beef_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:beef_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_kelp_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:kelp_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1900
+        },
+        "cashier_obj_stuffed_potato": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:stuffed_potato",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_dumplings": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:dumplings",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_mutton_wrap": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:mutton_wrap",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_smoked_ham": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:smoked_ham",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_barbecue_stick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:barbecue_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_fruit_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:fruit_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_glow_berry_custard": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:glow_berry_custard",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_bacon_sandwich": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:bacon_sandwich",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_hamburger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:hamburger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3300
+        },
+        "cashier_obj_chicken_sandwich": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:chicken_sandwich",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_egg_sandwich": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:egg_sandwich",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_kangaroo_pasta": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:kangaroo_pasta",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_bunfungus_sandwich": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:bunfungus_sandwich",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_bison_burger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:bison_burger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_shepherds_pie": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:shepherds_pie",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_honey_glazed_ham": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:honey_glazed_ham",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3300
+        },
+        "cashier_obj_stuffed_pumpkin": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:stuffed_pumpkin",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_grilled_salmon": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:grilled_salmon",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_squid_ink_pasta": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:squid_ink_pasta",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3500
+        },
+        "cashier_obj_roast_chicken": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "farmersdelight:roast_chicken",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_strider_with_grilled_fungus": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:strider_with_grilled_fungus",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_breakfast_sampler": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:breakfast_sampler",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_blue_tenderloin_steak": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:blue_tenderloin_steak",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_cooked_goat_roast": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "butchercraft:cooked_goat_roast",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3300
+        },
+        "cashier_obj_cooked_pork_ribs": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "butchercraft:cooked_pork_ribs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_seafood_gumbo": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:seafood_gumbo",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3500
+        },
+        "cashier_obj_squid_kebob": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:squid_kebob",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_clam_bake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:clam_bake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_stuffed_nautilus_shell": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:stuffed_nautilus_shell",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_shrimp_skewer": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:shrimp_skewer",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_surf_and_turf": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:surf_and_turf",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3600
+        },
+        "cashier_obj_crab_cakes": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "crabbersdelight:crab_cakes",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_sculk_shrieker_shake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_shrieker_shake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_heartburger": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:heartburger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_plate_of_warden_heart": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:plate_of_warden_heart",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3700
+        },
+        "cashier_obj_sculk_catalyst_pie_slice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_catalyst_pie_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_sculk_vein_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_vein_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_sculk_barbecue_stick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_barbecue_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_lobster_pasta": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:lobster_pasta",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3600
+        },
+        "cashier_obj_acacia_blossom_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:acacia_blossom_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_kangaroo_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "alexsdelight:kangaroo_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_sculk_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_baked_warden_ear_on_a_stick": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:baked_warden_ear_on_a_stick",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3300
+        },
+        "cashier_obj_warden_ear_fried_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:warden_ear_fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_sculk_sensor_tendril_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_sensor_tendril_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_sculk_sensor_tendril_roll_slice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_sensor_tendril_roll_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_sculk_sensor_sprinkles": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "silentsdelight:sculk_sensor_sprinkles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_spicy_noodle_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:spicy_noodle_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_plate_of_ghasta_with_cream": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:plate_of_ghasta_with_cream",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3600
+        },
+        "cashier_obj_spicy_cotton": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:spicy_cotton",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_plate_of_cold_striderloaf": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:plate_of_cold_striderloaf",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_plate_of_striderloaf": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:plate_of_striderloaf",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_bleeding_tartar": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:bleeding_tartar",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3300
+        },
+        "cashier_obj_deviled_egg": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:deviled_egg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_crimson_stroganoff": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:crimson_stroganoff",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_strider_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:strider_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_hot_cream": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:hot_cream",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_ghast_salad": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:ghast_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3500
+        },
+        "cashier_obj_spicy_skewer": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:spicy_skewer",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_chilidog": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:chilidog",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_spicy_hoglin_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:spicy_hoglin_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3400
+        },
+        "cashier_obj_hot_wings": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:hot_wings",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_magma_cake_slice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:magma_cake_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2700
+        },
+        "cashier_obj_rock_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:rock_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_spicy_curry": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "mynethersdelight:spicy_curry",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3500
+        },
+        "cashier_obj_shrimp_fried_rice_2": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "alexsmobs:shrimp_fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 12000
+        },
+        "cashier_obj_paper_wrapped_fish": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:paper_wrapped_fish",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_bobo_chicken": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:bobo_chicken",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 11500
+        },
+        "cashier_obj_stargazy_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:stargazy_pie",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 13500
+        },
+        "cashier_obj_quiche_lorraine": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:quiche_lorraine",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8500
+        },
+        "cashier_obj_cheese_wheel": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "brewinandchewin:flaxen_cheese_wheel",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9000
+        },
+        "cashier_obj_sweet_rice": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:sweet_rice",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8300
+        },
+        "cashier_obj_spring_roll_medley": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:spring_roll_medley",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 10500
+        },
+        "cashier_obj_plate_of_fried_dumpling": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:plate_of_fried_dumpling",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8800
+        },
+        "cashier_obj_pickle_soup": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "vintagedelight:pickle_soup",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9100
+        },
+        "cashier_obj_cheese_burger": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "vintagedelight:cheese_burger",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 10000
+        },
+        "cashier_obj_popcorn_box": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "corn_delight:popcorn_box",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8700
+        },
+        "cashier_obj_nachos_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "corn_delight:nachos_block",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_exotic_roll_medley": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "culturaldelights:exotic_roll_medley",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 12000
+        },
+        "cashier_obj_apple_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:apple_pie",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8500
+        },
+        "cashier_obj_sweet_berry_cheesecake": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:sweet_berry_cheesecake",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9000
+        },
+        "cashier_obj_chocolate_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:chocolate_pie",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8600
+        },
+        "cashier_obj_roast_chicken_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:roast_chicken_block",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_meat_pizza": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "vintagedelight:meat_pizza",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 11000
+        },
+        "cashier_obj_century_egg": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "vintagedelight:century_egg",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 11500
+        },
+        "cashier_obj_rose_hip_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersrespite:rose_hip_pie",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8800
+        },
+        "cashier_obj_coffee_cake": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersrespite:coffee_cake",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9000
+        },
+        "cashier_obj_grilled_shulker_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:grilled_shulker_block",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 11000
+        },
+        "cashier_obj_assorted_salad": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:assorted_salad",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8400
+        },
+        "cashier_obj_fried_dumpling": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "casualness_delight:fried_dumpling",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 8200
+        },
+        "cashier_obj_fried_dragon_egg": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:fried_dragon_egg",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_mangosteen_cake": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "fruitsdelight:mangosteen_cake",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 13000
+        },
+        "cashier_obj_fig_pudding": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "fruitsdelight:fig_pudding",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 11500
+        },
+        "cashier_obj_pineapple_fried_rice": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "fruitsdelight:pineapple_fried_rice",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_chorus_fruit_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:chorus_fruit_pie",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 11000
+        },
+        "cashier_obj_dragon_leg_with_sauce": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:dragon_leg_with_sauce",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12500
+        },
+        "cashier_obj_steamed_dragon_egg": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:steamed_dragon_egg",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 13500
+        },
+        "cashier_obj_roasted_dragon_steak": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "ends_delight:roasted_dragon_steak",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 14000
+        },
+        "cashier_obj_plate_of_stuffed_hoglin": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:plate_of_stuffed_hoglin",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 12000
+        },
+        "cashier_obj_plate_of_stuffed_hoglin_snout": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:plate_of_stuffed_hoglin_snout",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 11500
+        },
+        "cashier_obj_fried_hoglin_chop": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:fried_hoglin_chop",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_plated_warden_heart": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "silentsdelight:plated_warden_heart",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 18000
+        },
+        "cashier_obj_sculk_catalyst_pie": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "silentsdelight:sculk_catalyst_pie",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_rice_roll_medley_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:rice_roll_medley_block",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 10000
+        },
+        "cashier_obj_shepherds_pie_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:shepherds_pie_block",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 12000
+        },
+        "cashier_obj_honey_glazed_ham_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:honey_glazed_ham_block",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 11500
+        },
+        "cashier_obj_stuffed_pumpkin_block": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "farmersdelight:stuffed_pumpkin_block",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 10500
+        },
+        "cashier_obj_plate_of_stuffed_hoglin_ham": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:plate_of_stuffed_hoglin_ham",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 13500
+        },
+        "cashier_obj_striderloaf": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:striderloaf",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 9500
+        },
+        "cashier_obj_hot_wings_bucket": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "mynethersdelight:hot_wings_bucket",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 11000
+        },
+        "cashier_obj_magma_cake": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "mynethersdelight:magma_cake_block",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 25000,
+            "weightMult": 0.3
+        },
+        "cashier_obj_ghasta_with_cream": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "mynethersdelight:ghasta_with_cream",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 31000,
+            "weightMult": 0.25
+        },
+        "cashier_obj_roast_stuffed_hoglin": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "mynethersdelight:roast_stuffed_hoglin",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 28000,
+            "weightMult": 0.25
+        },
+        "cashier_obj_steamed_dragon_egg_block": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "ends_delight:steamed_dragon_egg_block",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 35000,
+            "weightMult": 0.25
+        },
+        "cashier_obj_dragon_leg_with_sauce_block": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "ends_delight:dragon_leg_with_sauce_block",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.25
+        },
+        "cashier_obj_deluxe_burger": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "vintagedelight:deluxe_burger",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 38000,
+            "weightMult": 0.25
+        },
+        "cashier_obj_glow_squid_tentacles": {
+            "type": "item",
+            "content": "oceanic_delight:glow_squid_tentacles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_squid_tentacles": {
+            "type": "item",
+            "content": "oceanic_delight:squid_tentacles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_shrimp_slices": {
+            "type": "item",
+            "content": "oceanic_delight:shrimp_slices",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sea_pickle_slices": {
+            "type": "item",
+            "content": "oceanic_delight:sea_pickle_slices",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 200,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sea_grape_juice": {
+            "type": "item",
+            "content": "oceanic_delight:sea_grape_juice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_elder_guardian_eye": {
+            "type": "item",
+            "content": "oceanic_delight:elder_guardian_eye",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 500,
+            "rarity": "RARE"
+        },
+        "cashier_obj_salmon_eggs": {
+            "type": "item",
+            "content": "oceanic_delight:salmon_eggs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_ancient_fish_eggs": {
+            "type": "item",
+            "content": "oceanic_delight:ancient_fish_eggs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 450,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_sea_grape": {
+            "type": "item",
+            "content": "oceanic_delight:sea_grape",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_stuffed_pufferfish": {
+            "type": "item",
+            "content": "oceanic_delight:stuffed_pufferfish",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 800,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_bowl_of_paella": {
+            "type": "item",
+            "content": "oceanic_delight:bowl_of_paella",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1000,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_paella_plate": {
+            "type": "item",
+            "content": "oceanic_delight:paella_plate",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1200,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_squid_and_pickles": {
+            "type": "item",
+            "content": "oceanic_delight:squid_and_pickles",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 950,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_shrimp_rice": {
+            "type": "item",
+            "content": "oceanic_delight:shrimp_rice",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1050,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_pasta_with_eyeball": {
+            "type": "item",
+            "content": "oceanic_delight:pasta_with_eyeball",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1200,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_shrimp_stew": {
+            "type": "item",
+            "content": "oceanic_delight:shrimp_stew",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1300,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_fish_egg_noodle_soup": {
+            "type": "item",
+            "content": "oceanic_delight:fish_egg_noodle_soup",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1500,
+            "rarity": "RARE"
+        },
+        "cashier_obj_globular_rice": {
+            "type": "item",
+            "content": "oceanic_delight:globular_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_shrimp_roll": {
+            "type": "item",
+            "content": "oceanic_delight:shrimp_roll",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1500,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_glow_squid_stew": {
+            "type": "item",
+            "content": "oceanic_delight:glow_squid_stew",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1800,
+            "rarity": "RARE"
+        },
+        "cashier_obj_fish_egg_roll_slice": {
+            "type": "item",
+            "content": "youkaishomecoming:tobiko_gunkan",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sea_pickle_roll": {
+            "type": "item",
+            "content": "oceanic_delight:sea_pickle_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sea_pickle_roll_slice": {
+            "type": "item",
+            "content": "oceanic_delight:sea_pickle_roll_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_steamed_beef": {
+            "type": "item",
+            "content": "oceanic_delight:steamed_beef",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1500,
+            "rarity": "RARE"
+        },
+        "cashier_obj_takoyaki": {
+            "type": "item",
+            "content": "oceanic_delight:takoyaki",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1700,
+            "rarity": "RARE"
+        },
+        "cashier_obj_shrimp_chips": {
+            "type": "item",
+            "content": "oceanic_delight:shrimp_chips",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_fried_shrimp": {
+            "type": "item",
+            "content": "oceanic_delight:fried_shrimp",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1100,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sea_salad": {
+            "type": "item",
+            "content": "oceanic_delight:sea_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_caesar_salad": {
+            "type": "item",
+            "content": "oceanic_delight:caesar_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_potato_salad": {
+            "type": "item",
+            "content": "oceanic_delight:potato_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_squid_salad": {
+            "type": "item",
+            "content": "oceanic_delight:squid_salad",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 900,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_seafood_skewer": {
+            "type": "item",
+            "content": "oceanic_delight:seafood_skewer",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1100,
+            "rarity": "UNCOMMON"
+        },
+        "cashier_obj_caviar_toast": {
+            "type": "item",
+            "content": "oceanic_delight:caviar_toast",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1500,
+            "rarity": "RARE"
+        },
+        "cashier_obj_sponge_cake_slice": {
+            "type": "item",
+            "content": "oceanic_delight:sponge_cake_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_sponge_cake": {
+            "type": "item",
+            "content": "oceanic_delight:sponge_cake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1300,
+            "rarity": "COMMON"
+        },
+        "cashier_obj_raw_lamprey": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:raw_lamprey",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_cooked_flesh": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:cooked_flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_flesh": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 380
+        },
+        "cashier_obj_roasted_lamprey_fillet": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:roasted_lamprey_fillet",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 750
+        },
+        "cashier_obj_raw_lamprey_fillet": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:raw_lamprey_fillet",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 700
+        },
+        "cashier_obj_roasted_lamprey": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:roasted_lamprey",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 750
+        },
+        "cashier_obj_pods": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:pods",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250
+        },
+        "cashier_obj_soybean": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:soybean",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 280
+        },
+        "cashier_obj_plate_of_stuffed_pufferfish": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "oceanic_delight:plate_of_stuffed_pufferfish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3000
+        },
+        "cashier_obj_bun": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:bun",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250
+        },
+        "cashier_obj_tobiko_gunkan": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:tobiko_gunkan",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_tutu_congee": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:tutu_congee",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_steamed_egg_in_bamboo": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:steamed_egg_in_bamboo",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 750
+        },
+        "cashier_obj_doughnut": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "create_deepfried:donut",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_higi_chocolate": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:higi_chocolate",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950
+        },
+        "cashier_obj_higi_doughnut": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:higi_doughnut",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 900
+        },
+        "cashier_obj_fairy_candy": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:fairy_candy",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_candy_apple": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:candy_apple",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_pork_rice_ball": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:pork_rice_ball",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_oyaki": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:oyaki",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_koishi_mousse": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:koishi_mousse",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_yakumo_inari": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:yakumo_inari",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_sekibankiyaki": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:sekibankiyaki",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3100
+        },
+        "cashier_obj_senbei": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:senbei",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250
+        },
+        "cashier_obj_onigili": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:onigili",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_yashouma_dango": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:yashouma_dango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_sakura_mochi": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:sakura_mochi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_matcha": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:matcha",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_cooked_mandrake_root": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:cooked_mandrake_root",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 700
+        },
+        "cashier_obj_roe": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "oceanic_delight:salmon_eggs",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2900
+        },
+        "cashier_obj_coffee_mochi": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:coffee_mochi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2800
+        },
+        "cashier_obj_tsukimi_dango": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:tsukimi_dango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 3200
+        },
+        "cashier_obj_mochi": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:mochi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_oily_bean_curd": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:oily_bean_curd",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 650
+        },
+        "cashier_obj_tofu": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:tofu",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_matcha_mochi": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:matcha_mochi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2600
+        },
+        "cashier_obj_blazing_red_curry": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:blazing_red_curry",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_avgolemono": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:avgolemono",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_apaki": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:apaki",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 900
+        },
+        "cashier_obj_shaved_ice_over_rice": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:shaved_ice_over_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_assorted_dango": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:assorted_dango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_mitarashi_dango": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:mitarashi_dango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 330
+        },
+        "cashier_obj_kinako_dango": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:kinako_dango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 320
+        },
+        "cashier_obj_big_popsicle": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:big_popsicle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_milk_popsicle": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:milk_popsicle",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 330
+        },
+        "cashier_obj_red_velvet_cake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:red_velvet_cake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        },
+        "cashier_obj_red_velvet_cake_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:red_velvet_cake_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950
+        },
+        "cashier_obj_flesh_feast": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:flesh_feast",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5000
+        },
+        "cashier_obj_raw_flesh_feast": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:raw_flesh_feast",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5200
+        },
+        "cashier_obj_chest_of_heart_throbbing_surprise": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:chest_of_heart_throbbing_surprise",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000
+        },
+        "cashier_obj_scarlet_devil_cake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:scarlet_devil_cake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_flesh_chocolate_mousse": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:flesh_chocolate_mousse",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 4800
+        },
+        "cashier_obj_bowl_of_flesh_feast": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:bowl_of_flesh_feast",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5100
+        },
+        "cashier_obj_flesh_stew": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:flesh_stew",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_lions_head": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:lions_head",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_canned_flesh": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:canned_flesh",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5400
+        },
+        "cashier_obj_flesh_roll": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:flesh_roll",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_flesh_dumplings": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:flesh_dumplings",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_bowl_of_heart_throbbing_surprise": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:bowl_of_heart_throbbing_surprise",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6000
+        },
+        "cashier_obj_udumbara_cake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:udumbara_cake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_mapo_tofu": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:mapo_tofu",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_grilled_eel_over_rice": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:grilled_eel_over_rice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2100
+        },
+        "cashier_obj_tuscan_salmon": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:tuscan_salmon",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_mushroom_soup": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:mushroom_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_higan_soup": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:higan_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_longevity_noodles": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:longevity_noodles",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_miso_soup": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:miso_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_seafood_miso_soup": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:seafood_miso_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_poor_god_soup": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:poor_god_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 750
+        },
+        "cashier_obj_power_soup": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:power_soup",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_shirayuki": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:shirayuki",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_sweet_ormosia_mochi_mixed_boiled": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:sweet_ormosia_mochi_mixed_boiled",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_tofu_burger": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:tofu_burger",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950
+        },
+        "cashier_obj_stinky_tofu": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:stinky_tofu",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_sauce_grilled_fish": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:sauce_grilled_fish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_pastitsio": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:pastitsio",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+        "cashier_obj_imitation_bear_paw": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:imitation_bear_paw",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5000
+        },
+        "cashier_obj_dried_fish": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:dried_fish",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 300
+        },
+        "cashier_obj_bamboo_mizuyokan": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:bamboo_mizuyokan",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_tarte_lune": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:tarte_lune",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_tarte_lune_slice": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:tarte_lune_slice",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 950
+        },
+        "cashier_obj_scarlet_mist": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:scarlet_mist",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_wind_priestesses": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:wind_priestesses",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_moon_rocket": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:moon_rocket",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 5500
+        },
+        "cashier_obj_lemon_black_tea": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:lemon_black_tea",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_peach_tapioca": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:peach_tapioca",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_peach_yatsuhashi": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:peach_yatsuhashi",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 330
+        },
+        "cashier_obj_daiginjo": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:daiginjo",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6000
+        },
+        "cashier_obj_dassai": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "youkaishomecoming:dassai",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 6200
+        },
+        "cashier_obj_full_moons_eve": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:full_moons_eve",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_tengu_tango": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:tengu_tango",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2300
+        },
+        "cashier_obj_sparrow_sake": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:sparrow_sake",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_mead": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:mead",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 850
+        },
+        "cashier_obj_mio": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "youkaishomecoming:mio",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 900
+        },
+        "cashier_obj_mocha": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:mocha",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_cappuccino": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:cappuccino",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 380
+        },
+        "cashier_obj_blood_curd": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:blood_curd",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        },
+        "cashier_obj_seven_colored_yokan": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:seven_colored_yokan",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2500
+        },
+        "cashier_obj_espresso": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:espresso",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 320
+        },
+        "cashier_obj_americano": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:americano",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350
+        },
+        "cashier_obj_ristretto": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:ristretto",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 330
+        },
+        "cashier_obj_latte": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:latte",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 380
+        },
+        "cashier_obj_macchiato": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "youkaishomecoming:macchiato",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 400
+        },
+        "cashier_obj_affogato": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:affogato",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2200
+        },
+        "cashier_obj_con_panna": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "youkaishomecoming:con_panna",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2400
+        }
+    }
+}

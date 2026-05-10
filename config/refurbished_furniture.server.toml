@@ -71,7 +71,7 @@
 	[electricity.cheats]
 		# Electricity Generators will now output free power, and stay on forever.
 		# Valid values: true, false
-		freeGeneratorPower = false
+		freeGeneratorPower = true
 		# Makes all blocks that require electricity always be powered without them being
 		# connected to an Electricity Generator. Warning, some blocks may no longer work as
 		# expected. Use at your own risk of a downgraded experience.

@@ -101,7 +101,7 @@
 	forgeEnergy = 0.5
 	# Default: 1.0
 	# Range: 0.01 ~ 1.7976931348623157E308
-	usageMultiplier = 1.0
+	usageMultiplier = 0.2
 	#How much energy can the internal grid buffer storage per node attached to the grid.
 	# Default: 25.0
 	# Range: 1.0 ~ 1000000.0

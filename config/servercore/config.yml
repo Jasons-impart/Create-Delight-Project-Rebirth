@@ -4,19 +4,19 @@
 # Most miscellaneous feature toggles.
 features:
   # Prevents lagspikes caused by players moving into unloaded chunks.
-  prevent-moving-into-unloaded-chunks: false
+  prevent-moving-into-unloaded-chunks: true
   # The amount of seconds between auto-saves when /save-on is active.
   autosave-interval-seconds: 300
   # The fraction that decides the chance of experience orbs being able to merge with each other. (1 = 100%, 40 = 2.5%)
   # Note that just like in vanilla, experience orbs will still need to be of the same size to actually merge.
-  xp-merge-fraction: 40
+  xp-merge-fraction: 8
   # The radius in blocks that experience orbs will merge at.
-  xp-merge-radius: 0.5
+  xp-merge-radius: 3.0
   # The radius in blocks that items will merge at.
-  item-merge-radius: 0.5
+  item-merge-radius: 2.0
   lobotomize-villagers:
     # Makes villagers tick less often if they are stuck in a 1x1 space.
-    enabled: false
+    enabled: true
     # Decides the interval in between villager ticks when lobotomized.
     tick-interval: 20
 
@@ -35,58 +35,40 @@ dynamic:
   # ► interval = The amount of seconds between each check to increase or decrease.
   dynamic-settings:
     - setting: 'CHUNK_TICK_DISTANCE'
-      max: 10
-      min: 6
+      max: 8
+      min: 4
       increment: 1
       interval: 15
 
     - setting: 'MOBCAP_PERCENTAGE'
       max: 100
-      min: 50
-      increment: 10
-      interval: 15
-
-    - setting: 'SIMULATION_DISTANCE'
-      max: 10
-      min: 6
-      increment: 1
-      interval: 15
-
-    - setting: 'CHUNK_TICK_DISTANCE'
-      max: 6
-      min: 2
-      increment: 1
-      interval: 15
-
-    - setting: 'MOBCAP_PERCENTAGE'
-      max: 50
       min: 30
       increment: 10
       interval: 15
 
     - setting: 'SIMULATION_DISTANCE'
-      max: 6
-      min: 5
+      max: 8
+      min: 4
       increment: 1
       interval: 15
 
     - setting: 'VIEW_DISTANCE'
       max: 10
-      min: 5
+      min: 4
       increment: 1
-      interval: 150
+      interval: 300
 
 
 # A special mobcap that only affects the breeding of animals and villagers.
 breeding-cap:
   # Enables breeding caps.
-  enabled: false
+  enabled: true
   # The breeding cap for villagers.
   # ► limit = The limit of mobs of the same type within range. Setting this to negative will disable the breeding cap.
   # ► range = The range it will check for entities of the same type.
   # ► unlimited-height = Whether to ignore the vertical distance when checking for entities of the same type.
   villagers:
-    limit: 32
+    limit: 24
     range: 64
     unlimited-height: false
 
@@ -106,17 +88,17 @@ mob-spawning:
   # ► additional-capacity = Additional capacity for this specific mobcap. Decides how much it can spawn over the regular mobcap.
   # It is recommended to allow them to spawn a bit over the regular mobcap as they would otherwise never get a chance to spawn.
   zombie-reinforcements:
-    enforce-mobcap: false
+    enforce-mobcap: true
     additional-capacity: 32
 
   # Mobcap settings for zombified piglin spawning from nether portal random ticks.
   nether-portal-randomticks:
-    enforce-mobcap: false
+    enforce-mobcap: true
     additional-capacity: 32
 
   # Mobcap settings for mobs spawned from monster spawners.
   monster-spawners:
-    enforce-mobcap: false
+    enforce-mobcap: true
     additional-capacity: 32
 
   # Mobcap settings for silverfish spawned from the infested potion effect.
@@ -180,16 +162,16 @@ commands:
 # Note: while this is a very powerful feature, it can still slow down mobfarms and break very specific technical contraptions.
 activation-range:
   # Enables activation range.
-  enabled: false
+  enabled: true
   # Briefly ticks entities newly added to the world for 10 seconds (includes both spawning and loading).
   # This gives them a chance to properly immunize when they are spawned if they should be. Can be helpful for mobfarms.
   tick-new-entities: true
   # Enables vertical range checks. By default, activation ranges only work horizontally.
   # This can greatly improve performance on taller worlds, but might break a few very specific ai-based mobfarms.
-  use-vertical-range: false
+  use-vertical-range: true
   # Skips 1/4th of entity ticks whilst not immune.
   # This affects entities that are within the activation range, but not immune (for example by falling or being in water).
-  skip-non-immune: false
+  skip-non-immune: true
   # Allows villagers to tick regardless of the activation range when panicking.
   villager-tick-panic: true
   # The time in seconds that a villager needs to be inactive for before obtaining work immunity (if it has work tasks).
@@ -232,7 +214,7 @@ activation-range:
         - 'typeof:raider'
 
     - name: 'water'
-      activation-range: 16
+      activation-range: 24
       tick-interval: 20
       wakeup-interval: 60
       extra-height-up: false

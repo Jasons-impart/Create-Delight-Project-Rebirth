@@ -10,7 +10,7 @@
 	#true if some biomes, such as primordial caves, have ambient light that makes the biome easier to see in.
 	biome_ambient_light = true
 	#true if some biomes, such as toxic caves, apply a color to ambient light. May conflict with shaders.
-	biome_ambient_light_coloring = true
+	biome_ambient_light_coloring = false
 	#true if some biomes, such as primordial caves, have an always well-lit sky when in them. May conflict with shaders.
 	biome_sky_overrides = true
 	#true if some biomes, such as abyssal chasm, have an thicker water fog to them. May conflict with shaders.

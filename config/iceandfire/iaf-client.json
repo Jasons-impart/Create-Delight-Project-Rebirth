@@ -1,7 +1,7 @@
 {
   "client": {
-    "customMainMenu": true,
-    "dragonAuto3rdPerson": false,
+    "customMainMenu": false,
+    "dragonAuto3rdPerson": true,
     "siren.shader": true
   }
 }

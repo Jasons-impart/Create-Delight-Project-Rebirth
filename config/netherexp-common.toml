@@ -188,7 +188,7 @@
 	#The number of will o' wisps that can be stored in a single stack
 	# Default: 64
 	# Range: 1 ~ 99
-	willOWispStackSize = 64
+	willOWispStackSize = 40
 
 #Entity Settings
 [entitySettings]
@@ -199,7 +199,7 @@
 	#The amount of freezing in ticks that all black ices can inflict
 	# Default: 100
 	# Range: > 0
-	blackIceFreezingTicks = 100
+	blackIceFreezingTicks = 500
 	#Upon death skeletons will fossilize soul soil blocks they are standing on into fossil ore
 	skeletonFossilization = true
 	#Upon death wither skeletons will fossilize soul soil blocks they are standing on into fossil fuel ore

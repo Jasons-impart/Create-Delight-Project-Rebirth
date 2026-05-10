@@ -7,13 +7,13 @@
 	#The index of the Solar Term when the world is first created (1-24).
 	# Default: 4
 	# Range: 1 ~ 24
-	InitialSolarTermIndex = 4
+	InitialSolarTermIndex = 1
 	#Display a chat message whenever the Solar Term changes.
 	EnableInform = true
 	#Include a custom icon in the change notification for better visibility.
 	EnableInformIcon = true
 	#Synchronize the in-game calendar and seasonal data with the server/client local time.
-	EnableLocalInfoAndCalendar = false
+	EnableLocalInfoAndCalendar = true
 	#Show a tooltip or message if a calendar item cannot be placed in the current location.
 	CalendarItemHint = false
 	#Adjust daylight duration based on the time of year (longer in Summer, shorter in Winter).
@@ -31,7 +31,7 @@
 	#Default daylight length in Ticks when no seasonal effects are active.
 	NoneDayTimes = [12000]
 	#Introduces random yearly variations to the snowfall date for unpredictability.
-	DynamicSnowTerm = false
+	DynamicSnowTerm = true
 	#Sync in-game seasons with the real-world date.
 	#Warning: May cause day-counter or calendar conflicts with other mods.
 	RealWorldSolarTerms = false
@@ -40,7 +40,7 @@
 	#Enable localized weather patterns where rain or sun is determined per-biome.
 	UseSolarWeather = true
 	#Disable rain/snow in biomes with no natural precipitation (e.g., Deserts).
-	NotRainInDesert = true
+	NotRainInDesert = false
 	#Force initialize weather and snow states when the mod or world is first loaded.
 	ShouldInitWeather = false
 	#Force initialize snow states for extreme cold biomes when the mod or world is first loaded.
@@ -75,7 +75,7 @@
 	#Prevents physical snow from melting in naturally snowy biomes, even during hot seasons.
 	SnowKeepInSnowyBiomes = true
 	#Apply a 'Heatstroke' status effect if players stay in hot biomes during Summer noon.
-	HeatStroke = true
+	HeatStroke = false
 
 [Crop]
 	#Restrict plant growth based on their compatible seasons or humidity.
@@ -115,7 +115,7 @@
 	#[Deprecated] Use default seasonal/humidity values for unregistered crops.
 	RegisterCropDefaultValue = false
 	#Force all plants to follow growth rules, even those without specific mod tags.
-	ForceCompatMode = true
+	ForceCompatMode = false
 	#Apply patch withering code for crop leave blocks if tick failed.
 	CropLeavesPatch = true
 	#Saves local humidity data to chunk files for persistent tracking.
@@ -173,7 +173,7 @@
 	#Set custom snow-line altitudes for biomes (e.g., ["#c:is_cold", 200]).
 	BiomeSnowLines = []
 	#Track snow based on exact world coordinates (allows for localized snow clearing).
-	SnowInWorld = false
+	SnowInWorld = true
 	#(SnowInWorld) Sync chunk snow overlay states immediately when they are loaded.
 	ForceSnowyChunkUpdate = true
 	#(SnowInWorld) Only force chunk snow overlays sync when the weather is warm enough for snow to melt.
@@ -221,7 +221,7 @@
 
 [Resource]
 	#Synchronizes weather states across all Overworld biomes, ensuring global rainfall.
-	RainTogether = true
+	RainTogether = false
 	#Synchronizes the snowfall schedule for all Overworld biomes.
 	SnowTogether = false
 	#Aligns snowfall schedules based on three broad climate zones (Warm, Temperate, and Cold) instead of per-biome.

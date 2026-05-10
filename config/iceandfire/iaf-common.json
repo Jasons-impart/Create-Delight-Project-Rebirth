@@ -9,17 +9,17 @@
     "generate.skeletonChance": 0.0033333333333333335,
     "generate.denGoldAmount": 0.25,
     "generate.oreRatio": 0.022222222222222223,
-    "griefing": true,
+    "griefing": false,
     "tamedGriefing": true,
     "flapNoiseDistance": 4,
-    "fluteDistance": 8,
+    "fluteDistance": 4,
     "attackDamage": 17,
     "attackDamageFire": 2.0,
     "attackDamageIce": 2.5,
     "attackDamageLightning": 3.5,
     "maxFlight": 256,
     "goldSearchLength": 30,
-    "canHealFromBiting": false,
+    "canHealFromBiting": true,
     "canDespawn": true,
     "sleep": true,
     "digWhenStuck": true,
@@ -48,7 +48,7 @@
   },
   "pixie": {
     "size": 5,
-    "stealItems": false
+    "stealItems": true
   },
   "cyclops": {
     "spawnWanderingChance": 0.0011111111111111111,
@@ -68,22 +68,22 @@
   },
   "deathworm": {
     "spawnChance": 0.03333333333333333,
-    "targetSearchLength": 48,
+    "targetSearchLength": 64,
     "maxHealth": 10.0,
     "attackDamage": 3.0,
     "attackMonsters": true
   },
   "cockatrice": {
     "spawn": true,
-    "spawnWeight": 4,
-    "chickenSearchLength": 32,
+    "spawnWeight": 1,
+    "chickenSearchLength": 30,
     "eggChance": 0.03333333333333333,
     "maxHealth": 40.0,
     "chickensLayRottenEggs": true
   },
   "bird": {
     "spawnChance": 0.0125,
-    "targetSearchLength": 48,
+    "targetSearchLength": 64,
     "featherDropChance": 0.04,
     "featherAttackDamage": 1.0,
     "flockLength": 40,
@@ -92,7 +92,7 @@
   },
   "troll": {
     "spawn": true,
-    "spawnWeight": 60,
+    "spawnWeight": 100,
     "dropWeapon": true,
     "maxHealth": 50.0,
     "attackDamage": 10.0
@@ -100,7 +100,7 @@
   "amphithere": {
     "spawn": true,
     "spawnWeight": 50,
-    "villagerSearchLength": 48.0,
+    "villagerSearchLength": 64,
     "tameTime": 400,
     "flightSpeed": 1.75,
     "maxHealth": 50.0,
@@ -108,13 +108,13 @@
   },
   "seaSerpent": {
     "spawnChance": 0.004,
-    "griefing": true,
+    "griefing": false,
     "baseHealth": 20.0,
     "attackDamage": 4.0
   },
   "lich": {
     "spawn": true,
-    "spawnWeight": 4,
+    "spawnWeight": 2,
     "spawnChance": 0.03333333333333333
   },
   "hydra": {
@@ -146,7 +146,7 @@
   "armors": {
     "dragonSteelBaseDamage": 25.0,
     "dragonSteelBaseDurability": 8000,
-    "dragonsteelArmorToughness": 6.0,
+    "dragonsteelArmorToughness": 5.0,
     "dragonsteelHelmetArmor": 7,
     "dragonsteelHelmetDurability": 1760,
     "dragonsteelChestplateArmor": 12,

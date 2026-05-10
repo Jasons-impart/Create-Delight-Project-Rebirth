@@ -1,6 +1,6 @@
 [general]
 	#Whether all players should get an Animal Dictionary when joining the world for the first time.
-	giveBookOnStartup = true
+	giveBookOnStartup = false
 	#Lava Opacity for the Lava Vision Potion.
 	# Default: 0.65
 	# Range: 0.01 ~ 1.0
@@ -36,7 +36,7 @@
 	#Whether wild raccoons steal food from chests.
 	raccoonStealFromChests = true
 	#Whether wild crows steal crops from farmland.
-	crowsStealCrops = true
+	crowsStealCrops = false
 	#Whether fish oil gives players a special levitation effect.
 	fishOilMeme = true
 	#Whether soul vulture spawns should be restricted solely to the nether fossil structure or to whatever biome is specified in their respective biome config.
@@ -70,7 +70,7 @@
 	# Range: 0.0 ~ 1.0
 	emuPantsDodgeChance = 0.45
 	#Whether cachalots can destroy wood blocks if angry.
-	cachalotDestruction = true
+	cachalotDestruction = false
 	#Relative volume of cachalot whales compared to other animals. Note that irl they are the loudest animal. Turn this down if you find their clicks annoying.
 	# Default: 3.0
 	# Range: 0.0 ~ 10.0
@@ -128,7 +128,7 @@
 	#List of items that cannot be put in a Transmuting Table.
 	transmutationBlacklist = ["minecraft:beacon"]
 	#True if transmutation tables should not have the ability to pick up new items to transmute, and only give options from the loot tables.
-	limitTransmutingToLootTables = false
+	limitTransmutingToLootTables = true
 	#True if transmutation tables can explode when broken.
 	transmutingTableExplodes = true
 	#The experience, in levels, that each transmutation of a stack takes in the transmuting table.

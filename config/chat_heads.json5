@@ -1,5 +1,5 @@
 {
-	"renderPosition": "BEFORE_NAME",
+	"renderPosition": "BEFORE_LINE",
 	"threeDeeNess": 0.0,
 	"offsetNonPlayerText": true,
 	"senderDetection": "UUID_AND_HEURISTIC",

@@ -2,9 +2,9 @@
 	#Whether bee pollination of bushes should occur much quicker (when Bee collides with it) rather than on Bee's AI scheduled timing. Use this if having issues with pollination.
 	fast_pollinate = false
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.
-	lime_pollination = true
+	lime_pollination = false
 	#Whether Pomegranate Bushes require Bee pollination to reach final growth stage in the Overworld.
-	pomegranate_pollination = true
+	pomegranate_pollination = false
 	#(1/x) Chance to pick a Stygian Pomegranate from a bush when all conditions are met.
 	# Default: 10
 	# Range: 1 ~ 100
@@ -235,7 +235,7 @@
 	prawn_ceviche = true
 	prawn_noodles = true
 	prawn_po_boy = true
-	prawn_roll = true
+	prawn_roll = false
 	prawn_spread = true
 	prawn_stew = true
 	prawn_stew_cup = true

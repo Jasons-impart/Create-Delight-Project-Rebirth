@@ -17,11 +17,11 @@
 		# If the borders draw over items instead of under.
 		over_items = false
 		# If the borders should have a more prominent glow.
-		extra_glow = false
+		extra_glow = true
 		# If automatic borders (based on item rarity) should be enabled.
 		auto_borders = true
 		# If enabled and Legendary Tooltips is installed, borders will sync with tooltip border colors.
-		legendary_tooltips_sync = false
+		legendary_tooltips_sync = true
 		# Custom border colors for specific items. Format: { <color> = ["list of selectors"] }.
 		# Color formats supported:
 		#   Hex color code - A hex color code is preceded by # or 0x and must be quoted.  Supports 3, 4, 6, or 8 digit codes in the formats RGB, ARGB, RRGGBB, or AARRGGBB.  Examples: "#F4C", "0xFEE0", "#40FF2E", "#CC00E2EE"

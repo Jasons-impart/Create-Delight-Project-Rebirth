@@ -1,7 +1,7 @@
 {
-	"dynamicCrosshair": true,
+	"dynamicCrosshair": false,
 	"disableDebugCrosshair": false,
-	"thirdPersonCrosshair": false,
+	"thirdPersonCrosshair": true,
 	"hideWithScreen": true,
 	"hideWithMap": true,
 	"fixCenteredCrosshair": false,
@@ -14,7 +14,7 @@
 		"holdingMeleeWeapon": true,
 		"meleeWeaponOnEntity": false,
 		"meleeWeaponOnBreakableBlock": false,
-		"holdingRangedWeapon": "Always",
+		"holdingRangedWeapon": "IfInteractable",
 		"holdingThrowable": "IfInteractable",
 		"holdingShield": true,
 		"holdingBlock": "IfInteractable",
@@ -69,10 +69,10 @@
 			"overrideColor": false,
 			"customColor": -5588020,
 			"enableBlend": true,
-			"coalesce": false
+			"coalesce": true
 		},
 		"holdingThrowable": {
-			"style": "dynamiccrosshair:crosshair/circle-large",
+			"style": "dynamiccrosshair:crosshair/circle",
 			"overrideColor": false,
 			"customColor": -5588020,
 			"enableBlend": true,
@@ -110,8 +110,8 @@
 	"crosshairModifiers": {
 		"modCorrectTool": {
 			"style": "dynamiccrosshair:crosshair/dot",
-			"overrideColor": true,
-			"customColor": -16711936,
+			"overrideColor": false,
+			"customColor": -5588020,
 			"enableBlend": false,
 			"coalesce": true
 		},

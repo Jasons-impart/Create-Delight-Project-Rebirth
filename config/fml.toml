@@ -5,7 +5,7 @@ earlyWindowControl = true
 #Max threads for early initialization parallelism,  -1 is based on processor count
 maxThreads = -1
 #Enable NeoForge global version checking
-versionCheck = true
+versionCheck = false
 #Default config path for servers
 defaultConfigPath = "defaultconfigs"
 #Disables Optimized DFU client-side - already disabled on servers

@@ -2,7 +2,7 @@
 #By default the difficulty caps at 250
 [general]
 	#Enables increasing the difficulty over time
-	"Enable difficulty scaling" = true
+	"Enable difficulty scaling" = false
 	#Time in ticks for which the difficulty shouldn't increase at the beginning. One full minecraft day is 24000 ticks
 	# Default: 0
 	# Range: > 0
@@ -61,7 +61,7 @@
 	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, FLYING, TARGETVILLAGER, NEUTRALAGGRO]
 	#added here will disable that feature completely.
 	#E.g. ["GUARDIAN"] will disable the guardian feature
-	"Feature Blacklist" = []
+	"Feature Blacklist" = ["BLOCKBREAK", "LADDER", "STEAL", "FLYING", "TARGETVILLAGER", "NEUTRALAGGRO", "GUARDIAN"]
 	#Mods can override this now with a datapack! Check for the message 'Following entity overrides are loaded' in your logs to see any overrides
 	#Entities added here will be blacklisted from that feature. Usage:
 	#<entity registry name | namespace | #tag> followed by any of:
@@ -73,7 +73,7 @@
 	#<#minecraft:raiders|ATTRIBUTES> will make all raiders be excluded from attribute modifications
 	#<minecraft:sheep|ATTRIBUTES> will make sheeps be excluded from attribute modifications
 	#<minecraft> disables everything for all vanilla entities
-	"Entity Configs" = ["minecraft:allay", "minecraft:armadillo", "minecraft:axolotl", "minecraft:bat", "minecraft:bee", "minecraft:camel", "minecraft:cat", "minecraft:chicken", "minecraft:cod", "minecraft:cow", "minecraft:dolphin", "minecraft:donkey", "minecraft:fox", "minecraft:frog", "minecraft:glow_squid", "minecraft:goat", "minecraft:horse", "minecraft:iron_golem", "minecraft:llama", "minecraft:mooshroom", "minecraft:mule", "minecraft:ocelot", "minecraft:panda", "minecraft:parrot", "minecraft:pig", "minecraft:polar_bear", "minecraft:pufferfish", "minecraft:rabbit", "minecraft:salmon", "minecraft:sheep", "minecraft:skeleton_horse", "minecraft:sniffer", "minecraft:snow_golem", "minecraft:squid", "minecraft:strider", "minecraft:tadpole", "minecraft:trader_llama", "minecraft:tropical_fish", "minecraft:turtle", "minecraft:villager", "minecraft:wandering_trader", "minecraft:wolf", "minecraft:zombie_horse", "netherexp:wisp", "netherexp:apparition", "netherexp:vessel", "netherexp:banshee", "quark:crab", "quark:shiba", "quark:stoneling", "quark:toretoise", "supplementaries:red_merchant", "the_bumblezone:variant_bee", "the_bumblezone:honey_slime", "the_bumblezone:beehemoth", "the_bumblezone:bee_queen", "iceandfire:dragon_skull", "iceandfire:fire_dragon", "iceandfire:ice_dragon", "iceandfire:lightning_dragon", "iceandfire:hippogryph", "iceandfire:pixie", "iceandfire:hippocampus", "iceandfire:deathworm", "iceandfire:cockatrice", "iceandfire:amphithere", "iceandfire:sea_serpent", "iceandfire:mob_skull", "iceandfire:dread_horse", "alexsmobs:grizzly_bear", "alexsmobs:roadrunner", "alexsmobs:gazelle", "alexsmobs:crocodile", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:orca", "alexsmobs:sunbird", "alexsmobs:gorilla", "alexsmobs:rattlesnake", "alexsmobs:endergrade", "alexsmobs:hammerhead_shark", "alexsmobs:lobster", "alexsmobs:komodo_dragon", "alexsmobs:capuchin_monkey", "alexsmobs:centipede_body", "alexsmobs:centipede_tail", "alexsmobs:warped_toad", "alexsmobs:moose", "alexsmobs:raccoon", "alexsmobs:blobfish", "alexsmobs:seal", "alexsmobs:cockroach", "alexsmobs:shoebill", "alexsmobs:elephant", "alexsmobs:snow_leopard", "alexsmobs:spectre", "alexsmobs:crow", "alexsmobs:alligator_snapping_turtle", "alexsmobs:mungus", "alexsmobs:mantis_shrimp", "alexsmobs:stradpole", "alexsmobs:emu", "alexsmobs:platypus", "alexsmobs:tasmanian_devil", "alexsmobs:kangaroo", "alexsmobs:cachalot_whale", "alexsmobs:leafcutter_ant", "alexsmobs:bald_eagle", "alexsmobs:tiger", "alexsmobs:tarantula_hawk", "alexsmobs:frilled_shark", "alexsmobs:mimic_octopus", "alexsmobs:seagull", "alexsmobs:froststalker", "alexsmobs:tusklin", "alexsmobs:laviathan", "alexsmobs:cosmaw", "alexsmobs:toucan", "alexsmobs:maned_wolf", "alexsmobs:anaconda", "alexsmobs:anteater", "alexsmobs:flutter", "alexsmobs:gelada_monkey", "alexsmobs:jerboa", "alexsmobs:terrapin", "alexsmobs:comb_jelly", "alexsmobs:cosmic_cod", "alexsmobs:bunfungus", "alexsmobs:bison", "alexsmobs:giant_squid", "alexsmobs:sea_bear", "alexsmobs:devils_hole_pupfish", "alexsmobs:catfish", "alexsmobs:flying_fish", "alexsmobs:rain_frog", "alexsmobs:potoo", "alexsmobs:mudskipper", "alexsmobs:rhinoceros", "alexsmobs:sugar_glider", "alexsmobs:underminer", "alexsmobs:skunk", "alexsmobs:banana_slug", "alexsmobs:blue_jay", "alexsmobs:caiman", "alexsmobs:triops", "dummmmmmy:target_dummy", "vinery:mule", "vinery:wandering_winemaker", "create_bic_bit:herring", "create_confectionery:little_gingerbread_man", "neapolitan:chimpanzee", "collectorsreap:tiger_prawn", "collectorsreap:urchin", "collectorsreap:platinum_bass", "collectorsreap:clam", "collectorsreap:chieftain_crab", "alexscaves:notor", "alexscaves:subterranodon", "alexscaves:vallumraptor", "alexscaves:grottoceratops", "alexscaves:trilocaris", "alexscaves:tremorsaurus", "alexscaves:relicheirus", "alexscaves:atlatitan", "alexscaves:radgill", "alexscaves:gammaroach", "alexscaves:raycat", "alexscaves:tremorzilla", "alexscaves:lanternfish", "alexscaves:sea_pig", "alexscaves:hullbreaker", "alexscaves:gossamer_worm", "alexscaves:tripodfish", "alexscaves:deep_one", "alexscaves:deep_one_knight", "alexscaves:deep_one_mage", "alexscaves:gloomoth", "alexscaves:sweetish_fish", "alexscaves:candicorn", "alexscaves:gummy_bear", "create_sa:brass_drone", "create_sa:drill_module", "create_sa:magnet_module", "create_sa:fan_module", "create_sa:vault_module", "create_sa:brass_cube_r", "crabbersdelight:crab"]
+	"Entity Configs" = ["iceandfire:fire_dragon|ARMOR|HELDITEMS", "iceandfire:ice_dragon|ARMOR|HELDITEMS", "iceandfire:lightning_dragon|ARMOR|HELDITEMS", "alexsmobs:void_worm_part|HELDITEMS", "alexsmobs:void_worm|HELDITEMS", "creeperoverhaul|HELDITEMS", "minecraft:creeper|HELDITEMS", "alexscaves:nucleeper|HELDITEMS", "alexscaves:gumbeeper|HELDITEMS", "hamsters:hamster", "neapolitan", "youkaishomecoming", "alexscaves:gingerbread_man", "alexsmobs:emu", "alexsmobs:cockroach", "alexsmobs:froststalker", "alexsmobs:centipede_tail", "alexsmobs:snow_leopard", "create_sa:vault_module", "alexsmobs:lobster", "alexsmobs:seagull", "alexscaves:gummy_bear", "alexsmobs:moose", "alexsmobs:seal", "minecraft:glow_squid", "alexsmobs:shoebill", "alexsmobs:flutter", "alexscaves:notor", "alexsmobs:roadrunner", "alexsmobs:laviathan", "minecraft:trader_llama", "create_confectionery:little_gingerbread_man", "create_sa:magnet_module", "alexsmobs:terrapin", "alexsmobs:capuchin_monkey", "iceandfire:dread_horse", "alexsmobs:endergrade", "minecraft:horse", "alexscaves:subterranodon", "alexsmobs:anaconda", "iceandfire:myrmex_swarmer", "minecraft:polar_bear", "alexscaves:tremorzilla", "alexscaves:grottoceratops", "iceandfire:dragon_skull", "minecraft:llama", "minecraft:pig", "minecraft:turtle", "alexsmobs:alligator_snapping_turtle", "alexsmobs:maned_wolf", "alexscaves:candicorn", "minecraft:sheep", "minecraft:tadpole", "minecraft:goat", "minecraft:dolphin", "alexsmobs:rattlesnake", "alexsmobs:gelada_monkey", "minecraft:cod", "alexsmobs:mantis_shrimp", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "minecraft:donkey", "the_bumblezone:variant_bee", "alexsmobs:tiger", "create_sa:brass_cube_r", "alexsmobs:raccoon", "endertrigon:baby_ender_dragon", "alexsmobs:grizzly_bear", "alexsmobs:platypus", "minecraft:squid", "minecraft:skeleton_horse", "iceandfire:myrmex_soldier", "alexsmobs:potoo", "quark:stoneling", "minecraft:cow", "alexscaves:radgill", "alexsmobs:fly", "alexscaves:trilocaris", "iceandfire:hippocampus", "minecraft:bee", "the_bumblezone:bee_queen", "alexsmobs:devils_hole_pupfish", "quark:shiba", "iceandfire:pixie", "alexsmobs:crocodile", "quark:toretoise", "crabbersdelight:crab", "alexsmobs:blue_jay", "the_bumblezone:honey_slime", "alexsmobs:toucan", "minecraft:salmon", "alexsmobs:sea_bear", "alexsmobs:triops", "minecraft:snow_golem", "alexsmobs:rhinoceros", "minecraft:mooshroom", "alexsmobs:frilled_shark", "alexsmobs:bison", "alexscaves:hullbreaker", "alexsmobs:anteater", "alexsmobs:mudskipper", "minecraft:villager", "alexsmobs:rain_frog", "alexsmobs:bald_eagle", "alexsmobs:sugar_glider", "supplementaries:red_merchant", "minecraft:rabbit", "minecraft:axolotl", "alexsmobs:blobfish", "create_sa:drill_module", "alexsmobs:gorilla", "alexsmobs:orca", "alexsmobs:tusklin", "alexscaves:sweetish_fish", "minecraft:strider", "alexscaves:raycat", "minecraft:parrot", "alexsmobs:leafcutter_ant", "quark:crab", "alexsmobs:cosmic_cod", "alexscaves:tremorsaurus", "alexsmobs:underminer", "alexsmobs:mungus", "alexsmobs:jerboa", "minecraft:bat", "minecraft:wandering_trader", "alexsmobs:caiman", "alexscaves:atlatitan", "alexsmobs:spectre", "alexsmobs:cosmaw", "alexscaves:vallumraptor", "iceandfire:amphithere", "vinery:mule", "alexscaves:deep_one_mage", "alexsmobs:catfish", "minecraft:frog", "minecraft:iron_golem", "alexsmobs:kangaroo", "alexsmobs:comb_jelly", "iceandfire:mob_skull", "alexsmobs:banana_slug", "alexscaves:tripodfish", "dummmmmmy:target_dummy", "alexscaves:relicheirus", "alexsmobs:mimic_octopus", "alexscaves:deep_one_knight", "alexsmobs:hummingbird", "alexsmobs:elephant", "create_sa:fan_module", "alexsmobs:bunfungus", "create_sa:brass_drone", "alexsmobs:gazelle", "alexscaves:deep_one", "minecraft:mule", "minecraft:sniffer", "alexsmobs:skunk", "vinery:wandering_winemaker", "alexsmobs:crow", "minecraft:zombie_horse", "alexsmobs:sunbird", "iceandfire:cockatrice", "minecraft:camel", "alexscaves:sea_pig", "alexsmobs:flying_fish", "alexsmobs:tasmanian_devil", "alexsmobs:centipede_body", "alexscaves:gossamer_worm", "minecraft:cat", "minecraft:pufferfish", "alexsmobs:stradpole", "alexsmobs:tarantula_hawk", "minecraft:fox", "alexsmobs:cachalot_whale", "minecraft:allay", "minecraft:tropical_fish", "iceandfire:hippogryph", "alexscaves:gloomoth", "minecraft:ocelot", "alexsmobs:warped_toad", "the_bumblezone:beehemoth", "alexscaves:gammaroach", "alexscaves:lanternfish", "minecraft:chicken", "alexsmobs:giant_squid", "minecraft:wolf", "minecraft:panda", "alexscaves:luxtructosaurus|ARMOR|HELDITEMS", "alexscaves:atlatitan|ARMOR|HELDITEMS", "alexscaves:relicheirus|ARMOR|HELDITEMS", "alexscaves:tremorsaurus|ARMOR|HELDITEMS", "alexscaves:grottoceratops|ARMOR|HELDITEMS", "alexscaves:vallumraptor|ARMOR|HELDITEMS", "alexscaves:subterranodon|ARMOR|HELDITEMS", "alexscaves:mine_guardian_anchor|ARMOR|HELDITEMS", "alexscaves:mine_guardian|ARMOR|HELDITEMS", "alexscaves:deep_one_mage|ARMOR|HELDITEMS", "alexscaves:deep_one_knight|ARMOR|HELDITEMS", "alexscaves:deep_one|ARMOR|HELDITEMS", "alexscaves:hullbreaker|ARMOR|HELDITEMS", "minecraft:armadillo", "netherexp:wisp", "netherexp:apparition", "netherexp:vessel", "netherexp:banshee", "iceandfire:deathworm", "iceandfire:sea_serpent", "create_bic_bit:herring", "neapolitan:chimpanzee", "collectorsreap:tiger_prawn", "collectorsreap:urchin", "collectorsreap:platinum_bass", "collectorsreap:clam", "collectorsreap:chieftain_crab"]
 	#Any of the following 
 	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, FLYING, TARGETVILLAGER, NEUTRALAGGRO]
 	#added here will turn that feature into a whitelist in regards to Entity Configs.
@@ -123,9 +123,9 @@
 	#Treat Block Whitelist as Blacklist
 	"Breaklist as Blacklist" = false
 	#Use the block breaking sound instead of a knocking sound
-	Sound = true
+	Sound = false
 	#(Expression): Chance for a mob to be able to break blocks
-	"Breaker Chance" = "0.3"
+	"Breaker Chance" = "0.30000001192092896"
 	#Difficulty at which mobs are able to break blocks
 	# Default: 0.0
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -150,11 +150,11 @@
 	#Chance a breaker mob to ignore line of sight
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	"Breaker Sight Ignore" = 1.0
+	"Breaker Sight Ignore" = 0.5
 	#(Expression): The speed modifier for breaking blocks
-	"Breaking Speed Modifier" = "1"
+	"Breaking Speed Modifier" = "1.0 + 0.0 * difficulty"
 	#(Expression): Chance for a mob to be able to steal items from inventory blocks
-	"Stealer Chance" = "1"
+	"Stealer Chance" = "0.30000001192092896"
 	#Difficulty at which mobs are able to steal items
 	# Default: 0.0
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -165,9 +165,9 @@
 	#Note: Mobs can only break blocks if the tool they are holding can break the blocks
 	"Breaking items" = ["minecraft:diamond_pickaxe;1", "minecraft:iron_axe;2"]
 	#Should mobs be able to break block entities? Evaluated before the break list
-	"Break BlockEntities" = true
+	"Break BlockEntities" = false
 	#(Expression): Chance for neutral mobs to be aggressive
-	"Neutral Aggressive Chance" = "0.05"
+	"Neutral Aggressive Chance" = "0.05000000074505806"
 	#(Expression): Chance for mobs to be able to summon an aquatic mount
 	"Guardian Chance" = "0.5"
 	#(Expression): Chance for mobs to be able to summon a flying mount
@@ -208,22 +208,22 @@
 	#Some special names are BOW, TRIDEN, CROSSBOW refering to every bow/trident/crossbow item (So you dont need to type e.g. every bow item)
 	"Entity Item Use Blacklist" = ["minecraft:skeleton;BOW", "minecraft:wither_skeleton;BOW", "minecraft:stray;BOW", "minecraft:illusioner;BOW", "minecraft:drowned;TRIDENT", "minecraft:piglin;CROSSBOW", "minecraft:pillager;CROSSBOW", "minecraft:snow_golem;minecraft:snowball"]
 	#(Expression): Chance for a mob to have a piece of armor
-	"Equipment Chance" = "0.1 + min(difficulty * 0.8 / 250, 0.8)"
+	"Equipment Chance" = "0.01 + difficulty * 0.25 / 100"
 	#(Expression): Chance for a mob to have additional pieces of armor
-	"Additional Equipment Chance" = "0.3 + min(difficulty * 0.6 / 250, 0.6)"
+	"Additional Equipment Chance" = "0.25"
 	#(Expression): Chance for an equipment to have a random armor trim
-	"Armor Trim Chance" = "0.05 + min(difficulty * 0.2 / 250, 0.2)"
+	"Armor Trim Chance" = "0.05"
 	#(Expression): Chance for a mob to have an item in its main hand
-	"Main Hand Item Chance" = "0.1 + min(difficulty * 0.3 / 250, 0.3)"
+	"Main Hand Item Chance" = "0.01 + difficulty * 0.3 / 100"
 	#(Expression): Chance for a mob to have an item in its offhand
-	"Offhand Item Chance" = "0.1 + min(difficulty * 0.3 / 250, 0.3)"
+	"Offhand Item Chance" = "0.01 + difficulty * 0.1 / 100"
 	#(Expression): Chance for a mob to drop its items
 	#This ONLY applies to equipment added through this mod!
 	"Drop Chance" = "0"
 	#(Expression): Chance for an equipment piece to be enchanted
-	"Enchanting Chance" = "0.2 + min(difficulty * 0.6 / 250, 0.6)"
+	"Enchanting Chance" = "0.01 + difficulty * 0.3 / 100"
 	#Specify enchanting levels according to difficulty. <difficulty;expression>
-	"Enchanting Calc" = ["0.0;random_integer(1, 10)", "25.0;random_integer(5, 15)", "50.0;random_integer(10, 17)", "100.0;random_integer(15, 25)", "200.0;random_integer(20, 30)", "250.0;random_integer(30, 35)"]
+	"Enchanting Calc" = ["0.0;random_integer(0, 5)", "100.0;random_integer(5, 15)", "150.0;random_integer(15, 25)", "200.0;random_integer(25, 35)", "250.0;random_integer(30, 40)"]
 	#Blacklist enchantments from being applied to equipments
 	"Enchanting Blacklist" = []
 	#Turn the enchant blacklist to a whitelist

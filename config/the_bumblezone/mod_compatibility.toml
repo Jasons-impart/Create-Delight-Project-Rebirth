@@ -4,7 +4,7 @@
 	# The fluid to replace Bumblezone's Honey Fluid in the dimension. Requires game restart.
 	# Note, this will not replace already placed Bumblezone Honey Fluid.
 	#
-	alternativeFluidToReplaceHoneyFluid = ""
+	alternativeFluidToReplaceHoneyFluid = "create:honey"
 
 ["Pokecube Compat"]
 	#----------------------------
@@ -238,4 +238,4 @@
 	#
 	# Allow Honey and Royal Jelly fluids to spawn Create's Limestone when they touch Lava.
 	#
-	allowCreateLimestoneForHoneyLavaCompat = true
+	allowCreateLimestoneForHoneyLavaCompat = false

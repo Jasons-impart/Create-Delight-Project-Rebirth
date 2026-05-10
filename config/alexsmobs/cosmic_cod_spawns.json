@@ -6,6 +6,13 @@
         "negate": false,
         "value": "minecraft:is_end"
       }
+    ],
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "northstar:moon_biomes"
+      }
     ]
   ]
 }

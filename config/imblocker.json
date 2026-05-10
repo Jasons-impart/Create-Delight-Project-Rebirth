@@ -1,10 +1,17 @@
 {
   "basicSettings": {
     "screenWhitelist": [
-      "com.simibubi.create.content.equipment.clipboard.ClipboardScreen",
-      "net.mehvahdjukaar.supplementaries.client.screens.TextHolderEditScreen",
       "net.minecraft.client.gui.screens.inventory.BookEditScreen",
-      "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen"
+      "net.minecraft.client.gui.screens.inventory.SignEditScreen",
+      "net.minecraft.client.gui.screens.inventory.HangingSignEditScreen",
+      "journeymap.client.ui.waypoint.WaypointEditor",
+      "com.ldtteam.blockout.BOScreen",
+      "dev.ftb.mods.ftblibrary.ui.ScreenWrapper",
+      "minecraft:net.minecraft.client.gui.screens.ChatScreen",
+      "net.mehvahdjukaar.supplementaries.client.screens.TextHolderEditScreen",
+      "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen",
+      "com.simibubi.create.content.equipment.clipboard.ClipboardScreen",
+      "com.sighs.generalfeedback.client.FeedbackScreen"
     ],
     "enableScreenRecovering": false,
     "recoveredScreens": [],

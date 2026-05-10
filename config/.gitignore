@@ -17,15 +17,12 @@
 !/createcobblestone-common.toml
 !/createlazytick-client.toml
 !/createlazytick-server.toml
-!/curios-client.toml
 !/curios-common.toml
 !/dynamiccrosshair.json5
 !/eclipticseasons-common.toml
 !/fml.toml
 !/generalfeedback_config.toml
 !/imblocker.json
-!/iris-excluded.json
-!/iris.properties
 !/itemborders.toml
 !/kaleidoscope_doll-common.toml
 !/netherexp-common.toml
@@ -39,7 +36,24 @@
 !/tipsmod.json
 !/vinery.toml
 !/waystones-common.toml
-!/tacz-common.toml
+!/tacz-pre.toml
+!/corn_delight-common.toml
+!/create_bitterballen.toml
+!/create_central_kitchen-common.toml
+!/create_connected-common.toml
+!/create_jetpack-client.toml
+!/create_jetpack-common.toml
+!/create_new_age-common.toml
+!/createaddition-common.toml
+!/createdieselgenerators-common.toml
+!/create-stuff-additions.toml
+!/dungeonsdelight-client-config.toml
+!/entityculling.json
+!/fruitsdelight-common.toml
+!/watut-server.toml
+!/watut-server.toml
+!/iris_shader_folder.properties
+# !/vintageimprovements-client.toml
 
 # Directory configs are allowlisted here, then filtered by nested .gitignore
 # files in each directory.
@@ -60,6 +74,9 @@
 !/servercore/
 !/the_bumblezone/
 !/trades/
+!/xaero/
+!/xaero/world-map/
+!/xaero/world-map/**
 
 # paths not present in this config tree; not allowed as-is.
 # - acceleratedrendering-client.toml
