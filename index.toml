@@ -18,11 +18,11 @@ hash = "fe45547e7d523993ca305d0deb822aa38f93b90da3c189ee2e1afae53df21ca1"
 
 [[files]]
 file = "kubejs/README.txt"
-hash = "050df4dac58ebda30a898e6c65e91cc4f4e15bcd7c2a19b58ab1c05082e36556"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
 file = "kubejs/client_scripts/jsconfig.json"
-hash = "64883865a4f8e858293ca672f158f9c03c985f210c52fb47d5145f8124eccf2d"
+hash = "6099aa52768e2970765617547f2c7eece136ce6c6295139f80bd21f911947c99"
 
 [[files]]
 file = "kubejs/config/client.json"
@@ -34,11 +34,15 @@ hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
-hash = "ff367f50b6374b8501fd0b16ff29e526c93b84ea90b3f6879ecf161021bbc514"
+hash = "3cefccebd5aaddeeaa525210e2fc8ac4a90d25866cfd3991dc09a4a8b0f4fbf6"
+
+[[files]]
+file = "kubejs/server_scripts/mods/ae2/recipes.js"
+hash = "3bcc641cf13b3e3ed1d25e08e4c386c8eac09db81a097cbfb52560829f52df13"
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"
-hash = "6cccb37f1c1f1e805bc1430202fc5324c46347b19bdd0072bd7394c2455191bb"
+hash = "bec495ea923f2adb7c9225d2bfb0326d53804cb501f5dd28ecff7160e9ec9aa2"
 
 [[files]]
 file = "minemenu/menu.json"
@@ -302,6 +306,11 @@ metafile = true
 [[files]]
 file = "mods/corn-delight.pw.toml"
 hash = "41cbceff43ac74133823335b2fa44d21674c0ec7f4189cf6792ba9540c7108e2"
+metafile = true
+
+[[files]]
+file = "mods/coroutil.pw.toml"
+hash = "8ff227007d3ea2f499193f04410000892bcc35b87572ae74d3f19494c6572368"
 metafile = true
 
 [[files]]
@@ -865,6 +874,11 @@ hash = "9ec01a460861f4232dcd6c127023f2452e5aeabf6b382839e0e61d536adc4f03"
 metafile = true
 
 [[files]]
+file = "mods/iris-shader-folder.pw.toml"
+hash = "009f0918ed3e3b353d90cf903bae47be8a4ca25636b4439f037d2c6b19280c28"
+metafile = true
+
+[[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "352bbd56bffa7bb7af6e16ae0e745db85e2d7e9e0ea6037ff866149f6e6e08b8"
 metafile = true
@@ -902,6 +916,11 @@ metafile = true
 [[files]]
 file = "mods/jupiter.pw.toml"
 hash = "a3d803079f7cba47f9d6bf728198f2c335a13938ef50bbdaa3f7ae2457bef58d"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-characters.pw.toml"
+hash = "84e09e34dcf088587495ee7c93466b3650c01dc04d7ad3e4b84e4d31ff43088d"
 metafile = true
 
 [[files]]
@@ -1325,16 +1344,6 @@ hash = "9e08f657c7848e0d35504e62657907248c0741df82f2d52b0222da79dc0fbe20"
 metafile = true
 
 [[files]]
-file = "mods/sophisticated-storage-create-integration.pw.toml"
-hash = "c66a21cc5dcab2ba241b47c42544cf0ca1bccdf8e6605c6d332837fb2dbe98ca"
-metafile = true
-
-[[files]]
-file = "mods/sophisticated-storage.pw.toml"
-hash = "d9151c58ba7dd9613bad6613a09508e86affac433652ff2fd38d907a95668649"
-metafile = true
-
-[[files]]
 file = "mods/soul-fire-d.pw.toml"
 hash = "315dab048ce0558d26ebfba5260e788c4142d3a8287aeb89366a5b9e9c40028b"
 metafile = true
@@ -1455,8 +1464,18 @@ hash = "51cf5abb4b804f0a1d451e8dcf227929000be73a13be9f3d011b2afb0a63e963"
 metafile = true
 
 [[files]]
+file = "mods/vintage-improvenents-ssw-edition.pw.toml"
+hash = "53e9f2de70d188d87f2a511c715c5d2b82e12d39ca9d112815f689fa2fb1e307"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "03b1945f985d8f20d077e70eebff66c6b2f000918a6c4f834d9161dbe654cfa4"
+metafile = true
+
+[[files]]
+file = "mods/what-are-they-up-to.pw.toml"
+hash = "61387d427f7c5bfd71df275f731384b70ae12f6b1e520ee9e232ae8c175d42bd"
 metafile = true
 
 [[files]]
@@ -1513,3 +1532,11 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
+
+[[files]]
+file = "tacz/Applied Armorer-v1.1.4+1.21.1.zip"
+hash = "8c75b6ef66f435666db5515401d7855ecc734551a4c7ecc4302ca8c17c56596d"
+
+[[files]]
+file = "tacz/Create Armorer-v1.2.0+1.21.1.zip"
+hash = "5081bfb98515c81a9ffc2a789ec2c89b7a56702bd593b441c58025e007d5d0be"

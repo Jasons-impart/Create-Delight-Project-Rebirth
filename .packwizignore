@@ -32,6 +32,7 @@
 !/schematics/**
 !/tacz/
 !/tacz/**
+/tacz/*
 !/minemenu/
 !/minemenu/**
 !/PCL/
@@ -43,8 +44,13 @@ mods/*.jar.disabled
 resourcepacks/*.zip
 shaderpacks/*.zip
 *.mrpack
-*.zip
+/*.zip
 *.7z
+
+# Distributed TaCZ gun packs. Keep other local/default TaCZ zips out of the
+# pack index.
+!/tacz/Applied*.zip
+!/tacz/Create*.zip
 
 # Repository/local state files inside otherwise allowed directories.
 **/.gitignore
