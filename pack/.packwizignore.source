@@ -1,0 +1,23 @@
+# Extra packwiz distribution exclusions.
+# devtool builds the positive allowlist from Git-visible files under:
+# PCL, config, defaultconfigs, kubejs, minemenu, mods, tacz, and selected pack/ payload files.
+
+# Local bookkeeping inside otherwise allowed directories.
+**/.gitignore
+**/.DS_Store
+Thumbs.db
+
+# Runtime/downloaded artifacts.
+mods/*.jar
+mods/*.jar.disabled
+*.mrpack
+/*.zip
+*.7z
+*.log
+*.lock
+*.tmp
+
+# ProbeJS/local dev settings.
+.probe
+kubejs/config/probe-settings.json
+kubejs/config/web_server.json

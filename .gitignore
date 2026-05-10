@@ -17,12 +17,11 @@
 /.vscode/*
 !/.vscode/extensions.json
 
-# Pack metadata
-!/pack.toml
-!/index.toml
-!/.packwizignore
+# Pack metadata and generated release-root files
 !/package.json
 !/package-lock.json
+!/pack/
+!/pack/**
 
 # Docs and project assets
 !/README.md
@@ -30,15 +29,10 @@
 !/LICENSE
 !/docs/
 !/docs/**
-!/icon.png
-!/server-icon.png
 !/modpack-analysis-report.md
 
 # Launchers and local examples
 !/devtool.bat
-!/start.bat
-!/start.sh
-!/variables.txt
 
 # Packwiz-managed downloads. Track descriptors, never downloaded jars/zips.
 !/mods/

@@ -1,6 +1,8 @@
 * text=auto
 
 .gitattributes text eol=lf
+.gitignore text eol=lf
+.prettierignore text eol=lf
 .packwizignore text eol=lf
 *.sh text eol=lf
 *.bat text eol=crlf
