@@ -1,25 +1,32 @@
 {
-  "include": [
-    "./**/*.js",
-    "./**/*.ts",
-    "../../.probe/startup/**/*.d.ts",
-    "../../.probe/packages/**/*.d.ts"
-  ],
-  "compilerOptions": {
-    "ignoreDeprecations": "6.0",
-    "module": "none",
-    "moduleResolution": "node",
-    "allowJs": true,
-    "checkJs": false,
-    "target": "ES2015",
-    "disableSizeLimit": true,
-    "noEmit": true,
-    "assumeChangesOnlyAffectDirectDependencies": true,
-    "rootDir": ".",
-    "baseUrl": "../../.probe/packages",
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "lib": ["ES2015", "ES2016.Array.Include", "ES2017.Object"],
-    "typeRoots": ["../../.probe/packages", "../../.probe/startup"]
-  }
+    "include": [
+        "./**/*.js",
+        "./**/*.ts",
+        "../../.probe/startup/**/*.d.ts",
+        "../../.probe/packages/**/*.d.ts"
+    ],
+    "compilerOptions": {
+        "ignoreDeprecations": "6.0",
+        "module": "none",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "checkJs": false,
+        "target": "ES2015",
+        "disableSizeLimit": true,
+        "noEmit": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "rootDir": ".",
+        "baseUrl": "../../.probe/packages",
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "lib": [
+            "ES2015",
+            "ES2016.Array.Include",
+            "ES2017.Object"
+        ],
+        "typeRoots": [
+            "../../.probe/packages",
+            "../../.probe/startup"
+        ]
+    }
 }
