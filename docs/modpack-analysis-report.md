@@ -274,7 +274,7 @@
 | 157 | **TOTW Modded** | totw_modded-forge-1.20.1-1.0.6.jar | 1.0.6 | 模组化的天空之城(Towers of the Wild) | ✅ 有1.21.1 |
 | 158 | **Waystones** | waystones-forge-1.20.1-14.1.20.jar | 14.1.20 | 传送石碑，快速旅行 | ✅ 有NeoForge版 |
 | 159 | **Bountiful** | Bountiful-6.0.4+1.20.1-forge.jar | 6.0.4 | 悬赏任务板系统（在世界中自然生成） | ✅ 有NeoForge版 |
-| 160 | **CobbleForDays** | CobbleForDays-1.8.0.jar | 1.8.0 | 刷石机结构 | 🔴 确认无1.21.1（原作者分家问题） |
+| 160 | **CobbleForDays** | CobbleForDays-1.8.0.jar | 1.8.0 | 刷石机结构 | ✅ 已用类似模组替换 |
 
 ---
 
@@ -642,7 +642,7 @@
 | 1 | 0World2Create | 有refoxed版 |
 | 2 | AlwaysEat | → Always Eat 替代 |
 | 3 | Cave Delight | 无 |
-| 4 | CobbleForDays | Forge原作者分家问题 |
+| 4 | CobbleForDays | 已用类似模组替换 |
 | 5 | CullLessLeaves Reforged | → 钠：树叶剔除 |
 | 6 | Harium | → 可用锂替代 |
 | 7 | Icterine | → Cerulean替代（前置稳定性存疑） |

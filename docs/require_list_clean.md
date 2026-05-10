@@ -34,6 +34,7 @@
 | `collectorsreap` | `collectorsreap-1.20.1-1.5.5.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。 |
 | `silentsdelight` | `silentsdelight-forge-1.0.1-1.20.1.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。 |
 | `createfluidstuffs` | `createfluidstuffs-1.2.0-all.jar` | 已完成 1.21.1 NeoForge 迁移验证（KazeShukufuku）。 |
+| `cobblefordays` | `CobbleForDays-1.8.0.jar` | 已用类似模组替换 |
 
 ## 🔴 缺失/需移植
 
@@ -60,7 +61,6 @@
 | `solcarrot` | 未列出明确 jar | 食物玩法 |
 | `sqlite_jdbc` | `sqlite-jdbc-3.36.0.3+20211227-all.jar` | 库 |
 | `youkaishomecoming_curios` | `youkaishomecoming_curios-0.03.jar` | Youkai's Homecoming |
-| `cobblefordays` | `CobbleForDays-1.8.0.jar` | 刷石机 |
 | `nethervinery` | `letsdo-nethervinery-forge-1.2.19.jar` | 食物内容 |
 
 ## 🟡 替代/非官方
