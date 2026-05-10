@@ -22,7 +22,7 @@
 | 126 | **Nether Vinery** | letsdo-nethervinery-forge-1.2.19.jar | 1.2.19 | 农夫乐事 | 下界葡萄酒/葡萄园 (Let's Do系列) | 🔴 确认无1.21.1版本 |
 | 134 | **Extended AE Plus** | extendedae_plus-1.5.3-fix.jar | 1.5.3-fix | AE2/存储 | ExtendedAE的进一步增强 | ✅ 有1.21.1 |
 | 135 | **MEGA Cells** | megacells-forge-2.4.6-1.20.1.jar | 2.4.6 | AE2/存储 | 超大容量存储单元（MEGA级） | ✅ 有NeoForge版 |
-| 160 | **CobbleForDays** | CobbleForDays-1.8.0.jar | 1.8.0 | 世界生成 | 刷石机结构 | 🔴 确认无1.21.1（原作者分家问题） |
+| 160 | **CobbleForDays** | CobbleForDays-1.8.0.jar | 1.8.0 | 世界生成 | 刷石机结构 | ✅ 已用类似模组替换 |
 | 163 | **Alex's Cave Addon** | alex_cave_addon-5.1.0-1.20.1.jar | 5.1.0 | 生物 | Alex's Caves的附加内容 | 🔴 等待Alex's Caves移植 |
 | 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 生物/魔法 | 东方Project主题，妖怪/幻想乡 | 🟡 有1.21.1，但缺少战斗等内容 |
 | 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 生物/魔法 | 妖怪归宅的Curios兼容 | 🔴 确认无1.21.1 |
@@ -66,7 +66,7 @@
 
 ### TACZ (永恒枪械工坊：零)
 - **TACZ** (`tacz-1.20.1-1.1.4-hotfix-all.jar`) — 高质量枪械模组
-- 1.21.1替代：→ **Gunsmith Lib**（v5.1.2+分内置/非内置版，非内置版需额外安装TaCZ NeoForge Port）
+- 1.21.1替代：→ **TaCZ NeoForge Port**（已安装）
 - **TACZ Addon** (`taczaddon-1.20.1-1.1.4-for1.1.4.jar`) — TACZ附加内容
 
 ---
