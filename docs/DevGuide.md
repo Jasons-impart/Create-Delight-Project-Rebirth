@@ -14,7 +14,7 @@
 - Windows
 - Java 21
 - Git
-- Node.js / npm，用于 KubeJS 脚本格式化和 Git hook
+- Node.js LTS / npm，用于 KubeJS 脚本格式化和 Git hook。安装 Node.js 时需包含 npm，并确认 `node`、`npm` 已加入 PATH。
 - 推荐编辑器：VSCode / IntelliJ IDEA Community Edition / 其他支持 TOML、JSON、JavaScript 的编辑器
 
 根目录内置开发工具：
@@ -32,6 +32,14 @@ devtool.bat
 开发工具优先使用仓库内置的 `scripts/bin/packwiz.exe` 和 `scripts/bin/packwiz-installer-bootstrap.jar`。
 
 开发者日常操作优先使用交互式菜单，不需要记忆 packwiz 参数命令。
+
+可以用下面的命令快速检查本机基础工具：
+
+```powershell
+node -v
+npm -v
+devtool.bat check
+```
 
 ## 仓库结构原则
 
@@ -113,10 +121,12 @@ devtool.bat
 首次拉取仓库后运行：
 
 ```powershell
+node -v
+npm -v
 npm install
 ```
 
-`npm install` 会通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 packwiz 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
+如果 `node -v` 或 `npm -v` 找不到命令，请先安装 Node.js LTS，并确认 npm 一起安装且已加入 PATH。`npm install` 会安装格式化工具，并通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 packwiz 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
 
 也可以手动运行：
 
@@ -137,6 +147,104 @@ npm run format:js:check
 ```
 
 也可以在打开 `kubejs/**/*.js` 后手动执行 `Format Document`。Prettier 只负责格式化，不会把现代 JavaScript 语法转换成 KubeJS/Rhino 可用语法；脚本写法仍需按当前 KubeJS 运行环境保持兼容。
+
+### KubeJS 配方 schema
+
+当某个模组配方类型没有 KubeJS 内置支持时，可以给 KubeJS/ProbeJS 添加 JSON schema，用于生成 `event.recipes.<mod>.<recipe_type>(...)` 的类型补全。schema 只描述配方 JSON 的字段结构，不会把数组、字符串等自定义简写自动转换成目标 JSON；需要简写语法时，应在 server script 中单独写 helper 函数。
+
+schema 文件放在 KubeJS datapack 目录：
+
+```text
+kubejs/data/<namespace>/kubejs/recipe_schema/<recipe_type>.json
+```
+
+例如 `ae2:inscriber` 对应：
+
+```text
+kubejs/data/ae2/kubejs/recipe_schema/inscriber.json
+```
+
+常用字段：
+
+- `name`: 配方 JSON 中的字段名。
+- `role`: 字段用途，常用 `input`、`output`、`other`。
+- `type`: KubeJS recipe component 类型，例如 `item_stack`、`ingredient`、`fluid_stack`、`int`、`string`、`boolean`。
+- `optional`: 可选字段的默认值；在 `custom_object` 子字段中也可用 `true` 表示该子字段可省略。
+- `constructors`: 定义 helper 的参数顺序，例如 `event.recipes.ae2.inscriber(result, ingredients, mode)`。
+
+`ae2:inscriber` 示例：
+
+```json
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack"
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "top",
+            "component": "ingredient",
+            "optional": true
+          },
+          {
+            "name": "middle",
+            "component": "ingredient"
+          },
+          {
+            "name": "bottom",
+            "component": "ingredient",
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "mode",
+      "role": "other",
+      "type": "string"
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["result", "ingredients", "mode"]
+    }
+  ]
+}
+```
+
+对应脚本用法：
+
+```js
+ServerEvents.recipes((event) => {
+  event.recipes.ae2
+    .inscriber(
+      'ae2:calculation_processor',
+      {
+        top: { item: 'ae2:printed_calculation_processor' },
+        middle: { item: 'minecraft:redstone' },
+        bottom: { item: 'ae2:printed_silicon' },
+      },
+      'press'
+    )
+    .id('kubejs:calculation_processor_test');
+});
+```
+
+新增或修改 schema 后，进游戏执行：
+
+```text
+/reload
+/probejs dump
+```
+
+等 `.probe/` 重新生成后，在 VSCode 中执行 `TypeScript: Restart TS Server` 或重载窗口，补全才会更新。
 
 通用规范：
 

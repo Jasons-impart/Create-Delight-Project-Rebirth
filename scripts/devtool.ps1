@@ -128,6 +128,7 @@ Create Delight Project Rebirth 开发工具
 说明：
   - 直接运行本脚本会进入交互式菜单。
   - packwiz 默认使用仓库内置的 scripts\bin\packwiz.exe。
+  - KubeJS 脚本格式化和 Git hook 需要 Node.js/npm；首次拉取后请运行 npm install。
   - 本地工具二进制、mod jar、服务端运行产物都会被 git 忽略。
   - pack.toml/index.toml/icon/start/variables 是由 pack/ 模板和 refresh 生成的本地发布根文件，默认不提交。
   - 首次拉取仓库后必须主动运行一次 prepare-pack，展开本地 packwiz 根目录文件。
@@ -522,6 +523,19 @@ function Sync-PackRootFiles {
   }
 
   Sync-PackwizIgnore
+  Ensure-PackwizIndexSeed
+}
+
+function Ensure-PackwizIndexSeed {
+  $indexPath = Join-Path $RepoRoot "index.toml"
+  if (Test-Path $indexPath) {
+    return
+  }
+
+  $seedContent = "hash-format = ""sha256""" + [Environment]::NewLine
+  $encoding = New-Object System.Text.UTF8Encoding($false)
+  [System.IO.File]::WriteAllText($indexPath, $seedContent, $encoding)
+  Write-Info "根目录缺少 index.toml，已创建空索引种子，packwiz refresh 会重新生成真实索引。"
 }
 
 function Sync-PackwizIgnore {
@@ -1535,6 +1549,38 @@ function Test-Repository {
     }
     else {
       Write-Fail "packwiz 无法正常执行"
+    }
+  }
+
+  $node = Get-Command "node.exe" -ErrorAction SilentlyContinue
+  if ($null -eq $node) {
+    $node = Get-Command "node" -ErrorAction SilentlyContinue
+  }
+  if ($null -eq $node) {
+    Write-Fail "未找到 Node.js。请安装 Node.js LTS，并确认 node/npm 已加入 PATH。"
+  }
+  else {
+    $nodeVersion = (& $node.Source --version 2>$null)
+    Write-Success "node: $nodeVersion"
+  }
+
+  $npm = Get-Command "npm.cmd" -ErrorAction SilentlyContinue
+  if ($null -eq $npm) {
+    $npm = Get-Command "npm" -ErrorAction SilentlyContinue
+  }
+  if ($null -eq $npm) {
+    Write-Fail "未找到 npm。请安装包含 npm 的 Node.js LTS，或修复 PATH。"
+  }
+  else {
+    $npmVersion = (& $npm.Source --version 2>$null)
+    Write-Success "npm: $npmVersion"
+
+    $nodeModules = Join-Path $RepoRoot "node_modules"
+    if (Test-Path $nodeModules) {
+      Write-Success "npm 依赖已安装：node_modules"
+    }
+    else {
+      Write-Warn "尚未安装 npm 依赖。首次拉取仓库后请运行：npm install"
     }
   }
 
