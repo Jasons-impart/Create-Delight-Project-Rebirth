@@ -22,11 +22,18 @@ body:
       required: true
 
   - type: textarea
-    id: goal
+    id: details
     attributes:
-      label: 目标 / Goal
-      description: 说明要迁移或实现的具体行为。
-      placeholder: 例如：为 AE2 压印机补齐配方 schema 和测试配方。
+      label: 详细描述 / Details
+      description: 补充当前行为、目标行为、迁移范围、兼容性限制或实现思路。
+      placeholder: |
+        当前情况：
+
+        目标行为：
+
+        迁移范围：
+
+        注意事项：
     validations:
       required: true
 
@@ -62,6 +69,7 @@ body:
     id: validation
     attributes:
       label: 验证方式 / Validation
+      description: 只写可验证的关闭条件或测试步骤。
       value: |
         - [ ] 启动客户端或服务端
         - [ ] 执行 `/reload`
@@ -77,4 +85,3 @@ body:
       description: 风险、未确认项、日志链接或相关 issue。
     validations:
       required: false
-

@@ -1,0 +1,43 @@
+name: Other
+description: 其他不适合现有模板的事项
+title: "[Other]: "
+labels:
+  - triage
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型 / Type
+      options:
+        - 问题讨论 / Discussion
+        - 建议 / Suggestion
+        - 资料补充 / Reference
+        - 维护提醒 / Maintenance note
+        - 其他 / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 详细描述 / Details
+      description: 说明背景、现状、相关链接，以及为什么现有模板不适用。
+      placeholder: |
+        背景：
+
+        具体内容：
+
+        相关链接：
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望处理 / Expected outcome
+      description: 说明你希望这个 issue 最后得到什么结论或动作。
+      placeholder: |
+        - 
+    validations:
+      required: false
+

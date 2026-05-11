@@ -57,6 +57,20 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: details
+    attributes:
+      label: 详细描述 / Details
+      description: 补充预期改动、替代方案、兼容性疑点、已知风险或测试重点。
+      placeholder: |
+        预期改动：
+
+        兼容性疑点：
+
+        测试重点：
+    validations:
+      required: false
+
   - type: checkboxes
     id: baseline
     attributes:
@@ -71,6 +85,7 @@ body:
     id: acceptance
     attributes:
       label: 验收 / Acceptance
+      description: 只写可验证的关闭条件。
       value: |
         - [ ] 通过 `devtool.bat` 或 packwiz 元数据完成变更
         - [ ] 运行 `devtool.bat refresh` 或等效刷新
@@ -86,4 +101,3 @@ body:
       description: 兼容性结论、替代候选、日志链接或相关 issue。
     validations:
       required: false
-

@@ -4,15 +4,6 @@ title: "[Todo]: "
 labels:
   - todo
 body:
-  - type: textarea
-    id: goal
-    attributes:
-      label: 目标 / Goal
-      description: 用一句话说明这个待办完成后应该得到什么结果。
-      placeholder: 例如：补齐服务端启动说明，避免新服主漏掉 Java 21 要求。
-    validations:
-      required: true
-
   - type: dropdown
     id: area
     attributes:
@@ -43,6 +34,20 @@ body:
       required: true
 
   - type: textarea
+    id: details
+    attributes:
+      label: 详细描述 / Details
+      description: 补充背景、现状、期望改动、相关限制或需要注意的地方。
+      placeholder: |
+        当前情况：
+
+        需要处理：
+
+        注意事项：
+    validations:
+      required: true
+
+  - type: textarea
     id: tasks
     attributes:
       label: 子任务 / Checklist
@@ -57,11 +62,11 @@ body:
     id: done
     attributes:
       label: 完成标准 / Definition of Done
-      description: 写清楚满足什么条件可以关闭 issue。
+      description: 只写可验证的关闭条件，不重复描述任务背景。
       placeholder: |
-        - 相关文件已提交
-        - 本地检查通过
-        - 需要的截图、日志或说明已补充
+        - [ ] 相关文件已提交
+        - [ ] 本地检查通过
+        - [ ] 需要的截图、日志或说明已补充
     validations:
       required: true
 
@@ -72,4 +77,3 @@ body:
       description: 链接、上下文、相关 issue 或临时结论。
     validations:
       required: false
-
