@@ -16,6 +16,7 @@
 - `.agents/skills/`: 面向 AI agent 的共享工作流。
 - `docs/DevGuide.md`: 团队开发指南。
 - `docs/modpack-analysis-report.md`: 旧包迁移分析参考。
+- `docs/MIGRATION_CHANGES.md`: 迁移过程中的实际改动、临时处理和后续待办。
 - `docs/`: 团队文档和迁移记录。
 
 ## 不应提交
