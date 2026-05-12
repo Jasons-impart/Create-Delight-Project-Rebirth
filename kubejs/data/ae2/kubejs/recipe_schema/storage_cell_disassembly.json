@@ -1,0 +1,23 @@
+{
+  "keys": [
+    {
+      "name": "cell",
+      "role": "input",
+      "type": "string"
+    },
+    {
+      "name": "cell_disassembly_items",
+      "role": "output",
+      "type": {
+        "type": "list",
+        "component": "item_stack"
+      }
+    }
+  ],
+  "unique": ["cell"],
+  "constructors": [
+    {
+      "keys": ["cell", "cell_disassembly_items"]
+    }
+  ]
+}

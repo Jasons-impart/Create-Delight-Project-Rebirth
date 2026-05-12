@@ -1,0 +1,43 @@
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack"
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "top",
+            "component": "ingredient",
+            "optional": true
+          },
+          {
+            "name": "middle",
+            "component": "ingredient"
+          },
+          {
+            "name": "bottom",
+            "component": "ingredient",
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "mode",
+      "role": "other",
+      "type": "string"
+    }
+  ],
+  "unique": ["result"],
+  "constructors": [
+    {
+      "keys": ["result", "ingredients", "mode"]
+    }
+  ]
+}

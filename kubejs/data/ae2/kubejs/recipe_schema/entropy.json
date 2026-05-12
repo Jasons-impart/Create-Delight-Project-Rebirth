@@ -1,0 +1,87 @@
+{
+  "keys": [
+    {
+      "name": "input",
+      "role": "input",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "block",
+            "component": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "id",
+                  "component": "string"
+                }
+              ]
+            },
+            "optional": true
+          },
+          {
+            "name": "fluid",
+            "component": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "id",
+                  "component": "string"
+                }
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "mode",
+      "role": "other",
+      "type": {
+        "type": "enum",
+        "enum": "appeng.recipes.entropy.EntropyMode"
+      }
+    },
+    {
+      "name": "output",
+      "role": "output",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "block",
+            "component": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "id",
+                  "component": "string"
+                }
+              ]
+            },
+            "optional": true
+          },
+          {
+            "name": "fluid",
+            "component": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "id",
+                  "component": "string"
+                }
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["input", "mode", "output"]
+    }
+  ]
+}

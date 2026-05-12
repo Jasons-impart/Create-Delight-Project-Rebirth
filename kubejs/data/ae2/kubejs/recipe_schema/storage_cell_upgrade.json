@@ -1,0 +1,30 @@
+{
+  "keys": [
+    {
+      "name": "input_cell",
+      "role": "input",
+      "type": "string"
+    },
+    {
+      "name": "input_component",
+      "role": "input",
+      "type": "string"
+    },
+    {
+      "name": "result_cell",
+      "role": "output",
+      "type": "string"
+    },
+    {
+      "name": "result_component",
+      "role": "output",
+      "type": "string"
+    }
+  ],
+  "unique": ["result_cell"],
+  "constructors": [
+    {
+      "keys": ["result_cell", "result_component", "input_cell", "input_component"]
+    }
+  ]
+}

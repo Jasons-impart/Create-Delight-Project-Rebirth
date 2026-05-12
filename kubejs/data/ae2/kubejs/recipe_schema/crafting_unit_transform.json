@@ -1,0 +1,20 @@
+{
+  "keys": [
+    {
+      "name": "upgrade_item",
+      "role": "input",
+      "type": "string"
+    },
+    {
+      "name": "upgraded_block",
+      "role": "output",
+      "type": "string"
+    }
+  ],
+  "unique": ["upgraded_block"],
+  "constructors": [
+    {
+      "keys": ["upgraded_block", "upgrade_item"]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack"
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": "ingredient"
+      }
+    },
+    {
+      "name": "circumstance",
+      "role": "other",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "type",
+            "component": "string"
+          },
+          {
+            "name": "tag",
+            "component": "string",
+            "optional": true
+          }
+        ]
+      },
+      "default_optional": true
+    }
+  ],
+  "unique": ["result"],
+  "constructors": [
+    {
+      "keys": ["result", "ingredients"]
+    },
+    {
+      "keys": ["result", "ingredients", "circumstance"]
+    }
+  ],
+  "functions": {
+    "explosion": {
+      "type": "set",
+      "key": "circumstance",
+      "value": {
+        "type": "explosion"
+      }
+    }
+  }
+}

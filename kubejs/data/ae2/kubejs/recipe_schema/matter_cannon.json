@@ -1,0 +1,20 @@
+{
+  "keys": [
+    {
+      "name": "ammo",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "weight",
+      "role": "other",
+      "type": "positive_double"
+    }
+  ],
+  "unique": ["ammo"],
+  "constructors": [
+    {
+      "keys": ["ammo", "weight"]
+    }
+  ]
+}
