@@ -1,0 +1,13 @@
+name = "Northstar Curios Compat"
+filename = "northstar-curios-compat-neoforge-1.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cf9480b6e53ace8f1f91e078a9c0e8d0d9cd167c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8108614
+project-id = 1472218

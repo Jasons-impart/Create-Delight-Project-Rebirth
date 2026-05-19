@@ -667,7 +667,7 @@
 | 26 | Lucent | Lambd替代品含强制内容 |
 | 27 | MoesTweaks | 无 |
 | 28 | Multiblocked2 | 无 |
-| 29 | Northstar Curios Compat | 无 |
+| 29 | Northstar Curios Compat | 已完成迁移 |
 | 30 | Oceanic Delight | 无 |
 | 31 | Quests Additions | 无 |
 | 32 | Seasonals | 无 |
