@@ -2,7 +2,7 @@
 
 本文件记录从旧版整合包迁移到 Minecraft 1.21.1 NeoForge 过程中遇到的问题、当前临时处理方式和后续待办。这里记录的是实际迁移改动，不替代 `docs/modpack-analysis-report.md` 的模组可用性分析。
 
-## Cosmopolitan
+## Cosmopolitan （四海一家）
 
 状态：暂缓迁移。
 
