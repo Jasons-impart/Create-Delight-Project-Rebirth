@@ -12,7 +12,7 @@
 - `ldlib/`、`tacz/`、`schematics/`、`minemenu/`: 目标整合包仍使用对应 mod 时维护的数据。
 - `devtool.bat`: 根目录开发工具入口。
 - `scripts/devtool.ps1`: 开发工具实际实现。
-- `LICENSE`、`scripts/bin/packwiz.VERSION.txt`、`scripts/bin/packwiz-installer-bootstrap.VERSION.txt`: 内置 packwiz 工具的协议和来源记录。
+- `LICENSE`、`scripts/bin/packwiz.VERSION.txt`、`scripts/bin/packwiz-installer-bootstrap.VERSION.txt`: 项目主协议、自有视觉资产权利声明、第三方协议和内置 packwiz 工具来源记录。
 - `.agents/skills/`: 面向 AI agent 的共享工作流。
 - `docs/DevGuide.md`: 团队开发指南。
 - `docs/modpack-analysis-report.md`: 旧包迁移分析参考。
