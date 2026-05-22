@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "vintagedelight:item/hat/green_chefs_hat_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "vintagedelight:item/hat/green_chefs_hat_icon"
+    },
+    "ground": {
+      "parent": "vintagedelight:item/hat/green_chefs_hat_icon"
+    },
+    "fixed": {
+      "parent": "vintagedelight:item/hat/green_chefs_hat_icon"
+    }
+  }
+}
