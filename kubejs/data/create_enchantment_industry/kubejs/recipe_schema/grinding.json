@@ -1,0 +1,23 @@
+{
+  "parent": "create:base/processing_unwrapped",
+  "hidden": false,
+  "keys": [
+    {
+      "name": "sound",
+      "role": "other",
+      "type": "string",
+      "default_optional": true
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["results", "ingredients"]
+    },
+    {
+      "keys": ["results", "ingredients", "processing_time"]
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

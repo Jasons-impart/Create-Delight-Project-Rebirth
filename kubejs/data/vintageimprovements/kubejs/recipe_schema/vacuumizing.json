@@ -1,0 +1,31 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "secondary_fluid_output",
+        "secondaryFluidOutput"
+      ],
+      "name": "secondary_fluid_output",
+      "optional": -1
+    },
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "secondary_fluid_input",
+        "secondaryFluidInput"
+      ],
+      "name": "secondary_fluid_input",
+      "optional": -1
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": {
+        "type": "either",
+        "left": "item_stack",
+        "right": "string"
+      }
+    },
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient"
+    }
+  ],
+  "unique": ["result"]
+}

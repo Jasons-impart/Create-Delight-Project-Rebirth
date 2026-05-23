@@ -1,0 +1,23 @@
+{
+  "parent": "create:base/processing_unwrapped",
+  "hidden": false,
+  "keys": [
+    {
+      "name": "energy_needed",
+      "role": "other",
+      "type": "int",
+      "optional": 0,
+      "alternative_names": [
+        "energyNeeded"
+      ]
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["results", "ingredients", "energy_needed"]
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

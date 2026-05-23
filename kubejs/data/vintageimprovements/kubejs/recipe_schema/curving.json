@@ -1,0 +1,31 @@
+{
+  "parent": "create:base/processing_unwrapped",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": ["mode"],
+      "name": "mode",
+      "optional": 1
+    },
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": ["head_damage", "headDamage"],
+      "name": "head_damage",
+      "optional": 0
+    },
+    {
+      "type": "id",
+      "alternative_names": ["item_as_head", "itemAsHead"],
+      "name": "item_as_head",
+      "optional": "minecraft:air"
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

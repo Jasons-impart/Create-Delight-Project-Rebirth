@@ -1,0 +1,131 @@
+{
+  "keys": [
+    {
+      "name": "results",
+      "role": "output",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "fluid_stack",
+          "right": {
+            "type": "either",
+            "left": "create:processing_output",
+            "right": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "item",
+                  "component": "item_stack"
+                },
+                {
+                  "name": "count",
+                  "component": "int",
+                  "optional": true
+                },
+                {
+                  "name": "chance",
+                  "component": "float",
+                  "optional": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "create:sized_fluid_ingredient",
+          "right": {
+            "type": "either",
+            "left": "ingredient",
+            "right": {
+              "type": "either",
+              "left": {
+                "type": "custom_object",
+                "keys": [
+                  {
+                    "name": "type",
+                    "component": "string"
+                  },
+                  {
+                    "name": "fluid",
+                    "component": "string"
+                  },
+                  {
+                    "name": "amount",
+                    "component": "int"
+                  },
+                  {
+                    "name": "components",
+                    "component": "ignore",
+                    "optional": true
+                  }
+                ]
+              },
+              "right": {
+                "type": "custom_object",
+                "keys": [
+                  {
+                    "name": "type",
+                    "component": "string"
+                  },
+                  {
+                    "name": "fluid_tag",
+                    "component": "string"
+                  },
+                  {
+                    "name": "amount",
+                    "component": "int"
+                  },
+                  {
+                    "name": "components",
+                    "component": "ignore",
+                    "optional": true
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "spread": {
+          "type": "either",
+          "left": "ignore",
+          "right": "sized_ingredient"
+        }
+      }
+    },
+    {
+      "name": "processing_time",
+      "role": "input",
+      "type": "ticks",
+      "optional": 100
+    },
+    {
+      "name": "heat_requirement",
+      "role": "input",
+      "type": "create:heat_condition",
+      "optional": "none",
+      "excluded": true
+    }
+  ],
+  "unique": ["results"],
+  "functions": {
+    "heated": {
+      "type": "set",
+      "key": "heat_requirement",
+      "value": "heated"
+    },
+    "superheated": {
+      "type": "set",
+      "key": "heat_requirement",
+      "value": "superheated"
+    }
+  }
+}

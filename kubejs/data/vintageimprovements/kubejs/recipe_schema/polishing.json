@@ -1,0 +1,28 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "speed_limits",
+        "speedLimits"
+      ],
+      "name": "speed_limits",
+      "optional": 0
+    },
+    {
+      "type": "boolean",
+      "alternative_names": [
+        "fragile"
+      ],
+      "name": "fragile",
+      "optional": false
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

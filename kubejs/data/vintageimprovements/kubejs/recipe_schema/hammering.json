@@ -1,0 +1,29 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "hammer_blows",
+        "hammerBlows"
+      ],
+      "name": "hammer_blows",
+      "optional": 1
+    },
+    {
+      "type": "id",
+      "alternative_names": [
+        "anvil_block",
+        "anvilBlock"
+      ],
+      "name": "anvil_block",
+      "optional": "minecraft:air"
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

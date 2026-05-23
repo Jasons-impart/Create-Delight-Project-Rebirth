@@ -1,0 +1,30 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "energy"
+      ],
+      "name": "energy",
+      "optional": 0
+    },
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "max_charge_rate",
+        "maxChargeRate"
+      ],
+      "name": "max_charge_rate",
+      "optional": 0
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

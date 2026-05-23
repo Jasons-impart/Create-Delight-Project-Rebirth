@@ -1,0 +1,9 @@
+{
+  "parent": "create:base/processing_unwrapped",
+  "hidden": false,
+  "constructors": [
+    {
+      "keys": ["results", "ingredients"]
+    }
+  ]
+}

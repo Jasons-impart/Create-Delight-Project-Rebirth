@@ -14,6 +14,11 @@
                 {
                   "name": "id",
                   "component": "string"
+                },
+                {
+                  "name": "properties",
+                  "component": "ignore",
+                  "optional": true
                 }
               ]
             },
@@ -27,6 +32,11 @@
                 {
                   "name": "id",
                   "component": "string"
+                },
+                {
+                  "name": "properties",
+                  "component": "ignore",
+                  "optional": true
                 }
               ]
             },
@@ -54,6 +64,11 @@
                 {
                   "name": "id",
                   "component": "string"
+                },
+                {
+                  "name": "properties",
+                  "component": "ignore",
+                  "optional": true
                 }
               ]
             },
@@ -67,8 +82,21 @@
                 {
                   "name": "id",
                   "component": "string"
+                },
+                {
+                  "name": "properties",
+                  "component": "ignore",
+                  "optional": true
                 }
               ]
+            },
+            "optional": true
+          },
+          {
+            "name": "drops",
+            "component": {
+              "type": "list",
+              "component": "item_stack"
             },
             "optional": true
           }

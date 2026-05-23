@@ -1,0 +1,81 @@
+{
+  "keys": [
+    {
+      "name": "results",
+      "role": "output",
+      "type": {
+        "type": "list",
+        "component": "create:processing_output"
+      }
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "create:sized_fluid_ingredient",
+          "right": {
+            "type": "either",
+            "left": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "type",
+                  "component": "string"
+                },
+                {
+                  "name": "fluid",
+                  "component": "string"
+                },
+                {
+                  "name": "amount",
+                  "component": "int"
+                },
+                {
+                  "name": "components",
+                  "component": "ignore",
+                  "optional": true
+                }
+              ]
+            },
+            "right": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "type",
+                  "component": "string"
+                },
+                {
+                  "name": "fluid_tag",
+                  "component": "string"
+                },
+                {
+                  "name": "amount",
+                  "component": "int"
+                },
+                {
+                  "name": "components",
+                  "component": "ignore",
+                  "optional": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mold",
+      "role": "input",
+      "type": "string"
+    }
+  ],
+  "unique": ["results"],
+  "constructors": [
+    {
+      "keys": ["results", "mold", "ingredients"]
+    }
+  ]
+}

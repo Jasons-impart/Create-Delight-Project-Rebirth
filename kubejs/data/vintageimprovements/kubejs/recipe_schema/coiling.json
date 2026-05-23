@@ -1,0 +1,22 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "either",
+        "left": "int",
+        "right": "string"
+      },
+      "alternative_names": [
+        "spring_color",
+        "springColor"
+      ],
+      "name": "spring_color",
+      "optional": 10134685
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

@@ -8,7 +8,7 @@
     {
       "name": "weight",
       "role": "other",
-      "type": "positive_double"
+      "type": "non_negative_float"
     }
   ],
   "unique": ["ammo"],

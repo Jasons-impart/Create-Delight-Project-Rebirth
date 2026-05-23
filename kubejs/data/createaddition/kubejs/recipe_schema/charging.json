@@ -1,0 +1,27 @@
+{
+  "parent": "create:base/processing_unwrapped",
+  "hidden": false,
+  "keys": [
+    {
+      "name": "energy",
+      "role": "other",
+      "type": "int"
+    },
+    {
+      "name": "max_charge_rate",
+      "role": "other",
+      "type": "int",
+      "alternative_names": [
+        "maxChargeRate"
+      ]
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["results", "ingredients", "energy", "max_charge_rate"]
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}
