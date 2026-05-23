@@ -1,0 +1,37 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:leather"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 100.0,
+      "count": 3,
+      "id": "minecraft:book"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_book"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_book"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_sa:incomplete_book"
+  }
+}

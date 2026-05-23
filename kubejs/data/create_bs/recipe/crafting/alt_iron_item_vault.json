@@ -1,0 +1,25 @@
+{
+    "type":  "minecraft:crafting_shaped",
+    "category":  "misc",
+    "key":  {
+                "B":  {
+                          "item":  "minecraft:iron_block"
+                      },
+                "I":  {
+                          "item":  "minecraft:iron_ingot"
+                      },
+                "V":  {
+                          "item":  "create_bs:copper_item_vault"
+                      }
+            },
+    "pattern":  [
+                    "IBI",
+                    "IVI",
+                    "IBI"
+                ],
+    "result":  {
+                   "id":  "create_bs:iron_item_vault",
+                   "count":  1
+               },
+    "show_notification":  true
+}

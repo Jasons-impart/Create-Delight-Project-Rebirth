@@ -1,0 +1,15 @@
+{
+    "type":  "jeed:effect_provider",
+    "effect":  "createaddition:shocking",
+    "providers":  [
+                      {
+                          "item":  "createaddition:tesla_coil"
+                      }
+                  ],
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "jeed"
+                                }
+                            ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#dungeonsdelight:drops_brined_flesh"
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player",
+      "inverse": false
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.3
+    }
+  ],
+  "item": "dungeonsdelight:brined_flesh"
+}

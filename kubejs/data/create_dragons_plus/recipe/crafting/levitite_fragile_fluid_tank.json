@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "create_dragons_plus:fragile_fluid_tank"
+    },
+    "t": {
+      "item": "aeronautics:levitite_blend_bucket"
+    }
+  },
+  "pattern": [
+    "lll",
+    "ltl",
+    "lll"
+  ],
+  "result": {
+    "count": 8,
+    "id": "create_dragons_plus:levitite_fragile_fluid_tank"
+  }
+}

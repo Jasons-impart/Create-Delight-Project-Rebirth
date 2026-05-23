@@ -1,0 +1,20 @@
+{
+    "type":  "createaddition:rolling",
+    "ingredients":  [
+                        {
+                            "tag":  "c:plates/zinc"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "count":  2,
+                        "id":  "vintageimprovements:zinc_wire"
+                    }
+                ],
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "createaddition"
+                                }
+                            ]
+}

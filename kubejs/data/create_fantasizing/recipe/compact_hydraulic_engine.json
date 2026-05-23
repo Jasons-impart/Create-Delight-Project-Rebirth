@@ -1,0 +1,59 @@
+{
+  "type": "create:sequenced_assembly",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_fantasizing"
+    }
+  ],
+  "ingredient": {
+    "item": "create_fantasizing:sturdy_conduit"
+  },
+  "loops": 128,
+  "results": [
+    {
+      "id": "create_fantasizing:compact_hydraulic_engine"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_compact_hydraulic_engine"
+        },
+        [
+          {
+            "item": "create_fantasizing:prismarine_fan_blades"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_compact_hydraulic_engine"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_compact_hydraulic_engine"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 10,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_compact_hydraulic_engine"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_fantasizing:incomplete_compact_hydraulic_engine"
+  }
+}

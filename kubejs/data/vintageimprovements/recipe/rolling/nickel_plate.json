@@ -1,0 +1,27 @@
+{
+    "type":  "createaddition:rolling",
+    "ingredients":  [
+                        {
+                            "tag":  "c:plates/nickel"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "count":  2,
+                        "id":  "vintageimprovements:nickel_wire"
+                    }
+                ],
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "createaddition"
+                                },
+                                {
+                                    "type":  "neoforge:not",
+                                    "value":  {
+                                                  "type":  "neoforge:tag_empty",
+                                                  "tag":  "c:plates/nickel"
+                                              }
+                                }
+                            ]
+}

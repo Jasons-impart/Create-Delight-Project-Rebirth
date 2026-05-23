@@ -1,0 +1,36 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:string"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 100.0,
+      "id": "minecraft:cobweb"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_web"
+        },
+        {
+          "item": "minecraft:string"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_web"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_sa:incomplete_web"
+  }
+}

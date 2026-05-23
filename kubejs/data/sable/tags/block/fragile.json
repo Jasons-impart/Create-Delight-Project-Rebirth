@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "create_dragons_plus:fragile_fluid_tank",
+      "required": false,
+      "conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "aeronautics"
+        }
+      ]
+    },
+    {
+      "id": "create_dragons_plus:levitite_fragile_fluid_tank",
+      "required": false,
+      "conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "aeronautics"
+        }
+      ]
+    }
+  ]
+}

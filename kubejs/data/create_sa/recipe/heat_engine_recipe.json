@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:andesite_alloy"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 120.0,
+      "id": "create_sa:heat_engine"
+    },
+    {
+      "chance": 8.0,
+      "id": "create:zinc_nugget"
+    },
+    {
+      "chance": 4.0,
+      "id": "create:andesite_alloy"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_heat_engine"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_heat_engine"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_heat_engine"
+        },
+        {
+          "item": "create:large_cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_heat_engine"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_heat_engine"
+        },
+        {
+          "tag": "c:nuggets/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_heat_engine"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_heat_engine"
+        },
+        {
+          "tag": "c:nuggets/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "create_sa:incomplete_heat_engine"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_sa:incomplete_heat_engine"
+  }
+}

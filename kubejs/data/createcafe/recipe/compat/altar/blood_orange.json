@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bloodmagic"
+    }
+  ],
+  "type": "bloodmagic:altar",
+  "input": {
+    "tag": "forge:fruits/orange"
+  },
+  "output": {
+    "item": "createcafe:blood_orange"
+  },
+  "upgradeLevel": 0,
+  "altarSyphon": 1000,
+  "consumptionRate": 5,
+  "drainRate": 5
+}

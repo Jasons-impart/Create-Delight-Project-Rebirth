@@ -1,0 +1,20 @@
+{
+    "type":  "createaddition:rolling",
+    "ingredients":  [
+                        {
+                            "item":  "create:andesite_alloy"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "count":  2,
+                        "id":  "vintageimprovements:andesite_rod"
+                    }
+                ],
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "createaddition"
+                                }
+                            ]
+}

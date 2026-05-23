@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "G G",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "tag": "c:glass_blocks"
+    },
+    "S": {
+      "item": "create:polished_cut_limestone_slab"
+    }
+  },
+  "result": {
+    "id": "createcafe:iced_coffee_cup"
+  }
+}
