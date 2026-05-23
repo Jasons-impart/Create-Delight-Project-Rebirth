@@ -1,0 +1,8 @@
+{
+    "dummy":  true,
+    "optional":  true,
+    "target":  "lightmanscurrency:card_display_biomesoplenty_jacaranda_purple",
+    "textures":  {
+                     "disabled":  "minecraft:block/stone"
+                 }
+}

@@ -1,0 +1,8 @@
+{
+    "dummy":  true,
+    "optional":  true,
+    "target":  "minecraft:stone",
+    "textures":  {
+                     "disabled":  "minecraft:block/stone"
+                 }
+}

@@ -1,0 +1,8 @@
+{
+    "dummy":  true,
+    "optional":  true,
+    "target":  "lightmanscurrency:card_display_biomesoplenty_mahogany_magenta",
+    "textures":  {
+                     "disabled":  "minecraft:block/stone"
+                 }
+}
