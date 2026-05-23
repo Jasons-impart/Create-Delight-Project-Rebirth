@@ -1,4 +1,11 @@
 {
+  "block.cpapireforged.custom_portal_block": "传送门",
+  "dimension.createdelightcore.magnetic_caves_dimension": "磁场洞窟",
+  "dimension.createdelightcore.abyssal_chasm_dimension": "深渊裂隙",
+  "dimension.createdelightcore.forlorn_hollows_dimension": "荒芜空洞",
+  "dimension.createdelightcore.primordial_caves_dimension": "原始洞窟",
+  "dimension.createdelightcore.toxic_caves_dimension": "剧毒洞窟",
+  "dimension.createdelightcore.candy_cavity_dimension": "糖果洞穴",
   "createdelightcore.tip.advanced_alloy": "部分合金在初始阶段只能使用熔铸搅拌器合成, 例如钢。",
   "createdelightcore.tip.alexscaves_dimension_spawn": "alex洞穴的维度禁止了所有非alex洞穴生物的生成(当然除了玩家)",
   "createdelightcore.tip.andesite_bucket": "安山桶可以直接将容器中的流体打出来, 并直接送到另一个容器中。在处理液体相关的配方时非常好用!",

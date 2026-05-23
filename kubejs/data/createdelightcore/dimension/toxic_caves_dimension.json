@@ -1,0 +1,11 @@
+{
+  "type": "createdelightcore:alexscaves_dimension",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "createdelightcore:toxic_caves_dimension",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "alexscaves:toxic_caves"
+    }
+  }
+}

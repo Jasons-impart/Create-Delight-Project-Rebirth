@@ -1,0 +1,11 @@
+{
+  "type": "createdelightcore:alexscaves_dimension",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "createdelightcore:alexscaves_dimension",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "alexscaves:forlorn_hollows"
+    }
+  }
+}
