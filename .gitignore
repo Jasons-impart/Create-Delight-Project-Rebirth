@@ -58,8 +58,6 @@
 !/minemenu/**
 !/scripts/
 !/scripts/**
-!/server/
-!/server/**
 
 # Explicit runtime exclusions inside allowed directories.
 scripts/bin/*
@@ -72,8 +70,8 @@ mods/*.jar.disabled
 logs/
 crash-reports/
 saves/
-world/
-world*/
+/world/
+/world*/
 libraries/
 versions/
 downloads/
@@ -88,6 +86,30 @@ minecraft_server*.jar
 *.log
 *.lock
 *.tmp
+
+# Local server test instance runtime files.
+server/
+server/mods/*.jar
+server/mods/*.jar.disabled
+server/resourcepacks/*.zip
+server/shaderpacks/*.zip
+server/logs/
+server/crash-reports/
+server/world/
+server/world*/
+server/libraries/
+server/versions/
+server/downloads/
+server/server.properties
+server/eula.txt
+server/user_jvm_args.txt
+server/run.bat
+server/run.sh
+server/neoforge.jar
+server/minecraft_server*.jar
+server/*.log
+server/*.lock
+server/*.tmp
 
 .probe
 kubejs/config/probe-settings.json
