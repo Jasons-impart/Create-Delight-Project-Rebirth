@@ -1,9 +1,4 @@
 {
   "block.cpapireforged.custom_portal_block": "Portal",
-  "dimension.createdelightcore.magnetic_caves_dimension": "Magnetic Caves",
-  "dimension.createdelightcore.abyssal_chasm_dimension": "Abyssal Chasm",
-  "dimension.createdelightcore.forlorn_hollows_dimension": "Forlorn Hollows",
-  "dimension.createdelightcore.primordial_caves_dimension": "Primordial Caves",
-  "dimension.createdelightcore.toxic_caves_dimension": "Toxic Caves",
-  "dimension.createdelightcore.candy_cavity_dimension": "Candy Cavity"
+  "message.createdelightcore.login": "Hello %s\nWelcome to Create Delight!\nCheck the quest book for more details."
 }
