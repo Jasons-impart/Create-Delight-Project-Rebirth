@@ -20,9 +20,7 @@
 | 122 | **Silent's Delight** | silentsdelight-forge-1.0.1-1.20.1.jar | 1.0.1 | 农夫乐事 | Silent系列模组联动 | 🔴 未找到1.21分支 |
 | 124 | **Vintage Delight** | vintagedelight-0.1.6.jar | 0.1.6 | 农夫乐事 | Vintage系列联动食物 | 🔴 未知 |
 | 126 | **Nether Vinery** | letsdo-nethervinery-forge-1.2.19.jar | 1.2.19 | 农夫乐事 | 下界葡萄酒/葡萄园 (Let's Do系列) | 🔴 确认无1.21.1版本 |
-| 134 | **Extended AE Plus** | extendedae_plus-1.5.3-fix.jar | 1.5.3-fix | AE2/存储 | ExtendedAE的进一步增强 | ✅ 有1.21.1 |
-| 135 | **MEGA Cells** | megacells-forge-2.4.6-1.20.1.jar | 2.4.6 | AE2/存储 | 超大容量存储单元（MEGA级） | ✅ 有NeoForge版 |
-| 160 | **CobbleForDays** | CobbleForDays-1.8.0.jar | 1.8.0 | 世界生成 | 刷石机结构 | ✅ 已用类似模组替换 |
+| 134 | **Extended AE Plus** | extendedae_plus-1.5.3-fix.jar | 1.5.3-fix | AE2/存储 | ExtendedAE的进一步增强 | ✅ 有1.21.1 | 
 | 163 | **Alex's Cave Addon** | alex_cave_addon-5.1.0-1.20.1.jar | 5.1.0 | 生物 | Alex's Caves的附加内容 | 🔴 等待Alex's Caves移植 |
 | 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 生物/魔法 | 东方Project主题，妖怪/幻想乡 | 🟡 有1.21.1，但缺少战斗等内容 |
 | 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 生物/魔法 | 妖怪归宅的Curios兼容 | 🔴 确认无1.21.1 |
@@ -53,20 +51,7 @@
 | 314 | **Vintage KubeJS** | vintage_kubejs-1.20.1-1.0.0rc-2.jar | 1.0.0rc-2 | KubeJS | Vintage系列KubeJS集成 | 🔴 确认无1.21.1 |
 | 331 | **World Preview** | world_preview-forge-1.20.1-1.3.1.jar | 1.3.1 | 服务器/管理 | 世界创建前预览 | 🔴 → 用 World Preview NeoForged 替代 |
 | 341 | **EuphoriaPatcher** | EuphoriaPatcher-1.8.5-r5.7.1-forge.jar | 1.8.5 | 杂项 | 补丁/修复工具 | ✅ 有1.21.1 |
-| 343 | **JECharacters** | jecharacters-1.20.1-forge-4.6.3.jar | 4.6.3 | 杂项 | 中日韩字符输入支持 | ✅ 有NeoForge版 |
 | 344 | **TrueUUID** | trueuuid-1.0.5.jar | 1.0.5 | 杂项 | UUID修复 | ✅ 有1.21.1 |
 | 345 | **SQLite JDBC** | sqlite-jdbc-3.36.0.3+20211227-all.jar | 3.36.0.3 | 杂项 | SQLite数据库驱动 | 🔴 未找到1.21相关分支 |
 | 346 | **ZstdNet** | zstdnet-1.20.1-forge-1.3.9.jar | 1.3.9 | 杂项 | Zstd压缩网络传输 | ✅ 有1.21.1 |
 | 350 | **Lucent** | lucent-1.20.1-1.5.5.jar | 1.5.5 | 杂项 | 光照/视觉效果增强 | 🔴 确认无1.21.1 |
-| 351 | **Kinetic Pixel** | kinetic_pixel-1.0.3-forge-1.20.1.jar | 1.0.3 | 杂项 | 像素渲染 | 🔴 未知 |
-
----
-
-## 特殊模组
-
-### TACZ (永恒枪械工坊：零)
-- **TACZ** (`tacz-1.20.1-1.1.4-hotfix-all.jar`) — 高质量枪械模组
-- 1.21.1替代：→ **TaCZ NeoForge Port**（已安装）
-- **TACZ Addon** (`taczaddon-1.20.1-1.1.4-for1.1.4.jar`) — TACZ附加内容
-
----
