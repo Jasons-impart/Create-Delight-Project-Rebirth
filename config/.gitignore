@@ -11,6 +11,7 @@
 !/bcc-common.toml
 !/butchercraft-common.toml
 !/carryon-common.toml
+!/c2me.toml
 !/chat_heads.json5
 !/collectorsreap-common.toml
 !/colorfulhearts.toml
@@ -86,7 +87,6 @@
 # - starterkit/
 # - ae2/ (current paths: ae2-client.toml, ae2-common.toml)
 # - alexsmobs.toml (current path: alexsmobs-common.toml)
-# - c2me.toml
 # - endertrigon-common.toml
 # - ftbquests/
 # - iceandfire-client.toml (current path: iceandfire/iaf-client.json)

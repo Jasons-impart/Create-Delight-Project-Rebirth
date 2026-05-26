@@ -1,0 +1,7 @@
+version = 3
+
+[chunkSystem]
+asyncSerialization = false
+
+[ioSystem]
+gcFreeChunkSerializer = false
