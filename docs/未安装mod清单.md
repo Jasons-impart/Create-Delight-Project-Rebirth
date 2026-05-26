@@ -22,8 +22,8 @@
 | 126 | **Nether Vinery** | letsdo-nethervinery-forge-1.2.19.jar | 1.2.19 | 农夫乐事 | 下界葡萄酒/葡萄园 (Let's Do系列) | 🔴 确认无1.21.1版本 |
 | 134 | **Extended AE Plus** | extendedae_plus-1.5.3-fix.jar | 1.5.3-fix | AE2/存储 | ExtendedAE的进一步增强 | ✅ 有1.21.1 | 
 | 163 | **Alex's Cave Addon** | alex_cave_addon-5.1.0-1.20.1.jar | 5.1.0 | 生物 | Alex's Caves的附加内容 | 🔴 等待Alex's Caves移植 |
-| 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 生物/魔法 | 东方Project主题，妖怪/幻想乡 | 🟡 有1.21.1，但缺少战斗等内容 |
-| 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 生物/魔法 | 妖怪归宅的Curios兼容 | 🔴 确认无1.21.1 |
+| 166 | **Youkai's Homecoming** | youkaishomecoming-2.4.16.jar | 2.4.16 | 生物/魔法 | 东方Project主题，妖怪/幻想乡 | ✅ 已添加1.21.1非官方移植版 |
+| 167 | **Youkai's Homecoming Curios** | youkaishomecoming_curios-0.03.jar | 0.03 | 生物/魔法 | 妖怪归宅的Curios兼容 | ✅ 1.21.1非官方移植版含有此功能 |
 | 172 | **Endergetic** | endergetic-1.20.1-5.0.1.jar | 5.0.1 | 生物 | 末地生物群系/生物扩展 (TeamAbnormals) | 🔴 确认无1.21.1版本 |
 | 173 | **Endertrigon** | endertrigon-1.20.1-1.1-all.jar | 1.1 | 生物 | 末影龙战斗改进 | 🔴 确认无1.21.1 |
 | 179 | **One Enough Item** | OneEnoughItem-1.0.7-hotfix.jar | 1.0.7 | QoL/UI | | ✅ 有1.21.1 |

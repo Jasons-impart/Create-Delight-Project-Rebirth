@@ -35,6 +35,7 @@
 | `silentsdelight` | `silentsdelight-forge-1.0.1-1.20.1.jar` | 已完成 1.21.1 NeoForge 迁移验证（PinkCats）。 |
 | `createfluidstuffs` | `createfluidstuffs-1.2.0-all.jar` | 已完成 1.21.1 NeoForge 迁移验证（KazeShukufuku）。 |
 | `cobblefordays` | `CobbleForDays-1.8.0.jar` | 已用类似模组替换 |
+| `youkaishomecoming` | `youkaishomecoming-2.4.16.jar` | 已添加1.21.1非官方移植版 |
 
 ## 🔴 缺失/需移植
 
@@ -83,7 +84,6 @@
 | `world_preview` | `world_preview-forge-1.20.1-1.3.1.jar` | 可评估 NeoForged。 |
 | `0world2create` | `0World2Create-Universal-1.19-1.20.X-1.0.0.jar` | 有 refoxed 版。 |
 | `icterine` | `Icterine-forge-1.20.0-1-1.3.0.jar` | 可评估Cerulean。 |
-| `youkaishomecoming` | `youkaishomecoming-2.4.16.jar` | 1.21版本有战斗内容等缺失。 |
 
 ## ⚠️ 可先排除
 
