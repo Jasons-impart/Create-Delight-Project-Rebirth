@@ -1,0 +1,8 @@
+name = "Mutil"
+filename = "mutil-1.21.1-6.3.1.jar"
+side = "both"
+
+[download]
+url = "https://logistics.aisaveworld.tech/d/share/maven/mutil-1.21.1-6.3.1.jar"
+hash-format = "sha256"
+hash = "4c7eef0f81308ff077fff300d8866c11deac01e062c3bebb214b2e8278f2deb7"

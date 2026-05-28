@@ -1,0 +1,8 @@
+name = "Tetra"
+filename = "tetra-1.21.1-6.13.0.jar"
+side = "both"
+
+[download]
+url = "https://logistics.aisaveworld.tech/d/share/maven/tetra-1.21.1-6.13.0.jar"
+hash-format = "sha256"
+hash = "a8962495c55c91e821b6bdf62b04f19d02700c47053289faeb9393b8d4823c46"

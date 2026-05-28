@@ -466,6 +466,14 @@ function ConvertTo-OptionMap {
         $i++
         $options.CurseForgeApiBaseUrl = $RawArgs[$i]
       }
+      "-ThreadCount" {
+        $i++
+        $options.ThreadCount = $RawArgs[$i]
+      }
+      "--thread-count" {
+        $i++
+        $options.ThreadCount = $RawArgs[$i]
+      }
       default {
         $positionals.Add($arg)
       }
@@ -860,7 +868,7 @@ function Read-PackwizMeta {
     CurseForgeFileId    = $null
   }
 
-  foreach ($line in Get-Content -Path $Path) {
+  foreach ($line in Get-Content -Path $Path -Encoding UTF8) {
     if ($line -match '^\s*file\s*=\s*"([^"]+)"') {
       $meta.File = $matches[1]
     }
@@ -1221,6 +1229,7 @@ function Invoke-PackwizInstallerWithRetry {
 
   $options = ConvertTo-InstallerRetryOptions $RawRetryArgs
   $lastError = $null
+  $downloadFallbackAttempted = $false
   for ($i = 1; $i -le $options.Attempts; $i++) {
     Write-Info "安装/同步尝试 $i/$($options.Attempts)"
     try {
@@ -1234,6 +1243,12 @@ function Invoke-PackwizInstallerWithRetry {
       }
 
       Write-Warn "安装/同步失败：$($_.Exception.Message)"
+      if (-not $downloadFallbackAttempted) {
+        $downloadFallbackAttempted = $true
+        Write-Info "尝试按 packwiz 元数据直接下载缺失文件；CurseForge 项会使用 ForgeCDN 拼接地址。"
+        Download-PackFiles @()
+      }
+
       if ($options.DelaySeconds -gt 0) {
         Write-Info "等待 $($options.DelaySeconds) 秒后重试。"
         Start-Sleep -Seconds $options.DelaySeconds
@@ -1241,7 +1256,7 @@ function Invoke-PackwizInstallerWithRetry {
     }
   }
 
-  Write-Fail "安装/同步仍然失败。请检查上方 packwiz-installer 输出；若是 CurseForge 手动下载项，请按提示下载到 mods/ 后重试。"
+  Write-Fail "安装/同步仍然失败。请检查上方 packwiz-installer 输出和直接下载日志。"
   throw $lastError
 }
 
@@ -1304,6 +1319,27 @@ function Get-CurseForgeDownloadUrl {
   return [string] $response.data
 }
 
+function Get-CurseForgeCdnDownloadUrl {
+  param(
+    [string] $FileId,
+    [string] $FileName
+  )
+
+  $numericFileId = 0
+  if (-not [int]::TryParse($FileId, [ref] $numericFileId) -or $numericFileId -le 0) {
+    return $null
+  }
+
+  if ([string]::IsNullOrWhiteSpace($FileName)) {
+    return $null
+  }
+
+  $bucket = [math]::Floor($numericFileId / 1000)
+  $file = "{0:d3}" -f ($numericFileId % 1000)
+  $encodedFileName = [System.Uri]::EscapeDataString($FileName)
+  return "https://edge.forgecdn.net/files/$bucket/$file/$encodedFileName"
+}
+
 function Resolve-PackFileTarget {
   param(
     [string] $RepoRoot,
@@ -1323,14 +1359,158 @@ function Resolve-PackFileTarget {
   return (Join-Path $metaDir $PackFile)
 }
 
+function Get-DownloadThreadCount {
+  param($Options)
+
+  $value = $null
+  if ($Options.ContainsKey("ThreadCount") -and -not [string]::IsNullOrWhiteSpace($Options.ThreadCount)) {
+    $value = $Options.ThreadCount
+  }
+  elseif (-not [string]::IsNullOrWhiteSpace($env:CDPR_DOWNLOAD_THREADS)) {
+    $value = $env:CDPR_DOWNLOAD_THREADS
+  }
+  else {
+    return 64
+  }
+
+  $threadCount = 0
+  if (-not [int]::TryParse($value, [ref] $threadCount) -or $threadCount -lt 1) {
+    throw "下载线程数必须是大于 0 的整数。"
+  }
+
+  return [Math]::Min($threadCount, 256)
+}
+
+function Invoke-PackFileDownloads {
+  param(
+    [object[]] $Items,
+    [int] $ThreadCount
+  )
+
+  if ($Items.Count -eq 0) {
+    return [pscustomobject]@{
+      Downloaded = 0
+      Failed     = 0
+    }
+  }
+
+  Write-Info "开始并发下载：$($Items.Count) 个文件，线程数 $ThreadCount。"
+
+  $pool = [runspacefactory]::CreateRunspacePool(1, $ThreadCount)
+  $pool.ApartmentState = "MTA"
+  $pool.Open()
+  $jobs = New-Object System.Collections.Generic.List[object]
+
+  $worker = {
+    param($Item)
+
+    $ProgressPreference = "SilentlyContinue"
+    $ErrorActionPreference = "Stop"
+
+    try {
+      $targetDir = Split-Path -Parent $Item.Target
+      if (-not (Test-Path $targetDir)) {
+        New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+      }
+
+      Invoke-WebRequest -Uri $Item.Url -OutFile $Item.Target -TimeoutSec 300 -Headers @{
+        "User-Agent" = "Create-Delight-Project-Rebirth-devtool"
+      }
+
+      if (-not [string]::IsNullOrWhiteSpace($Item.Hash) -and -not [string]::IsNullOrWhiteSpace($Item.HashMode)) {
+        $algorithm = switch -Regex ($Item.HashMode) {
+          '^sha1$' { "SHA1"; break }
+          '^sha256$' { "SHA256"; break }
+          '^sha512$' { "SHA512"; break }
+          default { $null }
+        }
+
+        if (-not [string]::IsNullOrWhiteSpace($algorithm)) {
+          $actual = (Get-FileHash -Path $Item.Target -Algorithm $algorithm).Hash.ToLowerInvariant()
+          $expected = ([string] $Item.Hash).ToLowerInvariant()
+          if ($actual -ne $expected) {
+            Remove-Item -LiteralPath $Item.Target -Force -ErrorAction SilentlyContinue
+            throw "文件校验失败，期望 $expected，实际 $actual"
+          }
+        }
+      }
+
+      [pscustomobject]@{
+        Success = $true
+        File    = $Item.File
+        Error   = $null
+      }
+    }
+    catch {
+      [pscustomobject]@{
+        Success = $false
+        File    = $Item.File
+        Error   = $_.Exception.Message
+      }
+    }
+  }
+
+  try {
+    foreach ($item in $Items) {
+      $ps = [powershell]::Create()
+      $ps.RunspacePool = $pool
+      [void] $ps.AddScript($worker).AddArgument($item)
+      $jobs.Add([pscustomobject]@{
+        PowerShell = $ps
+        Handle     = $ps.BeginInvoke()
+        Item       = $item
+      })
+    }
+
+    $downloaded = 0
+    $failed = 0
+    while ($jobs.Count -gt 0) {
+      $completed = @($jobs | Where-Object { $_.Handle.IsCompleted })
+      if ($completed.Count -eq 0) {
+        Start-Sleep -Milliseconds 200
+        continue
+      }
+
+      foreach ($job in $completed) {
+        $results = @($job.PowerShell.EndInvoke($job.Handle))
+        foreach ($result in $results) {
+          if ($result.Success) {
+            $downloaded++
+            Write-Info "已下载：$($result.File)"
+          }
+          else {
+            $failed++
+            Write-Warn "下载失败：$($result.File)；$($result.Error)"
+          }
+        }
+
+        $job.PowerShell.Dispose()
+        [void] $jobs.Remove($job)
+      }
+    }
+
+    return [pscustomobject]@{
+      Downloaded = $downloaded
+      Failed     = $failed
+    }
+  }
+  finally {
+    foreach ($job in $jobs) {
+      $job.PowerShell.Dispose()
+    }
+    $pool.Close()
+    $pool.Dispose()
+  }
+}
+
 function Download-PackFiles {
   param([string[]] $RawArgs)
 
   $options = ConvertTo-OptionMap $RawArgs
   $force = [bool] $options.Force
+  $threadCount = Get-DownloadThreadCount $options
   $curseForgeApiKey = Get-CurseForgeApiKey $options
   $curseForgeApiBaseUrl = Get-CurseForgeApiBaseUrl $options
-  $missingCurseForgeApiKeyWarned = $false
   $metaFiles = @(Get-PackwizMetaFiles)
 
   if ($metaFiles.Count -eq 0) {
@@ -1341,6 +1521,7 @@ function Download-PackFiles {
 
   $downloaded = 0
   $skipped = 0
+  $downloadItems = New-Object System.Collections.Generic.List[object]
 
   foreach ($metaFile in $metaFiles) {
     $meta = Read-PackwizMeta $metaFile.FullName
@@ -1354,28 +1535,25 @@ function Download-PackFiles {
 
     $downloadUrl = $meta.Url
     if ([string]::IsNullOrWhiteSpace($downloadUrl) -and $meta.Mode -eq "metadata:curseforge") {
-      if ([string]::IsNullOrWhiteSpace($meta.CurseForgeProjectId) -or [string]::IsNullOrWhiteSpace($meta.CurseForgeFileId)) {
-        Write-Warn "跳过缺少 CurseForge project-id/file-id 的 meta：$relativeMeta"
+      if ([string]::IsNullOrWhiteSpace($meta.CurseForgeFileId)) {
+        Write-Warn "跳过缺少 CurseForge file-id 的 meta：$relativeMeta"
         $skipped++
         continue
       }
 
-      if ([string]::IsNullOrWhiteSpace($curseForgeApiKey)) {
-        if (-not $missingCurseForgeApiKeyWarned) {
-          Write-Warn "metadata:curseforge 下载需要 CurseForge API Key。"
-          Write-Warn "可先在当前终端设置：`$env:CURSEFORGE_API_KEY='你的 key'，或运行 download-files -CurseForgeApiKey <key>。"
-          $missingCurseForgeApiKeyWarned = $true
-        }
-        $skipped++
-        continue
+      $downloadUrl = Get-CurseForgeCdnDownloadUrl -FileId $meta.CurseForgeFileId -FileName $meta.File
+      if (-not [string]::IsNullOrWhiteSpace($downloadUrl)) {
+        Write-Info "使用 ForgeCDN 拼接地址：$relativeMeta"
       }
 
-      Write-Info "解析 CurseForge 下载地址：$relativeMeta"
-      $downloadUrl = Get-CurseForgeDownloadUrl `
-        -ApiBaseUrl $curseForgeApiBaseUrl `
-        -ApiKey $curseForgeApiKey `
-        -ProjectId $meta.CurseForgeProjectId `
-        -FileId $meta.CurseForgeFileId
+      if ([string]::IsNullOrWhiteSpace($downloadUrl) -and -not [string]::IsNullOrWhiteSpace($curseForgeApiKey) -and -not [string]::IsNullOrWhiteSpace($meta.CurseForgeProjectId)) {
+        Write-Info "解析 CurseForge 下载地址：$relativeMeta"
+        $downloadUrl = Get-CurseForgeDownloadUrl `
+          -ApiBaseUrl $curseForgeApiBaseUrl `
+          -ApiKey $curseForgeApiKey `
+          -ProjectId $meta.CurseForgeProjectId `
+          -FileId $meta.CurseForgeFileId
+      }
     }
 
     if ([string]::IsNullOrWhiteSpace($downloadUrl)) {
@@ -1392,18 +1570,40 @@ function Download-PackFiles {
     }
 
     if ((Test-Path $target) -and -not $force) {
+      try {
+        Test-DownloadedHash -Path $target -ExpectedHash $meta.Hash -HashMode $meta.HashMode
+      }
+      catch {
+        Write-Warn "已存在但校验失败，将重新下载：$($meta.File)"
+        Remove-Item -LiteralPath $target -Force -ErrorAction SilentlyContinue
+        $downloadItems.Add([pscustomobject]@{
+          File   = $meta.File
+          Target = $target
+          Url    = $downloadUrl
+          Hash   = $meta.Hash
+          HashMode = $meta.HashMode
+        })
+        continue
+      }
+
       Write-Info "已存在，跳过：$($meta.File)"
       $skipped++
       continue
     }
 
-    Write-Info "下载：$(Get-RelativePath $RepoRoot $target)"
-    Invoke-WebRequest -Uri $downloadUrl -OutFile $target -TimeoutSec 300 -Headers @{
-      "User-Agent" = "Create-Delight-Project-Rebirth-devtool"
-    }
+    $downloadItems.Add([pscustomobject]@{
+      File   = $meta.File
+      Target = $target
+      Url    = $downloadUrl
+      Hash   = $meta.Hash
+      HashMode = $meta.HashMode
+    })
+  }
 
-    Test-DownloadedHash -Path $target -ExpectedHash $meta.Hash -HashMode $meta.HashMode
-    $downloaded++
+  $result = Invoke-PackFileDownloads -Items $downloadItems.ToArray() -ThreadCount $threadCount
+  $downloaded += $result.Downloaded
+  if ($result.Failed -gt 0) {
+    throw "有 $($result.Failed) 个文件下载失败。"
   }
 
   Write-Success "下载完成：$downloaded 个，跳过：$skipped 个。"

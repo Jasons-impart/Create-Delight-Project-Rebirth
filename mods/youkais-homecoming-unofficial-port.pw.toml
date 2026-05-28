@@ -1,0 +1,13 @@
+name = "Youkai's Homecoming-unofficial-port"
+filename = "youkaishomecoming-4.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9eaf977c120631ecdd83f8da3bab6fb86f5c869d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8147350
+project-id = 1554230

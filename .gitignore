@@ -66,6 +66,8 @@ scripts/bin/*
 !scripts/bin/packwiz-installer-bootstrap.VERSION.txt
 mods/*.jar
 mods/*.jar.disabled
+resourcepacks/*.zip
+shaderpacks/*.zip
 !scripts/bin/packwiz-installer-bootstrap.jar
 logs/
 crash-reports/
