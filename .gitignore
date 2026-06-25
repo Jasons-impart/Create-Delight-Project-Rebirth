@@ -25,6 +25,7 @@
 
 # Docs and project assets
 !/README.md
+!/GettingStarted.md
 !/AGENTS.md
 !/LICENSE
 !/docs/
