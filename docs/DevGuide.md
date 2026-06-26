@@ -384,6 +384,21 @@ chore(bkmpw): add create mod metadata
 chore(bkmpw): refresh index
 ```
 
+## Issue 认领
+
+仓库的 issue 采用“先认领，再处理”的轻量流程，目的是避免多人同时重复开工。
+
+- 新 issue 默认应带 `needs-claim` 标签。
+- 开发者在 issue 下评论 `/claim` 表示要认领该任务。
+- 认领后由 GitHub Action 自动将 issue 分配给评论人，并把标签从 `needs-claim` 切换为 `claimed`。
+- 如果 issue 已经被认领，后续开发请优先在已分配的 issue 上继续，不要重复抢占同一任务。
+
+对应自动化定义在：
+
+```text
+.github/workflows/issue-claim.yml
+```
+
 ## 常用检查
 
 ```powershell
