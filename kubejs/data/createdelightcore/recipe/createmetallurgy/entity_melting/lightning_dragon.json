@@ -1,0 +1,16 @@
+{
+  "type": "createmetallurgy:entity_melting",
+  "entity": {
+    "type": "iceandfire:lightning_dragon",
+    "damage": 4
+  },
+  "ingredients": [],
+  "minHeatRequirement": 9,
+  "maxHeatRequirement": 50,
+  "results": [
+    {
+      "id": "createdelightcore:lightning_dragon_blood",
+      "amount": 5000
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdelightcore"
+    }
+  ],
+  "ingredient": {
+    "item": "minecraft:potato"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "farmersdelight:stuffed_potato"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdelightcore:potato_stew_beef"
+        },
+        {
+          "tag": "c:foods/cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdelightcore:potato_stew_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createdelightcore:potato_stew_beef"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 50,
+          "fluid": "minecraft:milk"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdelightcore:potato_stew_beef"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createdelightcore:potato_stew_beef"
+  }
+}

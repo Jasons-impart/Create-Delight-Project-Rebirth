@@ -1,7 +1,31 @@
 {
-  "parent": "create:base/processing_unwrapped",
   "hidden": false,
   "keys": [
+    {
+      "name": "results",
+      "role": "output",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "item_stack",
+          "right": "create:processing_output"
+        }
+      }
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": "ingredient",
+        "spread": {
+          "type": "either",
+          "left": "ignore",
+          "right": "ingredient"
+        }
+      }
+    },
     {
       "type": {
         "type": "int"
@@ -25,7 +49,10 @@
       "optional": "minecraft:air"
     }
   ],
-  "merge": {
-    "keys": true
-  }
+  "unique": ["results"],
+  "constructors": [
+    {
+      "keys": ["results", "ingredients"]
+    }
+  ]
 }

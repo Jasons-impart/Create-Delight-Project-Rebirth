@@ -1,0 +1,19 @@
+{
+  "keys": [
+    {
+      "name": "output",
+      "role": "output",
+      "type": "item_stack"
+    },
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient"
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["output", "ingredient"]
+    }
+  ]
+}

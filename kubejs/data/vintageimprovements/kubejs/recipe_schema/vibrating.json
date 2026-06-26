@@ -1,0 +1,20 @@
+{
+  "parent": "create:base/processing_with_time",
+  "hidden": false,
+  "keys": [
+    {
+      "type": {
+        "type": "int"
+      },
+      "alternative_names": [
+        "minimal_rpm",
+        "minimalRPM"
+      ],
+      "name": "minimal_rpm",
+      "optional": 100
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack"
+    },
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "time",
+      "role": "other",
+      "type": "ticks",
+      "optional": 200
+    },
+    {
+      "name": "min",
+      "role": "other",
+      "type": "int",
+      "optional": 150
+    },
+    {
+      "name": "perfect",
+      "role": "other",
+      "type": "int",
+      "optional": 200
+    },
+    {
+      "name": "max",
+      "role": "other",
+      "type": "int",
+      "optional": 250
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["result", "ingredient"]
+    },
+    {
+      "keys": ["result", "ingredient", "time"]
+    },
+    {
+      "keys": ["result", "ingredient", "time", "min", "perfect", "max"]
+    }
+  ]
+}

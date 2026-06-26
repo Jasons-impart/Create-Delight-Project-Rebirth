@@ -1,14 +1,112 @@
 {
-  "parent": "create:base/processing_with_time",
   "hidden": false,
   "keys": [
+    {
+      "name": "results",
+      "role": "output",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "fluid_stack",
+          "right": {
+            "type": "either",
+            "left": "create:processing_output",
+            "right": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "item",
+                  "component": "item_stack"
+                },
+                {
+                  "name": "count",
+                  "component": "int",
+                  "optional": true
+                },
+                {
+                  "name": "chance",
+                  "component": "float",
+                  "optional": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": {
+          "type": "either",
+          "left": "create:sized_fluid_ingredient",
+          "right": {
+            "type": "either",
+            "left": "ingredient",
+            "right": {
+              "type": "either",
+              "left": {
+                "type": "custom_object",
+                "keys": [
+                  {
+                    "name": "type",
+                    "component": "string"
+                  },
+                  {
+                    "name": "fluid",
+                    "component": "string"
+                  },
+                  {
+                    "name": "amount",
+                    "component": "int"
+                  },
+                  {
+                    "name": "components",
+                    "component": "ignore",
+                    "optional": true
+                  }
+                ]
+              },
+              "right": {
+                "type": "custom_object",
+                "keys": [
+                  {
+                    "name": "type",
+                    "component": "string"
+                  },
+                  {
+                    "name": "fluid_tag",
+                    "component": "string"
+                  },
+                  {
+                    "name": "amount",
+                    "component": "int"
+                  },
+                  {
+                    "name": "components",
+                    "component": "ignore",
+                    "optional": true
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "spread": {
+          "type": "either",
+          "left": "ignore",
+          "right": "sized_ingredient"
+        }
+      }
+    },
     {
       "type": {
         "type": "int"
       },
-      "alternative_names": [
-        "energy"
-      ],
+      "alternative_names": ["energy"],
       "name": "energy",
       "optional": 0
     },
@@ -16,15 +114,15 @@
       "type": {
         "type": "int"
       },
-      "alternative_names": [
-        "max_charge_rate",
-        "maxChargeRate"
-      ],
+      "alternative_names": ["max_charge_rate", "maxChargeRate"],
       "name": "max_charge_rate",
       "optional": 0
     }
   ],
-  "merge": {
-    "keys": true
-  }
+  "unique": ["results"],
+  "constructors": [
+    {
+      "keys": ["results", "ingredients"]
+    }
+  ]
 }

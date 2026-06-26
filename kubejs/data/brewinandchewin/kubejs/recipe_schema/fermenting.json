@@ -1,0 +1,106 @@
+{
+  "keys": [
+    {
+      "name": "result",
+      "role": "output",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "id",
+            "component": "string"
+          },
+          {
+            "name": "count",
+            "component": "int",
+            "optional": true
+          },
+          {
+            "name": "amount",
+            "component": "int",
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "ingredients",
+      "role": "input",
+      "type": {
+        "type": "list",
+        "component": "ingredient"
+      }
+    },
+    {
+      "name": "base_fluid",
+      "role": "input",
+      "type": {
+        "type": "custom_object",
+        "keys": [
+          {
+            "name": "amount",
+            "component": "int"
+          },
+          {
+            "name": "ingredient",
+            "component": {
+              "type": "custom_object",
+              "keys": [
+                {
+                  "name": "id",
+                  "component": "string",
+                  "optional": true
+                },
+                {
+                  "name": "tag",
+                  "component": "string",
+                  "optional": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "unit",
+            "component": "string",
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "experience",
+      "role": "other",
+      "type": "float",
+      "optional": 1.0
+    },
+    {
+      "name": "fermentingtime",
+      "role": "other",
+      "type": "int",
+      "optional": 4800
+    },
+    {
+      "name": "temperature",
+      "role": "other",
+      "type": "int",
+      "optional": 3
+    },
+    {
+      "name": "unit",
+      "role": "other",
+      "type": "string",
+      "optional": "millibuckets"
+    },
+    {
+      "name": "category",
+      "role": "other",
+      "type": "string",
+      "optional": "misc"
+    }
+  ],
+  "constructors": [
+    {
+      "keys": ["result", "ingredients", "base_fluid"]
+    }
+  ]
+}

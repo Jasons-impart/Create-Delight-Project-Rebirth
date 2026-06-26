@@ -1,0 +1,12 @@
+{
+  "parent": "create:base/processing",
+  "hidden": false,
+  "constructors": [
+    {
+      "keys": ["results", "ingredients"]
+    }
+  ],
+  "merge": {
+    "keys": true
+  }
+}
