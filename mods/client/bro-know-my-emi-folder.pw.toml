@@ -1,0 +1,13 @@
+name = "Bro Know My EMI Folder"
+filename = "bro-know-my-emi-folder-0.0.3+1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c7decc2e64abbe47cd51ac2ef5277c949f5c0c80"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8301196
+project-id = 1564728
