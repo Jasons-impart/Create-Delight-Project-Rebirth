@@ -5,5 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "40d5cb68cc8b0b7f9edff4b1bfd03eca81a60990"
-mode = "url"
-url = "https://cdn.modrinth.com/data/n0AbAYWj/versions/lY9vVUXi/createidlx-1.21.1-1.5.jar"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8147644
+project-id = 1456715
