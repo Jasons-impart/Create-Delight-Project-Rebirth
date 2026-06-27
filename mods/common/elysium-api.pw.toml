@@ -1,13 +1,13 @@
 name = "Elysium API"
-filename = "ElysiumAPI-1.21.1-1.2.0-ALPHA.12.jar"
+filename = "ElysiumAPI-1.21.1-2.0.0-BETA.6.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "3e6cb9bf4b2113030c1f67abaed2c8a168e309fb"
+hash = "044905efedf919eeeb7d773399013b190b7d42fe"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7983590
+file-id = 8267407
 project-id = 1158628
