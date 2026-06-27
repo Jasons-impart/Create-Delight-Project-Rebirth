@@ -1,6 +1,6 @@
 name = "AE2 JEI Integration"
 filename = "ae2jeiintegration-1.2.1.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,6 @@
 name = "TrashSlot"
 filename = "trashslot-neoforge-1.21.1-21.1.10.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

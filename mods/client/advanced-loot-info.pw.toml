@@ -1,6 +1,6 @@
 name = "Advanced Loot Info"
 filename = "AdvancedLootInfo-neoforge-1.21.1-1.10.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

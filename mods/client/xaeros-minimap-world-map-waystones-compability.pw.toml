@@ -1,6 +1,6 @@
 name = "Xaero's Minimap & World Map - Waystones Compatibility [Forge & NeoForge]"
 filename = "xaeros_waystones_compatibility-NeoForge-1.21.1-2.1.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
