@@ -62,14 +62,11 @@
 
 # Explicit runtime exclusions inside allowed directories.
 scripts/bin/*
-!scripts/bin/packwiz.exe
-!scripts/bin/packwiz.VERSION.txt
-!scripts/bin/packwiz-installer-bootstrap.VERSION.txt
+!scripts/bin/bkmpw.exe
 mods/*.jar
 mods/*.jar.disabled
 resourcepacks/*.zip
 shaderpacks/*.zip
-!scripts/bin/packwiz-installer-bootstrap.jar
 logs/
 crash-reports/
 saves/
