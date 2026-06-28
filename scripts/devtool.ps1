@@ -18,6 +18,7 @@ param(
     "install-files-retry",
     "download-files",
     "modlist",
+    "generate-integrity-manifest",
     "export-curseforge"
   )]
   [string] $Command = "menu",
@@ -43,6 +44,7 @@ $PackRootTemplateFiles = @(
   "PCL\Setup.ini"
 )
 $IgnoreSource = Join-Path $PackTemplateDir ".packwizignore.source"
+$IntegrityManifestPath = Join-Path $RepoRoot "kubejs\config\createdelight_pack_integrity_expected.json"
 
 function Write-Info {
   param([string] $Message)
@@ -63,6 +65,8 @@ function Write-Fail {
   param([string] $Message)
   Write-Host "[错误] $Message" -ForegroundColor Red
 }
+
+. (Join-Path $PSScriptRoot "pack-integrity.ps1")
 
 function Show-Help {
   @"
@@ -85,6 +89,7 @@ Create Delight Project Rebirth 开发工具
   devtool.bat install-files-retry [attempts] [delay-seconds]
   devtool.bat download-files [jobs] [--force]
   devtool.bat modlist [output-dir]
+  devtool.bat generate-integrity-manifest
   devtool.bat export-curseforge [output.zip] [client|server|both]
 
 说明：
@@ -279,7 +284,8 @@ function Start-DevMenu {
     Write-Host " 11. 下载缺失文件到本地（不清理无关文件）" -ForegroundColor Yellow
     Write-Host " 12. 生成 modlist 清单"
     Write-Host " 13. 导出 CurseForge .zip"
-    Write-Host " 14. 执行自定义 bkmpw 命令"
+    Write-Host " 14. 生成完整性校验清单"
+    Write-Host " 15. 执行自定义 bkmpw 命令"
     Write-Host "  0. 退出"
     Write-Host ""
 
@@ -359,10 +365,13 @@ function Start-DevMenu {
           $args = @()
           if (-not [string]::IsNullOrWhiteSpace($output)) { $args += $output }
           if (-not [string]::IsNullOrWhiteSpace($side)) { $args += $side }
+          New-IntegrityManifest
+          Invoke-BkmpwPackCommand "refresh"
           Invoke-BkmpwPackCommand "export-curseforge" $args
           Pause-Menu
         }
-        "14" {
+        "14" { New-IntegrityManifest; Pause-Menu }
+        "15" {
           $custom = Read-BkmpwExtraArgs "bkmpw 原生命令参数"
           if ($custom.Count -eq 0) { Write-Warn "未输入命令。" } else { Invoke-BkmpwRaw $custom }
           Pause-Menu
@@ -395,5 +404,6 @@ switch ($Command) {
   "install-files-retry" { Update-CoreBeforeSync; Invoke-BkmpwPackCommand "install-files-retry" $Rest }
   "download-files" { Update-CoreBeforeSync; Invoke-BkmpwPackCommand "download-files" $Rest }
   "modlist" { Invoke-BkmpwPackCommand "modlist" $Rest }
-  "export-curseforge" { Invoke-BkmpwPackCommand "refresh"; Invoke-BkmpwPackCommand "export-curseforge" $Rest }
+  "generate-integrity-manifest" { New-IntegrityManifest }
+  "export-curseforge" { New-IntegrityManifest; Invoke-BkmpwPackCommand "refresh"; Invoke-BkmpwPackCommand "export-curseforge" $Rest }
 }

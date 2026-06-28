@@ -1,0 +1,3020 @@
+{
+    "schemaVersion":  1,
+    "generatedAt":  "2026-06-28T10:16:07Z",
+    "generatedBy":  "devtool.bat generate-integrity-manifest",
+    "expectedModIds":  {
+                           "common":  [
+                                          "abnormals_delight",
+                                          "accessories",
+                                          "advancementplaques",
+                                          "ae2",
+                                          "ae2ct",
+                                          "ae2netanalyser",
+                                          "ae2omnicells",
+                                          "ae2wtlib",
+                                          "ae2wtlib_api",
+                                          "alexscaves",
+                                          "alexsdelight",
+                                          "alexsmobs",
+                                          "always_eat",
+                                          "amendments",
+                                          "anvilcore",
+                                          "apothic_attributes",
+                                          "appleskin",
+                                          "appliedcreate",
+                                          "architectury",
+                                          "athena",
+                                          "attributefix",
+                                          "bakeries",
+                                          "balm",
+                                          "bcc",
+                                          "betteradvancedtooltips",
+                                          "bettercombat",
+                                          "betterendisland",
+                                          "bettermineshafts",
+                                          "betterwitchhuts",
+                                          "biolith",
+                                          "biomespy",
+                                          "blueprint",
+                                          "bookshelf",
+                                          "bountiful",
+                                          "brewinandchewin",
+                                          "butchercraft",
+                                          "c2me",
+                                          "c2me_base",
+                                          "c2me_client_uncapvd",
+                                          "c2me_fixes_chunkio_threading_issues",
+                                          "c2me_fixes_general_threading_issues",
+                                          "c2me_fixes_worldgen_threading_issues",
+                                          "c2me_fixes_worldgen_vanilla_bugs",
+                                          "c2me_notickvd",
+                                          "c2me_opts_allocs",
+                                          "c2me_opts_chunkio",
+                                          "c2me_opts_dfc",
+                                          "c2me_opts_math",
+                                          "c2me_opts_natives_math",
+                                          "c2me_opts_scheduling",
+                                          "c2me_opts_worldgen_general",
+                                          "c2me_opts_worldgen_vanilla",
+                                          "c2me_rewrites_chunk_serializer",
+                                          "c2me_rewrites_chunk_system",
+                                          "c2me_rewrites_chunkio",
+                                          "c2me_server_utils",
+                                          "c2me_threading_lighting",
+                                          "caelus",
+                                          "carryon",
+                                          "casualnessdelight",
+                                          "cerulean",
+                                          "charmofundying",
+                                          "chefsdelight",
+                                          "citadel",
+                                          "cloth_config",
+                                          "clumps",
+                                          "cmr",
+                                          "cobweb",
+                                          "collectorsreap",
+                                          "comforts",
+                                          "compat_manager",
+                                          "conditional_mixin",
+                                          "constructionwand",
+                                          "copycats",
+                                          "corn_delight",
+                                          "coroutil",
+                                          "cosmeticarmorreworked",
+                                          "cpapireforged",
+                                          "crabbersdelight",
+                                          "cratedelight",
+                                          "create",
+                                          "create_bic_bit",
+                                          "create_bs",
+                                          "create_central_kitchen",
+                                          "create_compatible_storage",
+                                          "create_confectionery",
+                                          "create_connected",
+                                          "create_deepfried",
+                                          "create_dragons_plus",
+                                          "create_enchantment_industry",
+                                          "create_enhanced_schematicannon",
+                                          "create_fantasizing",
+                                          "create_jetpack",
+                                          "create_jetpack_curios",
+                                          "create_mechanical_spawner",
+                                          "create_new_age",
+                                          "create_pattern_schematics",
+                                          "create_rustic_structures",
+                                          "create_sa",
+                                          "create_structures_arise",
+                                          "createaddition",
+                                          "createadditionallogistics",
+                                          "createcafe",
+                                          "createcobblestone",
+                                          "createdeco",
+                                          "createdieselgenerators",
+                                          "createfastschematiccannon",
+                                          "createfluidstuffs",
+                                          "createidlx",
+                                          "createlazytick",
+                                          "createliquidfuel",
+                                          "createmetallurgy",
+                                          "createoreexcavation",
+                                          "createprism",
+                                          "createstockbridge",
+                                          "createtransmission",
+                                          "createultimine",
+                                          "creativecore",
+                                          "creeperoverhaul",
+                                          "cristellib",
+                                          "cuisinedelight",
+                                          "culturaldelights",
+                                          "curios",
+                                          "danmaku_api",
+                                          "deployer",
+                                          "dg_js",
+                                          "displaydelight",
+                                          "dramaticdoors",
+                                          "dsbg",
+                                          "dummmmmmy",
+                                          "dumplings_delight",
+                                          "dungeonsdelight",
+                                          "eclipticseasons",
+                                          "elysium_api",
+                                          "elytraslot",
+                                          "ends_delight",
+                                          "esl",
+                                          "explorerscompass",
+                                          "extendedae",
+                                          "extra_gauges",
+                                          "fabric_api",
+                                          "fabric_api_base",
+                                          "fabric_api_lookup_api_v1",
+                                          "fabric_biome_api_v1",
+                                          "fabric_block_api_v1",
+                                          "fabric_block_view_api_v2",
+                                          "fabric_blockrenderlayer_v1",
+                                          "fabric_client_tags_api_v1",
+                                          "fabric_command_api_v2",
+                                          "fabric_content_registries_v0",
+                                          "fabric_convention_tags_v1",
+                                          "fabric_convention_tags_v2",
+                                          "fabric_data_attachment_api_v1",
+                                          "fabric_data_generation_api_v1",
+                                          "fabric_entity_events_v1",
+                                          "fabric_events_interaction_v0",
+                                          "fabric_game_rule_api_v1",
+                                          "fabric_gametest_api_v1",
+                                          "fabric_item_api_v1",
+                                          "fabric_item_group_api_v1",
+                                          "fabric_key_binding_api_v1",
+                                          "fabric_lifecycle_events_v1",
+                                          "fabric_loot_api_v2",
+                                          "fabric_loot_api_v3",
+                                          "fabric_message_api_v1",
+                                          "fabric_model_loading_api_v1",
+                                          "fabric_networking_api_v1",
+                                          "fabric_object_builder_api_v1",
+                                          "fabric_particles_v1",
+                                          "fabric_recipe_api_v1",
+                                          "fabric_registry_sync_v0",
+                                          "fabric_renderer_api_v1",
+                                          "fabric_renderer_indigo",
+                                          "fabric_rendering_data_attachment_v1",
+                                          "fabric_rendering_fluids_v1",
+                                          "fabric_rendering_v1",
+                                          "fabric_resource_conditions_api_v1",
+                                          "fabric_resource_loader_v0",
+                                          "fabric_screen_api_v1",
+                                          "fabric_screen_handler_api_v1",
+                                          "fabric_sound_api_v1",
+                                          "fabric_transfer_api_v1",
+                                          "fabric_transitive_access_wideners_v1",
+                                          "farmersdelight",
+                                          "fast_projectile_api",
+                                          "ferritecore",
+                                          "flightlib",
+                                          "flywheel",
+                                          "fragmentum",
+                                          "framework",
+                                          "fruitsdelight",
+                                          "ftbchunks",
+                                          "ftbessentials",
+                                          "ftbfiltersystem",
+                                          "ftblibrary",
+                                          "ftbquests",
+                                          "ftbranks",
+                                          "ftbteams",
+                                          "ftbultimine",
+                                          "ftbxmodcompat",
+                                          "functionalstorage",
+                                          "fzzy_config",
+                                          "gateways",
+                                          "geckolib",
+                                          "glodium",
+                                          "greenhouseconfig",
+                                          "greenhouseconfig_night_config",
+                                          "greenhouseconfig_toml",
+                                          "guideme",
+                                          "iceandfire",
+                                          "iceberg",
+                                          "idas",
+                                          "immersive_aircraft",
+                                          "immersive_paintings",
+                                          "improvedmobs",
+                                          "industrial_platform",
+                                          "integrated_api",
+                                          "integrated_stronghold",
+                                          "integrated_villages",
+                                          "integration",
+                                          "interiors",
+                                          "jade",
+                                          "jadeaddons",
+                                          "jupiter",
+                                          "justenoughbreeding",
+                                          "kaleidoscope_doll",
+                                          "kambrik",
+                                          "konkrete",
+                                          "kotlinforforge",
+                                          "kubejs",
+                                          "kubejs_create",
+                                          "kubejsdelight",
+                                          "kuma_api",
+                                          "l2core",
+                                          "l2damagetracker",
+                                          "l2harvester",
+                                          "l2itemselector",
+                                          "l2library",
+                                          "l2menustacker",
+                                          "lctech",
+                                          "lightmanscurrency",
+                                          "lithostitched",
+                                          "lmft",
+                                          "lodestone",
+                                          "lootjs",
+                                          "lootr",
+                                          "luncheonmeatsdelight",
+                                          "man_of_many_planes",
+                                          "mechanicals",
+                                          "megacells",
+                                          "melody",
+                                          "minersdelight",
+                                          "modernfix",
+                                          "moonlight",
+                                          "morejs",
+                                          "mutil",
+                                          "mynethersdelight",
+                                          "mysterious_mountain_lib",
+                                          "naturescompass",
+                                          "neapolitan",
+                                          "neobeefix",
+                                          "netherexp",
+                                          "netmusic",
+                                          "nochatreports",
+                                          "northstar",
+                                          "northstar_curios_compat",
+                                          "observable",
+                                          "owo",
+                                          "oworld2create",
+                                          "packetfixer",
+                                          "percale",
+                                          "placebo",
+                                          "playeranimator",
+                                          "polyeng",
+                                          "polymorph",
+                                          "ponder",
+                                          "prickle",
+                                          "prism",
+                                          "probejs",
+                                          "prometheus",
+                                          "puzzleslib",
+                                          "quality_food",
+                                          "quark",
+                                          "quarkoddities",
+                                          "ratatouille",
+                                          "rcg_lib",
+                                          "refurbished_furniture",
+                                          "resourcefulconfig",
+                                          "resourcefullib",
+                                          "rhino",
+                                          "runiclib",
+                                          "sablecompanion",
+                                          "schematicanon_processing_pattern",
+                                          "searchables",
+                                          "servercore",
+                                          "silentsdelight",
+                                          "simplebackups",
+                                          "simplehats",
+                                          "smartbrainlib",
+                                          "someassemblyrequired",
+                                          "sophisticatedbackpacks",
+                                          "sophisticatedbackpackscreateintegration",
+                                          "sophisticatedcore",
+                                          "soul_fire_d",
+                                          "spark",
+                                          "spectrelib",
+                                          "supermartijn642configlib",
+                                          "supermartijn642corelib",
+                                          "supplementaries",
+                                          "t_and_t",
+                                          "tacz",
+                                          "tectonic",
+                                          "tenshilib",
+                                          "terralith",
+                                          "tetra",
+                                          "the_bumblezone",
+                                          "tiny_config",
+                                          "tipsmod",
+                                          "titanium",
+                                          "torchmaster",
+                                          "totw_modded",
+                                          "traderefresh",
+                                          "trailandtales_delight",
+                                          "trashcans",
+                                          "travelerstitles",
+                                          "txnilib",
+                                          "uranus",
+                                          "vinery",
+                                          "vintagedelight",
+                                          "vintageimprovements",
+                                          "watut",
+                                          "waystones",
+                                          "yet_another_config_lib_v3",
+                                          "youkaishomecoming",
+                                          "yungsapi",
+                                          "yungsextras",
+                                          "zeta"
+                                      ],
+                           "client":  [
+                                          "ae2jeiintegration",
+                                          "ali",
+                                          "betteradvancements",
+                                          "broknowmyemifolder",
+                                          "catalogue",
+                                          "certain_questing_additions",
+                                          "chat_heads",
+                                          "colorfulhearts",
+                                          "commonnetworking",
+                                          "configured",
+                                          "controlling",
+                                          "create_cyber_goggles",
+                                          "createbetterfps",
+                                          "customskinloader",
+                                          "drippyloadingscreen",
+                                          "dynamic_fps",
+                                          "dynamiccrosshair",
+                                          "dynamiccrosshairapi",
+                                          "emi",
+                                          "emi_ores",
+                                          "enchdesc",
+                                          "enhancedbossbars",
+                                          "entityculling",
+                                          "fabric_api_base",
+                                          "fabric_block_view_api_v2",
+                                          "fabric_renderer_api_v1",
+                                          "fabric_rendering_data_attachment_v1",
+                                          "fancymenu",
+                                          "fastboot",
+                                          "flerovium",
+                                          "flywheel",
+                                          "ftbxaerocompat",
+                                          "generalfeedback",
+                                          "imblocker",
+                                          "iris",
+                                          "iris_shader_folder",
+                                          "irisflw",
+                                          "itemborders",
+                                          "itemphysiclite",
+                                          "jecharacters",
+                                          "jeed",
+                                          "jei",
+                                          "libbamboo",
+                                          "mcwifipnp",
+                                          "minemenu",
+                                          "mousetweaks",
+                                          "obscure_tooltips",
+                                          "overloadedarmorbar",
+                                          "pickupnotifier",
+                                          "ponder",
+                                          "ponderjs",
+                                          "presencefootsteps",
+                                          "reeses_sodium_options",
+                                          "renderjs",
+                                          "resourcify",
+                                          "screenshot_viewer",
+                                          "seasonhud",
+                                          "shouldersurfing",
+                                          "skinlayers3d",
+                                          "sodium",
+                                          "sodiumextras",
+                                          "sodiumleafculling",
+                                          "sodiumoptionsapi",
+                                          "toastcontrol",
+                                          "transition",
+                                          "trashslot",
+                                          "trender",
+                                          "visual_keybinder",
+                                          "w2w2",
+                                          "xaerolib",
+                                          "xaerominimap",
+                                          "xaeroworldmap",
+                                          "yeetusexperimentus"
+                                      ],
+                           "server":  [
+
+                                      ]
+                       },
+    "sources":  [
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/advanced-loot-info.pw.toml",
+                        "filename":  "AdvancedLootInfo-neoforge-1.21.1-1.10.0.jar",
+                        "modIds":  [
+                                       "ali"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/ae2-jei-integration.pw.toml",
+                        "filename":  "ae2jeiintegration-1.2.1.jar",
+                        "modIds":  [
+                                       "ae2jeiintegration"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/better-advancements.pw.toml",
+                        "filename":  "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+                        "modIds":  [
+                                       "betteradvancements"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/bro-know-my-emi-folder.pw.toml",
+                        "filename":  "bro-know-my-emi-folder-0.0.3+1.21.1.jar",
+                        "modIds":  [
+                                       "broknowmyemifolder"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/catalogue.pw.toml",
+                        "filename":  "catalogue-neoforge-1.21.1-1.11.2.jar",
+                        "modIds":  [
+                                       "catalogue"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/certain-questing-additions.pw.toml",
+                        "filename":  "certain_questing_additions-neoforge-1.1.6+mc1.21.1.jar",
+                        "modIds":  [
+                                       "certain_questing_additions"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/chat-heads.pw.toml",
+                        "filename":  "chat_heads-0.15.1-neoforge-1.21.jar",
+                        "modIds":  [
+                                       "chat_heads"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/colorful-hearts.pw.toml",
+                        "filename":  "colorfulhearts-neoforge-1.21.1-10.5.9.jar",
+                        "modIds":  [
+                                       "colorfulhearts"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/configured.pw.toml",
+                        "filename":  "configured-neoforge-1.21.1-2.6.3.jar",
+                        "modIds":  [
+                                       "configured"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/controlling.pw.toml",
+                        "filename":  "Controlling-neoforge-1.21.1-19.0.5.jar",
+                        "modIds":  [
+                                       "controlling"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/create-better-fps.pw.toml",
+                        "filename":  "createbetterfps-1.21.1-1.1.4.jar",
+                        "modIds":  [
+                                       "createbetterfps"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/create-cyber-goggles.pw.toml",
+                        "filename":  "CreateCyberGoggles-1.21.1-7.5.9-NeoForge.jar",
+                        "modIds":  [
+                                       "create_cyber_goggles"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/customskinloader.pw.toml",
+                        "filename":  "CustomSkinLoader_Universal-14.28.jar",
+                        "modIds":  [
+                                       "customskinloader"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/drippy-early-loading-module.pw.toml",
+                        "filename":  "drippy_early_loading_module_neoforge_3.1.2_MC_1.21.1.jar",
+                        "modIds":  [
+
+                                   ],
+                        "nonModFile":  true
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/drippy-loading-screen.pw.toml",
+                        "filename":  "drippyloadingscreen_neoforge_3.1.2_MC_1.21.1.jar",
+                        "modIds":  [
+                                       "drippyloadingscreen"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/dynamic-crosshair.pw.toml",
+                        "filename":  "dynamiccrosshair-9.11+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "dynamiccrosshair",
+                                       "dynamiccrosshairapi",
+                                       "libbamboo"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/dynamic-fps.pw.toml",
+                        "filename":  "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+                        "modIds":  [
+                                       "dynamic_fps"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/emi-ores.pw.toml",
+                        "filename":  "emi_ores-1.3+1.21.1+neoforge.jar",
+                        "modIds":  [
+                                       "emi_ores"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/emi.pw.toml",
+                        "filename":  "emi-1.1.24+1.21.1+neoforge.jar",
+                        "modIds":  [
+                                       "emi"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/enchantment-descriptions.pw.toml",
+                        "filename":  "enchdesc-neoforge-1.21.1-21.1.9.jar",
+                        "modIds":  [
+                                       "enchdesc"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/enhanced-boss-bars.pw.toml",
+                        "filename":  "enhancedbossbars-1.0.0.jar",
+                        "modIds":  [
+                                       "enhancedbossbars"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/entityculling.pw.toml",
+                        "filename":  "entityculling-neoforge-1.10.1-mc1.21.1.jar",
+                        "modIds":  [
+                                       "entityculling",
+                                       "transition",
+                                       "trender"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/fancymenu.pw.toml",
+                        "filename":  "fancymenu_neoforge_3.9.0_MC_1.21.1.jar",
+                        "modIds":  [
+                                       "fancymenu"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/fastboot.pw.toml",
+                        "filename":  "fastboot-1.21.x-v1.3neo.jar",
+                        "modIds":  [
+                                       "fastboot"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/flerovium.pw.toml",
+                        "filename":  "flerovium-neoforge-1.21.1-1.0.18-all.jar",
+                        "modIds":  [
+                                       "fabric_api_base",
+                                       "fabric_block_view_api_v2",
+                                       "fabric_renderer_api_v1",
+                                       "fabric_rendering_data_attachment_v1",
+                                       "flerovium"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/ftbxaerocompat.pw.toml",
+                        "filename":  "ftbxaerocompat-neoforge-1.1.3.jar",
+                        "modIds":  [
+                                       "ftbxaerocompat"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/general-feedback.pw.toml",
+                        "filename":  "generalfeedback-1.0.0.jar",
+                        "modIds":  [
+                                       "generalfeedback"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/imblocker.pw.toml",
+                        "filename":  "IMBlocker-5.5.3-neoforge+1.20.6-1.21.8.jar",
+                        "modIds":  [
+                                       "imblocker"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/iris-shader-folder.pw.toml",
+                        "filename":  "iris_shader_folder-1.3.1-neoforge.jar",
+                        "modIds":  [
+                                       "iris_shader_folder"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/iris-flywheel-compat.pw.toml",
+                        "filename":  "iris-flywheel-compat-NeoForge-2.3.1.jar",
+                        "modIds":  [
+                                       "flywheel",
+                                       "irisflw"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/irisshaders.pw.toml",
+                        "filename":  "iris-neoforge-1.8.12+mc1.21.1.jar",
+                        "modIds":  [
+                                       "fabric_api_base",
+                                       "fabric_block_view_api_v2",
+                                       "fabric_renderer_api_v1",
+                                       "fabric_rendering_data_attachment_v1",
+                                       "iris"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/item-borders.pw.toml",
+                        "filename":  "ItemBorders-1.21-neoforge-1.2.5.jar",
+                        "modIds":  [
+                                       "itemborders"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/itemphysic-lite.pw.toml",
+                        "filename":  "ItemPhysicLite_NEOFORGE_v1.6.10_mc1.21.1.jar",
+                        "modIds":  [
+                                       "itemphysiclite"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/just-enough-characters.pw.toml",
+                        "filename":  "jecharacters-1.21-neoforge-4.5.24.jar",
+                        "modIds":  [
+                                       "jecharacters"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/just-enough-effect-descriptions-jeed.pw.toml",
+                        "filename":  "jeed-1.21-2.3.2.jar",
+                        "modIds":  [
+                                       "jeed"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/jei.pw.toml",
+                        "filename":  "jei-1.21.1-neoforge-19.27.0.336.jar",
+                        "modIds":  [
+                                       "jei"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/mcwifipnp.pw.toml",
+                        "filename":  "mcwifipnp-1.9.0-1.21-neoforge.jar",
+                        "modIds":  [
+                                       "mcwifipnp"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/minemenu.pw.toml",
+                        "filename":  "MineMenu-neoforge-1.21-1.14.2.jar",
+                        "modIds":  [
+                                       "commonnetworking",
+                                       "minemenu"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/mouse-tweaks.pw.toml",
+                        "filename":  "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                        "modIds":  [
+                                       "mousetweaks"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/obscure-tooltips.pw.toml",
+                        "filename":  "obscure_tooltips-neoforge-1.21.1-4.2.2.jar",
+                        "modIds":  [
+                                       "obscure_tooltips"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/overloaded-armor-bar.pw.toml",
+                        "filename":  "overloadedarmorbar-neoforge-1.21-2.jar",
+                        "modIds":  [
+                                       "overloadedarmorbar"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/pick-up-notifier.pw.toml",
+                        "filename":  "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+                        "modIds":  [
+                                       "pickupnotifier"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/ponder.pw.toml",
+                        "filename":  "ponderjs-neoforge-1.21.1-2.4.0.jar",
+                        "modIds":  [
+                                       "flywheel",
+                                       "ponder",
+                                       "ponderjs"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/presence-footsteps-neoforge.pw.toml",
+                        "filename":  "PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+                        "modIds":  [
+                                       "presencefootsteps"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/reeses-sodium-options.pw.toml",
+                        "filename":  "reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar",
+                        "modIds":  [
+                                       "reeses_sodium_options"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/renderjs.pw.toml",
+                        "filename":  "renderjs-neoforge-2101.2.4.jar",
+                        "modIds":  [
+                                       "renderjs"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/resourcify.pw.toml",
+                        "filename":  "Resourcify (1.21.1-neoforge)-1.8.1.jar",
+                        "modIds":  [
+                                       "resourcify"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/screenshot-viewer.pw.toml",
+                        "filename":  "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+                        "modIds":  [
+                                       "screenshot_viewer"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/seasonhud.pw.toml",
+                        "filename":  "seasonhud-neoforge-1.21.1-2.0.5.jar",
+                        "modIds":  [
+                                       "seasonhud"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/shoulder-surfing-reloaded.pw.toml",
+                        "filename":  "ShoulderSurfing-NeoForge-1.21.1-4.22.9.jar",
+                        "modIds":  [
+                                       "shouldersurfing"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/skin-layers-3d.pw.toml",
+                        "filename":  "skinlayers3d-neoforge-1.11.1-mc1.21.1.jar",
+                        "modIds":  [
+                                       "skinlayers3d",
+                                       "transition",
+                                       "trender"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/magnesium-extras.pw.toml",
+                        "filename":  "sodiumextras-neoforge-1.0.8-1.21.1.jar",
+                        "modIds":  [
+                                       "sodiumextras"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/sodium-leaf-culling.pw.toml",
+                        "filename":  "sodiumleafculling-neoforge-1.0.1-1.21.1.jar",
+                        "modIds":  [
+                                       "sodiumleafculling"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/sodium.pw.toml",
+                        "filename":  "sodium-neoforge-0.6.13+mc1.21.1.jar",
+                        "modIds":  [
+                                       "fabric_api_base",
+                                       "fabric_block_view_api_v2",
+                                       "fabric_renderer_api_v1",
+                                       "fabric_rendering_data_attachment_v1",
+                                       "sodium"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/sodium-options-api.pw.toml",
+                        "filename":  "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar",
+                        "modIds":  [
+                                       "sodiumoptionsapi"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/toast-control.pw.toml",
+                        "filename":  "ToastControl-1.21.1-9.0.1.jar",
+                        "modIds":  [
+                                       "toastcontrol"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/trashslot.pw.toml",
+                        "filename":  "trashslot-neoforge-1.21.1-21.1.10.jar",
+                        "modIds":  [
+                                       "trashslot"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/raws-visual-keybinder.pw.toml",
+                        "filename":  "visual_keybinder-1.21.1-0.1.12-neoforge.jar",
+                        "modIds":  [
+                                       "visual_keybinder"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/xaeros-minimap.pw.toml",
+                        "filename":  "xaerominimap-neoforge-1.21.1-25.3.10.jar",
+                        "modIds":  [
+                                       "xaerolib",
+                                       "xaerominimap"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/xaeros-minimap-world-map-waystones-compability.pw.toml",
+                        "filename":  "xaeros_waystones_compatibility-NeoForge-1.21.1-2.1.0.jar",
+                        "modIds":  [
+                                       "w2w2"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/xaeros-world-map.pw.toml",
+                        "filename":  "xaeroworldmap-neoforge-1.21.1-1.40.11.jar",
+                        "modIds":  [
+                                       "xaerolib",
+                                       "xaeroworldmap"
+                                   ]
+                    },
+                    {
+                        "side":  "client",
+                        "metadata":  "mods/client/yeetusexperimentus.pw.toml",
+                        "filename":  "yeetusexperimentus-neoforge-87.0.0.jar",
+                        "modIds":  [
+                                       "yeetusexperimentus"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/oworld2create-refoxed.pw.toml",
+                        "filename":  "0world2create-neoforge-1.21.1-1.0.0.jar",
+                        "modIds":  [
+                                       "oworld2create"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/abnormals-delight.pw.toml",
+                        "filename":  "abnormals_delight-1.21.1-6.0.2.jar",
+                        "modIds":  [
+                                       "abnormals_delight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/accessories.pw.toml",
+                        "filename":  "accessories-neoforge-1.1.0-beta.53+1.21.1.jar",
+                        "modIds":  [
+                                       "accessories"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/advancement-plaques.pw.toml",
+                        "filename":  "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+                        "modIds":  [
+                                       "advancementplaques"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ae2-crafting-tree.pw.toml",
+                        "filename":  "ae2ct-1.21.1-1.1.1.jar",
+                        "modIds":  [
+                                       "ae2ct"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ae2-network-analyser.pw.toml",
+                        "filename":  "AE2NetworkAnalyzer-1.21-2.1.5-neoforge.jar",
+                        "modIds":  [
+                                       "ae2netanalyser"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/omni-cells.pw.toml",
+                        "filename":  "ae2omnicells-1.21.1-neoforge-1.1.4.jar",
+                        "modIds":  [
+                                       "ae2omnicells"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/applied-energistics-2-wireless-terminals.pw.toml",
+                        "filename":  "ae2wtlib-19.4.1.jar",
+                        "modIds":  [
+                                       "ae2wtlib",
+                                       "ae2wtlib_api"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/alexs-caves-unofficial-port.pw.toml",
+                        "filename":  "alexscaves-2.0.10.jar",
+                        "modIds":  [
+                                       "alexscaves"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/alexs-delight.pw.toml",
+                        "filename":  "alexsdelight-1.6.jar",
+                        "modIds":  [
+                                       "alexsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/alexs-mobs-1-21-1-port.pw.toml",
+                        "filename":  "alexsmobs-1.22.17.jar",
+                        "modIds":  [
+                                       "alexsmobs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/always-eat.pw.toml",
+                        "filename":  "AlwaysEat-neoforge-1.0.0.jar",
+                        "modIds":  [
+                                       "always_eat"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/amendments.pw.toml",
+                        "filename":  "amendments-1.21-2.0.15-neoforge.jar",
+                        "modIds":  [
+                                       "amendments"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/anvilcore.pw.toml",
+                        "filename":  "anvilcore-10.1 Release-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "anvilcore"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/apothic-attributes.pw.toml",
+                        "filename":  "ApothicAttributes-1.21.1-2.9.1.jar",
+                        "modIds":  [
+                                       "apothic_attributes"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/appleskin.pw.toml",
+                        "filename":  "appleskin-neoforge-mc1.21-3.0.9.jar",
+                        "modIds":  [
+                                       "appleskin"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/applied-create.pw.toml",
+                        "filename":  "appliedcreate-1.21.1-1.1.5.jar",
+                        "modIds":  [
+                                       "appliedcreate"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/applied-energistics-2.pw.toml",
+                        "filename":  "appliedenergistics2-19.2.17.jar",
+                        "modIds":  [
+                                       "ae2"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/architectury-api.pw.toml",
+                        "filename":  "architectury-13.0.8-neoforge.jar",
+                        "modIds":  [
+                                       "architectury"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/attributefix.pw.toml",
+                        "filename":  "attributefix-neoforge-1.21.1-21.1.3.jar",
+                        "modIds":  [
+                                       "attributefix"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/bakeries.pw.toml",
+                        "filename":  "bakeries-1.21.1-NeoForge-1.0.0-beta4.jar",
+                        "modIds":  [
+                                       "bakeries",
+                                       "rcg_lib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/balm.pw.toml",
+                        "filename":  "balm-neoforge-1.21.1-21.0.56.jar",
+                        "modIds":  [
+                                       "balm",
+                                       "kuma_api"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/better-combat-by-daedelus.pw.toml",
+                        "filename":  "bettercombat-neoforge-2.3.2+1.21.1.jar",
+                        "modIds":  [
+                                       "bettercombat",
+                                       "tiny_config"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/better-compatibility-checker.pw.toml",
+                        "filename":  "better-compatability-checker-neoforge-21.1.8.jar",
+                        "modIds":  [
+                                       "bcc"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-bigger-storage-neofork.pw.toml",
+                        "filename":  "biggerstorage1.21.1-neoforge-1.0.0.jar",
+                        "modIds":  [
+                                       "create_bs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/biomespy.pw.toml",
+                        "filename":  "biomespy-neoforge-1.21.1-1.3.3.jar",
+                        "modIds":  [
+                                       "biomespy"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/blueprint.pw.toml",
+                        "filename":  "blueprint-1.21.1-8.0.8.jar",
+                        "modIds":  [
+                                       "blueprint"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/bookshelf.pw.toml",
+                        "filename":  "bookshelf-neoforge-1.21.1-21.1.81.jar",
+                        "modIds":  [
+                                       "bookshelf"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/bountiful.pw.toml",
+                        "filename":  "bountiful-neoforge-8.0.0-beta.2.jar",
+                        "modIds":  [
+                                       "bountiful"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/brewin-and-chewin.pw.toml",
+                        "filename":  "BrewinAndChewin-neoforge-4.4.2+1.21.1.jar",
+                        "modIds":  [
+                                       "brewinandchewin",
+                                       "greenhouseconfig",
+                                       "greenhouseconfig_night_config",
+                                       "greenhouseconfig_toml"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/butchercraft.pw.toml",
+                        "filename":  "butchercraft-2.6.5.jar",
+                        "modIds":  [
+                                       "butchercraft"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/c2me.pw.toml",
+                        "filename":  "c2me-neoforge-mc1.21.1-0.3.0+alpha.0.93.jar",
+                        "modIds":  [
+                                       "c2me",
+                                       "c2me_base",
+                                       "c2me_client_uncapvd",
+                                       "c2me_fixes_chunkio_threading_issues",
+                                       "c2me_fixes_general_threading_issues",
+                                       "c2me_fixes_worldgen_threading_issues",
+                                       "c2me_fixes_worldgen_vanilla_bugs",
+                                       "c2me_notickvd",
+                                       "c2me_opts_allocs",
+                                       "c2me_opts_chunkio",
+                                       "c2me_opts_dfc",
+                                       "c2me_opts_math",
+                                       "c2me_opts_natives_math",
+                                       "c2me_opts_scheduling",
+                                       "c2me_opts_worldgen_general",
+                                       "c2me_opts_worldgen_vanilla",
+                                       "c2me_rewrites_chunk_serializer",
+                                       "c2me_rewrites_chunk_system",
+                                       "c2me_rewrites_chunkio",
+                                       "c2me_server_utils",
+                                       "c2me_threading_lighting"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/caelus.pw.toml",
+                        "filename":  "caelus-neoforge-7.0.1+1.21.1.jar",
+                        "modIds":  [
+                                       "caelus"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/carry-on.pw.toml",
+                        "filename":  "carryon-neoforge-1.21.1-2.2.4.4.jar",
+                        "modIds":  [
+                                       "carryon"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/casualness-delight.pw.toml",
+                        "filename":  "casualnessdelight-0.6.jar",
+                        "modIds":  [
+                                       "casualnessdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cerulean.pw.toml",
+                        "filename":  "cerulean-neoforge-1.0.0-1.21.1.jar",
+                        "modIds":  [
+                                       "cerulean"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/charm-of-undying.pw.toml",
+                        "filename":  "charmofundying-neoforge-9.1.0+1.21.1.jar",
+                        "modIds":  [
+                                       "charmofundying",
+                                       "spectrelib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/chefs-delight-forge.pw.toml",
+                        "filename":  "chefsdelight-1.0.5-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "chefsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/citadel-1-21-1-port.pw.toml",
+                        "filename":  "citadel-1.21.1-2.7.6.jar",
+                        "modIds":  [
+                                       "citadel"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cloth-config.pw.toml",
+                        "filename":  "cloth-config-15.0.140-neoforge.jar",
+                        "modIds":  [
+                                       "cloth_config"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/clumps.pw.toml",
+                        "filename":  "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+                        "modIds":  [
+                                       "clumps"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cobweb.pw.toml",
+                        "filename":  "cobweb-neoforge-1.21-1.4.0.jar",
+                        "modIds":  [
+                                       "cobweb"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/collectors-reap.pw.toml",
+                        "filename":  "collectorsreap-1.21.1-1.5.5.jar",
+                        "modIds":  [
+                                       "collectorsreap"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/comforts.pw.toml",
+                        "filename":  "comforts-neoforge-9.0.5+1.21.1.jar",
+                        "modIds":  [
+                                       "comforts",
+                                       "spectrelib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/construction-wands-revived.pw.toml",
+                        "filename":  "ConstructionWandsRevived-1.21.1-3.3.14-NeoForge.jar",
+                        "modIds":  [
+                                       "constructionwand"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/copycats.pw.toml",
+                        "filename":  "copycats-3.0.4+mc.1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "copycats"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/corn-delight.pw.toml",
+                        "filename":  "corn_delight-1.2.10-1.21.1.jar",
+                        "modIds":  [
+                                       "corn_delight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/coroutil.pw.toml",
+                        "filename":  "coroutil-neoforge-1.21.0-1.3.9.jar",
+                        "modIds":  [
+                                       "coroutil"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cosmetic-armor-reworked.pw.toml",
+                        "filename":  "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+                        "modIds":  [
+                                       "cosmeticarmorreworked"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/custom-portal-api-reforged.pw.toml",
+                        "filename":  "cpapireforged-neo-1.21.1-1.2.2.jar",
+                        "modIds":  [
+                                       "cpapireforged"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/crabbers-delight.pw.toml",
+                        "filename":  "crabbersdelight-1.21.1-1.2.6.jar",
+                        "modIds":  [
+                                       "crabbersdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/crate-delight-forge.pw.toml",
+                        "filename":  "cratedelight-25.09.22-1.21-neoforge.jar",
+                        "modIds":  [
+                                       "cratedelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-morerecipes.pw.toml",
+                        "filename":  "Create More Recipes-1.21.1-1.2.1-fix1.jar",
+                        "modIds":  [
+                                       "cmr"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-bitterballen.pw.toml",
+                        "filename":  "create_bic_bit-1.0.2C.jar",
+                        "modIds":  [
+                                       "create_bic_bit"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-compatible-storage.pw.toml",
+                        "filename":  "create_compatible_storage-2.11.0-neoforge.jar",
+                        "modIds":  [
+                                       "create_compatible_storage"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-connected.pw.toml",
+                        "filename":  "create_connected-1.1.14-mc1.21.1.jar",
+                        "modIds":  [
+                                       "create_connected",
+                                       "sablecompanion"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-deepfried.pw.toml",
+                        "filename":  "create_deepfried-forge-1.21.1-0.1.3C.jar",
+                        "modIds":  [
+                                       "create_deepfried"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-enhanced-schematicannon.pw.toml",
+                        "filename":  "create_enhanced_schematicannon-1.0.4.jar",
+                        "modIds":  [
+                                       "create_enhanced_schematicannon"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-fantasizing-again.pw.toml",
+                        "filename":  "create_fantasizing-1.21.1-1.1.3.jar",
+                        "modIds":  [
+                                       "create_fantasizing"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-curios-jetpack.pw.toml",
+                        "filename":  "create_jetpack_curios-1.2.0-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "create_jetpack_curios"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-jetpack.pw.toml",
+                        "filename":  "create_jetpack-forge-5.1.2.jar",
+                        "modIds":  [
+                                       "create_jetpack",
+                                       "flightlib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-mechanical-spawner.pw.toml",
+                        "filename":  "create_mechanical_spawner-1.21.1-1.3.0-6.0.8.jar",
+                        "modIds":  [
+                                       "create_mechanical_spawner"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-pattern-schematics.pw.toml",
+                        "filename":  "create_pattern_schematics-2.0.10.jar",
+                        "modIds":  [
+                                       "create_pattern_schematics"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-ratatouille.pw.toml",
+                        "filename":  "create_ratatouille-1.21.1-1.3.9-2.jar",
+                        "modIds":  [
+                                       "ratatouille"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-rustic-structures.pw.toml",
+                        "filename":  "create_rustic_structures-1.0.0-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "create_rustic_structures"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-structures-arise.pw.toml",
+                        "filename":  "create_structures_arise-174.47.46 Release-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "create_structures_arise"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create.pw.toml",
+                        "filename":  "create-1.21.1-6.0.10.jar",
+                        "modIds":  [
+                                       "create",
+                                       "flywheel",
+                                       "ponder"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/createaddition.pw.toml",
+                        "filename":  "createaddition-1.5.10.jar",
+                        "modIds":  [
+                                       "createaddition"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-additional-logistics.pw.toml",
+                        "filename":  "createadditionallogistics-1.21.1-1.4.5.jar",
+                        "modIds":  [
+                                       "createadditionallogistics"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-cafe.pw.toml",
+                        "filename":  "createcafe-1.4.3.jar",
+                        "modIds":  [
+                                       "createcafe"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-central-kitchen.pw.toml",
+                        "filename":  "create-central-kitchen-2.4.0.jar",
+                        "modIds":  [
+                                       "create_central_kitchen"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-cobblestone.pw.toml",
+                        "filename":  "createcobblestone-1.4.9+neoforge-1.21.1-130.jar",
+                        "modIds":  [
+                                       "createcobblestone"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-confectionery.pw.toml",
+                        "filename":  "create-confectionery1.21.1_v1.1.3.jar",
+                        "modIds":  [
+                                       "create_confectionery"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-deco.pw.toml",
+                        "filename":  "createdeco-2.1.3.jar",
+                        "modIds":  [
+                                       "createdeco"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-diesel-generators.pw.toml",
+                        "filename":  "createdieselgenerators-1.21.1-1.3.11.jar",
+                        "modIds":  [
+                                       "createdieselgenerators"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-dragons-plus.pw.toml",
+                        "filename":  "CreateDragonsPlus-1.10.0b.jar",
+                        "modIds":  [
+                                       "conditional_mixin",
+                                       "create_dragons_plus"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-enchantment-industry.pw.toml",
+                        "filename":  "create-enchantment-industry-2.3.1.jar",
+                        "modIds":  [
+                                       "create_enchantment_industry"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-fast-schematiccannon.pw.toml",
+                        "filename":  "CreateFastSchematicCannon-1.4.1-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "createfastschematiccannon"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-fluid-stuffs-neoforge.pw.toml",
+                        "filename":  "createfluidstuffs-neoforge-1.2.1.jar",
+                        "modIds":  [
+                                       "createfluidstuffs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-idlx.pw.toml",
+                        "filename":  "createidlx-1.21.1-1.5.jar",
+                        "modIds":  [
+                                       "createidlx"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-lazytick.pw.toml",
+                        "filename":  "CreateLazyTick-2.4.9-6.0.x-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "createlazytick"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-liquid-fuel.pw.toml",
+                        "filename":  "createliquidfuel-2.1.1-1.21.1.jar",
+                        "modIds":  [
+                                       "createliquidfuel"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-metallurgy.pw.toml",
+                        "filename":  "createmetallurgy-1.0.3-1.21.1.jar",
+                        "modIds":  [
+                                       "createmetallurgy"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-new-age.pw.toml",
+                        "filename":  "create-new-age-1.1.7c+neoforge-mc1.21.1.jar",
+                        "modIds":  [
+                                       "create_new_age",
+                                       "esl"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-ore-excavation.pw.toml",
+                        "filename":  "createoreexcavation-1.21-1.6.8.jar",
+                        "modIds":  [
+                                       "createoreexcavation"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-prismatic-shine.pw.toml",
+                        "filename":  "createprism-1.2.1.jar",
+                        "modIds":  [
+                                       "createprism"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-stock-bridge.pw.toml",
+                        "filename":  "createstockbridge-1.21.1-0.1.6.jar",
+                        "modIds":  [
+                                       "createstockbridge"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-stuff-additions.pw.toml",
+                        "filename":  "create-stuff-additions1.21.1_v2.1.0e.jar",
+                        "modIds":  [
+                                       "create_sa"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-transmission.pw.toml",
+                        "filename":  "createtransmission-1.1.2+neoforge-create6-1.21.1.jar",
+                        "modIds":  [
+                                       "createtransmission"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-ultimine.pw.toml",
+                        "filename":  "createultimine-1.21.1-neoforge-1.3.0.jar",
+                        "modIds":  [
+                                       "createultimine"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/creativecore.pw.toml",
+                        "filename":  "CreativeCore_NEOFORGE_v2.13.38_mc1.21.1.jar",
+                        "modIds":  [
+                                       "creativecore"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/creeper-overhaul.pw.toml",
+                        "filename":  "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+                        "modIds":  [
+                                       "creeperoverhaul"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cristel-lib.pw.toml",
+                        "filename":  "cristellib-neoforge-1.21.1-3.0.3.jar",
+                        "modIds":  [
+                                       "cristellib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cuisine-delight.pw.toml",
+                        "filename":  "cuisinedelight-1.2.8.jar",
+                        "modIds":  [
+                                       "cuisinedelight",
+                                       "l2core"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/cultural-delights.pw.toml",
+                        "filename":  "culturaldelights-0.17.8.jar",
+                        "modIds":  [
+                                       "culturaldelights"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/curios.pw.toml",
+                        "filename":  "curios-neoforge-9.5.1+1.21.1.jar",
+                        "modIds":  [
+                                       "curios"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/deployer.pw.toml",
+                        "filename":  "deployer-0.1.2.jar",
+                        "modIds":  [
+                                       "compat_manager",
+                                       "deployer"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kubejs-diesel-generators.pw.toml",
+                        "filename":  "dg_js-1.21.1-1.1.5.jar",
+                        "modIds":  [
+                                       "dg_js"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/display-delight.pw.toml",
+                        "filename":  "displaydelight-1.5.2.jar",
+                        "modIds":  [
+                                       "displaydelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/dramatic-doors.pw.toml",
+                        "filename":  "DramaticDoors-NeoQuiFab-1.21.1-3.3.2.jar",
+                        "modIds":  [
+                                       "dramaticdoors"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/detected-setblock-be-gone.pw.toml",
+                        "filename":  "dsbg-1.0-1.21.1.jar",
+                        "modIds":  [
+                                       "dsbg"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/mmmmmmmmmmmm.pw.toml",
+                        "filename":  "dummmmmmy-1.21-2.0.12-neoforge.jar",
+                        "modIds":  [
+                                       "dummmmmmy"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/dumplings-delight-rewrapped.pw.toml",
+                        "filename":  "DumplingsDelightRewrapped-1.21.1-1.4.1.jar",
+                        "modIds":  [
+                                       "dumplings_delight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ecliptic-seasons.pw.toml",
+                        "filename":  "EclipticSeasons-1.21.1-neoforge-0.12.18.13.jar",
+                        "modIds":  [
+                                       "eclipticseasons"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/elysium-api.pw.toml",
+                        "filename":  "ElysiumAPI-1.21.1-2.0.0-BETA.6.jar",
+                        "modIds":  [
+                                       "elysium_api",
+                                       "playeranimator"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/elytra-slot.pw.toml",
+                        "filename":  "elytraslot-neoforge-9.0.2+1.21.1.jar",
+                        "modIds":  [
+                                       "elytraslot"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ends-delight.pw.toml",
+                        "filename":  "ends_delight-2.5.1+neoforge.1.21.1.jar",
+                        "modIds":  [
+                                       "ends_delight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/explorers-compass.pw.toml",
+                        "filename":  "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+                        "modIds":  [
+                                       "explorerscompass"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ex-pattern-provider.pw.toml",
+                        "filename":  "ExtendedAE-1.21-2.2.32-neoforge.jar",
+                        "modIds":  [
+                                       "ae2wtlib_api",
+                                       "extendedae"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/create-extra-gauges.pw.toml",
+                        "filename":  "extra_gauges-2.1.2.jar",
+                        "modIds":  [
+                                       "extra_gauges"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/farmers-delight.pw.toml",
+                        "filename":  "FarmersDelight-1.21.1-1.3.2.jar",
+                        "modIds":  [
+                                       "farmersdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ferritecore.pw.toml",
+                        "filename":  "ferritecore-7.0.3-neoforge.jar",
+                        "modIds":  [
+                                       "ferritecore"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/fragmentum-neoforge.pw.toml",
+                        "filename":  "fragmentum-neoforge-1.21.1-2.1.1.jar",
+                        "modIds":  [
+                                       "fragmentum"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/framework.pw.toml",
+                        "filename":  "framework-neoforge-1.21.1-0.13.11.jar",
+                        "modIds":  [
+                                       "framework"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/fruits-delight.pw.toml",
+                        "filename":  "fruitsdelight-1.2.13.jar",
+                        "modIds":  [
+                                       "fruitsdelight",
+                                       "l2core",
+                                       "l2harvester"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-chunks-forge.pw.toml",
+                        "filename":  "ftb-chunks-neoforge-2101.1.14.jar",
+                        "modIds":  [
+                                       "ftbchunks"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-essentials.pw.toml",
+                        "filename":  "ftb-essentials-neoforge-2101.1.9.jar",
+                        "modIds":  [
+                                       "ftbessentials"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-filter-system.pw.toml",
+                        "filename":  "ftb-filter-system-neoforge-21.1.4.jar",
+                        "modIds":  [
+                                       "ftbfiltersystem"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-library-forge.pw.toml",
+                        "filename":  "ftb-library-neoforge-2101.1.31.jar",
+                        "modIds":  [
+                                       "ftblibrary"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-quests-forge.pw.toml",
+                        "filename":  "ftb-quests-neoforge-2101.1.24.jar",
+                        "modIds":  [
+                                       "ftbquests"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-ranks-forge.pw.toml",
+                        "filename":  "ftb-ranks-neoforge-2101.1.3.jar",
+                        "modIds":  [
+                                       "ftbranks"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-teams-forge.pw.toml",
+                        "filename":  "ftb-teams-neoforge-2101.1.10.jar",
+                        "modIds":  [
+                                       "ftbteams"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-ultimine-forge.pw.toml",
+                        "filename":  "ftb-ultimine-neoforge-2101.1.13.jar",
+                        "modIds":  [
+                                       "ftbultimine"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/ftb-xmod-compat.pw.toml",
+                        "filename":  "ftb-xmod-compat-neoforge-21.1.8.jar",
+                        "modIds":  [
+                                       "ftbxmodcompat"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/functional-storage.pw.toml",
+                        "filename":  "functionalstorage-1.21.1-1.5.4.jar",
+                        "modIds":  [
+                                       "functionalstorage"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/fzzy-config.pw.toml",
+                        "filename":  "fzzy_config-0.7.6+1.21+neoforge.jar",
+                        "modIds":  [
+                                       "fzzy_config"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/gateways-to-eternity.pw.toml",
+                        "filename":  "GatewaysToEternity-1.21.1-5.1.0.jar",
+                        "modIds":  [
+                                       "gateways"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/geckolib.pw.toml",
+                        "filename":  "geckolib-neoforge-1.21.1-4.8.4.jar",
+                        "modIds":  [
+                                       "geckolib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/glodium.pw.toml",
+                        "filename":  "Glodium-1.21-2.2-neoforge.jar",
+                        "modIds":  [
+                                       "glodium"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/guideme.pw.toml",
+                        "filename":  "guideme-21.1.15.jar",
+                        "modIds":  [
+                                       "guideme"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/hotai.pw.toml",
+                        "filename":  "hotai-2.0.jar",
+                        "modIds":  [
+                                       "hotai"
+                                   ],
+                        "nonRuntimeMod":  true
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/iceandfire-ce.pw.toml",
+                        "filename":  "IceAndFireCE-2.0-beta.16-1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "iceandfire",
+                                       "integration"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/iceberg.pw.toml",
+                        "filename":  "Iceberg-1.21.1-neoforge-1.3.2.jar",
+                        "modIds":  [
+                                       "iceberg"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/idas.pw.toml",
+                        "filename":  "idas-1.13.5+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "idas"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/immersive-aircraft.pw.toml",
+                        "filename":  "immersive_aircraft-1.4.3+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "immersive_aircraft"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/immersive-paintings.pw.toml",
+                        "filename":  "immersive_paintings-neoforge-1.21.1-0.7.6.jar",
+                        "modIds":  [
+                                       "immersive_paintings"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/improved-mobs.pw.toml",
+                        "filename":  "improvedmobs-1.21.1-1.15.2-neoforge.jar",
+                        "modIds":  [
+                                       "improvedmobs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/industrial-platform.pw.toml",
+                        "filename":  "Industrial Platform-1.21.1-1.7.1.jar",
+                        "modIds":  [
+                                       "industrial_platform"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/integrated-api.pw.toml",
+                        "filename":  "integrated_api-1.7.4+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "integrated_api"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/integrated-stronghold.pw.toml",
+                        "filename":  "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "integrated_stronghold"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/integrated-villages.pw.toml",
+                        "filename":  "integrated_villages-1.3.2+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "integrated_villages"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/interiors.pw.toml",
+                        "filename":  "interiors-1.21.1-neoforge-0.6.1.jar",
+                        "modIds":  [
+                                       "interiors"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/jade.pw.toml",
+                        "filename":  "Jade-1.21.1-NeoForge-15.10.5.jar",
+                        "modIds":  [
+                                       "jade"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/jade-addons.pw.toml",
+                        "filename":  "JadeAddons-1.21.1-NeoForge-6.1.0.jar",
+                        "modIds":  [
+                                       "jadeaddons"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/jadens-nether-expansion.pw.toml",
+                        "filename":  "Jadens-Nether-Expansion-2.4.0-BETA.7.jar",
+                        "modIds":  [
+                                       "biolith",
+                                       "lodestone",
+                                       "netherexp"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/jupiter.pw.toml",
+                        "filename":  "jupiter-2.3.7-1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "jupiter"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/justenoughbreeding.pw.toml",
+                        "filename":  "justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar",
+                        "modIds":  [
+                                       "justenoughbreeding"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kaleidoscope-doll.pw.toml",
+                        "filename":  "kaleidoscopedoll-1.3.1-neoforge+mc1.21.1.jar",
+                        "modIds":  [
+                                       "kaleidoscope_doll"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kambrik.pw.toml",
+                        "filename":  "kambrik-neoforge-8.0.0-beta.2.jar",
+                        "modIds":  [
+                                       "kambrik",
+                                       "percale"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/konkrete.pw.toml",
+                        "filename":  "konkrete_neoforge_1.9.9_MC_1.21.jar",
+                        "modIds":  [
+                                       "konkrete"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kotlin-for-forge.pw.toml",
+                        "filename":  "kotlinforforge-5.11.0-all.jar",
+                        "modIds":  [
+                                       "kotlinforforge"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kubejs-create.pw.toml",
+                        "filename":  "kubejs-create-neoforge-2101.3.1-build.18.jar",
+                        "modIds":  [
+                                       "kubejs_create"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kubejs-delight.pw.toml",
+                        "filename":  "kubejsdelight-1.21.1-1.1.5.jar",
+                        "modIds":  [
+                                       "kubejsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/kubejs.pw.toml",
+                        "filename":  "kubejs-neoforge-2101.7.2-build.363.jar",
+                        "modIds":  [
+                                       "betteradvancedtooltips",
+                                       "kubejs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lc-tech.pw.toml",
+                        "filename":  "lctech-1.21-0.2.2.7.jar",
+                        "modIds":  [
+                                       "lctech"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lets-do-vinery.pw.toml",
+                        "filename":  "letsdo-vinery-neoforge-1.5.3.jar",
+                        "modIds":  [
+                                       "vinery"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lightmans-currency.pw.toml",
+                        "filename":  "lightmanscurrency-1.21-2.3.0.4e.jar",
+                        "modIds":  [
+                                       "lightmanscurrency"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lithostitched.pw.toml",
+                        "filename":  "lithostitched-1.7.2-neoforge-21.1.jar",
+                        "modIds":  [
+                                       "lithostitched"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lmft.pw.toml",
+                        "filename":  "lmft-1.0.4+1.21-neoforge.jar",
+                        "modIds":  [
+                                       "lmft"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lodestone.pw.toml",
+                        "filename":  "lodestone-1.21.1-1.8.2.jar",
+                        "modIds":  [
+                                       "lodestone"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lootjs.pw.toml",
+                        "filename":  "lootjs-neoforge-1.21.1-3.7.0.jar",
+                        "modIds":  [
+                                       "lootjs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/lootr.pw.toml",
+                        "filename":  "lootr-neoforge-1.21.1-1.11.37.120.jar",
+                        "modIds":  [
+                                       "lootr"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/luncheon-meat-s-delight.pw.toml",
+                        "filename":  "luncheon-meat-s-delight-1.0.6-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "luncheonmeatsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/man-of-many-planes.pw.toml",
+                        "filename":  "man_of_many_planes-0.2.1+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "man_of_many_planes"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/mechanicals-lib.pw.toml",
+                        "filename":  "mechanicals-1.21.1-1.1.0.jar",
+                        "modIds":  [
+                                       "mechanicals"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/mega-cells.pw.toml",
+                        "filename":  "megacells-4.11.0.jar",
+                        "modIds":  [
+                                       "megacells"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/melody.pw.toml",
+                        "filename":  "melody_neoforge_1.0.10_MC_1.21.jar",
+                        "modIds":  [
+                                       "melody"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/miners-delight-plus.pw.toml",
+                        "filename":  "minersdelight-1.21.1-1.4.5.jar",
+                        "modIds":  [
+                                       "minersdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/modernfix.pw.toml",
+                        "filename":  "modernfix-neoforge-5.27.4+mc1.21.1.jar",
+                        "modIds":  [
+                                       "modernfix"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/selene.pw.toml",
+                        "filename":  "moonlight-neoforge-1.21.1-3.0.5.jar",
+                        "modIds":  [
+                                       "moonlight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/morejs.pw.toml",
+                        "filename":  "morejs-neoforge-1.21.1-0.16.0.jar",
+                        "modIds":  [
+                                       "morejs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/mutil.pw.toml",
+                        "filename":  "mutil-1.21.1-6.3.1.jar",
+                        "modIds":  [
+                                       "mutil"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/my-nethers-delight.pw.toml",
+                        "filename":  "MyNethersDelight-1.21.1-1.10.2.jar",
+                        "modIds":  [
+                                       "mynethersdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/mysterious-mountain-lib.pw.toml",
+                        "filename":  "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+                        "modIds":  [
+                                       "mysterious_mountain_lib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/natures-compass.pw.toml",
+                        "filename":  "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+                        "modIds":  [
+                                       "naturescompass"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/neapolitan.pw.toml",
+                        "filename":  "neapolitan-1.21.1-6.0.1.jar",
+                        "modIds":  [
+                                       "neapolitan"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/neo-bee-fix.pw.toml",
+                        "filename":  "neobeefix-1.21.1-2.0.0.jar",
+                        "modIds":  [
+                                       "neobeefix"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/dungeons-delight.pw.toml",
+                        "filename":  "neoforge-dungeonsdelight-1.21.1-1.4.6.jar",
+                        "modIds":  [
+                                       "dungeonsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/runiclib.pw.toml",
+                        "filename":  "neoforge-runiclib-1.21.1-5.0.6.jar",
+                        "modIds":  [
+                                       "runiclib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/net-music.pw.toml",
+                        "filename":  "netmusic-1.5.0-neoforge+mc1.21.1.jar",
+                        "modIds":  [
+                                       "netmusic"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/no-chat-reports.pw.toml",
+                        "filename":  "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+                        "modIds":  [
+                                       "nochatreports"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/northstar-redux.pw.toml",
+                        "filename":  "Northstar-0.5.4+1.21.1.jar",
+                        "modIds":  [
+                                       "northstar"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/northstar-curios-compat.pw.toml",
+                        "filename":  "northstar-curios-compat-neoforge-1.2.5.jar",
+                        "modIds":  [
+                                       "northstar_curios_compat"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/observable.pw.toml",
+                        "filename":  "observable-5.4.4.jar",
+                        "modIds":  [
+                                       "observable"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/owo-lib.pw.toml",
+                        "filename":  "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+                        "modIds":  [
+                                       "fabric_api_base",
+                                       "owo"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/packet-fixer.pw.toml",
+                        "filename":  "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+                        "modIds":  [
+                                       "packetfixer"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/placebo.pw.toml",
+                        "filename":  "Placebo-1.21.1-9.9.1.jar",
+                        "modIds":  [
+                                       "placebo"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/playeranimator.pw.toml",
+                        "filename":  "player-animation-lib-forge-2.0.4+1.21.1.jar",
+                        "modIds":  [
+                                       "playeranimator"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/polymorphic-energistics.pw.toml",
+                        "filename":  "polyeng-0.4.1.jar",
+                        "modIds":  [
+                                       "polyeng"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/polymorph.pw.toml",
+                        "filename":  "polymorph-neoforge-1.1.0+1.21.1.jar",
+                        "modIds":  [
+                                       "polymorph"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/prickle.pw.toml",
+                        "filename":  "prickle-neoforge-1.21.1-21.1.11.jar",
+                        "modIds":  [
+                                       "prickle"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/prism-lib.pw.toml",
+                        "filename":  "Prism-1.21.1-neoforge-1.0.11.jar",
+                        "modIds":  [
+                                       "prism"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/probejs.pw.toml",
+                        "filename":  "ProbeJS-7.7.2.jar",
+                        "modIds":  [
+                                       "probejs"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/prometheus.pw.toml",
+                        "filename":  "prometheus-neoforge-1.21-1.2.5.jar",
+                        "modIds":  [
+                                       "prometheus"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/puzzles-lib.pw.toml",
+                        "filename":  "PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar",
+                        "modIds":  [
+                                       "puzzleslib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/quality-food.pw.toml",
+                        "filename":  "quality_food-1.21.1-2.3.4.jar",
+                        "modIds":  [
+                                       "quality_food"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/quark.pw.toml",
+                        "filename":  "Quark-4.1-477.jar",
+                        "modIds":  [
+                                       "biolith",
+                                       "quark"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/quark-oddities.pw.toml",
+                        "filename":  "QuarkOddities-1.21.1.jar",
+                        "modIds":  [
+                                       "quarkoddities"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/refurbished-furniture.pw.toml",
+                        "filename":  "refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+                        "modIds":  [
+                                       "refurbished_furniture"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/resourceful-config.pw.toml",
+                        "filename":  "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+                        "modIds":  [
+                                       "resourcefulconfig"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/resourceful-lib.pw.toml",
+                        "filename":  "resourcefullib-neoforge-1.21-3.0.12.jar",
+                        "modIds":  [
+                                       "resourcefullib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/rhino.pw.toml",
+                        "filename":  "rhino-2101.2.7-build.81.jar",
+                        "modIds":  [
+                                       "rhino"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/schematicannon-processing-pattern.pw.toml",
+                        "filename":  "schematicanon_processing_pattern-1.0-neoforge-1.21.1.jar",
+                        "modIds":  [
+                                       "schematicanon_processing_pattern"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/searchables.pw.toml",
+                        "filename":  "Searchables-neoforge-1.21.1-1.0.2.jar",
+                        "modIds":  [
+                                       "searchables"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/servercore.pw.toml",
+                        "filename":  "servercore-neoforge-1.5.5+1.21.1.jar",
+                        "modIds":  [
+                                       "servercore"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/silents-delight.pw.toml",
+                        "filename":  "silentsdelight-1.21.1-1.0.1.jar",
+                        "modIds":  [
+                                       "silentsdelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/simple-backups.pw.toml",
+                        "filename":  "SimpleBackups-1.21-4.0.21.jar",
+                        "modIds":  [
+                                       "simplebackups"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/simplehats.pw.toml",
+                        "filename":  "simplehats-neoforge-1.21.1-0.4.0.jar",
+                        "modIds":  [
+                                       "simplehats"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/some-assembly-required.pw.toml",
+                        "filename":  "someassemblyrequired-5.2.8.jar",
+                        "modIds":  [
+                                       "someassemblyrequired"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/sophisticated-backpacks.pw.toml",
+                        "filename":  "sophisticatedbackpacks-1.21.1-3.25.44.1736.jar",
+                        "modIds":  [
+                                       "sophisticatedbackpacks"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/sophisticated-backpacks-create-integration.pw.toml",
+                        "filename":  "sophisticatedbackpackscreateintegration-1.21.1-0.1.5.29.jar",
+                        "modIds":  [
+                                       "sophisticatedbackpackscreateintegration"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/sophisticated-core.pw.toml",
+                        "filename":  "sophisticatedcore-1.21.1-1.4.36.1833.jar",
+                        "modIds":  [
+                                       "sophisticatedcore"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/soul-fire-d.pw.toml",
+                        "filename":  "soul-fire-d-neoforge-1.21-6.1.0.jar",
+                        "modIds":  [
+                                       "soul_fire_d"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/spark.pw.toml",
+                        "filename":  "spark-1.10.124-neoforge.jar",
+                        "modIds":  [
+                                       "spark"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/supermartijn642s-config-lib.pw.toml",
+                        "filename":  "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+                        "modIds":  [
+                                       "supermartijn642configlib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/supermartijn642s-core-lib.pw.toml",
+                        "filename":  "supermartijn642corelib-1.1.21-neoforge-mc1.21.jar",
+                        "modIds":  [
+                                       "supermartijn642corelib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/supplementaries.pw.toml",
+                        "filename":  "supplementaries-neoforge-1.21.1-3.6.2.jar",
+                        "modIds":  [
+                                       "supplementaries"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/towns-and-towers.pw.toml",
+                        "filename":  "t_and_t-neoforge-fabric-1.13.7+1.21.1.jar",
+                        "modIds":  [
+                                       "t_and_t"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/tacz-1-21-1.pw.toml",
+                        "filename":  "tacz-neoforge-1.21.1-1.1.7-hotfix-r5.jar",
+                        "modIds":  [
+                                       "tacz"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/tectonic.pw.toml",
+                        "filename":  "tectonic-3.0.22-neoforge-21.1.jar",
+                        "modIds":  [
+                                       "tectonic"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/tenshilib.pw.toml",
+                        "filename":  "tenshilib-1.21.1-2.2.5-neoforge.jar",
+                        "modIds":  [
+                                       "tenshilib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/terralith.pw.toml",
+                        "filename":  "Terralith_1.21.x_v2.5.8.jar",
+                        "modIds":  [
+                                       "terralith"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/tetra.pw.toml",
+                        "filename":  "tetra-1.21.1-6.13.0.jar",
+                        "modIds":  [
+                                       "tetra"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/the-bumblezone-forge.pw.toml",
+                        "filename":  "the_bumblezone-7.13.2+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "athena",
+                                       "resourcefullib",
+                                       "the_bumblezone"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/tips.pw.toml",
+                        "filename":  "tipsmod-neoforge-1.21.1-21.1.3.jar",
+                        "modIds":  [
+                                       "tipsmod"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/titanium.pw.toml",
+                        "filename":  "titanium-1.21-4.0.43.jar",
+                        "modIds":  [
+                                       "titanium"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/torchmaster.pw.toml",
+                        "filename":  "torchmaster-neoforge-1.21.1-21.1.9.jar",
+                        "modIds":  [
+                                       "torchmaster"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/towers-of-the-wild-modded.pw.toml",
+                        "filename":  "totw_modded-neoforge-1.21-1.0.9.jar",
+                        "modIds":  [
+                                       "totw_modded"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/trade-refresh.pw.toml",
+                        "filename":  "traderefresh-3.0.3.jar",
+                        "modIds":  [
+                                       "traderefresh"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/trail-tales-delight.pw.toml",
+                        "filename":  "trailandtales_delight-0.4.jar",
+                        "modIds":  [
+                                       "trailandtales_delight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/trash-cans.pw.toml",
+                        "filename":  "trashcans-1.0.18c-neoforge-mc1.21.jar",
+                        "modIds":  [
+                                       "trashcans"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/travelers-titles-neoforge.pw.toml",
+                        "filename":  "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+                        "modIds":  [
+                                       "travelerstitles"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/txnilib.pw.toml",
+                        "filename":  "txnilib-neoforge-1.0.24-1.21.1.jar",
+                        "modIds":  [
+                                       "fabric_api",
+                                       "fabric_api_base",
+                                       "fabric_api_lookup_api_v1",
+                                       "fabric_biome_api_v1",
+                                       "fabric_block_api_v1",
+                                       "fabric_block_view_api_v2",
+                                       "fabric_blockrenderlayer_v1",
+                                       "fabric_client_tags_api_v1",
+                                       "fabric_command_api_v2",
+                                       "fabric_content_registries_v0",
+                                       "fabric_convention_tags_v1",
+                                       "fabric_convention_tags_v2",
+                                       "fabric_data_attachment_api_v1",
+                                       "fabric_data_generation_api_v1",
+                                       "fabric_entity_events_v1",
+                                       "fabric_events_interaction_v0",
+                                       "fabric_game_rule_api_v1",
+                                       "fabric_gametest_api_v1",
+                                       "fabric_item_api_v1",
+                                       "fabric_item_group_api_v1",
+                                       "fabric_key_binding_api_v1",
+                                       "fabric_lifecycle_events_v1",
+                                       "fabric_loot_api_v2",
+                                       "fabric_loot_api_v3",
+                                       "fabric_message_api_v1",
+                                       "fabric_model_loading_api_v1",
+                                       "fabric_networking_api_v1",
+                                       "fabric_object_builder_api_v1",
+                                       "fabric_particles_v1",
+                                       "fabric_recipe_api_v1",
+                                       "fabric_registry_sync_v0",
+                                       "fabric_renderer_api_v1",
+                                       "fabric_renderer_indigo",
+                                       "fabric_rendering_data_attachment_v1",
+                                       "fabric_rendering_fluids_v1",
+                                       "fabric_rendering_v1",
+                                       "fabric_resource_conditions_api_v1",
+                                       "fabric_resource_loader_v0",
+                                       "fabric_screen_api_v1",
+                                       "fabric_screen_handler_api_v1",
+                                       "fabric_sound_api_v1",
+                                       "fabric_transfer_api_v1",
+                                       "fabric_transitive_access_wideners_v1",
+                                       "txnilib"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/uranus.pw.toml",
+                        "filename":  "uranus-2.4.1-1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "architectury",
+                                       "uranus"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/vintage-delight.pw.toml",
+                        "filename":  "vintagedelight-1.21.1-0.1.6.jar",
+                        "modIds":  [
+                                       "vintagedelight"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/vintage-improvenents-ssw-edition.pw.toml",
+                        "filename":  "vintageimprovements-1.21.1-0.0.0.3.jar",
+                        "modIds":  [
+                                       "vintageimprovements"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/what-are-they-up-to.pw.toml",
+                        "filename":  "watut-neoforge-1.21.0-1.2.7.jar",
+                        "modIds":  [
+                                       "watut"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/waystones.pw.toml",
+                        "filename":  "waystones-neoforge-1.21.1-21.1.30.jar",
+                        "modIds":  [
+                                       "waystones"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yacl.pw.toml",
+                        "filename":  "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+                        "modIds":  [
+                                       "yet_another_config_lib_v3"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/youkais-homecoming-unofficial-port.pw.toml",
+                        "filename":  "youkaishomecoming-4.2.1.jar",
+                        "modIds":  [
+                                       "danmaku_api",
+                                       "fast_projectile_api",
+                                       "geckolib",
+                                       "l2core",
+                                       "l2damagetracker",
+                                       "l2harvester",
+                                       "l2itemselector",
+                                       "l2library",
+                                       "l2menustacker",
+                                       "smartbrainlib",
+                                       "youkaishomecoming"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yungs-api-neoforge.pw.toml",
+                        "filename":  "YungsApi-1.21.1-NeoForge-5.1.6.jar",
+                        "modIds":  [
+                                       "yungsapi"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yungs-better-end-island-neoforge.pw.toml",
+                        "filename":  "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+                        "modIds":  [
+                                       "betterendisland"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yungs-better-mineshafts-neoforge.pw.toml",
+                        "filename":  "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+                        "modIds":  [
+                                       "bettermineshafts"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yungs-better-witch-huts-neoforge.pw.toml",
+                        "filename":  "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+                        "modIds":  [
+                                       "betterwitchhuts"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/yungs-extras-neoforge.pw.toml",
+                        "filename":  "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+                        "modIds":  [
+                                       "yungsextras"
+                                   ]
+                    },
+                    {
+                        "side":  "common",
+                        "metadata":  "mods/common/zeta.pw.toml",
+                        "filename":  "Zeta-1.1-40.jar",
+                        "modIds":  [
+                                       "zeta"
+                                   ]
+                    }
+                ]
+}

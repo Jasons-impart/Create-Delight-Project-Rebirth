@@ -36,6 +36,7 @@ devtool.bat install-files-headless
 devtool.bat install-files-retry
 devtool.bat download-files
 devtool.bat modlist
+devtool.bat generate-integrity-manifest
 devtool.bat export-curseforge
 ```
 
@@ -90,6 +91,47 @@ Default outputs:
 - `docs/generated/modlist.csv`
 
 The command is for review/documentation. Do not treat generated lists as the source of truth; metadata remains authoritative.
+
+## Pack Integrity Manifest
+
+The pack has a client-side mod list integrity warning. Keep these files together:
+
+- `scripts/pack-integrity.ps1`: release-time manifest generation helpers.
+- `scripts/devtool.ps1`: exposes `generate-integrity-manifest`; `export-curseforge` calls it before refresh/export.
+- `kubejs/config/createdelight_pack_integrity_expected.json`: generated expected mod id manifest.
+- `kubejs/config/createdelight_pack_integrity.json`: runtime config, including `allowedExtraModIds`.
+- `kubejs/client_scripts/pack_integrity_check.js`: client runtime check and title-screen warning.
+
+Generation workflow:
+
+```powershell
+devtool.bat install-files
+devtool.bat generate-integrity-manifest
+```
+
+Manifest generation scans `mods/**/*.pw.toml`, resolves managed jars from local `mods/*.jar`, and extracts actual loaded mod ids from `META-INF/neoforge.mods.toml`, `META-INF/mods.toml`, compatible `fabric.mod.json`, and nested jars. It records expected ids by `common`, `client`, and `server` side. If a managed jar is missing or cannot be parsed, the command should fail and tell the user to synchronize files first.
+
+Runtime check behavior:
+
+- Client compares `expected.common + expected.client` against `Platform.getList()`.
+- Reports are written to `logs/createdelight_pack_integrity.json`.
+- KubeJS logs missing mods, extra mods, and allowed extra mods.
+- Title-screen warning state is stored in `local/createdelight_pack_integrity_state.json`; delete this local file to force the same fingerprint warning again during testing.
+- This is diagnostics only, not tamper resistance.
+
+Known export caveat:
+
+`devtool.bat export-curseforge ... client` currently exports a CurseForge-style `manifest.json` plus overrides. CurseForge manifests only express CurseForge `projectID/fileID` entries. URL-managed jars are not automatically represented unless the export flow places them under `overrides/mods/`.
+
+As of the pack-integrity work, a client test export installed without manual changes reported these missing URL-managed common mods:
+
+- `collectorsreap`
+- `mutil`
+- `silentsdelight`
+- `tetra`
+- `vintagedelight`
+
+Those jars existed in the source workspace but were absent from the installed test instance and from `overrides/mods/` in the exported zip. Treat this as a packaging-flow issue, not a false positive in the integrity checker. The investigation was recorded on GitHub issue #12.
 
 ## Ignore Policy
 
