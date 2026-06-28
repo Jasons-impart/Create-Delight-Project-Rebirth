@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "dumplings_delight:celery_seeds",
+      "required": false
+    },
+    "dumplings_delight:chinese_cabbage_seeds",
+    "dumplings_delight:fennel_seeds",
+    "dumplings_delight:garlic",
+    "dumplings_delight:garlic_chive_seeds",
+    "dumplings_delight:greenonion"
+  ]
+}

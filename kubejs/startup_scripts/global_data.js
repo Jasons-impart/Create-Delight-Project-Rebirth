@@ -44,6 +44,6 @@ global.INFINITE_SOURCE_FLUIDS = [
   'createdelightcore:molten_quartz_vibrant_glass',
   'createdelightcore:egg_yolk',
   'createdelightcore:vinegar',
-  'netherexp:ectoplasm_source',
+  'netherexp:ectoplasm',
   'the_bumblezone:sugar_water_still',
 ];
