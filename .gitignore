@@ -62,6 +62,7 @@ docs/generated/
 !/scripts/**
 
 # Explicit runtime exclusions inside allowed directories.
+docs/generated/
 scripts/bin/*
 !scripts/bin/bkmpw.exe
 mods/*.jar
