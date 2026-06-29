@@ -2,6 +2,7 @@
     "include": [
         "./**/*.js",
         "./**/*.ts",
+        "../types/**/*.d.ts",
         "../../.probe/server/**/*.d.ts",
         "../../.probe/packages/**/*.d.ts"
     ],
