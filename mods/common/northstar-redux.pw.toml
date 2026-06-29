@@ -1,13 +1,13 @@
 name = "Create: Northstar - Redux"
-filename = "Northstar-0.5.4+1.21.1.jar"
+filename = "Northstar-0.6.1+1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "a0aca16a22ba035992481442f0e1559c87e161bf"
+hash = "1f588a45611ad29a0434fff235e187d925374252"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7476517
+file-id = 8307391
 project-id = 1318310

@@ -1,0 +1,17 @@
+name = "Create Delight Core 2.0.0.0+1.21.1 for Minecraft 1.21.1"
+filename = "createdelightcore-2.0.0.4+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Jasons-impart/Create-Delight-Core/releases/download/v2.0.0.4%2B1.21.1/createdelightcore-2.0.0.4%2B1.21.1.jar"
+hash-format = "sha256"
+hash = "527f14c6040192ddfcc28e9566ffc28768787036c681c2a5aed60144913bd521"
+
+[update]
+[update.github]
+project = "Jasons-impart/Create-Delight-Core"
+tag = "latest"
+
+[export.curseforge]
+project-id = 1062344
+latest = true
