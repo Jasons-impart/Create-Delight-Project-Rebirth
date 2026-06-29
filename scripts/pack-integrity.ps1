@@ -1,4 +1,4 @@
-function Get-TomlValue {
+﻿function Get-TomlValue {
   param(
     [string[]] $Lines,
     [string] $Key
