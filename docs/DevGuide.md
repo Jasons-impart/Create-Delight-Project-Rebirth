@@ -105,6 +105,7 @@ devtool.bat
 - 删除 mod 使用菜单 `9. 移除管理文件`，或命令 `devtool.bat remove-mod <name-or-metadata-file>`。菜单 `9` 只会修改清单；删除后必须再运行菜单 `10` 或 `devtool.bat install-files` 同步本地文件夹，受管旧 jar 才会从本机 `mods/` 中清掉。
 - Modrinth 添加、CurseForge detect、serve 和 Modrinth export 已移除。
 - `add-*`、`update`、`remove-mod` 会自动生成/刷新根目录 `pack.toml` 和 `index.toml`；之后运行 `devtool.bat install-files`。无桌面环境使用 `devtool.bat install-files-headless`；网络不稳时使用 `devtool.bat install-files-retry`。
+- 更新、添加、移除 mod，或变更会影响实际 mod id 的 jar/metadata 后，先同步 runtime jars，再运行 `devtool.bat generate-integrity-manifest`，并把 `kubejs/config/createdelight_pack_integrity_expected.json` 纳入同一变更；随后运行 `devtool.bat refresh` 和 `devtool.bat check`。
 - 提交 `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml`、`pack/` 模板和需要共享的配置变化，不提交根目录生成的 `pack.toml`、`index.toml`、`.packwizignore`、`PCL/` 或 `mods/*.jar`。
 
 ## 关于 modinstaller / 同步器
