@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-01T12:52:36Z",
+  "generatedAt": "2026-07-01T16:42:27Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -57,7 +57,6 @@
       "c2me_opts_scheduling",
       "c2me_opts_worldgen_general",
       "c2me_opts_worldgen_vanilla",
-      "c2me_rewrites_chunk_serializer",
       "c2me_rewrites_chunk_system",
       "c2me_rewrites_chunkio",
       "c2me_server_utils",
@@ -1208,7 +1207,7 @@
     {
       "side": "common",
       "metadata": "mods/common/c2me.pw.toml",
-      "filename": "c2me-neoforge-mc1.21.1-0.3.0+alpha.0.93.jar",
+      "filename": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.113.jar",
       "modIds": [
         "c2me",
         "c2me_base",
@@ -1226,7 +1225,6 @@
         "c2me_opts_scheduling",
         "c2me_opts_worldgen_general",
         "c2me_opts_worldgen_vanilla",
-        "c2me_rewrites_chunk_serializer",
         "c2me_rewrites_chunk_system",
         "c2me_rewrites_chunkio",
         "c2me_server_utils",
@@ -2650,7 +2648,7 @@
     {
       "side": "common",
       "metadata": "mods/common/servercore.pw.toml",
-      "filename": "servercore-neoforge-1.5.5+1.21.1.jar",
+      "filename": "servercore-neoforge-1.5.19+1.21.1.jar",
       "modIds": [
         "servercore"
       ]
