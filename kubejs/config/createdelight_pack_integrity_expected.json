@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-01T16:42:27Z",
+  "generatedAt": "2026-07-01T16:59:57Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -1199,7 +1199,7 @@
     {
       "side": "common",
       "metadata": "mods/common/bye-pregen.pw.toml",
-      "filename": "byepregen-1.0.7.jar",
+      "filename": "byepregen-1.0.7-cdpr.1.jar",
       "modIds": [
         "byepregen"
       ]
