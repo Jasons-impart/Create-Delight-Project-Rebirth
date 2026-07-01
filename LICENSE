@@ -8,26 +8,11 @@ relicense it under this project's license.
 
 Known third-party parts:
 
-- packwiz: MIT
-  - Vendored path: `scripts/bin/packwiz.exe`
-  - Purpose: developer tool for maintaining packwiz modpack metadata
-  - Source fork: https://github.com/Jasons-impart/packwiz
-  - Upstream project: https://github.com/packwiz/packwiz
-  - Version/tag: latest release as of 2026-05-04, exact tag not captured
-  - Source commit: not captured
-  - Binary SHA256: 607700D14ECCFA5100BEAD421BF7A491A0E07D59F33BD87ECE0E8F698625E41C
-  - Detailed provenance record: `scripts/bin/packwiz.VERSION.txt`
-  - The vendored binary is excluded from packwiz exports through `.packwizignore` and should not be shipped as part of the modpack runtime.
-
-- packwiz-installer-bootstrap: MIT
-  - Vendored path: `scripts/bin/packwiz-installer-bootstrap.jar`
-  - Purpose: developer tool for installing packwiz-managed files into a local development instance
-  - Source project: https://github.com/packwiz/packwiz-installer-bootstrap
-  - Version/tag: v0.0.3
-  - Release asset: https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar
-  - Binary SHA256: A8FBB24DC604278E97F4688E82D3D91A318B98EFC08D5DBFCBCBCAB6443D116C
-  - Detailed provenance record: `scripts/bin/packwiz-installer-bootstrap.VERSION.txt`
-  - The vendored binary is excluded from packwiz exports through `.packwizignore` and should not be shipped as part of the modpack runtime.
+- @bro-know-my/packwiz: MIT
+  - Installed tool: global npm package `@bro-know-my/packwiz`
+  - Purpose: developer tool for maintaining packwiz-style modpack metadata
+  - Source project: https://github.com/bro-know-my-org/BroKnowMyPackwiz
+  - The tool is not vendored in this repository and should not be shipped as part of the modpack runtime.
 
 - TACZ Create Armorer Koei
   - Author page: https://www.curseforge.com/members/koei/projects

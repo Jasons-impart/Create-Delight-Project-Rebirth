@@ -13,8 +13,8 @@ Use this skill for Create Delight Project Rebirth pack metadata work.
 - Do not commit mod jars, generated NeoForge libraries, worlds, logs, crash reports, or local server state.
 - Track bkmpw/packwiz-style metadata: `*.pw.toml` and the release-root templates in `pack/`, including `pack/.packwizignore.source`.
 - Root `pack.toml`, `index.toml`, and `.packwizignore` are generated local files.
-- In this repository, use the root `devtool.bat` entry point first. It calls the vendored `scripts/bin/bkmpw.exe`.
-- The only allowed vendored pack management binary is `scripts/bin/bkmpw.exe`.
+- In this repository, use the root `devtool.bat` entry point on Windows, or `./devtool.sh` on Linux/macOS, first. It calls the global npm `bkmpw` command from `@bro-know-my/packwiz`.
+- Do not vendor pack management binaries. Install `bkmpw` globally with `npm install -g @bro-know-my/packwiz` or `devtool.bat setup-tools`.
 - Do not reintroduce `packwiz.exe`, `packwiz-old.exe`, `packwiz-installer-bootstrap.jar`, or their VERSION files.
 - Run `devtool.bat refresh` after adding, removing, moving, or editing pack files.
 
@@ -24,6 +24,7 @@ From the repository root:
 
 ```powershell
 devtool.bat check
+devtool.bat setup-tools
 devtool.bat refresh
 devtool.bat list
 devtool.bat update --all
@@ -96,8 +97,8 @@ The command is for review/documentation. Do not treat generated lists as the sou
 
 The pack has a client-side mod list integrity warning. Keep these files together:
 
-- `scripts/pack-integrity.ps1`: release-time manifest generation helpers.
-- `scripts/devtool.ps1`: exposes `generate-integrity-manifest`; `export-curseforge` calls it before refresh/export.
+- `scripts/pack-integrity.mjs`: release-time manifest generation helpers.
+- `scripts/devtool.mjs`: exposes `generate-integrity-manifest`; `export-curseforge` calls it before refresh/export.
 - `kubejs/config/createdelight_pack_integrity_expected.json`: generated expected mod id manifest.
 - `kubejs/config/createdelight_pack_integrity.json`: runtime config, including `allowedExtraModIds`.
 - `kubejs/client_scripts/pack_integrity_check.js`: client runtime check and title-screen warning.
@@ -145,9 +146,9 @@ Keep these ignored:
 - `run.bat`, `run.sh`, `user_jvm_args.txt`, `server.properties`, `eula.txt`
 - `neoforge.jar`, `minecraft_server*.jar`
 
-Allow these when relevant:
+Do not allow vendored pack management binaries. Keep `scripts/bin/` ignored.
 
-- `scripts/bin/bkmpw.exe`
+Allow these when relevant:
 - `mods/*.pw.toml`
 - `mods/common/*.pw.toml`
 - `mods/client/*.pw.toml`
@@ -159,7 +160,7 @@ Allow these when relevant:
 - Target Minecraft: `1.21.1`
 - Target NeoForge: `21.1.228`
 - Required Java: `21`
-- Windows is the primary development environment.
+- Windows, Linux, and macOS are supported for pack maintenance through the Node-based devtool.
 - Source reference repository: `Create-Delight-Remake` Forge `1.20.1`
 - Do not bulk-copy old KubeJS/configs without checking target mod availability, IDs, loader API, and config schema changes.
 

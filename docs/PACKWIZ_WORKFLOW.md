@@ -7,25 +7,34 @@ AI agent 修改 pack 元数据前，也应该阅读 `.agents/skills/packwiz-modp
 ## 开发者同步
 
 1. 安装 Java 21。
-2. 克隆仓库。
-3. 首次拉取后先展开本地发布根目录文件：
+2. 安装 Node.js LTS / npm。
+3. 克隆仓库。
+4. 安装仓库 hook 和全局 bkmpw：
+
+```powershell
+npm install
+devtool.bat setup-tools
+```
+
+5. 首次拉取后先展开本地发布根目录文件：
 
 ```powershell
 devtool.bat prepare-pack
 ```
 
-4. 双击或运行根目录开发工具：
+6. 双击或运行根目录开发工具：
 
 ```powershell
 devtool.bat
 ```
 
-仓库只内置 `scripts/bin/bkmpw.exe`。旧 `packwiz.exe`、`packwiz-installer-bootstrap.jar`、`serve`、`export-modrinth` 和 `detect-curseforge` 工作流已经移除。
+Linux/macOS 使用 `./devtool.sh`。Windows 下不要从 PowerShell 运行 `devtool.sh`，统一使用 `.\devtool.bat`。仓库不再内置 pack 管理二进制，`bkmpw` 由全局 npm 包 `@bro-know-my/packwiz` 提供。旧 `packwiz.exe`、`packwiz-installer-bootstrap.jar`、`serve`、`export-modrinth` 和 `detect-curseforge` 工作流已经移除。
 
 ## 常用命令
 
 ```powershell
 devtool.bat check
+devtool.bat setup-tools
 devtool.bat refresh
 devtool.bat list
 devtool.bat update --all

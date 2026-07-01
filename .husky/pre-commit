@@ -1,2 +1,2 @@
 node node_modules/lint-staged/bin/lint-staged.js
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/devtool.ps1 refresh
+node scripts/devtool.mjs refresh

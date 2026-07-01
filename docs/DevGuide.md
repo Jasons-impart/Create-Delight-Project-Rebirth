@@ -11,7 +11,7 @@
 
 ## 基础环境
 
-- Windows
+- Windows / Linux / macOS
 - Java 21
 - Git
 - Node.js LTS / npm，用于 KubeJS 脚本格式化和 Git hook。安装 Node.js 时需包含 npm，并确认 `node`、`npm` 已加入 PATH。
@@ -29,7 +29,15 @@ devtool.bat
 devtool.bat
 ```
 
-开发工具只使用仓库内置的 `scripts/bin/bkmpw.exe`。旧 `packwiz.exe` 和 `packwiz-installer-bootstrap.jar` 不再内置，也不再兜底调用。
+Linux/macOS 可使用：
+
+```bash
+./devtool.sh
+```
+
+Windows 下不要从 PowerShell 运行 `devtool.sh`；`.sh` 文件关联到 Git Bash/MSYS 时可能新开窗口。Windows 统一使用 `.\devtool.bat`。
+
+开发工具调用全局 npm 包 `@bro-know-my/packwiz` 提供的 `bkmpw` 命令。旧 `packwiz.exe`、`packwiz-installer-bootstrap.jar` 和仓库内置 `bkmpw.exe` 不再使用，也不再兜底调用。
 
 开发者日常操作优先使用交互式菜单，不需要记忆 bkmpw 参数命令。
 
@@ -38,6 +46,7 @@ devtool.bat
 ```powershell
 node -v
 npm -v
+npm install -g @bro-know-my/packwiz
 devtool.bat check
 ```
 
@@ -48,7 +57,7 @@ devtool.bat check
 - `pack/` 中的发布模板提交；根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
 - `config/`、`defaultconfigs/` 只放确认要共享的配置。
 - `kubejs/` 只放已确认适配 1.21.1 NeoForge 和目标模组集合的脚本、数据与资源。
-- `scripts/bin/bkmpw.exe` 是唯一允许内置的 pack 管理二进制。不要重新加入 `packwiz.exe`、`packwiz-old.exe`、`packwiz-installer-bootstrap.jar` 或相关 VERSION 文件。
+- 不提交 pack 管理二进制。`bkmpw` 通过全局 npm 包 `@bro-know-my/packwiz` 安装；不要重新加入 `bkmpw.exe`、`packwiz.exe`、`packwiz-old.exe`、`packwiz-installer-bootstrap.jar` 或相关 VERSION 文件。
 - 服务端运行产物不提交，包括 `libraries/`、`world*`、`logs/`、`run.bat`、`run.sh`、`server.properties`、`eula.txt`、`user_jvm_args.txt`。
 
 AI 相关共享工作流放在：
@@ -122,9 +131,10 @@ devtool.bat
 node -v
 npm -v
 npm install
+npm install -g @bro-know-my/packwiz
 ```
 
-如果 `node -v` 或 `npm -v` 找不到命令，请先安装 Node.js LTS，并确认 npm 一起安装且已加入 PATH。`npm install` 会安装格式化工具，并通过 Husky 安装 Git hook。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 bkmpw 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
+如果 `node -v` 或 `npm -v` 找不到命令，请先安装 Node.js LTS，并确认 npm 一起安装且已加入 PATH。`npm install` 会安装格式化工具，并通过 Husky 安装 Git hook。`npm install -g @bro-know-my/packwiz` 会安装全局 `bkmpw` 命令；也可以运行 `devtool.bat setup-tools` 代为安装。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 bkmpw 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
 
 也可以手动运行：
 
@@ -357,13 +367,7 @@ devtool.bat export-curseforge
 LICENSE
 ```
 
-如果更新 `scripts/bin/bkmpw.exe`，确认它来自本仓库当前 release build，并在变更说明中记录来源。
-
-SHA256 计算命令：
-
-```powershell
-Get-FileHash .\scripts\bin\bkmpw.exe -Algorithm SHA256
-```
+如果更新 pack 管理工具版本，更新 `@bro-know-my/packwiz` 的发布版本，并在变更说明中记录来源；不要提交本地生成或下载的工具二进制。
 
 ## 提交规范
 

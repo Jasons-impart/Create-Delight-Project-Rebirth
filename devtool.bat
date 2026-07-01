@@ -5,7 +5,7 @@ title Create Delight Project Rebirth Devtool
 cd /d "%~dp0"
 
 set "CDPR_DEVTOOL_LAUNCHED_BY_BAT=1"
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\devtool.ps1" %*
+node "%~dp0scripts\devtool.mjs" %*
 set "EXIT_CODE=%errorlevel%"
 
 if not "%EXIT_CODE%"=="0" (

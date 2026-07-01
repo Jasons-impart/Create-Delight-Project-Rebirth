@@ -10,8 +10,10 @@
 - `config/`、`defaultconfigs/`: 确认需要团队共享的配置。
 - `kubejs/`: 已确认适配目标版本的脚本、数据、资源和自定义注册。
 - `ldlib/`、`tacz/`、`schematics/`、`minemenu/`: 目标整合包仍使用对应 mod 时维护的数据。
-- `devtool.bat`: 根目录开发工具入口。
-- `scripts/devtool.ps1`: 开发工具实际实现。
+- `devtool.bat`: Windows 根目录开发工具入口。
+- `devtool.sh`: Linux/macOS 根目录开发工具入口。
+- `scripts/devtool.mjs`: 开发工具实际实现。
+- `scripts/pack-integrity.mjs`: 完整性清单生成实现。
 - `LICENSE`: 项目主协议、自有视觉资产权利声明和第三方协议记录。
 - `.agents/skills/`: 面向 AI agent 的共享工作流。
 - `docs/DevGuide.md`: 团队开发指南。
@@ -26,7 +28,7 @@
 - NeoForge installer 和生成的 `run.bat` / `run.sh`
 - `libraries/`, `versions/`, `logs/`, `crash-reports/`, `saves/`, `world*`
 - 本地服务端状态，如 `server.properties`、`eula.txt`、`user_jvm_args.txt`
-- `scripts/bin/` 下下载的其它工具二进制，已允许的 `scripts/bin/bkmpw.exe` 除外
+- `scripts/bin/` 下下载的工具二进制
 - 根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/`。这些由 `devtool.bat prepare-pack` / `refresh` 从 `pack/` 模板生成。
 
 ## 原则

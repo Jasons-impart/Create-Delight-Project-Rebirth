@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "prepare": "husky",
+    "devtool": "node scripts/devtool.mjs",
     "format:js": "prettier --write \"kubejs/**/*.js\"",
     "format:js:check": "prettier --check \"kubejs/**/*.js\"",
     "precommit:js": "lint-staged"

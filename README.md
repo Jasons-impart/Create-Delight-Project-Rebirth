@@ -5,7 +5,7 @@
 
 ## 协助开发
 
-本仓库使用 `packwiz` 管理 mod 元数据、下载来源和文件索引。
+本仓库使用 `bkmpw` 管理 packwiz-style mod 元数据、下载来源和文件索引。
 
 请阅读 `docs/DevGuide.md`
 
