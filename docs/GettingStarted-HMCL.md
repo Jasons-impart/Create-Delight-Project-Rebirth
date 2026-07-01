@@ -1,4 +1,4 @@
-# 开发环境快速开始
+# 开发环境快速开始（HMCL版）
 
 本文用于从空目录配置 Create Delight Project Rebirth 本地开发实例。
 
@@ -53,8 +53,8 @@ E:\minecraft\Client\HMCL\.minecraft\
 
 - Git
 - Java 21
-- PowerShell 7，命令为 `pwsh`
 - Node.js LTS / npm
+- Windows 推荐 PowerShell 7，命令为 `pwsh`
 - Python 3
 - HMCL
 
@@ -66,6 +66,7 @@ java -version
 pwsh -NoProfile -Command '$PSVersionTable.PSVersion'
 node -v
 npm -v
+npm install -g @bro-know-my/packwiz
 python --version
 ```
 
@@ -90,18 +91,21 @@ git clone --depth 1 https://github.com/Jasons-impart/Create-Delight-Project-Rebi
 
 ```powershell
 npm install
+.\devtool.bat setup-tools
 .\devtool.bat prepare-pack
 .\devtool.bat check
 ```
+
+Windows 下不要从 PowerShell 运行 `devtool.sh`；`.sh` 是 Linux/macOS 入口。
 
 `prepare-pack` 会把 `pack/` 模板展开到根目录，并生成/刷新本地 `pack.toml`、`index.toml`、`.packwizignore` 等文件。
 
 ## 同步 mod 和资源文件
 
-推荐用 PowerShell 7 直接运行脚本：
+推荐通过 devtool 同步：
 
 ```powershell
-pwsh -NoProfile -ExecutionPolicy Bypass -File .\scripts\devtool.ps1 install-files-headless 5 5
+.\devtool.bat install-files-headless 5 5
 ```
 
 成功后：
@@ -311,12 +315,12 @@ Skipping jar. File mods\xxx-1.20.1-forge.jar is for Minecraft Forge or an older 
 
 修复方式同上，确保 `--gameDir` 指向 `...\versions\CDPR`。
 
-### `Get-FileHash` not recognized
+### 找不到 `bkmpw`
 
-通常是 `devtool.bat` 使用 Windows PowerShell 时，并发下载 worker 没有加载对应 cmdlet。改用：
+先确认 Node.js LTS / npm 已安装，然后安装全局工具：
 
 ```powershell
-pwsh -NoProfile -ExecutionPolicy Bypass -File .\scripts\devtool.ps1 install-files-headless 5 5
+.\devtool.bat setup-tools
 ```
 
 ### NeoForge installer 提示没有 launcher profile
