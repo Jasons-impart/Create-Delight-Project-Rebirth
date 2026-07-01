@@ -114,8 +114,8 @@ Hotai files:
 
 ```text
 hotai/me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerChunkCacheMixin.badiff
-hotai/me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerLevelMixin.class
-hotai/me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/LevelChunkMixin.class
+hotai/me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerLevelMixin.badiff
+hotai/me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/LevelChunkMixin.badiff
 ```
 
 Target classes:
@@ -161,9 +161,8 @@ Notes:
 
 ```text
 ServerChunkCacheMixin has already been converted by Hotai to a .badiff file.
-ServerLevelMixin and LevelChunkMixin are currently full .class replacements.
-On the next successful Hotai startup they should be converted into .badiff files
-by Hotai.
+ServerLevelMixin and LevelChunkMixin have also been converted by Hotai to
+.badiff files after a successful startup.
 
 config/servercore/optimizations.yml also keeps cancel-duplicate-fluid-ticks=false,
 which disables random.LiquidBlockMixin through ServerCore's own mixin plugin.
@@ -242,6 +241,183 @@ NaturalSpawner: ServerCore spawn/biome/ticket mixins target different methods.
 ByePregen's SableNaturalSpawnerMixin is gated on Sable and no Sable jar is
 currently present in mods/.
 ```
+
+## Recreating Hotai Overrides
+
+The committed repository intentionally does not include files under `hotai/`.
+Those files are local runtime patches and are ignored. If a source mod jar is
+updated, recreate the relevant Hotai files from the new jar instead of trying
+to edit an existing `.badiff` file.
+
+Current patch matrix:
+
+```text
+Source jar: mods/supplementaries-neoforge-1.21.1-3.6.2.jar
+Class: net/mehvahdjukaar/supplementaries/mixins/neoforge/LevelRendererMixin
+Patch: ModifyExpressionValue -> ModifyExpressionValuf
+Target method: LevelRenderer.getLightColor(...)
+Reason: disables supp$modifyLumiseneLight.
+
+Source jar: mods/servercore-neoforge-1.5.19+1.21.1.jar
+Class: me/wesley1808/servercore/mixin/optimizations/ticking/chunk/broadcast/ServerChunkCacheMixin
+Patch: Redirect -> Redirecx
+Target method: ServerChunkCache.tickChunks()V
+
+Source jar: mods/servercore-neoforge-1.5.19+1.21.1.jar
+Class: me/wesley1808/servercore/mixin/optimizations/ticking/chunk/broadcast/ChunkHolderMixin
+Patch: Inject -> Injext
+Target methods: ChunkHolder.blockChanged(...), ChunkHolder.sectionLightChanged(...)
+
+Source jar: mods/servercore-neoforge-1.5.19+1.21.1.jar
+Class: me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerChunkCacheMixin
+Patch: Inject -> Injext
+Target method: ServerChunkCache.tickChunks()V
+
+Source jar: mods/servercore-neoforge-1.5.19+1.21.1.jar
+Class: me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerLevelMixin
+Patch: Redirect -> Redirecx
+Target method: ServerLevel.tickChunk(LevelChunk, int)
+
+Source jar: mods/servercore-neoforge-1.5.19+1.21.1.jar
+Class: me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/LevelChunkMixin
+Patch: Inject -> Injext
+Target constructor: LevelChunk.<init>(...)
+```
+
+Regenerate the full `.class` replacements with this PowerShell helper from the
+pack root. Hotai will convert these `.class` files into `.badiff` files on the
+next successful startup.
+
+```powershell
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+function Replace-AsciiBytes {
+    param(
+        [byte[]]$Bytes,
+        [string]$From,
+        [string]$To
+    )
+
+    $fromBytes = [Text.Encoding]::ASCII.GetBytes($From)
+    $toBytes = [Text.Encoding]::ASCII.GetBytes($To)
+    if ($fromBytes.Length -ne $toBytes.Length) {
+        throw "Replacement length mismatch: $From -> $To"
+    }
+
+    $count = 0
+    for ($i = 0; $i -le $Bytes.Length - $fromBytes.Length; $i++) {
+        $matched = $true
+        for ($j = 0; $j -lt $fromBytes.Length; $j++) {
+            if ($Bytes[$i + $j] -ne $fromBytes[$j]) {
+                $matched = $false
+                break
+            }
+        }
+
+        if ($matched) {
+            for ($j = 0; $j -lt $toBytes.Length; $j++) {
+                $Bytes[$i + $j] = $toBytes[$j]
+            }
+            $count++
+            $i += $fromBytes.Length - 1
+        }
+    }
+    return $count
+}
+
+$patches = @(
+    @{
+        Jar = "mods/supplementaries-neoforge-1.21.1-3.6.2.jar"
+        Class = "net/mehvahdjukaar/supplementaries/mixins/neoforge/LevelRendererMixin"
+        Replacements = @(
+            @("Lcom/llamalad7/mixinextras/injector/ModifyExpressionValue;",
+              "Lcom/llamalad7/mixinextras/injector/ModifyExpressionValuf;")
+        )
+    },
+    @{
+        Jar = "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+        Class = "me/wesley1808/servercore/mixin/optimizations/ticking/chunk/broadcast/ServerChunkCacheMixin"
+        Replacements = @(
+            @("Lorg/spongepowered/asm/mixin/injection/Redirect;",
+              "Lorg/spongepowered/asm/mixin/injection/Redirecx;")
+        )
+    },
+    @{
+        Jar = "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+        Class = "me/wesley1808/servercore/mixin/optimizations/ticking/chunk/broadcast/ChunkHolderMixin"
+        Replacements = @(
+            @("Lorg/spongepowered/asm/mixin/injection/Inject;",
+              "Lorg/spongepowered/asm/mixin/injection/Injext;")
+        )
+    },
+    @{
+        Jar = "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+        Class = "me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerChunkCacheMixin"
+        Replacements = @(
+            @("Lorg/spongepowered/asm/mixin/injection/Inject;",
+              "Lorg/spongepowered/asm/mixin/injection/Injext;")
+        )
+    },
+    @{
+        Jar = "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+        Class = "me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/ServerLevelMixin"
+        Replacements = @(
+            @("Lorg/spongepowered/asm/mixin/injection/Redirect;",
+              "Lorg/spongepowered/asm/mixin/injection/Redirecx;")
+        )
+    },
+    @{
+        Jar = "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+        Class = "me/wesley1808/servercore/mixin/optimizations/ticking/chunk/random/LevelChunkMixin"
+        Replacements = @(
+            @("Lorg/spongepowered/asm/mixin/injection/Inject;",
+              "Lorg/spongepowered/asm/mixin/injection/Injext;")
+        )
+    }
+)
+
+foreach ($patch in $patches) {
+    $jar = (Resolve-Path -LiteralPath $patch.Jar).Path
+    $zip = [IO.Compression.ZipFile]::OpenRead($jar)
+    try {
+        $entry = $zip.GetEntry("$($patch.Class).class")
+        if (-not $entry) {
+            throw "Missing class entry: $($patch.Class).class in $jar"
+        }
+
+        $memory = [IO.MemoryStream]::new()
+        $stream = $entry.Open()
+        try {
+            $stream.CopyTo($memory)
+        } finally {
+            $stream.Dispose()
+        }
+
+        [byte[]]$bytes = $memory.ToArray()
+        $total = 0
+        foreach ($replacement in $patch.Replacements) {
+            $total += Replace-AsciiBytes $bytes $replacement[0] $replacement[1]
+        }
+        if ($total -lt 1) {
+            throw "No annotation descriptors replaced in $($patch.Class)"
+        }
+
+        $out = Join-Path (Resolve-Path -LiteralPath ".").Path (
+            "hotai/$($patch.Class).class" -replace "/", [IO.Path]::DirectorySeparatorChar
+        )
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $out) | Out-Null
+        [IO.File]::WriteAllBytes($out, $bytes)
+        "patched $($patch.Class) replacements=$total -> $out"
+    } finally {
+        $zip.Dispose()
+    }
+}
+```
+
+After regenerating, restart the game once and confirm `logs/latest.log` contains
+the expected `Patched class:` lines. If a source jar version changes, update the
+jar filenames and rerun `javap -v -p` on the target classes to confirm the
+annotation descriptors and target methods still match this document.
 
 ## Troubleshooting Checklist
 
