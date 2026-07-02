@@ -3,7 +3,7 @@ filename = "byepregen-1.0.7-cdpr.1.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Jasons-impart/ByePregen/releases/download/byepregen-1.0.7-cdpr.1/byepregen-1.0.7-cdpr.1.jar"
+url = "https://github.com/Jasons-impart/Bye-Pregen/releases/download/byepregen-1.0.7-cdpr.1/byepregen-1.0.7-cdpr.1.jar"
 hash-format = "sha256"
 hash = "4abe9ed5d21f3c1d657db14b33adc7e1a7904bdcb9f37b46021ffaae03fedb4e"
 mode = "url"
