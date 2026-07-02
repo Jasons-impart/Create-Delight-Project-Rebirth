@@ -57,6 +57,7 @@ devtool.bat check
 - `pack/` 中的发布模板提交；根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
 - `config/`、`defaultconfigs/` 只放确认要共享的配置。
 - `kubejs/` 只放已确认适配 1.21.1 NeoForge 和目标模组集合的脚本、数据与资源。
+- `hotai/` 只放已确认需要随整合包共享的 Hotai 补丁。新增或重建 `hotai/**/*.badiff` 后，更新 `docs/HOTAI_MIXIN_OVERRIDES.md`，并运行 `devtool.bat refresh` 确认补丁文件进入 `index.toml`。
 - 不提交 pack 管理二进制。`bkmpw` 通过全局 npm 包 `@bro-know-my/packwiz` 安装；不要重新加入 `bkmpw.exe`、`packwiz.exe`、`packwiz-old.exe`、`packwiz-installer-bootstrap.jar` 或相关 VERSION 文件。
 - 服务端运行产物不提交，包括 `libraries/`、`world*`、`logs/`、`run.bat`、`run.sh`、`server.properties`、`eula.txt`、`user_jvm_args.txt`。
 

@@ -9,7 +9,7 @@
 - `resourcepacks/*.pw.toml`、`shaderpacks/*.pw.toml`: bkmpw 管理的资源包/光影包描述文件。
 - `config/`、`defaultconfigs/`: 确认需要团队共享的配置。
 - `kubejs/`: 已确认适配目标版本的脚本、数据、资源和自定义注册。
-- `ldlib/`、`tacz/`、`schematics/`、`minemenu/`: 目标整合包仍使用对应 mod 时维护的数据。
+- `ldlib/`、`hotai/`、`tacz/`、`schematics/`、`minemenu/`: 目标整合包仍使用对应 mod 时维护的数据和本地补丁。
 - `devtool.bat`: Windows 根目录开发工具入口。
 - `devtool.sh`: Linux/macOS 根目录开发工具入口。
 - `scripts/devtool.mjs`: 开发工具实际实现。
@@ -25,6 +25,7 @@
 
 - `mods/*.jar`
 - 下载得到的资源包/光影包 zip
+- Hotai 自动生成但未确认共享的临时补丁；已确认用于整合包兼容性的 `hotai/**/*.badiff` 可以提交。
 - NeoForge installer 和生成的 `run.bat` / `run.sh`
 - `libraries/`, `versions/`, `logs/`, `crash-reports/`, `saves/`, `world*`
 - 本地服务端状态，如 `server.properties`、`eula.txt`、`user_jvm_args.txt`

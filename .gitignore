@@ -53,6 +53,8 @@ docs/generated/
 !/kubejs/**
 !/ldlib/
 !/ldlib/**
+!/hotai/
+!/hotai/**
 !/schematics/
 !/schematics/**
 !/tacz/

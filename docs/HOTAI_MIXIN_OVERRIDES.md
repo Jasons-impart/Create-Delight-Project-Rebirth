@@ -9,7 +9,7 @@ converts full `.class` replacements into `.badiff` files after startup.
 
 - Minecraft: `1.21.1`
 - NeoForge: `21.1.228`
-- ByePregen: `byepregen-1.0.7.jar`
+- ByePregen: `byepregen-1.0.7-cdpr.1.jar`
 - ServerCore: `servercore-neoforge-1.5.19+1.21.1.jar`
 - Hotai: `hotai-2.0.jar`
 
@@ -244,10 +244,10 @@ currently present in mods/.
 
 ## Recreating Hotai Overrides
 
-The committed repository intentionally does not include files under `hotai/`.
-Those files are local runtime patches and are ignored. If a source mod jar is
-updated, recreate the relevant Hotai files from the new jar instead of trying
-to edit an existing `.badiff` file.
+The committed repository includes the active `hotai/**/*.badiff` files listed
+above so a fresh checkout can apply the same compatibility overrides after
+syncing mods. If a source mod jar is updated, recreate the relevant Hotai files
+from the new jar instead of trying to edit an existing `.badiff` file.
 
 Current patch matrix:
 
