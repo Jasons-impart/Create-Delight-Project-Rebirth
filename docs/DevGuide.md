@@ -57,6 +57,7 @@ devtool.bat check
 - `pack/` 中的发布模板提交；根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
 - `config/`、`defaultconfigs/` 只放确认要共享的配置。
 - `kubejs/` 只放已确认适配 1.21.1 NeoForge 和目标模组集合的脚本、数据与资源。
+- `hotai/` 只放已确认需要随整合包共享的 Hotai 补丁。新增或重建 `hotai/**/*.badiff` 后，更新 `docs/HOTAI_MIXIN_OVERRIDES.md`，并运行 `devtool.bat refresh` 确认补丁文件进入 `index.toml`。
 - 不提交 pack 管理二进制。`bkmpw` 通过全局 npm 包 `@bro-know-my/packwiz` 安装；不要重新加入 `bkmpw.exe`、`packwiz.exe`、`packwiz-old.exe`、`packwiz-installer-bootstrap.jar` 或相关 VERSION 文件。
 - 服务端运行产物不提交，包括 `libraries/`、`world*`、`logs/`、`run.bat`、`run.sh`、`server.properties`、`eula.txt`、`user_jvm_args.txt`。
 
@@ -105,6 +106,7 @@ devtool.bat
 - 删除 mod 使用菜单 `9. 移除管理文件`，或命令 `devtool.bat remove-mod <name-or-metadata-file>`。菜单 `9` 只会修改清单；删除后必须再运行菜单 `10` 或 `devtool.bat install-files` 同步本地文件夹，受管旧 jar 才会从本机 `mods/` 中清掉。
 - Modrinth 添加、CurseForge detect、serve 和 Modrinth export 已移除。
 - `add-*`、`update`、`remove-mod` 会自动生成/刷新根目录 `pack.toml` 和 `index.toml`；之后运行 `devtool.bat install-files`。无桌面环境使用 `devtool.bat install-files-headless`；网络不稳时使用 `devtool.bat install-files-retry`。
+- 更新、添加、移除 mod，或变更会影响实际 mod id 的 jar/metadata 后，先同步 runtime jars，再运行 `devtool.bat generate-integrity-manifest`，并把 `kubejs/config/createdelight_pack_integrity_expected.json` 纳入同一变更；随后运行 `devtool.bat refresh` 和 `devtool.bat check`。
 - 提交 `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml`、`pack/` 模板和需要共享的配置变化，不提交根目录生成的 `pack.toml`、`index.toml`、`.packwizignore`、`PCL/` 或 `mods/*.jar`。
 
 ## 关于 modinstaller / 同步器

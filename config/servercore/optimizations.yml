@@ -7,7 +7,7 @@ reduce-sync-loads: true
 # Can significantly reduce the time spent on chunk iteration by only updating the ticking chunks list each second, rather than each tick.
 # This is especially useful for servers with a high playercount and / or viewdistance.
 # Note: This setting is incompatible with Moonrise.
-cache-ticking-chunks: true
+cache-ticking-chunks: false
 # Optimizes command block executions by caching parsed commands.
 # Command parsing is a relatively expensive operation. By caching it we avoid parsing the same command every time it is executed.
 optimize-command-blocks: false
@@ -16,4 +16,4 @@ optimize-command-blocks: false
 fast-biome-lookups: true
 # Fluid random ticks, like lava spreading fire, are run twice each game tick.
 # Enabling this will cancel the 'duplicate' second fluid tick, but this may cause slight behavior changes.
-cancel-duplicate-fluid-ticks: true
+cancel-duplicate-fluid-ticks: false
