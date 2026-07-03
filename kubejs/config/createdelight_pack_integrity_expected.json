@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-01T16:59:57Z",
+  "generatedAt": "2026-07-03T14:54:44Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -93,6 +93,7 @@
       "create_connected",
       "create_deepfried",
       "create_dragons_plus",
+      "create_easier_filters",
       "create_enchantment_industry",
       "create_enhanced_schematicannon",
       "create_fantasizing",
@@ -1432,6 +1433,14 @@
       "filename": "create_deepfried-forge-1.21.1-0.1.3C.jar",
       "modIds": [
         "create_deepfried"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/create-easier-filters.pw.toml",
+      "filename": "create_easier_filters-1.0.1.jar",
+      "modIds": [
+        "create_easier_filters"
       ]
     },
     {
