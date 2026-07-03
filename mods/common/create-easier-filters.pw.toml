@@ -1,0 +1,8 @@
+name = "Create: Easier Filters"
+filename = "create_easier_filters-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/muY0MCYU/versions/9iWsvXpN/create_easier_filters-1.0.1.jar"
+hash-format = "sha256"
+hash = "0deb719a192f0a430bec79969cba33d8b2a4bc740de6213bdf6716abb65b895e"
