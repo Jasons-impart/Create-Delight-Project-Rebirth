@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-04T13:10:11Z",
+  "generatedAt": "2026-07-04T16:22:33Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -13,6 +13,8 @@
       "ae2omnicells",
       "ae2wtlib",
       "ae2wtlib_api",
+      "aeronautics",
+      "aeronautics_bundled",
       "alexscaves",
       "alexsdelight",
       "alexsmobs",
@@ -273,6 +275,7 @@
       "northstar",
       "northstar_curios_compat",
       "observable",
+      "offroad",
       "owo",
       "oworld2create",
       "packetfixer",
@@ -297,6 +300,7 @@
       "resourcefullib",
       "rhino",
       "runiclib",
+      "sable",
       "sablecompanion",
       "schematicanon_processing_pattern",
       "searchables",
@@ -304,6 +308,7 @@
       "silentsdelight",
       "simplebackups",
       "simplehats",
+      "simulated",
       "smartbrainlib",
       "someassemblyrequired",
       "sophisticatedbackpacks",
@@ -333,6 +338,7 @@
       "travelerstitles",
       "txnilib",
       "uranus",
+      "veil",
       "vinery",
       "vintagedelight",
       "vintageimprovements",
@@ -1501,6 +1507,17 @@
     },
     {
       "side": "common",
+      "metadata": "mods/common/create-aeronautics.pw.toml",
+      "filename": "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "modIds": [
+        "aeronautics",
+        "aeronautics_bundled",
+        "offroad",
+        "simulated"
+      ]
+    },
+    {
+      "side": "common",
       "metadata": "mods/common/create-central-kitchen.pw.toml",
       "filename": "create-central-kitchen-2.4.0.jar",
       "modIds": [
@@ -2609,6 +2626,16 @@
       "filename": "rhino-2101.2.7-build.81.jar",
       "modIds": [
         "rhino"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/sable.pw.toml",
+      "filename": "sable-neoforge-1.21.1-2.0.3.jar",
+      "modIds": [
+        "sable",
+        "sablecompanion",
+        "veil"
       ]
     },
     {
