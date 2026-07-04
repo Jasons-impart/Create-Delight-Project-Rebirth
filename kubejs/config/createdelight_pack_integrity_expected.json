@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-01T16:59:57Z",
+  "generatedAt": "2026-07-04T13:10:11Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -406,8 +406,6 @@
       "skinlayers3d",
       "sodium",
       "sodiumextras",
-      "sodiumleafculling",
-      "sodiumoptionsapi",
       "toastcontrol",
       "transition",
       "trashslot",
@@ -673,7 +671,7 @@
     {
       "side": "client",
       "metadata": "mods/client/irisshaders.pw.toml",
-      "filename": "iris-neoforge-1.8.12+mc1.21.1.jar",
+      "filename": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
       "modIds": [
         "fabric_api_base",
         "fabric_block_view_api_v2",
@@ -792,7 +790,7 @@
     {
       "side": "client",
       "metadata": "mods/client/reeses-sodium-options.pw.toml",
-      "filename": "reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar",
+      "filename": "reeses-sodium-options-neoforge-2.2.2+mc1.21.1.jar",
       "modIds": [
         "reeses_sodium_options"
       ]
@@ -850,7 +848,7 @@
     {
       "side": "client",
       "metadata": "mods/client/sodium.pw.toml",
-      "filename": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+      "filename": "sodium-neoforge-0.8.12-beta.2+mc1.21.1.jar",
       "modIds": [
         "fabric_api_base",
         "fabric_block_view_api_v2",
@@ -865,22 +863,6 @@
       "filename": "sodiumextras-neoforge-1.0.8-1.21.1.jar",
       "modIds": [
         "sodiumextras"
-      ]
-    },
-    {
-      "side": "client",
-      "metadata": "mods/client/sodium-leaf-culling.pw.toml",
-      "filename": "sodiumleafculling-neoforge-1.0.1-1.21.1.jar",
-      "modIds": [
-        "sodiumleafculling"
-      ]
-    },
-    {
-      "side": "client",
-      "metadata": "mods/client/sodium-options-api.pw.toml",
-      "filename": "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar",
-      "modIds": [
-        "sodiumoptionsapi"
       ]
     },
     {
@@ -2366,7 +2348,7 @@
     {
       "side": "common",
       "metadata": "mods/common/selene.pw.toml",
-      "filename": "moonlight-neoforge-1.21.1-3.0.5.jar",
+      "filename": "moonlight-neoforge-1.21.1-3.0.22.jar",
       "modIds": [
         "moonlight"
       ]
@@ -2744,8 +2726,9 @@
     {
       "side": "common",
       "metadata": "mods/common/supplementaries.pw.toml",
-      "filename": "supplementaries-neoforge-1.21.1-3.6.2.jar",
+      "filename": "supplementaries-neoforge-1.21.1-3.7.7.jar",
       "modIds": [
+        "sablecompanion",
         "supplementaries"
       ]
     },
