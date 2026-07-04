@@ -47,3 +47,22 @@ global.INFINITE_SOURCE_FLUIDS = [
   'netherexp:ectoplasm',
   'the_bumblezone:sugar_water_still',
 ];
+
+global.COLORS = [
+  'white',
+  'orange',
+  'magenta',
+  'light_blue',
+  'lime',
+  'pink',
+  'purple',
+  'light_gray',
+  'gray',
+  'cyan',
+  'brown',
+  'green',
+  'blue',
+  'red',
+  'black',
+  'yellow',
+];

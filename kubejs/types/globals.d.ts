@@ -13,6 +13,9 @@ interface CreatedelightGlobalHelpers {
   /** 可以无限抽取的流体列表。Startup-safe list of fluids that can be treated as infinite sources. */
   INFINITE_SOURCE_FLUIDS: string[];
 
+  /** 原版十六色列表。 */
+  COLORS: string[];
+
   /** 检查指定 mod 是否已加载。Returns true when the given mod id is loaded. */
   hasMod(modId: string): boolean;
 

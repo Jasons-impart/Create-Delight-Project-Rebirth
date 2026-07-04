@@ -9,24 +9,7 @@ const ids = (paths) =>
     path.includes(':') ? path : `minecraft:${path}`
   );
 
-const COLORS = [
-  'white',
-  'light_gray',
-  'gray',
-  'black',
-  'brown',
-  'red',
-  'orange',
-  'yellow',
-  'lime',
-  'green',
-  'cyan',
-  'light_blue',
-  'blue',
-  'purple',
-  'magenta',
-  'pink',
-];
+const COLORS = global.COLORS;
 
 const colorIds = (suffix, mod) => {
   mod = mod || 'minecraft';
