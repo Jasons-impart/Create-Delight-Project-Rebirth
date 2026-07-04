@@ -12,11 +12,6 @@
 	# Default: 50
 	# Range: > 0
 	soulSwirlsCooldown = 50
-	#Duration of unbounded speed when it is inflicted from soul swirls
-	#Setting to 0 functionally disables it
-	# Default: 10
-	# Range: > 0
-	unboundedSpeedDuration = 10
 	#Weather soul swirls can be bone-mealed to duplicate or not
 	boneMealSoulSwirls = true
 	#If enabled wisps can be forced out of ecto soul sand with a brush
@@ -129,6 +124,19 @@
 	#Normally frogmists can only be broken when other frogmist or a hoe is held in hand 
 	#This config makes it breakable with anything regardless of what's in your hand
 	canAnythingBreakFrogmist = false
+	#Duration of unbounded speed when it is inflicted from soul swirls
+	#Setting to 0 functionally disables it
+	# Default: 7
+	# Range: > 0
+	soulSpeedDuration = 7
+	#Completed treacherous candles will become active again after the specified time in seconds has elapsed
+	# Default: 1800
+	# Range: 0 ~ 86400
+	treacherousCandleCompletionCooldown = 1800
+	#Defines how long a haze block will last after being placed in seconds
+	# Default: 8
+	# Range: > 0
+	hazeBlockCooldown = 8
 
 #Item Settings
 [itemSettings]
@@ -138,8 +146,6 @@
 	immunityConsumption = 600
 	#Weather the amount of duration depleted multiplies with the infliction's amplifier
 	amplifierScalesImmunityConsumption = true
-	#Backports the tears music disc from 1.21.6+
-	backportTearsMusicDisc = true
 	#Makes obtaining the tears music disc harder, when enabled requires you to slay a ghast in the overworld 
 	#If disabled then the disc is obtained by redirecting a fireball into a ghast like in vanilla
 	tweakObtainingTearsMusicDisc = true
@@ -177,7 +183,7 @@
 	# Range: > 0
 	pumpChargeShotgunCooldown = 15
 	#The amount of damage a slug pellet will deal to a block upon impact
-	#Negative values will disable block destruction with slugs
+	#§eNOTE: Negative values will disable block destruction with slugs
 	# Default: 1.0
 	# Range: -1.0 ~ 1.7976931348623157E308
 	slugBlockDamageStrength = 1.0
@@ -189,6 +195,8 @@
 	# Default: 64
 	# Range: 1 ~ 99
 	willOWispStackSize = 40
+	#When enabled almost all types of potions can be stacked to 16 like in the combat snapshots
+	stackablePotions = true
 
 #Entity Settings
 [entitySettings]
@@ -214,7 +222,7 @@
 	# Range: > -1
 	apparitionPossessionCooldown = 300
 	#Apparitions can be salted... or erm, "waxed" until actual salt is added in the future 
-	#Salted apparitions cannot possess any mobs, although will still attack them
+	#Salted apparitions cannot possess any mobs, although they will still attack them
 	apparitionsCanBeSalted = true
 	#Apparitions can take control of certain mobs they kill and turn into possessed variants
 	apparitionsCanPossessMobs = true
@@ -292,13 +300,13 @@
 	# Default: 0.2
 	# Range: 0.0 ~ 1.7976931348623157E308
 	bansheeWillOWispManoeuvrability = 0.2
-	#Weather world difficulty will have any affect on a banshee will o' wisps' manoeuvrability 
+	#Weather world difficulty will have any effect on a banshee will o' wisps' manoeuvrability 
 	#The values below are added onto whatever is specifed in "bansheeWillOWispManoeuvrability" 
 	#-0.05 on Easy 
 	#+0.04 on Hard
 	#
 	manoeuvrabilityAffectedByDifficulty = true
-	#When a will o' wisp is hit with a wind charge it'll accelerate the its speed and manoeuvrability greatly
+	#When a will o' wisp is hit with a wind charge it'll accelerate its speed and manoeuvrability greatly
 	willOWispWindPropulsion = true
 	#The chance for vessels to unleash apparitions upon death
 	# Default: 0.25
@@ -324,6 +332,118 @@
 	# Default: 5
 	# Range: > 0
 	maxStampedeStriditeDrops = 5
+	#Whether you can use ghast tears to petrify ecto slabs
+	ectoSlabPetrifyWithGhastTear = true
+	#The amount of disturbance needed to shatter a petrified stack
+	# Default: 20
+	# Range: > 0
+	petrifiedEctoSlabShatterDisturbance = 20
+	#Whether you can force an ecto slab out with a shovel
+	ectoSlabForceOutWithShovel = true
+	#Whether forced out ecto slabs can deal friendly fire to entities not susceptible to emerge burst
+	forcedOutEctoSlabFriendlyFire = true
+	#Whether explosion damage can shatter the ecto slab stack
+	explosionShattersEctoSlabStack = true
+	#How long of a cooldown ecto slabs gain upon being shattered via an explosion in ticks
+	# Default: 300
+	# Range: > 0
+	explosionShatterCooldown = 300
+	#Whether petrification should petrify nearby swirls
+	petrificationPetrifiesSwirls = true
+	#The range of swirls petrification
+	# Default: 32
+	# Range: > 0
+	petrificationSwirlsRange = 32
+	#Additional range per stack for swirls petrification
+	# Default: 4
+	# Range: > 0
+	petrificationSwirlsRangePerStack = 4
+	#Odds for naturally spawned ecto slabs to be petrified
+	# Default: 0.12
+	# Range: 0.0 ~ 1.0
+	naturalPetrifiedEctoSlabChance = 0.12
+	#Minimum stack size for naturally spawned petrified ecto slabs
+	# Default: 8
+	# Range: > 0
+	naturalPetrifiedEctoSlabMinStack = 8
+	#Maximum stack size for naturally spawned petrified ecto slabs
+	# Default: 12
+	# Range: > 0
+	naturalPetrifiedEctoSlabMaxStack = 12
+	#Minimum pack size of individual naturally spawned ecto slabs
+	# Default: 2
+	# Range: > 0
+	naturalEctoSlabPackMin = 2
+	#Maximum pack size of individual naturally spawned ecto slabs
+	# Default: 5
+	# Range: > 0
+	naturalEctoSlabPackMax = 5
+	#Emerge burst damage multiplier
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	emergeBurstDamageMultiplier = 2.0
+	#The absolute maximum stack size for all ecto slabs
+	#§cWARNING: Higher values can easily cause FPS lag when too many ecto slabs are present
+	# Due to the additional segments needing to be added for rendering
+	# Default: 16
+	# Range: 1 ~ 99
+	absoluteMaximumStackSize = 16
+	#Additional jump delay on top of the base hardcoded values
+	# Default: 0
+	# Range: > 0
+	ectoSlabExtraJumpDelay = 0
+	#Additional burrow cooldown on top of the base hardcoded values
+	# Default: 0
+	# Range: > 0
+	ectoSlabExtraBurrowCooldown = 0
+	#Speed bonus per ecto slab stack
+	# Default: 0.05
+	# Range: 0.0 ~ 1.7976931348623157E308
+	ectoSlabSpeedPerStack = 0.05
+	#Speed cap per ecto slab stack
+	#§eNOTE: Negative values disable cap
+	# Default: 0.6
+	# Range: -1.0 ~ 1.7976931348623157E308
+	ectoSlabSpeedCap = 0.6
+	#Damage bonus per ecto slab stack
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	ectoSlabDamagePerStack = 2.0
+	#Damage cap per ecto slab stack
+	#§eNOTE: Negative values disable cap
+	# Default: -1.0
+	# Range: -1.0 ~ 1.7976931348623157E308
+	ectoSlabDamageCap = -1.0
+	#Knockback resistance per ecto slab stack
+	# Default: 0.15
+	# Range: 0.0 ~ 1.7976931348623157E308
+	ectoSlabKnockbackResistancePerStack = 0.15
+	#Knockback resistance cap per ecto slab stack
+	#§eNOTE: Negative values disable cap
+	# Default: -1.0
+	# Range: -1.0 ~ 1.7976931348623157E308
+	ectoSlabKnockbackResistanceCap = -1.0
+	#Jump strength per ecto slab stack
+	# Default: 0.05
+	# Range: 0.0 ~ 1.7976931348623157E308
+	ectoSlabJumpStrengthPerStack = 0.05
+	#Jump strength cap per ecto slab stack
+	#§eNOTE: Negative values disable cap
+	# Default: -1.0
+	# Range: -1.0 ~ 1.7976931348623157E308
+	ectoSlabJumpStrengthCap = -1.0
+	#Maximum stack size for non-petrified ecto slabs
+	# Default: 4
+	# Range: 1 ~ 16
+	ectoSlabMaxStackSize = 4
+	#How long the ecto slab can stay underground in ticks
+	# Default: 80
+	# Range: > 0
+	ectoSlabMaxDigTime = 80
+	#The chance for ecto slabs to unleash apparitions upon death
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	ectoSlabUnleashingOdds = 0.05
 
 #World Settings
 [worldSettings]
@@ -337,12 +457,52 @@
 	#
 	netherWorldGenOverhaul = true
 	#Brightens up the nether fog of most vanilla and modded biomes to compliment their environments better 
-	#It overall makes the nether feel more warmer and helps make out shapes in the distance like actual fog
+	#It overall makes the nether feel warmer and helps make out shapes in the distance like actual fog
 	brighterNetherFog = true
 	#Changes the nether wastes fog back to being red like in vanilla
 	redNetherWastesFog = false
 	#Dust like particles will blow in the soul sand valley instead of the occasional falling ash
 	betterSoulSandValleyParticles = true
+	#Completely replaces the vanilla multi-noise biome source for Elysium API's mosaic ones 
+	#Rather than determining a biomes' position based on the terrain's noise climate. it instead uses voronoi cells with a weighted list 
+	#Mosaic biome source is remarkably stellar at keeping consistent sizes between all the biomes and equally distributes them too, no matter how many mods you have 
+	# 
+	#§cNOTE: MosaicBiomeSource is currently in BETA and in active testing. as of now sub-biome support is limited and there is no 3D biome support either
+	#
+	improvedNetherBiomeSource = true
+
+	#Biome Feature Settings
+	[worldSettings.biomeFeaturesSettings]
+		#Generates bone pikes on the soul sand valley surface
+		bonePike = true
+		#Generates ecto soul sand patches in the soul sand valley
+		ectoSoulSand = true
+		#Generates ectoplasm lakes in the soul sand valley
+		ectoplasmLake = true
+		#Generates fossil fuel ore deposits in the soul sand valley
+		fossilFuelOre = true
+		#Generates fossil ore deposits in the soul sand valley
+		fossilOre = true
+		#Generates mounds on the ceiling and floor of the soul sand valley
+		mound = true
+		#Generates soul magma patches towards the upper regions of the soul sand valley
+		soulMagma = true
+		#Generates pale soul slate embedded in the walls or surface of the soul sand valley
+		paleSoulSlate = true
+		#Generates soul swirls in the soul sand valley floor and ceiling
+		soulSwirls = true
+		#Generates blotted netherrack patches all throughout the nether
+		blottedNetherrack = true
+		#Generates siltmarram on silt beaches and coves with a different variant based on the biome's moisture
+		siltmarram = true
+		#Generates large netherrack speleothem all throughout the nether
+		netherrackSpeleothem = true
+		#Generates pyroclast crusts on the lava sea surfaces
+		pyroclastCrusts = true
+		#Generates silt flint ore deposits in silt beaches and coves
+		siltFlintOre = true
+		#Prevents those ugly ravines and noodle caves from cutting through the nether's terrain by removing them entirely
+		removeNetherNoodleCaves = true
 
 #Visual & Sound Settings
 [visualAndSoundSettings]
@@ -380,9 +540,9 @@
 	# Default: 0.05
 	# Range: 0.0 ~ 1.7976931348623157E308
 	netherMistMotionMultiplier = 0.05
-	#Makes the nether mist particles disappear faster if you get close enough to them 
+	#Makes the nether mist particles disappear faster if you get close enough to them, 
 	#You may disable this functionality entirely by just setting the value to 0.0
-	# Default: 20.0
+	# Default: 28.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	netherMistDissipateDistance = 20.0
 	#Influences the wind speed of ash particles in the soul sand valley
@@ -487,14 +647,18 @@
 	potionConsumptionParticles = true
 	#Improves the nether portal's particles
 	improvedNetherPortalParticles = true
-	#Adds new JNE inspired splash texts alongside the vanilla ones if enabled
-	enableJNESplashTexts = true
-	#Splash texts added by JNE will be a wonderful red color opposed to the usual yellow
-	redSplashText = true
-	#JNE has swearing, and lots of it too but is normally censored 
-	#If you'd like to disable profanity entirely or uncensor it you may do so with this config
-	#Allowed Values: DISABLED, CENSORED, UNFILTERED
-	profanity = "CENSORED"
+	#Toggle the emerge burst screen shake
+	ectoSlabEmergeBurstScreenshake = true
+	#Toggle petrification screen shake
+	ectoSlabPetrificationScreenshake = true
+	#Gives every nether biome a custom lightmap that compliments its environment
+	enableNetherBiomeLightmaps = true
+	#When the betrayed effect is active, it'll turn all lighting red
+	treacherousCandleRedLights = true
+	#When the betrayed effect is active, a dense red fog will appear
+	treacherousCandleFog = true
+	#Treacherous Candle will produce red haze and sparkle particles
+	treacherousCandleParticles = true
 
 #Game Mechanic Settings
 [gameMechanicSettings]

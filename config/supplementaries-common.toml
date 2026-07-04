@@ -81,8 +81,8 @@
 		# Default: 0.035
 		# Range: 0.0 ~ 1.0
 		mineshaft_elevator = 0.035
-		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities.
-		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption — useful for elevators.
+		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities. 
+		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption — useful for elevators. 
 		#If false, the original instant retraction behavior is used.
 		continuous_retraction = true
 		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve — letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
@@ -91,7 +91,7 @@
 		# Default: 8
 		# Range: 1 ~ 128
 		pull_limit = 8
-		#Ticks to wait between unit pulls when continuous_retraction is enabled.
+		#Ticks to wait between unit pulls when continuous_retraction is enabled. 
 		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out — going lower has no effect.
 		# Default: 4
 		# Range: 2 ~ 100

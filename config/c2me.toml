@@ -27,7 +27,7 @@ globalExecutorParallelism = "default"
 
 [chunkSystem]
 	# (Default: true) Whether to enable async serialization
-	#
+	# 
 	asyncSerialization = false
 	# (Default: false) Whether to recover from errors when loading chunks 
 	#  This will cause errored chunk to be regenerated entirely, which may cause data loss 
@@ -77,9 +77,9 @@ globalExecutorParallelism = "default"
 	# (Default: false) Whether to use legacy scheduling for neighbor chunks
 	# 
 	# Enabling this restores the behavior of always loading in neighbor chunks when a chunk is loaded.
-	#
+	# 
 	# This is currently deprecated and will be removed in the future.
-	#
+	# 
 	useLegacyScheduling = "default"
 	# (Default: false) Whether to enable low memory mode
 	# 
@@ -138,19 +138,19 @@ globalExecutorParallelism = "default"
 	# 
 	# 
 	enforceSafeWorldRandomAccess = "default"
-	# (Default: true)
+	# (Default: true)  
 	#  Whether to disable the shutdown hook of log4j2 on dedicated servers.
 	#  Enabling this also makes the JVM exit when the dedicated server is considered fully shut down.
 	#  This option have no effect on client-side.
 	#  We has historically been doing this, and this config option allows you to disable this behavior.
-	#
+	# 
 	disableLoggingShutdownHook = "default"
 
 [vanillaWorldGenOptimizations]
 	# (Default: true) Whether to use density function compiler to accelerate world generation
-	#
+	# 
 	# Density function: https://minecraft.wiki/w/Density_function
-	#
+	# 
 	# This functionality compiles density functions from world generation
 	# datapacks (including vanilla generation) to JVM bytecode to increase
 	# performance by allowing JVM JIT to better optimize the code
@@ -174,13 +174,13 @@ globalExecutorParallelism = "default"
 	# 
 	optimizeStructureWeightSampler = "default"
 	# (Default: true) Enables the built-in integrations with other worldgen mods in density function compiler.
-	#
+	# 
 	# Depends on vanillaWorldGenOptimizations.useDensityFunctionCompiler
-	#
+	# 
 	enableBuiltinDFCIntegrations = "default"
 
 [noTickViewDistance]
-	# (Default: 27) No-tick view distance max concurrent chunk loads
+	# (Default: 27) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Enable server-side support for extended render distance protocol (c2me:ext_render_distance_v1)

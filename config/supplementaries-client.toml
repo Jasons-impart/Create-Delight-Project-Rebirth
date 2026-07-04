@@ -170,7 +170,7 @@
 	custom_configured_screen = true
 	#unfunny
 	"I am very boring and I don't want any Easter Egg" = false
-	#Enable Supplementaries to base textures off external Resource Packs rather than mod's default textures.
+	#Enable Supplementaries to base textures off external Resource Packs rather than mod's default textures. 
 	use_external_resource_pack = false
 
 #Game tweaks
