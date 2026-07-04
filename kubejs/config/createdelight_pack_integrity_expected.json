@@ -1810,7 +1810,7 @@
     {
       "side": "common",
       "metadata": "mods/common/ecliptic-seasons.pw.toml",
-      "filename": "EclipticSeasons-1.21.1-neoforge-0.12.18.13.jar",
+      "filename": "EclipticSeasons-1.21.1-neoforge-0.13.9.1.jar",
       "modIds": [
         "eclipticseasons"
       ]
