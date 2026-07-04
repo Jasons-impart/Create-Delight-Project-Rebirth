@@ -1,0 +1,14 @@
+name = "Create Aeronautics"
+filename = "create-aeronautics-bundled-1.21.1-1.3.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8240/058/create-aeronautics-bundled-1.21.1-1.3.0.jar"
+hash-format = "sha256"
+hash = "482c90e0e6fe72f33fe7abb079e5fda581cd660ee53c38c44448a64283e1044c"
+mode = "url"
+
+[update]
+[update.curseforge]
+file-id = 8240058
+project-id = 676721

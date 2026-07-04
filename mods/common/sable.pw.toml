@@ -1,0 +1,14 @@
+name = "Sable"
+filename = "sable-neoforge-1.21.1-2.0.3.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8263/584/sable-neoforge-1.21.1-2.0.3.jar"
+hash-format = "sha256"
+hash = "da6c3b66238586603d1dcaa2afb012d36815fbce0a2d5938fbb2936701d42279"
+mode = "url"
+
+[update]
+[update.curseforge]
+file-id = 8263584
+project-id = 1312371
