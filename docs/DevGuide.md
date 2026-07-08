@@ -40,6 +40,7 @@ Windows 下不要从 PowerShell 运行 `devtool.sh`；`.sh` 文件关联到 Git 
 开发工具调用全局 npm 包 `@bro-know-my/packwiz` 提供的 `bkmpw` 命令。旧 `packwiz.exe`、`packwiz-installer-bootstrap.jar` 和仓库内置 `bkmpw.exe` 不再使用，也不再兜底调用。
 
 开发者日常操作优先使用交互式菜单，不需要记忆 bkmpw 参数命令。
+交互式菜单打开后会在后台通过 npm registry 检查 `@bro-know-my/packwiz` 的最新版本；如果本地 `bkmpw` 旧于 npm 最新版本，菜单会提醒运行 `setup-tools` 更新。AI agent 或自动化维护 pack 元数据前，应先运行 `devtool.bat check` 并确认输出中的 `bkmpw` 版本。
 
 可以用下面的命令快速检查本机基础工具：
 

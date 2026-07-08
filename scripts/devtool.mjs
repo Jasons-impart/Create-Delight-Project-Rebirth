@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { spawnSync } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline/promises';
@@ -119,7 +119,7 @@ function quoteWindowsArg(arg) {
   return `"${arg.replace(/([%"^])/g, '^$1')}"`;
 }
 
-function run(executable, args, { stdio = 'inherit', check = true } = {}) {
+function getSpawnInvocation(executable, args) {
   const spawnArgs =
     process.platform === 'win32' && (executable === 'npm' || executable === 'bkmpw')
       ? ['/d', '/s', '/c', [commandName(executable), ...args].map(quoteWindowsArg).join(' ')]
@@ -129,10 +129,17 @@ function run(executable, args, { stdio = 'inherit', check = true } = {}) {
       ? process.env.ComSpec || 'cmd.exe'
       : commandName(executable);
 
+  return { spawnExecutable, spawnArgs };
+}
+
+function run(executable, args, { stdio = 'inherit', check = true, timeout } = {}) {
+  const { spawnExecutable, spawnArgs } = getSpawnInvocation(executable, args);
+
   const result = spawnSync(spawnExecutable, spawnArgs, {
     cwd: repoRoot,
     stdio,
     encoding: 'utf8',
+    timeout,
   });
 
   if (result.error) {
@@ -143,6 +150,57 @@ function run(executable, args, { stdio = 'inherit', check = true } = {}) {
     throw new Error(`${executable} 执行失败，退出码 ${result.status}。`);
   }
   return result;
+}
+
+function runAsync(executable, args, { timeout } = {}) {
+  const { spawnExecutable, spawnArgs } = getSpawnInvocation(executable, args);
+
+  return new Promise((resolve) => {
+    let stdout = '';
+    let stderr = '';
+    let settled = false;
+    let timedOut = false;
+
+    const child = spawn(spawnExecutable, spawnArgs, {
+      cwd: repoRoot,
+      stdio: ['ignore', 'pipe', 'pipe'],
+      windowsHide: true,
+    });
+
+    const timer =
+      timeout === undefined
+        ? null
+        : setTimeout(() => {
+            timedOut = true;
+            child.kill();
+          }, timeout);
+
+    child.stdout.setEncoding('utf8');
+    child.stderr.setEncoding('utf8');
+    child.stdout.on('data', (chunk) => {
+      stdout += chunk;
+    });
+    child.stderr.on('data', (chunk) => {
+      stderr += chunk;
+    });
+    child.on('error', (error) => {
+      if (settled) return;
+      settled = true;
+      if (timer) clearTimeout(timer);
+      resolve({ error, status: null, stdout, stderr });
+    });
+    child.on('close', (status) => {
+      if (settled) return;
+      settled = true;
+      if (timer) clearTimeout(timer);
+      resolve({
+        error: timedOut ? new Error(`${executable} 执行超时。`) : null,
+        status,
+        stdout,
+        stderr,
+      });
+    });
+  });
 }
 
 function getCommandVersion(executable) {
@@ -157,6 +215,82 @@ function getNpmVersion() {
 
 function getBkmpwVersion() {
   return getCommandVersion('bkmpw');
+}
+
+let cachedLatestBkmpwPackageVersion;
+let pendingLatestBkmpwPackageVersion;
+let menuBkmpwUpdateNoticeShown = false;
+
+function parseSemver(version) {
+  const match = `${version ?? ''}`.match(/(\d+)\.(\d+)\.(\d+)(?:[-+][0-9A-Za-z.-]+)?/);
+  if (!match) return null;
+  return {
+    major: Number(match[1]),
+    minor: Number(match[2]),
+    patch: Number(match[3]),
+    raw: match[0],
+  };
+}
+
+function compareSemver(a, b) {
+  for (const key of ['major', 'minor', 'patch']) {
+    if (a[key] !== b[key]) return a[key] < b[key] ? -1 : 1;
+  }
+  return 0;
+}
+
+async function getLatestBkmpwPackageVersion() {
+  if (cachedLatestBkmpwPackageVersion !== undefined) return cachedLatestBkmpwPackageVersion;
+  if (pendingLatestBkmpwPackageVersion) return pendingLatestBkmpwPackageVersion;
+
+  pendingLatestBkmpwPackageVersion = runAsync(
+    'npm',
+    ['view', globalPackageName, 'version', '--silent'],
+    { timeout: 8000 }
+  ).then((result) => {
+    if (result.error || result.status !== 0) {
+      cachedLatestBkmpwPackageVersion = null;
+    } else {
+      cachedLatestBkmpwPackageVersion = `${result.stdout ?? result.stderr ?? ''}`.trim() || null;
+    }
+    pendingLatestBkmpwPackageVersion = null;
+    return cachedLatestBkmpwPackageVersion;
+  });
+
+  return pendingLatestBkmpwPackageVersion;
+}
+
+function getBkmpwUpdateStatus(localVersion, latestVersion) {
+  if (latestVersion === undefined) return { state: 'checking' };
+  if (!latestVersion) return { state: 'unknown' };
+
+  const localSemver = parseSemver(localVersion);
+  const latestSemver = parseSemver(latestVersion);
+  if (!localSemver || !latestSemver) return { state: 'unknown', latestVersion };
+
+  if (compareSemver(localSemver, latestSemver) < 0) {
+    return {
+      state: 'outdated',
+      localVersion: localSemver.raw,
+      latestVersion: latestSemver.raw,
+    };
+  }
+
+  return { state: 'current', localVersion: localSemver.raw, latestVersion: latestSemver.raw };
+}
+
+function getCachedBkmpwUpdateStatus(localVersion) {
+  return getBkmpwUpdateStatus(localVersion, cachedLatestBkmpwPackageVersion);
+}
+
+async function warnIfBkmpwOutdated(localVersion) {
+  const latestVersion = await getLatestBkmpwPackageVersion();
+  const status = getBkmpwUpdateStatus(localVersion, latestVersion);
+  if (status.state !== 'outdated') return;
+
+  writeWarn(
+    `bkmpw 当前版本 ${status.localVersion}，npm 最新版本 ${status.latestVersion}。建议运行 devtool.bat setup-tools 更新。`
+  );
 }
 
 function assertNpmAvailable() {
@@ -187,13 +321,14 @@ function invokeBkmpwPackCommand(subCommand, commandArgs = []) {
   invokeBkmpwRaw([subCommand, repoRoot, ...commandArgs]);
 }
 
-function setupTools() {
+async function setupTools() {
   const npmVersion = assertNpmAvailable();
   writeSuccess(`npm: ${npmVersion}`);
   writeInfo(`npm install -g ${globalPackageName}`);
   run('npm', ['install', '-g', globalPackageName]);
   const bkmpwVersion = assertBkmpwAvailable();
   writeSuccess(`bkmpw: ${bkmpwVersion}`);
+  await warnIfBkmpwOutdated(bkmpwVersion);
 }
 
 function updateCoreBeforeSync() {
@@ -310,10 +445,44 @@ function showMenuHeader() {
   console.log(color(90, `仓库路径：${repoRoot}`));
 
   const version = getBkmpwVersion();
-  if (version) console.log(color(32, `bkmpw：${version}`));
-  else console.log(color(33, 'bkmpw：未安装'));
+  if (version) {
+    console.log(color(32, `bkmpw：${version}`));
+    writeBkmpwMenuUpdateLine(getCachedBkmpwUpdateStatus(version));
+    startMenuBkmpwUpdateCheck(version);
+  } else console.log(color(33, 'bkmpw：未安装'));
 
   console.log('');
+}
+
+function writeBkmpwMenuUpdateLine(status) {
+  if (status.state === 'outdated') {
+    console.log(
+      color(
+        33,
+        `bkmpw 可更新：当前 ${status.localVersion}，最新 ${status.latestVersion}。请选择 S 安装/更新。`
+      )
+    );
+  } else if (status.state === 'current') {
+    console.log(color(32, `bkmpw 已是最新版本：${status.localVersion}`));
+  } else if (status.state === 'checking') {
+    console.log(color(36, 'bkmpw 最新版本：检查中，不影响菜单使用。'));
+  } else {
+    console.log(color(33, 'bkmpw 最新版本检查失败。网络不可用时可忽略此提示。'));
+  }
+}
+
+function startMenuBkmpwUpdateCheck(localVersion) {
+  if (!process.stdout.isTTY || cachedLatestBkmpwPackageVersion !== undefined) return;
+
+  getLatestBkmpwPackageVersion().then((latestVersion) => {
+    if (menuBkmpwUpdateNoticeShown) return;
+    menuBkmpwUpdateNoticeShown = true;
+
+    const status = getBkmpwUpdateStatus(localVersion, latestVersion);
+    console.log('');
+    writeBkmpwMenuUpdateLine(status);
+    console.log('');
+  });
 }
 
 async function startDevMenu() {
@@ -345,7 +514,7 @@ async function startDevMenu() {
       try {
         switch (choice.toLowerCase()) {
           case 's':
-            setupTools();
+            await setupTools();
             await pauseMenu(rl);
             break;
           case 'p':
@@ -497,7 +666,7 @@ async function dispatch(command, rest) {
       await startDevMenu();
       break;
     case 'setup-tools':
-      setupTools();
+      await setupTools();
       break;
     case 'prepare-pack':
       preparePackRoot();
