@@ -250,25 +250,27 @@ if (
       result: 'ae2omnicells:omni_cell_housing',
     });
 
-    addOmniHousing({
-      blank: 'createdelightcore:complex_omni_cell_housing_blank',
-      blankInput: 'createdelightcore:forged_steel_sheet',
-      initial: 'createdelightcore:initial_processing_of_complex_omni_cell_housing',
-      initialIngredients: [
-        'createdelightcore:complex_omni_cell_housing_blank',
-        enderPearlDust.withCount(3),
-        'ae2omnicells:complex_link_processor',
-      ],
-      vacuumIngredients: [
-        'createdelightcore:complex_omni_cell_housing_blank',
-        enderPearlDust,
-        'ae2omnicells:complex_link_processor',
-      ],
-      sequence: [enderPearlDust, enderPearlDust, 'ae2omnicells:complex_link_processor'],
-      sequenceLoops: 1,
-      unformed: 'createdelightcore:unformed_complex_omni_cell_housing',
-      result: 'ae2omnicells:complex_omni_cell_housing',
-    });
+    if (global.itemExists('createdelightcore:forged_steel_sheet')) {
+      addOmniHousing({
+        blank: 'createdelightcore:complex_omni_cell_housing_blank',
+        blankInput: 'createdelightcore:forged_steel_sheet',
+        initial: 'createdelightcore:initial_processing_of_complex_omni_cell_housing',
+        initialIngredients: [
+          'createdelightcore:complex_omni_cell_housing_blank',
+          enderPearlDust.withCount(3),
+          'ae2omnicells:complex_link_processor',
+        ],
+        vacuumIngredients: [
+          'createdelightcore:complex_omni_cell_housing_blank',
+          enderPearlDust,
+          'ae2omnicells:complex_link_processor',
+        ],
+        sequence: [enderPearlDust, enderPearlDust, 'ae2omnicells:complex_link_processor'],
+        sequenceLoops: 1,
+        unformed: 'createdelightcore:unformed_complex_omni_cell_housing',
+        result: 'ae2omnicells:complex_omni_cell_housing',
+      });
+    }
 
     addOmniHousing({
       blank: 'createdelightcore:quantum_omni_cell_housing_blank',
