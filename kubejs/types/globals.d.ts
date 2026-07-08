@@ -31,6 +31,12 @@ interface CreatedelightGlobalHelpers {
   /** 检查物品 id 是否存在于注册表。Returns true when an item id exists in the item registry. */
   itemExists(id: string): boolean;
 
+  /** 从 KubeJS 交易/配方栈字符串中取物品 id，如 '8x minecraft:wheat' -> 'minecraft:wheat'。 */
+  itemIdFromStack(stack: string): string;
+
+  /** 检查 KubeJS 栈字符串对应物品是否存在；tag ingredient 直接视为存在。 */
+  itemStackExists(stack: string): boolean;
+
   /** 检查方块 id 是否存在于注册表。Returns true when a block id exists in the block registry. */
   blockExists(id: string): boolean;
 

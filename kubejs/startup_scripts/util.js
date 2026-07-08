@@ -29,6 +29,15 @@ global.itemExists = function (id) {
   return global.registryIdExists(BuiltInRegistries.ITEM, id);
 };
 
+global.itemIdFromStack = function (stack) {
+  return String(stack).replace(/^\d+x\s+/, '');
+};
+
+global.itemStackExists = function (stack) {
+  const item = global.itemIdFromStack(stack);
+  return item.startsWith('#') || global.itemExists(item);
+};
+
 global.blockExists = function (id) {
   return global.registryIdExists(BuiltInRegistries.BLOCK, id);
 };
