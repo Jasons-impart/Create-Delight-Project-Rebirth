@@ -11,7 +11,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 const packTemplateDir = path.join(repoRoot, 'pack');
-const ignoreSource = path.join(packTemplateDir, '.packwizignore.source');
 const integrityManifestPath = path.join(
   repoRoot,
   'kubejs',
@@ -39,7 +38,10 @@ const commands = new Set([
   'download-files',
   'modlist',
   'generate-integrity-manifest',
+  'export-client',
   'export-curseforge',
+  'export-server',
+  'export-server-installer',
 ]);
 
 const packRootTemplateFiles = [
@@ -95,7 +97,10 @@ function showHelp() {
   devtool.bat download-files [jobs] [--force]
   devtool.bat modlist [output-dir]
   devtool.bat generate-integrity-manifest
-  devtool.bat export-curseforge [output.zip] [client|server|both]
+  devtool.bat export-curseforge [output.zip] [client|server|both]   # 客户端 CurseForge 安装包
+  devtool.bat export-client [output.zip] [root-dir]                 # 客户端全量包，自带 mod 文件
+  devtool.bat export-server [output.zip]                            # 开箱即用服务端全量包
+  devtool.bat export-server-installer [output.zip]                  # bkmpw 下载型服务端安装包
 
 Linux/macOS 可使用 ./devtool.sh 执行同样命令。
 
@@ -105,6 +110,7 @@ Linux/macOS 可使用 ./devtool.sh 执行同样命令。
   - 缺少 bkmpw 时运行 devtool.bat setup-tools，或手动运行 npm install -g ${globalPackageName}。
   - 所有新增 mod 元数据默认写入 mods/*.pw.toml；可手动移动到 mods/common、mods/client、mods/server。
   - install-files/download-files 由 bkmpw 执行，只处理清单记录的托管文件，不清理手动塞入且未入清单的 jar。
+  - 菜单 13 是客户端 CurseForge 安装包；14 是客户端全量包；15 是开箱即用服务端包；16 是 bkmpw 下载型服务端安装包。
   - 首次拉取仓库后运行 prepare-pack，展开本地发布根目录文件。`);
 }
 
@@ -362,12 +368,7 @@ function preparePackRoot() {
     writeSuccess(`已生成 ${relative.split(path.sep).join('/')}`);
   }
 
-  if (fs.existsSync(ignoreSource)) {
-    copyFile(ignoreSource, path.join(repoRoot, '.packwizignore'));
-    writeSuccess('已生成 .packwizignore');
-  } else {
-    writeWarn('未找到 pack/.packwizignore.source');
-  }
+  writeInfo('.packwizignore 现在是根目录跟踪文件，prepare-pack 不再覆盖。');
 }
 
 function testRepository() {
@@ -386,7 +387,6 @@ function testRepository() {
 
   const required = [
     'pack/pack.toml',
-    'pack/.packwizignore.source',
     'pack/icon.png',
     'pack/server-icon.png',
     'pack/start.bat',
@@ -504,9 +504,12 @@ async function startDevMenu() {
       console.log(color(33, ' 10. 安装/同步托管文件到本地'));
       console.log(color(33, ' 11. 下载缺失文件到本地（不清理无关文件）'));
       console.log(' 12. 生成 modlist 清单');
-      console.log(' 13. 导出 CurseForge .zip');
-      console.log(' 14. 生成完整性校验清单');
-      console.log(' 15. 执行自定义 bkmpw 命令');
+      console.log(' 13. 导出客户端 CurseForge 安装包 .zip');
+      console.log(' 14. 导出客户端全量包 .zip（自带 mod 文件）');
+      console.log(' 15. 导出开箱即用服务端全量包 .zip');
+      console.log(' 16. 导出 bkmpw 下载型服务端安装包 .zip');
+      console.log(' 17. 生成完整性校验清单');
+      console.log(' 18. 执行自定义 bkmpw 命令');
       console.log('  0. 退出');
       console.log('');
 
@@ -622,19 +625,43 @@ async function startDevMenu() {
           }
           case '13': {
             const output = await readLine(rl, '输出文件，留空使用默认值: ');
-            const side = await readLine(rl, '导出侧 client/server/both，留空使用 both: ');
-            const args = [output, side].filter(Boolean);
+            const args = output ? [output, 'client'] : ['client'];
             generateManifest();
             invokeBkmpwPackCommand('refresh');
             invokeBkmpwPackCommand('export-curseforge', args);
             await pauseMenu(rl);
             break;
           }
-          case '14':
+          case '14': {
+            const output = await readLine(rl, '输出文件，留空使用默认值: ');
+            const rootDir = await readLine(rl, 'zip 内实例目录名，留空使用 pack.toml name: ');
+            const args = rootDir ? [output || 'client-full.zip', rootDir] : output ? [output] : [];
+            generateManifest();
+            invokeBkmpwPackCommand('refresh');
+            invokeBkmpwPackCommand('export-client', args);
+            await pauseMenu(rl);
+            break;
+          }
+          case '15': {
+            const output = await readLine(rl, '输出文件，留空使用默认值: ');
+            generateManifest();
+            invokeBkmpwPackCommand('refresh');
+            invokeBkmpwPackCommand('export-server', output ? [output] : []);
+            await pauseMenu(rl);
+            break;
+          }
+          case '16': {
+            const output = await readLine(rl, '输出文件，留空使用默认值: ');
+            invokeBkmpwPackCommand('refresh');
+            invokeBkmpwPackCommand('export-server-installer', output ? [output] : []);
+            await pauseMenu(rl);
+            break;
+          }
+          case '17':
             generateManifest();
             await pauseMenu(rl);
             break;
-          case '15': {
+          case '18': {
             const custom = await readBkmpwExtraArgs(rl, 'bkmpw 原生命令参数');
             if (custom.length === 0) writeWarn('未输入命令。');
             else invokeBkmpwRaw(custom);
@@ -719,10 +746,24 @@ async function dispatch(command, rest) {
     case 'generate-integrity-manifest':
       generateManifest();
       break;
+    case 'export-client':
+      generateManifest();
+      invokeBkmpwPackCommand('refresh');
+      invokeBkmpwPackCommand('export-client', rest);
+      break;
     case 'export-curseforge':
       generateManifest();
       invokeBkmpwPackCommand('refresh');
       invokeBkmpwPackCommand('export-curseforge', rest);
+      break;
+    case 'export-server':
+      generateManifest();
+      invokeBkmpwPackCommand('refresh');
+      invokeBkmpwPackCommand('export-server', rest);
+      break;
+    case 'export-server-installer':
+      invokeBkmpwPackCommand('refresh');
+      invokeBkmpwPackCommand('export-server-installer', rest);
       break;
     default:
       throw new Error(`未知命令：${command}`);

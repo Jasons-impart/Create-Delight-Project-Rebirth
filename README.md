@@ -9,6 +9,8 @@
 
 请阅读 `docs/DevGuide.md`
 
+常用维护入口是根目录 `devtool.bat` / `devtool.sh`；导出支持客户端 CurseForge 安装包、客户端全量包、开箱即用服务端包和 bkmpw 下载型服务端安装包，细节见 `docs/PACKWIZ_WORKFLOW.md`。
+
 ## 协议
 
 除第三方声明另有规定外，项目自有源码、KubeJS 脚本、packwiz 元数据、配置文件、数据文件、配方定义、构建脚本和其它文本实现文件允许公开查看、学习、修改和非商业再分发。

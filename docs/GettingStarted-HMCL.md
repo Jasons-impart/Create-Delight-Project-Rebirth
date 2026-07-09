@@ -98,7 +98,7 @@ npm install
 
 Windows 下不要从 PowerShell 运行 `devtool.sh`；`.sh` 是 Linux/macOS 入口。
 
-`prepare-pack` 会把 `pack/` 模板展开到根目录，并生成/刷新本地 `pack.toml`、`index.toml`、`.packwizignore` 等文件。
+`prepare-pack` 会把 `pack/` 模板展开到根目录，并生成/刷新本地 `pack.toml`、`index.toml` 等文件。根目录 `.packwizignore` 是仓库跟踪的发布排除规则，不会由 `prepare-pack` 覆盖。
 
 ## 同步 mod 和资源文件
 

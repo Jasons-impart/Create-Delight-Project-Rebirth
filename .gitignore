@@ -20,6 +20,7 @@
 # Pack metadata and generated release-root files
 !/package.json
 !/package-lock.json
+!/.packwizignore
 !/pack/
 !/pack/**
 
@@ -61,6 +62,8 @@ docs/generated/
 !/tacz/**
 !/minemenu/
 !/minemenu/**
+!/roots/
+!/roots/**
 !/scripts/
 !/scripts/**
 

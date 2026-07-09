@@ -55,7 +55,7 @@ devtool.bat check
 
 - `mods/*.jar` 不提交。
 - `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml` 提交。
-- `pack/` 中的发布模板提交；根目录 `pack.toml`、`index.toml`、`.packwizignore`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
+- `pack/` 中的发布模板提交；根目录 `.packwizignore` 直接提交；根目录 `pack.toml`、`index.toml`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
 - `config/`、`defaultconfigs/` 只放确认要共享的配置。
 - `kubejs/` 只放已确认适配 1.21.1 NeoForge 和目标模组集合的脚本、数据与资源。
 - `hotai/` 只放已确认需要随整合包共享的 Hotai 补丁。新增或重建 `hotai/**/*.badiff` 后，更新 `docs/HOTAI_MIXIN_OVERRIDES.md`，并运行 `devtool.bat refresh` 确认补丁文件进入 `index.toml`。
@@ -91,7 +91,7 @@ devtool.bat
 
 首次准备开发环境时：
 
-1. 运行一次 `devtool.bat prepare-pack`，把 `pack/` 模板展开到根目录并生成 `pack.toml`、`index.toml`、`.packwizignore`、`PCL/` 等本地发布文件。
+1. 运行一次 `devtool.bat prepare-pack`，把 `pack/` 模板展开到根目录并生成 `pack.toml`、`index.toml`、`PCL/` 等本地发布文件。
 2. 从开发群文件下载需要手动补齐的 mod jar。
 3. 把这些 jar 放进仓库根目录的 `mods/` 文件夹。
 4. 双击根目录的 `devtool.bat`。
@@ -108,7 +108,7 @@ devtool.bat
 - Modrinth 添加、CurseForge detect、serve 和 Modrinth export 已移除。
 - `add-*`、`update`、`remove-mod` 会自动生成/刷新根目录 `pack.toml` 和 `index.toml`；之后运行 `devtool.bat install-files`。无桌面环境使用 `devtool.bat install-files-headless`；网络不稳时使用 `devtool.bat install-files-retry`。
 - 更新、添加、移除 mod，或变更会影响实际 mod id 的 jar/metadata 后，先同步 runtime jars，再运行 `devtool.bat generate-integrity-manifest`，并把 `kubejs/config/createdelight_pack_integrity_expected.json` 纳入同一变更；随后运行 `devtool.bat refresh` 和 `devtool.bat check`。
-- 提交 `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml`、`pack/` 模板和需要共享的配置变化，不提交根目录生成的 `pack.toml`、`index.toml`、`.packwizignore`、`PCL/` 或 `mods/*.jar`。
+- 提交 `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml`、根目录 `.packwizignore`、`pack/` 模板和需要共享的配置变化，不提交根目录生成的 `pack.toml`、`index.toml`、`PCL/` 或 `mods/*.jar`。
 
 ## 关于 modinstaller / 同步器
 
@@ -137,7 +137,7 @@ npm install
 npm install -g @bro-know-my/packwiz
 ```
 
-如果 `node -v` 或 `npm -v` 找不到命令，请先安装 Node.js LTS，并确认 npm 一起安装且已加入 PATH。`npm install` 会安装格式化工具，并通过 Husky 安装 Git hook。`npm install -g @bro-know-my/packwiz` 会安装全局 `bkmpw` 命令；也可以运行 `devtool.bat setup-tools` 代为安装。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 bkmpw 索引。根目录 `pack.toml`、`index.toml`、`.packwizignore` 是本地生成文件，不需要暂存或提交。
+如果 `node -v` 或 `npm -v` 找不到命令，请先安装 Node.js LTS，并确认 npm 一起安装且已加入 PATH。`npm install` 会安装格式化工具，并通过 Husky 安装 Git hook。`npm install -g @bro-know-my/packwiz` 会安装全局 `bkmpw` 命令；也可以运行 `devtool.bat setup-tools` 代为安装。之后提交时，`pre-commit` 会先对本次暂存的 `kubejs/**/*.js` 自动执行 Prettier 格式化，再运行 `devtool.bat refresh` 刷新 bkmpw 索引。根目录 `pack.toml`、`index.toml` 是本地生成文件，不需要暂存或提交；根目录 `.packwizignore` 是源码文件，需要随规则变化提交。
 
 也可以手动运行：
 
@@ -340,19 +340,37 @@ RESTART_DELAY_SECONDS=10
 正式发布前至少检查：
 
 1. 修改 `pack/pack.toml` 版本号。
-2. 执行 `devtool.bat prepare-pack` 或 `devtool.bat refresh`。
-3. 执行 `devtool.bat check`。
-4. 检查 `git status --short --untracked-files=all`。
-5. 确认没有 `mods/*.jar`、导出 zip、`.mrpack`、服务端运行产物进入提交。
-6. 更新发布说明。
+2. 执行 `devtool.bat setup-tools`，更新全局 `@bro-know-my/packwiz`，并确认 `devtool.bat check` 输出的 `bkmpw` 已是 npm 最新版本。
+3. 执行 `devtool.bat prepare-pack` 或 `devtool.bat refresh`。
+4. 执行 `devtool.bat check`。
+5. 检查 `git status --short --untracked-files=all`。
+6. 确认没有 `mods/*.jar`、导出 zip、`.mrpack`、`.bkmpw/` 服务端包目录或服务端运行产物进入提交。
+7. 更新发布说明。
 
 导出命令：
 
 ```powershell
-devtool.bat export-curseforge
+devtool.bat export-client [output.zip] [root-dir]
+devtool.bat export-curseforge [output.zip] [client|server|both]
+devtool.bat export-server [output.zip]
+devtool.bat export-server-installer [output.zip]
 ```
 
-当前只保留 CurseForge 导出；Modrinth export 已移除。导出产物默认不提交。
+菜单 `13` / `export-curseforge ... client` 生成客户端 CurseForge 安装包；菜单 `14` / `export-client` 生成客户端全量包，自带 client/common runtime jar，不需要启动器再下载 mod；菜单 `15` / `export-server` 生成开箱即用服务端全量 zip，不是 CurseForge manifest 格式；菜单 `16` / `export-server-installer` 生成 bkmpw 下载型服务端安装包，包含 metadata 和安装脚本，不夹带 runtime jar，也不夹带本机 bkmpw 二进制，安装脚本会从 GitHub latest release 下载 bkmpw。
+
+v008 起支持根目录 overlay：
+
+```text
+roots/common/   # 客户端全量包和服务端包都会铺到目标根目录
+roots/client/   # 只进入客户端全量包的实例根目录
+roots/server/   # 只进入服务端全量包和下载型服务端安装包根目录
+```
+
+这些文件作为源码提交。导出时文件会铺平到目标根目录，不保留 `roots/` 前缀；如果 `roots/common` 和目标 side 目录有同名文件，目标 side 目录优先。
+
+`export-client`、`export-server` 和 `export-curseforge` 会先生成完整性校验清单并刷新索引，需要本地 runtime jar 已同步。下载型 `export-server-installer` 不强制依赖本地 jar；如果刚改过 mod 列表，先在已同步 jar 的环境运行 `devtool.bat generate-integrity-manifest`，把更新后的 `kubejs/config/createdelight_pack_integrity_expected.json` 一起提交。
+
+Modrinth export 已移除。导出产物默认不提交。
 
 ## 协议与第三方声明
 

@@ -1,0 +1,46 @@
+# Extra bkmpw distribution exclusions.
+# bkmpw v008 first applies .gitignore, then applies this file.
+
+# Local bookkeeping inside otherwise allowed directories.
+**/.gitignore
+**/.DS_Store
+Thumbs.db
+
+# Runtime/downloaded artifacts that should never enter pack indexes.
+mods/*.jar
+mods/*.jar.disabled
+resourcepacks/*.zip
+shaderpacks/*.zip
+*.mrpack
+/*.zip
+*.7z
+*.log
+*.lock
+*.tmp
+
+# ProbeJS/local dev settings.
+.probe
+kubejs/config/probe-settings.json
+kubejs/config/web_server.json
+
+# Repository maintenance files.
+docs
+docs/**
+pack
+pack/**
+scripts
+scripts/**
+.agents
+.agents/**
+.github
+.github/**
+.vscode
+.vscode/**
+.husky
+.husky/**
+package.json
+package-lock.json
+AGENTS.md
+.gitattributes
+devtool.bat
+devtool.sh
