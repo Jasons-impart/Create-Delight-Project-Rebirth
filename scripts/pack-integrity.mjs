@@ -186,6 +186,7 @@ function getNestedModIdsFromArchive(zip, depth = 0) {
   for (const entry of zip.entries) {
     if (!entry.name.toLowerCase().endsWith('.jar')) continue;
     const nestedZip = new ZipArchive(zip.readEntry(entry));
+    if (isKnownNonRuntimeEmbeddedJar(nestedZip)) continue;
     for (const modId of getModIdsFromArchive(nestedZip)) {
       if (!NON_RUNTIME_EMBEDDED_MOD_IDS.has(modId)) addUnique(ids, modId);
     }
@@ -203,6 +204,11 @@ function hasAnyEntry(zip, entryNames) {
 
 function isKnownNonRuntimeJar(zip) {
   return hasAnyEntry(zip, ['META-INF/services/cpw.mods.modlauncher.api.ITransformationService']);
+}
+
+function isKnownNonRuntimeEmbeddedJar(zip) {
+  const manifest = zip.readText('META-INF/MANIFEST.MF') ?? '';
+  return isKnownNonRuntimeJar(zip) || /^FMLModType:\s*GAMELIBRARY\s*$/im.test(manifest);
 }
 
 function isKnownNonModJar(zip) {
