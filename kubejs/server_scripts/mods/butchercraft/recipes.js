@@ -264,15 +264,13 @@ if (global.hasAllMods(['butchercraft', 'create'])) {
       ])
       .id(id('crafting/blood_sausage_mix'));
 
-    if (global.fluidExists('butchercraft:blood_fluid')) {
-      create
-        .mixing('8x butchercraft:blood_sausage_mix', [
-          Ingredient.of('#c:ground_meat/raw').withCount(6),
-          Fluid.of('butchercraft:blood_fluid', 250),
-          'butchercraft:fat',
-          'ratatouille:wheat_kernels',
-        ])
-        .id(id('mixing/blood_sausage_mix'));
-    }
+    create
+      .mixing('8x butchercraft:blood_sausage_mix', [
+        Ingredient.of('#c:ground_meat/raw').withCount(6),
+        Fluid.of('butchercraft:blood_fluid', 250),
+        'butchercraft:fat',
+        'ratatouille:wheat_kernels',
+      ])
+      .id(id('mixing/blood_sausage_mix'));
   });
 }
