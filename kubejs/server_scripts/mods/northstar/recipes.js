@@ -258,23 +258,21 @@ if (
       1
     );
 
-    if (global.itemExists('ae2omnicells:omni_link_processor')) {
-      circuitAssembly(
-        'northstar:advanced_circuit',
-        'northstar:circuit',
-        'northstar:unfinished_advanced_circuit',
-        (incomplete) => [
-          create.deploying(incomplete, [incomplete, 'northstar:polished_lunar_sapphire']),
-          create.deploying(incomplete, [incomplete, 'northstar:martian_steel_sheet']),
-          create.deploying(incomplete, [
-            incomplete,
-            Ingredient.of('ae2omnicells:omni_link_processor'),
-          ]),
-          vintageimprovements.laser_cutting(incomplete, incomplete),
-        ],
-        1
-      );
-    }
+    circuitAssembly(
+      'northstar:advanced_circuit',
+      'northstar:circuit',
+      'northstar:unfinished_advanced_circuit',
+      (incomplete) => [
+        create.deploying(incomplete, [incomplete, 'northstar:polished_lunar_sapphire']),
+        create.deploying(incomplete, [incomplete, 'northstar:martian_steel_sheet']),
+        create.deploying(incomplete, [
+          incomplete,
+          Ingredient.of('ae2omnicells:omni_link_processor'),
+        ]),
+        vintageimprovements.laser_cutting(incomplete, incomplete),
+      ],
+      1
+    );
 
     circuitAssembly(
       'northstar:targeting_computer',
