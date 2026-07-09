@@ -199,25 +199,21 @@ if (
       )
       .id(id('mechanical_crafting/generator_coil'));
 
-    if (true) {
-      event.replaceInput(
-        { id: 'create_new_age:shaped/basic_motor_extension' },
-        'create_new_age:copper_circuit',
-        'ae2:logic_processor'
-      );
-    }
+    event.replaceInput(
+      { id: 'create_new_age:shaped/basic_motor_extension' },
+      'create_new_age:copper_circuit',
+      'ae2:logic_processor'
+    );
     event.replaceInput(
       { id: 'create_new_age:shaped/basic_motor_extension' },
       'create_new_age:overcharged_iron',
       'createmetallurgy:steel_ingot'
     );
-    if (true) {
-      event.replaceInput(
-        { id: 'create_new_age:mechanical_crafting/advanced_motor_extension' },
-        'create_new_age:copper_circuit',
-        'ae2omnicells:multidimensional_expansion_processor'
-      );
-    }
+    event.replaceInput(
+      { id: 'create_new_age:mechanical_crafting/advanced_motor_extension' },
+      'create_new_age:copper_circuit',
+      'ae2omnicells:multidimensional_expansion_processor'
+    );
 
     create
       .sequenced_assembly('2x create_new_age:basic_motor', 'createaddition:electric_motor', [
@@ -295,31 +291,29 @@ if (global.hasAllMods(['create_new_age', 'create', 'create_enchantment_industry'
       event.remove({ id: originalId });
     }
 
-    if (true && global.fluidExists('create_enchantment_industry:experience')) {
-      create
-        .sequenced_assembly('minecraft:enchanted_golden_apple', 'minecraft:apple', [
-          create.filling('create_new_age:incomplete_enchanted_golden_apple', [
-            'create_new_age:incomplete_enchanted_golden_apple',
-            Fluid.of('create_enchantment_industry:experience', 120),
-          ]),
-          create.deploying('create_new_age:incomplete_enchanted_golden_apple', [
-            'create_new_age:incomplete_enchanted_golden_apple',
-            'minecraft:gold_block',
-          ]),
-          create.deploying('create_new_age:incomplete_enchanted_golden_apple', [
-            'create_new_age:incomplete_enchanted_golden_apple',
-            'minecraft:gold_block',
-          ]),
-          create_new_age.energising(
-            'create_new_age:incomplete_enchanted_golden_apple',
-            'create_new_age:incomplete_enchanted_golden_apple',
-            2000000
-          ),
-        ])
-        .transitionalItem('create_new_age:incomplete_enchanted_golden_apple')
-        .loops(4)
-        .id(id('sequenced_assembly/enchanted_golden_apple'));
-    }
+    create
+      .sequenced_assembly('minecraft:enchanted_golden_apple', 'minecraft:apple', [
+        create.filling('create_new_age:incomplete_enchanted_golden_apple', [
+          'create_new_age:incomplete_enchanted_golden_apple',
+          Fluid.of('create_enchantment_industry:experience', 120),
+        ]),
+        create.deploying('create_new_age:incomplete_enchanted_golden_apple', [
+          'create_new_age:incomplete_enchanted_golden_apple',
+          'minecraft:gold_block',
+        ]),
+        create.deploying('create_new_age:incomplete_enchanted_golden_apple', [
+          'create_new_age:incomplete_enchanted_golden_apple',
+          'minecraft:gold_block',
+        ]),
+        create_new_age.energising(
+          'create_new_age:incomplete_enchanted_golden_apple',
+          'create_new_age:incomplete_enchanted_golden_apple',
+          2000000
+        ),
+      ])
+      .transitionalItem('create_new_age:incomplete_enchanted_golden_apple')
+      .loops(4)
+      .id(id('sequenced_assembly/enchanted_golden_apple'));
   });
 }
 
