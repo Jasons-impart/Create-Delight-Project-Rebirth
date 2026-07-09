@@ -62,10 +62,7 @@ if (global.hasMod('brewinandchewin')) {
       'brewinandchewin:cooking/apple_jelly',
     ].forEach(removeIfPresent);
 
-    if (
-      global.hasAllMods(['create', 'create_bic_bit']) &&
-      global.fluidExists('create_bic_bit:curdled_milk')
-    ) {
+    if (global.hasAllMods(['create', 'create_bic_bit'])) {
       create
         .filling('brewinandchewin:unripe_flaxen_cheese_wheel', [
           'minecraft:honeycomb',
