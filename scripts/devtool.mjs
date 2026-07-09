@@ -327,6 +327,233 @@ function invokeBkmpwPackCommand(subCommand, commandArgs = []) {
   invokeBkmpwRaw([subCommand, repoRoot, ...commandArgs]);
 }
 
+function toSlash(value) {
+  return value.split(path.sep).join('/');
+}
+
+function walkFiles(relativeRoot) {
+  const absoluteRoot = path.join(repoRoot, relativeRoot);
+  if (!fs.existsSync(absoluteRoot)) return [];
+
+  const files = [];
+  const visit = (current) => {
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const fullPath = path.join(current, entry.name);
+      if (entry.isSymbolicLink()) {
+        throw new Error(`拒绝扫描符号链接：${toSlash(path.relative(repoRoot, fullPath))}`);
+      }
+      if (entry.isDirectory()) visit(fullPath);
+      else if (entry.isFile()) files.push(toSlash(path.relative(repoRoot, fullPath)));
+    }
+  };
+
+  visit(absoluteRoot);
+  files.sort();
+  return files;
+}
+
+function stripTomlComment(raw) {
+  let inString = false;
+  let escaped = false;
+  for (let index = 0; index < raw.length; index += 1) {
+    const char = raw[index];
+    if (escaped) {
+      escaped = false;
+      continue;
+    }
+    if (char === '\\' && inString) {
+      escaped = true;
+      continue;
+    }
+    if (char === '"') {
+      inString = !inString;
+      continue;
+    }
+    if (char === '#' && !inString) return raw.slice(0, index);
+  }
+  return raw;
+}
+
+function parseTomlValue(raw) {
+  if (raw.startsWith('"') && raw.endsWith('"')) {
+    return raw.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+  }
+  if (/^-?\d+$/.test(raw)) return Number(raw);
+  if (raw === 'true') return true;
+  if (raw === 'false') return false;
+  return raw;
+}
+
+function parseSimpleToml(text) {
+  const rootTable = {};
+  let current = rootTable;
+
+  for (const raw of text.split(/\r?\n/)) {
+    const line = stripTomlComment(raw).trim();
+    if (!line) continue;
+
+    const section = line.match(/^\[([^\]]+)\]$/);
+    if (section) {
+      current = rootTable;
+      for (const part of section[1].split('.')) {
+        current[part] ??= {};
+        current = current[part];
+      }
+      continue;
+    }
+
+    const match = line.match(/^([A-Za-z0-9_-]+)\s*=\s*(.+)$/);
+    if (match) current[match[1]] = parseTomlValue(match[2].trim());
+  }
+
+  return rootTable;
+}
+
+function indexIncludedCount() {
+  const indexPath = path.join(repoRoot, 'index.toml');
+  if (!fs.existsSync(indexPath)) return null;
+  return [...fs.readFileSync(indexPath, 'utf8').matchAll(/^\[\[files\]\]/gm)].length;
+}
+
+function metadataTarget(metadataPath, filename) {
+  const normalized = metadataPath.replace(/\\/g, '/');
+  if (normalized.startsWith('resourcepacks/')) return `resourcepacks/${filename}`;
+  if (normalized.startsWith('shaderpacks/')) return `shaderpacks/${filename}`;
+  return `mods/${filename}`;
+}
+
+function expectedSide(metadataPath, metadata) {
+  const normalized = metadataPath.replace(/\\/g, '/');
+  if (normalized.startsWith('mods/server/')) return 'server';
+  if (normalized.startsWith('mods/client/')) return 'client';
+  if (normalized.startsWith('mods/common/') || /^mods\/[^/]+\.pw(\.toml)?$/.test(normalized)) {
+    return 'both';
+  }
+  return metadata.side ?? (normalized.startsWith('mods/') ? 'both' : 'client');
+}
+
+function validateHash(format, hash) {
+  const normalizedFormat = `${format ?? ''}`.trim().toLowerCase();
+  const normalizedHash = `${hash ?? ''}`.trim();
+  const expectedLength = { sha1: 40, sha256: 64, sha512: 128 }[normalizedFormat];
+  if (!expectedLength) return `unsupported hash format: ${format}`;
+  if (normalizedHash.length !== expectedLength || !/^[0-9a-fA-F]+$/.test(normalizedHash)) {
+    return `expected ${expectedLength} hex chars for ${normalizedFormat}`;
+  }
+  return null;
+}
+
+function runGitCheckIgnore(relativePath) {
+  const result = run('git', ['check-ignore', '--quiet', '--', relativePath], {
+    stdio: 'pipe',
+    check: false,
+  });
+  if (result.error) {
+    return { ok: false, warning: `failed to run git check-ignore: ${result.error.message}` };
+  }
+  if (result.status === 0) return { ok: true };
+  if (result.status === 1) return { ok: false };
+  return { ok: false, warning: `git check-ignore ${relativePath} exited with ${result.status}` };
+}
+
+function testPackStructure() {
+  const warnings = [];
+  const errors = [];
+
+  writeSuccess(`pack root: ${repoRoot}`);
+
+  for (const relative of ['pack.toml', 'index.toml', '.packwizignore', '.gitignore']) {
+    if (fs.existsSync(path.join(repoRoot, relative))) writeSuccess(`found ${relative}`);
+    else {
+      writeFail(`missing ${relative}`);
+      errors.push(`missing ${relative}`);
+    }
+  }
+
+  let metadataFiles = [];
+  try {
+    metadataFiles = ['mods', 'resourcepacks', 'shaderpacks']
+      .flatMap((root) => walkFiles(root))
+      .filter((file) => file.endsWith('.pw') || file.endsWith('.pw.toml'));
+  } catch (error) {
+    errors.push(error.message);
+  }
+
+  writeSuccess(`metadata files: ${metadataFiles.length}`);
+  const included = indexIncludedCount();
+  if (included === null) warnings.push('index.toml not readable for included file count');
+  else writeSuccess(`included files: ${included}`);
+
+  const targets = new Map();
+  for (const metadataPath of metadataFiles) {
+    let metadata;
+    try {
+      metadata = parseSimpleToml(fs.readFileSync(path.join(repoRoot, metadataPath), 'utf8'));
+    } catch (error) {
+      errors.push(`failed to read metadata ${metadataPath}: ${error.message}`);
+      continue;
+    }
+
+    if (!`${metadata.name ?? ''}`.trim()) warnings.push(`metadata has no name: ${metadataPath}`);
+    if (!`${metadata.filename ?? ''}`.trim()) {
+      errors.push(`metadata has no filename: ${metadataPath}`);
+      continue;
+    }
+
+    const download = metadata.download ?? {};
+    if (!download['hash-format'] || !download.hash) {
+      warnings.push(`metadata has no download hash: ${metadataPath}`);
+    } else {
+      const hashError = validateHash(download['hash-format'], download.hash);
+      if (hashError) errors.push(`metadata has invalid download hash: ${metadataPath}: ${hashError}`);
+    }
+
+    const hasDownloadUrl = `${download.url ?? ''}`.trim() !== '';
+    if (download.mode === 'metadata:curseforge') {
+      const curseforge = metadata.update?.curseforge ?? {};
+      if (curseforge['project-id'] === undefined || curseforge['file-id'] === undefined) {
+        errors.push(
+          `CurseForge metadata is missing update.curseforge project-id/file-id: ${metadataPath}`
+        );
+      }
+    } else if (!hasDownloadUrl) {
+      warnings.push(`metadata has no usable download source: ${metadataPath}`);
+    }
+
+    const declaredSide = expectedSide(metadataPath, metadata);
+    if (!['both', 'client', 'server'].includes(declaredSide)) {
+      errors.push(`metadata has unsupported side: ${metadataPath}`);
+    }
+
+    const target = metadataTarget(metadataPath, metadata.filename);
+    const sources = targets.get(target) ?? [];
+    sources.push(metadataPath);
+    targets.set(target, sources);
+  }
+
+  for (const [target, sources] of targets) {
+    if (sources.length > 1) errors.push(`duplicate target file ${target}: ${sources.join(', ')}`);
+  }
+
+  if (fs.existsSync(path.join(repoRoot, '.git'))) {
+    const jarIgnore = runGitCheckIgnore('mods/example.jar');
+    if (jarIgnore.warning) warnings.push(jarIgnore.warning);
+    else if (jarIgnore.ok) writeSuccess('mods/*.jar is ignored');
+    else errors.push('mods/*.jar does not appear to be ignored');
+
+    const metadataIgnore = runGitCheckIgnore('mods/example.pw.toml');
+    if (metadataIgnore.warning) warnings.push(metadataIgnore.warning);
+    else if (!metadataIgnore.ok) writeSuccess('metadata files are trackable');
+    else errors.push('metadata files appear to be ignored');
+  } else {
+    warnings.push('git ignore checks skipped: .git not found');
+  }
+
+  for (const warning of warnings) writeWarn(warning);
+  for (const error of errors) writeFail(error);
+  if (errors.length > 0) throw new Error(`本地仓库检查失败：${errors.length} 个错误。`);
+}
+
 async function setupTools() {
   const npmVersion = assertNpmAvailable();
   writeSuccess(`npm: ${npmVersion}`);
@@ -407,7 +634,7 @@ function testRepository() {
     else writeFail(`缺少 ${relative}`);
   }
 
-  invokeBkmpwPackCommand('check');
+  testPackStructure();
 }
 
 function generateManifest() {
