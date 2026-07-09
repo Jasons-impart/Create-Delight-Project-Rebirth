@@ -41,20 +41,21 @@ if (global.hasMod('createdelightcore')) {
     });
   });
 
-  existingFoods([
-    'seasonals:red_velvet_cupcake',
-    'seasonals:mixed_berry_muffin',
-    'seasonals:chocolate_pumpkin_muffin',
-    'fruitsdelight:blueberry_muffin',
-    'fruitsdelight:cranberry_muffin',
-    'dungeonsdelight:monster_muffin',
-  ]).forEach((item) => {
-    ItemEvents.foodEaten(item, (event) => {
-      event.server.scheduleInTicks(1, () => {
-        if (!event.player.isCreative()) {
-          event.player.give('bakeries:paper_cup');
-        }
-      });
-    });
-  });
+  // 呃呃啊啊: bakeries:paper_cup is missing for now.
+  // existingFoods([
+  //   'seasonals:red_velvet_cupcake',
+  //   'seasonals:mixed_berry_muffin',
+  //   'seasonals:chocolate_pumpkin_muffin',
+  //   'fruitsdelight:blueberry_muffin',
+  //   'fruitsdelight:cranberry_muffin',
+  //   'dungeonsdelight:monster_muffin',
+  // ]).forEach((item) => {
+  //   ItemEvents.foodEaten(item, (event) => {
+  //     event.server.scheduleInTicks(1, () => {
+  //       if (!event.player.isCreative()) {
+  //         event.player.give('bakeries:paper_cup');
+  //       }
+  //     });
+  //   });
+  // });
 }

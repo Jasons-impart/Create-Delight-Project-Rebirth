@@ -55,40 +55,43 @@ if (global.hasAllMods(['createoreexcavation', 'createdelightcore'])) {
       baseProcessingTime,
       minOilLevel
     ) => {
-      const fluids = [
-        {
-          id: 'createdelightcore:ice_lubricating_oil',
-          amount: baseFluid.amount * 0.05,
-          stress: baseStress * 0.5,
-          ticks: baseProcessingTime * 0.1,
-          drill: 'createoreexcavation:netherite_drill',
-        },
-        {
-          id: 'createdelightcore:lubricating_oil',
-          amount: baseFluid.amount * 0.1,
-          stress: baseStress * 0.75,
-          ticks: baseProcessingTime * 0.2,
-          drill: 'createoreexcavation:diamond_drill',
-        },
-        {
-          id: baseFluid.id,
-          amount: baseFluid.amount,
-          stress: baseStress,
-          ticks: baseProcessingTime,
-          drill: 'createoreexcavation:drill',
-        },
-      ];
-      const count = fluids.length + 1 - minOilLevel;
-
-      for (let index = 0; index < count; index++) {
-        const fluid = fluids[index];
-
+      const addDrillingVariant = (fluidId, amount, stress, ticks, drill) => {
         createoreexcavation
-          .drilling(output, id(`ore_vein_type/${veinPath}`), fluid.ticks)
-          .fluid(Fluid.of(fluid.id, fluid.amount))
-          .drill(fluid.drill)
-          .stress(fluid.stress)
-          .id(id(`drilling/${output.split(':')[1]}_using_${fluid.id.split(':')[1]}`));
+          .drilling(output, id(`ore_vein_type/${veinPath}`), ticks)
+          .fluid(Fluid.of(fluidId, amount))
+          .drill(drill)
+          .stress(stress)
+          .id(id(`drilling/${output.split(':')[1]}_using_${fluidId.split(':')[1]}`));
+      };
+
+      if (minOilLevel <= 1) {
+        addDrillingVariant(
+          'createdelightcore:ice_lubricating_oil',
+          baseFluid.amount * 0.05,
+          baseStress * 0.5,
+          baseProcessingTime * 0.1,
+          'createoreexcavation:netherite_drill'
+        );
+      }
+
+      if (minOilLevel <= 2) {
+        addDrillingVariant(
+          'createdelightcore:lubricating_oil',
+          baseFluid.amount * 0.1,
+          baseStress * 0.75,
+          baseProcessingTime * 0.2,
+          'createoreexcavation:diamond_drill'
+        );
+      }
+
+      if (minOilLevel <= 3) {
+        addDrillingVariant(
+          baseFluid.id,
+          baseFluid.amount,
+          baseStress,
+          baseProcessingTime,
+          'createoreexcavation:drill'
+        );
       }
     };
 
@@ -489,7 +492,7 @@ if (global.hasAllMods(['createoreexcavation', 'create', 'the_bumblezone'])) {
     createoreexcavation
       .extracting(Fluid.of('create:honey', 100), id('ore_vein_type/honey'), 100)
       .stress(1024)
-      .fluid(Fluid.of('the_bumblezone:sugar_water', 250))
+      .fluid(Fluid.of('the_bumblezone:sugar_water_still', 250))
       .id(id('extracting/honey'));
   });
 }

@@ -408,53 +408,54 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
         })
         .id(id('oven_baking/bat_cookie'));
 
-      [
-        [
-          'cranberry_muffin',
-          'createdelightcore:unbaked_cranberry_muffin',
-          'fruitsdelight:cranberry_muffin',
-          ['bakeries:paper_cup_cake_paste', 'fruitsdelight:cranberry'],
-          'fruitsdelight:cooking/cranberry_muffin',
-        ],
-        [
-          'blueberry_muffin',
-          'createdelightcore:unbaked_blueberry_muffin',
-          'fruitsdelight:blueberry_muffin',
-          ['bakeries:paper_cup_cake_paste', 'fruitsdelight:blueberry'],
-          'fruitsdelight:cooking/blueberry_muffin',
-        ],
-        [
-          'monster_muffin',
-          'createdelightcore:unbaked_monster_muffin',
-          'dungeonsdelight:monster_muffin',
-          [
-            'bakeries:paper_cup_cake_paste',
-            'dungeonsdelight:spider_extract',
-            'dungeonsdelight:rotbulb',
-          ],
-          'dungeonsdelight:monster_cooking/misc/monster_muffin',
-        ],
-      ].forEach(([path, unbaked, muffin, ingredients, recipeId]) => {
-        removeIfPresent(recipeId);
-
-        if (ingredients.length === 2) {
-          event.recipes.create.deploying(unbaked, ingredients).id(id(`deploying/${path}`));
-        } else {
-          event.recipes.create
-            .sequenced_assembly(unbaked, ingredients[0], [
-              event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[1]]),
-              event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[2]]),
-            ])
-            .loops(1)
-            .transitionalItem(ingredients[0])
-            .id(id(`sequenced_assembly/${path}`));
-        }
-
-        event.recipes.ratatouille
-          .baking(muffin, unbaked)
-          .processingTime(100)
-          .id(id(`baking/${path}`));
-      });
+      // 呃呃啊啊: bakeries:paper_cup_cake_paste is missing for now.
+      // [
+      //   [
+      //     'cranberry_muffin',
+      //     'createdelightcore:unbaked_cranberry_muffin',
+      //     'fruitsdelight:cranberry_muffin',
+      //     ['bakeries:paper_cup_cake_paste', 'fruitsdelight:cranberry'],
+      //     'fruitsdelight:cooking/cranberry_muffin',
+      //   ],
+      //   [
+      //     'blueberry_muffin',
+      //     'createdelightcore:unbaked_blueberry_muffin',
+      //     'fruitsdelight:blueberry_muffin',
+      //     ['bakeries:paper_cup_cake_paste', 'fruitsdelight:blueberry'],
+      //     'fruitsdelight:cooking/blueberry_muffin',
+      //   ],
+      //   [
+      //     'monster_muffin',
+      //     'createdelightcore:unbaked_monster_muffin',
+      //     'dungeonsdelight:monster_muffin',
+      //     [
+      //       'bakeries:paper_cup_cake_paste',
+      //       'dungeonsdelight:spider_extract',
+      //       'dungeonsdelight:rotbulb',
+      //     ],
+      //     'dungeonsdelight:monster_cooking/misc/monster_muffin',
+      //   ],
+      // ].forEach(([path, unbaked, muffin, ingredients, recipeId]) => {
+      //   removeIfPresent(recipeId);
+      //
+      //   if (ingredients.length === 2) {
+      //     event.recipes.create.deploying(unbaked, ingredients).id(id(`deploying/${path}`));
+      //   } else {
+      //     event.recipes.create
+      //       .sequenced_assembly(unbaked, ingredients[0], [
+      //         event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[1]]),
+      //         event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[2]]),
+      //       ])
+      //       .loops(1)
+      //       .transitionalItem(ingredients[0])
+      //       .id(id(`sequenced_assembly/${path}`));
+      //   }
+      //
+      //   event.recipes.ratatouille
+      //     .baking(muffin, unbaked)
+      //     .processingTime(100)
+      //     .id(id(`baking/${path}`));
+      // });
     }
 
     if (global.hasAllMods(['vintagedelight', 'northstar', 'farmersdelight'])) {
@@ -480,16 +481,18 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
         .id(id('crafting/phantom_compost'));
     }
 
-    if (global.hasAllMods(['vintagedelight', 'northstar', 'netherexp'])) {
-      event.recipes.vintagedelight
-        .fermenting('createdelightcore:luna_soil', [
-          'createdelightcore:phantom_compost',
-          'northstar:enriched_glowstone_ore',
-          Fluid.of('netherexp:ectoplasm', 100),
-        ])
-        .processingTime(600)
-        .id(id('fermenting/luna_soil'));
-    }
+    // 呃呃啊啊: vintagedelight:fermenting currently accepts item ingredients only,
+    // but the original recipe requires netherexp:ectoplasm fluid.
+    // if (global.hasAllMods(['vintagedelight', 'northstar', 'netherexp'])) {
+    //   event.recipes.vintagedelight
+    //     .fermenting('createdelightcore:luna_soil', [
+    //       'createdelightcore:phantom_compost',
+    //       'northstar:enriched_glowstone_ore',
+    //       Fluid.of('netherexp:ectoplasm', 100),
+    //     ])
+    //     .processingTime(600)
+    //     .id(id('fermenting/luna_soil'));
+    // }
 
     if (global.hasAllMods(['lightmanscurrency'])) {
       event.recipes.kubejs
@@ -654,6 +657,22 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
 
           return { item: ingredient };
         };
+        let createdelightcoreSushiTagHasAny = function (tag) {
+          if (tag === 'c:roe') {
+            return ['oceanic_delight:salmon_eggs', 'oceanic_delight:ancient_fish_eggs'].some(
+              (item) => global.itemExists(item)
+            );
+          }
+
+          return true;
+        };
+        let createdelightcoreSushiIngredientExists = function (ingredient) {
+          if (ingredient.startsWith('#')) {
+            return createdelightcoreSushiTagHasAny(ingredient.slice(1));
+          }
+
+          return global.itemExists(ingredient);
+        };
         let createdelightcoreSushiDeployingStep = function (incomplete, ingredient) {
           return {
             type: 'create:deploying',
@@ -693,7 +712,11 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
               }
 
               const ingredient = step.ingredients[1];
-              return true;
+              if (ingredient.tag) {
+                return createdelightcoreSushiTagHasAny(ingredient.tag);
+              }
+
+              return global.itemExists(ingredient.item);
             })
           ) {
             return;
@@ -906,13 +929,15 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
             'gunkan/tobiko_gunkan'
           );
 
-          event
-            .custom({
-              type: 'create:deploying',
-              ingredients: [{ item: 'youkaishomecoming:california_roll' }, { tag: 'c:roe' }],
-              results: [{ id: 'youkaishomecoming:roe_california_roll' }],
-            })
-            .id(id('deploying/roe_california_roll'));
+          if (createdelightcoreSushiIngredientExists('#c:roe')) {
+            event
+              .custom({
+                type: 'create:deploying',
+                ingredients: [{ item: 'youkaishomecoming:california_roll' }, { tag: 'c:roe' }],
+                results: [{ id: 'youkaishomecoming:roe_california_roll' }],
+              })
+              .id(id('deploying/roe_california_roll'));
+          }
 
           createdelightcoreSushiSequencedAssembly(
             'youkaishomecoming:rainbow_roll',

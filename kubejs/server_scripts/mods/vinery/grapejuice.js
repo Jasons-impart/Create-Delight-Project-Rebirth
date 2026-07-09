@@ -107,16 +107,17 @@ if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
         'vinery:white_taiga_grapejuice',
         'createdelightcore:taiga_white_grapejuice',
       ],
-      [
-        'nethervinery:warped_grape',
-        'nethervinery:warped_grapejuice',
-        'createdelightcore:warped_grapejuice',
-      ],
-      [
-        'nethervinery:crimson_grape',
-        'nethervinery:crimson_grapejuice',
-        'createdelightcore:crimson_grapejuice',
-      ],
+      // 呃呃啊啊: nethervinery warped/crimson grapejuice fluids are missing for now.
+      // [
+      //   'nethervinery:warped_grape',
+      //   'nethervinery:warped_grapejuice',
+      //   'createdelightcore:warped_grapejuice',
+      // ],
+      // [
+      //   'nethervinery:crimson_grape',
+      //   'nethervinery:crimson_grapejuice',
+      //   'createdelightcore:crimson_grapejuice',
+      // ],
     ].forEach((recipe) => {
       const grape = recipe[0];
       const bottle = recipe[1];

@@ -249,22 +249,23 @@ if (global.hasAllMods(['collectorsreap', 'farmersdelight', 'create', 'createdeli
       ])
       .id(id('crafting/mint_limeade'));
 
-    limeadeFluidRecipe('limeade', ['collectorsreap:lime', 'minecraft:sugar']);
-    limeadeFluidRecipe(
-      'berry_limeade',
-      ['collectorsreap:lime', Ingredient.of('#c:foods/berry'), 'minecraft:sugar'],
-      '#c:foods/berry'
-    );
-    limeadeFluidRecipe(
-      'pink_limeade',
-      ['collectorsreap:lime', 'collectorsreap:pomegranate', 'minecraft:sugar'],
-      'collectorsreap:pomegranate'
-    );
-    limeadeFluidRecipe(
-      'mint_limeade',
-      ['collectorsreap:lime', Ingredient.of('#neapolitan:mint_leaves'), 'minecraft:sugar'],
-      '#neapolitan:mint_leaves'
-    );
+    // 呃呃啊啊: create_central_kitchen limeade fluids are missing for now.
+    // limeadeFluidRecipe('limeade', ['collectorsreap:lime', 'minecraft:sugar']);
+    // limeadeFluidRecipe(
+    //   'berry_limeade',
+    //   ['collectorsreap:lime', Ingredient.of('#c:foods/berry'), 'minecraft:sugar'],
+    //   '#c:foods/berry'
+    // );
+    // limeadeFluidRecipe(
+    //   'pink_limeade',
+    //   ['collectorsreap:lime', 'collectorsreap:pomegranate', 'minecraft:sugar'],
+    //   'collectorsreap:pomegranate'
+    // );
+    // limeadeFluidRecipe(
+    //   'mint_limeade',
+    //   ['collectorsreap:lime', Ingredient.of('#neapolitan:mint_leaves'), 'minecraft:sugar'],
+    //   '#neapolitan:mint_leaves'
+    // );
 
     cooking(
       'potato_fritters',

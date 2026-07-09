@@ -165,7 +165,8 @@ if (global.hasMod('quality_food')) {
         'bakeries:bagel_dough',
         'bakeries:whole_wheat_bagel_dough',
         'bakeries:round_bread_dough',
-        'bakeries:berry_bread_dough',
+        // 呃呃啊啊: bakeries:berry_bread_dough is missing for now.
+        // 'bakeries:berry_bread_dough',
         'bakeries:brown_sugar_roll_dough',
         'bakeries:pineapple_bun_dough',
         'bakeries:meat_floss_bread_dough',

@@ -47,60 +47,63 @@ if (global.hasAllMods(['create_central_kitchen', 'create'])) {
       'create_central_kitchen:crafting/adzuki_bun_from_dough',
     ].forEach(removeIfPresent);
 
-    create
-      .mixing(Fluid.of('create_central_kitchen:tomato_sauce', 250), [
-        Ingredient.of('#c:crops/tomato').withCount(2),
-        'minecraft:sugar',
-      ])
-      .id(id('mixing/tomato_sauce'));
+    // 呃呃啊啊: create_central_kitchen:tomato_sauce fluid is missing for now.
+    // create
+    //   .mixing(Fluid.of('create_central_kitchen:tomato_sauce', 250), [
+    //     Ingredient.of('#c:crops/tomato').withCount(2),
+    //     'minecraft:sugar',
+    //   ])
+    //   .id(id('mixing/tomato_sauce'));
 
-    if (global.hasMod('corn_delight')) {
-      create
-        .mixing(Fluid.of('create_central_kitchen:creamy_corn_drink', 250), [
-          'createdelightcore:corn_flour',
-          fluid_tag_ingredient('c:milk', 250),
-          'minecraft:sugar',
-        ])
-        .heated()
-        .id(id('mixing/creamy_corn_drink'));
+    // 呃呃啊啊: create_central_kitchen:creamy_corn_drink fluid is missing for now.
+    // if (global.hasMod('corn_delight')) {
+    //   create
+    //     .mixing(Fluid.of('create_central_kitchen:creamy_corn_drink', 250), [
+    //       'createdelightcore:corn_flour',
+    //       fluid_tag_ingredient('c:milk', 250),
+    //       'minecraft:sugar',
+    //     ])
+    //     .heated()
+    //     .id(id('mixing/creamy_corn_drink'));
+    //
+    //   create
+    //     .filling('corn_delight:creamy_corn_drink', [
+    //       'minecraft:glass_bottle',
+    //       Fluid.of('create_central_kitchen:creamy_corn_drink', 250),
+    //     ])
+    //     .id(id('filling/creamy_corn_drink'));
+    //   create
+    //     .emptying(
+    //       ['minecraft:glass_bottle', Fluid.of('create_central_kitchen:creamy_corn_drink', 250)],
+    //       'corn_delight:creamy_corn_drink'
+    //     )
+    //     .id(id('emptying/creamy_corn_drink'));
+    // }
 
-      create
-        .filling('corn_delight:creamy_corn_drink', [
-          'minecraft:glass_bottle',
-          Fluid.of('create_central_kitchen:creamy_corn_drink', 250),
-        ])
-        .id(id('filling/creamy_corn_drink'));
-      create
-        .emptying(
-          ['minecraft:glass_bottle', Fluid.of('create_central_kitchen:creamy_corn_drink', 250)],
-          'corn_delight:creamy_corn_drink'
-        )
-        .id(id('emptying/creamy_corn_drink'));
-    }
-
-    if (global.hasMod('corn_delight')) {
-      create
-        .mixing(Fluid.of('create_central_kitchen:corn_soup', 250), [
-          'createdelightcore:corn_flour',
-          fluid_tag_ingredient('c:milk', 250),
-          Ingredient.of('#c:salad_ingredients'),
-          Ingredient.of('#brewinandchewin:raw_meats'),
-        ])
-        .heated()
-        .id(id('mixing/corn_soup'));
-
-      create
-        .filling('corn_delight:corn_soup', [
-          'minecraft:bowl',
-          Fluid.of('create_central_kitchen:corn_soup', 250),
-        ])
-        .id(id('filling/corn_soup'));
-      create
-        .emptying(
-          ['minecraft:bowl', Fluid.of('create_central_kitchen:corn_soup', 250)],
-          'corn_delight:corn_soup'
-        )
-        .id(id('emptying/corn_soup'));
-    }
+    // 呃呃啊啊: create_central_kitchen:corn_soup fluid may be missing alongside corn drink.
+    // if (global.hasMod('corn_delight')) {
+    //   create
+    //     .mixing(Fluid.of('create_central_kitchen:corn_soup', 250), [
+    //       'createdelightcore:corn_flour',
+    //       fluid_tag_ingredient('c:milk', 250),
+    //       Ingredient.of('#c:salad_ingredients'),
+    //       Ingredient.of('#brewinandchewin:raw_meats'),
+    //     ])
+    //     .heated()
+    //     .id(id('mixing/corn_soup'));
+    //
+    //   create
+    //     .filling('corn_delight:corn_soup', [
+    //       'minecraft:bowl',
+    //       Fluid.of('create_central_kitchen:corn_soup', 250),
+    //     ])
+    //     .id(id('filling/corn_soup'));
+    //   create
+    //     .emptying(
+    //       ['minecraft:bowl', Fluid.of('create_central_kitchen:corn_soup', 250)],
+    //       'corn_delight:corn_soup'
+    //     )
+    //     .id(id('emptying/corn_soup'));
+    // }
   });
 }

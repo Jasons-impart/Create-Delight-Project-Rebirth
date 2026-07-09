@@ -4,8 +4,10 @@ if (global.hasAllMods(['createdeco', 'create', 'createaddition', 'vintageimprove
 
     [
       'createdeco:industrial_iron_ingot',
-      'createdeco:industrial_iron_block',
-      'createdeco:netherite_ingot',
+      // 呃呃啊啊: createdeco:industrial_iron_block is missing for now.
+      // 'createdeco:industrial_iron_block',
+      // 呃呃啊啊: createdeco:netherite_ingot is missing for now.
+      // 'createdeco:netherite_ingot',
       'createdeco:netherite_nugget',
       'createdeco:copper_coin',
       'createdeco:iron_coin',

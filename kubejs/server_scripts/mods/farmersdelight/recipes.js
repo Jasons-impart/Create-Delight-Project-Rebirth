@@ -27,21 +27,24 @@ if (global.hasAllMods(['farmersdelight', 'create'])) {
 
 ServerEvents.compostableRecipes((event) => {
   [
-    ['createdelightcore:adzuki_beans_seed', 0.3],
+    // 呃呃啊啊: createdelightcore:adzuki_beans_seed is missing for now.
+    // ['createdelightcore:adzuki_beans_seed', 0.3],
     ['dumplings_delight:eggplant_seeds', 0.3],
     ['dumplings_delight:chinese_cabbage_seeds', 0.3],
     ['dumplings_delight:garlic_chive_seeds', 0.3],
     ['dumplings_delight:fennel_seeds', 0.3],
-    ['createdelightcore:artemisia_argyi_seed', 0.3],
+    // ['createdelightcore:artemisia_argyi_seed', 0.3],
     ['dumplings_delight:chinese_cabbage', 0.65],
     ['dumplings_delight:garlic_chive', 0.65],
     ['dumplings_delight:fennel', 0.65],
     ['dumplings_delight:eggplant', 0.65],
-    ['dumplings_delight:mugwort', 0.5],
+    // 呃呃啊啊: dumplings_delight:mugwort is missing for now.
+    // ['dumplings_delight:mugwort', 0.5],
     ['dumplings_delight:garlic', 0.5],
     ['dumplings_delight:greenonion', 0.5],
     ['dumplings_delight:chinese_cabbage_leaf', 0.5],
-    ['dumplings_delight:jujube', 0.5],
+    // 呃呃啊啊: dumplings_delight:jujube is missing for now.
+    // ['dumplings_delight:jujube', 0.5],
     ['culturaldelights:corn_cob', 0.3],
     ['culturaldelights:eggplant', 0.3],
     ['createcafe:cassava_root', 0.3],

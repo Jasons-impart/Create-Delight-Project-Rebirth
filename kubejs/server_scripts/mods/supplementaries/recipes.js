@@ -13,17 +13,18 @@ if (
     remove_recipes_id(event, ['supplementaries:lumisene_bottle']);
     remove_recipes_output(event, ['supplementaries:sugar_cube']);
 
-    create
-      .sequenced_assembly('supplementaries:antique_ink', 'minecraft:glass_bottle', [
-        create.filling('minecraft:glass_bottle', [
-          'minecraft:glass_bottle',
-          Fluid.of('create_enchantment_industry:ink', 1000),
-        ]),
-        create.deploying('minecraft:glass_bottle', ['minecraft:glass_bottle', '#minecraft:planks']),
-      ])
-      .transitionalItem('minecraft:glass_bottle')
-      .loops(1)
-      .id(id('sequenced_assembly/antique_ink'));
+    // 呃呃啊啊: create_enchantment_industry:ink fluid is missing for now.
+    // create
+    //   .sequenced_assembly('supplementaries:antique_ink', 'minecraft:glass_bottle', [
+    //     create.filling('minecraft:glass_bottle', [
+    //       'minecraft:glass_bottle',
+    //       Fluid.of('create_enchantment_industry:ink', 1000),
+    //     ]),
+    //     create.deploying('minecraft:glass_bottle', ['minecraft:glass_bottle', '#minecraft:planks']),
+    //   ])
+    //   .transitionalItem('minecraft:glass_bottle')
+    //   .loops(1)
+    //   .id(id('sequenced_assembly/antique_ink'));
 
     create
       .mixing(Fluid.of('supplementaries:lumisene', 100), [

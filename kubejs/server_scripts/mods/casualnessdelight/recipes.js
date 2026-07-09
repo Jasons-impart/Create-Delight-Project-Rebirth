@@ -103,7 +103,7 @@ if (global.hasAllMods(['casualnessdelight', 'createdelightcore'])) {
       ['casualnessdelight:tonkatsu', 'createdelightcore:unfried_tonkatsu'],
       ['casualnessdelight:fried_chicken_chip', 'createdelightcore:unfried_chicken_chip'],
       ['casualnessdelight:spring_roll', 'casualnessdelight:raw_spring_roll'],
-      ['casualnessdelight:plate_of_fried_dumpling', 'casualnessdelight:raw_fried_dumpling'],
+      //  呃呃啊啊 ['casualnessdelight:plate_of_fried_dumpling', 'casualnessdelight:raw_fried_dumpling'],
       ['create_bic_bit:fries', 'create_bic_bit:raw_fries'],
       ['create_deepfried:donut', 'create_deepfried:raw_donut'],
       ['create_deepfried:onion_rings', 'create_deepfried:raw_onion_rings'],

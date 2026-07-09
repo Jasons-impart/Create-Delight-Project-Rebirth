@@ -19,7 +19,8 @@ if (global.hasMod('eclipticseasons')) {
       'dumplings_delight:eggplant_seeds',
       'dumplings_delight:fennel_seeds',
       'createdelightcore:artemisia_argyi_seed',
-      'createdelightcore:adzuki_beans_seed',
+      // 呃呃啊啊: createdelightcore:adzuki_beans_seed is missing for now.
+      // 'createdelightcore:adzuki_beans_seed',
       'fruitsdelight:pear_leaves',
       'fruitsdelight:pear_sapling',
       'fruitsdelight:hawberry_leaves',
@@ -108,7 +109,8 @@ if (global.hasMod('eclipticseasons')) {
       'dumplings_delight:eggplant_seeds',
       'culturaldelights:eggplant_seeds',
       'neapolitan:strawberry_pips',
-      'createdelightcore:adzuki_beans_seed',
+      // 呃呃啊啊: createdelightcore:adzuki_beans_seed is missing for now.
+      // 'createdelightcore:adzuki_beans_seed',
     ]);
     addExisting('eclipticseasons:crops/spring_autumn_winter', [
       'dumplings_delight:chinese_cabbage_seeds',

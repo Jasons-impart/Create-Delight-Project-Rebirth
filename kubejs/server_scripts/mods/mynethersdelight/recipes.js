@@ -161,15 +161,10 @@ if (global.hasAllMods(['mynethersdelight', 'create', 'farmersdelight'])) {
       .cooking(
         'meals',
         [
-          Ingredient.of([
-            'mynethersdelight:hoglin_loin',
-            'mynethersdelight:hoglin_sausage',
-            '#c:foods/cooked_sausage',
-            'mynethersdelight:cooked_loin',
-          ]),
+          Ingredient.of('#createdelightcore:mynethersdelight/spicy_hoglin_stew_meats'),
           Ingredient.of('#c:crops/potato'),
           Ingredient.of('#c:crops/carrot'),
-          Ingredient.of(['mynethersdelight:bullet_pepper', 'mynethersdelight:pepper_powder']),
+          Ingredient.of('#createdelightcore:mynethersdelight/spicy_hoglin_stew_peppers'),
         ],
         'mynethersdelight:spicy_hoglin_stew',
         1.0,
@@ -227,14 +222,15 @@ if (global.hasAllMods(['mynethersdelight', 'create', 'farmersdelight'])) {
       ])
       .id(id('filling/golden_egg'));
 
-    if (global.hasMod('netherexp')) {
-      create
-        .emptying(
-          [Fluid.of('netherexp:ectoplasm', 250), 'minecraft:bowl', 'mynethersdelight:ghasta'],
-          'mynethersdelight:plate_of_ghasta_with_cream'
-        )
-        .id(id('emptying/ghasta'));
-    }
+    // 呃呃啊啊: Create emptying only supports one item output, but the original wants bowl + ghasta.
+    // if (global.hasMod('netherexp')) {
+    //   create
+    //     .emptying(
+    //       [Fluid.of('netherexp:ectoplasm', 250), 'minecraft:bowl', 'mynethersdelight:ghasta'],
+    //       'mynethersdelight:plate_of_ghasta_with_cream'
+    //     )
+    //     .id(id('emptying/ghasta'));
+    // }
 
     if (global.hasMod('bakeries')) {
       create

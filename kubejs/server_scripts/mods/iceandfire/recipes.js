@@ -32,7 +32,8 @@ if (global.hasMod('iceandfire')) {
       'iceandfire:dragonsteel_lightning_axe',
       'iceandfire:dragonsteel_lightning_shovel',
       'iceandfire:dragonsteel_lightning_hoe',
-      'dreadsteel:dreadsteel_ingot',
+      // 呃呃啊啊: dreadsteel:dreadsteel_ingot is missing for now.
+      // 'dreadsteel:dreadsteel_ingot',
     ].filter((item) => true);
 
     if (removableOutputs.length) {

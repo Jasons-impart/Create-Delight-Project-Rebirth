@@ -6,6 +6,21 @@ if (global.hasMod('mynethersdelight')) {
         global.itemExists(id)
       )
     );
+    event.add(
+      'createdelightcore:mynethersdelight/spicy_hoglin_stew_meats',
+      [
+        'mynethersdelight:hoglin_loin',
+        'mynethersdelight:hoglin_sausage',
+        '#c:foods/cooked_sausage',
+        'mynethersdelight:cooked_loin',
+      ].filter((id) => String(id).startsWith('#') || global.itemExists(id))
+    );
+    event.add(
+      'createdelightcore:mynethersdelight/spicy_hoglin_stew_peppers',
+      ['mynethersdelight:bullet_pepper', 'mynethersdelight:pepper_powder'].filter((id) =>
+        global.itemExists(id)
+      )
+    );
 
     [
       'mynethersdelight:hoglin_sausage',

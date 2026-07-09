@@ -9,15 +9,8 @@ if (global.hasAllMods(['the_bumblezone', 'create'])) {
         event.remove({ id: recipeId });
       }
     };
-    const firstFluid = (ids) => ids.find((fluid) => global.fluidExists(fluid));
-    const royalJelly = firstFluid([
-      'the_bumblezone:royal_jelly_fluid_still',
-      'the_bumblezone:royal_jelly_fluid',
-    ]);
-    const sugarWater = firstFluid([
-      'the_bumblezone:sugar_water_still',
-      'the_bumblezone:sugar_water',
-    ]);
+    const royalJelly = 'the_bumblezone:royal_jelly_fluid_still';
+    const sugarWater = 'the_bumblezone:sugar_water_still';
 
     [
       'the_bumblezone:bee_bread/from_bucket',
@@ -25,32 +18,30 @@ if (global.hasAllMods(['the_bumblezone', 'create'])) {
       'the_bumblezone:sugar_water_bucket',
     ].forEach(removeIfPresent);
 
-    if (royalJelly) {
-      create
-        .compacting('the_bumblezone:royal_jelly_block', Fluid.of(royalJelly, 1000))
-        .id(id('compacting/royal_jelly'));
-      create
-        .mixing(Fluid.of(royalJelly, 1000), 'the_bumblezone:royal_jelly_block')
-        .heated()
-        .id(id('mixing/royal_jelly'));
-      create
-        .filling('the_bumblezone:royal_jelly_bottle', [
-          'minecraft:glass_bottle',
-          Fluid.of(royalJelly, 250),
-        ])
-        .id(id('filling/royal_jelly_bottle'));
+    create
+      .compacting('the_bumblezone:royal_jelly_block', Fluid.of(royalJelly, 1000))
+      .id(id('compacting/royal_jelly'));
+    create
+      .mixing(Fluid.of(royalJelly, 1000), 'the_bumblezone:royal_jelly_block')
+      .heated()
+      .id(id('mixing/royal_jelly'));
+    create
+      .filling('the_bumblezone:royal_jelly_bottle', [
+        'minecraft:glass_bottle',
+        Fluid.of(royalJelly, 250),
+      ])
+      .id(id('filling/royal_jelly_bottle'));
 
-      event
-        .shapeless('the_bumblezone:royal_jelly_block', 'the_bumblezone:royal_jelly_bucket')
-        .replaceIngredient('the_bumblezone:royal_jelly_bucket', 'minecraft:bucket')
-        .id(id('crafting/royal_jelly_block_from_bucket'));
-      event
-        .shapeless('the_bumblezone:royal_jelly_bucket', [
-          'minecraft:bucket',
-          'the_bumblezone:royal_jelly_block',
-        ])
-        .id(id('crafting/royal_jelly_bucket_from_block'));
-    }
+    event
+      .shapeless('the_bumblezone:royal_jelly_block', 'the_bumblezone:royal_jelly_bucket')
+      .replaceIngredient('the_bumblezone:royal_jelly_bucket', 'minecraft:bucket')
+      .id(id('crafting/royal_jelly_block_from_bucket'));
+    event
+      .shapeless('the_bumblezone:royal_jelly_bucket', [
+        'minecraft:bucket',
+        'the_bumblezone:royal_jelly_block',
+      ])
+      .id(id('crafting/royal_jelly_bucket_from_block'));
 
     create
       .compacting('minecraft:honey_block', Fluid.of('create:honey', 1000))

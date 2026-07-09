@@ -182,15 +182,16 @@ if (global.hasAllMods(['ratatouille', 'create', 'vintageimprovements', 'createde
         )
         .id(id('freezing/white_chocolate_mold_filled'));
 
-      create
-        .mixing(Fluid.of('create_confectionery:ruby_chocolate', 250), [
-          'ratatouille:cocoa_solids',
-          'ratatouille:cocoa_butter',
-          Fluid.of('create_central_kitchen:dragon_breath', 250),
-          'minecraft:sugar',
-        ])
-        .heated()
-        .id(id('mixing/ruby_chocolate'));
+      // 呃呃啊啊: create_dragons_plus:dragon_breath fluid is missing for now.
+      // create
+      //   .mixing(Fluid.of('create_confectionery:ruby_chocolate', 250), [
+      //     'ratatouille:cocoa_solids',
+      //     'ratatouille:cocoa_butter',
+      //     Fluid.of('create_dragons_plus:dragon_breath', 250),
+      //     'minecraft:sugar',
+      //   ])
+      //   .heated()
+      //   .id(id('mixing/ruby_chocolate'));
       create
         .filling('createdelightcore:ruby_chocolate_mold_filled', [
           'ratatouille:chocolate_mold',
