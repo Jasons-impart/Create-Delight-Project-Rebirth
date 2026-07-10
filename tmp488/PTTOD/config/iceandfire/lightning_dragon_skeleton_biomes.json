@@ -1,0 +1,25 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "northstar:venus_biomes"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:baobab_savanna"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:araucaria_savanna"
+      }
+    ]
+  ]
+}

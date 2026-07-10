@@ -1,0 +1,270 @@
+{
+	"size": "large",
+	"color": "#CD9B9B",
+	"waves": [
+		{
+			"entities": [
+				{
+					"entity": "alexscaves:caniac",
+					"count": 12
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "generic.max_health",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.5
+				},
+				{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.5
+				},
+				{
+					"attribute": "generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.2
+				},
+				{
+					"attribute": "generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.2 
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "alexscaves:caniac",
+					"rolls": 12
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:gingerbread_crumbs", 
+                        "count": 18
+					    }
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:music_disc_tasty", 
+                        "count": 1
+					    }
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"entity": "alexscaves:gumbeeper",
+					"count": 8
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "generic.max_health",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.5
+				},
+				{
+					"attribute": "generic.armor",
+					"operation": "ADDITION",
+					"value": 10
+				},
+				{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 4.0
+				},
+				{
+					"attribute": "generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": -0.2
+				},
+				{
+					"attribute": "generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.4
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "alexscaves:gumbeeper",
+					"rolls": 8
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:shot_gum", 
+                        "count": 1
+					    }
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:frostmint_spear", 
+                        "count": 1
+					    }
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 150
+		},
+		{
+			"entities": [
+				{
+					"entity": "alexscaves:caramel_cube",
+					"count": 12
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "generic.max_health",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.5
+				},
+				{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.5
+				},
+				{
+					"attribute": "generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.2
+				},
+				{
+					"attribute": "generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.2 
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "alexscaves:caramel_cube",
+					"rolls": 12
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:sack_of_sating", 
+                        "count": 1
+					    }
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"entity": "alexscaves:licowitch",
+					"count": 12
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "generic.max_health",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 2.0
+				},
+				{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.5
+				},
+				{
+					"attribute": "generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.2
+				},
+				{
+					"attribute": "generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.2 
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "alexscaves:licowitch",
+					"rolls": 8
+                },
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:sugar_staff", 
+                        "count": 1
+                    }
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"entity": "alexscaves:licowitch",
+					"count": 1
+				}
+			],
+       
+			"modifiers": [
+				{
+					"attribute": "generic.max_health",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 24.0
+				},
+				{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 4.0
+				},
+				{
+					"attribute": "generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.8
+				},
+				{
+					"attribute": "generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.1 
+				},
+								{
+					"attribute": "generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.5
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "gateways:gate_pearl", 
+                        "count": 2,
+                        "nbt" : {"gateway":"createdelight:sweettide_brokenpoint"}}
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+                        "item": "alexscaves:biome_treat", 
+                        "count": 4
+                    }
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 100
+		}
+    ],
+	"failures": [
+        {
+        "type": "gateways:explosion",
+        "strength": 5,
+        "fire": true,
+        "block_damage": false
+    }]
+}

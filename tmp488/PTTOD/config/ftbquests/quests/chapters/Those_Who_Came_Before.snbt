@@ -1,0 +1,4122 @@
+{
+	autofocus_id: "3821026AD7352739"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Those_Who_Came_Before"
+	group: "57E934AC8166BC73"
+	icon: {
+		Count: 1
+		id: "tetra:modular_double"
+		tag: {
+			Damage: 0
+			"double/basic_hammer_left_material": "basic_hammer/netherite"
+			"double/basic_hammer_right_material": "basic_hammer/netherite"
+			"double/basic_handle_material": "basic_handle/forged_beam"
+			"double/handle": "double/basic_handle"
+			"double/head_left": "double/basic_hammer_left"
+			"double/head_right": "double/basic_hammer_right"
+			id: "0880ce26-5935-4c28-b721-50dacdf1d998"
+		}
+	}
+	id: "4B6A861104F42DC2"
+	images: [
+		{
+			height: 1.17d
+			image: "minecraft:block/crafting_table_top"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/crafting_table_top"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/earthpiercer_0_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/earthpiercer_1_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/earthpiercer_0_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/earthpiercer_1_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/crafting_table_front"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/crafting_table_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/coal_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_coal_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_gold_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/coal_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/coal_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_coal_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_gold_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_0_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_1_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_2_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_0_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_1_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/stonecutter_2_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_0_2"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_1_2"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_2_2"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_0_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_1_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_2_1"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_0_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_1_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_schematic/extractor_2_0"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_hammer/hammer_base_socket"
+			order: 1
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_vent1"
+			rotation: 180.0d
+			width: 1.17d
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_vent2"
+			rotation: 180.0d
+			width: 1.17d
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_vent2"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_vent1"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/hammer_head_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.113d
+			y: 8.7d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/cell_top_charged"
+			order: 1
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.334d
+			y: 8.834d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_bench_top"
+			rotation: 90.0d
+			width: 1.17d
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_3"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_3"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_3"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall"
+			rotation: 90.0d
+			width: 1.17d
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_3"
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_3"
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_wall_2"
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_diamond_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_diamond_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_diamond_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_crate"
+			rotation: 180.0d
+			width: 1.17d
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_crate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_crate"
+			rotation: -90.0d
+			width: 1.17d
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_crate"
+			rotation: 90.0d
+			width: 1.17d
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_pillar_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_container/forged_container_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.9d
+			y: 10.9d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_container/forged_container_lid_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.9d
+			y: 10.75d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_redstone_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/seeping_bedrock_active"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/seeping_bedrock_inactive"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/seeping_bedrock_active"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/seeping_bedrock_inactive"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/extractor_pipe_powered"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_diamond_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_diamond_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_redstone_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate_redstone_ore"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_platform_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/seeping_bedrock_inactive"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "tetra:block/forged_crate"
+			order: 2
+			rotation: -90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "eclipticseasons:block/snowy_tall_grass_top"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/grass_block_snow"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			image: "minecraft:block/dirt"
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -1.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"48DABAA5BA34BE62"
+				"54C4F4CBC1B3E14B"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"每当我需要更高性能的工具时，我总得重新制作一把新的。有时我脑海中会闪过一个想法：是否可以&e直接更换工具一些的部件&r？这显然比重新制作一件工具性价比更高。带着这个念头，我尝试用石头制作了一把工具锤，希望能实现我的设想。"
+				"可以用石质的头部替换掉&e木锤&r锤头以获得&e石锤"
+				"也可以在工作台中用合成木锤的方式直接合成&e石锤"
+			]
+			id: "75C7395A84B2E478"
+			rewards: [{
+				count: 4
+				id: "38EAF3656B644B56"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "石锤了，Jason是兽耳女仆萝莉美少女"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_2"
+				criterion: ""
+				id: "47E4C1E5FD157B6A"
+				type: "advancement"
+			}]
+			title: "锤子Ⅱ"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31578474F05E7255"]
+			description: [
+				"普通的工作台已经无法满足我对工具改造的需求了，于是我用刚刚做好的锤子对工作台也进行了改造。"
+				"&e（使用锤子右键原版工作台）&r"
+			]
+			id: "3821026AD7352739"
+			rewards: [{
+				count: 4
+				id: "1053679CA5D8E3CA"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "放下工作台，然后用锤子右键它就行"
+			tasks: [{
+				advancement: "tetra:upgrades/workbench"
+				criterion: ""
+				id: "434991F6270078B1"
+				title: "锤子右键工作台"
+				type: "advancement"
+			}]
+			title: "新的工作台"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"54C4F4CBC1B3E14B"
+				"75C7395A84B2E478"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"石锤虽然暂且可以胜任早期的打造任务，但是显然不是长久之计。于是我决定升级我的锤子。"
+				"升级锤子时，我不能手搓锤头，因此我需要重新制作一把锤子。我先在加工台上用&e铁锭&r做锤头来替换了锤子的一端，但这把一端是铁、一端是石的锤子，仍然不足以胜任打造钻石部件的任务。于是我将另一端也换成了铁锤头，成功获得了一把铁锤。"
+			]
+			id: "0BAA9261B098316D"
+			rewards: [{
+				count: 4
+				id: "1F6D3F6D8877E68A"
+				item: "minecraft:rabbit_hide"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "八十！八十！八十！"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_3"
+				criterion: ""
+				id: "72FE65B4F2183317"
+				title: "制作铁锤"
+				type: "advancement"
+			}]
+			title: "这不是铁锤吗？"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["01FC78875A324DE3"]
+			description: [
+				"对锻造遗迹的探索少不了&e锤子&r与&e撬棍，也就是&e锤头&r与&e羊角头&r工具"
+				"建议带上精准采集的&6三级(铁锤)&r以上&e锤子与&6一级&r以上&e羊角头&r再去探索锻造遗迹"
+				"锻造遗迹本身不刷怪，但是在某些房间中含有&9流浪者&r刷怪笼，请出发前确保你的战斗补给"
+			]
+			id: "72908B9592992F33"
+			rewards: [{
+				id: "548FEB5152692E76"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "遗迹中的某些地方会有流浪者的刷怪笼哦，小心行事"
+			tasks: [{
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+				id: "171E19D26C841195"
+				title: "找到锻造遗迹"
+				type: "advancement"
+			}]
+			title: "昔人已逝"
+			x: 3.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72908B9592992F33"]
+			description: ["遗迹内的方块需要使用锤子采集，采集后会获得金属碎片，想要采集下来则需要附魔精准采集的锤子。"]
+			icon: "tetra:forged_platform"
+			id: "0941D2A2970EB5D1"
+			tasks: [{
+				id: "1DBB3EAE23C5E5CB"
+				title: "注意"
+				type: "checkmark"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"72908B9592992F33"
+				"7D85F4D95B6CC9FD"
+			]
+			description: [
+				"在遗迹中，我循着微光继续前行，最终找到了一个锻造加工台，其正上方悬挂着一把锻造锤，&e锻造台&r的精妙构造和斑驳的纹理无不诉说着岁月的痕迹。想必这一定是锻造师的心血结晶。"
+				"（锻造锤在无&e燃烧室&r加成下为&e五级&r锤等级）"
+			]
+			icon: "tetra:forged_workbench"
+			id: "27BFF02187AC557B"
+			rewards: [{
+				id: "17D5677520AFB799"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					icon: "tetra:hammer_base"
+					id: "32D5A9C9E4E992E8"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:hammer_base"
+					type: "observation"
+				}
+				{
+					icon: "tetra:forged_workbench"
+					id: "264A131323275452"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:forged_workbench"
+					type: "observation"
+				}
+			]
+			title: "锻造台！"
+			x: 3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5C346892D97CDD03"
+				"1E0BB246F04014C3"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&e黑石锤&r已经远远无法满足加工的需求了，我们现在需要去寻找失落的&e锻造遗迹&r，"
+				"锻造遗迹中的锻造锤拥有更高的锤等级"
+				"{ \"text\": \"点击此处寻找遗迹\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"01FC78875A324DE3\" } }"
+			]
+			id: "692DB8953E05EAE5"
+			optional: true
+			shape: "square"
+			subtitle: "（跑龙套的）"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_5"
+				criterion: ""
+				id: "01A6FA2B7630C275"
+				type: "advancement"
+			}]
+			title: "黑曜石锤"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["56758B34C00AEFF3"]
+			description: [
+				"可以被&e连接到锻造锤上&r，让用&e锻造锤锻造的主要组件&r略微提高属性（&e高质量&r），为锻造锤同时安装两个平面稳定器可使锻造的主要组件获得&e高质量Ⅱ&r，同时也可以作为弓的部件，安装后箭矢基本上不会受重力影响。"
+				"（&e注意若物品栏中有其他锤子，会优先使用锤子，因而无法享受到高质量效果，需要将锤子放到其他位置&r）"
+			]
+			id: "01D8FB94D56BB2E2"
+			subtitle: "高质量"
+			tasks: [{
+				id: "1B52F4DF65C456E2"
+				item: "tetra:planar_stabilizer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["72908B9592992F33"]
+			description: ["遗迹中除了小型的板条箱外，还有一种大型的容器，简单的方式无法将其打开，经过多次尝试后我终于成功将它们打开。需要先用锤子敲掉四个封印，然后用羊角锤撬开每个角。令我意外的是，这个容器的容量非常惊人，竟然有整整三页的存储空间。除了那些板条箱中的物资外，里面还有一本&e锻造师留下的笔记&r，这可得认真看看。"]
+			icon: "tetra:forged_container"
+			id: "5E3FECE8A3CF0983"
+			subtitle: "笔记正在完善中，敬请期待"
+			tasks: [{
+				icon: "tetra:forged_container"
+				id: "43D2F55666F28441"
+				observe_type: 0
+				timer: 0L
+				title: "在遗迹中找到锻造容器"
+				to_observe: "tetra:forged_container"
+				type: "observation"
+			}]
+			title: "锻造师的遗产"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5C346892D97CDD03"
+				"692DB8953E05EAE5"
+				"1E0BB246F04014C3"
+			]
+			dependency_requirement: "one_completed"
+			description: ["据笔记上所说，下界合金锤便是&5这个世界&r最强的锻造锤了，除此之外还可以通过&e打磨和镶嵌下界之星&r的方式进一步提升它的锻造能力。"]
+			id: "3A31CFC2ECFA2682"
+			rewards: [{
+				id: "51B6E985AE16583D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_6"
+				criterion: ""
+				id: "381E1CC339B1997A"
+				title: "打造下界合金锤"
+				type: "advancement"
+			}]
+			title: "六级锤"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["54C4F4CBC1B3E14B"]
+			description: [
+				"&e全息球&r可以直接右键使用，也可以&e放置&r为方块，并为其周围&e5×5&r范围的加工台提供原理图预览"
+				"&8全息球也可以放在加工台里改进，别说我没提醒！"
+				"在&e全息球&r中可以查看各种材料的属性，也可以查看不同材料对应部件的数值与等级"
+				"等级&6越高&r的材料制作的部件等级&6越高&r"
+			]
+			id: "31578474F05E7255"
+			rewards: [{
+				id: "4B19E52EC1E6EC90"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			subtitle: "不要搞丢了"
+			tasks: [{
+				id: "1635D32BF6CDB1B8"
+				item: {
+					Count: 1
+					id: "tetra:holo"
+					tag: {
+						"holo/core": "holo/core"
+						"holo/core_material": "frame/dim"
+						"holo/frame": "holo/frame"
+						"holo/frame_material": "core/ancient"
+						"holo/repo": "holo/repo"
+						"holo/repo_material": "repo/default"
+						"holo/scanner": "holo/scanner"
+						"holo/scanner_material": "scanner/default"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["27BFF02187AC557B"]
+			description: [
+				"热电池能量不足时会导致锻造锤无法使用，可以更换新的电池或者对热电池进行充电。"
+				"地核提取器下方需有&e直连渗流基岩&r的地核管道（亮着橙色光的管道为可用管道），使用锤子将传输单元&e调整至下图状态&r后，将热力电池放置在传输单元上即可充电"
+			]
+			icon: "tetra:seeping_bedrock"
+			id: "0D47AFE8234E04C6"
+			optional: true
+			tasks: [
+				{
+					icon: "tetra:extractor_pipe"
+					id: "6811C22CA43A795C"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:extractor_pipe"
+					type: "observation"
+				}
+				{
+					icon: "tetra:core_extractor"
+					id: "27AA89DE997830B3"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:core_extractor"
+					type: "observation"
+				}
+				{
+					icon: "tetra:transfer_unit"
+					id: "739BFEB155E4895E"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:transfer_unit"
+					type: "observation"
+				}
+			]
+			title: "地核提取"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["56758B34C00AEFF3"]
+			dependency_requirement: "one_completed"
+			description: ["在遗迹中，我还发现了一些酷似电池的物品。这应该就是笔记中提到的热电池，只需将它们&e安装在锻造锤上&r，便能为其提供能量。"]
+			id: "7D85F4D95B6CC9FD"
+			rewards: [{
+				id: "2D6331C9515FDB39"
+				item: {
+					Count: 1
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "12374E522C8E74EB"
+				item: {
+					Count: 1
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["72908B9592992F33"]
+			dependency_requirement: "one_completed"
+			description: ["在遗迹中的&e大小容器&r中，我发现了许多散发着魔力气息的&e金属碎片&r。但是他们的用途我还暂时不得而知。也许&4锻造师的笔记&r上会提到。"]
+			id: "3629F1DBEEFAF2FF"
+			rewards: [{
+				count: 8
+				id: "47AEAE9033BB0521"
+				item: "tetra:metal_scrap"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72F79831CE4BD424"
+				item: "tetra:metal_scrap"
+				type: "item"
+			}]
+			title: "神秘金属"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["在挖矿时，我发现了一种&e闪烁着粒子效果的石头&r，出于好奇，我把它挖开了。这块石头与普通石头不同，我从中找到了一些奇特的矿石。&e用锤子在加工台上将其打碎后&r，发现了一些常见的矿石，偶尔还能获得罕见的宝石，甚至还有几颗毫无瑕疵的极品宝石。也许将这些宝石镶嵌在工具上，会带来更好的效果。"]
+			id: "1AF1B7498D6B8705"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2A99FD290702E6C9"
+				table_id: 2077532568744688732L
+				type: "random"
+			}]
+			subtitle: "开！主播主播，你的无瑕钻石确实很强，但还是太难获得了，有没有更加简单又强势的宝石推荐一下吗？有的兄弟有的，这么强的宝石当然不止一颗，一共有九颗，都是版本T0.5的超标宝石。"
+			tasks: [{
+				id: "35E66C31CB7BC45B"
+				item: "tetra:geode"
+				type: "item"
+			}]
+			title: "开宝！"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3A31CFC2ECFA2682"]
+			description: [
+				"在使用工具的过程中，我发现了一种提升性能的方式：当&e双头工具&r的&e其中一个&r头部打磨&e五次&r后，&e下一次打磨&r可以&4直接提升工具的&e等级&r。此外，笔记中还提到为工具镶嵌&4下界之星&r可以进一步增强它的性能。通过这一系列操作，最终可以获得锻造等级高达八级的锻造锤。"
+				"在后续解锁更高级的材料后可以打造更加强大的锻造锤。"
+				"{ \"text\": \"龙钢锤\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"111C12092510C3F4\" } }"
+				"{ \"text\": \"终末钢/悚怖钢锤\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1F7DE13987C20264\" } }"
+			]
+			icon: "minecraft:nether_star"
+			id: "1AA8B7F6B283121A"
+			optional: true
+			rewards: [{
+				id: "6F021D02BD1F0BC4"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "在打磨完全或是镶嵌下界之星中两种方法中达成一个即可打造出七级锤"
+			tasks: [{
+				id: "67CA9F03C6B83A4B"
+				title: "打造出七级锤"
+				type: "checkmark"
+			}]
+			title: "七级锤"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"54C4F4CBC1B3E14B"
+				"75C7395A84B2E478"
+				"0BAA9261B098316D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["在打造钻石部件时，铁锤的硬度也已经不够了。我尝试用钻石制作锤头，但钻石难以成型。而铁锤显然无法打造黑曜石锤。于是我退而求其次，选择用硬度稍低但带有下界魔力的&e黑石&r来制作锤头，希望它能与钻石产生某种特殊反应，没想到居然成功了！"]
+			id: "1E0BB246F04014C3"
+			rewards: [{
+				count: 4
+				id: "5996F27088E17FF9"
+				item: "minecraft:twisting_vines"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "黑石锤"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_4"
+				criterion: ""
+				id: "25ADD591E90B355A"
+				title: "制作黑石锤"
+				type: "advancement"
+			}]
+			title: "黑石锤"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1E0BB246F04014C3"
+				"0BAA9261B098316D"
+				"1CB33EA048068637"
+				"54C4F4CBC1B3E14B"
+				"75C7395A84B2E478"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"据说，&e锻造遗迹&r往往会在寒冷的群系中，不过，随着考古发掘的推进，在各个群系中逐渐发现了更多的&e锻造遗迹"
+				"你可以用紫水晶或末影之眼升级你的&e全息球&r来古法寻找&e锻造遗迹"
+				"也可以向二级&e制图师&r购买&e锻造遗迹&r的地图"
+				"当然你也可以试试万能的 "
+				"{ \"text\": \"探险家指南针\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1CB33EA048068637\" } }"
+			]
+			hide_until_deps_complete: true
+			icon: "tetra:forged_wall"
+			id: "01FC78875A324DE3"
+			subtitle: "锻造遗迹"
+			tasks: [{
+				id: "42795E7AEF7135C5"
+				type: "checkmark"
+			}]
+			title: "寻找遗迹"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72908B9592992F33"]
+			description: ["工坊中有许多小型的板条箱，可以很轻松的使用锤子或者羊角锤打开，里面装着许多&e金属碎片和锻造锤配件&r。"]
+			hide_dependency_lines: true
+			icon: "tetra:forged_crate"
+			id: "56758B34C00AEFF3"
+			subtitle: "板条箱"
+			tasks: [{
+				icon: "tetra:forged_crate"
+				id: "35F56781AD91C6CE"
+				observe_type: 0
+				timer: 0L
+				title: "在遗迹中找到锻造板条箱"
+				to_observe: "tetra:forged_crate"
+				type: "observation"
+			}]
+			title: "锻造零件"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["27BFF02187AC557B"]
+			id: "332D5E0455DC61E7"
+			optional: true
+			subtitle: "锻造锤在使用过程中可能会出现卡住的情况，使用锤子敲击卡住的锤头即可"
+			tasks: [{
+				advancement: "tetra:spelunking/hammer_jam"
+				criterion: ""
+				id: "4D8444477A6DFD69"
+				type: "advancement"
+			}]
+			title: "卡壳"
+			x: 3.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3629F1DBEEFAF2FF"]
+			description: ["依照笔记上的指引，我将&e金属碎片和陨石废液以及熔融下界合金在熔铸炉中熔合，将产物倒入熔铸盆&r，最终铸造出了一种全新的金属。正如笔记中所述，这种金属展现出惊人的强度，远超我所知的任何其他材料。这将开创一个新纪元。"]
+			id: "7861A70169C19A1A"
+			rewards: [
+				{
+					count: 32
+					id: "76A1B85AA9CB057B"
+					item: "tetra:metal_scrap"
+					type: "item"
+				}
+				{
+					id: "7986BEBCAF311885"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "172F2C142B0D0166"
+				item: "art_of_forging:forged_steel_ingot"
+				type: "item"
+			}]
+			title: "新纪元"
+			x: 7.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01D8FB94D56BB2E2"]
+			description: ["在锻造锤上安装平面稳定器后可使打造的部件获得“&e高质量&r”属性，&e小幅度提升各项性能&r"]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "3C21C65039C98D92"
+			tasks: [{
+				id: "1A25B9CA82C37B0A"
+				title: "高质量"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["&e原版&r的剑与&e农夫乐事&r的小刀可用于改造"]
+			id: "48056E10DEC79964"
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/sword_upgrade"
+				criterion: ""
+				id: "400A0D104F00AC5E"
+				type: "advancement"
+			}]
+			title: "剑"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: [
+				"打造工具的时候，经常要用到不同的工具，为了方便随时随地可以拿取工具，我做了一个架子用来放置常用的工具"
+				"在加工物品时消耗的工具顺序为&a背包内&r>&a工具架&r>&a锻造锤"
+			]
+			id: "49F8C50AE9B68585"
+			rewards: [{
+				count: 4
+				id: "0B6FC779E66C6F30"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "在以加工台为中心的5x5方形区域内放置工具架，放在工具架上的工具可直接在加工台上取用"
+			tasks: [{
+				id: "73910FEC80C8262F"
+				item: "tetra:rack"
+				type: "item"
+			}]
+			title: "工具架子"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["&e原版&r的盾牌可用于改造"]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "03664386DA7FE6DC"
+			shape: "rsquare"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/shield_upgrade"
+					criterion: ""
+					id: "3A5F987B65784F7E"
+					type: "advancement"
+				}
+				{
+					id: "2ADEC2908A50664E"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "模块化盾牌"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["&e原版&r的弓可用于改造"]
+			id: "3F5E3041FB441163"
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/bow_upgrade"
+				criterion: ""
+				id: "3A7423891F718E34"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: [
+				"&e原版&r镐、斧、锄等为双头工具，可用于改造。"
+				"Tetra的“扁斧”模块可以同时提供斧、锹的破坏效率和等级，也就意味着为双头工具一端安装扁斧，一端安装镐头便可以打造一把&e全能工具&r。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "055C7F9D1D6A56BE"
+			min_required_tasks: 1
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/tool_upgrade"
+				criterion: ""
+				id: "2DC8A805BE45D83D"
+				type: "advancement"
+			}]
+			title: "双头工具"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["&e原版&r的锹为单头工具，可用于改造"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_shovel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6DEC3C0546CBC51E"
+			shape: "rsquare"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:iron_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0526A1671CD836FA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/shovels"
+					}
+				}
+				title: "任意锹类工具"
+				type: "item"
+			}]
+			title: "单头工具"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3821026AD7352739"]
+			description: ["模块化腰带"]
+			id: "6B19B1391FB0509C"
+			shape: "rsquare"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/toolbelt"
+					criterion: ""
+					id: "4E98F97A2AB60256"
+					type: "advancement"
+				}
+				{
+					id: "73A5C8481EE6B759"
+					item: {
+						Count: 1
+						id: "tetra:modular_toolbelt"
+						tag: {
+							id: "449e11a1-29af-49c0-8df4-a16401c1c051"
+							"toolbelt/belt": "toolbelt/belt"
+							"toolbelt/belt_material": "belt/rope"
+							"toolbelt/slot1": "toolbelt/strap_slot1"
+							"toolbelt/strap_slot1_material": "strap1/leather"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			description: ["如果你是Tetra新手，可以试试跟随这条任务线熟悉这个模组，希望者对你有所帮助"]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "be8cf944-febd-4471-93f3-d146036232ec"
+				}
+			}
+			id: "48DABAA5BA34BE62"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6B9A4AE3FD428E57"
+				type: "checkmark"
+			}]
+			title: "初识锻造"
+			x: -2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48DABAA5BA34BE62"]
+			dependency_requirement: "one_started"
+			description: [
+				"&e锤子&r为tetra中独有且最重要的一项工具"
+				"它是tetra体系中加工各种工具的基础"
+				"{image:createdelight:textures/gui/woodenhammercrafting.png width:200 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "e71ca8bf-5f56-43b3-a4ef-c3245e80c8bb"
+				}
+			}
+			id: "54C4F4CBC1B3E14B"
+			rewards: [{
+				count: 8
+				id: "289FFC4695B2B9B0"
+				item: "minecraft:vine"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "玩个锤子"
+			tasks: [{
+				advancement: "tetra:upgrades/root"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						"double/basic_hammer_left_material": "basic_hammer/oak"
+						"double/basic_hammer_right_material": "basic_hammer/oak"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "e71ca8bf-5f56-43b3-a4ef-c3245e80c8bb"
+					}
+				}
+				id: "37F1B2D2CD236322"
+				type: "advancement"
+			}]
+			title: "基础工艺"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56758B34C00AEFF3"]
+			description: [
+				"每一个&e燃烧室&r可以提高&e锻造锤&r的一个等级"
+				"也就是说，装有两个&e燃烧室&r的&e锻造锤&r相当于七级锤"
+			]
+			id: "4DC31D255E397C21"
+			subtitle: "燃烧室"
+			tasks: [{
+				id: "0CF014704163E18E"
+				item: "tetra:combustion_chamber"
+				type: "item"
+			}]
+			title: "&e燃烧室"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56758B34C00AEFF3"]
+			id: "359BA6C41D42AB08"
+			tasks: [{
+				id: "536709DF718FA996"
+				item: "tetra:vent_plate"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["56758B34C00AEFF3"]
+			id: "5F969B33C6F74C4D"
+			tasks: [{
+				id: "6F36D52F15473443"
+				item: "tetra:lubricant_dispenser"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["27BFF02187AC557B"]
+			description: [
+				"锻造锤与锻造加工台需要用&b精准采集&r的锤子才能收入背包"
+				"没有&b精准采集&r？去向村民借一本！"
+			]
+			id: "5C346892D97CDD03"
+			subtitle: "锻造锤与锻造加工台"
+			tasks: [
+				{
+					id: "196004EBBC84A6D4"
+					item: "tetra:forged_workbench"
+					type: "item"
+				}
+				{
+					id: "3B2BD590821E77B5"
+					item: "tetra:hammer_base"
+					type: "item"
+				}
+			]
+			title: "&e锻造锤"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["48DABAA5BA34BE62"]
+			description: [
+				"模块化工具在使用的过程中会累积“&e打磨值&r”（类似经验值，但是&4最多只能存储一次打磨需求的值&r），打磨值满后可在加工台上选择工具的任一&e主要模块&r进行打磨。"
+				"（例如双头工具的主要模块为手柄及其左、右头。）"
+				"打磨可提升部件的性能，并&e清空打磨值&r，待到再次累积满后可进行下一次打磨。"
+				"每次打磨都会使后续进行打磨时需要的打磨值增加。"
+				"&e“直觉”效果可以加快打磨值的获取。拥有“直觉”效果的材料可在全息球中查看。&r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "764C6E27E31CD698"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "330FF678C7C1A533"
+				type: "checkmark"
+			}]
+			title: "打磨"
+			x: -2.25d
+			y: -1.5d
+		}
+	]
+	title: "&2基础工艺"
+}

@@ -1,0 +1,19 @@
+StartupEvents.modifyCreativeTab("youkaishomecoming:youkais_homecoming", e => {
+  e.remove([
+    'youkaishomecoming:tea_leaves',
+    'youkaishomecoming:tea_leaf_bag',
+    'youkaishomecoming:black_tea',
+    'youkaishomecoming:green_tea',
+    'youkaishomecoming:moon_rocket',
+    "youkaishomecoming:kettle",
+    "youkaishomecoming:oolong_tea",
+    'youkaishomecoming:copper_tank',
+    'youkaishomecoming:copper_faucet',
+    'youkaishomecoming:cucumber_seeds', 
+    'youkaishomecoming:mayonnaise_bottle',
+    'youkaishomecoming:sake_bottle',
+    'youkaishomecoming:black_grape_juice',
+    'youkaishomecoming:white_grape_juice',
+    'youkaishomecoming:red_grape_juice',
+  ])
+})

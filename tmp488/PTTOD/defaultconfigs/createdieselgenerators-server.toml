@@ -1,0 +1,33 @@
+
+["Server Configs"]
+	#Maximum width of Oil Barrels
+	"Max Oil Barrel Width" = 3
+	#Canister can be filled by spouts
+	"Canister can be filled by spouts" = true
+	#Combustibles do boom boom when on fire
+	"Combustibles blow up" = true
+
+	["Server Configs"."Diesel Engines"]
+		#Turbocharged Diesel Engine Speed Multiplier
+		"Turbocharged Diesel Engine Speed Multiplier" = 2.0
+		#Turbocharged Diesel Engine Burn Rate Multiplier
+		"Turbocharged Diesel Engine Burn Rate Multiplier" = 1.0
+		#Whenever Normal Diesel Engines are enabled
+		"Normal Diesel Engines" = true
+		#Whenever Modular Diesel Engines are enabled
+		"Modular Diesel Engines" = true
+		#Whenever Huge Diesel Engines are enabled
+		"Huge Diesel Engines" = true
+		#Whenever Diesel Engines can be filled with an Item
+		"Engines filled with a bucket" = false
+		#Whenever Diesel Engines can be disabled with redstone
+		"Engines disabled with redstone" = true
+
+	["Server Configs"."Oil Config"]
+		"Normal oil chunks oil amount multiplier" = 1.0
+		"High oil chunks oil amount multiplier" = 3.0
+		"Max Oil Scanner Level" = 10000
+		"Infinite oil chunk threshold" = 3000000
+		"Oil chunk threshold" = 3000000
+		"Oil chunk map scale" = 1.0
+

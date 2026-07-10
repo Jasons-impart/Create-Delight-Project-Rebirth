@@ -1,0 +1,141 @@
+{
+  "Version": 1.0,
+  "attributemap": {
+    "double/head_left": {
+      "double/basic_hammer_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:hammer"
+          }
+        }
+      },
+      "double/basic_axe_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:heavy_axe"
+          }
+        }
+      },
+      "double/basic_pickaxe_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:pickaxe"
+          }
+        }
+      },
+      "double/hoe_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:pickaxe"
+          }
+        }
+      },
+      "double/claw_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:pickaxe"
+          }
+        }
+      },
+      "double/adze_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:pickaxe"
+          }
+        }
+      },
+      "double/sickle_left": {
+        "type": "improvement",
+        "key": "double/head_left",
+        "improvement": "double/warforged",
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:sickle"
+          }
+        }
+      }
+    },
+    "sword/blade": {
+      "sword/heavy_blade": {
+        "config": {
+          "scaleY": 2.0,
+          "scaleZ": 1.5,
+          "attributes": {
+            "parent": "bettercombat:claymore"
+          }
+        }
+      },
+      "sword/evernight_dagger": {
+        "config": {
+          "attributes": {
+            "parent": "bettercombat:dagger"
+          }
+        }
+      }
+    },
+    "single/head": {
+      "single/spearhead": {
+        "conditions": [
+          {
+            "type": "module",
+            "key": "single/handle",
+            "value": "single/light_handle",
+            "config": {
+              "scaleY": 1.75,
+              "scaleZ": 1.5,
+              "attributes": {
+                "parent": "bettercombat:trident"
+              }
+            }
+          },
+          {
+            "type": "module",
+            "key": "single/handle",
+            "value": "single/long_handle",
+            "config": {
+              "scaleY": 2.0,
+              "scaleZ": 1.5,
+              "attributes": {
+                "parent": "bettercombat:spear"
+              }
+            }
+          }
+        ],
+        "config": {
+          "scaleY": 1.5,
+          "scaleZ": 1.5,
+          "attributes": {
+            "parent": "bettercombat:glaive"
+          }
+        }
+      },
+			"single/hoarfrost": {
+				"config": {
+          "scaleY": 1.5,
+          "scaleZ": 1.5,
+					"attributes": {
+						"parent": "bettercombat:halberd"
+					}
+				}
+			}
+    }
+  }
+}

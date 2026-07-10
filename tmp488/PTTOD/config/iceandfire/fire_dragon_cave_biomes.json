@@ -1,0 +1,46 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "northstar:mars_biomes"
+      }
+    ],
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "northstar:mercury_biomes"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:prairie"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:firecracker_shrubland"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:autumnal_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:lush_stacks"
+      }
+    ]
+  ]
+}

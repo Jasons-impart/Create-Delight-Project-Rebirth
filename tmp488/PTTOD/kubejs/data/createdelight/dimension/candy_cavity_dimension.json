@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+      "type": "minecraft:noise",
+      "settings": "createdelight:candy_cavity_dimension",
+      "biome_source": {
+          "type": "minecraft:fixed",
+          "biome": "alexscaves:candy_cavity"
+      }
+  }
+}

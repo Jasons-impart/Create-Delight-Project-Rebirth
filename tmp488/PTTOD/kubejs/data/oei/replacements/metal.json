@@ -1,0 +1,88 @@
+[
+    {
+        "matchItems": [
+            "create_new_age:copper_wire"
+        ],
+        "resultItems": "createaddition:copper_wire" 
+    },
+    {
+        "matchItems": [
+            "iceandfire:copper_nugget"
+        ],
+        "resultItems": "create:copper_nugget"
+    },
+    {
+        "matchItems": [
+            "createdeco:zinc_sheet",
+            "vintageimprovements:zinc_sheet",
+            "createfisheryindustry:zinc_sheet"
+        ],
+        "resultItems": "createaddition:zinc_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:andesite_sheet"
+        ],
+        "resultItems": "createdeco:andesite_sheet"
+    },
+    {
+        "matchItems": [
+            "createdeco:netherite_sheet"
+        ],
+        "resultItems": "vintageimprovements:netherite_sheet"
+    },
+    {
+        "matchItems": [
+            "create_sa:zinc_handle"
+        ],
+        "resultItems": "vintageimprovements:zinc_rod"
+    },
+    {
+        "matchItems": [
+            "ae2omnicells:ender_ingot_block"
+        ],
+        "resultItems": "createutilities:void_steel_block"
+    },
+    {
+        "matchItems": [
+            "ae2omnicells:ender_ingot"
+        ],
+        "resultItems": "createutilities:void_steel_ingot"
+    },
+    {
+        "matchItems": [
+            "northstar:tungsten_block"
+        ],
+        "resultItems": "createmetallurgy:tungsten_block"
+    },
+    {
+        "matchItems": [
+            "northstar:tungsten_ingot"
+        ],
+        "resultItems": "createmetallurgy:tungsten_ingot"
+    },
+    {
+        "matchItems": [
+            "northstar:raw_tungsten_ore"
+        ],
+        "resultItems": "createmetallurgy:raw_tungsten"
+    },
+    {
+        "matchItems": [
+            "northstar:tungsten_nugget"
+        ],
+        "resultItems": "createmetallurgy:tungsten_nugget"
+    },
+    {
+        "matchItems": [
+            "northstar:crushed_raw_tungsten"
+        ],
+        "resultItems": "createmetallurgy:crushed_raw_tungsten"
+    },
+    {
+        "matchItems": [
+            "northstar:tungsten_sheet"
+        ],
+        "resultItems": "createmetallurgy:tungsten_sheet"
+    }
+]

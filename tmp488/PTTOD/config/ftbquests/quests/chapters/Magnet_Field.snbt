@@ -1,0 +1,362 @@
+{
+	autofocus_id: "3D02EA3A30EE1933"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Magnet_Field"
+	group: "0E7AEC0D0D9C1B1C"
+	icon: "alexscaves:scarlet_magnet"
+	id: "4E5A1B3CF93FA385"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "0BA848A4275438F0"
+			rewards: [{
+				id: "4339EDAAB2E0D86F"
+				item: "alexscaves:heart_of_iron"
+				type: "item"
+			}]
+			subtitle: "跟他作战一定要放置一个&4铁砧&r！"
+			tasks: [{
+				entity: "alexscaves:magnetron"
+				icon: "alexscaves:heart_of_iron"
+				id: "44FFD57A15076871"
+				type: "kill"
+				value: 1L
+			}]
+			title: "铠甲合体！"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			description: ["产出的磁流核可以用作&4精密构件&r的极简化制作！"]
+			id: "4B748035C627E9DF"
+			rewards: [{
+				id: "13EF8C72EF52CB59"
+				item: "alexscaves:telecore"
+				type: "item"
+			}]
+			subtitle: "躲得远远的也没有用😋"
+			tasks: [{
+				entity: "alexscaves:teletor"
+				icon: "alexscaves:telecore"
+				id: "100774A7F09A9E32"
+				type: "kill"
+				value: 1L
+			}]
+			title: "超远距离"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "63270DD652001F56"
+			rewards: [{
+				id: "28C43305427C9B52"
+				item: "alexscaves:heavyweight"
+				type: "item"
+			}]
+			subtitle: "叽里咕噜说什么呢！看我&4从天而降&r！"
+			tasks: [{
+				entity: "alexscaves:boundroid"
+				icon: "alexscaves:heavyweight"
+				id: "45E0C1C9420CC5E2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "泷泽萝拉哒！"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			description: ["产出的扫描机兵零件可以用作&4电子管&r的极简化制作！"]
+			id: "180CDA283387C562"
+			rewards: [{
+				id: "086DAF232A89D02B"
+				item: "alexscaves:notor_gizmo"
+				type: "item"
+			}]
+			subtitle: "一定&4不要杀掉&r，否则将&4无法&r被怪物&4群殴"
+			tasks: [{
+				entity: "alexscaves:notor"
+				icon: "alexscaves:notor_gizmo"
+				id: "3C0AF63AF41CB0D6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "探测器(?)"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "2F7BA8CDC979CD77"
+			rewards: [{
+				id: "0B48526BBDDE9840"
+				item: "alexscaves:ferrouslime_ball"
+				type: "item"
+			}]
+			subtitle: "&4不是哥们？&r你俩&4在一块了？"
+			tasks: [{
+				entity: "alexscaves:ferrouslime"
+				icon: "alexscaves:ferrouslime_ball"
+				id: "7DB963E96B85E767"
+				type: "kill"
+				value: 1L
+			}]
+			title: "融合"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D9DCFAF35EA9A37"]
+			description: [
+				"这些东西可以制作一个采石场。"
+				"首先放置磁力灯，使它们位于一个长方形的四个顶点。"
+				"然后放置磁力采石场于构建的长方形的外沿。"
+				"最后在构成的磁力采石场中间放置一个磁力采石场粉碎器，随后磁力采石场粉碎器便会工作。"
+				"物品会从磁力采石场上方弹出，采石场会一直运行直到达到基岩层。"
+				"注意，磁力采石场是一次性的（当然你可以把它抱走）"
+			]
+			icon: "alexscaves:quarry_smasher"
+			id: "3ADE82155D21C08E"
+			subtitle: "铿！铿！铿！"
+			tasks: [
+				{
+					id: "6E6EFEDF0322DE56"
+					item: "alexscaves:quarry_smasher"
+					type: "item"
+				}
+				{
+					id: "1D8F9A295649079A"
+					item: "alexscaves:quarry"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7051FFB7E7405229"
+					item: { Count: 4, id: "alexscaves:magnetic_light" }
+					type: "item"
+				}
+			]
+			title: "挖矿装置！"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			description: ["将其放于副手便可延展磁性工具的范围（铁，下界合金）。"]
+			id: "55819F6D302C7D1B"
+			subtitle: "伸缩机械手？？"
+			tasks: [{
+				id: "03CE65D91C76E92A"
+				item: {
+					Count: 1
+					id: "alexscaves:galena_gauntlet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D9DCFAF35EA9A37"]
+			description: [
+				"使用全息编码器右键生物即可将其记录下来。然后你就可以将记录下来的生物投影到全息投影仪上。"
+				"对全息投影仪使用未记录生物的全息编码器会显示你自己的投影。"
+			]
+			id: "248E6F06D046CD49"
+			subtitle: "可以放在基地里面每天臭美用😋"
+			tasks: [
+				{
+					id: "40DEB1D2E7895EC0"
+					item: "alexscaves:hologram_projector"
+					type: "item"
+				}
+				{
+					id: "48A8F812D4126166"
+					item: "alexscaves:holocoder"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			description: ["有两种模式：吸引和推开。按住shift使用时会切换模式。"]
+			id: "39B8696FAAEB50BA"
+			subtitle: "超帅！超强！超实用！"
+			tasks: [{
+				id: "4DA0715CA89F240D"
+				item: {
+					Count: 1
+					id: "alexscaves:resistor_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "4A50B0E44E0B4734"
+			tasks: [{
+				id: "6AB931A3B0008E3A"
+				item: "alexscaves:raw_scarlet_neodymium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "1951731AF0CD32FF"
+			subtitle: "可以粉碎成铁粒（好像没什么用）"
+			tasks: [{
+				id: "707266E6939C18E9"
+				item: "alexscaves:galena"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4A50B0E44E0B4734"]
+			id: "2AB7E9D1015C8BC9"
+			tasks: [{
+				id: "587C5CB978DCD020"
+				item: "alexscaves:scarlet_neodymium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B748035C627E9DF"]
+			description: [
+				"放置后随机向外发射电流，并对击中的生物造成伤害，被击中的苦力怕和村民会变成闪电苦力怕和女巫。"
+				"挖掘后会发生爆炸！"
+			]
+			id: "6345A669963AC5F1"
+			subtitle: "球状闪电"
+			tasks: [{
+				id: "227573945C65643D"
+				item: "alexscaves:tesla_bulb"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "037862C796CCCB11"
+			tasks: [{
+				icon: "alexscaves:notor_gizmo"
+				id: "22C32413FDC5B21A"
+				stat: "minecraft:play_time"
+				title: "磁力生物"
+				type: "stat"
+				value: 1
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "434A05E6705701FE"
+			tasks: [{
+				icon: "alexscaves:raw_scarlet_neodymium"
+				id: "7A1880899E0D89C1"
+				stat: "minecraft:play_time"
+				title: "特殊矿物"
+				type: "stat"
+				value: 1
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "5AA2E471FBF94A7D"
+			tasks: [{
+				id: "66B496E68E9DC39E"
+				item: "alexscaves:raw_azure_neodymium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5AA2E471FBF94A7D"]
+			id: "6841073A1C1A2CFA"
+			tasks: [{
+				id: "49058318095424DD"
+				item: "alexscaves:azure_neodymium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "2214DB76B8B59112"
+			subtitle: "&4顾名思义"
+			tasks: [{
+				id: "43871935AB42F251"
+				item: "alexscaves:seeking_arrow"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "3D9DCFAF35EA9A37"
+			tasks: [{
+				icon: "alexscaves:magnetic_light"
+				id: "2D9EBB4105E9D7EB"
+				stat: "minecraft:play_time"
+				title: "奇特方块"
+				type: "stat"
+				value: 1
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			description: ["磁场洞穴以特殊的磁力机制与机械生命为主题。这个黑暗的群系中到处都分布着发微光的赤钕柱和青钕柱，尖锐的方铅岩锥上放置着危险的特斯拉球作为光照，四处都闪烁着红色的和蓝色的电弧。玩家还可以看到小块的方铅岩从地面飘向天空，仿佛不受重力的影响一般。"]
+			hide_until_deps_complete: true
+			icon: "alexscaves:scarlet_magnet"
+			id: "3D02EA3A30EE1933"
+			rewards: [{
+				id: "7D179E43DEDC0DAF"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.5d
+			subtitle: "&4磁力风暴&r形成的&e异空间&r！"
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				icon: "alexscaves:scarlet_magnet"
+				id: "0DF24A26AE7DB999"
+				title: "前往磁力洞窟！"
+				type: "biome"
+			}]
+			title: "磁场空间"
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+	title: "&9磁场空间"
+}

@@ -1,0 +1,18 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "northstar:martian_peaks"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "terralith:wintry_lowlands"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,445 @@
+[
+    {
+        "matchItems": [
+            "alexscaves:caramel"
+        ],
+        "resultItems": "create_confectionery:bar_of_caramel"
+    },
+    {
+        "matchItems": [
+            "create_confectionery:candy_cane"
+        ],
+        "resultItems": "alexscaves:candy_cane"
+    },
+    {
+        "matchItems": [
+            "alexsmobs:banana"
+        ],
+        "resultItems": "neapolitan:banana"
+    },
+    {
+        "matchItems": [
+            "ratatouille:salt",
+            "bakeries:salt",
+            "northstar:salt"
+        ],
+        "resultItems": "vintagedelight:salt_dust"
+    },
+    {
+        "matchItems": [
+            "brewinandchewin:flaxen_cheese_wedge",
+            "casualness_delight:cheese_wheel_slice",
+            "vintagedelight:cheese_slice"
+        ],
+        "resultItems": "trailandtales_delight:cheese_slice"
+    },
+    {
+        "matchItems": [
+            "casualness_delight:cheese_wheel",
+            "vintagedelight:cheese_wheel",
+            "trailandtales_delight:cheese_wheel"
+        ],
+        "resultItems": "brewinandchewin:flaxen_cheese_wheel"
+    },
+    {
+        "matchItems": [
+            "quark:crab_leg"
+        ],
+        "resultItems": "crabbersdelight:crab_legs"
+    },
+    {
+        "matchItems": [
+            "neapolitan:milk_bottle",
+            "bakeries:bottle_milk"
+        ],
+        "resultItems": "farmersdelight:milk_bottle"
+    },
+    {
+        "matchItems": [
+            "corn_delight:corn_seeds"
+        ],
+        "resultItems": "culturaldelights:corn_kernels"
+    },
+    {
+        "matchItems": [
+            "festival_delicacies:rice"
+        ],
+        "resultItems": "farmersdelight:rice"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:chinese_cabbage"
+        ],
+        "resultItems": "festival_delicacies:chinese_cabbage"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:chinese_cabbage_leaf"
+        ],
+        "resultItems": "festival_delicacies:chinese_cabbage_leaf"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:eggplant"
+        ],
+        "resultItems": "festival_delicacies:eggplant"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:fennel"
+        ],
+        "resultItems": "festival_delicacies:fennel"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:garlic_chive"
+        ],
+        "resultItems": "festival_delicacies:garlic_chive"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:garlic"
+        ],
+        "resultItems": "festival_delicacies:garlic"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:greenonion"
+        ],
+        "resultItems": "festival_delicacies:greenonion"
+    },
+    {
+        "matchItems": [
+            "neapolitan:adzuki_beans",
+            "youkaishomecoming:redbean",
+            "festival_delicacies:red_bean"
+        ],
+        "resultItems": "createdelight:adzuki_beans_seed"
+    },
+    {
+        "matchItems": [
+            "neapolitan:ice_cubes"
+        ],
+        "resultItems": "youkaishomecoming:ice_cube"
+    },
+    {
+        "matchItems": [
+            "culturaldelights:cucumber_seeds"
+        ],
+        "resultItems": "vintagedelight:cucumber_seeds"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:chinese_cabbage_seeds"
+        ],
+        "resultItems": "festival_delicacies:chinese_cabbage_seeds"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:eggplant_seeds"
+        ],
+        "resultItems": "festival_delicacies:eggplant_seeds"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:fennel_seeds"
+        ],
+        "resultItems": "festival_delicacies:fennel_seeds"
+    },
+    {
+        "matchItems": [
+            "dumplings_delight:garlic_chive_seeds"
+        ],
+        "resultItems": "festival_delicacies:garlic_chive_seeds"
+    },
+    {
+        "matchItems": [
+            "culturaldelights:cucumber",
+            "youkaishomecoming:cucumber"
+        ],
+        "resultItems": "vintagedelight:cucumber"
+    },
+    {
+        "matchItems": [
+            "vintagedelight:pickle"
+        ],
+        "resultItems": "culturaldelights:pickle"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:tea_seeds"
+        ],
+        "resultItems": "farmersrespite:tea_seeds"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:coffee_berries"
+        ],
+        "resultItems": "createcafe:coffee_fruit"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:green_tea_leaves"
+        ],
+        "resultItems": "farmersrespite:green_tea_leaves"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:oolong_tea_leaves"
+        ],
+        "resultItems": "farmersrespite:yellow_tea_leaves"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:black_tea_leaves"
+        ],
+        "resultItems": "farmersrespite:black_tea_leaves"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:coffee_powder"
+        ],
+        "resultItems": "createcafe:coffee_grounds"
+    },
+    {
+        "matchItems": [
+            "farmersrespite:coffee_beans"
+        ],
+        "resultItems": "createcafe:roasted_coffee_beans"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:bowl_of_cream"
+        ],
+        "resultItems": "cosmopolitan:cream"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:butter"
+        ],
+        "resultItems": "createdelight:butter"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:blood_bottle"
+        ],
+        "resultItems": "butchercraft:blood_fluid_bottle"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:roe"
+        ],
+        "resultItems": "oceanic_delight:salmon_eggs"
+    },
+    {
+        "matchItems": [
+            "the_bumblezone:honey_bucket"
+        ],
+        "resultItems": "create:honey_bucket"
+    },
+    {
+        "matchItems": [
+            "netherexp:blue_nether_bricks"
+        ],
+        "resultItems": "quark:blue_nether_bricks"
+    },
+    {
+        "matchItems": [
+            "netherexp:blue_nether_brick_wall"
+        ],
+        "resultItems": "quark:blue_nether_bricks_wall"
+    },
+    {
+        "matchItems": [
+            "netherexp:blue_nether_brick_slab"
+        ],
+        "resultItems": "quark:blue_nether_bricks_slab"
+    },
+    {
+        "matchItems": [
+            "netherexp:blue_nether_brick_stairs"
+        ],
+        "resultItems": "quark:blue_nether_bricks_stairs"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:red_grape"
+        ],
+        "resultItems": "vinery:red_grape"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:red_grape_seeds"
+        ],
+        "resultItems": "vinery:red_grape_seeds"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:white_grape"
+        ],
+        "resultItems": "vinery:white_grape"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:white_grape_seeds"
+        ],
+        "resultItems": "vinery:white_grape_seeds"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:black_grape"
+        ],
+        "resultItems": "vinery:taiga_grapes_red"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:black_grape_seeds"
+        ],
+        "resultItems": "vinery:taiga_grape_seeds_red"
+    },
+    {
+        "matchItems": [
+            "bakeries:matcha_powder"
+        ],
+        "resultItems": "youkaishomecoming:matcha"
+    },
+    {
+        "matchItems": [
+            "frycooks_delight:plain_donut",
+            "youkaishomecoming:doughnut"
+        ],
+        "resultItems": "create_deepfried:donut"
+    },
+    {
+        "matchItems": [
+            "cosmopolitan:fiddlehead"
+        ],
+        "resultItems": "alexscaves:fiddlehead"
+    },
+    {
+        "matchItems": [
+            "quark:moss_paste"
+        ],
+        "resultItems": "miners_delight:moss"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:sulfur_chunk"
+        ],
+        "resultItems": "alexscaves:sulfur_dust"
+    },
+    {
+        "matchItems": [
+            "collectorsreap:pomegranate_smoothie"
+        ],
+        "resultItems": "collectorsreap:pomegranate_milkshake"
+    },
+    {
+        "matchItems": [
+            "cosmopolitan:lush_confiture_bottle"
+        ],
+        "resultItems": "createdelightcore:lush_confiture_jelly_bottle"
+    },
+    {
+        "matchItems": [
+            "vintagedelight:apple_sauce_mason_jar"
+        ],
+        "resultItems": "fruitsdelight:apple_jelly"
+    },
+    {
+        "matchItems": [
+            "vintagedelight:sweet_berry_mason_jar"
+        ],
+        "resultItems": "fruitsdelight:sweetberry_jelly"
+    },
+    {
+        "matchItems": [
+            "vintagedelight:glow_berry_mason_jar"
+        ],
+        "resultItems": "fruitsdelight:glowberry_jelly"
+    },
+    {
+        "matchItems": [
+            "brewinandchewin:cocoa_fudge"
+        ],
+        "resultItems": "collectorsreap:chocolate_gummy"
+    },
+    {
+        "matchItems": [
+            "neapolitan:vanilla_fudge"
+        ],
+        "resultItems": "collectorsreap:vanilla_gummy"
+    },
+    {
+        "matchItems": [
+            "culturaldelights:egg_roll"
+        ],
+        "resultItems": "youkaishomecoming:egg_nigiri"
+    },
+    {
+        "matchItems": [
+            "oceanic_delight:fish_egg_roll_slice"
+        ],
+        "resultItems": "youkaishomecoming:tobiko_gunkan"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:green_coffee_bean"
+        ],
+        "resultItems": "createcafe:coffee_beans"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:coffee_beans"
+        ],
+        "resultItems": "createcafe:roasted_coffee_beans"
+    },
+    {
+        "matchItems": [
+            "youkaishomecoming:wood_basin"
+        ],
+        "resultItems": "vinery:grapevine_pot"
+    },
+    {
+        "matchItems": [
+            "collectorsreap:cream_cheese"
+        ],
+        "resultItems": "bakeries:cheese_cream"
+    },
+    {
+        "matchItems": [
+            "northstar:sulfuric_acid_bucket"
+        ],
+        "resultItems": "vintageimprovements:sulfuric_acid_bucket"
+    },
+    {
+        "matchItems": [
+            "northstar:polished_amethyst"
+        ],
+        "resultItems": "createutilities:polished_amethyst"
+    },
+    {
+        "matchItems": [
+            "createfisheryindustry:raw_lobster"
+        ],
+        "resultItems": "crabbersdelight:clawster"
+    },
+    {
+        "matchItems": [
+            "createfisheryindustry:cooked_lobster"
+        ],
+        "resultItems": "crabbersdelight:cooked_clawster"
+    },
+    {
+        "matchItems": [
+            "festival_delicacies:peanut"
+        ],
+        "resultItems": "vintagedelight:peanut"
+    },
+    {
+        "matchItems": [
+            "festival_delicacies:tangerine"
+        ],
+        "resultItems": "fruitsdelight:orange"
+    }
+]

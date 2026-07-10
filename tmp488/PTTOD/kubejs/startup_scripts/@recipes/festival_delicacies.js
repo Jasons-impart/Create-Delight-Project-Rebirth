@@ -1,0 +1,21 @@
+new Schema("festival_delicacies:stove")
+    .simpleKey("ingredients", "inputItemArray")
+    .simpleKey("result", "outputItem")
+    .simpleKey("experience", "doubleNumber", 1.0)
+    .simpleKey("cookingtime", "doubleNumber", 200)
+    .simpleKey("cookingType", "anyString", "default")
+    .simpleKey("container", "inputItem", "")
+
+new Schema("festival_delicacies:chopping")
+    .simpleKey("ingredient", "inputItem")
+    .simpleKey("results", "outputItemArray")
+
+new Schema("festival_delicacies:drying")
+    .simpleKey("ingredient", "inputItem")
+    .simpleKey("result", "outputItem")
+
+new Schema("festival_delicacies:fermenting")
+    .simpleKey("ingredients", "inputItemArray")
+    .simpleKey("result", "outputItem")
+    .simpleKey("experience", "doubleNumber", 1.0)
+    .simpleKey("cookingtime", "doubleNumber", 36000)

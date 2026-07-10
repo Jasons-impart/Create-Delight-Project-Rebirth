@@ -1,0 +1,25 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "northstar:moon_biomes"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:dacite_shore"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:basalt_barrera"
+      }
+    ]
+  ]
+}
