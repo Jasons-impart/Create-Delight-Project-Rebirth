@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-04T13:10:11Z",
+  "generatedAt": "2026-07-12T06:27:36Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -96,6 +96,7 @@
       "create_enchantment_industry",
       "create_enhanced_schematicannon",
       "create_fantasizing",
+      "create_integrated_farming",
       "create_jetpack",
       "create_jetpack_curios",
       "create_mechanical_spawner",
@@ -111,6 +112,7 @@
       "createdeco",
       "createdelightcore",
       "createdieselgenerators",
+      "createfactorycontroller",
       "createfastschematiccannon",
       "createfluidstuffs",
       "createidlx",
@@ -123,6 +125,7 @@
       "createstockbridge",
       "createtransmission",
       "createultimine",
+      "createutilities",
       "creativecore",
       "creeperoverhaul",
       "cristellib",
@@ -246,6 +249,7 @@
       "l2library",
       "l2menustacker",
       "lctech",
+      "ldlib2",
       "lightmanscurrency",
       "lithostitched",
       "lmft",
@@ -254,6 +258,7 @@
       "lootr",
       "luncheonmeatsdelight",
       "man_of_many_planes",
+      "mbd2",
       "mechanicals",
       "megacells",
       "melody",
@@ -1468,7 +1473,7 @@
     {
       "side": "common",
       "metadata": "mods/common/create-ratatouille.pw.toml",
-      "filename": "create_ratatouille-1.21.1-1.3.9-2.jar",
+      "filename": "create_ratatouille-1.21.1-1.4.0.jar",
       "modIds": [
         "ratatouille"
       ]
@@ -1502,7 +1507,7 @@
     {
       "side": "common",
       "metadata": "mods/common/create-central-kitchen.pw.toml",
-      "filename": "create-central-kitchen-2.4.0.jar",
+      "filename": "create-central-kitchen-2.5.0.jar",
       "modIds": [
         "create_central_kitchen"
       ]
@@ -1525,6 +1530,14 @@
     },
     {
       "side": "common",
+      "metadata": "mods/common/create-integrated-farming.pw.toml",
+      "filename": "create-integrated-farming-1.2.6.jar",
+      "modIds": [
+        "create_integrated_farming"
+      ]
+    },
+    {
+      "side": "common",
       "metadata": "mods/common/create-new-age.pw.toml",
       "filename": "create-new-age-1.1.7c+neoforge-mc1.21.1.jar",
       "modIds": [
@@ -1538,6 +1551,14 @@
       "filename": "create-stuff-additions1.21.1_v2.1.0e.jar",
       "modIds": [
         "create_sa"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/create-utilities-j.pw.toml",
+      "filename": "Create-Utilities-J-1.21.1-0.3.4+1.21.1.jar",
+      "modIds": [
+        "createutilities"
       ]
     },
     {
@@ -1599,10 +1620,18 @@
     {
       "side": "common",
       "metadata": "mods/common/create-dragons-plus.pw.toml",
-      "filename": "CreateDragonsPlus-1.10.0b.jar",
+      "filename": "CreateDragonsPlus-1.11.2b.jar",
       "modIds": [
         "conditional_mixin",
         "create_dragons_plus"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/createfactorycontroller.pw.toml",
+      "filename": "createfactorycontroller-1.0.0.jar",
+      "modIds": [
+        "createfactorycontroller"
       ]
     },
     {
@@ -2235,6 +2264,14 @@
     },
     {
       "side": "common",
+      "metadata": "mods/common/ldlib.pw.toml",
+      "filename": "ldlib2-neoforge-1.21.1-2.2.27-all.jar",
+      "modIds": [
+        "ldlib2"
+      ]
+    },
+    {
+      "side": "common",
       "metadata": "mods/common/lets-do-vinery.pw.toml",
       "filename": "letsdo-vinery-neoforge-1.5.3.jar",
       "modIds": [
@@ -2359,6 +2396,14 @@
       "filename": "morejs-neoforge-1.21.1-0.16.0.jar",
       "modIds": [
         "morejs"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/multiblocked2.pw.toml",
+      "filename": "Multiblocked2-1.21-1.21.1-21.0.6.jar",
+      "modIds": [
+        "mbd2"
       ]
     },
     {
