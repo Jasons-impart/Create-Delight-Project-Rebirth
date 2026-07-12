@@ -1,13 +1,13 @@
-name = "Create: Ratatouille"
-filename = "create_ratatouille-1.21.1-1.3.9-2.jar"
+name = "create_ratatouille-1.21.1-1.4.0.jar"
+filename = "create_ratatouille-1.21.1-1.4.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1d4fc95a34bd9c18babc08be7e23100ddb9d05cd"
+hash = "443f8625eb7df0c56bfef86f8dcc982d295f566c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8036576
+file-id = 8405597
 project-id = 983234
