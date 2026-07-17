@@ -5,6 +5,7 @@
   const PackIntegrityChatFormatting = Java.loadClass('net.minecraft.ChatFormatting');
   const PackIntegrityComponent = Java.loadClass('net.minecraft.network.chat.Component');
   const PackIntegrityKubeJSPaths = Java.loadClass('dev.latvian.mods.kubejs.KubeJSPaths');
+  const JavaRuntimeSystem = Java.loadClass('java.lang.System');
 
   const PACK_INTEGRITY_CONFIG_PATH = PackIntegrityKubeJSPaths.GAMEDIR.resolve(
     'kubejs/config/createdelight_pack_integrity.json'
@@ -18,9 +19,13 @@
   const PACK_INTEGRITY_STATE_PATH = PackIntegrityKubeJSPaths.GAMEDIR.resolve(
     'local/createdelight_pack_integrity_state.json'
   );
+  const RECOMMENDED_JAVA_MAJOR_VERSION = 21;
   const PACK_INTEGRITY_WARNING_TEXT = '检测到整合包模组列表与发布版本不一致。\n请知悉：';
   const PACK_INTEGRITY_WARNING_HIGHLIGHT_TEXT =
     '我们不保证这种情况下整合包仍能稳定游玩，也没有能力处理这种情况下的问题求助和bug反馈。';
+  const JAVA_RUNTIME_WARNING_TEXT = '检测到当前 Java 大版本与推荐版本不一致。\n请知悉：';
+  const JAVA_RUNTIME_WARNING_HIGHLIGHT_TEXT =
+    '本整合包推荐使用 Java 21。使用其它大版本可能导致启动失败、崩溃或难以复现的问题。';
 
   const packIntegrityState = {
     result: null,
@@ -28,6 +33,14 @@
     warningOpen: false,
     titleScreenHandled: false,
     warningComponent: PackIntegrityComponent.literal(PACK_INTEGRITY_WARNING_TEXT),
+  };
+
+  const javaRuntimeState = {
+    result: null,
+    shouldWarn: false,
+    warningOpen: false,
+    titleScreenHandled: false,
+    warningComponent: PackIntegrityComponent.literal(JAVA_RUNTIME_WARNING_TEXT),
   };
 
   const readPackIntegrityJson = (path, fallback) => {
@@ -109,6 +122,21 @@
       extraModIds: extraModIds,
     });
 
+  const parseJavaMajorVersion = (specificationVersion, javaVersion) => {
+    const versionText = String(specificationVersion || javaVersion || '').trim();
+    if (!versionText) {
+      return null;
+    }
+
+    const legacyMatch = versionText.match(/^1\.(\d+)/);
+    if (legacyMatch != null) {
+      return Number(legacyMatch[1]);
+    }
+
+    const majorMatch = versionText.match(/^(\d+)/);
+    return majorMatch == null ? null : Number(majorMatch[1]);
+  };
+
   const loadPackIntegrityResult = () => {
     const config = readPackIntegrityJson(PACK_INTEGRITY_CONFIG_PATH, {
       enabled: true,
@@ -180,6 +208,25 @@
     };
   };
 
+  const loadJavaRuntimeResult = () => {
+    const javaSpecificationVersion = String(
+      JavaRuntimeSystem.getProperty('java.specification.version') || ''
+    ).trim();
+    const javaVersion = String(JavaRuntimeSystem.getProperty('java.version') || '').trim();
+    const detectedJavaMajorVersion = parseJavaMajorVersion(javaSpecificationVersion, javaVersion);
+    const hasWrongMajorVersion =
+      detectedJavaMajorVersion != null &&
+      detectedJavaMajorVersion !== RECOMMENDED_JAVA_MAJOR_VERSION;
+
+    return {
+      recommendedJavaMajorVersion: RECOMMENDED_JAVA_MAJOR_VERSION,
+      detectedJavaMajorVersion: detectedJavaMajorVersion,
+      hasWrongMajorVersion: hasWrongMajorVersion,
+      javaVersion: javaVersion,
+      javaSpecificationVersion: javaSpecificationVersion,
+    };
+  };
+
   const writeAndLogPackIntegrityResult = (result) => {
     writePackIntegrityJson(PACK_INTEGRITY_REPORT_PATH, result);
 
@@ -200,6 +247,23 @@
       );
     } else if (result.status === 'ok') {
       console.info('[Create Delight Pack Integrity] Mod list matches the published manifest.');
+    }
+  };
+
+  const logJavaRuntimeResult = (result) => {
+    if (result.hasWrongMajorVersion) {
+      console.warn(
+        `[Create Delight Java Runtime] Detected Java ${result.detectedJavaMajorVersion}, but Java ${result.recommendedJavaMajorVersion} is recommended.`
+      );
+      console.warn(
+        `[Create Delight Java Runtime] java.version=${result.javaVersion || '(unknown)'}, java.specification.version=${result.javaSpecificationVersion || '(unknown)'}`
+      );
+    } else if (result.detectedJavaMajorVersion == null) {
+      console.warn('[Create Delight Java Runtime] Failed to detect Java major version.');
+    } else {
+      console.info(
+        `[Create Delight Java Runtime] Java ${result.detectedJavaMajorVersion} matches the recommended major version.`
+      );
     }
   };
 
@@ -228,6 +292,21 @@
         )
       );
 
+  const createJavaRuntimeWarningComponent = (result) =>
+    PackIntegrityComponent.empty()
+      .append(PackIntegrityComponent.literal(JAVA_RUNTIME_WARNING_TEXT))
+      .append(
+        PackIntegrityComponent.literal(JAVA_RUNTIME_WARNING_HIGHLIGHT_TEXT).withStyle(
+          PackIntegrityChatFormatting.YELLOW,
+          PackIntegrityChatFormatting.UNDERLINE
+        )
+      )
+      .append(
+        PackIntegrityComponent.literal(
+          `\n当前 Java: ${result.detectedJavaMajorVersion} (${result.javaVersion || '未知版本'})\n推荐 Java: ${result.recommendedJavaMajorVersion}\n请在启动器中为本实例选择 Java ${result.recommendedJavaMajorVersion} 后重启游戏。`
+        )
+      );
+
   const updatePackIntegrityWarningState = (result) => {
     if (result == null || !result.hasDifferences || !result.fingerprint) {
       packIntegrityState.shouldWarn = false;
@@ -251,7 +330,43 @@
     console.warn(`[Create Delight Pack Integrity] Integrity check failed: ${error}`);
   }
 
+  try {
+    javaRuntimeState.result = loadJavaRuntimeResult();
+    logJavaRuntimeResult(javaRuntimeState.result);
+    javaRuntimeState.warningComponent = createJavaRuntimeWarningComponent(javaRuntimeState.result);
+    javaRuntimeState.shouldWarn = javaRuntimeState.result.hasWrongMajorVersion;
+  } catch (error) {
+    console.warn(`[Create Delight Java Runtime] Runtime check failed: ${error}`);
+  }
+
   RenderJSEvents.onScreenPostRender((event) => {
+    if (
+      javaRuntimeState.shouldWarn &&
+      !javaRuntimeState.warningOpen &&
+      !javaRuntimeState.titleScreenHandled &&
+      isTitleScreen(event.screen)
+    ) {
+      const client = event.client;
+      const previousScreen = event.screen;
+      javaRuntimeState.titleScreenHandled = true;
+      javaRuntimeState.warningOpen = true;
+
+      const warningScreen = new PackIntegrityConfirmScreen(
+        (confirmed) => {
+          javaRuntimeState.shouldWarn = false;
+          javaRuntimeState.warningOpen = false;
+          client.setScreen(previousScreen);
+        },
+        PackIntegrityComponent.literal('Java 版本不推荐'),
+        javaRuntimeState.warningComponent,
+        PackIntegrityComponent.literal('我已知悉'),
+        PackIntegrityComponent.literal('关闭')
+      );
+
+      client.setScreen(warningScreen);
+      return;
+    }
+
     if (
       !packIntegrityState.shouldWarn ||
       packIntegrityState.warningOpen ||
