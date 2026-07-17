@@ -16,6 +16,7 @@
 - Git
 - Node.js LTS / npm，用于 KubeJS 脚本格式化和 Git hook。安装 Node.js 时需包含 npm，并确认 `node`、`npm` 已加入 PATH。
 - 推荐编辑器：VSCode / IntelliJ IDEA Community Edition / 其他支持 TOML、JSON、JavaScript 的编辑器
+- 项目路径不应含有空格与中文，避免 bkmpw 等工具处理文件时出错。
 
 根目录内置开发工具：
 
