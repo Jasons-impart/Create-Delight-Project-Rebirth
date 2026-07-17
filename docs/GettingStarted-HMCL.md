@@ -215,7 +215,31 @@ $json | ConvertTo-Json -Depth 100 | Set-Content ".\$instanceName.json" -Encoding
 - Java 选择 Java 21，例如 `C:\Program Files\Java\jdk-21\bin\javaw.exe`
 - 开启版本隔离，使游戏目录为 `.minecraft\versions\CDPR`
 
-也可以在关闭 HMCL 后检查 `E:\minecraft\Client\HMCL\hmcl.json`。当前配置组通常在 `configurations.Default` 下，对应配置应包含：
+HMCL 可能同时在全局配置和版本目录配置中保存游戏目录设置。版本目录下的
+`E:\minecraft\Client\HMCL\.minecraft\versions\CDPR\hmclversion.cfg` 会覆盖全局配置；
+如果这里的 `gameDirType` 是 `0`，即使 `hmcl.json` 中当前配置组已经是 `1`，启动时仍可能使用全局
+`.minecraft` 作为 `--gameDir`。
+
+关闭 HMCL 后，先检查版本级配置：
+
+```powershell
+$VersionConfig = Join-Path $InstanceDir "hmclversion.cfg"
+Get-Content $VersionConfig -Raw |
+  ConvertFrom-Json |
+  Select-Object usesGlobal, gameDirType, gameDir, java, javaVersionType
+```
+
+期望 `gameDirType` 为 `1`。如果是 `0`，关闭 HMCL 后执行：
+
+```powershell
+$VersionConfig = Join-Path $InstanceDir "hmclversion.cfg"
+$cfg = Get-Content $VersionConfig -Raw | ConvertFrom-Json
+$cfg.gameDirType = 1
+$cfg.gameDir = ""
+$cfg | ConvertTo-Json -Depth 20 | Set-Content $VersionConfig -Encoding UTF8
+```
+
+然后再检查 `E:\minecraft\Client\HMCL\hmcl.json`。当前配置组通常在 `configurations.Default` 下，对应配置应包含：
 
 ```json
 {
@@ -236,7 +260,9 @@ $json | ConvertTo-Json -Depth 100 | Set-Content ".\$instanceName.json" -Encoding
 }
 ```
 
-其中 `configurations.Default.global.gameDirType = 1` 是版本隔离的关键。
+其中 `configurations.Default.global.gameDirType = 1` 和
+`versions\CDPR\hmclversion.cfg` 中的 `gameDirType = 1` 都要成立；实际是否生效以启动日志中的
+`--gameDir` 为准。
 
 ## 验证
 
@@ -304,6 +330,8 @@ E:\minecraft\Client\HMCL\.minecraft
 ```
 
 说明未开启版本隔离。关闭 HMCL 后把 `hmcl.json` 中对应配置的 `global.gameDirType` 改为 `1`，或在 HMCL 图形界面开启版本隔离。
+如果 `hmcl.json` 已经是 `1` 但仍未生效，继续检查
+`E:\minecraft\Client\HMCL\.minecraft\versions\CDPR\hmclversion.cfg`，把其中的 `gameDirType` 也改为 `1`。
 
 ### 启动时扫描全局旧 Forge 1.20.1 mod
 
