@@ -5,7 +5,7 @@
   const PackIntegrityChatFormatting = Java.loadClass('net.minecraft.ChatFormatting');
   const PackIntegrityComponent = Java.loadClass('net.minecraft.network.chat.Component');
   const PackIntegrityKubeJSPaths = Java.loadClass('dev.latvian.mods.kubejs.KubeJSPaths');
-  const JavaRuntimeSystem = Java.loadClass('java.lang.System');
+  const JavaRuntimeSystemReport = Java.loadClass('net.minecraft.SystemReport');
 
   const PACK_INTEGRITY_CONFIG_PATH = PackIntegrityKubeJSPaths.GAMEDIR.resolve(
     'kubejs/config/createdelight_pack_integrity.json'
@@ -71,12 +71,37 @@
   };
 
   const writePackIntegrityState = (result) => {
+    const currentState = readPackIntegrityState();
     writePackIntegrityJson(PACK_INTEGRITY_STATE_PATH, {
+      acknowledgedJavaRuntimeFingerprint: currentState.acknowledgedJavaRuntimeFingerprint,
+      acknowledgedJavaRuntimeAt: currentState.acknowledgedJavaRuntimeAt,
+      javaRuntime: currentState.javaRuntime,
       acknowledgedFingerprint: result.fingerprint,
       acknowledgedAt: new Date().toISOString(),
       side: result.side,
       missingModIds: result.missingModIds,
       extraModIds: result.extraModIds,
+    });
+  };
+
+  const writeJavaRuntimeState = (result) => {
+    const currentState = readPackIntegrityState();
+    writePackIntegrityJson(PACK_INTEGRITY_STATE_PATH, {
+      acknowledgedFingerprint: currentState.acknowledgedFingerprint,
+      acknowledgedAt: currentState.acknowledgedAt,
+      side: currentState.side,
+      missingModIds: currentState.missingModIds,
+      extraModIds: currentState.extraModIds,
+      acknowledgedJavaRuntimeFingerprint: result.fingerprint,
+      acknowledgedJavaRuntimeAt: new Date().toISOString(),
+      javaRuntime: {
+        status: result.status,
+        recommendedJavaMajorVersion: result.recommendedJavaMajorVersion,
+        detectedJavaMajorVersion: result.detectedJavaMajorVersion,
+        javaVersion: result.javaVersion,
+        javaVmVersion: result.javaVmVersion,
+        source: result.source,
+      },
     });
   };
 
@@ -122,6 +147,13 @@
       extraModIds: extraModIds,
     });
 
+  const createJavaRuntimeFingerprint = (result) =>
+    JSON.stringify({
+      recommendedJavaMajorVersion: result.recommendedJavaMajorVersion,
+      detectedJavaMajorVersion: result.detectedJavaMajorVersion,
+      javaVersion: result.javaVersion,
+    });
+
   const parseJavaMajorVersion = (specificationVersion, javaVersion) => {
     const versionText = String(specificationVersion || javaVersion || '').trim();
     if (!versionText) {
@@ -135,6 +167,26 @@
 
     const majorMatch = versionText.match(/^(\d+)/);
     return majorMatch == null ? null : Number(majorMatch[1]);
+  };
+
+  const parseJavaRuntimeFromSystemReport = (reportText) => {
+    if (!reportText) {
+      return {
+        javaVersion: '',
+        javaVmVersion: '',
+        source: 'system_report_missing',
+      };
+    }
+
+    const javaVersionMatch = reportText.match(/(?:^|\n)\s*Java Version:\s*([^\n,]+)/);
+    const javaVmVersionMatch = reportText.match(/(?:^|\n)\s*Java VM Version:\s*([^\n]+)/);
+
+    return {
+      javaVersion: javaVersionMatch == null ? '' : javaVersionMatch[1].trim(),
+      javaVmVersion: javaVmVersionMatch == null ? '' : javaVmVersionMatch[1].trim(),
+      javaSpecificationVersion: '',
+      source: javaVersionMatch == null ? 'system_report_unmatched' : 'system_report',
+    };
   };
 
   const loadPackIntegrityResult = () => {
@@ -209,22 +261,35 @@
   };
 
   const loadJavaRuntimeResult = () => {
-    const javaSpecificationVersion = String(
-      JavaRuntimeSystem.getProperty('java.specification.version') || ''
-    ).trim();
-    const javaVersion = String(JavaRuntimeSystem.getProperty('java.version') || '').trim();
+    const reportRuntime = parseJavaRuntimeFromSystemReport(
+      String(new JavaRuntimeSystemReport().toLineSeparatedString())
+    );
+    const javaSpecificationVersion = String(reportRuntime.javaSpecificationVersion || '').trim();
+    const javaVersion = String(reportRuntime.javaVersion || '').trim();
     const detectedJavaMajorVersion = parseJavaMajorVersion(javaSpecificationVersion, javaVersion);
     const hasWrongMajorVersion =
       detectedJavaMajorVersion != null &&
       detectedJavaMajorVersion !== RECOMMENDED_JAVA_MAJOR_VERSION;
-
-    return {
+    const result = {
+      schemaVersion: 1,
+      status:
+        detectedJavaMajorVersion == null
+          ? 'unknown'
+          : hasWrongMajorVersion
+            ? 'recommended_mismatch'
+            : 'ok',
+      checkedAt: new Date().toISOString(),
+      source: reportRuntime.source,
       recommendedJavaMajorVersion: RECOMMENDED_JAVA_MAJOR_VERSION,
       detectedJavaMajorVersion: detectedJavaMajorVersion,
       hasWrongMajorVersion: hasWrongMajorVersion,
       javaVersion: javaVersion,
       javaSpecificationVersion: javaSpecificationVersion,
+      javaVmVersion: reportRuntime.javaVmVersion,
     };
+
+    result.fingerprint = createJavaRuntimeFingerprint(result);
+    return result;
   };
 
   const writeAndLogPackIntegrityResult = (result) => {
@@ -265,6 +330,7 @@
         `[Create Delight Java Runtime] Java ${result.detectedJavaMajorVersion} matches the recommended major version.`
       );
     }
+    console.info(`[Create Delight Java Runtime] Detection source: ${result.source}`);
   };
 
   const formatPackIntegrityWarningList = (label, modIds) => {
@@ -319,24 +385,42 @@
       acknowledgedState.acknowledgedFingerprint !== result.fingerprint;
   };
 
+  const updateJavaRuntimeWarningState = (result) => {
+    if (result == null || !result.hasWrongMajorVersion || !result.fingerprint) {
+      javaRuntimeState.shouldWarn = false;
+      return;
+    }
+
+    const acknowledgedState = readPackIntegrityState();
+    javaRuntimeState.warningComponent = createJavaRuntimeWarningComponent(result);
+    javaRuntimeState.shouldWarn =
+      acknowledgedState.acknowledgedJavaRuntimeFingerprint !== result.fingerprint;
+  };
+
   const isTitleScreen = (screen) =>
     screen != null && String(screen).startsWith('net.minecraft.client.gui.screens.TitleScreen@');
 
   try {
     packIntegrityState.result = loadPackIntegrityResult();
-    writeAndLogPackIntegrityResult(packIntegrityState.result);
-    updatePackIntegrityWarningState(packIntegrityState.result);
   } catch (error) {
     console.warn(`[Create Delight Pack Integrity] Integrity check failed: ${error}`);
   }
 
   try {
     javaRuntimeState.result = loadJavaRuntimeResult();
-    logJavaRuntimeResult(javaRuntimeState.result);
-    javaRuntimeState.warningComponent = createJavaRuntimeWarningComponent(javaRuntimeState.result);
-    javaRuntimeState.shouldWarn = javaRuntimeState.result.hasWrongMajorVersion;
   } catch (error) {
     console.warn(`[Create Delight Java Runtime] Runtime check failed: ${error}`);
+  }
+
+  if (packIntegrityState.result != null) {
+    packIntegrityState.result.javaRuntime = javaRuntimeState.result;
+    writeAndLogPackIntegrityResult(packIntegrityState.result);
+    updatePackIntegrityWarningState(packIntegrityState.result);
+  }
+
+  if (javaRuntimeState.result != null) {
+    logJavaRuntimeResult(javaRuntimeState.result);
+    updateJavaRuntimeWarningState(javaRuntimeState.result);
   }
 
   RenderJSEvents.onScreenPostRender((event) => {
@@ -353,6 +437,9 @@
 
       const warningScreen = new PackIntegrityConfirmScreen(
         (confirmed) => {
+          if (confirmed) {
+            writeJavaRuntimeState(javaRuntimeState.result);
+          }
           javaRuntimeState.shouldWarn = false;
           javaRuntimeState.warningOpen = false;
           client.setScreen(previousScreen);
