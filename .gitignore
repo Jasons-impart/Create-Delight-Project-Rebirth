@@ -145,3 +145,5 @@ server/*.tmp
 .probe
 kubejs/config/probe-settings.json
 kubejs/config/web_server.json
+# CocoIndex Code (ccc)
+/.cocoindex_code/
