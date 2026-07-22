@@ -5,11 +5,11 @@
 ## 基线
 
 - Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.228`
+- Loader: `NeoForge 21.1.242`
 - Java: `21`
 - 版本名：`Create-Delight-Project-Rebirth`
 
-这里的 `nf228` 指 `NeoForge 21.1.228`。版本名必须保持为 `Create-Delight-Project-Rebirth`，因为仓库内已有同名的版本 JSON：
+这里的 `nf242` 指 `NeoForge 21.1.242`。版本名必须保持为 `Create-Delight-Project-Rebirth`，因为仓库内已有同名的版本 JSON：
 
 ```text
 Create-Delight-Project-Rebirth.json
@@ -24,7 +24,7 @@ Create-Delight-Project-Rebirth.json
 在 PCL 中手动下载并安装：
 
 - Minecraft `1.21.1`
-- NeoForge `21.1.228`
+- NeoForge `21.1.242`
 
 安装时把版本名设置为：
 
@@ -73,7 +73,7 @@ E:\minecraft\Client\PCL\.minecraft\versions\Create-Delight-Project-Rebirth
 之后脚本会自动执行：
 
 - 检查版本目录名是否为 `Create-Delight-Project-Rebirth`
-- 检查 PCL 已安装 `Minecraft 1.21.1 + NeoForge 21.1.228`
+- 检查 PCL 已安装 `Minecraft 1.21.1 + NeoForge 21.1.242`
 - 克隆仓库到 `tmp`
 - 把 `tmp` 内容覆盖到版本目录，包括隐藏的 `.git`
 - 运行 `npm install`
@@ -216,7 +216,7 @@ git status --short --untracked-files=all
 
 ### PCL 里版本名不对
 
-删除错误版本，重新用 PCL 安装 `1.21.1 + NeoForge 21.1.228`，版本名填：
+删除错误版本，重新用 PCL 安装 `1.21.1 + NeoForge 21.1.242`，版本名填：
 
 ```text
 Create-Delight-Project-Rebirth

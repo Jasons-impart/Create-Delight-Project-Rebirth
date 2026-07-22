@@ -1,0 +1,9 @@
+{
+  "enablePlacedFeatureMixin": true,
+  "enableFastTickChunks": true,
+  "enableArenaPalette": true,
+  "enableServerRuntimeArenaPalette": false,
+  "enableClientArenaPalette": false,
+  "enableGcFreeWorldgenSave": true,
+  "enableYALightEngine": false
+}

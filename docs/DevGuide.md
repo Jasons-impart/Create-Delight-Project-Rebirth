@@ -5,7 +5,7 @@
 ## 项目基线
 
 - Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.228`
+- Loader: `NeoForge 21.1.242`
 - Java: `21`
 - Pack manager: `bkmpw`，用于管理仓库中的 mod 元数据、下载来源和文件索引。
 
