@@ -1,11 +1,13 @@
 # Create Delight Project Rebirth 开发指南
 
-本仓库是 1.21.1 NeoForge 版本的整合包源码仓库。仓库只维护可审查、可复现的源码和元数据；mod 本体通过 bkmpw 管理，不直接提交 jar。
+本仓库是 <MC_VERSION> NeoForge 版本的整合包源码仓库。仓库只维护可审查、可复现的源码和元数据；mod 本体通过 bkmpw 管理，不直接提交 jar。
+
+`<MC_VERSION>` 与 `<NEOFORGE_VERSION>` 分别表示 `pack/pack.toml` `[versions]` 中的 `minecraft`、`neoforge`；该文件是唯一版本基线。
 
 ## 项目基线
 
-- Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.242`
+- Minecraft: `<MC_VERSION>`
+- Loader: `NeoForge <NEOFORGE_VERSION>`
 - Java: `21`
 - Pack manager: `bkmpw`，用于管理仓库中的 mod 元数据、下载来源和文件索引。
 
@@ -58,7 +60,7 @@ devtool.bat check
 - `mods/*.pw.toml`、`mods/common/*.pw.toml`、`mods/client/*.pw.toml`、`mods/server/*.pw.toml` 提交。
 - `pack/` 中的发布模板提交；根目录 `.packwizignore` 直接提交；根目录 `pack.toml`、`index.toml`、`icon.png`、`server-icon.png`、`start.bat`、`start.sh`、`variables.txt`、`PCL/` 由 `devtool.bat prepare-pack` 或 bkmpw 操作生成，不提交。
 - `config/`、`defaultconfigs/` 只放确认要共享的配置。
-- `kubejs/` 只放已确认适配 1.21.1 NeoForge 和目标模组集合的脚本、数据与资源。
+- `kubejs/` 只放已确认适配 <MC_VERSION> NeoForge 和目标模组集合的脚本、数据与资源。
 - `hotai/` 只放已确认需要随整合包共享的 Hotai 补丁。新增或重建 `hotai/**/*.badiff` 后，更新 `docs/HOTAI_MIXIN_OVERRIDES.md`，并运行 `devtool.bat refresh` 确认补丁文件进入 `index.toml`。
 - 不提交 pack 管理二进制。`bkmpw` 通过全局 npm 包 `@bro-know-my/packwiz` 安装；不要重新加入 `bkmpw.exe`、`packwiz.exe`、`packwiz-old.exe`、`packwiz-installer-bootstrap.jar` 或相关 VERSION 文件。
 - 服务端运行产物不提交，包括 `libraries/`、`world*`、`logs/`、`run.bat`、`run.sh`、`server.properties`、`eula.txt`、`user_jvm_args.txt`。
@@ -123,7 +125,7 @@ devtool.bat
 
 ## KubeJS 开发规范
 
-当前阶段不要直接批量搬运旧仓库 KubeJS。旧仓库是 Forge 1.20.1，新仓库目标是 NeoForge 1.21.1，模组 ID、标签、配方类型、KubeJS API 和配置结构都可能变化。
+当前阶段不要直接批量搬运旧仓库 KubeJS。旧仓库是 Forge 1.20.1，新仓库目标是 NeoForge <MC_VERSION>，模组 ID、标签、配方类型、KubeJS API 和配置结构都可能变化。
 
 ### KubeJS JS 格式化
 
@@ -295,7 +297,7 @@ ServerEvents.recipes((event) => {
 
 ## 配置迁移规范
 
-- 优先使用 1.21.1 NeoForge 实例生成的新配置。
+- 优先使用 <MC_VERSION> NeoForge 实例生成的新配置。
 - 不直接覆盖旧 Forge 配置。
 - 只迁移同 mod id、同配置项语义明确的内容。
 - 服务端默认配置放 `defaultconfigs/`。

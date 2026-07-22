@@ -2,14 +2,16 @@
 
 本文用于通过 PCL 从空目录配置 Create Delight Project Rebirth 本地开发实例。
 
+`<MC_VERSION>` 与 `<NEOFORGE_VERSION>` 分别表示 `pack/pack.toml` `[versions]` 中的 `minecraft`、`neoforge`；部署脚本会直接读取该基线。
+
 ## 基线
 
-- Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.242`
+- Minecraft: `<MC_VERSION>`
+- Loader: `NeoForge <NEOFORGE_VERSION>`
 - Java: `21`
 - 版本名：`Create-Delight-Project-Rebirth`
 
-这里的 `nf242` 指 `NeoForge 21.1.242`。版本名必须保持为 `Create-Delight-Project-Rebirth`，因为仓库内已有同名的版本 JSON：
+PCL 中显示的 NeoForge 版本标识以 `<NEOFORGE_VERSION>` 为准。版本名必须保持为 `Create-Delight-Project-Rebirth`，因为仓库内已有同名的版本 JSON：
 
 ```text
 Create-Delight-Project-Rebirth.json
@@ -23,8 +25,8 @@ Create-Delight-Project-Rebirth.json
 
 在 PCL 中手动下载并安装：
 
-- Minecraft `1.21.1`
-- NeoForge `21.1.242`
+- Minecraft `<MC_VERSION>`
+- NeoForge `<NEOFORGE_VERSION>`
 
 安装时把版本名设置为：
 
@@ -73,7 +75,7 @@ E:\minecraft\Client\PCL\.minecraft\versions\Create-Delight-Project-Rebirth
 之后脚本会自动执行：
 
 - 检查版本目录名是否为 `Create-Delight-Project-Rebirth`
-- 检查 PCL 已安装 `Minecraft 1.21.1 + NeoForge 21.1.242`
+- 检查 PCL 已安装 `Minecraft <MC_VERSION> + NeoForge <NEOFORGE_VERSION>`
 - 克隆仓库到 `tmp`
 - 把 `tmp` 内容覆盖到版本目录，包括隐藏的 `.git`
 - 运行 `npm install`
@@ -209,14 +211,14 @@ git status --short --untracked-files=all
 
 - `id` 为 `Create-Delight-Project-Rebirth`
 - `mainClass` 为 `cpw.mods.bootstraplauncher.BootstrapLauncher`
-- `clientVersion` 为 `1.21.1`
+- `clientVersion` 为 `<MC_VERSION>`
 - PCL 中该版本使用 Java 21
 
 ## 常见问题
 
 ### PCL 里版本名不对
 
-删除错误版本，重新用 PCL 安装 `1.21.1 + NeoForge 21.1.242`，版本名填：
+删除错误版本，重新用 PCL 安装 `<MC_VERSION> + NeoForge <NEOFORGE_VERSION>`，版本名填：
 
 ```text
 Create-Delight-Project-Rebirth
