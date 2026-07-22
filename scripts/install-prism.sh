@@ -5,8 +5,8 @@ repo_url="https://github.com/Jasons-impart/Create-Delight-Project-Rebirth.git"
 skip_install_files=0
 input_path=""
 
-expected_mc=""
-expected_neoforge=""
+expected_mc="1.21.1"
+expected_neoforge="21.1.242"
 
 if [[ -t 1 ]]; then
   c_title=$'\033[35m'
@@ -107,17 +107,6 @@ resolve_existing_dir() {
   (cd "$path" && pwd -P)
 }
 
-read_pack_version() {
-  local pack_toml="$1"
-  local key="$2"
-  local value
-
-  [[ -f "$pack_toml" ]] || fail "缺少整合包版本基线：$pack_toml"
-  value="$(sed -n -E "s/^[[:space:]]*$key[[:space:]]*=[[:space:]]*\"([^\"]+)\"[[:space:]]*$/\1/p" "$pack_toml" | head -n 1)"
-  [[ -n "$value" ]] || fail "pack/pack.toml 缺少 versions.$key"
-  printf '%s' "$value"
-}
-
 detect_dirs() {
   local raw="$1"
   local resolved
@@ -139,7 +128,7 @@ detect_dirs() {
 }
 
 title "Create Delight Project Rebirth Prism 部署脚本"
-info "目标 Minecraft 与 NeoForge 版本将在克隆后从 pack/pack.toml 读取。"
+info "请先在 Prism Launcher 中创建实例，并安装 Minecraft $expected_mc + NeoForge $expected_neoforge。"
 info "Prism 实例名可以自定义；仓库识别只依赖游戏目录中的 .git。"
 
 require_command git
@@ -148,8 +137,6 @@ require_command npm
 require_command grep
 require_command cp
 require_command rm
-require_command sed
-require_command head
 
 if [[ -z "$input_path" ]]; then
   printf '%s[输入]%s Prism 实例目录或 minecraft 目录 > ' "$c_warn" "$c_reset"
@@ -160,6 +147,10 @@ input_path="${input_path/#\~/$HOME}"
 detect_dirs "$input_path"
 
 [[ -d "$game_dir" ]] || mkdir -p "$game_dir"
+
+mmc_pack="$instance_dir/mmc-pack.json"
+grep -F "$expected_mc" "$mmc_pack" >/dev/null || fail "mmc-pack.json 中未找到 Minecraft $expected_mc。请检查 Prism 实例版本。"
+grep -F "$expected_neoforge" "$mmc_pack" >/dev/null || fail "mmc-pack.json 中未找到 NeoForge $expected_neoforge。请检查 Prism 实例加载器版本。"
 
 info "Prism 实例目录：$instance_dir"
 info "游戏目录：$game_dir"
@@ -181,14 +172,6 @@ ok "仓库克隆完成"
 
 [[ -d "$tmp_dir/.git" ]] || fail "克隆结果缺少 .git：$tmp_dir/.git"
 [[ -f "$tmp_dir/devtool.sh" ]] || fail "克隆结果缺少 devtool.sh：$tmp_dir/devtool.sh"
-
-expected_mc="$(read_pack_version "$tmp_dir/pack/pack.toml" minecraft)"
-expected_neoforge="$(read_pack_version "$tmp_dir/pack/pack.toml" neoforge)"
-info "pack/pack.toml 要求 Minecraft $expected_mc + NeoForge $expected_neoforge。"
-
-mmc_pack="$instance_dir/mmc-pack.json"
-grep -F "$expected_mc" "$mmc_pack" >/dev/null || fail "mmc-pack.json 中未找到 Minecraft $expected_mc。请检查 Prism 实例版本。"
-grep -F "$expected_neoforge" "$mmc_pack" >/dev/null || fail "mmc-pack.json 中未找到 NeoForge $expected_neoforge。请检查 Prism 实例加载器版本。"
 
 step "覆盖 Prism 游戏目录"
 cp -a "$tmp_dir"/. "$game_dir"/

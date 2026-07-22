@@ -1,6 +1,6 @@
 # Create Delight Project Rebirth
 
-面向 Minecraft NeoForge 的 Create Delight Remake；目标版本以 `pack/pack.toml` 的 `[versions]` 为准。
+面向 Minecraft 1.21.1 NeoForge 的 Create Delight Remake
 火热移植中
 
 ## 协助开发

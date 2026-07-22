@@ -190,10 +190,8 @@ Linux/macOS：
 
 如果缺少 `neoforge.jar`，启动脚本会按 `variables.txt` 中的 `NEOFORGE_INSTALLER_URL` 自动下载。缺少 NeoForge 生成的 args 文件时，脚本会自动安装 NeoForge，然后使用配置的 `JAVA` 通过 `win_args.txt` 或 `unix_args.txt` 启动。
 
-`<MC_VERSION>` 与 `<NEOFORGE_VERSION>` 分别表示 `pack/pack.toml` `[versions]` 中的 `minecraft`、`neoforge`；该文件是唯一版本基线。
-
 ## 当前目标
 
-- Minecraft: `<MC_VERSION>`
-- NeoForge: `<NEOFORGE_VERSION>`
+- Minecraft: `1.21.1`
+- NeoForge: `21.1.242`
 - Java: `21`

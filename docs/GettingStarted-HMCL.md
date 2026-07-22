@@ -2,12 +2,10 @@
 
 本文用于从空目录配置 Create Delight Project Rebirth 本地开发实例。
 
-`<MC_VERSION>` 与 `<NEOFORGE_VERSION>` 分别表示 `pack/pack.toml` `[versions]` 中的 `minecraft`、`neoforge`；启动脚本会直接读取该基线。
-
 ## 基线和路径
 
-- Minecraft: `<MC_VERSION>`
-- Loader: `NeoForge <NEOFORGE_VERSION>`
+- Minecraft: `1.21.1`
+- Loader: `NeoForge 21.1.242`
 - Java: `21`
 - 示例 HMCL 目录：`E:\minecraft\Client\HMCL`
 - 示例实例名：`CDPR`
@@ -30,9 +28,9 @@ $InstanceDir = Join-Path $MinecraftDir "versions\$InstanceName"
 E:\minecraft\Client\HMCL\.minecraft\
 ├── libraries\                         # HMCL 全局库，普通版本启动时会读取这里
 ├── versions\
-│   ├── <MC_VERSION>\                         # CDPR.json 的 inherited parent
-│   │   ├── <MC_VERSION>.json
-│   │   └── <MC_VERSION>.jar
+│   ├── 1.21.1\                         # CDPR.json 的 inherited parent
+│   │   ├── 1.21.1.json
+│   │   └── 1.21.1.jar
 │   └── CDPR\
 │       ├── .git\
 │       ├── CDPR.json                   # 让 HMCL 左侧识别 CDPR 的根版本 JSON
@@ -138,7 +136,7 @@ Compare-Object $ExpectedModJars $ActualModJars
 
 ```powershell
 Invoke-WebRequest -UseBasicParsing `
-  -Uri "https://maven.neoforged.net/releases/net/neoforged/neoforge/<NEOFORGE_VERSION>/neoforge-<NEOFORGE_VERSION>-installer.jar" `
+  -Uri "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.242/neoforge-21.1.242-installer.jar" `
   -OutFile ".\neoforge.jar"
 ```
 
@@ -177,8 +175,8 @@ Successfully installed client into launcher.
 
 ```text
 libraries/
-versions/<MC_VERSION>/
-versions/neoforge-<NEOFORGE_VERSION>/
+versions/1.21.1/
+versions/neoforge-21.1.242/
 launcher_profiles.json
 ```
 
@@ -188,12 +186,12 @@ launcher_profiles.json
 
 在 `CDPR` 目录执行。
 
-先把基础 `<MC_VERSION>` 放到 HMCL 全局版本目录，因为 `CDPR.json` 会 `inheritsFrom = "<MC_VERSION>"`：
+先把基础 `1.21.1` 放到 HMCL 全局版本目录，因为 `CDPR.json` 会 `inheritsFrom = "1.21.1"`：
 
 ```powershell
-New-Item -ItemType Directory -Force "$MinecraftDir\versions\<MC_VERSION>" | Out-Null
-Copy-Item ".\versions\<MC_VERSION>\<MC_VERSION>.json" "$MinecraftDir\versions\<MC_VERSION>\<MC_VERSION>.json" -Force
-Copy-Item ".\versions\<MC_VERSION>\<MC_VERSION>.jar" "$MinecraftDir\versions\<MC_VERSION>\<MC_VERSION>.jar" -Force
+New-Item -ItemType Directory -Force "$MinecraftDir\versions\1.21.1" | Out-Null
+Copy-Item ".\versions\1.21.1\1.21.1.json" "$MinecraftDir\versions\1.21.1\1.21.1.json" -Force
+Copy-Item ".\versions\1.21.1\1.21.1.jar" "$MinecraftDir\versions\1.21.1\1.21.1.jar" -Force
 ```
 
 再把 NeoForge libraries 同步到 HMCL 全局 libraries。普通版本启动时 HMCL 会从全局 `.minecraft\libraries` 解析库：
@@ -208,12 +206,12 @@ robocopy ".\libraries" "$MinecraftDir\libraries" /E /NFL /NDL /NJH /NJS /NP
 
 ```powershell
 $instanceName = Split-Path -Leaf (Get-Location)
-$json = Get-Content ".\versions\neoforge-<NEOFORGE_VERSION>\neoforge-<NEOFORGE_VERSION>.json" -Raw | ConvertFrom-Json
+$json = Get-Content ".\versions\neoforge-21.1.242\neoforge-21.1.242.json" -Raw | ConvertFrom-Json
 $json.id = $instanceName
 $json | ConvertTo-Json -Depth 100 | Set-Content ".\$instanceName.json" -Encoding UTF8
 ```
 
-`CDPR.jar` 不需要存在。NeoForge `<MC_VERSION>` 使用 `inheritsFrom = "<MC_VERSION>"` 和 libraries 中的 patched client 启动，HMCL 自己安装出的 `neoforge-<NEOFORGE_VERSION>` 版本也是这种布局。
+`CDPR.jar` 不需要存在。NeoForge `1.21.1` 使用 `inheritsFrom = "1.21.1"` 和 libraries 中的 patched client 启动，HMCL 自己安装出的 `neoforge-21.1.242` 版本也是这种布局。
 
 ## 配置 HMCL 版本隔离
 
@@ -294,8 +292,8 @@ git status --short --untracked-files=all
 ```powershell
 Test-Path .\CDPR.json
 (Get-Content .\CDPR.json -Raw | ConvertFrom-Json) | Select-Object id,inheritsFrom,mainClass,jar
-Test-Path "$MinecraftDir\versions\<MC_VERSION>\<MC_VERSION>.jar"
-Test-Path "$MinecraftDir\libraries\net\neoforged\neoforge\<NEOFORGE_VERSION>\neoforge-<NEOFORGE_VERSION>-client.jar"
+Test-Path "$MinecraftDir\versions\1.21.1\1.21.1.jar"
+Test-Path "$MinecraftDir\libraries\net\neoforged\neoforge\21.1.242\neoforge-21.1.242-client.jar"
 Get-ChildItem .\mods -Filter *.jar -File | Measure-Object
 ```
 
@@ -303,9 +301,9 @@ Get-ChildItem .\mods -Filter *.jar -File | Measure-Object
 
 - `devtool.bat check` 全部通过
 - `CDPR.json` 存在，`id` 为 `CDPR`
-- `inheritsFrom` 为 `<MC_VERSION>`
+- `inheritsFrom` 为 `1.21.1`
 - `mainClass` 为 `cpw.mods.bootstraplauncher.BootstrapLauncher`
-- HMCL 全局 `<MC_VERSION>.jar` 存在
+- HMCL 全局 `1.21.1.jar` 存在
 - HMCL 全局 NeoForge client jar 存在
 - `mods/` 中有实际 `*.jar`
 
@@ -332,8 +330,8 @@ Get-Content "E:\minecraft\Client\HMCL\.minecraft\versions\CDPR\logs\latest.log" 
 
 - `E:\minecraft\Client\HMCL\.minecraft\versions\CDPR\CDPR.json` 存在
 - `CDPR.json` 中 `id` 等于 `CDPR`
-- `E:\minecraft\Client\HMCL\.minecraft\versions\<MC_VERSION>\<MC_VERSION>.json` 存在
-- `E:\minecraft\Client\HMCL\.minecraft\versions\<MC_VERSION>\<MC_VERSION>.jar` 存在
+- `E:\minecraft\Client\HMCL\.minecraft\versions\1.21.1\1.21.1.json` 存在
+- `E:\minecraft\Client\HMCL\.minecraft\versions\1.21.1\1.21.1.jar` 存在
 
 修复后重启 HMCL 或刷新版本列表。
 

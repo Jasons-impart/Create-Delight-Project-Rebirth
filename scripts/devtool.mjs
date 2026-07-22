@@ -441,8 +441,6 @@ function validateManagedVersionReferences(errors) {
   const referenceFiles = [
     { relative: 'pack/variables.txt' },
     { relative: 'pack/PCL/Setup.ini' },
-    { relative: 'scripts/Install-PCL.ps1' },
-    { relative: 'scripts/install-prism.sh' },
   ];
 
   const contentByPath = new Map();
@@ -499,19 +497,6 @@ function validateManagedVersionReferences(errors) {
     );
   }
 
-  const pclInstaller = contentByPath.get('scripts/Install-PCL.ps1');
-  if (pclInstaller) {
-    if (!/function Get-PackVersion\b/.test(pclInstaller) || !/pack\\pack\.toml/.test(pclInstaller)) {
-      errors.push('scripts/Install-PCL.ps1: must read Minecraft and NeoForge versions from pack/pack.toml');
-    }
-  }
-
-  const prismInstaller = contentByPath.get('scripts/install-prism.sh');
-  if (prismInstaller) {
-    if (!/read_pack_version\(\)/.test(prismInstaller) || !/pack\/pack\.toml/.test(prismInstaller)) {
-      errors.push('scripts/install-prism.sh: must read Minecraft and NeoForge versions from pack/pack.toml');
-    }
-  }
 }
 
 function indexIncludedCount() {
