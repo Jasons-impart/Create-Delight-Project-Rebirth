@@ -6,7 +6,7 @@ skip_install_files=0
 input_path=""
 
 expected_mc="1.21.1"
-expected_neoforge="21.1.228"
+expected_neoforge="21.1.242"
 
 if [[ -t 1 ]]; then
   c_title=$'\033[35m'

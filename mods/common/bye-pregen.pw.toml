@@ -1,9 +1,13 @@
-name = "Bye?Pregen!"
-filename = "byepregen-1.0.7-cdpr.1.jar"
+name = "byepregen-1.0.9.1.jar"
+filename = "byepregen-1.0.9.1.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Jasons-impart/Bye-Pregen/releases/download/byepregen-1.0.7-cdpr.1/byepregen-1.0.7-cdpr.1.jar"
-hash-format = "sha256"
-hash = "e4ee0b1d8209c31c1029dc4f68f5dcb9162ca16f9ad82cc0991eea77c62e5b97"
-mode = "url"
+hash-format = "sha1"
+hash = "5408aaeb90d9f406c7e9a11cfbb9c0d925008929"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8462567
+project-id = 1567378

@@ -5,7 +5,7 @@
 ## 基线
 
 - Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.228`
+- Loader: `NeoForge 21.1.242`
 - Java: `21`
 - Prism 实例名：可自定义
 
@@ -20,7 +20,7 @@ Prism 与 PCL/HMCL 不同：实例根目录通常包含 `mmc-pack.json`，真正
 在 Prism Launcher 中创建新实例：
 
 - Minecraft `1.21.1`
-- NeoForge `21.1.228`
+- NeoForge `21.1.242`
 - Java 选择 Java `21`
 - 实例名可以自定义
 
@@ -68,7 +68,7 @@ curl -fsSL "https://raw.githubusercontent.com/Jasons-impart/Create-Delight-Proje
 脚本会自动执行：
 
 - 检查实例目录中的 `mmc-pack.json`
-- 检查 Prism 实例已安装 `Minecraft 1.21.1 + NeoForge 21.1.228`
+- 检查 Prism 实例已安装 `Minecraft 1.21.1 + NeoForge 21.1.242`
 - 克隆仓库到 `minecraft/tmp`
 - 把 `tmp` 内容覆盖到 `minecraft/`，包括隐藏的 `.git`
 - 运行 `npm install`
@@ -111,7 +111,7 @@ find mods -maxdepth 1 -name "*.jar" -type f | wc -l
 - `devtool.sh check` 通过
 - `mods/` 中有实际 `*.jar`
 - Prism 实例使用 Java `21`
-- Prism 实例组件中有 Minecraft `1.21.1` 和 NeoForge `21.1.228`
+- Prism 实例组件中有 Minecraft `1.21.1` 和 NeoForge `21.1.242`
 
 ## 常见问题
 
@@ -134,7 +134,7 @@ find mods -maxdepth 1 -name "*.jar" -type f | wc -l
 回到 Prism Launcher，检查实例组件：
 
 - Minecraft 必须是 `1.21.1`
-- NeoForge 必须是 `21.1.228`
+- NeoForge 必须是 `21.1.242`
 
 修正后重新运行脚本。
 

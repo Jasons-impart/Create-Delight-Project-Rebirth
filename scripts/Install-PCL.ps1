@@ -8,7 +8,7 @@ $ErrorActionPreference = "Stop"
 
 $ExpectedVersionName = "Create-Delight-Project-Rebirth"
 $ExpectedMinecraftVersion = "1.21.1"
-$ExpectedNeoForgeVersion = "21.1.228"
+$ExpectedNeoForgeVersion = "21.1.242"
 
 function Write-Title {
   param([string]$Message)

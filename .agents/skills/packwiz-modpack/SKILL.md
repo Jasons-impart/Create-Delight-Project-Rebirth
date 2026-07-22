@@ -189,7 +189,7 @@ Allow these when relevant:
 ## Create Delight Project Rebirth Notes
 
 - Target Minecraft: `1.21.1`
-- Target NeoForge: `21.1.228`
+- Target NeoForge: `21.1.242`
 - Required Java: `21`
 - Windows, Linux, and macOS are supported for pack maintenance through the Node-based devtool.
 - Source reference repository: `Create-Delight-Remake` Forge `1.20.1`

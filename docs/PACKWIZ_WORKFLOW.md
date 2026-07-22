@@ -193,5 +193,5 @@ Linux/macOS：
 ## 当前目标
 
 - Minecraft: `1.21.1`
-- NeoForge: `21.1.228`
+- NeoForge: `21.1.242`
 - Java: `21`

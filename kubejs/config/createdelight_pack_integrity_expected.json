@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T06:27:36Z",
+  "generatedAt": "2026-07-22T15:36:20Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -115,7 +115,6 @@
       "createfactorycontroller",
       "createfastschematiccannon",
       "createfluidstuffs",
-      "createidlx",
       "createlazytick",
       "createliquidfuel",
       "createmetallurgy",
@@ -1186,7 +1185,7 @@
     {
       "side": "common",
       "metadata": "mods/common/bye-pregen.pw.toml",
-      "filename": "byepregen-1.0.7-cdpr.1.jar",
+      "filename": "byepregen-1.0.9.1.jar",
       "modIds": [
         "byepregen"
       ]
@@ -1648,14 +1647,6 @@
       "filename": "createfluidstuffs-neoforge-1.2.1.jar",
       "modIds": [
         "createfluidstuffs"
-      ]
-    },
-    {
-      "side": "common",
-      "metadata": "mods/common/create-idlx.pw.toml",
-      "filename": "createidlx-1.21.1-1.5.jar",
-      "modIds": [
-        "createidlx"
       ]
     },
     {
