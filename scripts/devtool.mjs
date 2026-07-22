@@ -409,6 +409,111 @@ function parseSimpleToml(text) {
   return rootTable;
 }
 
+function validateVersionField(relative, text, label, pattern, expected, errors) {
+  const match = text.match(pattern);
+  if (!match) {
+    errors.push(`${relative}: missing managed ${label} reference (expected ${expected})`);
+    return;
+  }
+
+  const actual = match[1].trim();
+  if (actual !== expected) {
+    errors.push(`${relative}: ${label} drifted (expected ${expected}, found ${actual})`);
+  }
+}
+
+function validateManagedVersionReferences(errors) {
+  const packDescriptorPath = path.join(packTemplateDir, 'pack.toml');
+  let packDescriptor;
+  try {
+    packDescriptor = parseSimpleToml(fs.readFileSync(packDescriptorPath, 'utf8'));
+  } catch (error) {
+    errors.push(`failed to read pack/pack.toml version baseline: ${error.message}`);
+    return;
+  }
+
+  const minecraftVersion = `${packDescriptor.versions?.minecraft ?? ''}`.trim();
+  const neoforgeVersion = `${packDescriptor.versions?.neoforge ?? ''}`.trim();
+  if (!minecraftVersion) errors.push('pack/pack.toml: missing versions.minecraft');
+  if (!neoforgeVersion) errors.push('pack/pack.toml: missing versions.neoforge');
+  if (!minecraftVersion || !neoforgeVersion) return;
+
+  const referenceFiles = [
+    { relative: 'pack/variables.txt' },
+    { relative: 'pack/PCL/Setup.ini' },
+    { relative: 'scripts/Install-PCL.ps1' },
+    { relative: 'scripts/install-prism.sh' },
+  ];
+
+  const contentByPath = new Map();
+  for (const reference of referenceFiles) {
+    let text;
+    try {
+      text = fs.readFileSync(path.join(repoRoot, ...reference.relative.split('/')), 'utf8');
+      contentByPath.set(reference.relative, text);
+    } catch (error) {
+      errors.push(`failed to read managed version reference ${reference.relative}: ${error.message}`);
+      continue;
+    }
+
+  }
+
+  const variables = contentByPath.get('pack/variables.txt');
+  if (variables) {
+    validateVersionField('pack/variables.txt', variables, 'MC_VERSION', /^MC_VERSION=(.+)$/m, minecraftVersion, errors);
+    validateVersionField(
+      'pack/variables.txt',
+      variables,
+      'NEOFORGE_VERSION',
+      /^NEOFORGE_VERSION=(.+)$/m,
+      neoforgeVersion,
+      errors
+    );
+    validateVersionField(
+      'pack/variables.txt',
+      variables,
+      'NEOFORGE_INSTALLER_URL',
+      /^NEOFORGE_INSTALLER_URL=(.+)$/m,
+      `https://maven.neoforged.net/releases/net/neoforged/neoforge/${neoforgeVersion}/neoforge-${neoforgeVersion}-installer.jar`,
+      errors
+    );
+  }
+
+  const pclSetup = contentByPath.get('pack/PCL/Setup.ini');
+  if (pclSetup) {
+    validateVersionField(
+      'pack/PCL/Setup.ini',
+      pclSetup,
+      'VersionVanillaName',
+      /^VersionVanillaName:(.+)$/m,
+      minecraftVersion,
+      errors
+    );
+    validateVersionField(
+      'pack/PCL/Setup.ini',
+      pclSetup,
+      'VersionNeoForge',
+      /^VersionNeoForge:(.+)$/m,
+      neoforgeVersion,
+      errors
+    );
+  }
+
+  const pclInstaller = contentByPath.get('scripts/Install-PCL.ps1');
+  if (pclInstaller) {
+    if (!/function Get-PackVersion\b/.test(pclInstaller) || !/pack\\pack\.toml/.test(pclInstaller)) {
+      errors.push('scripts/Install-PCL.ps1: must read Minecraft and NeoForge versions from pack/pack.toml');
+    }
+  }
+
+  const prismInstaller = contentByPath.get('scripts/install-prism.sh');
+  if (prismInstaller) {
+    if (!/read_pack_version\(\)/.test(prismInstaller) || !/pack\/pack\.toml/.test(prismInstaller)) {
+      errors.push('scripts/install-prism.sh: must read Minecraft and NeoForge versions from pack/pack.toml');
+    }
+  }
+}
+
 function indexIncludedCount() {
   const indexPath = path.join(repoRoot, 'index.toml');
   if (!fs.existsSync(indexPath)) return null;
@@ -548,6 +653,8 @@ function testPackStructure() {
   } else {
     warnings.push('git ignore checks skipped: .git not found');
   }
+
+  validateManagedVersionReferences(errors);
 
   for (const warning of warnings) writeWarn(warning);
   for (const error of errors) writeFail(error);

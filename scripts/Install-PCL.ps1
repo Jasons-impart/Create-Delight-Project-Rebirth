@@ -7,8 +7,6 @@ param(
 $ErrorActionPreference = "Stop"
 
 $ExpectedVersionName = "Create-Delight-Project-Rebirth"
-$ExpectedMinecraftVersion = "1.21.1"
-$ExpectedNeoForgeVersion = "21.1.242"
 
 function Write-Title {
   param([string]$Message)
@@ -88,8 +86,28 @@ function Invoke-Checked {
   Write-Success "命令完成"
 }
 
+function Get-PackVersion {
+  param(
+    [string]$PackTomlPath,
+    [string]$Key
+  )
+
+  if (-not (Test-Path -LiteralPath $PackTomlPath -PathType Leaf)) {
+    Fail "缺少整合包版本基线：$PackTomlPath"
+  }
+
+  $escapedKey = [regex]::Escape($Key)
+  $pattern = "(?m)^${escapedKey}\s*=\s*`"([^`"\r\n]+)`"\s*$"
+  $match = [regex]::Match((Get-Content -Raw -LiteralPath $PackTomlPath), $pattern)
+  if (-not $match.Success) {
+    Fail "pack/pack.toml 缺少 versions.$Key"
+  }
+
+  return $match.Groups[1].Value.Trim()
+}
+
 Write-Title "Create Delight Project Rebirth PCL 部署脚本"
-Write-Info "请先在 PCL 中手动安装 Minecraft $ExpectedMinecraftVersion + NeoForge $ExpectedNeoForgeVersion。"
+Write-Info "目标 Minecraft 与 NeoForge 版本将在克隆后从 pack/pack.toml 读取。"
 Write-Info "PCL 版本名必须设置为：$ExpectedVersionName"
 
 Require-Command "git"
@@ -122,15 +140,6 @@ if (-not (Test-Path -LiteralPath $versionJar -PathType Leaf)) {
   Write-Warn "未找到版本 jar：$versionJar。NeoForge 有时不依赖同名 jar，但请确认 PCL 已完整安装该版本。"
 }
 
-$jsonText = Get-Content -Raw -LiteralPath $versionJson
-if ($jsonText -notmatch [regex]::Escape($ExpectedMinecraftVersion)) {
-  Fail "版本 JSON 中未找到 Minecraft $ExpectedMinecraftVersion。请检查 PCL 安装的 MC 版本。"
-}
-
-if ($jsonText -notmatch [regex]::Escape($ExpectedNeoForgeVersion)) {
-  Fail "版本 JSON 中未找到 NeoForge $ExpectedNeoForgeVersion。请检查 PCL 安装的 NeoForge 版本。"
-}
-
 $tmpDir = Join-Path $InstanceDir "tmp"
 if (Test-Path -LiteralPath $tmpDir) {
   $existing = Get-ChildItem -LiteralPath $tmpDir -Force -ErrorAction SilentlyContinue
@@ -158,6 +167,20 @@ if (-not (Test-Path -LiteralPath $tmpGit -PathType Container)) {
 }
 if (-not (Test-Path -LiteralPath $tmpJson -PathType Leaf)) {
   Fail "克隆结果缺少版本 JSON：$tmpJson"
+}
+
+$packToml = Join-Path $tmpDir "pack\pack.toml"
+$ExpectedMinecraftVersion = Get-PackVersion -PackTomlPath $packToml -Key "minecraft"
+$ExpectedNeoForgeVersion = Get-PackVersion -PackTomlPath $packToml -Key "neoforge"
+Write-Info "pack/pack.toml 要求 Minecraft $ExpectedMinecraftVersion + NeoForge $ExpectedNeoForgeVersion。"
+
+$jsonText = Get-Content -Raw -LiteralPath $versionJson
+if ($jsonText -notmatch [regex]::Escape($ExpectedMinecraftVersion)) {
+  Fail "版本 JSON 中未找到 Minecraft $ExpectedMinecraftVersion。请检查 PCL 安装的 MC 版本。"
+}
+
+if ($jsonText -notmatch [regex]::Escape($ExpectedNeoForgeVersion)) {
+  Fail "版本 JSON 中未找到 NeoForge $ExpectedNeoForgeVersion。请检查 PCL 安装的 NeoForge 版本。"
 }
 
 Write-Step "覆盖版本目录"
