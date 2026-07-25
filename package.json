@@ -1,4 +1,5 @@
 {
+  "name": "Create-Delight-Project-Rebirth",
   "private": true,
   "scripts": {
     "prepare": "husky",

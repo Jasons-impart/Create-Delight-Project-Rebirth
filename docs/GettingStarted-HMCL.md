@@ -72,6 +72,17 @@ python --version
 
 如果网络访问 GitHub、Mojang、NeoForge Maven、CurseForge/ForgeCDN 较慢，可准备本地代理，例如 `127.0.0.1:7890`。
 
+如果不想修改系统环境，也可以把便携版 Node.js 和 Java 21 解压到 HMCL 目录下，例如
+`$HmclDir\.runtime\`。运行本文命令前，在当前 PowerShell 会话临时加入 PATH 即可：
+
+```powershell
+$RuntimeDir = Join-Path $HmclDir ".runtime"
+$env:Path = (Join-Path $RuntimeDir "node-v24.18.0-win-x64") + ";$env:Path"
+```
+
+随后在 HMCL 的 Java 设置中选择便携 Java 21 的 `bin\javaw.exe`。这种方式不会修改系统级
+PATH，但只对当前终端会话生效。
+
 ## 克隆仓库
 
 推荐浅克隆到实例目录：
@@ -93,12 +104,13 @@ git clone --depth 1 https://github.com/Jasons-impart/Create-Delight-Project-Rebi
 npm install
 .\devtool.bat setup-tools
 .\devtool.bat prepare-pack
+.\devtool.bat refresh
 .\devtool.bat check
 ```
 
 Windows 下不要从 PowerShell 运行 `devtool.sh`；`.sh` 是 Linux/macOS 入口。
 
-`prepare-pack` 会把 `pack/` 模板展开到根目录，并生成/刷新本地 `pack.toml`、`index.toml` 等文件。根目录 `.packwizignore` 是仓库跟踪的发布排除规则，不会由 `prepare-pack` 覆盖。
+`prepare-pack` 会把 `pack/` 模板展开到根目录，并生成/刷新本地 `pack.toml` 等发布根目录文件。`index.toml` 由 `refresh` 生成；如果跳过 `refresh`，`check` 会因为缺少 `index.toml` 失败。根目录 `.packwizignore` 是仓库跟踪的发布排除规则，不会由 `prepare-pack` 覆盖。
 
 ## 同步 mod 和资源文件
 
@@ -234,7 +246,22 @@ HMCL 可能同时在全局配置和版本目录配置中保存游戏目录设置
 如果这里的 `gameDirType` 是 `0`，即使 `hmcl.json` 中当前配置组已经是 `1`，启动时仍可能使用全局
 `.minecraft` 作为 `--gameDir`。
 
-关闭 HMCL 后，先检查版本级配置：
+关闭 HMCL 后，先检查版本级配置。如果文件不存在，先创建最小版本级配置：
+
+```powershell
+$VersionConfig = Join-Path $InstanceDir "hmclversion.cfg"
+if (!(Test-Path $VersionConfig)) {
+  @{
+    usesGlobal = $false
+    gameDirType = 1
+    gameDir = ""
+    java = "Custom"
+    javaVersionType = "CUSTOM"
+  } | ConvertTo-Json -Depth 20 | Set-Content $VersionConfig -Encoding UTF8
+}
+```
+
+然后检查：
 
 ```powershell
 $VersionConfig = Join-Path $InstanceDir "hmclversion.cfg"
@@ -254,6 +281,12 @@ $cfg | ConvertTo-Json -Depth 20 | Set-Content $VersionConfig -Encoding UTF8
 ```
 
 然后再检查 `E:\minecraft\Client\HMCL\hmcl.json`。当前配置组通常在 `configurations.Default` 下，对应配置应包含：
+
+改 `hmcl.json` 前建议先备份：
+
+```powershell
+Copy-Item "$HmclDir\hmcl.json" "$HmclDir\hmcl.json.bak-$(Get-Date -Format yyyyMMdd-HHmmss)"
+```
 
 ```json
 {
