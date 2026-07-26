@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T15:36:20Z",
+  "generatedAt": "2026-07-26T04:52:52Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -666,7 +666,7 @@
     {
       "side": "client",
       "metadata": "mods/client/iris-flywheel-compat.pw.toml",
-      "filename": "iris-flywheel-compat-NeoForge-2.3.1.jar",
+      "filename": "iris-flywheel-compat-NeoForge-2.4.0.jar",
       "modIds": [
         "flywheel",
         "irisflw"
@@ -1142,7 +1142,7 @@
     {
       "side": "common",
       "metadata": "mods/common/blueprint.pw.toml",
-      "filename": "blueprint-1.21.1-8.0.8.jar",
+      "filename": "blueprint-1.21.1-8.1.1.jar",
       "modIds": [
         "blueprint"
       ]
@@ -1790,7 +1790,7 @@
     {
       "side": "common",
       "metadata": "mods/common/display-delight.pw.toml",
-      "filename": "displaydelight-1.5.2.jar",
+      "filename": "displaydelight-1.7.0.jar",
       "modIds": [
         "displaydelight"
       ]
@@ -2961,7 +2961,7 @@
     {
       "side": "common",
       "metadata": "mods/common/vintage-improvenents-ssw-edition.pw.toml",
-      "filename": "vintageimprovements-1.21.1-0.0.0.3.jar",
+      "filename": "vintageimprovements-1.21.1-0.0.0.5.jar",
       "modIds": [
         "vintageimprovements"
       ]
