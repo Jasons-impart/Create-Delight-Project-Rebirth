@@ -1,13 +1,13 @@
 name = "Display Delight"
-filename = "displaydelight-1.5.2.jar"
+filename = "displaydelight-1.7.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "bdae3416c296b4953518d3b06180277bc7c5994a"
+hash = "0d2040a348a1d42907561babff9ac983c466b825"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7948038
+file-id = 8242893
 project-id = 1144296

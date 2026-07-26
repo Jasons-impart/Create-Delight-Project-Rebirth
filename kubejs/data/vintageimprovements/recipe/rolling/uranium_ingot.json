@@ -1,0 +1,27 @@
+{
+  "type": "createaddition:rolling",
+  "ingredients": [
+    {
+      "tag": "c:ingots/uranium"
+    }
+  ],
+  "results": [
+    {
+      "id": "vintageimprovements:uranium_rod",
+      "count": 2
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createaddition"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/uranium"
+      }
+    }
+  ]
+}
