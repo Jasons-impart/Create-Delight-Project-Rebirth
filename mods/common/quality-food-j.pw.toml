@@ -1,0 +1,13 @@
+name = "Quality Food J"
+filename = "quality_food-1.21.1-2.3.6-cdpr.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "561886031527f08dcda6fdc1752a759aea14c1c6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8520466
+project-id = 1623542
