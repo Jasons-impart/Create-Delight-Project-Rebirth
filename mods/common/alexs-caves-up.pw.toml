@@ -1,0 +1,13 @@
+name = "Alex's Caves Up"
+filename = "alexscavesup-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f378b64a8713ed5da38d34f13b2a88f253df0118"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8600906
+project-id = 1611643

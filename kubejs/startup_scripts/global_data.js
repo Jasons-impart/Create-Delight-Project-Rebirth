@@ -3,8 +3,8 @@
 global.INFINITE_SOURCE_FLUIDS = [
   'minecraft:water',
   'minecraft:lava',
-  'alexscaves:acid',
-  'alexscaves:purple_soda',
+  'alexscavesup:acid',
+  'alexscavesup:purple_soda',
   'ratatouille:cocoa_liquor',
   'create:honey',
   'createmetallurgy:molten_iron',

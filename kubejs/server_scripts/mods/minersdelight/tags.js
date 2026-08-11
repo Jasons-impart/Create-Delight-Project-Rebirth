@@ -4,8 +4,8 @@ if (global.hasMod('minersdelight')) {
       event.add('c:cooked_fishes/squid', 'culturaldelights:cooked_squid');
     }
 
-    if (global.itemExists('alexscaves:vesper_wing')) {
-      event.add('minersdelight:bat_wing', 'alexscaves:vesper_wing');
+    if (global.itemExists('alexscavesup:vesper_wing')) {
+      event.add('minersdelight:bat_wing', 'alexscavesup:vesper_wing');
     }
 
     event.removeAll('c:squid');

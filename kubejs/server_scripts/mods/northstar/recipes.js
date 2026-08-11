@@ -9,7 +9,7 @@ if (
     'vintageimprovements',
     'createdieselgenerators',
     'ae2',
-    'alexscaves',
+    'alexscavesup',
     'vintagedelight',
   ])
 ) {
@@ -247,7 +247,7 @@ if (
 
     circuitAssembly(
       'northstar:circuit',
-      'alexscaves:polymer_plate',
+      'alexscavesup:polymer_plate',
       'northstar:unfinished_circuit',
       (incomplete) => [
         create.deploying(incomplete, [incomplete, 'northstar:polished_amethyst']),

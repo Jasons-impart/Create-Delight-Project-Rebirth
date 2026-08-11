@@ -1,23 +1,23 @@
-if (global.hasMod('alexscaves')) {
+if (global.hasMod('alexscavesup')) {
   ServerEvents.recipes((event) => {
     const { kubejs } = event.recipes;
-    const id = (path) => `createdelightcore:alexscaves/magnetic_cave/${path}`;
+    const id = (path) => `createdelightcore:alexscavesup/magnetic_cave/${path}`;
 
-    remove_recipes_id(event, ['alexscaves:seeking_arrow']);
+    remove_recipes_id(event, ['alexscavesup:seeking_arrow']);
 
     kubejs
-      .shapeless('alexscaves:seeking_arrow', [
+      .shapeless('alexscavesup:seeking_arrow', [
         'minecraft:arrow',
-        'alexscaves:scarlet_neodymium_ingot',
+        'alexscavesup:scarlet_neodymium_ingot',
       ])
       .id(id('seeking_arrow'));
   });
 }
 
-if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
+if (global.hasAllMods(['alexscavesup', 'create', 'vintageimprovements'])) {
   ServerEvents.recipes((event) => {
     const { create, vintageimprovements } = event.recipes;
-    const id = (path) => `createdelightcore:alexscaves/magnetic_cave/${path}`;
+    const id = (path) => `createdelightcore:alexscavesup/magnetic_cave/${path}`;
 
     create
       .crushing(
@@ -25,13 +25,13 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
           CreateItem.of('minecraft:iron_nugget', 0.15),
           CreateItem.of('vintageimprovements:vanadium_nugget', 0.1),
         ],
-        'alexscaves:galena'
+        'alexscavesup:galena'
       )
       .id(id('crushing/galena'));
 
     vintageimprovements
       .pressurizing(
-        ['alexscaves:galena', 'create_new_age:magnetite_block'],
+        ['alexscavesup:galena', 'create_new_age:magnetite_block'],
         ['create_new_age:magnetite_block', 'minecraft:deepslate', 'minecraft:iron_nugget']
       )
       .heated()
@@ -39,7 +39,7 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
 
     create
       .mixing(
-        ['alexscaves:galena', 'create_new_age:magnetite_block'],
+        ['alexscavesup:galena', 'create_new_age:magnetite_block'],
         ['create_new_age:magnetite_block', 'minecraft:deepslate', 'minecraft:iron_nugget']
       )
       .processingTime(5000)
@@ -48,10 +48,10 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
     vintageimprovements
       .centrifugation(
         [
-          CreateItem.of('alexscaves:energized_galena_scarlet', 0.5),
-          CreateItem.of('alexscaves:energized_galena_azure', 0.5),
+          CreateItem.of('alexscavesup:energized_galena_scarlet', 0.5),
+          CreateItem.of('alexscavesup:energized_galena_azure', 0.5),
         ],
-        'alexscaves:energized_galena_neutral'
+        'alexscavesup:energized_galena_neutral'
       )
       .id(id('centrifugation/energized_galena_neutral'));
 
@@ -60,9 +60,9 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
         [
           CreateItem.of('minecraft:iron_nugget', 0.2),
           CreateItem.of('vintageimprovements:vanadium_nugget', 0.2),
-          CreateItem.of('alexscaves:raw_scarlet_neodymium', 0.15),
+          CreateItem.of('alexscavesup:raw_scarlet_neodymium', 0.15),
         ],
-        'alexscaves:energized_galena_scarlet'
+        'alexscavesup:energized_galena_scarlet'
       )
       .id(id('crushing/energized_galena_scarlet'));
 
@@ -71,9 +71,9 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
         [
           CreateItem.of('minecraft:iron_nugget', 0.2),
           CreateItem.of('vintageimprovements:vanadium_nugget', 0.2),
-          CreateItem.of('alexscaves:raw_azure_neodymium', 0.15),
+          CreateItem.of('alexscavesup:raw_azure_neodymium', 0.15),
         ],
-        'alexscaves:energized_galena_azure'
+        'alexscavesup:energized_galena_azure'
       )
       .id(id('crushing/energized_galena_azure'));
 
@@ -82,29 +82,29 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
         [
           CreateItem.of('minecraft:iron_nugget', 0.15),
           CreateItem.of('vintageimprovements:vanadium_nugget', 0.3),
-          CreateItem.of('alexscaves:raw_scarlet_neodymium', 0.05),
-          CreateItem.of('alexscaves:raw_azure_neodymium', 0.05),
+          CreateItem.of('alexscavesup:raw_scarlet_neodymium', 0.05),
+          CreateItem.of('alexscavesup:raw_azure_neodymium', 0.05),
         ],
-        'alexscaves:energized_galena_neutral'
+        'alexscavesup:energized_galena_neutral'
       )
       .id(id('crushing/energized_galena_neutral'));
 
     create
-      .filling('alexscaves:seeking_arrow', [
+      .filling('alexscavesup:seeking_arrow', [
         'minecraft:arrow',
         Fluid.of('createdelightcore:molten_scarlet_neodymium', 10),
       ])
       .id(id('filling/seeking_arrow'));
 
     create
-      .mixing('alexscaves:seeking_arrow', [
+      .mixing('alexscavesup:seeking_arrow', [
         'minecraft:arrow',
         Fluid.of('createdelightcore:molten_scarlet_neodymium', 20),
       ])
       .id(id('mixing/seeking_arrow'));
 
     create
-      .mixing('alexscaves:ferrouslime_ball', [
+      .mixing('alexscavesup:ferrouslime_ball', [
         'minecraft:slime_ball',
         Ingredient.of('#c:dusts/iron'),
       ])
@@ -125,49 +125,53 @@ if (global.hasAllMods(['alexscaves', 'create', 'vintageimprovements'])) {
       .id(id('mixing/chorusslime'));
 
     create
-      .compacting('alexscaves:ferrouslime_ball', Fluid.of('createdelightcore:ferrouslime', 90))
+      .compacting('alexscavesup:ferrouslime_ball', Fluid.of('createdelightcore:ferrouslime', 90))
       .id(id('compacting/ferrouslime'));
 
     create
-      .mixing(Fluid.of('createdelightcore:ferrouslime', 90), 'alexscaves:ferrouslime_ball')
+      .mixing(Fluid.of('createdelightcore:ferrouslime', 90), 'alexscavesup:ferrouslime_ball')
       .heated()
       .id(id('mixing/ferrouslime_melting'));
   });
 }
 
-if (global.hasAllMods(['alexscaves', 'create', 'create_new_age', 'vintageimprovements'])) {
+if (global.hasAllMods(['alexscavesup', 'create', 'create_new_age', 'vintageimprovements'])) {
   ServerEvents.recipes((event) => {
     const { create, create_new_age, kubejs, vintageimprovements } = event.recipes;
-    const id = (path) => `createdelightcore:alexscaves/magnetic_cave/${path}`;
+    const id = (path) => `createdelightcore:alexscavesup/magnetic_cave/${path}`;
 
     create_new_age
-      .energising('alexscaves:energized_galena_neutral', 'alexscaves:galena', 20000)
+      .energising('alexscavesup:energized_galena_neutral', 'alexscavesup:galena', 20000)
       .id(id('energising/energized_galena_neutral'));
 
     create
-      .sequenced_assembly('alexscaves:heart_of_iron', 'minecraft:iron_block', [
-        vintageimprovements.turning('alexscaves:heart_of_iron', 'alexscaves:heart_of_iron'),
-        create_new_age.energising('alexscaves:heart_of_iron', 'alexscaves:heart_of_iron', 20000),
+      .sequenced_assembly('alexscavesup:heart_of_iron', 'minecraft:iron_block', [
+        vintageimprovements.turning('alexscavesup:heart_of_iron', 'alexscavesup:heart_of_iron'),
+        create_new_age.energising(
+          'alexscavesup:heart_of_iron',
+          'alexscavesup:heart_of_iron',
+          20000
+        ),
       ])
-      .transitionalItem('alexscaves:heart_of_iron')
+      .transitionalItem('alexscavesup:heart_of_iron')
       .loops(1)
       .id(id('sequenced_assembly/heart_of_iron'));
 
     kubejs
-      .shaped('alexscaves:telecore', ['ABC', ' D ', '   '], {
-        A: 'alexscaves:raw_scarlet_neodymium',
+      .shaped('alexscavesup:telecore', ['ABC', ' D ', '   '], {
+        A: 'alexscavesup:raw_scarlet_neodymium',
         B: 'minecraft:quartz',
-        C: 'alexscaves:raw_azure_neodymium',
+        C: 'alexscavesup:raw_azure_neodymium',
         D: 'create_new_age:overcharged_iron_sheet',
       })
       .id(id('telecore'));
   });
 }
 
-if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimprovements'])) {
+if (global.hasAllMods(['alexscavesup', 'create', 'createmetallurgy', 'vintageimprovements'])) {
   ServerEvents.recipes((event) => {
     const { create, createmetallurgy, vintageimprovements } = event.recipes;
-    const id = (path) => `createdelightcore:alexscaves/magnetic_cave/${path}`;
+    const id = (path) => `createdelightcore:alexscavesup/magnetic_cave/${path}`;
     const metalProductionLine = (metal, heat, time) => {
       const block = metal[0];
       const ingot = metal[1];
@@ -200,8 +204,8 @@ if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimpro
     createmetallurgy
       .alloying(Fluid.of('createdelightcore:molten_scarlet_neodymium', 90), [
         Fluid.of('createmetallurgy:molten_iron', 180),
-        'alexscaves:raw_scarlet_neodymium',
-        'alexscaves:raw_scarlet_neodymium',
+        'alexscavesup:raw_scarlet_neodymium',
+        'alexscavesup:raw_scarlet_neodymium',
       ])
       .heatRequirement('superheated')
       .id(id('alloying/molten_scarlet_neodymium'));
@@ -209,16 +213,16 @@ if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimpro
     createmetallurgy
       .alloying(Fluid.of('createdelightcore:molten_azure_neodymium', 90), [
         Fluid.of('createmetallurgy:molten_iron', 180),
-        'alexscaves:raw_azure_neodymium',
-        'alexscaves:raw_azure_neodymium',
+        'alexscavesup:raw_azure_neodymium',
+        'alexscavesup:raw_azure_neodymium',
       ])
       .heatRequirement('superheated')
       .id(id('alloying/molten_azure_neodymium'));
 
     metalProductionLine(
       [
-        'alexscaves:block_of_scarlet_neodymium',
-        'alexscaves:scarlet_neodymium_ingot',
+        'alexscavesup:block_of_scarlet_neodymium',
+        'alexscavesup:scarlet_neodymium_ingot',
         'createdelightcore:molten_scarlet_neodymium',
       ],
       'heated',
@@ -227,8 +231,8 @@ if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimpro
 
     metalProductionLine(
       [
-        'alexscaves:block_of_azure_neodymium',
-        'alexscaves:azure_neodymium_ingot',
+        'alexscavesup:block_of_azure_neodymium',
+        'alexscavesup:azure_neodymium_ingot',
         'createdelightcore:molten_azure_neodymium',
       ],
       'heated',
@@ -236,28 +240,31 @@ if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimpro
     );
 
     create
-      .sequenced_assembly('alexscaves:heavyweight', 'alexscaves:block_of_scarlet_neodymium', [
+      .sequenced_assembly('alexscavesup:heavyweight', 'alexscavesup:block_of_scarlet_neodymium', [
         vintageimprovements
-          .curving('alexscaves:block_of_scarlet_neodymium', 'alexscaves:block_of_scarlet_neodymium')
+          .curving(
+            'alexscavesup:block_of_scarlet_neodymium',
+            'alexscavesup:block_of_scarlet_neodymium'
+          )
           .mode(2),
-        create.deploying('alexscaves:block_of_scarlet_neodymium', [
-          'alexscaves:block_of_scarlet_neodymium',
+        create.deploying('alexscavesup:block_of_scarlet_neodymium', [
+          'alexscavesup:block_of_scarlet_neodymium',
           'createmetallurgy:steel_ingot',
         ]),
       ])
-      .transitionalItem('alexscaves:block_of_scarlet_neodymium')
+      .transitionalItem('alexscavesup:block_of_scarlet_neodymium')
       .loops(1)
       .id(id('sequenced_assembly/heavyweight'));
 
     create
-      .sequenced_assembly('alexscaves:notor_gizmo', 'createdelightcore:steel_sheet', [
+      .sequenced_assembly('alexscavesup:notor_gizmo', 'createdelightcore:steel_sheet', [
         create.deploying('createdelightcore:steel_sheet', [
           'createdelightcore:steel_sheet',
-          'alexscaves:raw_azure_neodymium',
+          'alexscavesup:raw_azure_neodymium',
         ]),
         create.deploying('createdelightcore:steel_sheet', [
           'createdelightcore:steel_sheet',
-          'alexscaves:raw_scarlet_neodymium',
+          'alexscavesup:raw_scarlet_neodymium',
         ]),
       ])
       .transitionalItem('createdelightcore:steel_sheet')
@@ -275,15 +282,15 @@ if (global.hasAllMods(['alexscaves', 'create', 'createmetallurgy', 'vintageimpro
           ]),
           create.deploying('createdelightcore:incomplete_magnetic_mechanism', [
             'createdelightcore:incomplete_magnetic_mechanism',
-            'alexscaves:scarlet_neodymium_ingot',
+            'alexscavesup:scarlet_neodymium_ingot',
           ]),
           create.deploying('createdelightcore:incomplete_magnetic_mechanism', [
             'createdelightcore:incomplete_magnetic_mechanism',
-            'alexscaves:azure_neodymium_ingot',
+            'alexscavesup:azure_neodymium_ingot',
           ]),
           create.deploying('createdelightcore:incomplete_magnetic_mechanism', [
             'createdelightcore:incomplete_magnetic_mechanism',
-            'alexscaves:tesla_bulb',
+            'alexscavesup:tesla_bulb',
           ]),
         ]
       )

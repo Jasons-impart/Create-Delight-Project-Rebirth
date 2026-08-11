@@ -299,7 +299,7 @@ if (global.hasMod('create')) {
       .id(id('stonecutting/industrial_iron_block_from_steel_ingot'));
 
     create
-      .deploying('2x create:precision_mechanism', ['create:brass_sheet', 'alexscaves:telecore'])
+      .deploying('2x create:precision_mechanism', ['create:brass_sheet', 'alexscavesup:telecore'])
       .id(id('deploying/precision_mechanism_from_telecore'));
 
     shapedIfPresent(
@@ -346,7 +346,7 @@ if (global.hasMod('create')) {
     create
       .compacting('2x minecraft:sponge', [
         'minecraft:sponge',
-        '4x alexscaves:ping_pong_sponge',
+        '4x alexscavesup:ping_pong_sponge',
         Fluid.water(50),
       ])
       .heated()

@@ -12,7 +12,7 @@ if (
     event.replaceInput(
       { id: 'create_mechanical_spawner:mechanical_spawner' },
       'minecraft:emerald',
-      'alexscaves:amber_monolith'
+      'alexscavesup:amber_monolith'
     );
     event.replaceInput(
       [

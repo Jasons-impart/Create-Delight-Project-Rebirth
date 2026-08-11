@@ -1,12 +1,12 @@
 {
   "replace": false,
   "remove": [
-    "alexscaves:magnetic_caves",
-    "alexscaves:primordial_caves",
-    "alexscaves:toxic_caves",
-    "alexscaves:abyssal_chasm",
-    "alexscaves:forlorn_hollows",
-    "alexscaves:candy_cavity"
+    "alexscavesup:magnetic_caves",
+    "alexscavesup:primordial_caves",
+    "alexscavesup:toxic_caves",
+    "alexscavesup:abyssal_chasm",
+    "alexscavesup:forlorn_hollows",
+    "alexscavesup:candy_cavity"
   ],
   "values": []
 }

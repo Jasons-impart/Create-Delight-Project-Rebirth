@@ -460,7 +460,7 @@ if (global.hasAllMods(['createoreexcavation', 'createdelightcore'])) {
   });
 }
 
-if (global.hasAllMods(['createoreexcavation', 'ratatouille', 'alexscaves'])) {
+if (global.hasAllMods(['createoreexcavation', 'ratatouille', 'alexscavesup'])) {
   ServerEvents.recipes((event) => {
     const { createoreexcavation } = event.recipes;
     const id = (path) => `createdelightcore:createoreexcavation/${path}`;

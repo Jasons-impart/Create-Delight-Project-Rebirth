@@ -109,9 +109,9 @@ if (global.hasAllMods(['farmersdelight', 'create', 'createdelightcore'])) {
     cooking(
       'stargazy_pie',
       [
-        Ingredient.of('#alexsmobs:shoebill_foodstuffs'),
-        Ingredient.of('#alexsmobs:shoebill_foodstuffs'),
-        Ingredient.of('#alexsmobs:shoebill_foodstuffs'),
+        Ingredient.of('#alexsmobsup:shoebill_foodstuffs'),
+        Ingredient.of('#alexsmobsup:shoebill_foodstuffs'),
+        Ingredient.of('#alexsmobsup:shoebill_foodstuffs'),
         Ingredient.of('#c:eggs'),
         'farmersdelight:pie_crust',
         'minecraft:potato',

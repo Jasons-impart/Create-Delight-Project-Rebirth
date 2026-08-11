@@ -4,26 +4,26 @@ if (global.hasMod('crabbersdelight')) {
 
     event.add(
       'crabbersdelight:cooked_seafood',
-      existing(['alexsmobs:cooked_lobster_tail', 'oceanic_delight:shrimp_slices'])
+      existing(['alexsmobsup:cooked_lobster_tail', 'oceanic_delight:shrimp_slices'])
     );
     event.add(
       'crabbersdelight:cooked_squid',
       existing(['oceanic_delight:grilled_squid_tentacles'])
     );
-    event.add('crabbersdelight:raw_seafood', existing(['alexsmobs:lobster_tail']));
+    event.add('crabbersdelight:raw_seafood', existing(['alexsmobsup:lobster_tail']));
     event.add(
       'crabbersdelight:lobster',
       existing([
         'crabbersdelight:clawster',
         'crabbersdelight:cooked_clawster',
-        'alexsmobs:lobster_tail',
-        'alexsmobs:cooked_lobster_tail',
-        'alexscaves:trilocaris_tail',
-        'alexscaves:cooked_trilocaris_tail',
+        'alexsmobsup:lobster_tail',
+        'alexsmobsup:cooked_lobster_tail',
+        'alexscavesup:trilocaris_tail',
+        'alexscavesup:cooked_trilocaris_tail',
       ])
     );
     event.add(
-      'alexsmobs:seal_foodstuffs',
+      'alexsmobsup:seal_foodstuffs',
       existing([
         'crabbersdelight:clawster',
         'crabbersdelight:cooked_crab',

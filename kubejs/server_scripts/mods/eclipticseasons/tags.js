@@ -67,7 +67,7 @@ if (global.hasMod('eclipticseasons')) {
       'vinery:dark_cherry_sapling',
       'createcafe:coffee_beans',
       'miners_delight:cave_carrot',
-      'alexscaves:fiddlehead',
+      'alexscavesup:fiddlehead',
     ]);
 
     addExisting('eclipticseasons:crops/average_humid', ['farmersrespite:tea_seeds']);
@@ -101,7 +101,7 @@ if (global.hasMod('eclipticseasons')) {
     addExisting('eclipticseasons:crops/all_seasons', [
       'neapolitan:vanilla_pods',
       'miners_delight:cave_carrot',
-      'alexscaves:fiddlehead',
+      'alexscavesup:fiddlehead',
     ]);
     addExisting('eclipticseasons:crops/spring_autumn', [
       'frycooks_delight:canola_seeds',

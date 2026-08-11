@@ -5,9 +5,9 @@
 !/MouseTweaks.cfg
 !/ae2-client.toml
 !/ae2-common.toml
-!/alexscaves-client.toml
-!/alexscaves-general.toml
-!/alexsmobs-common.toml
+!/alexscavesup-client.toml
+!/alexscavesup-general.toml
+!/alexsmobsup.toml
 !/bcc-common.toml
 !/byepregen.json
 !/butchercraft-common.toml
@@ -58,8 +58,8 @@
 
 # Directory configs are allowlisted here, then filtered by nested .gitignore
 # files in each directory.
-!/alexscaves_biome_generation/
-!/alexsmobs/
+!/alexscavesup_biome_generation/
+!/alexsmobsup/
 !/bettercombat/
 !/bountiful/
 !/fancymenu/
@@ -87,7 +87,7 @@
 # - sound_physics_remastered/
 # - starterkit/
 # - ae2/ (current paths: ae2-client.toml, ae2-common.toml)
-# - alexsmobs.toml (current path: alexsmobs-common.toml)
+# - alexsmobs-common.toml (current path: alexsmobsup.toml)
 # - endertrigon-common.toml
 # - ftbquests/
 # - iceandfire-client.toml (current path: iceandfire/iaf-client.json)

@@ -1,5 +1,5 @@
 (() => {
-  if (!global.hasAllMods(['alexscaves', 'cpapireforged'])) {
+  if (!global.hasAllMods(['alexscavesup', 'cpapireforged'])) {
     return;
   }
 

@@ -145,7 +145,7 @@
 		},
 		"hunter_obj_teletor": {
 			"type": "entity",
-			"content": "alexscaves:teletor",
+			"content": "alexscavesup:teletor",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -156,7 +156,7 @@
 		},
 		"hunter_obj_boundroid": {
 			"type": "entity",
-			"content": "alexscaves:boundroid",
+			"content": "alexscavesup:boundroid",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -167,7 +167,7 @@
 		},
 		"hunter_obj_notor": {
 			"type": "entity",
-			"content": "alexscaves:notor",
+			"content": "alexscavesup:notor",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -178,7 +178,7 @@
 		},
 		"hunter_obj_ferrouslime": {
 			"type": "entity",
-			"content": "alexscaves:ferrouslime",
+			"content": "alexscavesup:ferrouslime",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -189,7 +189,7 @@
 		},
 		"hunter_obj_magnetron": {
 			"type": "entity",
-			"content": "alexscaves:magnetron",
+			"content": "alexscavesup:magnetron",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -200,7 +200,7 @@
 		},
 		"hunter_obj_licowitch": {
 			"type": "entity",
-			"content": "alexscaves:licowitch",
+			"content": "alexscavesup:licowitch",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -211,7 +211,7 @@
 		},
 		"hunter_obj_caramel_cube": {
 			"type": "entity",
-			"content": "alexscaves:caramel_cube",
+			"content": "alexscavesup:caramel_cube",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -222,7 +222,7 @@
 		},
 		"hunter_obj_gumbeeper": {
 			"type": "entity",
-			"content": "alexscaves:gumbeeper",
+			"content": "alexscavesup:gumbeeper",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -233,7 +233,7 @@
 		},
 		"hunter_obj_caniac": {
 			"type": "entity",
-			"content": "alexscaves:caniac",
+			"content": "alexscavesup:caniac",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -244,7 +244,7 @@
 		},
 		"hunter_obj_brainiac": {
 			"type": "entity",
-			"content": "alexscaves:brainiac",
+			"content": "alexscavesup:brainiac",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -255,7 +255,7 @@
 		},
 		"hunter_obj_nucleeper": {
 			"type": "entity",
-			"content": "alexscaves:nucleeper",
+			"content": "alexscavesup:nucleeper",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -266,7 +266,7 @@
 		},
 		"hunter_obj_underzealot": {
 			"type": "entity",
-			"content": "alexscaves:underzealot",
+			"content": "alexscavesup:underzealot",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -277,7 +277,7 @@
 		},
 		"hunter_obj_vesper": {
 			"type": "entity",
-			"content": "alexscaves:vesper",
+			"content": "alexscavesup:vesper",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -288,7 +288,7 @@
 		},
 		"hunter_obj_corrodent": {
 			"type": "entity",
-			"content": "alexscaves:corrodent",
+			"content": "alexscavesup:corrodent",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -299,7 +299,7 @@
 		},
 		"hunter_obj_watcher": {
 			"type": "entity",
-			"content": "alexscaves:watcher",
+			"content": "alexscavesup:watcher",
             "rarity": "RARE",
 			"amount": {
 				"min": 1,
@@ -387,7 +387,7 @@
 		},
 		"hunter_obj_hullbreaker": {
 			"type": "entity",
-			"content": "alexscaves:hullbreaker",
+			"content": "alexscavesup:hullbreaker",
             "rarity": "EPIC",
 			"amount": {
 				"min": 1,
@@ -398,7 +398,7 @@
 		},
 		"hunter_obj_gum_worm": {
 			"type": "entity",
-			"content": "alexscaves:gum_worm",
+			"content": "alexscavesup:gum_worm",
             "rarity": "EPIC",
 			"amount": {
 				"min": 1,
@@ -420,7 +420,7 @@
 		},
 		"hunter_obj_luxtructosaurus": {
 			"type": "entity",
-			"content": "alexscaves:luxtructosaurus",
+			"content": "alexscavesup:luxtructosaurus",
             "rarity": "LEGENDARY",
 			"amount": {
 				"min": 1,

@@ -7,7 +7,7 @@
 	lavaVisionOpacity = 0.65
 	#Whether to disable certain aspects of the Lava Vision Potion. Enable if issues with shaders persist.
 	shadersCompat = false
-	#Whether bananas should drop from blocks tagged with #alexsmobs:drops_bananas
+	#Whether bananas should drop from blocks tagged with #alexsmobsup:drops_bananas
 	bananasDropFromLeaves = true
 	#1 out of this number chance for leaves to drop a banana when broken. Fortune is automatically factored in
 	# Default: 200
@@ -27,12 +27,12 @@
 	lavaBottleEnabled = true
 	#Whether bone serpents are neutral or hostile.
 	neutralBoneSerpents = false
-	#Whether mimicubes spawns should be restricted solely to the end city structure or to whatever biome is specified in their respective biome config.
+	#Whether mimicubes can spawn. When true, they spawn only inside End City structures. When false, they do not spawn at all.
 	mimicubeSpawnInEndCity = true
 	#Whether mimicream can be used to duplicate items.
 	mimicreamRepair = true
-	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
-	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster"]
+	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobsup:blood_sprayer"
+	mimicreamBlacklist = ["alexsmobsup:blood_sprayer", "alexsmobsup:hemolymph_blaster"]
 	#Whether wild raccoons steal food from chests.
 	raccoonStealFromChests = true
 	#Whether wild crows steal crops from farmland.
@@ -41,7 +41,7 @@
 	fishOilMeme = true
 	#Whether soul vulture spawns should be restricted solely to the nether fossil structure or to whatever biome is specified in their respective biome config.
 	soulVultureSpawnOnFossil = true
-	#Whether acacia blossoms should drop from blocks tagged with #alexsmobs:drops_acacia_blossoms
+	#Whether acacia blossoms should drop from blocks tagged with #alexsmobsup:drops_acacia_blossoms
 	acaciaBlossomsDropFromLeaves = true
 	#1 out of this number chance for leaves to drop an acacia when broken. Fortune is automatically factored in
 	# Default: 130
@@ -59,7 +59,7 @@
 	limitGusterSpawnsToWeather = true
 	#Whether Crimson Mosquitoes can transform into Warped Moscos if attacking a Mungus or any listed creature.
 	warpedMoscoTransformation = true
-	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobs:warped_toad"
+	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobsup:warped_toad"
 	warpedMoscoMobTriggers = [""]
 	#True if straddleboard enchants are enabled.
 	straddleboardEnchants = true

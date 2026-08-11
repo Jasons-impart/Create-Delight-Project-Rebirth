@@ -125,7 +125,7 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
 
     event.recipes.create
       .compacting(Fluid.of('createdelightcore:unrefined_sugar', 500), [
-        '3x alexscaves:licoroot_vine',
+        '3x alexscavesup:licoroot_vine',
         Fluid.water(250),
       ])
       .id(id('compacting/unrefined_sugar_from_licoroot_vine'));
@@ -569,7 +569,7 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
           ['youkaishomecoming:salmon_futomaki', 'youkaishomecoming:salmon_futomaki_slice'],
           ['youkaishomecoming:egg_futomaki', 'youkaishomecoming:egg_futomaki_slice'],
           ['youkaishomecoming:rainbow_futomaki', 'youkaishomecoming:rainbow_futomaki_slice'],
-          ['alexscaves:deep_sea_sushi_roll', 'createdelightcore:deep_sea_sushi_roll_slice'],
+          ['alexscavesup:deep_sea_sushi_roll', 'createdelightcore:deep_sea_sushi_roll_slice'],
           ['youkaishomecoming:california_roll', 'youkaishomecoming:california_roll_slice'],
           ['youkaishomecoming:volcano_roll', 'youkaishomecoming:volcano_roll_slice'],
           ['youkaishomecoming:roe_california_roll', 'youkaishomecoming:roe_california_roll_slice'],
@@ -587,7 +587,7 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
           ['farmersdelight:salmon_slice', '2x farmersdelight:salmon_roll'],
           ['farmersdelight:cod_slice', '2x farmersdelight:cod_roll'],
           ['youkaishomecoming:otoro', '2x youkaishomecoming:otoro_nigiri'],
-          ['alexscaves:radgill', '2x createdelightcore:radgill_sushi'],
+          ['alexscavesup:radgill', '2x createdelightcore:radgill_sushi'],
         ].forEach(([input, output]) => {
           event.recipes.create
             .deploying(output, ['createdelightcore:empty_riceball', input])
@@ -811,11 +811,11 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
             ],
           ],
           [
-            'alexscaves:deep_sea_sushi_roll',
+            'alexscavesup:deep_sea_sushi_roll',
             [
-              'alexscaves:tripodfish',
-              'alexscaves:sea_pig',
-              'alexscaves:lanternfish',
+              'alexscavesup:tripodfish',
+              'alexscavesup:sea_pig',
+              'alexscavesup:lanternfish',
               'youkaishomecoming:cucumber_slice',
             ],
           ],

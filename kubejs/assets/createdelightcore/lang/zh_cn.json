@@ -3,7 +3,7 @@
   "message.createdelightcore.login": "你好%s\n欢迎来到§e齿轮盛宴§r!\n更多§6详细信息§r请查询§4任务书§r",
   "message.createdelightcore.budding_quartz": "赛特斯石英母岩在使用§4非精准采集§r镐子破坏时会§4受损\n§r(§4无瑕母岩被破坏必定受损§r)\n§6如果想要破坏的话请蹲下挖掘",
   "createdelightcore.tip.advanced_alloy": "部分合金在初始阶段只能使用熔铸搅拌器合成, 例如钢。",
-  "createdelightcore.tip.alexscaves_dimension_spawn": "alex洞穴的维度禁止了所有非alex洞穴生物的生成(当然除了玩家)",
+  "createdelightcore.tip.alexscavesup_dimension_spawn": "alex洞穴的维度禁止了所有非alex洞穴生物的生成(当然除了玩家)",
   "createdelightcore.tip.andesite_bucket": "安山桶可以直接将容器中的流体打出来, 并直接送到另一个容器中。在处理液体相关的配方时非常好用!",
   "createdelightcore.tip.arbutus_berries": "不知道怎么获取杜鹃莓? 试试破坏杜鹃树叶吧!",
   "createdelightcore.tip.bettercombat.mine_with_weapons_switch": "使用武器攻击怪物时总会挖掘方块？默认键位配置下, 可使用[。]开关武器挖掘方块的能力",
@@ -21,7 +21,7 @@
   "createdelightcore.tip.dragon_spawn": "火龙在火星, 水星与金星, 电龙在金星, 冰龙在霜原星。",
   "createdelightcore.tip.dread_update_smithing_template": "悚怖锻造模板可以在悚陵中的\"悚怖女皇\"所在层数的四个箱子中获取。",
   "createdelightcore.tip.ender_reverb": "附近有小黑时被传送？看看你手上的工具有没有用末地烛作手柄。",
-  "createdelightcore.tip.enter_alexscaves_dimension": "alex的每个洞穴都被分别放到了一个维度中, 进入方法请参见任务。",
+  "createdelightcore.tip.enter_alexscavesup_dimension": "alex的每个洞穴都被分别放到了一个维度中, 进入方法请参见任务。",
   "createdelightcore.tip.fasten_letios_compost": "将忘魂肥料放在灵魂沙峡谷会加速其忘却速度。",
   "createdelightcore.tip.faucet": "水龙头搭配水源方块能够提供取之不尽的水。这在搭建锅炉时会很有用!",
   "createdelightcore.tip.forged_ruin_collect": "你需要使用精准采集的锤子才能将锻造仪器的东西带走。",
@@ -50,7 +50,7 @@
   "createdelightcore.tip.void_stuff": "虚空系列物品提供了远程传输流体, 电力, 应力的方案。",
   "createdelightcore.tip.lumisene": "高燃液体类似现实中的流体流动形式, 难以回收且无法装入流体抽屉, 请谨慎使用",
   "emi_group.createdelightcore.accessories_hats": "帽子",
-  "emi_group.createdelightcore.alexscaves_radon_lamp": "氡灯",
+  "emi_group.createdelightcore.alexscavesup_radon_lamp": "氡灯",
   "emi_group.createdelightcore.arrows": "箭矢",
   "emi_group.createdelightcore.bakeries_sofa": "烘焙坊沙发",
   "emi_group.createdelightcore.bamboo_spikes": "竹刺",
@@ -139,5 +139,5 @@
   "emi_group.createdelightcore.waystones": "传送石",
   "emi_group.createdelightcore.covered_cables": "包层线缆",
   "emi_group.createdelightcore.covered_dense_cables": "致密包层线缆",
-  "emi_group.createdelightcore.citadel": "Citadel"
+  "emi_group.createdelightcore.citadelup": "Citadel Up"
 }

@@ -70,7 +70,7 @@ if (global.hasMod('refurbished_furniture')) {
         'farmersdelight:hamburger',
         'silentsdelight:heartburger',
         'collectorsreap:portobello_burger',
-        'alexsmobs:kangaroo_burger',
+        'alexsmobsup:kangaroo_burger',
         'alexsdelight:bunfungus_sandwich',
         'culturaldelights:mutton_sandwich',
         'farmersdelight:egg_sandwich',
@@ -158,7 +158,7 @@ if (global.hasMod('refurbished_furniture')) {
       '#c:vegetables/onion',
     ]);
 
-    cuttingBoardCombining('alexsmobs:kangaroo_burger', [
+    cuttingBoardCombining('alexsmobsup:kangaroo_burger', [
       'minecraft:bread',
       '#alexsdelight:cooked_kangaroo',
       '#alexsdelight:cooked_kangaroo',
