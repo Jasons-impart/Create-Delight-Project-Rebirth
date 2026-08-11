@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T04:52:52Z",
+  "generatedAt": "2026-08-08T14:18:24Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -2592,8 +2592,8 @@
     },
     {
       "side": "common",
-      "metadata": "mods/common/quality-food.pw.toml",
-      "filename": "quality_food-1.21.1-2.3.4.jar",
+      "metadata": "mods/common/quality-food-j.pw.toml",
+      "filename": "quality_food-1.21.1-2.3.6-cdpr.2.jar",
       "modIds": [
         "quality_food"
       ]
