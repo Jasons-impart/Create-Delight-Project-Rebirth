@@ -1,12 +1,12 @@
-if (global.hasMod('alexscaves')) {
+if (global.hasMod('alexscavesup')) {
   ServerEvents.recipes((event) => {
-    const id = (path) => `createdelightcore:alexscaves/general/${path}`;
+    const id = (path) => `createdelightcore:alexscavesup/general/${path}`;
 
     remove_recipes_id(event, [
-      'alexscaves:azure_neodymium_ingot',
-      'alexscaves:scarlet_neodymium_ingot',
-      'alexscaves:deep_sea_sushi_roll',
-      'alexscaves:cave_map',
+      'alexscavesup:azure_neodymium_ingot',
+      'alexscavesup:scarlet_neodymium_ingot',
+      'alexscavesup:deep_sea_sushi_roll',
+      'alexscavesup:cave_map',
     ]);
 
     if (global.hasMod('create_oppenheimered')) {
@@ -32,7 +32,7 @@ if (global.hasMod('alexscaves')) {
     if (global.hasAllMods(['create_oppenheimered', 'neapolitan'])) {
       event.replaceInput(
         { id: 'create_oppenheimered:mixing/ice_cream_licoroot' },
-        'alexscaves:licoroot',
+        'alexscavesup:licoroot',
         'neapolitan:dried_vanilla_pod_block'
       );
     }
@@ -41,17 +41,17 @@ if (global.hasMod('alexscaves')) {
       event.recipes.create
         .crushing(
           [
-            '3x alexscaves:sea_glass_shards',
-            CreateItem.of(Item.of('3x alexscaves:sea_glass_shards'), 0.5),
+            '3x alexscavesup:sea_glass_shards',
+            CreateItem.of(Item.of('3x alexscavesup:sea_glass_shards'), 0.5),
           ],
-          'alexscaves:pearl'
+          'alexscavesup:pearl'
         )
         .id(id('crushing/pearl'));
     }
 
     if (global.hasMod('vintageimprovements')) {
       event.recipes.vintageimprovements
-        .centrifugation(['minecraft:mud', 'alexscaves:sea_glass_shards'], 'alexscaves:muck')
+        .centrifugation(['minecraft:mud', 'alexscavesup:sea_glass_shards'], 'alexscavesup:muck')
         .id(id('centrifugation/muck'));
     }
   });

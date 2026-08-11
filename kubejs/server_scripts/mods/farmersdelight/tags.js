@@ -46,7 +46,7 @@ if (global.hasMod('farmersdelight')) {
         'minecraft:chicken',
         'minecraft:rabbit',
         'alexsdelight:bison_mince',
-        'alexsmobs:kangaroo_meat',
+        'alexsmobsup:kangaroo_meat',
         'alexsdelight:kangaroo_shank',
         'alexsdelight:loose_moose_rib',
         'alexsdelight:raw_bunfungus_drumstick',

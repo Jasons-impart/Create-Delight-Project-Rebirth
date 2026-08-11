@@ -308,7 +308,7 @@
         },
         "cashier_obj_candy_cane": {
             "type": "item",
-            "content": "alexscaves:candy_cane",
+            "content": "alexscavesup:candy_cane",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -557,7 +557,7 @@
         "cashier_obj_mosquito_repellent_stew": {
             "type": "item",
             "rarity": "UNCOMMON",
-            "content": "alexsmobs:mosquito_repellent_stew",
+            "content": "alexsmobsup:mosquito_repellent_stew",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -807,7 +807,7 @@
         "cashier_obj_cooked_lobster_tail": {
             "type": "item",
             "rarity": "RARE",
-            "content": "alexsmobs:cooked_lobster_tail",
+            "content": "alexsmobsup:cooked_lobster_tail",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -1127,7 +1127,7 @@
         "cashier_obj_cooked_moose_ribs": {
             "type": "item",
             "rarity": "RARE",
-            "content": "alexsmobs:cooked_moose_ribs",
+            "content": "alexsmobsup:cooked_moose_ribs",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -1137,7 +1137,7 @@
         "cashier_obj_cooked_kangaroo_meat": {
             "type": "item",
             "rarity": "RARE",
-            "content": "alexsmobs:cooked_kangaroo_meat",
+            "content": "alexsmobsup:cooked_kangaroo_meat",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -1147,7 +1147,7 @@
         "cashier_obj_cooked_catfish": {
             "type": "item",
             "rarity": "RARE",
-            "content": "alexsmobs:cooked_catfish",
+            "content": "alexsmobsup:cooked_catfish",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -1567,7 +1567,7 @@
         "cashier_obj_kangaroo_burger": {
             "type": "item",
             "rarity": "RARE",
-            "content": "alexsmobs:kangaroo_burger",
+            "content": "alexsmobsup:kangaroo_burger",
             "amount": {
                 "min": 1,
                 "max": 3
@@ -2657,7 +2657,7 @@
         "cashier_obj_shrimp_fried_rice_2": {
             "type": "item",
             "rarity": "EPIC",
-            "content": "alexsmobs:shrimp_fried_rice",
+            "content": "alexsmobsup:shrimp_fried_rice",
             "amount": {
                 "min": 1,
                 "max": 5

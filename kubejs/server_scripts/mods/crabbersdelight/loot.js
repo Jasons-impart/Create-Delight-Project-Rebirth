@@ -1,11 +1,11 @@
 if (global.hasAllMods(['crabbersdelight', 'lootjs'])) {
   LootJS.modifiers((event) => {
-    if (global.hasMod('alexsmobs')) {
+    if (global.hasMod('alexsmobsup')) {
       event
-        .addEntityModifier('alexsmobs:lobster')
-        .replaceLoot('alexsmobs:lobster_tail', 'crabbersdelight:clawster');
+        .addEntityModifier('alexsmobsup:lobster')
+        .replaceLoot('alexsmobsup:lobster_tail', 'crabbersdelight:clawster');
       event
-        .addEntityModifier('alexsmobs:rain_frog')
+        .addEntityModifier('alexsmobsup:rain_frog')
         .randomChance(0.1)
         .addLoot('crabbersdelight:raw_frog_leg');
     }

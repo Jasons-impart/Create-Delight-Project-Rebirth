@@ -145,7 +145,7 @@ const COLOR_FOLD_SAMPLES = [
   'interiors:white_floor_chair',
   'interiors:white_chair',
   'interiors:white_cushion',
-  'alexscaves:radon_lamp_orange',
+  'alexscavesup:radon_lamp_orange',
   'create_dragons_plus:white_dye_bucket',
   'create:white_postbox',
 ];
@@ -231,7 +231,7 @@ RecipeViewerEvents.fold((event) => {
   const fold = (key, filter) => event.fold(groupId(key), groupName(key), filter, options);
   const foldIds = (key, paths) => event.foldId(groupId(key), groupName(key), ids(paths), options);
 
-  fold('test', '#alexscaves:rock_candies');
+  fold('test', '#alexscavesup:rock_candies');
   fold('glass_cables', '#ae2:glass_cable');
   fold('potions_drinkable', 'minecraft:potion');
   fold('potions_splash', 'minecraft:splash_potion');
@@ -250,14 +250,14 @@ RecipeViewerEvents.fold((event) => {
   foldIds('enchanted_books', ['enchanted_book']);
   foldIds('seed_pouches', 'quark:seed_pouch');
   event.foldSpawnEggs(groupId('spawn_eggs'), groupName('spawn_eggs'), options);
-  event.foldMod(groupId('citadel'), groupName('citadel'), '@citadel', options);
+  event.foldMod(groupId('citadelup'), groupName('citadelup'), '@citadelup', options);
   fold('arrows', '#minecraft:arrows');
   fold('canvas_signs', '#farmersdelight:canvas_signs');
   fold('cannon_boats', '#supplementaries:cannon_boats');
   fold('card_display', '#lightmanscurrency:traders/card_display');
-  fold('cave_paintings', { blockTag: '#alexscaves:cave_paintings' });
+  fold('cave_paintings', { blockTag: '#alexscavesup:cave_paintings' });
   fold('hanging_canvas_signs', '#farmersdelight:hanging_canvas_signs');
-  fold('jelly_bean', 'alexscaves:jelly_bean');
+  fold('jelly_bean', 'alexscavesup:jelly_bean');
   fold('jam', '#fruitsdelight:jam');
   foldIds('music_cd', 'netmusic:music_cd');
   fold('music_discs', '#c:music_discs');

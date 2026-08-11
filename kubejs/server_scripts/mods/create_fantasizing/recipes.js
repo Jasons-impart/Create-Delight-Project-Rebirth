@@ -1,5 +1,12 @@
 if (
-  global.hasAllMods(['create_fantasizing', 'create', 'create_sa', 'alexscaves', 'ae2', 'megacells'])
+  global.hasAllMods([
+    'create_fantasizing',
+    'create',
+    'create_sa',
+    'alexscavesup',
+    'ae2',
+    'megacells',
+  ])
 ) {
   ServerEvents.recipes((event) => {
     const { create, kubejs } = event.recipes;
@@ -25,7 +32,7 @@ if (
 
     kubejs
       .shaped('create_fantasizing:sturdy_conduit', ['A', 'B', 'C'], {
-        A: 'alexscaves:enigmatic_engine',
+        A: 'alexscavesup:enigmatic_engine',
         B: 'create_sa:hydraulic_engine',
         C: 'create:sturdy_sheet',
       })
@@ -54,7 +61,7 @@ if (
         [
           create.deploying('create_fantasizing:incomplete_compact_hydraulic_engine', [
             'create_fantasizing:incomplete_compact_hydraulic_engine',
-            'alexscaves:sea_glass_shards',
+            'alexscavesup:sea_glass_shards',
           ]),
           create.filling('create_fantasizing:incomplete_compact_hydraulic_engine', [
             'create_fantasizing:incomplete_compact_hydraulic_engine',

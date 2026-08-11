@@ -188,11 +188,11 @@ if (global.hasMod('vintagedelight')) {
       72000
     );
 
-    if (global.hasMod('alexsmobs')) {
+    if (global.hasMod('alexsmobsup')) {
       fermenting(
         'century_egg_from_emu_egg',
         'vintagedelight:century_egg',
-        ['alexsmobs:emu_egg', Ingredient.of('#c:dusts/ash'), Ingredient.of('#c:dusts/salt')],
+        ['alexsmobsup:emu_egg', Ingredient.of('#c:dusts/ash'), Ingredient.of('#c:dusts/salt')],
         72000
       );
     }

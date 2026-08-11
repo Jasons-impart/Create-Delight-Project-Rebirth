@@ -3,7 +3,7 @@
   "message.createdelightcore.login": "Hello %s\nWelcome to Create Delight!\nCheck the quest book for more details.",
   "message.createdelightcore.budding_quartz": "Certus quartz budding blocks can be damaged when broken without Silk Touch.\n(Flawless budding blocks are always damaged when broken.)\nSneak while mining if you really want to break one.",
   "emi_group.createdelightcore.accessories_hats": "Hats",
-  "emi_group.createdelightcore.alexscaves_radon_lamp": "Radon Lamps",
+  "emi_group.createdelightcore.alexscavesup_radon_lamp": "Radon Lamps",
   "emi_group.createdelightcore.arrows": "Arrows",
   "emi_group.createdelightcore.bakeries_sofa": "Bakery Sofas",
   "emi_group.createdelightcore.bamboo_spikes": "Bamboo Spikes",
@@ -92,5 +92,5 @@
   "emi_group.createdelightcore.waystones": "Waystones",
   "emi_group.createdelightcore.covered_cables": "Covered Cables",
   "emi_group.createdelightcore.covered_dense_cables": "Covered Dense Cables",
-  "emi_group.createdelightcore.citadel": "Citadel"
+  "emi_group.createdelightcore.citadelup": "Citadel Up"
 }

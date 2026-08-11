@@ -1,7 +1,7 @@
 if (global.hasMod('createoreexcavation')) {
   ServerEvents.tags('minecraft:worldgen/biome', (event) => {
-    if (global.hasMod('alexscaves')) {
-      event.add('createdelightcore:has_cocoa_liquor', '#alexscaves:is_candy_cavity');
+    if (global.hasMod('alexscavesup')) {
+      event.add('createdelightcore:has_cocoa_liquor', '#alexscavesup:is_candy_cavity');
     }
 
     if (global.hasMod('the_bumblezone')) {

@@ -99,7 +99,7 @@
 	[blocks.captured_mobs]
 		#THIS IS ONLY FOR VISUALS! To allow more entities in cages you need to edit the respective tags!
 		#A list of mobs that can be ticked on client side when inside jars. Mainly used for stuff that has particles. Can cause issues and side effects so use with care
-		tickable_inside_jars = ["iceandfire:pixie", "druidcraft:dreadfish", "druidcraft:lunar_moth", "alexsmobs:hummingbird"]
+		tickable_inside_jars = ["iceandfire:pixie", "druidcraft:dreadfish", "druidcraft:lunar_moth", "alexsmobsup:hummingbird"]
 
 		[blocks.hat_stand.swing_physics]
 			min_angle = 0.0

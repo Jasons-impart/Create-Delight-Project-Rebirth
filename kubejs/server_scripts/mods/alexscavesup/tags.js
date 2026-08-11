@@ -1,9 +1,9 @@
-if (global.hasMod('alexscaves')) {
+if (global.hasMod('alexscavesup')) {
   ServerEvents.tags('item', (event) => {
     const existingItems = (ids) => ids.filter((id) => global.itemExists(id));
 
     event.add(
-      'alexscaves:ferromagnetic_items',
+      'alexscavesup:ferromagnetic_items',
       existingItems([
         'iceandfire:dragonsteel_fire_pickaxe',
         'iceandfire:dragonsteel_ice_pickaxe',
@@ -23,16 +23,16 @@ if (global.hasMod('alexscaves')) {
       ])
     );
 
-    event.add('c:ingots/uranium', 'alexscaves:uranium');
-    event.add('createdelightcore:candy_cane', 'alexscaves:candy_cane');
+    event.add('c:ingots/uranium', 'alexscavesup:uranium');
+    event.add('createdelightcore:candy_cane', 'alexscavesup:candy_cane');
     event.add(
       'c:gelatins',
       existingItems([
-        'alexscaves:gelatin_red',
-        'alexscaves:gelatin_green',
-        'alexscaves:gelatin_yellow',
-        'alexscaves:gelatin_blue',
-        'alexscaves:gelatin_pink',
+        'alexscavesup:gelatin_red',
+        'alexscavesup:gelatin_green',
+        'alexscavesup:gelatin_yellow',
+        'alexscavesup:gelatin_blue',
+        'alexscavesup:gelatin_pink',
         'butchercraft:gelatin',
       ])
     );
@@ -41,38 +41,38 @@ if (global.hasMod('alexscaves')) {
       existingItems(['bakeries:bottle_cream', 'bakeries:cheese_cream', 'bakeries:foamed_cream'])
     );
 
-    event.remove('minecraft:fishes', ['alexscaves:cooked_radgill', 'alexscaves:radgill']);
+    event.remove('minecraft:fishes', ['alexscavesup:cooked_radgill', 'alexscavesup:radgill']);
     event.add('create:upright_on_belt', [
-      'alexscaves:sulfur_bud_small',
-      'alexscaves:sulfur_bud_medium',
-      'alexscaves:sulfur_bud_large',
-      'alexscaves:sulfur_cluster',
+      'alexscavesup:sulfur_bud_small',
+      'alexscavesup:sulfur_bud_medium',
+      'alexscavesup:sulfur_bud_large',
+      'alexscavesup:sulfur_cluster',
     ]);
 
-    event.add('alexscaves:sweetish_fish', [
-      'alexscaves:sweetish_fish_blue',
-      'alexscaves:sweetish_fish_red',
-      'alexscaves:sweetish_fish_yellow',
-      'alexscaves:sweetish_fish_green',
-      'alexscaves:sweetish_fish_pink',
+    event.add('alexscavesup:sweetish_fish', [
+      'alexscavesup:sweetish_fish_blue',
+      'alexscavesup:sweetish_fish_red',
+      'alexscavesup:sweetish_fish_yellow',
+      'alexscavesup:sweetish_fish_green',
+      'alexscavesup:sweetish_fish_pink',
     ]);
 
-    event.add('alexscaves:ice_cream_scoop', [
-      'alexscaves:vanilla_ice_cream_scoop',
-      'alexscaves:chocolate_ice_cream_scoop',
-      'alexscaves:sweetberry_ice_cream_scoop',
+    event.add('alexscavesup:ice_cream_scoop', [
+      'alexscavesup:vanilla_ice_cream_scoop',
+      'alexscavesup:chocolate_ice_cream_scoop',
+      'alexscavesup:sweetberry_ice_cream_scoop',
     ]);
-    event.add('alexscaves:ice_cream', [
-      'alexscaves:vanilla_ice_cream',
-      'alexscaves:chocolate_ice_cream',
-      'alexscaves:sweetberry_ice_cream',
+    event.add('alexscavesup:ice_cream', [
+      'alexscavesup:vanilla_ice_cream',
+      'alexscavesup:chocolate_ice_cream',
+      'alexscavesup:sweetberry_ice_cream',
     ]);
 
     if (global.hasMod('neapolitan')) {
       event.add('createdelightcore:mint_candy', 'neapolitan:mint_candies');
     }
 
-    event.add('createdelightcore:mint_candy', 'alexscaves:frostmint');
+    event.add('createdelightcore:mint_candy', 'alexscavesup:frostmint');
     event.add(
       'createdelightcore:fish_buckets',
       existingItems([
@@ -81,26 +81,26 @@ if (global.hasMod('alexscaves')) {
         'minecraft:tropical_fish_bucket',
         'minecraft:pufferfish_bucket',
         'minecraft:axolotl_bucket',
-        'alexsmobs:lobster_bucket',
-        'alexsmobs:blobfish_bucket',
-        'alexsmobs:stradpole_bucket',
-        'alexsmobs:platypus_bucket',
-        'alexsmobs:frilled_shark_bucket',
-        'alexsmobs:mimic_octopus_bucket',
-        'alexsmobs:terrapin_bucket',
-        'alexsmobs:comb_jelly_bucket',
-        'alexsmobs:cosmic_cod_bucket',
-        'alexsmobs:devils_hole_pupfish_bucket',
-        'alexsmobs:small_catfish_bucket',
-        'alexsmobs:medium_catfish_bucket',
-        'alexsmobs:large_catfish_bucket',
-        'alexsmobs:flying_fish_bucket',
-        'alexsmobs:mudskipper_bucket',
-        'alexsmobs:triops_bucket',
-        'alexscaves:trilocaris_bucket',
-        'alexscaves:lanternfish_bucket',
-        'alexscaves:tripodfish_bucket',
-        'alexscaves:sea_pig_bucket',
+        'alexsmobsup:lobster_bucket',
+        'alexsmobsup:blobfish_bucket',
+        'alexsmobsup:stradpole_bucket',
+        'alexsmobsup:platypus_bucket',
+        'alexsmobsup:frilled_shark_bucket',
+        'alexsmobsup:mimic_octopus_bucket',
+        'alexsmobsup:terrapin_bucket',
+        'alexsmobsup:comb_jelly_bucket',
+        'alexsmobsup:cosmic_cod_bucket',
+        'alexsmobsup:devils_hole_pupfish_bucket',
+        'alexsmobsup:small_catfish_bucket',
+        'alexsmobsup:medium_catfish_bucket',
+        'alexsmobsup:large_catfish_bucket',
+        'alexsmobsup:flying_fish_bucket',
+        'alexsmobsup:mudskipper_bucket',
+        'alexsmobsup:triops_bucket',
+        'alexscavesup:trilocaris_bucket',
+        'alexscavesup:lanternfish_bucket',
+        'alexscavesup:tripodfish_bucket',
+        'alexscavesup:sea_pig_bucket',
         'crabbersdelight:crab_bucket',
       ])
     );
@@ -113,7 +113,7 @@ if (global.hasMod('alexscaves')) {
       ])
     );
     event.add(
-      'alexscaves:ice_cream_scoop',
+      'alexscavesup:ice_cream_scoop',
       existingItems([
         'createdelightcore:strawberry_ice_cream_scoop',
         'createdelightcore:banana_ice_cream_scoop',
@@ -123,17 +123,17 @@ if (global.hasMod('alexscaves')) {
         'createdelightcore:lime_ice_cream_scoop',
       ])
     );
-    event.add('curios:belt', 'alexscaves:sack_of_sating');
+    event.add('curios:belt', 'alexscavesup:sack_of_sating');
 
     if (global.hasMod('create_new_age')) {
       event.add('create_new_age:magnet', [
-        'alexscaves:block_of_scarlet_neodymium',
-        'alexscaves:block_of_azure_neodymium',
+        'alexscavesup:block_of_scarlet_neodymium',
+        'alexscavesup:block_of_azure_neodymium',
       ]);
     }
 
-    event.removeAll('alexscaves:restricted_biome_locators');
-    event.remove('alexscaves:ferns', 'alexscaves:fiddlehead');
+    event.removeAll('alexscavesup:restricted_biome_locators');
+    event.remove('alexscavesup:ferns', 'alexscavesup:fiddlehead');
     event.removeAllTagsFrom(
       existingItems(['vintageimprovements:sulfur_chunk', 'vintageimprovements:sulfur'])
     );
@@ -142,25 +142,25 @@ if (global.hasMod('alexscaves')) {
   ServerEvents.tags('block', (event) => {
     const existingBlocks = (ids) => ids.filter((id) => global.blockExists(id));
 
-    event.add('minecraft:logs', 'alexscaves:licoroot');
+    event.add('minecraft:logs', 'alexscavesup:licoroot');
 
     if (global.hasMod('create_new_age')) {
       event.add('create_new_age:magnet', [
-        'alexscaves:block_of_scarlet_neodymium',
-        'alexscaves:block_of_azure_neodymium',
+        'alexscavesup:block_of_scarlet_neodymium',
+        'alexscavesup:block_of_azure_neodymium',
       ]);
       event.add('create_new_age:magnet/force_16', [
-        'alexscaves:block_of_scarlet_neodymium',
-        'alexscaves:block_of_azure_neodymium',
+        'alexscavesup:block_of_scarlet_neodymium',
+        'alexscavesup:block_of_azure_neodymium',
       ]);
     }
 
     event.add(
       'c:ice_cream_blocks',
       existingBlocks([
-        'alexscaves:vanilla_ice_cream',
-        'alexscaves:chocolate_ice_cream',
-        'alexscaves:sweetberry_ice_cream',
+        'alexscavesup:vanilla_ice_cream',
+        'alexscavesup:chocolate_ice_cream',
+        'alexscavesup:sweetberry_ice_cream',
         'neapolitan:strawberry_ice_cream_block',
         'neapolitan:banana_ice_cream_block',
         'neapolitan:adzuki_ice_cream_block',

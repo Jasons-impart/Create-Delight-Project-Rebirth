@@ -65,11 +65,11 @@ if (global.hasMod('youkaishomecoming')) {
       'youkaishomecoming:raw_tuna',
       'youkaishomecoming:raw_tuna_slice',
       'youkaishomecoming:otoro',
-      'alexsmobs:raw_catfish',
+      'alexsmobsup:raw_catfish',
       'alexsdelight:raw_catfish_slice',
-      'alexsmobs:flying_fish',
-      'alexscaves:tripodfish',
-      'alexscaves:lanternfish',
+      'alexsmobsup:flying_fish',
+      'alexscavesup:tripodfish',
+      'alexscavesup:lanternfish',
     ]);
   });
 

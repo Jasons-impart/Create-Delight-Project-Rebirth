@@ -45,13 +45,13 @@ if (global.hasMod('createdelightcore')) {
 
     const oversizedEggs = existingItems([
       'iceandfire:deathworm_egg_giant',
-      'alexscaves:tremorsaurus_egg',
-      'alexscaves:relicheirus_egg',
-      'alexscaves:atlatitan_egg',
-      'alexsmobs:emu_egg',
+      'alexscavesup:tremorsaurus_egg',
+      'alexscavesup:relicheirus_egg',
+      'alexscavesup:atlatitan_egg',
+      'alexsmobsup:emu_egg',
       '#c:dragon_eggs',
       'minecraft:sniffer_egg',
-      'alexscaves:tremorzilla_egg',
+      'alexscavesup:tremorzilla_egg',
     ]);
     event.add('c:bigger_eggs', oversizedEggs);
 
@@ -59,10 +59,10 @@ if (global.hasMod('createdelightcore')) {
       'c:eggs',
       existingItems([
         'iceandfire:deathworm_egg_giant',
-        'alexscaves:tremorsaurus_egg',
-        'alexscaves:relicheirus_egg',
-        'alexscaves:atlatitan_egg',
-        'alexscaves:tremorzilla_egg',
+        'alexscavesup:tremorsaurus_egg',
+        'alexscavesup:relicheirus_egg',
+        'alexscavesup:atlatitan_egg',
+        'alexscavesup:tremorzilla_egg',
       ])
     );
     event.remove('c:moss', existingItems(['minecraft:moss_carpet']));

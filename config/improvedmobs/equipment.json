@@ -38,22 +38,22 @@
       "quality": 0.049
     },
     {
-      "value": "alexscaves:desolate_dagger",
+      "value": "alexscavesup:desolate_dagger",
       "weight": 25938,
       "quality": 4.753436
     },
     {
-      "value": "alexscaves:dreadbow",
+      "value": "alexscavesup:dreadbow",
       "weight": 27724,
       "quality": 4.753436
     },
     {
-      "value": "alexsmobs:skelewag_sword",
+      "value": "alexsmobsup:skelewag_sword",
       "weight": 27852,
       "quality": 0.7804518
     },
     {
-      "value": "alexsmobs:tendon_whip",
+      "value": "alexsmobsup:tendon_whip",
       "weight": 28149,
       "quality": 0.0469
     },
@@ -430,7 +430,7 @@
   ],
   "OFFHAND": [
     {
-      "value": "alexscaves:resistor_shield",
+      "value": "alexscavesup:resistor_shield",
       "weight": 0,
       "quality": 6.9045377
     },
@@ -467,32 +467,32 @@
   ],
   "FEET": [
     {
-      "value": "alexscaves:diving_boots",
+      "value": "alexscavesup:diving_boots",
       "weight": 4498,
       "quality": 1.1178746
     },
     {
-      "value": "alexscaves:gingerbread_boots",
+      "value": "alexscavesup:gingerbread_boots",
       "weight": 4752,
       "quality": 0.79089624
     },
     {
-      "value": "alexscaves:hazmat_boots",
+      "value": "alexscavesup:hazmat_boots",
       "weight": 4699,
       "quality": 0.85967726
     },
     {
-      "value": "alexscaves:rainbounce_boots",
+      "value": "alexscavesup:rainbounce_boots",
       "weight": 5139,
       "quality": 0.0387
     },
     {
-      "value": "alexsmobs:flying_fish_boots",
+      "value": "alexsmobsup:flying_fish_boots",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:roadrunner_boots",
+      "value": "alexsmobsup:roadrunner_boots",
       "weight": 0,
       "quality": 0.0
     },
@@ -749,32 +749,32 @@
   ],
   "LEGS": [
     {
-      "value": "alexscaves:diving_leggings",
+      "value": "alexscavesup:diving_leggings",
       "weight": 4456,
       "quality": 1.1537791
     },
     {
-      "value": "alexscaves:gingerbread_leggings",
+      "value": "alexscavesup:gingerbread_leggings",
       "weight": 4725,
       "quality": 0.8078281
     },
     {
-      "value": "alexscaves:hazmat_leggings",
+      "value": "alexscavesup:hazmat_leggings",
       "weight": 4657,
       "quality": 0.89580816
     },
     {
-      "value": "alexscaves:primordial_pants",
+      "value": "alexscavesup:primordial_pants",
       "weight": 4747,
       "quality": 0.7791448
     },
     {
-      "value": "alexsmobs:centipede_leggings",
+      "value": "alexsmobsup:centipede_leggings",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:emu_leggings",
+      "value": "alexsmobsup:emu_leggings",
       "weight": 0,
       "quality": 0.0
     },
@@ -1046,47 +1046,47 @@
   ],
   "CHEST": [
     {
-      "value": "alexscaves:cloak_of_darkness",
+      "value": "alexscavesup:cloak_of_darkness",
       "weight": 4823,
       "quality": 0.6972618
     },
     {
-      "value": "alexscaves:diving_chestplate",
+      "value": "alexscavesup:diving_chestplate",
       "weight": 4486,
       "quality": 1.1332608
     },
     {
-      "value": "alexscaves:gingerbread_chestplate",
+      "value": "alexscavesup:gingerbread_chestplate",
       "weight": 4747,
       "quality": 0.7974141
     },
     {
-      "value": "alexscaves:hazmat_chestplate",
+      "value": "alexscavesup:hazmat_chestplate",
       "weight": 4688,
       "quality": 0.87388456
     },
     {
-      "value": "alexscaves:primordial_tunic",
+      "value": "alexscavesup:primordial_tunic",
       "weight": 4778,
       "quality": 0.7568712
     },
     {
-      "value": "alexsmobs:crocodile_chestplate",
+      "value": "alexsmobsup:crocodile_chestplate",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:rocky_chestplate",
+      "value": "alexsmobsup:rocky_chestplate",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:tarantula_hawk_elytra",
+      "value": "alexsmobsup:tarantula_hawk_elytra",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:unsettling_kimono",
+      "value": "alexsmobsup:unsettling_kimono",
       "weight": 0,
       "quality": 0.0
     },
@@ -1393,62 +1393,62 @@
   ],
   "HEAD": [
     {
-      "value": "alexscaves:diving_helmet",
+      "value": "alexscavesup:diving_helmet",
       "weight": 4441,
       "quality": 1.173019
     },
     {
-      "value": "alexscaves:gingerbread_helmet",
+      "value": "alexscavesup:gingerbread_helmet",
       "weight": 4718,
       "quality": 0.8169267
     },
     {
-      "value": "alexscaves:hazmat_mask",
+      "value": "alexscavesup:hazmat_mask",
       "weight": 4643,
       "quality": 0.91383743
     },
     {
-      "value": "alexscaves:hood_of_darkness",
+      "value": "alexscavesup:hood_of_darkness",
       "weight": 4785,
       "quality": 0.7291897
     },
     {
-      "value": "alexscaves:primordial_helmet",
+      "value": "alexscavesup:primordial_helmet",
       "weight": 4733,
       "quality": 0.7974141
     },
     {
-      "value": "alexsmobs:fedora",
+      "value": "alexsmobsup:fedora",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:frontier_cap",
+      "value": "alexsmobsup:frontier_cap",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:froststalker_helmet",
+      "value": "alexsmobsup:froststalker_helmet",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:moose_headgear",
+      "value": "alexsmobsup:moose_headgear",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:novelty_hat",
+      "value": "alexsmobsup:novelty_hat",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:sombrero",
+      "value": "alexsmobsup:sombrero",
       "weight": 0,
       "quality": 0.0
     },
     {
-      "value": "alexsmobs:spiked_turtle_shell",
+      "value": "alexsmobsup:spiked_turtle_shell",
       "weight": 0,
       "quality": 0.0
     },

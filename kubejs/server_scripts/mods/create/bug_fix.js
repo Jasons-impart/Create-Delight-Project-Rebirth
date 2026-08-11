@@ -1,5 +1,5 @@
-if (global.hasAllMods(['create', 'alexsmobs'])) {
-  BlockEvents.rightClicked('alexsmobs:capsid', (event) => {
+if (global.hasAllMods(['create', 'alexsmobsup'])) {
+  BlockEvents.rightClicked('alexsmobsup:capsid', (event) => {
     const { block, player } = event;
     const mainHandItem = player.mainHandItem;
     const entityData = block.entityData;
@@ -13,14 +13,14 @@ if (global.hasAllMods(['create', 'alexsmobs'])) {
     ) {
       player.swing();
       block.set('air');
-      block.set('alexsmobs:capsid');
+      block.set('alexsmobsup:capsid');
       event.cancel();
     }
 
     if (entityId.search('present') !== -1 && mainHandItem.id.search('present') !== -1) {
       player.swing();
       block.set('air');
-      block.set('alexsmobs:capsid');
+      block.set('alexsmobsup:capsid');
       event.cancel();
     }
 
@@ -30,7 +30,7 @@ if (global.hasAllMods(['create', 'alexsmobs'])) {
     ) {
       player.swing();
       block.set('air');
-      block.set('alexsmobs:capsid');
+      block.set('alexsmobsup:capsid');
       event.cancel();
     }
   });

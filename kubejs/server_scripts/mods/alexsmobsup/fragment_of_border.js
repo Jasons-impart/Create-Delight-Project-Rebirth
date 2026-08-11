@@ -1,4 +1,4 @@
-if (global.hasAllMods(['alexsmobs'])) {
+if (global.hasAllMods(['alexsmobsup'])) {
   BlockEvents.rightClicked('createdelightcore:fragment_of_border', (event) => {
     const { block, item, level } = event;
 
@@ -8,6 +8,6 @@ if (global.hasAllMods(['alexsmobs'])) {
 
     level.destroyBlock(block.pos, true);
     item.count -= 1;
-    block.createEntity('alexsmobs:farseer').spawn();
+    block.createEntity('alexsmobsup:farseer').spawn();
   });
 }

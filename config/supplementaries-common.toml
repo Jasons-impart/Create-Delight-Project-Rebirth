@@ -221,7 +221,7 @@
 			"quark:dirty_glass_pane" = "minecraft:glass_pane"
 			"minecraft:sticky_piston" = "minecraft:piston"
 			"quark:dirty_glass" = "minecraft:glass"
-			"#alexscaves:cave_paintings" = "alexscaves:smooth_limestone"
+			"#alexscavesup:cave_paintings" = "alexscavesup:smooth_limestone"
 
 	[functional.present]
 		enabled = true

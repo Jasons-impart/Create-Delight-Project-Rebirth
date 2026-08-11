@@ -1,12 +1,12 @@
-if (global.hasAllMods(['alexscaves', 'lootjs'])) {
+if (global.hasAllMods(['alexscavesup', 'lootjs'])) {
   LootJS.modifiers((event) => {
-    event.addEntityModifier('alexscaves:forsaken').addLoot('createdelightcore:devil_eye');
+    event.addEntityModifier('alexscavesup:forsaken').addLoot('createdelightcore:devil_eye');
 
     const licowitchLoot = event
-      .addEntityModifier('alexscaves:licowitch')
-      .removeLoot('alexscaves:vanilla_ice_cream_scoop')
-      .removeLoot('alexscaves:chocolate_ice_cream_scoop')
-      .removeLoot('alexscaves:sweetberry_ice_cream_scoop');
+      .addEntityModifier('alexscavesup:licowitch')
+      .removeLoot('alexscavesup:vanilla_ice_cream_scoop')
+      .removeLoot('alexscavesup:chocolate_ice_cream_scoop')
+      .removeLoot('alexscavesup:sweetberry_ice_cream_scoop');
 
     [
       'createdelightcore:strawberry_ice_cream_scoop',
@@ -15,9 +15,9 @@ if (global.hasAllMods(['alexscaves', 'lootjs'])) {
       'createdelightcore:adzuki_ice_cream_scoop',
       'createdelightcore:pomegranate_ice_cream_scoop',
       'createdelightcore:lime_ice_cream_scoop',
-      'alexscaves:vanilla_ice_cream_scoop',
-      'alexscaves:chocolate_ice_cream_scoop',
-      'alexscaves:sweetberry_ice_cream_scoop',
+      'alexscavesup:vanilla_ice_cream_scoop',
+      'alexscavesup:chocolate_ice_cream_scoop',
+      'alexscavesup:sweetberry_ice_cream_scoop',
     ].forEach((item) => {
       licowitchLoot.pool((pool) => {
         pool.rolls([0, 1]);

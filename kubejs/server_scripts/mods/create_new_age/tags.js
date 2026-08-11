@@ -9,10 +9,10 @@ if (global.hasMod('create_new_age')) {
     event.add(
       'create_new_age:nuclear/hazmat_suit',
       [
-        'alexscaves:hazmat_mask',
-        'alexscaves:hazmat_chestplate',
-        'alexscaves:hazmat_leggings',
-        'alexscaves:hazmat_boots',
+        'alexscavesup:hazmat_mask',
+        'alexscavesup:hazmat_chestplate',
+        'alexscavesup:hazmat_leggings',
+        'alexscavesup:hazmat_boots',
       ].filter((id) => global.itemExists(id))
     );
     event.add(

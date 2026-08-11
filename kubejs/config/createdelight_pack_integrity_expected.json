@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T14:18:24Z",
+  "generatedAt": "2026-08-11T09:24:59Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -13,9 +13,9 @@
       "ae2omnicells",
       "ae2wtlib",
       "ae2wtlib_api",
-      "alexscaves",
+      "alexscavesup",
       "alexsdelight",
-      "alexsmobs",
+      "alexsmobsup",
       "always_eat",
       "amendments",
       "anvilcore",
@@ -67,7 +67,7 @@
       "cerulean",
       "charmofundying",
       "chefsdelight",
-      "citadel",
+      "citadelup",
       "cloth_config",
       "clumps",
       "cmr",
@@ -994,10 +994,10 @@
     },
     {
       "side": "common",
-      "metadata": "mods/common/alexs-caves-unofficial-port.pw.toml",
-      "filename": "alexscaves-2.0.10.jar",
+      "metadata": "mods/common/alexs-caves-up.pw.toml",
+      "filename": "alexscavesup-0.1.1.jar",
       "modIds": [
-        "alexscaves"
+        "alexscavesup"
       ]
     },
     {
@@ -1010,10 +1010,10 @@
     },
     {
       "side": "common",
-      "metadata": "mods/common/alexs-mobs-1-21-1-port.pw.toml",
-      "filename": "alexsmobs-1.22.17.jar",
+      "metadata": "mods/common/alexs-mobs-up.pw.toml",
+      "filename": "alexsmobsup-0.2.8.jar",
       "modIds": [
-        "alexsmobs"
+        "alexsmobsup"
       ]
     },
     {
@@ -1268,10 +1268,10 @@
     },
     {
       "side": "common",
-      "metadata": "mods/common/citadel-1-21-1-port.pw.toml",
-      "filename": "citadel-1.21.1-2.7.6.jar",
+      "metadata": "mods/common/citadel-up.pw.toml",
+      "filename": "citadelup-0.1.9.jar",
       "modIds": [
-        "citadel"
+        "citadelup"
       ]
     },
     {
@@ -1603,7 +1603,7 @@
     {
       "side": "common",
       "metadata": "mods/common/create-delight-core.pw.toml",
-      "filename": "createdelightcore-2.0.0.4+1.21.1.jar",
+      "filename": "createdelightcore-2.0.0.5+1.21.1.jar",
       "modIds": [
         "createdelightcore"
       ]

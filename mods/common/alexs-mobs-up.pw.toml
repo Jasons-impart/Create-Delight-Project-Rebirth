@@ -1,0 +1,13 @@
+name = "Alex's Mobs Up"
+filename = "alexsmobsup-0.2.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a58f3f35c985aab68b9ac4b30433ac804b4cd0d4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8548084
+project-id = 1539192

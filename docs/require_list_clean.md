@@ -69,8 +69,8 @@
 | mod id | 1.20.1 jar | 备注 |
 | --- | --- | --- |
 | `alexsdelight` | `alexsdelight-1.5.jar` | 依赖 Alex 系列候选。 |
-| `alexsmobs` | `alexsmobs-1.20.1-*.jar` | 非官方移植，需稳定性测试。 |
-| `alexscaves` | `alexscaves-1.20.1-*.jar` | 非官方移植，需稳定性测试。 |
+| `alexsmobs` | `alexsmobs-1.20.1-*.jar` | 已替换为 Alex's Mobs Up 0.2.8（`alexsmobsup`），需稳定性测试。 |
+| `alexscaves` | `alexscaves-1.20.1-*.jar` | 已替换为 Alex's Caves Up 0.1.1（`alexscavesup`），需稳定性测试。 |
 | `iceandfire` | `iceandfire-2.1.13-1.20.1-beta-5.jar` | 可评估 Community Edition。 |
 | `tacz` | `tacz-1.20.1-1.1.4-hotfix-all.jar` | 需确认枪械内容包和存档兼容。 |
 | `createmetallurgy` | `createmetallurgy-1.0.1-1.20.1.jar` | 可评估替代项目。 |

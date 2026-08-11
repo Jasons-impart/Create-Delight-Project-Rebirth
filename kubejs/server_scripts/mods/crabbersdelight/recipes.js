@@ -23,34 +23,34 @@ if (global.hasMod('crabbersdelight')) {
       'crabbersdelight:squid_from_barrel',
     ]);
 
-    if (global.hasMod('alexsmobs')) {
+    if (global.hasMod('alexsmobsup')) {
       remove_recipes_id(event, [
-        'alexsmobs:cooked_lobster_tail_campfire',
-        'alexsmobs:cooked_lobster_tail_smoke',
-        'alexsmobs:cooked_lobster_tail',
+        'alexsmobsup:cooked_lobster_tail_campfire',
+        'alexsmobsup:cooked_lobster_tail_smoke',
+        'alexsmobsup:cooked_lobster_tail',
       ]);
 
       event.replaceInput(
         { id: 'crabbersdelight:cooking/stuffed_nautilus_shell' },
         Ingredient.of('#c:foods/cooked_fish'),
-        Ingredient.of('#alexsmobs:shoebill_foodstuffs')
+        Ingredient.of('#alexsmobsup:shoebill_foodstuffs')
       );
 
       farmersdelight
         .cutting('crabbersdelight:clawster', '#c:tools/knife', [
-          'alexsmobs:lobster_tail',
-          { chance: 0.3, count: 1, id: 'alexsmobs:lobster_tail' },
+          'alexsmobsup:lobster_tail',
+          { chance: 0.3, count: 1, id: 'alexsmobsup:lobster_tail' },
         ])
         .id(id('cutting/clawster'));
       farmersdelight
         .cutting('crabbersdelight:cooked_clawster', '#c:tools/knife', [
-          'alexsmobs:cooked_lobster_tail',
-          { chance: 0.3, count: 1, id: 'alexsmobs:cooked_lobster_tail' },
+          'alexsmobsup:cooked_lobster_tail',
+          { chance: 0.3, count: 1, id: 'alexsmobsup:cooked_lobster_tail' },
         ])
         .id(id('cutting/cooked_clawster'));
 
       farmersdelight
-        .cooking('meals', ['alexsmobs:lobster_tail'], 'alexsmobs:cooked_lobster_tail', 1.0, 200)
+        .cooking('meals', ['alexsmobsup:lobster_tail'], 'alexsmobsup:cooked_lobster_tail', 1.0, 200)
         .id(id('cooking/cooked_lobster_tail'));
     }
 

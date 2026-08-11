@@ -90,7 +90,7 @@ if (
           ]),
           create.deploying('create_new_age:advanced_energiser', [
             'create_new_age:advanced_energiser',
-            'alexscaves:tesla_bulb',
+            'alexscavesup:tesla_bulb',
           ]),
         ]
       )
@@ -101,14 +101,14 @@ if (
     vintageimprovements
       .pressurizing('create_new_age:magnetite_block', [
         'minecraft:iron_block',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
-        'alexscaves:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
+        'alexscavesup:energized_galena_neutral',
       ])
       .heated()
       .id(id('pressurizing/magnetite_block'));
@@ -138,7 +138,7 @@ if (
 
     vintageimprovements
       .pressurizing('create_new_age:fluxuated_magnetite', [
-        Fluid.of('alexscaves:acid', 250),
+        Fluid.of('alexscavesup:acid', 250),
         'create_new_age:overcharged_diamond',
         'create_new_age:overcharged_diamond',
         'create_new_age:layered_magnet',
@@ -322,7 +322,7 @@ if (
     'create_new_age',
     'create',
     'northstar',
-    'alexscaves',
+    'alexscavesup',
     'createmetallurgy',
     'vintageimprovements',
   ])
@@ -344,7 +344,7 @@ if (
         ]),
         create.deploying('create_new_age:incomplete_reactor_casing', [
           'create_new_age:incomplete_reactor_casing',
-          'alexscaves:polymer_plate',
+          'alexscavesup:polymer_plate',
         ]),
         create.pressing(
           'create_new_age:incomplete_reactor_casing',
@@ -380,7 +380,7 @@ if (
       .id(id('pressurizing/radioactive_thorium'));
 
     vintageimprovements
-      .vacuumizing('alexscaves:unrefined_waste', Fluid.of('createdelightcore:nuclear_waste', 500))
+      .vacuumizing('alexscavesup:unrefined_waste', Fluid.of('createdelightcore:nuclear_waste', 500))
       .superheated()
       .id(id('vacuumizing/unrefined_waste'));
   });
