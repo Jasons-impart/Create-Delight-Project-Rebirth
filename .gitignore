@@ -2,7 +2,6 @@
 /*
 
 # Repo metadata
-!/.editorconfig
 !/.gitattributes
 !/.gitignore
 !/.prettierrc
@@ -29,13 +28,10 @@
 
 # Docs and project assets
 !/README.md
-!/GettingStarted.md
 !/AGENTS.md
 !/LICENSE
 !/docs/
 !/docs/**
-!/modpack-analysis-report.md
-docs/generated/
 
 # Launchers and local examples
 !/devtool.bat
@@ -72,6 +68,7 @@ docs/generated/
 
 # Explicit runtime exclusions inside allowed directories.
 docs/generated/
+docs/generated/
 scripts/bin/*
 mods/*.jar
 mods/*.jar.disabled
@@ -99,51 +96,9 @@ minecraft_server*.jar
 
 # Local dedicated test server runtime files.
 test_server/
-test_server/mods/*.jar
-test_server/mods/*.jar.disabled
-test_server/resourcepacks/*.zip
-test_server/shaderpacks/*.zip
-test_server/logs/
-test_server/crash-reports/
-test_server/world/
-test_server/world*/
-test_server/libraries/
-test_server/versions/
-test_server/downloads/
-test_server/server.properties
-test_server/eula.txt
-test_server/user_jvm_args.txt
-test_server/run.bat
-test_server/run.sh
-test_server/neoforge.jar
-test_server/minecraft_server*.jar
-test_server/*.log
-test_server/*.lock
-test_server/*.tmp
 
 # Legacy local test server directory; keep ignored during migration.
 server/
-server/mods/*.jar
-server/mods/*.jar.disabled
-server/resourcepacks/*.zip
-server/shaderpacks/*.zip
-server/logs/
-server/crash-reports/
-server/world/
-server/world*/
-server/libraries/
-server/versions/
-server/downloads/
-server/server.properties
-server/eula.txt
-server/user_jvm_args.txt
-server/run.bat
-server/run.sh
-server/neoforge.jar
-server/minecraft_server*.jar
-server/*.log
-server/*.lock
-server/*.tmp
 
 .probe
 kubejs/config/probe-settings.json
