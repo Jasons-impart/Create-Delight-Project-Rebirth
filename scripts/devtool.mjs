@@ -22,6 +22,7 @@ const globalPackageName = '@bro-know-my/packwiz';
 const commands = new Set([
   'help',
   'menu',
+  'tui',
   'setup-tools',
   'prepare-pack',
   'check',
@@ -70,6 +71,7 @@ function showHelp() {
 用法：
   devtool.bat help
   devtool.bat menu
+  devtool.bat tui
   devtool.bat setup-tools
   devtool.bat prepare-pack
   devtool.bat check
@@ -95,6 +97,8 @@ Linux/macOS 可使用 ./devtool.sh 执行同样命令。
 
 说明：
   - 直接运行本脚本会进入交互式菜单。
+  - tui 打开当前整合包的全屏界面；需要支持 tui 的新版 bkmpw。
+  - CDPR 专属完整性清单和发布前检查仍使用本菜单的导出命令。
   - 本工具调用全局 npm 包 ${globalPackageName} 提供的 bkmpw 命令。
   - 缺少 bkmpw 时运行 devtool.bat setup-tools，或手动运行 npm install -g ${globalPackageName}。
   - 所有新增 mod 元数据默认写入 mods/*.pw.toml；可手动移动到 mods/common、mods/client、mods/server。
@@ -315,6 +319,15 @@ function invokeBkmpwRaw(commandArgs) {
 
 function invokeBkmpwPackCommand(subCommand, commandArgs = []) {
   invokeBkmpwRaw([subCommand, repoRoot, ...commandArgs]);
+}
+
+function startTui() {
+  assertBkmpwAvailable();
+  const result = run('bkmpw', ['--help'], { stdio: 'pipe' });
+  if (!/(?:^|\s)tui(?:\s|$)/m.test(`${result.stdout ?? ''}\n${result.stderr ?? ''}`)) {
+    throw new Error('当前 bkmpw 不支持 TUI，请运行 devtool.bat setup-tools 更新。');
+  }
+  run('bkmpw', ['tui', repoRoot]);
 }
 
 function toSlash(value) {
@@ -808,6 +821,7 @@ async function startDevMenu() {
       showMenuHeader();
       console.log('  S. 安装/更新全局 bkmpw 工具');
       console.log('  P. 生成/刷新根目录发布文件');
+      console.log('  T. 打开 bkmpw 全屏 TUI（退出后返回终端）');
       console.log('  1. 检查仓库结构');
       console.log('  2. 刷新索引');
       console.log('  3. 查看文件列表');
@@ -830,6 +844,11 @@ async function startDevMenu() {
       console.log('');
 
       const choice = await readLine(rl, '请选择: ');
+      if (choice.toLowerCase() === 't') {
+        rl.close();
+        startTui();
+        return;
+      }
       try {
         switch (choice.toLowerCase()) {
           case 's':
@@ -1000,6 +1019,9 @@ async function dispatch(command, rest) {
       break;
     case 'menu':
       await startDevMenu();
+      break;
+    case 'tui':
+      startTui();
       break;
     case 'setup-tools':
       await setupTools();

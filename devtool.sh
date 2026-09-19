@@ -9,4 +9,8 @@ case "$(uname -s 2>/dev/null || echo unknown)" in
 esac
 
 cd "$(dirname "$0")"
+if ! command -v node >/dev/null 2>&1; then
+  echo "Node.js is required. Install Node.js LTS and make sure node is on PATH." >&2
+  exit 1
+fi
 exec node scripts/devtool.mjs "$@"
