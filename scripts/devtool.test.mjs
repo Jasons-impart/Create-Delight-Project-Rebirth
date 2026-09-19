@@ -55,11 +55,13 @@ else if (args[0] === '--help') {
   const log = path.join(root, 'calls.jsonl');
   return {
     root,
-    run(args, env = {}) {
+    run(args, env = {}, input) {
       fs.writeFileSync(log, '');
       return spawnSync(process.execPath, ['scripts/devtool.mjs', ...args], {
         cwd: root,
         encoding: 'utf8',
+        input,
+        timeout: 10000,
         env: {
           ...process.env,
           PATH: `${path.join(root, 'bin')}${path.delimiter}${process.env.PATH}`,
@@ -87,6 +89,28 @@ test('release capability accepts either help stream and rejects old commands', (
       assert.equal(result.status === 0, accepted, result.stderr);
       assert.deepEqual(f.calls(), accepted ? [['prepare-pack', f.root]] : []);
     }
+  } finally {
+    f.close();
+  }
+});
+
+test('tui targets this pack without preparing templates or generating a manifest', () => {
+  const f = fixture();
+  try {
+    for (const [help, stream, accepted] of [
+      ['bkmpw tui [root]', 'stdout', true],
+      ['tui [root]', 'stderr', true],
+      ['prepare-pack <root>', 'stdout', false],
+      ['tui-old <root>', 'stdout', false],
+    ]) {
+      const result = f.run(['tui'], { HELP_TEXT: help, HELP_STREAM: stream });
+      assert.equal(result.status === 0, accepted, result.stderr);
+      assert.deepEqual(f.calls(), accepted ? [['tui', f.root]] : []);
+      if (!accepted) assert.match(result.stderr, /setup-tools/);
+    }
+    const menu = f.run(['menu'], { HELP_TEXT: 'tui [root]' }, 't\n');
+    assert.equal(menu.status, 0, menu.stderr);
+    assert.deepEqual(f.calls(), [['tui', f.root]]);
   } finally {
     f.close();
   }

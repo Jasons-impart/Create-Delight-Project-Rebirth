@@ -190,6 +190,10 @@ step "生成本地 pack 文件"
 (cd "$game_dir" && sh ./devtool.sh prepare-pack)
 ok "pack 文件生成完成"
 
+step "刷新本地文件索引"
+(cd "$game_dir" && sh ./devtool.sh refresh)
+ok "文件索引刷新完成"
+
 step "检查仓库状态"
 (cd "$game_dir" && sh ./devtool.sh check)
 ok "检查完成"
