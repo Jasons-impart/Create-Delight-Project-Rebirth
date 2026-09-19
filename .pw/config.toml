@@ -1,0 +1,4 @@
+[release]
+enabled = true
+template-dir = "pack"
+template-files = "pack.toml,icon.png,server-icon.png,start.bat,start.sh,variables.txt,PCL/Logo.png,PCL/Setup.ini"

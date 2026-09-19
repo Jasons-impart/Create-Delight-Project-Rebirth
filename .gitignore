@@ -20,6 +20,9 @@
 # Pack metadata and generated release-root files
 !/package.json
 !/package-lock.json
+!/.pw/
+/.pw/*
+!/.pw/config.toml
 !/.packwizignore
 !/pack/
 !/pack/**

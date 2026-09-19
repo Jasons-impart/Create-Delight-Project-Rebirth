@@ -44,17 +44,6 @@ const commands = new Set([
   'export-server-installer',
 ]);
 
-const packRootTemplateFiles = [
-  'pack.toml',
-  'icon.png',
-  'server-icon.png',
-  'start.bat',
-  'start.sh',
-  'variables.txt',
-  path.join('PCL', 'Logo.png'),
-  path.join('PCL', 'Setup.ini'),
-];
-
 function color(code, message) {
   return process.stdout.isTTY ? `\u001b[${code}m${message}\u001b[0m` : message;
 }
@@ -111,7 +100,8 @@ Linux/macOS 可使用 ./devtool.sh 执行同样命令。
   - 所有新增 mod 元数据默认写入 mods/*.pw.toml；可手动移动到 mods/common、mods/client、mods/server。
   - install-files/download-files 由 bkmpw 执行，只处理清单记录的托管文件，不清理手动塞入且未入清单的 jar。
   - 菜单 13 是客户端 CurseForge 安装包；14 是客户端全量包；15 是开箱即用服务端包；16 是 bkmpw 下载型服务端安装包。
-  - 首次拉取仓库后运行 prepare-pack，展开本地发布根目录文件。`);
+  - prepare-pack 按 .pw/config.toml 展开本地模板并刷新索引。
+  - 四种导出由 bkmpw 在临时目录准备模板、校验并打包；CDPR 完整性清单仍由脚本生成。`);
 }
 
 function commandName(name) {
@@ -438,10 +428,7 @@ function validateManagedVersionReferences(errors) {
   if (!neoforgeVersion) errors.push('pack/pack.toml: missing versions.neoforge');
   if (!minecraftVersion || !neoforgeVersion) return;
 
-  const referenceFiles = [
-    { relative: 'pack/variables.txt' },
-    { relative: 'pack/PCL/Setup.ini' },
-  ];
+  const referenceFiles = [{ relative: 'pack/variables.txt' }, { relative: 'pack/PCL/Setup.ini' }];
 
   const contentByPath = new Map();
   for (const reference of referenceFiles) {
@@ -450,15 +437,23 @@ function validateManagedVersionReferences(errors) {
       text = fs.readFileSync(path.join(repoRoot, ...reference.relative.split('/')), 'utf8');
       contentByPath.set(reference.relative, text);
     } catch (error) {
-      errors.push(`failed to read managed version reference ${reference.relative}: ${error.message}`);
+      errors.push(
+        `failed to read managed version reference ${reference.relative}: ${error.message}`
+      );
       continue;
     }
-
   }
 
   const variables = contentByPath.get('pack/variables.txt');
   if (variables) {
-    validateVersionField('pack/variables.txt', variables, 'MC_VERSION', /^MC_VERSION=(.+)$/m, minecraftVersion, errors);
+    validateVersionField(
+      'pack/variables.txt',
+      variables,
+      'MC_VERSION',
+      /^MC_VERSION=(.+)$/m,
+      minecraftVersion,
+      errors
+    );
     validateVersionField(
       'pack/variables.txt',
       variables,
@@ -496,7 +491,6 @@ function validateManagedVersionReferences(errors) {
       errors
     );
   }
-
 }
 
 function indexIncludedCount() {
@@ -595,7 +589,8 @@ function testPackStructure() {
       warnings.push(`metadata has no download hash: ${metadataPath}`);
     } else {
       const hashError = validateHash(download['hash-format'], download.hash);
-      if (hashError) errors.push(`metadata has invalid download hash: ${metadataPath}: ${hashError}`);
+      if (hashError)
+        errors.push(`metadata has invalid download hash: ${metadataPath}: ${hashError}`);
     }
 
     const hasDownloadUrl = `${download.url ?? ''}`.trim() !== '';
@@ -665,29 +660,31 @@ function updateCoreBeforeSync() {
   }
 }
 
-function copyFile(source, target) {
-  fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.copyFileSync(source, target);
+let releaseWorkflowChecked = false;
+
+function assertReleaseWorkflowAvailable() {
+  if (releaseWorkflowChecked) return;
+  assertBkmpwAvailable();
+  const result = run('bkmpw', ['--help'], { stdio: 'pipe' });
+  const helpOutput = `${result.stdout ?? ''}\n${result.stderr ?? ''}`;
+  if (!/(?:^|\s)prepare-pack(?:\s|$)/m.test(helpOutput)) {
+    throw new Error('当前 bkmpw 不支持发布模板流程，请安装包含 prepare-pack 的新版 bkmpw 后重试。');
+  }
+  releaseWorkflowChecked = true;
 }
 
 function preparePackRoot() {
-  if (!fs.existsSync(packTemplateDir)) {
-    throw new Error(`缺少 pack 模板目录：${packTemplateDir}`);
-  }
+  assertReleaseWorkflowAvailable();
+  invokeBkmpwPackCommand('prepare-pack');
+}
 
-  for (const relative of packRootTemplateFiles) {
-    const source = path.join(packTemplateDir, relative);
-    const target = path.join(repoRoot, relative);
-    if (!fs.existsSync(source)) {
-      writeWarn(`模板缺失，跳过：pack/${relative.split(path.sep).join('/')}`);
-      continue;
-    }
-
-    copyFile(source, target);
-    writeSuccess(`已生成 ${relative.split(path.sep).join('/')}`);
-  }
-
-  writeInfo('.packwizignore 现在是根目录跟踪文件，prepare-pack 不再覆盖。');
+function exportPack(command, args = []) {
+  assertReleaseWorkflowAvailable();
+  const errors = [];
+  validateManagedVersionReferences(errors);
+  if (errors.length > 0) throw new Error(errors.join('\n'));
+  if (command !== 'export-server-installer') generateManifest();
+  invokeBkmpwPackCommand(command, args);
 }
 
 function testRepository() {
@@ -945,9 +942,7 @@ async function startDevMenu() {
           case '13': {
             const output = await readLine(rl, '输出文件，留空使用默认值: ');
             const args = output ? [output, 'client'] : ['client'];
-            generateManifest();
-            invokeBkmpwPackCommand('refresh');
-            invokeBkmpwPackCommand('export-curseforge', args);
+            exportPack('export-curseforge', args);
             await pauseMenu(rl);
             break;
           }
@@ -955,24 +950,19 @@ async function startDevMenu() {
             const output = await readLine(rl, '输出文件，留空使用默认值: ');
             const rootDir = await readLine(rl, 'zip 内实例目录名，留空使用 pack.toml name: ');
             const args = rootDir ? [output || 'client-full.zip', rootDir] : output ? [output] : [];
-            generateManifest();
-            invokeBkmpwPackCommand('refresh');
-            invokeBkmpwPackCommand('export-client', args);
+            exportPack('export-client', args);
             await pauseMenu(rl);
             break;
           }
           case '15': {
             const output = await readLine(rl, '输出文件，留空使用默认值: ');
-            generateManifest();
-            invokeBkmpwPackCommand('refresh');
-            invokeBkmpwPackCommand('export-server', output ? [output] : []);
+            exportPack('export-server', output ? [output] : []);
             await pauseMenu(rl);
             break;
           }
           case '16': {
             const output = await readLine(rl, '输出文件，留空使用默认值: ');
-            invokeBkmpwPackCommand('refresh');
-            invokeBkmpwPackCommand('export-server-installer', output ? [output] : []);
+            exportPack('export-server-installer', output ? [output] : []);
             await pauseMenu(rl);
             break;
           }
@@ -1066,23 +1056,16 @@ async function dispatch(command, rest) {
       generateManifest();
       break;
     case 'export-client':
-      generateManifest();
-      invokeBkmpwPackCommand('refresh');
-      invokeBkmpwPackCommand('export-client', rest);
+      exportPack('export-client', rest);
       break;
     case 'export-curseforge':
-      generateManifest();
-      invokeBkmpwPackCommand('refresh');
-      invokeBkmpwPackCommand('export-curseforge', rest);
+      exportPack('export-curseforge', rest);
       break;
     case 'export-server':
-      generateManifest();
-      invokeBkmpwPackCommand('refresh');
-      invokeBkmpwPackCommand('export-server', rest);
+      exportPack('export-server', rest);
       break;
     case 'export-server-installer':
-      invokeBkmpwPackCommand('refresh');
-      invokeBkmpwPackCommand('export-server-installer', rest);
+      exportPack('export-server-installer', rest);
       break;
     default:
       throw new Error(`未知命令：${command}`);
