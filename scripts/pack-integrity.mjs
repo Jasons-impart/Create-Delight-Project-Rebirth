@@ -164,6 +164,10 @@ function getModIdsFromFabricJson(text) {
 }
 
 function getModIdsFromArchive(zip) {
+  // Bootstrap services and FML libraries are not runtime mods. A bootstrap
+  // can still contain a separate runtime mod, which the nested scan handles.
+  if (isKnownNonRuntimeJar(zip)) return [];
+
   for (const entryName of ['META-INF/neoforge.mods.toml', 'META-INF/mods.toml']) {
     const toml = zip.readText(entryName);
     if (toml && toml.trim()) {
@@ -202,7 +206,12 @@ function hasAnyEntry(zip, entryNames) {
 }
 
 function isKnownNonRuntimeJar(zip) {
-  return hasAnyEntry(zip, ['META-INF/services/cpw.mods.modlauncher.api.ITransformationService']);
+  const manifest = zip.readText('META-INF/MANIFEST.MF') ?? '';
+  return (
+    (/^FMLModType:\s*(?:GAMELIBRARY|LIBRARY|LANGPROVIDER)\s*$/im.test(manifest) &&
+      !hasAnyEntry(zip, ['META-INF/neoforge.mods.toml', 'META-INF/mods.toml'])) ||
+    hasAnyEntry(zip, ['META-INF/services/cpw.mods.modlauncher.api.ITransformationService'])
+  );
 }
 
 function isKnownNonModJar(zip) {
@@ -261,6 +270,17 @@ export function generateIntegrityManifest({
     }
 
     if (modIds.length === 0) {
+      if (isKnownNonRuntimeJar(zip)) {
+        sources.push({
+          side: mod.side,
+          metadata: mod.relativeMetadataPath,
+          filename: mod.filename,
+          modIds: [],
+          nonRuntimeMod: true,
+        });
+        continue;
+      }
+
       if (!isKnownNonModJar(zip)) {
         unresolved.push(mod);
         continue;
@@ -272,17 +292,6 @@ export function generateIntegrityManifest({
         filename: mod.filename,
         modIds: [],
         nonModFile: true,
-      });
-      continue;
-    }
-
-    if (isKnownNonRuntimeJar(zip)) {
-      sources.push({
-        side: mod.side,
-        metadata: mod.relativeMetadataPath,
-        filename: mod.filename,
-        modIds: sortedUnique(modIds),
-        nonRuntimeMod: true,
       });
       continue;
     }
