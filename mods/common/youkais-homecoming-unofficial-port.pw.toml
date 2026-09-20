@@ -2,6 +2,8 @@ name = "Youkai's Homecoming-unofficial-port"
 filename = "youkaishomecoming-4.2.1.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "9eaf977c120631ecdd83f8da3bab6fb86f5c869d"

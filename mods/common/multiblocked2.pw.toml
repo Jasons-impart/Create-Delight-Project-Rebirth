@@ -2,6 +2,8 @@ name = "Multiblocked2"
 filename = "Multiblocked2-1.21-1.21.1-21.0.6.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "5f140831d45ce7ee467cc666e788e5d2c77bcd8b"

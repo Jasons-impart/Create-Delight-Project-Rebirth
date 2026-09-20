@@ -1,13 +1,13 @@
 name = "RunicLib"
-filename = "neoforge-runiclib-1.21.1-5.0.6.jar"
+filename = "neoforge-runiclib-1.21.1-5.0.7.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "4db030cf38899612e364bfc63936d09b246fc69b"
+hash = "f0422c70689d5b31b65ef5a84c1d5eb2d7536d4c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7788771
+file-id = 8188562
 project-id = 880879

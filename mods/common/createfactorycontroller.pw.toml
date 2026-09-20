@@ -1,13 +1,13 @@
 name = "createfactorycontroller-1.0.0.jar"
-filename = "createfactorycontroller-1.0.0.jar"
+filename = "createfactorycontroller-1.2.1-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "31ecc0077aa2a6de8a99789f11bae5b8988a8fff"
+hash = "96c7dc65775a0c1032af43399644ba9cf915366f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8368334
+file-id = 8821997
 project-id = 1573767

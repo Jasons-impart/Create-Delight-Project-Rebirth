@@ -2,6 +2,8 @@ name = "Just Enough Breeding (JEBr)"
 filename = "justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "4f47678f57e2cadebd42484897bf5417d7fa344a"

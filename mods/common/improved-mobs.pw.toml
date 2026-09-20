@@ -2,6 +2,8 @@ name = "Improved Mobs (Forge, NeoForge)"
 filename = "improvedmobs-1.21.1-1.15.2-neoforge.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "70d4255c28db1f00f66a50b3b59b08fdb87402bf"

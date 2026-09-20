@@ -1,0 +1,13 @@
+name = "Advanced Core Info"
+filename = "AdvancedCoreInfo-neoforge-1.21.1-1.2.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "4e3b71bb3a2d320cfe41966249abf4cbaca7531b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8906316
+project-id = 1661923

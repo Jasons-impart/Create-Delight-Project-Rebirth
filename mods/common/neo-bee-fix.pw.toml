@@ -1,13 +1,13 @@
 name = "Neo Bee Fix"
-filename = "neobeefix-1.21.1-2.0.0.jar"
+filename = "neobeefix-1.21.1-2.0.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "fcb2fa970f00f9e412c480a0059b953e1396763b"
+hash = "76e263df40ebdd039e7754eda73e2fedcea1947c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7673883
+file-id = 8246444
 project-id = 1237559

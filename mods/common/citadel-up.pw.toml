@@ -2,6 +2,8 @@ name = "Citadel Up"
 filename = "citadelup-0.1.9.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "e4e5d33418c85272c9a42236de3dd0b264e763cb"
