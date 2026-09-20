@@ -1,0 +1,104 @@
+# Pack configuration migrated from 0488 against LC 2.3.0.4e.
+debugLevel=0
+
+[crafting]
+canCraftNetworkTrader=true
+canCraftTraderInterface=true
+canCraftAuctionStand=true
+canCraftTaxCollector=true
+canCraftATMCard=true
+
+[crafting.coin_mint]
+canCraftCoinMint=true
+canMint=true
+canMelt=false
+
+[crafting.coin_mint.mint]
+copper=true
+iron=true
+gold=true
+emerald=true
+diamond=true
+netherite=true
+
+[crafting.coin_mint.melt]
+copper=true
+iron=true
+gold=true
+emerald=true
+diamond=true
+netherite=true
+
+[crafting.money_chest]
+canCraftCoinChest=true
+canCraftExchangeUpgrade=true
+canCraftMagnetUpgrade=true
+canCraftBankUpgrade=true
+canCraftSecurityUpgrade=true
+
+[events]
+chocolate=false
+startingRewards=true
+lootReplacements=true
+
+[villagers]
+piglinsBarterCoins=true
+addCustomWanderingTrades=true
+addBanker=true
+addCashier=true
+
+[villagers.modification]
+changeVanillaTrades=true
+changeModdedTrades=true
+changeWanderingTrades=true
+defaultEmeraldReplacementItem="createdelightcore:copper_coin"
+professionEmeraldReplacementOverrides=["minecraft:fletcher-createdelightcore:iron_coin", "minecraft:toolsmith-createdelightcore:copper_coin;createdelightcore:iron_coin", "minecraft:weaponsmith-createdelightcore:copper_coin;createdelightcore:iron_coin", "minecraft:fisherman-createdelightcore:iron_coin", "minecraft:mason-createdelightcore:iron_coin", "minecraft:armorer-createdelightcore:copper_coin;createdelightcore:iron_coin", "minecraft:leatherworker-createdelightcore:iron_coin"]
+
+[loot]
+lootItemT1="createdelightcore:iron_coin"
+lootItemT2="createdelightcore:copper_coin"
+lootItemT3="createdelightcore:gold_coin"
+lootItemT4="createdelightcore:emerald_coin"
+lootItemT5="createdelightcore:netherite_coin"
+lootItemT6="minecraft:air"
+
+[loot.entities]
+enabled=false
+allowSpawnedDrops=false
+allowFakePlayerDrops=false
+
+[loot.entities.lists]
+T1=["minecraft:slime", "minecraft:silverfish", "alexsmobs:cosmic_cod", "alexsmobs:fly", "alexsmobs:raccoon", "alexsmobs:stradpole"]
+T2=["minecraft:zombie", "minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:zombie_villager", "minecraft:drowned", "alexsmobs:bone_serpent", "alexsmobs:anaconda", "alexsmobs:froststalker", "alexsmobs:rattlesnake", "alexsmobs:rockey_roller", "alexsmobs:skreecher", "alexsmobs:soul_vulture", "alexsmobs:tarantula_hawk"]
+T3=["minecraft:guardian", "minecraft:elder_guardian", "minecraft:phantom", "minecraft:blaze", "minecraft:ghast", "minecraft:hoglin", "minecraft:piglin_brute", "minecraft:piglin", "minecraft:zombified_piglin", "alexsmobs:crimson_mosquito", "alexsmobs:dropbear", "alexsmobs:guster", "alexsmobs:skelewag", "alexsmobs:tusklin"]
+T4=["minecraft:enderman", "minecraft:shulker", "#minecraft:raiders", "alexsmobs:enderiophage", "alexsmobs:farseer", "alexsmobs:murmur", "alexsmobs:straddler"]
+T5=["minecraft:wither_skeleton"]
+T6=["alexsmobs:mimicube"]
+BossT1=[]
+BossT2=[]
+BossT3=[]
+BossT4=["minecraft:warden"]
+BossT5=["minecraft:ender_dragon"]
+BossT6=["minecraft:wither", "alexsmobs:void_worm"]
+
+[loot.chests]
+enabled=true
+
+[loot.chests.lists]
+T1=["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big"]
+T2=["minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal"]
+T3=["minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/ancient_city"]
+T4=["minecraft:chests/buried_treasure", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure"]
+T5=[]
+T6=[]
+
+[structures]
+villageHouses=true
+ancientCity=true
+
+[mixins]
+giveCommandIntercept=true
+itemHelperIntercept=true
+
+[compat]
+impactorModule=true
