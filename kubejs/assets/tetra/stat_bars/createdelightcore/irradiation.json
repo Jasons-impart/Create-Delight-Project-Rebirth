@@ -1,0 +1,43 @@
+{
+  "type": "tetra:default",
+  "key": "createdelightcore.effect.irradiation.name",
+  "contexts": [
+    "tetra:workbench",
+    "tetra:holosphere"
+  ],
+  "min": 0,
+  "max": 5,
+  "stat": {
+    "type": "tetra:effect_level",
+    "effect": "createdelightcore:irradiation"
+  },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "createdelightcore.effect.irradiation.tooltip",
+    "stats": [
+      {
+        "type": "tetra:effect_level",
+        "effect": "createdelightcore:irradiation"
+      },
+      {
+        "type": "tetra:effect_efficiency",
+        "effect": "createdelightcore:irradiation"
+      }
+    ],
+    "formatters": [
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      },
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      }
+    ]
+  }
+}

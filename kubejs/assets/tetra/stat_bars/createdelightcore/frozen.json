@@ -1,0 +1,43 @@
+{
+  "type": "tetra:default",
+  "key": "createdelightcore.effect.frozen.name",
+  "contexts": [
+    "tetra:workbench",
+    "tetra:holosphere"
+  ],
+  "min": 0,
+  "max": 30,
+  "stat": {
+    "type": "tetra:effect_level",
+    "effect": "createdelightcore:frozen"
+  },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "createdelightcore.effect.frozen.tooltip",
+    "stats": [
+      {
+        "type": "tetra:effect_level",
+        "effect": "createdelightcore:frozen"
+      },
+      {
+        "type": "tetra:effect_efficiency",
+        "effect": "createdelightcore:frozen"
+      }
+    ],
+    "formatters": [
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      },
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      }
+    ]
+  }
+}

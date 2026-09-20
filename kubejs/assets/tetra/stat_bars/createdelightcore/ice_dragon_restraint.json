@@ -1,0 +1,43 @@
+{
+  "type": "tetra:default",
+  "key": "createdelightcore.effect.ice_dragon_restraint.name",
+  "contexts": [
+    "tetra:workbench",
+    "tetra:holosphere"
+  ],
+  "min": 0,
+  "max": 30,
+  "stat": {
+    "type": "tetra:effect_level",
+    "effect": "createdelightcore:ice_dragon_restraint"
+  },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "createdelightcore.effect.ice_dragon_restraint.tooltip",
+    "stats": [
+      {
+        "type": "tetra:effect_level",
+        "effect": "createdelightcore:ice_dragon_restraint"
+      },
+      {
+        "type": "tetra:effect_efficiency",
+        "effect": "createdelightcore:ice_dragon_restraint"
+      }
+    ],
+    "formatters": [
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      },
+      {
+        "type": "tetra:basic",
+        "format": "integer"
+      }
+    ]
+  }
+}
