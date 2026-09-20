@@ -1,0 +1,16 @@
+{
+    "trigger": {
+          "type": "tetra:apply_hit_effects"
+        },
+        "effect": "createdelightcore:irradiated",
+        "outcome":{
+        "type": "tetra:multiple",
+        "outcomes": [{
+            "type": "tetra:apply_effect",
+            "effect": "alexscavesup:irradiated",
+            "entity": "target",
+            "duration": 100,
+            "amplifier": 1
+        }
+        ]}
+    }

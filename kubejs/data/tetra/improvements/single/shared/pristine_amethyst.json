@@ -1,0 +1,17 @@
+[
+  {
+    "key": "pristine_amethyst",
+    "attributes": {
+      "minecraft:player.block_interaction_range": 0.5,
+      "minecraft:player.entity_interaction_range": 0.5
+    },
+    "effects": {
+      "reaching": [ 6, 0.25 ]
+    },
+    "models": [
+      {
+        "location": "tetra:item/module/single/head/shared/single_pristine"
+      }
+    ]
+  }
+]

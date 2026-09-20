@@ -1,0 +1,15 @@
+[
+  {
+    "key": "shield/vinery_standard",
+    "level": 1,
+    "integrity": -1,
+    "models": [
+      {
+        "type": "tetra:shield",
+        "model": "tetra:plate/tower",
+        "texture": "tetra:item/module/shield/plate/tower/vinery_standard",
+        "renderLayer": "HIGH"
+      }
+    ]
+  }
+]
