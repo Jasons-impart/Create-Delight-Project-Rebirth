@@ -63,6 +63,7 @@ if (global.hasMod('createdelightcore')) {
         'alexscavesup:relicheirus_egg',
         'alexscavesup:atlatitan_egg',
         'alexscavesup:tremorzilla_egg',
+        'alexsmobsup:emu_egg',
       ])
     );
     event.remove('c:moss', existingItems(['minecraft:moss_carpet']));

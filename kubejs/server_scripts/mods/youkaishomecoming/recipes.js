@@ -103,6 +103,23 @@ if (global.hasMod('youkaishomecoming')) {
       ])
       .id(id('cutting/red_velvet'));
 
+    [
+      'salmon_futomaki',
+      'california_roll',
+      'volcano_roll',
+      'roe_california_roll',
+      'salmon_lover_roll',
+      'rainbow_roll',
+      'egg_futomaki',
+      'rainbow_futomaki',
+    ].forEach((roll) => {
+      farmersdelight
+        .cutting(`youkaishomecoming:${roll}`, Ingredient.of('#c:tools/knife'), [
+          { id: `youkaishomecoming:${roll}_slice`, count: 3 },
+        ])
+        .id(id(`cutting/${roll}`));
+    });
+
     create
       .crushing(
         [

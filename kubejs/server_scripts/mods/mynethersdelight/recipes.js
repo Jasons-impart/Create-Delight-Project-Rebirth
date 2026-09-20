@@ -222,15 +222,40 @@ if (global.hasAllMods(['mynethersdelight', 'create', 'farmersdelight'])) {
       ])
       .id(id('filling/golden_egg'));
 
-    // 呃呃啊啊: Create emptying only supports one item output, but the original wants bowl + ghasta.
-    // if (global.hasMod('netherexp')) {
-    //   create
-    //     .emptying(
-    //       [Fluid.of('netherexp:ectoplasm', 250), 'minecraft:bowl', 'mynethersdelight:ghasta'],
-    //       'mynethersdelight:plate_of_ghasta_with_cream'
-    //     )
-    //     .id(id('emptying/ghasta'));
-    // }
+    ['ghasta', 'ghasmati'].forEach((food) => {
+      event
+        .custom({
+          type: 'create:filling',
+          ingredients: [
+            { item: `mynethersdelight:${food}` },
+            {
+              type: 'neoforge:components',
+              fluids: 'create:potion',
+              amount: 250,
+              components: {
+                'minecraft:potion_contents': { potion: 'minecraft:healing' },
+                'create:potion_fluid_bottle_type': 'regular',
+              },
+            },
+          ],
+          results: [{ id: `mynethersdelight:${food}`, count: 2 }],
+        })
+        .id(id(`filling/${food}`));
+    });
+
+    if (global.hasMod('netherexp')) {
+      event
+        .custom({
+          type: 'create:emptying',
+          ingredients: [{ item: 'mynethersdelight:plate_of_ghasta_with_cream' }],
+          results: [
+            { id: 'minecraft:bowl' },
+            { id: 'mynethersdelight:ghasta' },
+            { id: 'netherexp:ectoplasm', amount: 250 },
+          ],
+        })
+        .id(id('emptying/ghasta'));
+    }
 
     if (global.hasMod('bakeries')) {
       create

@@ -15,15 +15,15 @@ if (global.hasAllMods(['createoreexcavation', 'createdelightcore'])) {
       return count && count > 1 ? Item.of(item, count) : item;
     };
     const processingOutputs = (outputs) =>
-      outputs
-        .filter((output) => true)
-        .map((output) => processingOutput(output.item, output.count, output.chance || 1));
+      outputs.map((output) => processingOutput(output.item, output.count, output.chance || 1));
     const addProcessing = (recipeBuilder, path, input, outputs) => {
+      if (!outputs.every((output) => global.itemExists(output.item))) return;
       let recipeOutputs = processingOutputs(outputs);
 
+      // Core lifts Vintage's validation to match its nine-slot inventory.
       if (
         recipeOutputs.length === 0 ||
-        (path.startsWith('vibrating/') && recipeOutputs.length > 4)
+        (path.startsWith('vibrating/') && !global.hasMod('vintageimprovements'))
       ) {
         return;
       }
