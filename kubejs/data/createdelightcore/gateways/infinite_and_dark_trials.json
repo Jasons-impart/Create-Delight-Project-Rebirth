@@ -1,0 +1,312 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#2F4F4F",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:corrodent",
+          "count": 12
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 5
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.8
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:corrodent",
+          "rolls": 16
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:hood_of_darkness"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:cloak_of_darkness"
+          }
+        }
+      ],
+      "max_wave_time": 700,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:underzealot",
+          "count": 14
+        },
+        {
+          "entity": "alexscavesup:gloomoth",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 6
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.6
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:underzealot",
+          "rolls": 14
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 8,
+            "id": "alexscavesup:darkened_apple"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:desolate_dagger"
+          }
+        }
+      ],
+      "max_wave_time": 700,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:vesper",
+          "count": 8
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 5
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:vesper",
+          "rolls": 16
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:vesper_stew"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:totem_of_possession"
+          }
+        }
+      ],
+      "max_wave_time": 700,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:watcher",
+          "count": 18
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 1.5
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 7
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.6
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:watcher",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:occult_gem"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:dreadbow"
+          }
+        }
+      ],
+      "max_wave_time": 700,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:forsaken",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 12.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 6
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.8
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "alexscavesup:pure_darkness"
+          }
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:forsaken",
+          "rolls": 4
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "gateways:gate_pearl",
+            "components": {
+              "gateways:gateway": "createdelightcore:infinite_and_dark_trials"
+            }
+          }
+        }
+      ],
+      "max_wave_time": 700,
+      "setup_time": 100
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 6,
+      "fire": true,
+      "block_damage": true
+    }
+  ]
+}

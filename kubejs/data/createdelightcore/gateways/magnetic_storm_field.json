@@ -1,0 +1,297 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#483D8B",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:teletor",
+          "count": 12
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.5
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 1.0
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.4
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:teletor",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:telecore"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:ferrouslime",
+          "count": 12
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 10
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:ferrouslime",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "gateways:gate_pearl",
+            "components": {
+              "gateways:gateway": "createdelightcore:magnetic_storm_field"
+            }
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:galena_gauntlet"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 150
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:boundroid",
+          "count": 8
+        },
+        {
+          "entity": "alexscavesup:notor",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 3.0
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.8
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.6
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:boundroid",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:notor",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:holocoder"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:quarry_smasher"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:magnetron",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 2.5
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "alexscavesup:heart_of_iron"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:quarry"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "gateways:gate_pearl",
+            "components": {
+              "gateways:gateway": "createdelightcore:magnetic_storm_field"
+            }
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:magnetron",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 24.0
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 6.0
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 1.0
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:block_of_scarlet_neodymium"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:block_of_azure_neodymium"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:resistor_shield"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 5,
+      "fire": true,
+      "block_damage": false
+    }
+  ]
+}

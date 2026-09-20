@@ -1,0 +1,303 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#4169E1",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:mine_guardian",
+          "count": 6
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 5.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 12
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 4.0
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:mine_guardian",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "minecraft:experience_bottle"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "minecraft:conduit"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:drain"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:hullbreaker",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 4
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": -0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "alexscavesup:glow_ink_bomb"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "alexscavesup:ink_bomb"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:sea_staff"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:ortholance"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "minecraft:trident"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 150
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:hullbreaker",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 16.5
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 12
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.8
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:hullbreaker",
+          "rolls": 8
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "gateways:gate_pearl",
+            "components": {
+              "gateways:gateway": "createdelightcore:the_legacy_of_the_abyss"
+            }
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:submarine"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:magic_conch"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:lanternfish",
+          "count": 4
+        },
+        {
+          "entity": "alexscavesup:sea_pig",
+          "count": 4
+        },
+        {
+          "entity": "alexscavesup:gossamer_worm",
+          "count": 4
+        },
+        {
+          "entity": "alexscavesup:tripodfish",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 6.5
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 12
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:lanternfish",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:sea_pig",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:gossamer_worm",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:tripodfish",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "alexscavesup:sea_glass_shards"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 12,
+            "id": "alexscavesup:marine_snow"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:deep_sea_sushi_roll"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:submarine"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:floater"
+          }
+        }
+      ],
+      "max_wave_time": 600,
+      "setup_time": 60
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 5,
+      "fire": true,
+      "block_damage": false
+    }
+  ]
+}

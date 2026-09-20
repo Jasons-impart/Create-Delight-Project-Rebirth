@@ -1,0 +1,176 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#B23AEE",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:lightning_dragon",
+          "count": 1,
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 2,
+                "duration": 1200,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 1
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 8,
+            "id": "iceandfire:lightning_dragon_blood"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:lightning_dragon",
+          "count": 1,
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 3,
+                "duration": 1200,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 18,
+            "id": "iceandfire:dragonscales_amethyst"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 300
+    },
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:lightning_dragon",
+          "count": 1,
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 4,
+                "duration": 1200,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.2
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 8,
+            "id": "iceandfire:dragonforge_lightning_brick"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "createdelightcore:lightning_lily_cluster"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 300
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:entity_loot",
+      "entity": "iceandfire:lightning_dragon",
+      "rolls": 5
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 6,
+      "fire": true,
+      "block_damage": true
+    }
+  ]
+}
