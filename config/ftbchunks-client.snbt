@@ -1,0 +1,7 @@
+# Pack defaults; local/ftbchunks-client.snbt may override these.
+{
+  waypoints: {
+    death_waypoints: false
+    in_world_waypoints: false
+  }
+}

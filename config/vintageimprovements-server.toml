@@ -1,0 +1,43 @@
+# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
+# A world/serverconfig file of the same name takes precedence.
+
+["energy"."energy"]
+"forceEnergy" = false
+
+["energy"."energy"."laser"]
+"laserCapacity" = 40000
+"laserChargeRate" = 5000
+"laserMaxInput" = 10000
+"laserRecipeChargeRate" = 2000
+
+["kinetics"."stressValues"."v2"."impact"]
+"belt_grinder" = 4.0
+"centrifuge" = 2.0
+"curving_press" = 8.0
+"helve_kinetic" = 8.0
+"laser" = 2.0
+"lathe" = 2.0
+"lathe_moving" = 4.0
+"spring_coiling_machine" = 4.0
+"vacuum_chamber" = 4.0
+"vibrating_table" = 2.0
+
+["recipes"."recipes"."curvingPress"]
+"allowAutoCurvingRecipes" = true
+"damageHeadAfterAutoCurvingRecipe" = 0
+
+["recipes"."recipes"."grinder"]
+"allowSandpaperPolishingOnGrinder" = false
+"destroyOnWrongGrinderSpeed" = false
+"lowSpeedValue" = 16
+"mediumSpeedValue" = 64
+"speedLimitsForSandpaperPolishingRecipes" = 0
+
+["recipes"."recipes"."helveHammer"]
+"allowTemplatelessRecipes" = true
+"chanceToDamageAnvilAfterHammeringRecipe" = 12
+"damageAnvilAfterHammeringRecipe" = false
+
+["recipes"."recipes"."vibratingTable"]
+"allowUnpackingOnVibratingTable" = true
+"allowVibratingLeaves" = true

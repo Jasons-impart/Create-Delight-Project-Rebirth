@@ -1,0 +1,9 @@
+# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
+# A world/serverconfig file of the same name takes precedence.
+"defaultInfinite" = true
+"finiteAmountBase" = 8000
+"importantInfo" = true
+"maxExtractorsPerVein" = 0
+"veinFinderCd" = 100
+"veinFinderFar" = 25
+"veinFinderNear" = 1

@@ -78,6 +78,7 @@
 !/servercore/
 !/the_bumblezone/
 !/trades/
+!/xaerohud.txt
 !/xaero/
 !/xaero/world-map/
 !/xaero/world-map/**
@@ -118,3 +119,15 @@
 # - create_cyber_goggles.toml
 # - tab/
 # - createlazytick-common.toml (current paths: createlazytick-client.toml, createlazytick-server.toml)
+
+# Migrated pack defaults (NeoForge 1.21.1 global server configuration).
+!/create-server.toml
+!/createdieselgenerators-server.toml
+!/createoreexcavation-server.toml
+!/sophisticatedbackpacks-server.toml
+!/vintageimprovements-server.toml
+!/quality_food-server.toml
+!/createdelightcore-common.toml
+!/ftbchunks-client.snbt
+!/lightmanscurrency-common.txt
+!/lightmanscurrency-server.txt

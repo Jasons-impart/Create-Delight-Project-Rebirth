@@ -1,0 +1,217 @@
+# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
+# A world/serverconfig file of the same name takes precedence.
+
+["server"]
+"allBlockConnectionsDisallowed" = false
+"allowOpeningOtherPlayerBackpacks" = false
+"canBePlacedInContainerItems" = false
+"containerItemsDisallowed" = false
+"disallowedItems" = []
+"itemDisplayDisabled" = false
+"itemFluidHandlerEnabled" = true
+"maxUpgradesPerStorage" = ["stack_upgrades|3", "furnace_upgrades|1", "jukebox_upgrades|1"]
+"noConnectionBlocks" = []
+"noInteractionBlocks" = []
+"tickDedupeLogicDisabled" = false
+
+["server"."advancedAlchemyUpgrade"]
+"filterSlots" = 8
+
+["server"."advancedCompactingUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedDepositUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedFeedingUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedFilterUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedJukeboxUpgrade"]
+"numberOfSlots" = 12
+"slotsInRow" = 4
+
+["server"."advancedMagnetUpgrade"]
+"filterSlots" = 16
+"magnetRange" = 5
+"slotsInRow" = 4
+
+["server"."advancedPickupUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedRefillUpgrade"]
+"filterSlots" = 12
+"slotsInRow" = 4
+
+["server"."advancedRestockUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+
+["server"."advancedVoidUpgrade"]
+"filterSlots" = 16
+"slotsInRow" = 4
+"voidAlwaysEnabled" = true
+
+["server"."alchemyUpgrade"]
+"filterSlots" = 4
+
+["server"."autoBlastingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"fuelFilterSlots" = 4
+"fuelFilterSlotsInRow" = 4
+"inputFilterSlots" = 8
+"inputFilterSlotsInRow" = 4
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."autoSmeltingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"fuelFilterSlots" = 4
+"fuelFilterSlotsInRow" = 4
+"inputFilterSlots" = 8
+"inputFilterSlotsInRow" = 4
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."autoSmokingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"fuelFilterSlots" = 4
+"fuelFilterSlotsInRow" = 4
+"inputFilterSlots" = 8
+"inputFilterSlotsInRow" = 4
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."blastingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."compactingUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."copperBackpack"]
+"inventorySlotCount" = 45
+"upgradeSlotCount" = 1
+
+["server"."depositUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."diamondBackpack"]
+"inventorySlotCount" = 108
+"upgradeSlotCount" = 5
+
+["server"."entityBackpackAdditions"]
+"addLoot" = true
+"backpackDropChance" = 0.5
+"buffHealth" = true
+"buffWithPotionEffects" = true
+"chance" = 0.01
+"copperWeight" = 250
+"diamondWeight" = 5
+"discBlockList" = ["botania:record_gaia_1", "botania:record_gaia_2"]
+"dropToFakePlayers" = false
+"entityLootTableList" = ["minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:enderman|minecraft:chests/end_city_treasure", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:zombified_piglin|minecraft:chests/bastion_other"]
+"equipWithArmor" = true
+"goldWeight" = 25
+"ironWeight" = 125
+"leatherWeight" = 625
+"localDifficultyEffectsBackpackSpawns" = true
+"lootingChanceIncreasePerLevel" = 0.15
+"minBackpackTierHighDifficulty" = 2
+"minBackpackTierMidDifficulty" = 1
+"netheriteWeight" = 1
+"playJukebox" = true
+
+["server"."feedingUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."filterUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."goldBackpack"]
+"inventorySlotCount" = 81
+"upgradeSlotCount" = 3
+
+["server"."inceptionUpgrade"]
+"upgradesInContainedBackpacksAreFunctional" = true
+"upgradesUseInventoriesOfBackpacksInBackpack" = true
+
+["server"."ironBackpack"]
+"inventorySlotCount" = 54
+"upgradeSlotCount" = 2
+
+["server"."leatherBackpack"]
+"inventorySlotCount" = 27
+"upgradeSlotCount" = 1
+
+["server"."magnetUpgrade"]
+"filterSlots" = 9
+"magnetRange" = 3
+"slotsInRow" = 3
+
+["server"."nerfs"]
+"maxNumberOfBackpacks" = 3
+"nerfEffect" = "minecraft:slowness"
+"onlyWornBackpackTriggersUpgrades" = false
+"slownessLevelsPerAdditionalBackpack" = 1.0
+"tooManyBackpacksSlowness" = false
+
+["server"."netheriteBackpack"]
+"inventorySlotCount" = 120
+"upgradeSlotCount" = 7
+
+["server"."pickupUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."pumpUpgrade"]
+"filterSlots" = 4
+"maxInputOutput" = 20
+"stackMultiplierRatio" = 1.0
+
+["server"."refillUpgrade"]
+"filterSlots" = 6
+"slotsInRow" = 3
+
+["server"."restockUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+
+["server"."smeltingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."smokingUpgrade"]
+"fuelEfficiencyMultiplier" = 1.0
+"smeltingSpeedMultiplier" = 1.0
+
+["server"."stackUpgrade"]
+"nonStackableItems" = ["minecraft:bundle", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+
+["server"."tankUpgrade"]
+"autoFillDrainContainerCooldown" = 20
+"capacityPerSlotRow" = 4000
+"energyPerSlotRow" = 10000
+"maxInputOutput" = 20
+"stackMultiplierRatio" = 1.0
+
+["server"."toolSwapperUpgrade"]
+"filterSlots" = 8
+"slotsInRow" = 4
+
+["server"."voidUpgrade"]
+"filterSlots" = 9
+"slotsInRow" = 3
+"voidAlwaysEnabled" = true
+
+["server"."xpPumpUpgrade"]
+"maxXpPointsPerMending" = 5
+"mendingOn" = true
