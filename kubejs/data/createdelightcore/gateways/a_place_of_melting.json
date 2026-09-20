@@ -1,0 +1,260 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#ADFF2F",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:brainiac",
+          "count": 12
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 1.0
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.1
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.6
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:brainiac",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:slam"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:radon_bottle"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:waste_drum"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:brainiac",
+          "count": 8
+        },
+        {
+          "entity": "alexscavesup:gammaroach",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 1.2
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "value": 10
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:brainiac",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:gammaroach",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:polymer_plate"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:spelunkie"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "gateways:gate_pearl",
+            "components": {
+              "gateways:gateway": "createdelightcore:a_place_of_melting"
+            }
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 150
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:nucleeper",
+          "count": 4
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 5.5
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 10.0
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 0.8
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:nucleeper",
+          "rolls": 12
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:nuclear_bomb"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:raygun"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:music_disc_fusion"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "alexscavesup:tremorzilla",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "value": 16.0
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 10.0
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 2.0
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:entity_loot",
+          "entity": "alexscavesup:tremorzilla",
+          "rolls": 6
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 4,
+            "id": "alexscavesup:block_of_uranium"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 1,
+            "id": "alexscavesup:tremorzilla_egg"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 5,
+      "fire": true,
+      "block_damage": false
+    }
+  ]
+}

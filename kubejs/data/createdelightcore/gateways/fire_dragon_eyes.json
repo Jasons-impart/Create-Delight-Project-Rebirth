@@ -1,0 +1,168 @@
+{
+  "type": "gateways:normal",
+  "size": "large",
+  "color": "#FFFF84",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:fire_dragon",
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          },
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 1
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": 0.1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 8,
+            "id": "iceandfire:fire_dragon_blood"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    },
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:fire_dragon",
+          "count": 1,
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 0.5
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.4
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 18,
+            "id": "iceandfire:dragonscales_red"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 300
+    },
+    {
+      "entities": [
+        {
+          "entity": "iceandfire:fire_dragon",
+          "count": 1,
+          "nbt": {
+            "AgeTicks": 1680000,
+            "active_effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 16,
+                "duration": 20,
+                "show_particles": false
+              }
+            ],
+            "Items": []
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "operation": "add_multiplied_total",
+          "value": 1
+        },
+        {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "operation": "add_value",
+          "value": 2
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "value": -0.5
+        }
+      ],
+      "rewards": [
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 8,
+            "id": "iceandfire:dragonforge_fire_brick"
+          }
+        },
+        {
+          "type": "gateways:stack",
+          "stack": {
+            "count": 2,
+            "id": "createdelightcore:fire_lily_cluster"
+          }
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 300
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:entity_loot",
+      "entity": "iceandfire:fire_dragon",
+      "rolls": 5
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 6,
+      "fire": true,
+      "block_damage": true
+    }
+  ]
+}
