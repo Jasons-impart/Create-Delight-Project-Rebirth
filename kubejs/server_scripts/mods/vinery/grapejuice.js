@@ -1,7 +1,7 @@
 if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
   ServerEvents.recipes((event) => {
     const id = (path) => `createdelightcore:vinery/${path}`;
-    const bottleFluid = (bottle, fluid, amount) => {
+    const bottleFluid = (bottle, fluid, amount, kegPouring) => {
       const path = fluid.split(':')[1];
       event.recipes.create
         .filling(bottle, ['vinery:wine_bottle', Fluid.of(fluid, amount)])
@@ -9,6 +9,18 @@ if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
       event.recipes.create
         .emptying(['vinery:wine_bottle', Fluid.of(fluid, amount)], bottle)
         .id(id(`emptying/${path}`));
+      if (kegPouring && global.hasMod('brewinandchewin')) {
+        event
+          .custom({
+            type: 'brewinandchewin:keg_pouring',
+            fluid: { id: fluid, amount: amount },
+            container: { id: 'vinery:wine_bottle', count: 1 },
+            output: { id: bottle, count: 1 },
+            strict: false,
+            unit: 'millibuckets',
+          })
+          .id(id(`keg_pouring/${path}`));
+      }
     };
     const removeIfPresent = (recipeId) => {
       if (!event.findRecipeIds(recipeId).isEmpty()) {
@@ -43,6 +55,23 @@ if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
       const bottle = `vinery:${wine}`;
       const wineFluid = `createdelightcore:${wine}`;
       const baseFluid = juiceFluid(juice);
+
+      // 0488 also provides CDG automation, except the three wine-to-wine recipes.
+      if (
+        global.hasMod('createdieselgenerators') &&
+        !['bottle_mojang_noir', 'jellie_wine', 'apple_wine'].includes(wine)
+      ) {
+        let inputs = [Fluid.of(baseFluid, 1000)];
+        ingredients.forEach((ingredient) => {
+          if (ingredient === 'minecraft:honey_bottle') inputs.push(Fluid.of('create:honey', 250));
+          else inputs.push(Ingredient.of(ingredient));
+        });
+        ['basin_fermenting', 'bulk_fermenting'].forEach((type) => {
+          event.recipes.createdieselgenerators[type](Fluid.of(wineFluid, 1000), inputs)
+            .processingTime(type === 'basin_fermenting' ? 100 : 50)
+            .id(id(`${type}/${wine}`));
+        });
+      }
 
       if (!global.hasMod('brewinandchewin')) {
         return;
@@ -136,7 +165,7 @@ if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
       .compacting(Fluid.of('createdelightcore:apple_juice', 250), 'vinery:apple_mash')
       .id(id('compacting/apple_juice'));
 
-    bottleFluid('vinery:apple_juice', 'createdelightcore:apple_juice', 250);
+    bottleFluid('vinery:apple_juice', 'createdelightcore:apple_juice', 250, true);
 
     [
       'aegis_wine',
@@ -166,7 +195,7 @@ if (global.hasAllMods(['vinery', 'create', 'createdelightcore'])) {
       'strad_wine',
       'villagers_fright',
     ].forEach((wine) => {
-      bottleFluid(`vinery:${wine}`, `createdelightcore:${wine}`, 250);
+      bottleFluid(`vinery:${wine}`, `createdelightcore:${wine}`, 250, true);
     });
 
     [

@@ -356,6 +356,13 @@ if (global.hasAllMods(['ratatouille', 'create', 'vintageimprovements', 'createde
       .id(id('emptying/egg_yolk'));
 
     create
+      .emptying(
+        [Fluid.of('createdelightcore:egg_yolk', 1000), 'ratatouille:egg_shell'],
+        Ingredient.of('#c:bigger_eggs')
+      )
+      .id(id('emptying/more_yolk'));
+
+    create
       .mixing(Fluid.of('createdelightcore:artificial_egg_yolk', 250), [
         Fluid.of('createdelightcore:soya_milk', 250),
         Fluid.of('createdelightcore:slime', 30),

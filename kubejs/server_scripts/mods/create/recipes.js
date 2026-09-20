@@ -315,15 +315,24 @@ if (global.hasMod('create')) {
     );
 
     if (global.hasMod('supplementaries')) {
-      create
-        .sequenced_assembly('minecraft:tnt', Ingredient.of('#c:sands'), [
-          create.filling('minecraft:sand', [
-            'minecraft:sand',
-            Fluid.of('supplementaries:lumisene', 100),
-          ]),
-        ])
-        .transitionalItem('minecraft:sand')
-        .loops(4)
+      event
+        .custom({
+          type: 'create:sequenced_assembly',
+          ingredient: { tag: 'c:sands' },
+          transitional_item: { id: 'minecraft:sand' },
+          results: [{ id: 'minecraft:tnt' }],
+          loops: 4,
+          sequence: [
+            {
+              type: 'create:filling',
+              ingredients: [
+                { item: 'minecraft:sand' },
+                { type: 'fluid_stack', fluid: 'supplementaries:lumisene', amount: 100 },
+              ],
+              results: [{ id: 'minecraft:sand' }],
+            },
+          ],
+        })
         .id(id('sequenced_assembly/tnt'));
     }
 
