@@ -177,7 +177,7 @@ if (
     );
     createSpawnFluid(
       ['minecraft:gold_block', Fluid.of('butchercraft:blood_fluid', 500)],
-      'create_mechanical_spawner:spawn_fluid_pigling',
+      'create_mechanical_spawner:spawn_fluid_piglin',
       100,
       3
     );

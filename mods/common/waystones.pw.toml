@@ -2,6 +2,8 @@ name = "Waystones"
 filename = "waystones-neoforge-1.21.1-21.1.30.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "1321fbbe1484498b481ef05b6aef374b07fe6a23"

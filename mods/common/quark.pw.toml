@@ -1,13 +1,13 @@
 name = "Quark"
-filename = "Quark-4.1-477.jar"
+filename = "Quark-4.1-485.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "91adcc7cf8a1f9a529fcbb7fb6ea0adfeba91b8d"
+hash = "445fbf066be38aa1da59368a5386e906405c1907"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7980026
+file-id = 8895753
 project-id = 243121

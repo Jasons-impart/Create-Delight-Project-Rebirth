@@ -2,6 +2,8 @@ name = "Create Crafts & Additions"
 filename = "createaddition-1.5.10.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "2bd194da923dd38239ef49df30ecf1a720d38997"

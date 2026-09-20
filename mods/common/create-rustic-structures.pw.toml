@@ -1,13 +1,13 @@
 name = "Create: Rustic Structures"
-filename = "create_rustic_structures-1.0.0-neoforge-1.21.1.jar"
+filename = "create_rustic_structures-1.0.1-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1f0f0f1fc4202eaaa3470c76d6b18f776762d85f"
+hash = "f8f8dea6a23f697c3f27196627bdf77d9147b8e4"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6372212
+file-id = 8122033
 project-id = 1232975

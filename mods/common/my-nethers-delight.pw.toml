@@ -1,13 +1,13 @@
 name = "My Nether's Delight"
-filename = "MyNethersDelight-1.21.1-1.10.2.jar"
+filename = "MyNethersDelight-1.21.1-1.10.4.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d2fb0de59b66a017a1a25f23acdbe6e241b08541"
+hash = "9c54439d65e77c7b4b711831138f81f3a849ff35"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8029219
+file-id = 8854319
 project-id = 1003673

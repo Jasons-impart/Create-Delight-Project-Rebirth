@@ -1,13 +1,13 @@
 name = "MmmMmmMmmMmm (Target Dummy)"
-filename = "dummmmmmy-1.21-2.0.12-neoforge.jar"
+filename = "dummmmmmy-1.21-2.1.2-neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "0e69c2a8e4e51df42e45b2d6deb3a855bdf8dce6"
+hash = "87fb529cbb220a33fedf45a4a6f2269b8e00fffe"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7943676
+file-id = 8903254
 project-id = 225738

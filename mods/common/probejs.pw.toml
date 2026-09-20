@@ -2,6 +2,8 @@ name = "ProbeJS"
 filename = "ProbeJS-7.7.2.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "3f0b9288845fd547338b535cdaed6ef2bb3787e8"

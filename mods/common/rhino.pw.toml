@@ -2,6 +2,8 @@ name = "Rhino"
 filename = "rhino-2101.2.7-build.81.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "5dcc80079095706645d567353095297948a41eea"

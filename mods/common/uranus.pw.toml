@@ -2,6 +2,8 @@ name = "Uranus"
 filename = "uranus-2.4.1-1.21.1-neoforge.jar"
 side = "both"
 
+pin = true
+
 [download]
 hash-format = "sha1"
 hash = "2d689d2d9e5861ea0a382a459fa8fb0a3e4b5091"

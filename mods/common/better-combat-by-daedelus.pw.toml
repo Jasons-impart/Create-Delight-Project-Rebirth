@@ -1,13 +1,13 @@
 name = "Better Combat [Fabric & Forge]"
-filename = "bettercombat-neoforge-2.3.2+1.21.1.jar"
+filename = "bettercombat-neoforge-2.4.0+1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f752fbbf81027948ef4ab0fc0066260ccf574179"
+hash = "bacbc8c86671663e9998b141c5732250c1f4d4fb"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7721843
+file-id = 8430183
 project-id = 639842

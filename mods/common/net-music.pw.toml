@@ -1,13 +1,13 @@
 name = "Net Music"
-filename = "netmusic-1.5.0-neoforge+mc1.21.1.jar"
+filename = "netmusic-1.5.2-neoforge+mc1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "cf8e847e779206227eabb5cb9a9beb484efd190f"
+hash = "8d272bb183986f734d0e414b3d5217ff780e08a4"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8024333
+file-id = 8819067
 project-id = 978569
