@@ -1,0 +1,26 @@
+# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
+# A world/serverconfig file of the same name takes precedence.
+
+["Server Configs"]
+"Canister can be filled by spouts" = true
+"Combustibles blow up" = true
+"Max Oil Barrel Width" = 3
+
+["Server Configs"."Diesel Engines"]
+"Engines disabled with redstone" = true
+"Engines filled with a bucket" = false
+"Huge Diesel Engines" = true
+"Modular Diesel Engines" = true
+"Normal Diesel Engines" = true
+"Turbocharged Diesel Engine Burn Rate Multiplier" = 1.0
+"Turbocharged Diesel Engine Speed Multiplier" = 2.0
+
+["Server Configs"."Oil Config"]
+"Disable high oil chunks" = false
+"Disable normal oil chunks" = false
+"High oil chunks oil amount multiplier" = 3.0
+"Infinite oil chunk threshold" = 3000000
+"Max Oil Scanner Level" = 10000
+"Normal oil chunks oil amount multiplier" = 1.0
+"Oil chunk map scale" = 1.0
+"Oil chunk threshold" = 3000000

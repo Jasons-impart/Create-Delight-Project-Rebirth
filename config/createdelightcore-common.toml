@@ -1,0 +1,34 @@
+# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
+# A world/serverconfig file of the same name takes precedence.
+"beltGrinderBlockedSandpaperRecipes" = ["createdelightcore:sandpaper_polishing/rose_quartz"]
+"debugKubeJsCreateSequencedFluidFix" = false
+"disableDropReport" = true
+"dropReportIntervalTicks" = 6000
+"dropReportMaxChunks" = 10
+"enableAe2BuddingQuartzProtection" = true
+"enableAe2SpentLiquorSpout" = true
+"enableAlexsCavesDimensionBiomeOverrides" = true
+"enableAlexsCavesDimensionMonsterSpawnGuard" = true
+"enableAlexsCavesSulfurSpout" = true
+"enableBlazeCakeFoodPatch" = true
+"enableCreateSaSpoutFilling" = true
+"enableDataMapMissingKeyFilters" = true
+"enableEclipticSeasonsChunkAttachmentSyncPatch" = true
+"enableInvalidResourcePathFilters" = true
+"enableJellyBlockParticles" = true
+"enableKubeJsCreateSequencedFluidFix" = true
+"enableNorthstarTelescopeBodySpacing" = true
+"enableNorthstarTelescopeMinSize" = true
+"enablePhantomCompostParticles" = true
+"enableQuarkContributorRewardPatch" = true
+"enableWaystonesMoneyTeleport" = true
+"enableXaeroUpdateCheckBlock" = true
+"ignoreStackCount" = false
+"itemThreshold" = 100
+"lunaSoilBoostChance" = 0.5
+"northstarTelescopeBodySpacing" = 4
+"northstarTelescopeMinSize" = 2
+"qualityFoodMoneyChain" = "main"
+"recipeRemoveMissingIdMode" = "STRICT"
+"waystonesMoneyChain" = "main"
+"waystonesTeleportCostPerLevel" = 45
