@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7d9978a1c3951396"
+	group: ""
+	id: "7D9978A1C3951396"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "0EEB8FE71772B757"
+		tasks: [{
+			id: "39B8C93B10986D93"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: 0.0d
+	}]
+}
