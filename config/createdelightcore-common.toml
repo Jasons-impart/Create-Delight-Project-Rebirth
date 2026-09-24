@@ -1,34 +1,111 @@
-# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
-# A world/serverconfig file of the same name takes precedence.
-"beltGrinderBlockedSandpaperRecipes" = ["createdelightcore:sandpaper_polishing/rose_quartz"]
-"debugKubeJsCreateSequencedFluidFix" = false
-"disableDropReport" = true
-"dropReportIntervalTicks" = 6000
-"dropReportMaxChunks" = 10
-"enableAe2BuddingQuartzProtection" = true
-"enableAe2SpentLiquorSpout" = true
-"enableAlexsCavesDimensionBiomeOverrides" = true
-"enableAlexsCavesDimensionMonsterSpawnGuard" = true
-"enableAlexsCavesSulfurSpout" = true
-"enableBlazeCakeFoodPatch" = true
-"enableCreateSaSpoutFilling" = true
-"enableDataMapMissingKeyFilters" = true
-"enableEclipticSeasonsChunkAttachmentSyncPatch" = true
-"enableInvalidResourcePathFilters" = true
-"enableJellyBlockParticles" = true
-"enableKubeJsCreateSequencedFluidFix" = true
-"enableNorthstarTelescopeBodySpacing" = true
-"enableNorthstarTelescopeMinSize" = true
-"enablePhantomCompostParticles" = true
-"enableQuarkContributorRewardPatch" = true
-"enableWaystonesMoneyTeleport" = true
-"enableXaeroUpdateCheckBlock" = true
-"ignoreStackCount" = false
-"itemThreshold" = 100
-"lunaSoilBoostChance" = 0.5
-"northstarTelescopeBodySpacing" = 4
-"northstarTelescopeMinSize" = 2
-"qualityFoodMoneyChain" = "main"
-"recipeRemoveMissingIdMode" = "STRICT"
-"waystonesMoneyChain" = "main"
-"waystonesTeleportCostPerLevel" = 45
+#Sandpaper polishing recipe IDs to hide from Create: Metallurgy Belt Grinder auto-inheritance and JEI display.
+#Example: ["createdelightcore:sandpaper_polishing/rose_quartz"]
+beltGrinderBlockedSandpaperRecipes = ["createdelightcore:sandpaper_polishing/rose_quartz"]
+#是否记录 KubeJS Create 序列装配流体 recipe JSON 修正命中的 recipe。
+#Log recipes touched by the KubeJS Create sequenced assembly fluid JSON fix.
+debugKubeJsCreateSequencedFluidFix = false
+#是否禁用掉落物报告。报告会低频统计已加载维度中的掉落物，并在区块内数量超过阈值时通知在线玩家。
+#Disable the dropped item report. The report periodically scans loaded levels and notifies online players when a chunk exceeds the threshold.
+disableDropReport = true
+#掉落物报告扫描间隔，单位为 tick。旧 Core 固定为 6000 tick，即 5 分钟。
+#Dropped item report scan interval in ticks. Old Core used 6000 ticks, or 5 minutes.
+# Default: 6000
+# Range: > 6000
+dropReportIntervalTicks = 6000
+#每次掉落物报告最多显示多少个超阈值区块，避免刷屏。
+#Maximum over-threshold chunks shown per dropped item report to avoid chat spam.
+# Default: 10
+# Range: 1 ~ 100
+dropReportMaxChunks = 10
+#是否保护 AE2 赛特斯石英母岩：玩家未潜行时禁止破坏。
+#Protect AE2 budding certus quartz blocks by preventing break attempts unless the player is sneaking.
+enableAe2BuddingQuartzProtection = true
+#是否启用陨石废液注液器交互：促进/修复 AE2 赛特斯石英母岩。修改后需要重启游戏。
+#Enable spent liquor spout interactions for growing and repairing AE2 budding certus quartz. Requires restart.
+enableAe2SpentLiquorSpout = true
+#是否让 createdelightcore 的 Alex's Caves 独立维度在 Alex's Caves 结构判定中视为对应洞穴生物群系。只影响白名单维度。
+#Treat createdelightcore's standalone Alex's Caves dimensions as their matching cave biomes for Alex's Caves structure checks only. Whitelisted dimensions only.
+enableAlexsCavesDimensionBiomeOverrides = true
+#是否阻止 minecraft 和 quark 的怪物生成在 createdelightcore 的 Alex's Caves 洞穴维度中。只拦截新生成实体，不清理存档已有实体。
+#Prevent minecraft and quark monsters from spawning in createdelightcore's Alex's Caves dimensions. Only new entities are blocked; entities loaded from disk are preserved.
+enableAlexsCavesDimensionMonsterSpawnGuard = true
+#是否启用酸液注液器交互：让 Alex's Caves 硫磺芽生长。修改后需要重启游戏。
+#Enable acid spout interactions for growing Alex's Caves sulfur buds. Requires restart.
+enableAlexsCavesSulfurSpout = true
+#是否启用从 KubeJS 迁移来的机械动力烈焰蛋糕食物属性与吃后点燃补丁。修改后需要重启游戏。
+#Enable the Create blaze cake food component and post-eating ignition patch migrated from KubeJS. Requires restart.
+enableBlazeCakeFoodPatch = true
+#是否启用机械动力注液器在置物台/权重弹射器上给 Create Stuff Additions 装备充水/充燃料。修改后需要重启游戏。
+#Enable Create spouts filling Create Stuff Additions equipment on depots and weighted ejectors. Requires restart.
+enableCreateSaSpoutFilling = true
+#是否过滤已知会引用缺失注册对象的 NeoForge DataMap 键。只过滤白名单中的坏键，不屏蔽其它 DataMap 错误。
+#Filter known NeoForge DataMap keys that reference missing registry objects only. Other DataMap errors remain visible.
+enableDataMapMissingKeyFilters = true
+#是否修正 Ecliptic Seasons 雪状态区块附件同步时序：增量同步只发送给已确认收到该区块的客户端。Mixin 仅在 Ecliptic Seasons 存在时应用；修改后需要重启游戏。
+#Fix Ecliptic Seasons snowy chunk attachment sync timing by sending incremental updates only to clients that have acknowledged the chunk. The mixins only apply when Ecliptic Seasons is present. Requires restart.
+enableEclipticSeasonsChunkAttachmentSyncPatch = true
+#是否过滤特定第三方 mod jar 中已知的坏资源/data map 文件。只过滤白名单中的路径，不放宽全局资源路径校验。
+#Filter known bad resource/data map files from specific third-party mod jars only. This does not loosen global resource path validation.
+enableInvalidResourcePathFilters = true
+#是否显示果酱/果冻方块滑落和落地时的客户端方块粒子。只影响视觉效果。
+#Show client-side block particles when entities slide on or land on jelly/jello blocks. Visual only.
+enableJellyBlockParticles = true
+#是否修正 KubeJS Create 在 create:sequenced_assembly.sequence 内生成的 create:filling 流体 ingredient 格式。只改最终 recipe JSON，不改脚本 API。
+#Fix KubeJS Create fluid ingredient JSON generated for create:filling steps inside create:sequenced_assembly.sequence. Only final recipe JSON is normalized; script APIs are unchanged.
+enableKubeJsCreateSequencedFluidFix = true
+#是否在 Northstar 望远镜中把视觉上重叠或过近的天体推开。只影响望远镜 UI 中的绘制和悬停位置；不改变星球轨道或真实位置。
+#Push visually overlapping or very close Northstar telescope bodies apart. Affects telescope render and hover positions only; real orbit and position are unchanged.
+enableNorthstarTelescopeBodySpacing = true
+#是否让 Northstar 望远镜中已通过其它可见性过滤的天体至少按配置像素大小绘制。只影响望远镜 UI；不改变星球真实直径、距离或火箭逻辑。
+#Render Northstar telescope bodies that pass other visibility checks at least at the configured pixel size. Telescope UI only; real planet diameter, distance, and rocket logic are unchanged.
+enableNorthstarTelescopeMinSize = true
+#是否显示幻灵肥料方块的客户端菌丝粒子。只影响视觉效果。
+#Show client-side mycelium particles from phantom compost blocks. Visual only.
+enablePhantomCompostParticles = true
+#是否禁用 Quark 贡献者奖励加载和等级判定。Mixin 仅在 Quark 存在时应用；修改后需要重启游戏。
+#Disable Quark contributor reward loading and tier checks. The mixin only applies when Quark is present. Requires restart.
+enableQuarkContributorRewardPatch = true
+#是否启用旧 Core 的 Waystones 传送货币消耗：将 Waystones 经验等级/经验点需求换算为 Lightman's Currency 基础币值。
+#Enable old Core Waystones money teleport costs by replacing Waystones XP requirements with Lightman's Currency base coin value costs.
+enableWaystonesMoneyTeleport = true
+#是否禁用 Xaero Minimap / World Map / XaeroLib 的启动联网检查，包括更新检查、Patreon 数据和在线组件加载。Mixin 仅在对应 Xaero mod 存在时应用；修改后需要重启游戏。
+#Disable Xaero Minimap / World Map / XaeroLib startup internet checks, including update checks, Patreon data and online widget loading. The mixins only apply when matching Xaero mods are present. Requires restart.
+enableXaeroUpdateCheckBlock = true
+#掉落物报告是否按掉落实体数量统计，而不是按物品堆叠数量统计。
+#Count dropped item entities instead of item stack sizes in the dropped item report.
+ignoreStackCount = false
+#掉落物报告的区块阈值。统计值超过此数量时报告该区块。
+#Chunk threshold for the dropped item report. Chunks above this count are reported.
+# Default: 100
+# Range: > 0
+itemThreshold = 100
+#月壤和湿润月壤耕地在随机刻促进上方可骨粉催熟方块的概率。
+#Chance for luna soil and moist luna soil farmland to boost bonemealable blocks on random ticks.
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+lunaSoilBoostChance = 0.5
+#Northstar 望远镜天体之间的最小视觉间距，单位为像素。值越大，卫星群越分散。
+#Minimum visual spacing between Northstar telescope bodies, in pixels. Higher values spread satellite groups farther apart.
+# Default: 4
+# Range: 0 ~ 64
+northstarTelescopeBodySpacing = 4
+#Northstar 望远镜重点天体最小显示半径，单位为像素。当前只对谷神星、冥王星和土卫二使用，其它小天体使用 1 像素保底。
+#Minimum rendered radius for priority Northstar telescope bodies, in pixels. Currently applies only to Ceres, Pluto and Enceladus; other small bodies use a 1 pixel floor.
+# Default: 2
+# Range: 1 ~ 8
+northstarTelescopeMinSize = 2
+#Quality Food 品质兑换使用的 Lightman's Currency coin chain。
+#Lightman's Currency coin chain used when converting Quality Food quality into money.
+qualityFoodMoneyChain = "main"
+#KubeJS ServerEvents.recipes event.remove({id: ...}) missing recipe handling. OFF keeps KubeJS behavior, WARN logs only, STRICT fails the reload.
+#Only exact ID filters are checked. Broad filters such as mod/input/output/type/regex/predicate are not affected.
+#Allowed Values: OFF, WARN, STRICT
+recipeRemoveMissingIdMode = "STRICT"
+#Waystones 传送扣款使用的 Lightman's Currency coin chain。
+#Lightman's Currency coin chain used by Waystones teleport money costs.
+waystonesMoneyChain = "main"
+#每 1 点 Waystones 经验成本换算成多少 Lightman's Currency 基础币值。旧 Core 默认值为 45。
+#Base coin value charged for each Waystones XP cost unit. Old Core default was 45.
+# Default: 45
+# Range: > 1
+waystonesTeleportCostPerLevel = 45
