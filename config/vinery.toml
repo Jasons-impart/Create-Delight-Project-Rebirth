@@ -35,6 +35,8 @@
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
 	grapeGrowthMultiplier = 1.0
+	#Whether Red/White Grapevine stems grow a canopy of leaves around them after some time
+	grapevineLeavesEnabled = true
 
 	[Items.Wine]
 		#Maximum level for wine

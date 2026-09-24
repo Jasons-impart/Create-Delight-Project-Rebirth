@@ -19,7 +19,8 @@
     "primaryEnglishState": "CJK"
   },
   "advanceSettings": {
-    "enableCharSimulation": false
+    "charSimulationScreens": [],
+    "commandPrefixRegex": "^/"
   },
   "windowsCompatibilitySettings": {
     "enableConversionStatusApi": true,

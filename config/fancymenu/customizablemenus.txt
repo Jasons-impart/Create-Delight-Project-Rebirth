@@ -9,3 +9,6 @@ net.minecraft.client.gui.screens.ReceivingLevelScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+
