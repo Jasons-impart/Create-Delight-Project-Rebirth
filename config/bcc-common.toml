@@ -7,7 +7,7 @@
 	#The name of the modpack
 	modpackName = "Create-Delight-Project-Rebirth"
 	#The version of the modpack
-	modpackVersion = "v2.0.0.0-test1"
+	modpackVersion = "v2.0.0.0-test2"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
