@@ -217,8 +217,11 @@ jobs:
             exit 1
           fi
           for asset in "${assets[@]}"; do
+            # gh release upload 会把 [] 当作 glob；转义文件名中的方括号。
+            escaped_asset="${asset//[/\\[}"
+            escaped_asset="${escaped_asset//]/\\]}"
             for attempt in {1..5}; do
-              if gh release upload "$GITHUB_REF_NAME" "$asset" --repo "$GITHUB_REPOSITORY" --clobber; then
+              if gh release upload "$GITHUB_REF_NAME" "$escaped_asset" --repo "$GITHUB_REPOSITORY" --clobber; then
                 break
               fi
               if [[ "$attempt" == "5" ]]; then
