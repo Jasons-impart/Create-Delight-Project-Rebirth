@@ -412,9 +412,9 @@
 		# - <level> being the Cartographer villager level required for the map to be unlockable
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
-		# - <color> being a hex color (without the #) for the map to display. You can generate one here - https://htmlcolorcodes.com/
+		# - <color> being an ARGB hex color (without the #) for the map to display. You can generate one here - https://argb-int-calculator.netlify.app/
 		#Here's an example of a map to locate Ice Mountains:
-		#minecraft:ice_mountains,2,8,14,FF7FE4FF
+		#minecraft:snowy_slopes,2,8,14,FF7FE4FF
 		Customs = []
 		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
 		"Apply Default Trades" = true
@@ -554,6 +554,8 @@
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+		#If true, recipes that have no output will be skipped from unlock
+		"Skip Empty Recipes" = true
 
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
@@ -754,10 +756,16 @@
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
 		"Smelt Raw Ore Blocks" = true
 
+	[tweaks.slabs_to_blocks]
+		#Slabs that should NOT be convertible back into full-blocks
+		"Banned Slabs" = []
+
 [world]
+	#(Ashen Trees)
 	"Ancient Wood" = false
 	"Azalea Wood" = false
 	"Big Stone Clusters" = true
+	#(Trumpet Trees)
 	"Blossom Trees" = false
 	"Cherry Grove Water Petals" = true
 	"Chorus Vegetation" = false
@@ -772,6 +780,7 @@
 	Permafrost = true
 	"Spiral Spires" = true
 
+	#(Ashen Trees)
 	[world.ancient_wood]
 		"Ancient Fruit Gives Exp" = true
 		#Allowed values: [1,)
@@ -793,6 +802,8 @@
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+		#If true, the oak log in the vanilla azalea tree ConfiguredFeature will be replaced with Quark's azalea log. Disabling this makes Azalea unobtainable
+		"Replace Azalea Tree Log" = true
 
 	[world.big_stone_clusters]
 		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
@@ -945,6 +956,7 @@
 					Biomes = ["minecraft:end_highlands"]
 					"Is Blacklist" = false
 
+	#(Trumpet Trees)
 	[world.blossom_trees]
 		"Drop Leaf Particles" = true
 
@@ -1648,6 +1660,8 @@
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
 	"Variant Selector" = false
 	"Villager Rerolling Rework" = false
+	#Big Stone Clusters for Granite, Diorite, and Andesite, like Quark pre-1.18
+	"Vanilla Stone Clusters" = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1774,6 +1788,96 @@
 		#If enabled, villagers will be able to reroll any trade that has been used AT ALL since the last restock.
 		"Reroll Even If Not Out Of Stock" = false
 
+	#Big Stone Clusters for Granite, Diorite, and Andesite, like Quark pre-1.18
+	[experimental.vanilla_stone_clusters]
+
+		[experimental.vanilla_stone_clusters.granite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.granite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.granite.biomes.tags]
+					"Biome Tags" = ["minecraft:is_mountain"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.granite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+		[experimental.vanilla_stone_clusters.diorite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.diorite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.diorite.biomes.tags]
+					"Biome Tags" = ["c:is_savanna", "c:is_jungle", "c:is_mushroom"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.diorite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+		[experimental.vanilla_stone_clusters.andesite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.andesite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.andesite.biomes.tags]
+					"Biome Tags" = ["minecraft:is_forest"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.andesite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
 [oddities]
 	Backpack = false
 	Crate = true
@@ -1843,7 +1947,7 @@
 		"Allow Books" = true
 		#Set this to true to allow treasure enchantments to be rolled as pieces
 		"Allow Treasures" = false
-		#Set this to true to allow undiscoverable enchantments to be rolled as pieces
+		#Set this to true to allow undiscoverable enchantments (that is, enchantments that are not in the #minecraft:in_enchanting_table tag) to be rolled as pieces
 		"Allow Undiscoverable Enchantments" = false
 		#Any treasure enchantment IDs here will be able to appear in books in matrix enchanting
 		"Treasure Whitelist" = []
@@ -1875,6 +1979,8 @@
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
 		"Automatically Convert" = true
+		#If true, items that have 0 enchantability, but are in the #c:enchantables tag, such as Shears and Shields, can be enchanted in the Matrix Enchanter
+		"Allow Zero Enchantability" = false
 
 	[oddities.pipes]
 		#How long it takes for an item to cross a pipe. Bigger = slower.
@@ -1905,3 +2011,5 @@
 		"Destroy Lost Items" = false
 		#Set this to false to only allow the owner of a totem to collect its items rather than any player
 		"Allow Anyone To Collect" = true
+		#Set this to true to make the totem drop everything when punched once
+		"Drop All Items On Hit" = false

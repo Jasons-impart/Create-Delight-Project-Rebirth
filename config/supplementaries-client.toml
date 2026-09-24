@@ -1,8 +1,3 @@
-#Tweak and change the various block animations.
-#Only cosmetic stuff in here so to leave default if not interested.
-#Remember to delete this and server configs and let it refresh every once in a while since I might have tweaked it
-[blocks]
-
 	[blocks.globe]
 		#Enable a random globe texture for each world
 		random_world = true
@@ -97,7 +92,6 @@
 		render_as_banner = false
 
 	[blocks.captured_mobs]
-		#THIS IS ONLY FOR VISUALS! To allow more entities in cages you need to edit the respective tags!
 		#A list of mobs that can be ticked on client side when inside jars. Mainly used for stuff that has particles. Can cause issues and side effects so use with care
 		tickable_inside_jars = ["iceandfire:pixie", "druidcraft:dreadfish", "druidcraft:lunar_moth", "alexsmobsup:hummingbird"]
 
@@ -138,17 +132,12 @@
 		#Allowed Values: OFF, STENCIL, DEPTH
 		mask_mode = "STENCIL"
 
-#Particle parameters
-[particles]
-
-	#Rotation particle
 	[particles.turn_particle]
 		#An RGBA color
 		initial_color = "#002A77EA"
 		#An RGBA color
 		fade_color = "#0032BEFA"
 
-#General settings
 [general]
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"
@@ -173,7 +162,6 @@
 	#Enable Supplementaries to base textures off external Resource Packs rather than mod's default textures. 
 	use_external_resource_pack = false
 
-#Game tweaks
 [tweaks]
 	#Adds an overlay to projectile weapons in gui displaying currently selected ammo
 	projectile_weapon_overlay = true
@@ -225,8 +213,8 @@
 	[items.altimeter]
 		#Click action for depth meter which displays current depth
 		click_action = true
-		#Allows depth meter to have unique textures per each dimension. Add more dimensions IDs and a matching texture in the correct path replacing ':' with '_'
 		#This is a list. Add more entries with syntax [[...]]
+		#Allows depth meter to have unique textures per each dimension. Add more dimensions IDs and a matching texture in the correct path replacing ':' with '_'
 		extra_dimension_textures = ["minecraft:the_nether", "minecraft:the_end"]
 		#Increasing this to be more than 1 will result in delth meter display image to be shown in float amounts instead of pixel perfect ones
 		# Default: 1

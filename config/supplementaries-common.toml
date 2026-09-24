@@ -40,7 +40,6 @@
 		# Default: 5.0
 		# Range: 0.0 ~ 64.0
 		base_velocity_scaling = 5.0
-		#maximum range
 		#note that it will still only keep alive the two fire blocks closer to it
 		# Default: 5
 		# Range: 0 ~ 16
@@ -631,7 +630,6 @@
 		# Range: 1 ~ 9
 		slots = 6
 
-#General settings
 [general]
 	#Enable Creative Tab
 	creative_tab = true
@@ -645,9 +643,6 @@
 	sanity_checks_messages = true
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"
-
-#Vanilla tweaks
-[tweaks]
 
 	[tweaks.golden_apple_disenchant]
 		enabled = true

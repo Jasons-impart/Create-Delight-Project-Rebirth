@@ -94,7 +94,7 @@
 	# Default: 30
 	# Range: > 0
 	sorrowsquishedMaxDamage = 30
-	#Chance for sorrowsquashes to grow from a sorrowsquash stem 
+	#Chance for sorrowsquashes to grow from a sorrowsquash stem
 	#If sorrowsquash fails to grow then the stem will attempt to grow upwards instead
 	# Default: 0.2
 	# Range: 0.0 ~ 1.0
@@ -121,7 +121,7 @@
 	# Default: 10
 	# Range: > 0
 	shotgunBarrelBullets = 10
-	#Normally frogmists can only be broken when other frogmist or a hoe is held in hand 
+	#Normally frogmists can only be broken when other frogmist or a hoe is held in hand
 	#This config makes it breakable with anything regardless of what's in your hand
 	canAnythingBreakFrogmist = false
 	#Duration of unbounded speed when it is inflicted from soul swirls
@@ -129,14 +129,22 @@
 	# Default: 7
 	# Range: > 0
 	soulSpeedDuration = 7
-	#Completed treacherous candles will become active again after the specified time in seconds has elapsed
-	# Default: 1800
-	# Range: 0 ~ 86400
-	treacherousCandleCompletionCooldown = 1800
 	#Defines how long a haze block will last after being placed in seconds
 	# Default: 8
 	# Range: > 0
 	hazeBlockCooldown = 8
+	#Completed Cierges of Treachery will become active again after the specified time in seconds has elapsed
+	# Default: 1800
+	# Range: 0 ~ 86400
+	ciergeOfTreacheryCompletionCooldown = 1800
+	#Unlocked brazier chests will extinguish after the specified time in seconds has elapsed and refill their loot
+	# Default: 3600
+	# Range: 0 ~ 86400
+	brazierChestRefillCooldown = 3600
+	#Defines how experience points is ejected out when an item is grinded in sculk grinders
+	# Default: 450
+	# Range: > 0
+	sculkGrinderExperience = 450
 
 #Item Settings
 [itemSettings]
@@ -146,7 +154,7 @@
 	immunityConsumption = 600
 	#Weather the amount of duration depleted multiplies with the infliction's amplifier
 	amplifierScalesImmunityConsumption = true
-	#Makes obtaining the tears music disc harder, when enabled requires you to slay a ghast in the overworld 
+	#Makes obtaining the tears music disc harder, when enabled requires you to slay a ghast in the overworld
 	#If disabled then the disc is obtained by redirecting a fireball into a ghast like in vanilla
 	tweakObtainingTearsMusicDisc = true
 	#The amount of self-pushback experienced upon firing a shotgun
@@ -159,7 +167,7 @@
 	# Range: 0.0 ~ 1.7976931348623157E308
 	pointBlankSelfRecoilBonus = 0.45
 	#How close you need to be to a target in blocks to get a point-blank self recoil bonus
-	# Default: 18.0
+	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
 	pointBlankSelfRecoilDistance = 18.0
 	#The base amount of shotgun pellets fired from a shotgun-fist
@@ -197,6 +205,9 @@
 	willOWispStackSize = 40
 	#When enabled almost all types of potions can be stacked to 16 like in the combat snapshots
 	stackablePotions = true
+	#Removes the soul speed enchantment from the game, everywhere.
+	#This will not retroactively remove pre-existing items with the enchantment
+	removeSoulSpeedEnchantment = true
 
 #Entity Settings
 [entitySettings]
@@ -205,7 +216,7 @@
 	# Range: 0.0 ~ 1.0
 	wispBoredomChance = 0.02
 	#The amount of freezing in ticks that all black ices can inflict
-	# Default: 100
+	# Default: 400
 	# Range: > 0
 	blackIceFreezingTicks = 500
 	#Upon death skeletons will fossilize soul soil blocks they are standing on into fossil ore
@@ -216,12 +227,12 @@
 	# Default: 2
 	# Range: > 0
 	wispsDroppedByApparition = 2
-	#Cooldown in ticks for how long an apparition needs to wait before re-possessing a mob 
+	#Cooldown in ticks for how long an apparition needs to wait before re-possessing a mob
 	#If set to -1 then apparitions unleashed from a possessed mob cannot repossess anything
 	# Default: 300
 	# Range: > -1
 	apparitionPossessionCooldown = 300
-	#Apparitions can be salted... or erm, "waxed" until actual salt is added in the future 
+	#Apparitions can be salted... or erm, "waxed" until actual salt is added in the future
 	#Salted apparitions cannot possess any mobs, although they will still attack them
 	apparitionsCanBeSalted = true
 	#Apparitions can take control of certain mobs they kill and turn into possessed variants
@@ -234,7 +245,7 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	hardDifficultyUnleashingMultiplier = 2.0
-	#Most projectiles will phase through apparitions and wisps except for a few specific kinds 
+	#Most projectiles will phase through apparitions and wisps except for a few specific kinds
 	#Projectiles specified in the "phantasm_hull_protects_blacklist" tag still hit these entities regardless
 	projectilesPhaseThroughGhosts = true
 	#Blazes will visibly become dimmer the lower their health is much like Minecraft: Dungeons
@@ -247,12 +258,12 @@
 	# Default: 20
 	# Range: > 0
 	maxVesselBullets = 20
-	#Attack timer is a value that decrements when a vessel is aggroed 
+	#Attack timer is a value that decrements when a vessel is aggroed
 	#It dictates the wait-time between each shotgun blast the vessel does
 	# Default: 110
 	# Range: > 0
 	vesselAttackTime = 110
-	#At the specified attack time the vessel will take aim preparing to fire 
+	#At the specified attack time the vessel will take aim preparing to fire
 	#This value cannot go any lower than 50 to prevent animation issues
 	# Default: 100
 	# Range: > 50
@@ -263,15 +274,15 @@
 	vesselAccurateDistance = 5
 	#Banshees hurt by an entity will try to teleport away to a random spot or their anchor
 	bansheeTeleportsAfterHit = true
-	#The number of teleports a banshee can do before returning to its anchor point 
-	#This config value is influenced by the world difficulty adding: 
-	#-1 on Easy 
+	#The number of teleports a banshee can do before returning to its anchor point
+	#This config value is influenced by the world difficulty adding:
+	#-1 on Easy
 	#+1 on Hard
 	#
 	# Default: 3
 	# Range: > 1
 	bansheeAnchorInterval = 3
-	#The base attack interval of a banshee, which constantly ticks down. when the value reaches "0" it'll fire a will o' wisp 
+	#The base attack interval of a banshee, which constantly ticks down. when the value reaches "0" it'll fire a will o' wisp
 	#After which the specified value will be added to the attack interval for it to continue ticking down
 	# Default: 40
 	# Range: > 0
@@ -287,7 +298,7 @@
 	#Specify what behavior should take place if a banshee gets hit with its own will o' wisp projectile
 	#Allowed Values: DO_NOTHING, STUN, INSTAKILL
 	bansheeRedirectBehavior = "STUN"
-	#Defines how long a banshee hit with its own projectile will be stunned for 
+	#Defines how long a banshee hit with its own projectile will be stunned for
 	#During this it is unable to fire will o' wisps
 	# Default: 100
 	# Range: > 0
@@ -300,9 +311,9 @@
 	# Default: 0.2
 	# Range: 0.0 ~ 1.7976931348623157E308
 	bansheeWillOWispManoeuvrability = 0.2
-	#Weather world difficulty will have any effect on a banshee will o' wisps' manoeuvrability 
-	#The values below are added onto whatever is specifed in "bansheeWillOWispManoeuvrability" 
-	#-0.05 on Easy 
+	#Weather world difficulty will have any effect on a banshee will o' wisps' manoeuvrability
+	#The values below are added onto whatever is specifed in "bansheeWillOWispManoeuvrability"
+	#-0.05 on Easy
 	#+0.04 on Hard
 	#
 	manoeuvrabilityAffectedByDifficulty = true
@@ -384,7 +395,8 @@
 	emergeBurstDamageMultiplier = 2.0
 	#The absolute maximum stack size for all ecto slabs
 	#§cWARNING: Higher values can easily cause FPS lag when too many ecto slabs are present
-	# Due to the additional segments needing to be added for rendering
+	#
+	#Due to the additional segments needing to be added for rendering
 	# Default: 16
 	# Range: 1 ~ 99
 	absoluteMaximumStackSize = 16
@@ -444,29 +456,35 @@
 	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	ectoSlabUnleashingOdds = 0.05
+	#Magma Cube textures will scale with the model and conform to pixel consistency
+	pixelConsistentMagmaCubes = true
+	#The chance for a stampede to be befriended when fed favorite foods; higher numbers make befriending harder
+	# Default: 8
+	# Range: > 0
+	stampedeBefriendingOdds = 8
 
 #World Settings
 [worldSettings]
-	#Improves the vanilla nether terrain generation with better multilayered-ness and height changes 
-	#The Height changes include: 
-	#-Base Nether being extended to 192 blocks tall 
-	#-Underlava sections extended by -32 blocks of depth 
-	#-And the area above the roof will be 64 blocks tall instead 
-	# 
+	#Improves the vanilla nether terrain generation with better multilayered-ness and height changes
+	#The Height changes include:
+	#-Base Nether being extended to 192 blocks tall
+	#-Underlava sections extended by -32 blocks of depth
+	#-And the area above the roof will be 64 blocks tall instead
+	#
 	#§cNOTE: If Amplified Nether is installed then that mod's generation will take priority regardless of config value
 	#
 	netherWorldGenOverhaul = true
-	#Brightens up the nether fog of most vanilla and modded biomes to compliment their environments better 
+	#Brightens up the nether fog of most vanilla and modded biomes to compliment their environments better
 	#It overall makes the nether feel warmer and helps make out shapes in the distance like actual fog
 	brighterNetherFog = true
 	#Changes the nether wastes fog back to being red like in vanilla
 	redNetherWastesFog = false
 	#Dust like particles will blow in the soul sand valley instead of the occasional falling ash
 	betterSoulSandValleyParticles = true
-	#Completely replaces the vanilla multi-noise biome source for Elysium API's mosaic ones 
-	#Rather than determining a biomes' position based on the terrain's noise climate. it instead uses voronoi cells with a weighted list 
-	#Mosaic biome source is remarkably stellar at keeping consistent sizes between all the biomes and equally distributes them too, no matter how many mods you have 
-	# 
+	#Completely replaces the vanilla multi-noise biome source for Elysium API's mosaic ones
+	#Rather than determining a biomes' position based on the terrain's noise climate. it instead uses voronoi cells with a weighted list
+	#Mosaic biome source is remarkably stellar at keeping consistent sizes between all the biomes and equally distributes them too, no matter how many mods you have
+	#
 	#§cNOTE: MosaicBiomeSource is currently in BETA and in active testing. as of now sub-biome support is limited and there is no 3D biome support either
 	#
 	improvedNetherBiomeSource = true
@@ -504,6 +522,11 @@
 		#Prevents those ugly ravines and noodle caves from cutting through the nether's terrain by removing them entirely
 		removeNetherNoodleCaves = true
 
+	#Sub-Biomes Settings
+	[worldSettings.subBiomesSettings]
+		#Enables the tertiary sub-biome for soul sand valleys
+		blackIceGlaciers = true
+
 #Visual & Sound Settings
 [visualAndSoundSettings]
 	#Usually in vanilla the nether fog cannot exceed past 12 chunks, this config removes that limiter
@@ -540,7 +563,7 @@
 	# Default: 0.05
 	# Range: 0.0 ~ 1.7976931348623157E308
 	netherMistMotionMultiplier = 0.05
-	#Makes the nether mist particles disappear faster if you get close enough to them, 
+	#Makes the nether mist particles disappear faster if you get close enough to them,
 	#You may disable this functionality entirely by just setting the value to 0.0
 	# Default: 28.0
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -601,14 +624,14 @@
 	heatDistortionSpeed = 2.0
 	#Minimum distance from the camera that heat distortion starts at
 	# Default: 12.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionMinDistance = 12.0
 	#Maximum distance from the camera that heat distortion reaches its max intensity at
 	# Default: 128.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionMaxDistance = 128.0
 	#Intensity of heat distortion wobbling when close to lava sources
-	# Default: 0.006000000052154064
+	# Default: 0.004000000189989805
 	# Range: 0.0 ~ 1.7976931348623157E308
 	heatDistortionLavaIntensity = 0.006000000052154064
 	#Speed of heat distortion wobbling when close to lava sources
@@ -617,18 +640,18 @@
 	heatDistortionLavaSpeed = 2.0
 	#Minimum distance from the camera that heat distortion starts at when close to lava sources
 	# Default: 0.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	heatDistortionLavaMinDistance = 0.0
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	heatDistortionLavaMinDistance = 4.9E-324
 	#Maximum distance from the camera that heat distortion reaches its max intensity at when close to lava sources
 	# Default: 64.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionLavaMaxDistance = 64.0
-	#How often the game will check around the player for lava heat distortion in ticks 
+	#How often the game will check around the player for lava heat distortion in ticks
 	#§cWARNING: Lower numbers can increase lag especially when paired with high proximity distances to iterate through
-	# Default: 100
+	# Default: 150
 	# Range: > 0
 	heatDistortionLavaCheckPeriod = 100
-	#How far the game will check around the player for heat distortion lava sources 
+	#How far the game will check around the player for heat distortion lava sources
 	#§cWARNING: Increasing the distance can add some latency to performance! as it needs to iterate through all the specified blocks in-range
 	# Default: 2.0
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -653,12 +676,20 @@
 	ectoSlabPetrificationScreenshake = true
 	#Gives every nether biome a custom lightmap that compliments its environment
 	enableNetherBiomeLightmaps = true
+	#Toggle stampede screen shake
+	stampedeScreenshake = true
 	#When the betrayed effect is active, it'll turn all lighting red
-	treacherousCandleRedLights = true
+	ciergeOfTreacheryRedLights = true
 	#When the betrayed effect is active, a dense red fog will appear
-	treacherousCandleFog = true
-	#Treacherous Candle will produce red haze and sparkle particles
-	treacherousCandleParticles = true
+	ciergeOfTreacheryFog = true
+	#Cierge of Treachery will produce red haze and sparkle particles
+	ciergeOfTreacheryParticles = true
+	#Replaces all flame particles with animated ones from Minecraft: Dungeons
+	dungeonsFlameParticles = true
+	#Replaces the ugly fire texture when mobs are burning with particles based on Minecraft: Dungeons
+	improvedBurnParticles = true
+	#Mobs on fire will pulse a glow corresponding to the fire type they are on
+	mobBurningGlow = true
 
 #Game Mechanic Settings
 [gameMechanicSettings]
@@ -676,8 +707,5 @@
 	silverParanormalProtectionDamage = 5.0
 	#Silver armor and weapons will inflict possessed and ghost mobs with slowness
 	silverInflictsParanormalSlowness = true
-	#Turns on various developer loggers, technical information and such for debugging purposes 
-	#I suggest you keep this disabled if you're just a casual player
-	developerMode = false
 	#Pretty self-explanatory; When running beta builds of JNE, a pop-up will appear on screen warning you upon joining worlds
 	showBetaWarningPopUp = false
