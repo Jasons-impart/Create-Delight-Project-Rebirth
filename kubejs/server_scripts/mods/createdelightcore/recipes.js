@@ -408,54 +408,55 @@ if (global.hasAllMods(['createdelightcore', 'create', 'vintageimprovements'])) {
         })
         .id(id('oven_baking/bat_cookie'));
 
-      // 呃呃啊啊: bakeries:paper_cup_cake_paste is missing for now.
-      // [
-      //   [
-      //     'cranberry_muffin',
-      //     'createdelightcore:unbaked_cranberry_muffin',
-      //     'fruitsdelight:cranberry_muffin',
-      //     ['bakeries:paper_cup_cake_paste', 'fruitsdelight:cranberry'],
-      //     'fruitsdelight:cooking/cranberry_muffin',
-      //   ],
-      //   [
-      //     'blueberry_muffin',
-      //     'createdelightcore:unbaked_blueberry_muffin',
-      //     'fruitsdelight:blueberry_muffin',
-      //     ['bakeries:paper_cup_cake_paste', 'fruitsdelight:blueberry'],
-      //     'fruitsdelight:cooking/blueberry_muffin',
-      //   ],
-      //   [
-      //     'monster_muffin',
-      //     'createdelightcore:unbaked_monster_muffin',
-      //     'dungeonsdelight:monster_muffin',
-      //     [
-      //       'bakeries:paper_cup_cake_paste',
-      //       'dungeonsdelight:spider_extract',
-      //       'dungeonsdelight:rotbulb',
-      //     ],
-      //     'dungeonsdelight:monster_cooking/misc/monster_muffin',
-      //   ],
-      // ].forEach(([path, unbaked, muffin, ingredients, recipeId]) => {
-      //   removeIfPresent(recipeId);
-      //
-      //   if (ingredients.length === 2) {
-      //     event.recipes.create.deploying(unbaked, ingredients).id(id(`deploying/${path}`));
-      //   } else {
-      //     event.recipes.create
-      //       .sequenced_assembly(unbaked, ingredients[0], [
-      //         event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[1]]),
-      //         event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[2]]),
-      //       ])
-      //       .loops(1)
-      //       .transitionalItem(ingredients[0])
-      //       .id(id(`sequenced_assembly/${path}`));
-      //   }
-      //
-      //   event.recipes.ratatouille
-      //     .baking(muffin, unbaked)
-      //     .processingTime(100)
-      //     .id(id(`baking/${path}`));
-      // });
+      if (global.hasAllMods(['bakeries', 'fruitsdelight', 'dungeonsdelight'])) {
+        [
+          [
+            'cranberry_muffin',
+            'createdelightcore:unbaked_cranberry_muffin',
+            'fruitsdelight:cranberry_muffin',
+            ['bakeries:paper_cup_cake_paste', 'fruitsdelight:cranberry'],
+            'fruitsdelight:cooking/cranberry_muffin',
+          ],
+          [
+            'blueberry_muffin',
+            'createdelightcore:unbaked_blueberry_muffin',
+            'fruitsdelight:blueberry_muffin',
+            ['bakeries:paper_cup_cake_paste', 'fruitsdelight:blueberry'],
+            'fruitsdelight:cooking/blueberry_muffin',
+          ],
+          [
+            'monster_muffin',
+            'createdelightcore:unbaked_monster_muffin',
+            'dungeonsdelight:monster_muffin',
+            [
+              'bakeries:paper_cup_cake_paste',
+              'dungeonsdelight:spider_extract',
+              'dungeonsdelight:rotbulb',
+            ],
+            'dungeonsdelight:monster_cooking/misc/monster_muffin',
+          ],
+        ].forEach(([path, unbaked, muffin, ingredients, recipeId]) => {
+          removeIfPresent(recipeId);
+
+          if (ingredients.length === 2) {
+            event.recipes.create.deploying(unbaked, ingredients).id(id(`deploying/${path}`));
+          } else {
+            event.recipes.create
+              .sequenced_assembly(unbaked, ingredients[0], [
+                event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[1]]),
+                event.recipes.create.deploying(ingredients[0], [ingredients[0], ingredients[2]]),
+              ])
+              .loops(1)
+              .transitionalItem(ingredients[0])
+              .id(id(`sequenced_assembly/${path}`));
+          }
+
+          event.recipes.ratatouille
+            .baking(muffin, unbaked)
+            .processingTime(100)
+            .id(id(`baking/${path}`));
+        });
+      }
     }
 
     if (global.hasAllMods(['vintagedelight', 'northstar', 'farmersdelight'])) {

@@ -51,6 +51,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       'bakeries:cream_pumpkin_pie_dough',
       'bakeries:integration/create/mixing/foamed_cream',
       'bakeries:integration/create/mixing/butter_cube',
+      'bakeries:soak_coffee_cut_cake_base',
       'bakeries:paper_cup',
       'bakeries:integration/create/milling/flour',
       'bakeries:integration/create/mixing/whole_wheat_dough',
@@ -78,8 +79,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
 
     event.replaceInput({ id: 'bakeries:menu' }, 'minecraft:gray_wool', 'minecraft:item_frame');
     event.replaceInput({}, 'bakeries:bottle_cream', 'bakeries:foamed_cream');
-    // 呃呃啊啊: bakeries:cake_paste_bucket is missing for now.
-    // event.replaceInput({}, 'bakeries:cake_paste_bucket', 'createdelightcore:cake_batter_bucket');
+    event.replaceInput({}, 'bakeries:cake_paste_bucket', 'createdelightcore:cake_batter_bucket');
 
     create
       .mixing('4x bakeries:honey_butter', [
@@ -348,8 +348,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         440,
       ],
       ['bakeries:focaccia_dough', 'bakeries:focaccia', 200, 170, 205, 240],
-      // 呃呃啊啊: bakeries:paper_cup_cake_paste is missing for now.
-      // ['bakeries:paper_cup_cake_paste', 'bakeries:cup_cake', 100, 80, 110, 140],
+      ['bakeries:paper_cup_cake_paste', 'bakeries:cup_cake', 100, 80, 110, 140],
       // 呃呃啊啊: bakeries:yuntui_mooncake is missing for now.
       // ['bakeries:raw_yuntui_mooncake', 'bakeries:yuntui_mooncake', 100, 80, 110, 140],
       ['bakeries:rice_bread_dough', 'bakeries:rice_bread', 100, 80, 110, 140],
@@ -390,29 +389,25 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
     breadKnife('bakeries:toast', '4x bakeries:sliced_toast');
     breadKnife('bakeries:cheese_cocoa_toast', '4x bakeries:sliced_cheese_cocoa_toast');
     breadKnife('bakeries:country_bread', '6x bakeries:country_bread_slice');
-    // 呃呃啊啊: bakeries:sliced_pound_cake is missing for now.
-    // breadKnife('bakeries:pound_cake', '4x bakeries:sliced_pound_cake');
+    breadKnife('bakeries:pound_cake', '4x bakeries:sliced_pound_cake');
 
-    // 呃呃啊啊: bakeries:paper_cup_cake_paste is missing for now.
-    // create
-    //   .filling('bakeries:paper_cup_cake_paste', [
-    //     'bakeries:paper_cup',
-    //     Fluid.of('createdelightcore:cake_batter', 250),
-    //   ])
-    //   .id(id('filling/paper_cup_cake_paste'));
+    create
+      .filling('bakeries:paper_cup_cake_paste', [
+        'bakeries:paper_cup',
+        Fluid.of('createdelightcore:cake_batter', 250),
+      ])
+      .id(id('filling/paper_cup_cake_paste'));
 
-    // 呃呃啊啊: bakeries:cut_cake_base is missing for now.
-    // if (global.hasMod('ratatouille')) {
-    //   breadKnife('ratatouille:cake_base', '2x bakeries:cut_cake_base');
-    // }
+    if (global.hasMod('ratatouille')) {
+      breadKnife('ratatouille:cake_base', '2x bakeries:cut_cake_base');
+    }
 
-    // 呃呃啊啊: bakeries:soak_coffee_cut_cake_base and bakeries:cut_cake_base are missing for now.
-    // create
-    //   .filling('bakeries:soak_coffee_cut_cake_base', [
-    //     'bakeries:cut_cake_base',
-    //     Fluid.of('createdelightcore:espresso_fluid', 250),
-    //   ])
-    //   .id(id('filling/soak_coffee_cut_cake_base'));
+    create
+      .filling('bakeries:soak_coffee_cut_cake_base', [
+        'bakeries:cut_cake_base',
+        Fluid.of('createdelightcore:espresso_fluid', 250),
+      ])
+      .id(id('filling/soak_coffee_cut_cake_base'));
 
     if (global.hasMod('cosmopolitan')) {
       create
@@ -468,26 +463,23 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       )
       .mode(2)
       .id(id('curving/mould_cheese_cocoa_toast'));
-    // 呃呃啊啊: bakeries:pound_cake is missing for now.
-    // vintageimprovements
-    //   .curving(['bakeries:mould', 'bakeries:pound_cake'], 'bakeries:mould_pound_cake')
-    //   .mode(2)
-    //   .id(id('curving/mould_pound_cake'));
-    // 呃呃啊啊: bakeries:mould_two is missing for now.
-    // vintageimprovements
-    //   .curving(['bakeries:mould_two', 'bakeries:basque_cake'], 'bakeries:mould_basque_cake')
-    //   .mode(2)
-    //   .id(id('curving/mould_basque_cake'));
+    vintageimprovements
+      .curving(['bakeries:mould', 'bakeries:pound_cake'], 'bakeries:mould_pound_cake')
+      .mode(2)
+      .id(id('curving/mould_pound_cake'));
+    vintageimprovements
+      .curving(['bakeries:mould_two', 'bakeries:basque_cake'], 'bakeries:mould_basque_cake')
+      .mode(2)
+      .id(id('curving/mould_basque_cake'));
     vintageimprovements
       .curving('3x bakeries:egg_tart_shell', 'createdelightcore:puff_pastry')
       .mode(1)
       .id(id('curving/egg_tart_shell'));
 
-    // 呃呃啊啊: bakeries:paper_cup is missing for now.
-    // kubejs
-    //   .shaped('4x bakeries:paper_cup', ['   ', 'A A', ' A '], {
-    //     A: 'bakeries:silicone_paper',
-    //   })
-    //   .id(id('crafting/paper_cup'));
+    kubejs
+      .shaped('4x bakeries:paper_cup', ['   ', 'A A', ' A '], {
+        A: 'bakeries:silicone_paper',
+      })
+      .id(id('crafting/paper_cup'));
   });
 }
