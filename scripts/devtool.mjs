@@ -19,6 +19,28 @@ const integrityManifestPath = path.join(
 );
 const globalPackageName = '@bro-know-my/packwiz';
 
+function loadLocalCurseForgeKey() {
+  if (process.env.CURSEFORGE_API_KEY?.trim()) return;
+  const localConfig = path.join(repoRoot, '.pw', 'config.local.toml');
+  if (!fs.existsSync(localConfig)) return;
+
+  let section = '';
+  for (const line of fs.readFileSync(localConfig, 'utf8').split(/\r?\n/)) {
+    const header = line.match(/^\s*\[([^\]]+)\]\s*(?:#.*)?$/);
+    if (header) {
+      section = header[1];
+      continue;
+    }
+    if (section !== 'curseforge') continue;
+    const entry = line.match(/^\s*api-key\s*=\s*("(?:[^"\\]|\\.)*")\s*(?:#.*)?$/);
+    if (!entry) continue;
+    const key = JSON.parse(entry[1]);
+    if (key.trim()) process.env.CURSEFORGE_API_KEY = key.trim();
+  }
+}
+
+loadLocalCurseForgeKey();
+
 const commands = new Set([
   'help',
   'menu',

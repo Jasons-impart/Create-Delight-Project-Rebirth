@@ -5,3 +5,5 @@ template-files = "pack.toml,icon.png,server-icon.png,start.bat,start.sh,variable
 
 [export]
 include-metadata = true
+
+# 本机 CurseForge key 请填在被 Git 忽略的 .pw/config.local.toml，交由 devtool 加载。
