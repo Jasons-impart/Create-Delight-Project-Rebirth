@@ -1,0 +1,16 @@
+name = "Create Functional Storage Old Copper Patch"
+filename = "old_copper_for_cfs.zip"
+side = "both"
+
+pin = true
+
+[download]
+url = "https://mediafilez.forgecdn.net/files/8131/914/%E3%80%90%E6%97%A7%E9%93%9C%E8%A1%A5%E4%B8%81service_pack%E3%80%91old_copper_for_cfs.zip"
+hash-format = "sha1"
+hash = "1295e7ed850028ad306ebb1db7e99933f62731b7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8131914
+project-id = 1543940
