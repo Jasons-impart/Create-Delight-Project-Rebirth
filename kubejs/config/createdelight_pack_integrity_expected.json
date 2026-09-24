@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T13:10:41Z",
+  "generatedAt": "2026-09-23T06:34:26Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -313,6 +313,7 @@
       "simplebedrockmodel",
       "simplehats",
       "smartbrainlib",
+      "solcarrot",
       "someassemblyrequired",
       "sophisticatedbackpacks",
       "sophisticatedbackpackscreateintegration",
@@ -2711,6 +2712,14 @@
       "filename": "simplehats-neoforge-1.21.1-0.4.0.jar",
       "modIds": [
         "simplehats"
+      ]
+    },
+    {
+      "side": "common",
+      "metadata": "mods/common/solcarrot.pw.toml",
+      "filename": "solcarrot-1.21.1-1.16.6.jar",
+      "modIds": [
+        "solcarrot"
       ]
     },
     {
