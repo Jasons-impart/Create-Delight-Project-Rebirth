@@ -1,3 +1,5 @@
+heightAboveGroundLimit = -1
+
 [air]
 	# Default: 450
 	# Range: > 1

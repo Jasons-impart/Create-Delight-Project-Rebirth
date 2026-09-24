@@ -1,9 +1,26 @@
-# Pack defaults migrated from 0488; NeoForge 1.21.1 reads SERVER configs here.
-# A world/serverconfig file of the same name takes precedence.
-"defaultInfinite" = true
-"finiteAmountBase" = 8000
-"importantInfo" = true
-"maxExtractorsPerVein" = 0
-"veinFinderCd" = 100
-"veinFinderFar" = 25
-"veinFinderNear" = 1
+#Veins infinite by default
+defaultInfinite = true
+#Finite vein base amount
+# Default: 1000
+# Range: > 1
+finiteAmountBase = 8000
+#IMPORTANT NOTICE:
+#You can add more entries using KubeJS
+#https://github.com/tom5454/Create-Ore-Excavation#kubejs
+importantInfo = true
+#Max number of extractor per ore vein, Set to 0 for infinite
+# Default: 0
+# Range: 0 ~ 64
+maxExtractorsPerVein = 0
+#Vein Finder use cooldown in ticks
+# Default: 100
+# Range: 10 ~ 1000
+veinFinderCd = 100
+#Vein Finder accuracy for 'Found traces of ...'
+# Default: 25
+# Range: 1 ~ 1000
+veinFinderFar = 25
+#Vein Finder 'Found Nearby' range in chunks
+# Default: 1
+# Range: 1 ~ 8
+veinFinderNear = 1
