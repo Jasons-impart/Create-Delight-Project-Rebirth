@@ -17,7 +17,7 @@ permissions:
   contents: read
 
 env:
-  BKMPW_PACKAGE: '@bro-know-my/packwiz@0.2.2'
+  BKMPW_PACKAGE: '@bro-know-my/packwiz@0.2.4'
 
 jobs:
   metadata:
@@ -154,7 +154,8 @@ jobs:
           node scripts/devtool.mjs refresh
       - name: 导出客户端 CurseForge 安装包
         env:
-          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+          # bkmpw 读取此环境变量；值来自 Studio 查询 key，不是 CF 平台发布 token。
+          CURSEFORGE_API_KEY: ${{ secrets.STUDIO_CURSEFORGE_API_KEY }}
         run: bkmpw export-curseforge . "artifacts/[Client]${MODPACK_NAME}-${MODPACK_VERSION}.zip" client
       - name: 导出客户端全量包
         run: bkmpw export-client . "artifacts/[Client-Full]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
@@ -162,36 +163,8 @@ jobs:
         run: bkmpw export-server . "artifacts/[Server]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
       - name: 导出 bkmpw 下载型服务端安装包
         run: bkmpw export-server-installer . "artifacts/[Server-Installer]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
-      - name: 验证四种发布包的更新元数据
-        run: |
-          python3 - <<'PY'
-          import os
-          from pathlib import Path
-          from zipfile import ZipFile
-
-          name = os.environ["MODPACK_NAME"]
-          version = os.environ["MODPACK_VERSION"]
-          release_info = Path("artifacts/release-info.json").read_bytes()
-          packages = [
-              ("client", Path(f"artifacts/[Client]{name}-{version}.zip")),
-              ("client", Path(f"artifacts/[Client-Full]{name}-{version}.zip")),
-              ("server", Path(f"artifacts/[Server]{name}-{version}.zip")),
-              ("server", Path(f"artifacts/[Server-Installer]{name}-{version}.zip")),
-          ]
-          for side, path in packages:
-              with ZipFile(path) as archive:
-                  entries = [entry for entry in archive.namelist() if not entry.endswith("/")]
-                  metadata = [entry for entry in entries if entry.endswith(".pw.toml")]
-                  if not metadata:
-                      raise SystemExit(f"{path.name}: missing .pw.toml metadata")
-                  wrong_side = "server" if side == "client" else "client"
-                  if any(f"/mods/{wrong_side}/" in f"/{entry}" for entry in metadata):
-                      raise SystemExit(f"{path.name}: contains {wrong_side}-only metadata")
-                  info = [entry for entry in entries if entry.endswith("config/createdelight_release_info.json")]
-                  if len(info) != 1 or archive.read(info[0]) != release_info:
-                      raise SystemExit(f"{path.name}: missing or mismatched release info")
-                  print(f"{path.name}: {len(metadata)} metadata files, release info verified")
-          PY
+      - name: 验证发布包内容
+        run: python3 scripts/validate-release-artifacts.py artifacts "$MODPACK_NAME" "$MODPACK_VERSION" --curseforge
       - uses: actions/upload-artifact@v4
         with:
           name: release-packages
@@ -229,7 +202,7 @@ jobs:
             title="$GITHUB_REF_NAME 测试版"
             args+=(--prerelease)
           fi
-          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --title "$title" "${args[@]}"
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --title "$title" --generate-notes "${args[@]}"
       - uses: actions/download-artifact@v4
         with:
           name: release-packages
@@ -255,3 +228,5 @@ jobs:
               sleep 15
             done
           done
+      - name: 公开 Release
+        run: gh release edit "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --draft=false

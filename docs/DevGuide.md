@@ -373,6 +373,87 @@ roots/server/   # 只进入服务端全量包和下载型服务端安装包根�
 
 Modrinth export 已移除。导出产物默认不提交。
 
+## CI 自动发版
+
+`.github/workflows/release.yml` 提供 tag 触发的自动发版。tag 只负责标记"这个状态发版了"，代码从哪条分支来由下面的分支模型决定。
+
+### 分支模型
+
+- `main`：主线开发分支，功能稳定后从这里打 tag 发正式版。
+- `test-*`：测试分支，push 触发构建 artifacts，不发版。
+- `release-vA.B.C.x`：维护分支。给已发布的正式版打补丁时，从对应 tag 切出，只 cherry-pick hotfix，保证补丁不携带测试版新功能。
+
+### 发版操作
+
+版本号格式为 `vA.B.C.D` 四位（如 `v2.0.0.1`），D 位为补丁号。测试版在其后追加 `-testN`（如 `v2.0.0.0-test1`、`-test2` 递增）。首个版本从 `v2.0.0.0` 起。
+
+正式版 / 测试版（main 或 test 分支）：
+
+1. `devtool.bat set-version vA.B.C.D[-testN]`：一次改 `pack/pack.toml`、`config/bcc-common.toml`、`config/fancymenu/options.txt` 三处
+2. 提交并推对应分支
+3. `git tag <同一版本号> && git push origin <tag>`
+
+tag 名必须与 `pack/pack.toml` `version` 完全一致，否则 CI 在 metadata 阶段失败。
+
+hotfix（维护分支）：
+
+```bash
+git checkout -b release-v2.0.0.x v2.0.0.1   # 从已发布 tag 切出
+git cherry-pick <fix>                       # 只挑补丁，不合整分支
+devtool.bat set-version v2.0.0.2            # 并提交
+git tag v2.0.0.2 && git push origin v2.0.0.2 release-v2.0.0.x
+```
+
+hotfix 合回 main：补丁本身通常通过同一 commit 或等价修改进 main，避免下个正式版丢修复。
+
+### 触发方式
+
+- `vA.B.C.D` tag → 自动公开正式版 Release + 4 个 zip 资产 + `release-info.json`
+- `vA.B.C.D-testN` tag → 自动公开 prerelease Release
+- `test-*` 分支 push / `workflow_dispatch` → 只构建 artifacts 不发版，版本号取 `pack.toml` 去掉 `-testN` 后加 `-test-build-<run_number>`
+- `main` 分支 push → 同步托管文件并更新 CI 缓存，不构建发布包
+
+tag 不区分所在分支，`main` 和 `release-*` 上打的 tag 都会触发同一流程。CI 先创建草稿并上传所有资产，成功后自动公开。若 tag 对应的 Release 已公开，workflow 会失败退出；已存在的草稿 Release 会被复用并覆盖上传资产。
+
+四个 zip 包照常构建并上传 GitHub Releases；工作流不向 CurseForge 平台上传。客户端安装包采用 CurseForge 格式，构建它需本项目专用的 Actions secret `STUDIO_CURSEFORGE_API_KEY`。
+
+CI 缓存保存 `mods/*.jar` 和 bkmpw 的 `packwiz.json` 托管文件清单。测试分支和 tag 构建优先恢复主分支缓存，再由 `install-files-headless` 校验、清理已移除的托管文件并补下载；缓存失效时会重新下载。缓存只用于加速构建，不进入 Git 提交或发布包源码。
+
+### 流程
+
+```
+metadata：读 pack/pack.toml → 校验版本格式 → tag 时校验 tag 名 == version → 判定渠道（含 -test → 测试版）
+build：npm i -g bkmpw(固定 0.2.4，支持 include-metadata) → devtool set-version 注入版本号 → prepare-pack
+       → install-files-headless → check → generate-integrity-manifest
+       → git diff 确认清单与提交一致 → 生成 release-info.json → 4 种导出 → upload-artifact
+release(仅 tag)：gh release create --draft --generate-notes → 上传 zip 和 release-info.json（失败重试 5 次）→ 自动公开
+```
+
+`release-info.json` 是更新器远程读取的固定文件名 Release 资产，测试分支构建时也会随 CI artifact 保存。同一内容在构建时写入 `config/createdelight_release_info.json`，供安装后的更新器读取本地版本。字段包括 `schemaVersion`、`version`、`commitId`（完整的构建源 Git SHA）、`minecraftVersion` 和 `neoforgeVersion`。`version` 使用本次构建版本号；NeoForge 版本来自 `pack/pack.toml`。发版时由 CI 生成，不在源码中手工维护。
+
+### 版本号位置
+
+三处均由 `devtool set-version` 统一改写，不要手改：
+
+- `pack/pack.toml` `version` — packwiz 元数据，权威源
+- `config/bcc-common.toml` `modpackVersion` — BCC 联机版本显示
+- `config/fancymenu/options.txt` `custom_window_title` — 窗口标题，格式为 `<前缀>-<版本号>`；前缀（如 `齿轮盛宴R-早期开发版本`）手改，命令只替换尾部版本段
+
+### Actions 配置
+
+- `STUDIO_CURSEFORGE_API_KEY` — 构建 CurseForge 格式客户端安装包时需要的本项目仓库 secret。工作流只在导出步骤将它映射为 bkmpw 读取的 `CURSEFORGE_API_KEY` 环境变量；不会向 CurseForge 平台上传。
+- `CURSEFORGE_API_KEY` — CurseForge 平台发布 token；当前工作流没有平台上传步骤，也不读取这个 secret。
+
+本地测试时，在被 Git 忽略的 `.pw/config.local.toml` 中填写 `[curseforge] api-key`，通过 `devtool.bat` 或 `./devtool.sh` 导出；devtool 会把它传给 bkmpw 的环境变量。不要把真实 key 写入受跟踪且会随包导出的 `.pw/config.toml`。直接运行 `bkmpw` 时不会读取本地专用文件，需自行设置环境变量。
+
+### 待办（后续版本）
+
+- CurseForge 平台自动上传（若以后实现，使用发布 token `CURSEFORGE_API_KEY`；不要复用供 bkmpw 查询的 `STUDIO_CURSEFORGE_API_KEY`）
+- 其他分发平台（Modrinth 等）
+- 增量补丁：走 GH compare API 下发仓库变动，不进 CI
+- 限制 `vA.B.C.D` 正式 tag 只能落在 `main` / `release-*` 分支
+- AI 生成版本概要（`AI_API_KEY` / `AI_BASE_URL` / `AI_MODEL`，OpenAI-compatible 接口）
+
 ## 协议与第三方声明
 
 除第三方声明另有规定外，本项目自有源码、KubeJS 脚本、bkmpw/packwiz-style 元数据、配置文件、数据文件、配方定义、构建脚本和其它文本实现文件允许公开查看、学习、修改和非商业再分发。
