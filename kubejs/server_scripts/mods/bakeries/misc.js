@@ -1,5 +1,5 @@
 if (global.hasMod('bakeries')) {
-  // 呃呃啊啊: bakeries:paper_cup is missing for now.
+  // 呃呃啊啊: bakeries:paper_cup exists again, but only as an item, not a block.
   // BlockEvents.rightClicked('bakeries:paper_cup', (event) => {
   //   const { player, hand, block } = event;
   //   if (!player.getItemInHand(hand).is('createdelightcore:cake_batter_bucket')) {
@@ -17,7 +17,7 @@ if (global.hasMod('bakeries')) {
   // });
 
   if (global.hasMod('ratatouille')) {
-    // 呃呃啊啊: bakeries:soak_coffee_cut_cake_base is missing for now.
+    // 呃呃啊啊: bakeries:soak_coffee_cut_cake_base exists again, but only as an item, not a block.
     // BlockEvents.rightClicked('bakeries:soak_coffee_cut_cake_base', (event) => {
     //   const { player, block, server } = event;
     //   if (!player.mainHandItem.is('ratatouille:cocoa_powder')) {
