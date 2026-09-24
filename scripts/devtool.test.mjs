@@ -42,7 +42,16 @@ else if (args[0] === '--help') {
   }
   fs.writeFileSync(
     path.join(root, 'pack/pack.toml'),
-    '[versions]\nminecraft = "1.21.1"\nneoforge = "21.1.242"\n'
+    'name = "x"\nversion = "v0.1.0"\n[versions]\nminecraft = "1.21.1"\nneoforge = "21.1.242"\n'
+  );
+  fs.mkdirSync(path.join(root, 'config/fancymenu'), { recursive: true });
+  fs.writeFileSync(
+    path.join(root, 'config/bcc-common.toml'),
+    '[general]\n\tmodpackVersion = "Alpha"\n'
+  );
+  fs.writeFileSync(
+    path.join(root, 'config/fancymenu/options.txt'),
+    "S:custom_window_title = '齿轮盛宴R-早期开发版本';\n"
   );
   fs.writeFileSync(
     path.join(root, 'pack/variables.txt'),
@@ -137,6 +146,43 @@ test('four release commands forward arguments and generate only required manifes
     const result = f.run(['export-client']);
     assert.notEqual(result.status, 0);
     assert.match(result.stderr, /drifted/);
+    assert.deepEqual(f.calls(), []);
+  } finally {
+    f.close();
+  }
+});
+
+test('set-version rewrites all three version locations and validates format', () => {
+  const f = fixture();
+  const read = (rel) => fs.readFileSync(path.join(f.root, rel), 'utf8');
+  try {
+    let result = f.run(['set-version', 'v2.0.0.0-test1']);
+    assert.equal(result.status, 0, result.stderr);
+    assert.match(read('pack/pack.toml'), /^version = "v2\.0\.0\.0-test1"$/m);
+    assert.match(read('config/bcc-common.toml'), /^\tmodpackVersion = "v2\.0\.0\.0-test1"$/m);
+    assert.match(
+      read('config/fancymenu/options.txt'),
+      /^S:custom_window_title = '齿轮盛宴R-早期开发版本-v2\.0\.0\.0-test1';$/m
+    );
+    result = f.run(['set-version', 'v2.0.0.1']);
+    assert.equal(result.status, 0, result.stderr);
+    assert.match(
+      read('config/fancymenu/options.txt'),
+      /^S:custom_window_title = '齿轮盛宴R-早期开发版本-v2\.0\.0\.1';$/m
+    );
+    for (const bad of ['2.0.0.0', 'v2.0.0', 'v2.0.0.0-beta1', 'v2.0.0.0-test']) {
+      result = f.run(['set-version', bad]);
+      assert.notEqual(result.status, 0, bad);
+      assert.match(result.stderr, /不符合/);
+    }
+    fs.writeFileSync(path.join(f.root, 'config/fancymenu/options.txt'), 'missing title field\n');
+    const packBeforeFailure = read('pack/pack.toml');
+    const bccBeforeFailure = read('config/bcc-common.toml');
+    result = f.run(['set-version', 'v2.0.0.2']);
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /找不到版本字段/);
+    assert.equal(read('pack/pack.toml'), packBeforeFailure);
+    assert.equal(read('config/bcc-common.toml'), bccBeforeFailure);
     assert.deepEqual(f.calls(), []);
   } finally {
     f.close();
