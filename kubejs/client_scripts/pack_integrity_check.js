@@ -20,6 +20,11 @@
     'local/createdelight_pack_integrity_state.json'
   );
   const RECOMMENDED_JAVA_MAJOR_VERSION = 21;
+  const EARLY_TEST_NOTICE_VERSION = 'early_test_2026_09';
+  const EARLY_TEST_NOTICE_TEXT =
+    '当前是非常早期的测试版本，内容和流程仍在制作中。\n' +
+    '问题可能很多，包括任务或流程断连、无法继续游玩、崩溃等；当前体验不代表最终质量。\n' +
+    '遇到问题请反馈：https://cdpr.jsi-team.com/feedback/';
   const PACK_INTEGRITY_WARNING_TEXT = '检测到整合包模组列表与发布版本不一致。\n请知悉：';
   const PACK_INTEGRITY_WARNING_HIGHLIGHT_TEXT =
     '我们不保证这种情况下整合包仍能稳定游玩，也没有能力处理这种情况下的问题求助和bug反馈。';
@@ -33,6 +38,12 @@
     warningOpen: false,
     titleScreenHandled: false,
     warningComponent: PackIntegrityComponent.literal(PACK_INTEGRITY_WARNING_TEXT),
+  };
+
+  const earlyTestNoticeState = {
+    shouldWarn: false,
+    warningOpen: false,
+    titleScreenHandled: false,
   };
 
   const javaRuntimeState = {
@@ -73,6 +84,7 @@
   const writePackIntegrityState = (result) => {
     const currentState = readPackIntegrityState();
     writePackIntegrityJson(PACK_INTEGRITY_STATE_PATH, {
+      acknowledgedEarlyTestNoticeVersion: currentState.acknowledgedEarlyTestNoticeVersion,
       acknowledgedJavaRuntimeFingerprint: currentState.acknowledgedJavaRuntimeFingerprint,
       acknowledgedJavaRuntimeAt: currentState.acknowledgedJavaRuntimeAt,
       javaRuntime: currentState.javaRuntime,
@@ -87,6 +99,7 @@
   const writeJavaRuntimeState = (result) => {
     const currentState = readPackIntegrityState();
     writePackIntegrityJson(PACK_INTEGRITY_STATE_PATH, {
+      acknowledgedEarlyTestNoticeVersion: currentState.acknowledgedEarlyTestNoticeVersion,
       acknowledgedFingerprint: currentState.acknowledgedFingerprint,
       acknowledgedAt: currentState.acknowledgedAt,
       side: currentState.side,
@@ -103,6 +116,12 @@
         source: result.source,
       },
     });
+  };
+
+  const writeEarlyTestNoticeState = () => {
+    const currentState = readPackIntegrityState();
+    currentState.acknowledgedEarlyTestNoticeVersion = EARLY_TEST_NOTICE_VERSION;
+    writePackIntegrityJson(PACK_INTEGRITY_STATE_PATH, currentState);
   };
 
   const normalizePackIntegrityList = (value) => {
@@ -423,34 +442,63 @@
     updateJavaRuntimeWarningState(javaRuntimeState.result);
   }
 
+  earlyTestNoticeState.shouldWarn =
+    readPackIntegrityState().acknowledgedEarlyTestNoticeVersion !== EARLY_TEST_NOTICE_VERSION;
+
+  const showWarningScreen = (client, previousScreen, state, title, message, onConfirmed) => {
+    state.titleScreenHandled = true;
+    state.warningOpen = true;
+    console.info(`[Create Delight Warning] Opening ${title}.`);
+    client.setScreen(
+      new PackIntegrityConfirmScreen(
+        (confirmed) => {
+          if (confirmed) {
+            onConfirmed();
+          }
+          state.shouldWarn = false;
+          state.warningOpen = false;
+          client.setScreen(previousScreen);
+        },
+        PackIntegrityComponent.literal(title),
+        message,
+        PackIntegrityComponent.literal('我已知悉'),
+        PackIntegrityComponent.literal('关闭')
+      )
+    );
+  };
+
   RenderJSEvents.onScreenPostRender((event) => {
+    if (
+      earlyTestNoticeState.shouldWarn &&
+      !earlyTestNoticeState.warningOpen &&
+      !earlyTestNoticeState.titleScreenHandled &&
+      isTitleScreen(event.screen)
+    ) {
+      showWarningScreen(
+        event.client,
+        event.screen,
+        earlyTestNoticeState,
+        '早期测试版本说明',
+        PackIntegrityComponent.literal(EARLY_TEST_NOTICE_TEXT),
+        writeEarlyTestNoticeState
+      );
+      return;
+    }
+
     if (
       javaRuntimeState.shouldWarn &&
       !javaRuntimeState.warningOpen &&
       !javaRuntimeState.titleScreenHandled &&
       isTitleScreen(event.screen)
     ) {
-      const client = event.client;
-      const previousScreen = event.screen;
-      javaRuntimeState.titleScreenHandled = true;
-      javaRuntimeState.warningOpen = true;
-
-      const warningScreen = new PackIntegrityConfirmScreen(
-        (confirmed) => {
-          if (confirmed) {
-            writeJavaRuntimeState(javaRuntimeState.result);
-          }
-          javaRuntimeState.shouldWarn = false;
-          javaRuntimeState.warningOpen = false;
-          client.setScreen(previousScreen);
-        },
-        PackIntegrityComponent.literal('Java 版本不推荐'),
+      showWarningScreen(
+        event.client,
+        event.screen,
+        javaRuntimeState,
+        'Java 版本不推荐',
         javaRuntimeState.warningComponent,
-        PackIntegrityComponent.literal('我已知悉'),
-        PackIntegrityComponent.literal('关闭')
+        () => writeJavaRuntimeState(javaRuntimeState.result)
       );
-
-      client.setScreen(warningScreen);
       return;
     }
 
@@ -463,26 +511,13 @@
       return;
     }
 
-    const client = event.client;
-    const previousScreen = event.screen;
-    packIntegrityState.titleScreenHandled = true;
-    packIntegrityState.warningOpen = true;
-
-    const warningScreen = new PackIntegrityConfirmScreen(
-      (confirmed) => {
-        if (confirmed) {
-          writePackIntegrityState(packIntegrityState.result);
-        }
-        packIntegrityState.shouldWarn = false;
-        packIntegrityState.warningOpen = false;
-        client.setScreen(previousScreen);
-      },
-      PackIntegrityComponent.literal('整合包模组列表已改变'),
+    showWarningScreen(
+      event.client,
+      event.screen,
+      packIntegrityState,
+      '整合包模组列表已改变',
       packIntegrityState.warningComponent,
-      PackIntegrityComponent.literal('我已知悉'),
-      PackIntegrityComponent.literal('关闭')
+      () => writePackIntegrityState(packIntegrityState.result)
     );
-
-    client.setScreen(warningScreen);
   });
 })();
