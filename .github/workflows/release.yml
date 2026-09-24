@@ -1,0 +1,257 @@
+name: 发布版本
+
+on:
+  push:
+    branches:
+      - main
+      - test-*
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  BKMPW_PACKAGE: '@bro-know-my/packwiz@0.2.2'
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      modpack_name: ${{ steps.read.outputs.name }}
+      modpack_version: ${{ steps.version.outputs.version }}
+      mc_version: ${{ steps.read.outputs.mc }}
+      neoforge_version: ${{ steps.read.outputs.neoforge }}
+      is_stable_release: ${{ steps.version.outputs.is_stable }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pack/pack.toml
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: 读取 pack 信息
+        id: read
+        run: |
+          name=$(grep -m1 '^name' pack/pack.toml | cut -d'"' -f2)
+          version=$(grep -m1 '^version' pack/pack.toml | cut -d'"' -f2)
+          mc=$(grep -m1 '^minecraft' pack/pack.toml | cut -d'"' -f2)
+          neoforge=$(grep -m1 '^neoforge' pack/pack.toml | cut -d'"' -f2)
+          echo "name=$name" >> $GITHUB_OUTPUT
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "mc=$mc" >> $GITHUB_OUTPUT
+          echo "neoforge=$neoforge" >> $GITHUB_OUTPUT
+      - name: 计算发布版本号与渠道
+        id: version
+        env:
+          PACK_VERSION: ${{ steps.read.outputs.version }}
+        run: |
+          set -euo pipefail
+          VERSION="$PACK_VERSION"
+          if [[ ! "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(-test[0-9]+)?$ ]]; then
+            echo "pack/pack.toml version '$VERSION' 不符合 vA.B.C.D 或 vA.B.C.D-testN 格式" >&2
+            exit 1
+          fi
+          IS_STABLE=true
+          if [[ "$GITHUB_REF_TYPE" == "tag" ]]; then
+            if [[ "$GITHUB_REF_NAME" != "$VERSION" ]]; then
+              echo "tag '$GITHUB_REF_NAME' 与 pack/pack.toml version '$VERSION' 不一致，先运行 devtool set-version 并提交" >&2
+              exit 1
+            fi
+            [[ "$VERSION" == *-test* ]] && IS_STABLE=false
+          else
+            VERSION="${VERSION%-test*}-test-build-${GITHUB_RUN_NUMBER}"
+            IS_STABLE=false
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "is_stable=$IS_STABLE" >> $GITHUB_OUTPUT
+
+  cache-seed:
+    needs: metadata
+    if: github.event_name == 'push' && github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: 安装 bkmpw
+        run: npm install -g ${{ env.BKMPW_PACKAGE }}
+      - name: 展开本地发布文件并刷新索引
+        run: node scripts/devtool.mjs prepare-pack
+      - uses: actions/cache@v4
+        id: modjar-cache
+        with:
+          path: |
+            mods/*.jar
+            packwiz.json
+          key: mods-jars-${{ hashFiles('mods/**/*.pw.toml') }}
+          restore-keys: mods-jars-
+      - name: 同步托管文件（仅用于种缓存）
+        run: bkmpw install-files-headless . 3 10
+
+  build:
+    needs: metadata
+    if: github.event_name != 'push' || github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      MODPACK_VERSION: ${{ needs.metadata.outputs.modpack_version }}
+      MODPACK_NAME: ${{ needs.metadata.outputs.modpack_name }}
+      MC_VERSION: ${{ needs.metadata.outputs.mc_version }}
+      NEOFORGE_VERSION: ${{ needs.metadata.outputs.neoforge_version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: 安装 bkmpw
+        run: npm install -g ${{ env.BKMPW_PACKAGE }}
+      - name: 注入构建版本号
+        run: node scripts/devtool.mjs set-version "${MODPACK_VERSION}"
+      - name: 展开本地发布文件并刷新索引
+        run: node scripts/devtool.mjs prepare-pack
+      - uses: actions/cache@v4
+        id: modjar-cache
+        with:
+          path: |
+            mods/*.jar
+            packwiz.json
+          key: mods-jars-${{ hashFiles('mods/**/*.pw.toml') }}
+          restore-keys: mods-jars-
+      - name: 同步托管文件
+        run: bkmpw install-files-headless . 3 10
+      - name: 检查仓库结构
+        run: node scripts/devtool.mjs check
+      - name: 生成完整性校验清单并确认与提交一致
+        run: |
+          node scripts/devtool.mjs generate-integrity-manifest
+          if ! git diff --exit-code -- kubejs/config/createdelight_pack_integrity_expected.json; then
+            echo "完整性清单与提交内容不一致，请在本地运行 devtool generate-integrity-manifest 后提交" >&2
+            exit 1
+          fi
+      - name: 生成更新器发版信息
+        run: |
+          mkdir -p artifacts
+          jq -n \
+            --arg version "$MODPACK_VERSION" \
+            --arg commitId "$GITHUB_SHA" \
+            --arg minecraftVersion "$MC_VERSION" \
+            --arg neoforgeVersion "$NEOFORGE_VERSION" \
+            '{schemaVersion: 1, version: $version, commitId: $commitId, minecraftVersion: $minecraftVersion, neoforgeVersion: $neoforgeVersion}' \
+            > artifacts/release-info.json
+          cp artifacts/release-info.json config/createdelight_release_info.json
+          node scripts/devtool.mjs refresh
+      - name: 导出客户端 CurseForge 安装包
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: bkmpw export-curseforge . "artifacts/[Client]${MODPACK_NAME}-${MODPACK_VERSION}.zip" client
+      - name: 导出客户端全量包
+        run: bkmpw export-client . "artifacts/[Client-Full]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
+      - name: 导出开箱即用服务端包
+        run: bkmpw export-server . "artifacts/[Server]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
+      - name: 导出 bkmpw 下载型服务端安装包
+        run: bkmpw export-server-installer . "artifacts/[Server-Installer]${MODPACK_NAME}-${MODPACK_VERSION}.zip"
+      - name: 验证四种发布包的更新元数据
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          name = os.environ["MODPACK_NAME"]
+          version = os.environ["MODPACK_VERSION"]
+          release_info = Path("artifacts/release-info.json").read_bytes()
+          packages = [
+              ("client", Path(f"artifacts/[Client]{name}-{version}.zip")),
+              ("client", Path(f"artifacts/[Client-Full]{name}-{version}.zip")),
+              ("server", Path(f"artifacts/[Server]{name}-{version}.zip")),
+              ("server", Path(f"artifacts/[Server-Installer]{name}-{version}.zip")),
+          ]
+          for side, path in packages:
+              with ZipFile(path) as archive:
+                  entries = [entry for entry in archive.namelist() if not entry.endswith("/")]
+                  metadata = [entry for entry in entries if entry.endswith(".pw.toml")]
+                  if not metadata:
+                      raise SystemExit(f"{path.name}: missing .pw.toml metadata")
+                  wrong_side = "server" if side == "client" else "client"
+                  if any(f"/mods/{wrong_side}/" in f"/{entry}" for entry in metadata):
+                      raise SystemExit(f"{path.name}: contains {wrong_side}-only metadata")
+                  info = [entry for entry in entries if entry.endswith("config/createdelight_release_info.json")]
+                  if len(info) != 1 or archive.read(info[0]) != release_info:
+                      raise SystemExit(f"{path.name}: missing or mismatched release info")
+                  print(f"{path.name}: {len(metadata)} metadata files, release info verified")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-packages
+          path: |
+            artifacts/*.zip
+            artifacts/release-info.json
+          if-no-files-found: error
+
+  release:
+    needs: [metadata, build]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: github.ref_type == 'tag'
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MODPACK_VERSION: ${{ needs.metadata.outputs.modpack_version }}
+      IS_STABLE: ${{ needs.metadata.outputs.is_stable_release }}
+    steps:
+      - name: 创建或确认草稿 Release
+        run: |
+          set -euo pipefail
+          if gh release view "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --json isDraft >/dev/null 2>&1; then
+            is_draft=$(gh release view "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --json isDraft --jq .isDraft)
+            if [[ "$is_draft" != "true" ]]; then
+              echo "Release $GITHUB_REF_NAME is already public" >&2
+              exit 1
+            fi
+            exit 0
+          fi
+          title="$GITHUB_REF_NAME 正式版"
+          args=(--draft)
+          if [[ "$IS_STABLE" != "true" ]]; then
+            title="$GITHUB_REF_NAME 测试版"
+            args+=(--prerelease)
+          fi
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --title "$title" "${args[@]}"
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-packages
+          path: release-assets
+      - name: 上传 Release 资产至草稿
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          assets=(release-assets/*.zip release-assets/release-info.json)
+          if [[ "${#assets[@]}" -ne 5 || ! -f release-assets/release-info.json ]]; then
+            echo "Expected 4 release archives and release-info.json, got ${#assets[@]} assets" >&2
+            exit 1
+          fi
+          for asset in "${assets[@]}"; do
+            for attempt in {1..5}; do
+              if gh release upload "$GITHUB_REF_NAME" "$asset" --repo "$GITHUB_REPOSITORY" --clobber; then
+                break
+              fi
+              if [[ "$attempt" == "5" ]]; then
+                echo "Failed to upload $(basename "$asset")" >&2
+                exit 1
+              fi
+              sleep 15
+            done
+          done

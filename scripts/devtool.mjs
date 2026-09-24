@@ -39,6 +39,7 @@ const commands = new Set([
   'download-files',
   'modlist',
   'generate-integrity-manifest',
+  'set-version',
   'export-client',
   'export-curseforge',
   'export-server',
@@ -88,6 +89,7 @@ function showHelp() {
   devtool.bat download-files [jobs] [--force]
   devtool.bat modlist [output-dir]
   devtool.bat generate-integrity-manifest
+  devtool.bat set-version <vA.B.C.D[-testN]>                        # 同步 pack.toml / bcc / fancymenu 版本号
   devtool.bat export-curseforge [output.zip] [client|server|both]   # 客户端 CurseForge 安装包
   devtool.bat export-client [output.zip] [root-dir]                 # 客户端全量包，自带 mod 文件
   devtool.bat export-server [output.zip]                            # 开箱即用服务端全量包
@@ -750,6 +752,52 @@ function generateManifest() {
   });
 }
 
+const packVersionPattern = /^v\d+\.\d+\.\d+\.\d+(?:-test\d+|-test-build-\d+)?$/;
+const versionTargets = [
+  {
+    relative: 'pack/pack.toml',
+    pattern: /^(version = ")[^"]*(")/m,
+    replace: (version) => `$1${version}$2`,
+  },
+  {
+    relative: 'config/bcc-common.toml',
+    pattern: /^(\s*modpackVersion = ")[^"]*(")/m,
+    replace: (version) => `$1${version}$2`,
+  },
+  {
+    relative: 'config/fancymenu/options.txt',
+    pattern: /^(S:custom_window_title = ')([^']*)(';)/m,
+    replace: (version) => (_match, head, title, tail) =>
+      `${head}${title.replace(/-v\d+\.\d+\.\d+\.\d+(?:-test\d+|-test-build-\d+)?$/, '')}-${version}${tail}`,
+  },
+];
+
+function setVersion(args) {
+  const [version] = args;
+  if (!version) throw new Error('用法：set-version <vA.B.C.D[-testN]>');
+  if (!packVersionPattern.test(version)) {
+    throw new Error(`版本号 ${version} 不符合 vA.B.C.D 或 vA.B.C.D-testN 格式（CI 构建可用 -test-build-N）`);
+  }
+  const updates = versionTargets.map((target) => {
+    const filePath = path.join(repoRoot, target.relative);
+    const text = fs.readFileSync(filePath, 'utf8');
+    if (!target.pattern.test(text)) {
+      throw new Error(`${target.relative} 中找不到版本字段`);
+    }
+    const replacement = target.replace(version);
+    const next = text.replace(target.pattern, replacement);
+    return { relative: target.relative, filePath, text, next };
+  });
+  for (const { relative, filePath, text, next } of updates) {
+    if (next === text) {
+      writeInfo(`${relative} 已是 ${version}`);
+      continue;
+    }
+    fs.writeFileSync(filePath, next);
+    writeSuccess(`${relative} -> ${version}`);
+  }
+}
+
 function splitArgs(raw) {
   return raw.trim().split(/\s+/).filter(Boolean);
 }
@@ -1076,6 +1124,9 @@ async function dispatch(command, rest) {
       break;
     case 'generate-integrity-manifest':
       generateManifest();
+      break;
+    case 'set-version':
+      setVersion(rest);
       break;
     case 'export-client':
       exportPack('export-client', rest);

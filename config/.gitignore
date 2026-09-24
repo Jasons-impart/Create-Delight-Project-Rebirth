@@ -128,6 +128,8 @@
 !/vintageimprovements-server.toml
 !/quality_food-server.toml
 !/createdelightcore-common.toml
+!/createdelight_release_info.json
 !/ftbchunks-client.snbt
 !/lightmanscurrency-common.txt
 !/lightmanscurrency-server.txt
+!/solcarrot-server.toml

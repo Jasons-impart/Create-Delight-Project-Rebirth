@@ -103,3 +103,8 @@ server/
 .probe
 kubejs/config/probe-settings.json
 kubejs/config/web_server.json
+
+# Release export artifacts.
+artifacts/
+*.zip
+!pack/**/*.zip
