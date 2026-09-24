@@ -23,7 +23,8 @@
     "!netherite",
     "!dragonsteel_fire_ingot",
     "!dragonsteel_ice_ingot",
-    "!dragonsteel_lightning_ingot"
+    "!dragonsteel_lightning_ingot",
+    "!dreadsteel_ingot"
   ],
   "translation": {
     "primaryAttributes": {
@@ -102,7 +103,8 @@
       "materials": [
         "tetra:metal/dragonsteel_fire_ingot",
         "tetra:metal/dragonsteel_ice_ingot",
-        "tetra:metal/dragonsteel_lightning_ingot"
+        "tetra:metal/dragonsteel_lightning_ingot",
+        "tetra:metal/dreadsteel_ingot"
       ],
       "countFactor": 2,
       "moduleKey": "double/basic_hammer",

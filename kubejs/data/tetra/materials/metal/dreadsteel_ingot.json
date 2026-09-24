@@ -1,0 +1,32 @@
+{
+  "key": "dreadsteel_ingot",
+  "category": "metal",
+  "primary": 12,
+  "secondary": 4,
+  "tertiary": 5,
+  "durability": 1800,
+  "integrityCost": 3,
+  "integrityGain": 9,
+  "magicCapacity": 150,
+  "toolLevel": "minecraft:netherite",
+  "toolEfficiency": 11,
+  "effects": {
+    "createdelightcore:ice_dragon_restraint": 9,
+    "createdelightcore:lightning_dragon_restraint": 9,
+    "createdelightcore:fire_dragon_restraint": 9,
+    "createdelightcore:shocking": 1,
+    "createdelightcore:frozen": 15
+  },
+  "tints": {
+    "glyph": "910d13",
+    "texture": "910d13"
+  },
+  "textures": ["heavy", "metal"],
+  "material": {
+    "items": ["dreadsteel:dreadsteel_ingot"]
+  },
+  "requiredTools": {
+    "hammer_dig": 8
+  },
+  "features": ["chillingfire"]
+}
