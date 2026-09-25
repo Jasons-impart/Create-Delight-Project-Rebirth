@@ -2,6 +2,7 @@
 """Check that release archives contain the expected pack files and mod sides."""
 
 import argparse
+import json
 import tomllib
 from collections import Counter
 from pathlib import Path
@@ -48,6 +49,13 @@ def inspect_archive(path, prefix, release_info, side, kind):
         base = f"{prefix}/" if prefix else ""
         if kind == "curseforge":
             require("manifest.json" in names, f"{path.name}: missing CurseForge manifest")
+            manifest = json.loads(archive.read("manifest.json"))
+            with Path("mods/common/create-delight-core.pw.toml").open("rb") as source:
+                core = tomllib.load(source)["update"]["curseforge"]
+            core_files = [entry for entry in manifest.get("files", [])
+                          if entry.get("projectID") == core["project-id"]]
+            require(len(core_files) == 1 and core_files[0].get("fileID") == core["file-id"],
+                    f"{path.name}: Core CurseForge fileID differs from descriptor")
             relative = {name.removeprefix(base) for name in names if name.startswith(base)}
         else:
             require(all(name.startswith(base) for name in names), f"{path.name}: unexpected ZIP root")

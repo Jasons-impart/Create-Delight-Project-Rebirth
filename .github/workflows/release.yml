@@ -17,7 +17,7 @@ permissions:
   contents: read
 
 env:
-  BKMPW_PACKAGE: '@bro-know-my/packwiz@0.2.4'
+  BKMPW_PACKAGE: '@bro-know-my/packwiz@latest'
 
 jobs:
   metadata:
@@ -119,6 +119,10 @@ jobs:
         run: npm install -g ${{ env.BKMPW_PACKAGE }}
       - name: 注入构建版本号
         run: node scripts/devtool.mjs set-version "${MODPACK_VERSION}"
+      - name: 更新 Core 至 CurseForge 最新兼容版本
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.STUDIO_CURSEFORGE_API_KEY }}
+        run: bkmpw update . create-delight-core
       - name: 展开本地发布文件并刷新索引
         run: node scripts/devtool.mjs prepare-pack
       - uses: actions/cache@v4
