@@ -137,13 +137,10 @@ jobs:
         run: bkmpw install-files-headless . 3 10
       - name: 检查仓库结构
         run: node scripts/devtool.mjs check
-      - name: 生成完整性校验清单并确认与提交一致
+      - name: 生成并校验完整性清单
         run: |
           node scripts/devtool.mjs generate-integrity-manifest
-          if ! git diff --exit-code -- kubejs/config/createdelight_pack_integrity_expected.json; then
-            echo "完整性清单与提交内容不一致，请在本地运行 devtool generate-integrity-manifest 后提交" >&2
-            exit 1
-          fi
+          python3 scripts/validate-integrity-manifest.py
       - name: 生成更新器发版信息
         run: |
           mkdir -p artifacts
