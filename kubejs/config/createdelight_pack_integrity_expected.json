@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T06:34:26Z",
+  "generatedAt": "2026-09-30T02:11:47Z",
   "generatedBy": "devtool generate-integrity-manifest",
   "expectedModIds": {
     "common": [
@@ -1619,7 +1619,7 @@
     {
       "side": "common",
       "metadata": "mods/common/create-delight-core.pw.toml",
-      "filename": "createdelightcore-2.0.0.5+1.21.1.jar",
+      "filename": "createdelightcore-2.0.0.7+1.21.1.jar",
       "modIds": [
         "createdelightcore"
       ]
@@ -2246,7 +2246,7 @@
     {
       "side": "common",
       "metadata": "mods/common/kubejs.pw.toml",
-      "filename": "kubejs-neoforge-2101.7.2-build.363.jar",
+      "filename": "kubejs-neoforge-2101.7.2-build.377.jar",
       "modIds": [
         "betteradvancedtooltips",
         "kubejs"
@@ -2588,7 +2588,7 @@
     {
       "side": "common",
       "metadata": "mods/common/probejs.pw.toml",
-      "filename": "ProbeJS-7.7.2.jar",
+      "filename": "ProbeJS-8.0.3.jar",
       "modIds": [
         "probejs"
       ]
@@ -2661,7 +2661,7 @@
     {
       "side": "common",
       "metadata": "mods/common/rhino.pw.toml",
-      "filename": "rhino-2101.2.7-build.81.jar",
+      "filename": "rhino-2101.2.8-build.91.jar",
       "modIds": [
         "rhino"
       ]

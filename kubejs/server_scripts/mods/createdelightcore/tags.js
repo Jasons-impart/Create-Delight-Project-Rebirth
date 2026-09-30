@@ -99,8 +99,8 @@ if (global.hasMod('createdelightcore')) {
       event.add(`c:vegetables/${name}`, existing);
     });
     const vegetables = [];
-    vegetableAliases.forEach(([, items]) => {
-      existingItems(items).forEach((item) => vegetables.push(item));
+    vegetableAliases.forEach((alias) => {
+      existingItems(alias[1]).forEach((item) => vegetables.push(item));
     });
     event.add('c:vegetables', vegetables);
 
