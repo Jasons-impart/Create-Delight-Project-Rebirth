@@ -33,13 +33,14 @@ if (
 
     event.remove({ mod: 'create_mechanical_spawner', type: 'create:mixing' });
 
+    // Build a dense array: Rhino 2.8 cannot fill the holes in Array(8).
+    const geneticSeedInputs = [];
+    for (let i = 0; i < 8; i++) {
+      geneticSeedInputs.push('createaddition:biomass');
+    }
+    geneticSeedInputs.push('ae2:singularity', Fluid.of('netherexp:ectoplasm', 250));
     vintageimprovements
-      .vacuumizing(
-        '16x createdelightcore:inferior_genetic_seed',
-        Array(8)
-          .fill('createaddition:biomass')
-          .concat('ae2:singularity', Fluid.of('netherexp:ectoplasm', 250))
-      )
+      .vacuumizing('16x createdelightcore:inferior_genetic_seed', geneticSeedInputs)
       .id('createdelightcore:create_mechanical_spawner/vacuumizing/inferior_genetic_seed');
 
     [
