@@ -103,6 +103,10 @@ server/
 .probe
 kubejs/config/probe-settings.json
 kubejs/config/web_server.json
+kubejs/package.json
+.github/agents/kubejs-planner.agent.md
+.github/agents/kubejs-explore.agent.md
+.github/agents/kubejs-survey.agent.md
 
 # Release export artifacts.
 artifacts/

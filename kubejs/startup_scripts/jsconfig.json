@@ -3,31 +3,47 @@
         "./**/*.js",
         "./**/*.ts",
         "../types/**/*.d.ts",
-        "../../.probe/startup/**/*.d.ts",
-        "../../.probe/packages/**/*.d.ts"
+        "../../.probe/@package/**/*.d.ts",
+        "../../.probe/@side-only/startup/**/*.d.ts",
+        "../../.probe/@special/**/*.d.ts"
     ],
     "compilerOptions": {
         "ignoreDeprecations": "6.0",
-        "module": "none",
+        "module": "commonjs",
         "moduleResolution": "node",
         "allowJs": true,
         "checkJs": false,
-        "target": "ES2015",
+        "target": "ES2022",
         "disableSizeLimit": true,
         "noEmit": true,
         "assumeChangesOnlyAffectDirectDependencies": true,
-        "rootDir": ".",
-        "baseUrl": "../../.probe/packages",
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
         "lib": [
-            "ES2015",
-            "ES2016.Array.Include",
-            "ES2017.Object"
+            "ES2022"
         ],
-        "typeRoots": [
-            "../../.probe/packages",
-            "../../.probe/startup"
-        ]
+        "paths": {
+            "@package": [
+                "../../.probe/@package"
+            ],
+            "@package/*": [
+                "../../.probe/@package/*"
+            ],
+            "@side-only/startup": [
+                "../../.probe/@side-only/startup"
+            ],
+            "@side-only/startup/*": [
+                "../../.probe/@side-only/startup/*"
+            ],
+            "@special": [
+                "../../.probe/@special"
+            ],
+            "@special/*": [
+                "../../.probe/@special/*"
+            ]
+        }
+    },
+    "typeAcquisition": {
+        "enable": false
     }
 }
