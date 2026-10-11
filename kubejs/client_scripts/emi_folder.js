@@ -240,6 +240,7 @@ RecipeViewerEvents.fold((event) => {
   fold('goat_horns', 'minecraft:goat_horn');
   fold('paintings', 'minecraft:painting');
   fold('chests', '#c:chests');
+  fold('hollow_logs', '#quark:hollow_logs');
   fold('bamboo_spikes', '#supplementaries:bamboo_spikes');
   fold('smart_cables', '#ae2:smart_cable');
   fold('smart_dense_cables', '#ae2:smart_dense_cable');
@@ -251,14 +252,25 @@ RecipeViewerEvents.fold((event) => {
   foldIds('seed_pouches', 'quark:seed_pouch');
   event.foldSpawnEggs(groupId('spawn_eggs'), groupName('spawn_eggs'), options);
   event.foldMod(groupId('citadelup'), groupName('citadelup'), '@citadelup', options);
+  event.foldMod(
+    groupId('kaleidoscope_doll'),
+    groupName('kaleidoscope_doll'),
+    '@kaleidoscope_doll',
+    options
+  );
   fold('arrows', '#minecraft:arrows');
   fold('canvas_signs', '#farmersdelight:canvas_signs');
   fold('cannon_boats', '#supplementaries:cannon_boats');
   fold('card_display', '#lightmanscurrency:traders/card_display');
+  fold('trader_display_cases', '#lightmanscurrency:traders/display_case');
+  fold('trader_shelves', '#lightmanscurrency:traders/shelf');
+  fold('trader_shelves_2x2', '#lightmanscurrency:traders/shelf_2x2');
+  fold('trader_bookshelves', '#lightmanscurrency:traders/special/bookshelf');
   fold('cave_paintings', { blockTag: '#alexscavesup:cave_paintings' });
   fold('hanging_canvas_signs', '#farmersdelight:hanging_canvas_signs');
   fold('jelly_bean', 'alexscavesup:jelly_bean');
   fold('jam', '#fruitsdelight:jam');
+  fold('jam_bread', 'fruitsdelight:jam_bread');
   foldIds('music_cd', 'netmusic:music_cd');
   fold('music_discs', '#c:music_discs');
   fold('portstones', { blockTag: '#waystones:portstones' });
