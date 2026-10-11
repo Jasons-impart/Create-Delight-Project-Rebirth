@@ -5,11 +5,9 @@
 
 ## 协助开发
 
-本仓库使用 `bkmpw` 管理 packwiz-style mod 元数据、下载来源和文件索引。
+开发入门、维护工具和专题指南从 [开发指南](docs/DevGuide.md) 开始。
 
-请阅读 `docs/DevGuide.md`
-
-常用维护入口是根目录 `devtool.bat` / `devtool.sh`；导出支持客户端 CurseForge 安装包、客户端全量包、开箱即用服务端包和 bkmpw 下载型服务端安装包，细节见 `docs/PACKWIZ_WORKFLOW.md`。
+客户端安装说明见启动器指南：[HMCL](docs/GettingStarted-HMCL.md)、[PCL](docs/GettingStarted-PCL.md)、[Prism Launcher](docs/GettingStarted-Prism.md)。
 
 ## 协议
 
