@@ -5,7 +5,7 @@
 ## 基线和路径
 
 - Minecraft: `1.21.1`
-- Loader: `NeoForge 21.1.242`
+- Loader: `NeoForge 21.1.251`
 - Java: `21`
 - 示例 HMCL 目录：`E:\minecraft\Client\HMCL`
 - 示例实例名：`CDPR`
@@ -148,7 +148,7 @@ Compare-Object $ExpectedModJars $ActualModJars
 
 ```powershell
 Invoke-WebRequest -UseBasicParsing `
-  -Uri "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.242/neoforge-21.1.242-installer.jar" `
+  -Uri "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.251/neoforge-21.1.251-installer.jar" `
   -OutFile ".\neoforge.jar"
 ```
 
@@ -188,7 +188,7 @@ Successfully installed client into launcher.
 ```text
 libraries/
 versions/1.21.1/
-versions/neoforge-21.1.242/
+versions/neoforge-21.1.251/
 launcher_profiles.json
 ```
 
@@ -218,12 +218,12 @@ robocopy ".\libraries" "$MinecraftDir\libraries" /E /NFL /NDL /NJH /NJS /NP
 
 ```powershell
 $instanceName = Split-Path -Leaf (Get-Location)
-$json = Get-Content ".\versions\neoforge-21.1.242\neoforge-21.1.242.json" -Raw | ConvertFrom-Json
+$json = Get-Content ".\versions\neoforge-21.1.251\neoforge-21.1.251.json" -Raw | ConvertFrom-Json
 $json.id = $instanceName
 $json | ConvertTo-Json -Depth 100 | Set-Content ".\$instanceName.json" -Encoding UTF8
 ```
 
-`CDPR.jar` 不需要存在。NeoForge `1.21.1` 使用 `inheritsFrom = "1.21.1"` 和 libraries 中的 patched client 启动，HMCL 自己安装出的 `neoforge-21.1.242` 版本也是这种布局。
+`CDPR.jar` 不需要存在。NeoForge `1.21.1` 使用 `inheritsFrom = "1.21.1"` 和 libraries 中的 patched client 启动，HMCL 自己安装出的 `neoforge-21.1.251` 版本也是这种布局。
 
 ## 配置 HMCL 版本隔离
 
@@ -326,7 +326,7 @@ git status --short --untracked-files=all
 Test-Path .\CDPR.json
 (Get-Content .\CDPR.json -Raw | ConvertFrom-Json) | Select-Object id,inheritsFrom,mainClass,jar
 Test-Path "$MinecraftDir\versions\1.21.1\1.21.1.jar"
-Test-Path "$MinecraftDir\libraries\net\neoforged\neoforge\21.1.242\neoforge-21.1.242-client.jar"
+Test-Path "$MinecraftDir\libraries\net\neoforged\neoforge\21.1.251\neoforge-21.1.251-client.jar"
 Get-ChildItem .\mods -Filter *.jar -File | Measure-Object
 ```
 

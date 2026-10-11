@@ -9,6 +9,8 @@ Mechanical Spawner 配方同步使用新的 `spawn_fluid_piglin` 流体 ID。
 
 以下描述符设置 `pin = true`。解除锁定前，应先解决对应兼容性问题，并验证启动、脚本 reload 和客户端连接。
 
+2026-10-11 为接入 Lime Pie，当前 NeoForge 基线升至 21.1.251，隔离服启动/reload 通过。下表的加载器门槛记录描述 2026-09-20 时的条件；这些候选新版尚未复测，因此保持现有 `pin`。
+
 | 描述符 | 原因 |
 | --- | --- |
 | `mods/common/alexs-mobs-up.pw.toml` | 新版 mod ID 从 alexsmobsup 改为 alexsmobs，当前配方/数据未作命名空间迁移 |
