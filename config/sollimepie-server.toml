@@ -1,0 +1,49 @@
+# 0488 Apple Pie defaults, adapted to Lime Pie 3.1.0.
+# The old 70/80 thresholds had no paired benefits; keep the 11 effective tiers.
+[Benefits]
+thresholds = [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 60.0]
+benefitsUnparsed = [
+  "effect,haste,0",
+  "effect,strength,0",
+  "effect,regeneration,0",
+  "effect,alexsmobsup:mosquito_repellent,0",
+  "effect,strength,0",
+  "effect,luck,0",
+  "effect,haste,1",
+  "effect,youkaishomecoming:refreshing,0",
+  "effect,strength,1",
+  "effect,strength,2",
+  "effect,luck,1",
+]
+minFoodsToActivate = 0
+
+[Filtering]
+blacklist = []
+whitelist = []
+
+[Miscellaneous]
+resetOnDeath = false
+limitProgressionToSurvival = false
+queueSize = 64
+
+[Advanced]
+decayEnabled = true
+minContribution = 0.0
+defaultContribution = 1.0
+endDecay = 64
+startDecay = 0
+shouldForbiddenCount = true
+
+[Complexity]
+# Large Meals and Farmer's Respite are absent; their overrides remain deferred.
+complexityUnparsed = [
+  "minecraft:cooked_porkchop,2",
+  "minecraft:cooked_beef,2",
+  "minecraft:golden_carrot,2",
+  "minecraft:golden_apple,4",
+  "minecraft:enchanted_golden_apple,10",
+  "farmersdelight:cake_slice,4",
+  "farmersdelight:chocolate_pie_slice,4",
+  "farmersdelight:apple_pie_slice,4",
+  "farmersdelight:sweet_berry_cheesecake_slice,4",
+]
