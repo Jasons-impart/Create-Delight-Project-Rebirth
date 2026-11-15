@@ -12,7 +12,7 @@
 | 地址 | https://github.com/Jasons-impart/Create-Delight-Project-Rebirth |
 | 维护者 | JSI（Jasons-impart） |
 | 上游版本 | `v2.0.0.0-test4`（packwiz `pack/pack.toml`） |
-| 本仓库关系 | 下游 fork：在 CDPR 的 1.21.1 移植线基础上，叠加本包自有任务书、脚本、数据与配置 |
+| 本仓库关系 | 下游 fork：在 CDPR 的 1.21.1 线基础上做社区魔改移植，叠加本包自有任务书、脚本、数据与配置（非上游官方移植） |
 
 上游在 `README.md` 与 `LICENSE` 中声明（原文摘要）：
 

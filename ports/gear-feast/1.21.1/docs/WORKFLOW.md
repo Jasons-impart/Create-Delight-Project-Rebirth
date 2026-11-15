@@ -1,6 +1,6 @@
 # 协作流程：fork → 分支 → 提交 → PR
 
-本仓库是 [Jasons-impart/Create-Delight-Project-Rebirth](https://github.com/Jasons-impart/Create-Delight-Project-Rebirth) 的下游 fork。所有改动都按下面的流程走，**不直接向上游推分支**。
+本仓库是 [Jasons-impart/Create-Delight-Project-Rebirth](https://github.com/Jasons-impart/Create-Delight-Project-Rebirth) 的下游 fork，承载「齿轮盛宴」的**社区魔改移植**（非上游官方移植）。所有改动都按下面的流程走，**不直接向上游推分支**。
 
 ---
 

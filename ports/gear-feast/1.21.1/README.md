@@ -1,6 +1,8 @@
-# 齿轮盛宴 · Minecraft 1.21.1 移植版（源码仓库）
+# 齿轮盛宴 · Minecraft 1.21.1 社区魔改移植（源码仓库）
 
-本仓库是「齿轮盛宴」整合包从 Minecraft 1.20.1 移植到 **1.21.1 / NeoForge** 的可审查快照：包含整合包自身维护的全部脚本、配置与任务书，以及移植过程、自研补丁与已知问题的完整记录。
+本仓库是「齿轮盛宴」整合包的**社区魔改移植**版本：把 1.20.1 的整合包内容改造到 **1.21.1 / NeoForge** 的可审查快照，包含整合包自身维护的全部脚本、配置与任务书，以及社区魔改移植过程、自研补丁与已知问题的完整记录。
+
+**这是社区魔改移植，不是上游 CDPR 官方移植。** 上游只维护自己的整合包内容，本包的中文任务书、经济链、MBD2 机器配方与自研补丁均来自社区侧改动。
 
 **本仓库不包含任何 mod jar**，`mods.list` 只出清单（文件名 / modid / 版本 / 来源）。
 
@@ -12,7 +14,7 @@
 | --- | --- |
 | 整合包 | 齿轮盛宴（中文社区整合包，Create 机械动力 + 料理 + 太空 + 任务书） |
 | 上游 | [Jasons-impart/Create-Delight-Project-Rebirth](https://github.com/Jasons-impart/Create-Delight-Project-Rebirth)（下称 CDPR） |
-| fork 关系 | 本仓库是 CDPR **1.21.1 移植线**的下游 fork；上游用 packwiz 维护（`pack/pack.toml` 版本 `v2.0.0.0-test4`） |
+| fork 关系 | 本仓库是 CDPR **1.21.1 线**的下游 fork，在其基础上做社区魔改移植；上游用 packwiz 维护（`pack/pack.toml` 版本 `v2.0.0.0-test4`） |
 | 目标版本 | Minecraft 1.21.1 / NeoForge 21.1.266（上游 `pack.toml` 声明 21.1.251，本包实测 21.1.266 可用） |
 | 当前 mod 数 | 406 个 jar（实测快照，见 `mods.list`） |
 | 任务书 | 40 章 / 2160 任务，文本已迁移到 `config/ftbquests/quests/lang/en_us.snbt` |
@@ -44,7 +46,7 @@
 │   ├── PORTING-LOG.md        1.20.1 → 1.21.1 移植日志（做了什么、依据、结果）
 │   ├── DEV-LOG.md            自研 cdprfps 版本史、启动崩溃修复、KubeJS 报错根因
 │   ├── KNOWN-ISSUES.md       已知问题（未检查 / 未验证 / 已确认存在）
-│   ├── PR-DESCRIPTION.md     按 PR 模板撰写的整次移植说明
+│   ├── PR-DESCRIPTION.md     按 PR 模板撰写的整次社区魔改移植说明
 │   └── WORKFLOW.md           fork → 分支 → 提交 → PR 的协作流程
 └── patches/
     └── cdprfps/              自研帧数补丁的源码（JDK 21 + javac，无 Gradle；不含 jar）
@@ -103,7 +105,7 @@
 
 ## 六、阅读顺序建议
 
-1. 想快速判断「移植到哪一步了」→ [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md)
+1. 想快速判断「社区魔改移植到哪一步了」→ [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md)
 2. 想复核「改了什么、为什么」→ [docs/PORTING-LOG.md](docs/PORTING-LOG.md)
 3. 想复核「自研补丁与崩溃修复」→ [docs/DEV-LOG.md](docs/DEV-LOG.md)
 4. 想按 PR 流程接手 → [docs/PR-DESCRIPTION.md](docs/PR-DESCRIPTION.md)、[docs/WORKFLOW.md](docs/WORKFLOW.md)
