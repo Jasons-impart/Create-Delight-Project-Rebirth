@@ -1,0 +1,2 @@
+// Compost colors for bountiful. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bounty, #ffbc9a

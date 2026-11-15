@@ -1,0 +1,2 @@
+#是否禁用多网络切换功能
+disable_multi_network_switching = false

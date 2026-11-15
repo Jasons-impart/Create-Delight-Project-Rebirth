@@ -1,0 +1,66 @@
+[engines]
+	#Stress units provided by the Hydraulic Engine
+	# Default: 8192.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	hydraulic_stress_provide = 8192.0
+	#Stress units provided by the Wind Engine
+	# Default: 8192.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	wind_stress_provide = 8192.0
+
+[block_placer]
+	#Maximum hardness of blocks the Block Placer can break/replace. Blocks with higher hardness are ignored.
+	# Default: 50.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	power = 50.0
+	#Maximum reach distance of the Block Placer in blocks
+	# Default: 48
+	# Range: 8 ~ 128
+	range = 48
+
+	[block_placer.brush]
+		#Maximum size per axis for the Cuboid brush (each axis is independent)
+		# Default: 32
+		# Range: 1 ~ 64
+		cuboid_max_size = 32
+		#Maximum radius for the Sphere brush
+		# Default: 10
+		# Range: 1 ~ 20
+		sphere_max_radius = 10
+		#Maximum radius for the Cylinder brush
+		# Default: 8
+		# Range: 1 ~ 12
+		cylinder_max_radius = 8
+		#Maximum height for the Cylinder brush
+		# Default: 8
+		# Range: 1 ~ 12
+		cylinder_max_height = 8
+		#Maximum radius for the Surface and Cluster brushes
+		# Default: 10
+		# Range: 1 ~ 64
+		dynamic_max_radius = 10
+
+	[block_placer.cooldown]
+		#Base cooldown in ticks added to every activation.
+		#Final cooldown = base + affected_blocks / scale
+		# Default: 2
+		# Range: 1 ~ 100
+		base = 2
+		#Divisor for the block-count part of the cooldown formula: affected_blocks / scale.
+		#Lower values = longer cooldowns for large operations.
+		# Default: 20
+		# Range: 1 ~ 10000
+		scale = 20
+		#Number of blocks the Block Placer places per server tick.
+		#Lower values = smoother server, slower visual completion. Higher = faster but more load per tick.
+		# Default: 256
+		# Range: 1 ~ 4096
+		batch_size = 256
+
+	[block_placer.enchantments]
+		#When true, Infinity enchantment allows placing renewable blocks (e.g. Cobblestone) without consuming them
+		infinity = true
+		#When true, Fortune enchantment affects block drops when breaking blocks
+		fortune = true
+		#When true, Silk Touch enchantment affects block drops when breaking blocks
+		silk_touch = true

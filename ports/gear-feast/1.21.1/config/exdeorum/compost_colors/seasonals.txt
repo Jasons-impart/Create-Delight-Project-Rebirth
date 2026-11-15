@@ -1,0 +1,24 @@
+// Compost colors for seasonals. You may add your own colors, change existing ones, or remove colors that aren't needed.
+banana_split_sundae, #dea775
+beetroot_cake, #ffbfb9
+beetroot_cake_slice, #eb9696
+beetroot_ice_cream, #be5247
+beetroot_milkshake, #dc7387
+chocolate_pumpkin_muffin, #c27325
+glazed_sweet_berries, #e7221f
+mixed_berry_muffin, #c56639
+oxidized_beetroot, #64c29e
+pumpkin_adzuki_stew, #9a5f1b
+pumpkin_cake, #f8b683
+pumpkin_cake_slice, #eba772
+pumpkin_ice_cream, #e48729
+pumpkin_milkshake, #ffbf7a
+pumpkin_puree, #cc6b11
+rabbit_roast, #bb6e36
+red_velvet_cupcake, #ffcfcd
+roasted_beetroot, #9b2a32
+sweet_berry_cake, #903d36
+sweet_berry_cake_slice, #96413c
+sweet_berry_ice_cream, #d94a47
+sweet_berry_milkshake, #fc8ca7
+sweet_berry_vanilla_yogurt, #f7c9e0

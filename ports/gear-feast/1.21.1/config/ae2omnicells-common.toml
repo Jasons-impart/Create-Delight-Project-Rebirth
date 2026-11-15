@@ -1,0 +1,3 @@
+#是否允许OMNI系列元件存入MEK的放射性化学品，DENY_SPENT代表仅阻止用尽的核废料，其余为字面意思
+#Allowed Values: ALLOW, DENY_SPENT, DENY_ALL
+mek_radial_chemical_check = "DENY_SPENT"

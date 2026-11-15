@@ -1,0 +1,6 @@
+#Toggles the Undergarden's special fog parameters. Set  false to disable it, and return to the vanilla fog.
+"Toggle Undergarden Fog" = true
+#Displays the numerical value of the player's Utheric Infection value.
+"Toggle Utheric Infection Number Display" = false
+#Toggles the screen overlay that appears when the player has Utheric Infection.
+"Toggle Utheric Infection Overlay" = true

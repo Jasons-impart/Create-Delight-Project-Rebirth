@@ -1,0 +1,6 @@
+// Compost colors for libraryferret. You may add your own colors, change existing ones, or remove colors that aren't needed.
+diamond_coins_jtl, #4bede1
+emerald_coins_jtl, #36d95e
+gold_coins_jtl, #ffed51
+iron_coins_jtl, #b8c2b8
+netherite_coins_jtl, #303632

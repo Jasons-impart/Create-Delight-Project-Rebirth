@@ -1,0 +1,8 @@
+// Compost colors for lctech. You may add your own colors, change existing ones, or remove colors that aren't needed.
+battery, #969048
+battery_large, #33947c
+energy_capacity_upgrade_1, #969048
+energy_capacity_upgrade_2, #969048
+energy_capacity_upgrade_3, #969048
+energy_capacity_upgrade_4, #969048
+fluid_shard, #c3faff

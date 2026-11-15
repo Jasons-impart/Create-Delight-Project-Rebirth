@@ -1,0 +1,20 @@
+{
+    "result":  {
+                   "id":  "minecraft:barrier",
+                   "count":  1
+               },
+    "key":  {
+                "A":  {
+                          "item":  "minecraft:barrier"
+                      }
+            },
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "A"
+                ],
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:false"
+                                }
+                            ]
+}

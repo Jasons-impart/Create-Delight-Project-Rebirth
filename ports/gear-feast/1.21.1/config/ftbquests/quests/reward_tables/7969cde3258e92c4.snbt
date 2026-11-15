@@ -1,0 +1,9 @@
+{
+	id: "7969CDE3258E92C4"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{ id: "085194EE9D1A58D2", item: { count: 1, id: "create:empty_schematic" } }
+		{ id: "2B9857E81259B793", item: { components: { "ftbquests:missing_item": "fluidlogistics:empty_fluid_schematic" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

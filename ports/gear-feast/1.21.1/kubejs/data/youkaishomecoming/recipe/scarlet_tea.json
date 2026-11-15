@@ -1,0 +1,22 @@
+{
+    "type":  "youkaishomecoming:kettle",
+    "container":  {
+                      "id":  "minecraft:glass_bottle",
+                      "count":  1
+                  },
+    "cookingtime":  200,
+    "experience":  0.1,
+    "ingredients":  [
+                        {
+                            "tag":  "c:tea_leaves/black"
+                        },
+                        {
+                            "item":  "butchercraft:blood_fluid_bottle"
+                        }
+                    ],
+    "recipe_book_tab":  "drinks",
+    "result":  {
+                   "id":  "youkaishomecoming:scarlet_tea",
+                   "count":  1
+               }
+}

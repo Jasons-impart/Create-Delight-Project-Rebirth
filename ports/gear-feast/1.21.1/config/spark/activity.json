@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "White_LXB",
+      "uniqueId": "d1ad994c-c513-4fe5-9524-3ef9a6b41f9c"
+    },
+    "time": 1794739473565,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bIdNLjzruY"
+    }
+  }
+]

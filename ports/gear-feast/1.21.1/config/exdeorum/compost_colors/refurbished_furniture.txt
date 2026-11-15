@@ -1,0 +1,24 @@
+// Compost colors for refurbished_furniture. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bread_slice, #e8b551
+cheese, #ffff97
+cheese_sandwich, #bc8a37
+cheese_toastie, #c37a2a
+cooked_meatlovers_pizza, #945223
+cooked_vegetable_pizza, #b6611c
+dough, #ffe0a0
+glow_berry_jam, #f59036
+glow_berry_jam_toast, #d97d28
+knife, #ffffff
+meatlovers_pizza_slice, #a75e22
+package, #ffffd3
+raw_meatlovers_pizza, #bc824a
+raw_vegetable_pizza, #dc9040
+sea_salt, #ffffff
+spatula, #ffffff
+sweet_berry_jam, #b83332
+sweet_berry_jam_toast, #a53625
+television_remote, #e4e1e0
+toast, #b9802c
+vegetable_pizza_slice, #c3641c
+wheat_flour, #fff8dd
+wrench, #a89e91

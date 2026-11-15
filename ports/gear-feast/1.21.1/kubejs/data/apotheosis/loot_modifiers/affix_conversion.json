@@ -1,0 +1,9 @@
+{
+  "type": "quality_food:quality_loot_modifier",
+  "conditions": [
+    {
+      "condition": "c:loot_table_id",
+      "loot_table_id": "createdelightcore:disabled/apotheosis_affix_conversion"
+    }
+  ]
+}

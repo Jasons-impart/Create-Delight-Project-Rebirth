@@ -1,0 +1,3 @@
+// Compost colors for kaleidoscope_doll. You may add your own colors, change existing ones, or remove colors that aren't needed.
+doll_icon, #9a988e
+tweaks_tool, #ffc557

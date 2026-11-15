@@ -1,0 +1,18 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "tag":  "c:crops"
+                        },
+                        {
+                            "tag":  "c:crops"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "createaddition:biomass",
+                        "count":  1
+                    }
+                ],
+    "heat_requirement":  "heated"
+}

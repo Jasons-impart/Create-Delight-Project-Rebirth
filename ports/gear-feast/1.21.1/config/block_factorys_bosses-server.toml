@@ -1,0 +1,29 @@
+["Boss Health"]
+	#Max Health : 1024
+	"Sandworm Health" = 200.0
+	"Yeti Health" = 250.0
+	"Dragon Health" = 250.0
+	"Knight Health" = 280.0
+	"Kraken Health" = 500.0
+
+["Boss Armor"]
+	#Max Armor : 30
+	"Sandworm Armor" = 20.0
+	"Yeti Armor" = 5.0
+	"Dragon Armor" = 25.0
+	"Knight Armor" = 10.0
+	"Kraken Armor" = 20.0
+
+["Base Boss Damages"]
+	#Not all damages sources depends on this variable !
+	"Sandworm Damage" = 10.0
+	"Yeti Damage" = 18.0
+	"Dragon Damage" = 15.0
+	"Knight Damage" = 13.0
+	"Kraken Damage" = 10.0
+
+["Gameplay Changes"]
+	"Can players use the Roll ability" = true
+	"How many roll charges does the player have by default?" = 2
+	"How many ticks does it take for a roll to cooldown? (20 ticks is 1 second)" = 40
+	"How many additional ticks should each roll above 1 take to cooldown? (20 ticks is 1 second)" = 20

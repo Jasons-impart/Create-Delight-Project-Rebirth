@@ -1,0 +1,4 @@
+// Compost colors for create_rns. You may add your own colors, change existing ones, or remove colors that aren't needed.
+polished_resonant_amethyst, #d7a8ff
+redstone_small_dust, #930500
+resonant_amethyst, #aa7cf1

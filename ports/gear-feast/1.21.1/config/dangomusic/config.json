@@ -1,0 +1,85 @@
+{
+  "NeteaseMusic": {
+    "enabled": true,
+    "values": {
+      "musicSource": 0,
+      "volume": 0.2,
+      "language": 1,
+      "shuffle": false,
+      "repeatOne": false,
+      "openKey": 27,
+      "keyPause": 0,
+      "keyPrev": 0,
+      "keyNext": 0,
+      "keyVolUp": 0,
+      "keyVolDown": 0,
+      "keyLyrics": 0,
+      "normalize": true,
+      "envAudio": true,
+      "envRain": true,
+      "envStrength": 1.0,
+      "envRays": false,
+      "checkUpdates": true
+    }
+  },
+  "Lyrics": {
+    "enabled": true,
+    "values": {
+      "worldMode": true,
+      "nowPlaying": false,
+      "showCover": true,
+      "scale": 1.0,
+      "distance": 10.0,
+      "glow": true,
+      "glowNightOnly": false,
+      "glowStrength": 0.3,
+      "glowRadius": 0.5,
+      "smoothFont": false,
+      "lyricFont": "",
+      "wiggle": true,
+      "wiggleFps": 8,
+      "wiggleAmount": 0.8,
+      "textFlash": false,
+      "wordPop": true,
+      "flashSize": 1.0,
+      "facePlayer": true,
+      "keepAway": true,
+      "stayOnScreen": false,
+      "aboveGround": false,
+      "spread": 30.0,
+      "splitLines": true,
+      "translation": false,
+      "translationAnimation": true,
+      "translationWiggle": true,
+      "dance": false,
+      "danceAuto": false,
+      "danceTap": false,
+      "danceSpin": false,
+      "danceAmount": 1.3,
+      "danceOffset": 0,
+      "lyricColors": 0,
+      "rainbowSpeed": 0.25,
+      "textColor": "#F7E1D7",
+      "translationColor": "#803D66"
+    }
+  },
+  "SongCard": {
+    "enabled": false,
+    "values": {
+      "scale": 1.0,
+      "showPaused": false,
+      "posX": 0.01,
+      "posY": 0.05
+    }
+  },
+  "DynamicIsland": {
+    "enabled": false,
+    "values": {
+      "glass": true,
+      "showMusic": true,
+      "songNotify": true,
+      "scale": 1.0,
+      "notifyTime": 3.5
+    }
+  }
+}

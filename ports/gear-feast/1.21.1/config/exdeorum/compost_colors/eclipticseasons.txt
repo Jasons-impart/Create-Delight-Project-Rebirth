@@ -1,0 +1,14 @@
+// Compost colors for eclipticseasons. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bamboo_wind_chimes, #ffffd6
+broom, #eaab84
+calendar, #fff5ea
+growth_detector, #ffffff
+ice_wand, #b5b9d0
+paper_wind_chimes, #ffffff
+pinwheel_blue, #9abef4
+pinwheel_lime, #d7ff97
+pinwheel_orange, #fff5c2
+salt_wand, #ffffdd
+seasonal_prayer_scroll, #ffffff
+snowless_hometown, #82a4c9
+wind_chimes, #caf7b5

@@ -1,0 +1,19 @@
+{
+  "basicSettings": {
+    "screenWhitelist": [],
+    "enableScreenRecovering": false,
+    "recoveredScreens": [],
+    "englishStateImpl": "CONVERSION_STATUS",
+    "primaryEnglishState": "CJK"
+  },
+  "advanceSettings": {
+    "charSimulationScreens": [],
+    "commandPrefixRegex": "^/"
+  },
+  "windowsCompatibilitySettings": {
+    "enableConversionStatusApi": true,
+    "enableCursorPositionTracking": true,
+    "enableCompositionFontTweaks": true,
+    "enableIngameIME": false
+  }
+}

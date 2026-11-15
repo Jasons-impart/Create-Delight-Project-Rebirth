@@ -1,0 +1,2 @@
+// Compost colors for create_aeronautics_throwable_rope_connector. You may add your own colors, change existing ones, or remove colors that aren't needed.
+throwable_rope_connector, #655744

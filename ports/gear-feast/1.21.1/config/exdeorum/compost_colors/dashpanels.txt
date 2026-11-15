@@ -1,0 +1,5 @@
+// Compost colors for dashpanels. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cable_stripper, #7a6268
+key, #8a6e6f
+paint_brush, #bca090
+wrench, #6c5c5f

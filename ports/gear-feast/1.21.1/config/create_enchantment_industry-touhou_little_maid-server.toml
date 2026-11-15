@@ -1,0 +1,8 @@
+#.
+#Whether Experience Lanterns drain experience from nearby Touhou Little Maid maids.
+experienceLanternDrainMaidExperience = true
+#.
+#The maximum amount of experience an Experience Lantern drains from each maid per operation.
+# Default: 50
+# Range: > 1
+experienceLanternMaxDrainPerMaid = 50

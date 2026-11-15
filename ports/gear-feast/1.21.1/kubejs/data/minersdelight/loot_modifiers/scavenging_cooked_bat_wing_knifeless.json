@@ -1,0 +1,52 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "attacker",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#farmersdelight:tools/knives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_on_fire": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:bat"
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.5
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:apply_bonus",
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:binomial_with_bonus_count",
+      "parameters": {
+        "extra": 1,
+        "probability": 0.5714286
+      }
+    }
+  ],
+  "item": "minersdelight:smoked_bat_wing",
+  "count": 1
+}

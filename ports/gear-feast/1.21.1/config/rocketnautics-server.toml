@@ -1,0 +1,59 @@
+#Strength of the Magnetic Stabilizer in dampening angular momentum
+# Default: 50.0
+# Range: 1.0 ~ 1000000.0
+magneticStabilizerStrength = 50.0
+
+[Thrusters]
+	#Maximum fuel consumption in mB/tick
+	# Default: 40
+	# Range: 1 ~ 1000
+	maxFuelConsumption = 40
+	#Flow threshold for full ignition (mB/tick)
+	# Default: 5
+	# Range: 1 ~ 100
+	ignitionFlow = 5
+	#Flow threshold for pre-ignition steam phase (mB/tick)
+	# Default: 2
+	# Range: 1 ~ 100
+	steamMinFlow = 2
+	#Maximum speed in m/s entities can reach in space before drag kicks in
+	# Default: 80
+	# Range: 0 ~ 320
+	entitySpeedLimit = 80
+	#Enable debug logging for engine fuel and thrust (can cause spam)
+	enableEngineDebugLogging = false
+	#Allow engine thrust to exceed standard limits (up to 5000N)
+	brokenBarrier = false
+	#Speed in blocks/second (m/s) at which a ship breaks the sound barrier and triggers a sonic boom
+	# Default: 166.0
+	# Range: 1.0 ~ 500.0
+	sonicBoomSpeedThreshold = 166.0
+
+[Jetpack]
+	#Standard thrust power of the jetpack
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	jetpackThrust = 0.15
+	#Standard consumption per tick of jetpack fuel
+	# Default: 5
+	# Range: 1 ~ 100
+	jetpackThrustConsumption = 5
+	#Thrust power of the jetpack while sprinting
+	# Default: 0.35
+	# Range: 0.01 ~ 2.0
+	jetpackSprintThrust = 0.35
+	#Consumption per tick of jetpack fuel while sprinting
+	# Default: 15
+	# Range: 1 ~ 100
+	jetpackSprintThrustConsumption = 15
+	#Base consumption per tick of pressurized air while leg thrusters are active
+	# Default: 2
+	# Range: 1 ~ 100
+	legThrusterBaseConsumption = 2
+
+[Space]
+	#Selects the shape of planets in the sky:
+	# - CUBE: Classic Minecraft cube-shaped planets.
+	# - SPHERE: Smooth sphere-shaped planets.
+	#Allowed Values: CUBE, SPHERE
+	planetShape = "CUBE"

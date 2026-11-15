@@ -1,0 +1,12 @@
+#Fermentation Vessels emit bubble particles
+fermentation_bubble_particles = true
+#Restoration effect changes health icons
+restoration_overlay = true
+#Status Effects modified by Acidity have visual effects
+acidified_effect_icon_effects = true
+#Foods have effect tooltips
+effect_tooltips = true
+#Show food inside Shulker Tiffins in the corner of the slot
+tiffin_corner_food_icon = false
+#Show food inside Shulker Tiffins in players' hands
+show_tiffin_food_in_hand = false

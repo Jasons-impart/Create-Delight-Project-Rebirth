@@ -1,0 +1,183 @@
+#.
+#Modify rod durations and related parameters.
+[rods]
+	#.
+	#.
+	#Lifetime of uranium rods in ticks.
+	#20 ticks = 1 second
+	# Default: 3600
+	# Range: 100 ~ 5000
+	uranium_rod_lifetime_ticks = 3600
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Heat bonus applied when uranium rods are adjacent.
+	# Default: 32
+	# Range: -70 ~ 70
+	uranium_proximity_bonus = 32
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Base heat contribution of a uranium rod before modifiers.
+	# Default: 64
+	# Range: -70 ~ 70
+	uranium_base_value = 64
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Heat ratio modifier for a uranium rod
+	# Default: 2
+	# Range: -10 ~ 10
+	"Heat ratio for uranium rods" = 2
+	#.
+	#Lifetime of graphite (cooling) rods in ticks.
+	#20 ticks = 1 second
+	# Default: 3600
+	# Range: 100 ~ 5000
+	graphite_rod_lifetime_ticks = 3600
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Heat penalty applied when graphite rods are adjacent.
+	# Default: -0.25
+	# Range: -70.0 ~ 70.0
+	graphite_proximity_penalty = -0.25
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Base heat contribution of a graphite rod before modifiers.
+	# Default: -32
+	# Range: -50 ~ 50
+	graphite_base_value = -32
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Heat ratio modifier for a graphite rod
+	# Default: 1
+	# Range: -10 ~ 10
+	"Heat ratio for graphite rods" = 1
+	#.
+	#Lifetime of thorium rods in the reactor
+	#20 ticks = 1 second
+	# Default: 3600
+	# Range: 100 ~ 5000
+	"Thorium rod lifetime (in ticks)" = 3600
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Bonus heat applied when thorium rods are adjacent
+	# Default: 8
+	# Range: -70 ~ 70
+	"Heat bonus from nearby thorium rods" = 8
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Base heat contribution of a thorium rod before modifiers
+	# Default: 16
+	# Range: -70 ~ 70
+	"Base heat value for thorium rods" = 16
+	#.
+	#Changing these values may unbalance reactor behavior.
+	#Heat ratio modifier for a thorium rod
+	# Default: 1
+	# Range: -10 ~ 10
+	"Heat ratio for thorium rods" = 1
+
+#.
+#Notification settings for reactor warnings.
+[Notify]
+	#.
+	#.
+	#When true, broadcast a warning to nearby players before a reactor explosion.
+	warn_all_players = false
+	#.
+	#Distance (in blocks) to search for players to warn about impending explosion.
+	# Default: 100
+	# Range: 30 ~ 5000
+	warning_distance_blocks = 100
+
+#.
+#Enable or disable radiation effects emitted by mod items. 
+[Radiation]
+	#.
+	#.
+	#When enabled, certain items may emit radiation affecting players and nearby entities. Disable to turn off radiation effects without removing items.
+	enabled_item_radiation = true
+	#.
+	#Minimum radiation value required to apply Radiation I. Values below this do not apply effects.
+	# Default: 10
+	# Range: 0 ~ 50
+	radiation_level_1 = 10
+	#.
+	#Minimum radiation value required to apply Radiation II. Should be greater than radiation_level_1.
+	# Default: 25
+	# Range: 0 ~ 50
+	radiation_level_2 = 25
+	#.
+	#Minimum radiation value required to apply Radiation III. Should be greater than radiation_level_2.
+	# Default: 50
+	# Range: 0 ~ 50
+	radiation_level_3 = 50
+	#.
+	#Effect amplifier for Radiation I (0 = level I).
+	# Default: 0
+	# Range: 0 ~ 10
+	amplifier_level_0 = 0
+	#.
+	#Effect amplifier for Radiation II (1 = level II).
+	# Default: 1
+	# Range: 0 ~ 10
+	amplifier_level_1 = 1
+	#.
+	#Effect amplifier for Radiation III (2 = level III).
+	# Default: 2
+	# Range: 0 ~ 10
+	amplifier_level_2 = 2
+	#.
+	#Effect amplifier for Radiation IV (3 = level IV).
+	# Default: 3
+	# Range: 0 ~ 10
+	amplifier_level_3 = 3
+
+	#.
+	#Lists related to radiation configuration, for example the entity blacklist.
+	[Radiation.lists]
+		#.
+		#List of entity IDs excluded from radiation effects. Use registry names like "minecraft:armor_stand".
+		#
+		#How to edit:
+		#- Add entries as namespace:entity_name strings.
+		#- Example: "minecraft:armor_stand"
+		#- Remove an entry to stop excluding it.
+		#
+		entity_blacklist = ["minecraft:armor_stand", "minecraft:item_frame", "minecraft:glow_item_frame"]
+
+#.
+#Heat thresholds for different reactor sizes
+[ReactorHeat]
+	#.
+	#.
+	#Heat threshold for DANGER level (5x5 reactor)
+	# Default: 256
+	# Range: 0 ~ 8192
+	size5Danger = 256
+	#.
+	#Heat threshold for DANGER level (7x7 reactor)
+	# Default: 1024
+	# Range: 0 ~ 8192
+	size7Danger = 1024
+	#.
+	#Heat threshold for DANGER level (9x9 reactor)
+	# Default: 4096
+	# Range: 0 ~ 8192
+	size9Danger = 4096
+
+#.
+#Control how irradiated biomes are restored back to their original biome.
+[biomeRestore]
+	#.
+	#.
+	#When enabled, restoring an irradiated biome also restores the surrounding chunks within restore_radius_chunks. When disabled, only the chunk being targeted is restored.
+	restore_in_circle = true
+	#.
+	#Radius, in chunks, of the circular area restored around the targeted chunk. Only used when restore_in_circle is enabled.
+	# Default: 4
+	# Range: 0 ~ 32
+	restore_radius_chunks = 4
+	#.
+	#Maximum number of charges the Biome Restore Cell can hold.
+	# Default: 8
+	# Range: 1 ~ 64
+	maxCharge = 8

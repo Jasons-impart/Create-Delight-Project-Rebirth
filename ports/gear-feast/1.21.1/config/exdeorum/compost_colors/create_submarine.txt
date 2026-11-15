@@ -1,0 +1,7 @@
+// Compost colors for create_submarine. You may add your own colors, change existing ones, or remove colors that aren't needed.
+diving_chestplate, #faa472
+diving_leggings, #d38a64
+oxygen_bucket, #afb1b4
+phycological_membrane, #9bda9d
+pressure_goggles, #c05f5f
+steel_cable, #393939

@@ -1,0 +1,39 @@
+[font]
+	#How LDLib UI text is rendered.
+	#VANILLA: Minecraft's own font renderer, no LDLib involvement.
+	#SDF: one scalable distance field atlas, smooth under any transform, softer up close.
+	#RASTER: rasterize at the size actually drawn, sharpest, one atlas per size in use.
+	#AUTO: raster for small text that lands on the pixel grid, SDF everywhere else.
+	#Allowed Values: VANILLA, SDF, RASTER, AUTO
+	fontRenderMode = "AUTO"
+	#Edge length in pixels of a glyph atlas page. Larger pages mean fewer draw calls.
+	# Default: 1024
+	# Range: 256 ~ 4096
+	fontAtlasSize = 1024
+	#Pixel height glyphs are rasterized at when generating the distance field.
+	#Higher values keep sharp corners at large font sizes at the cost of atlas space.
+	# Default: 48
+	# Range: 16 ~ 128
+	sdfEmSize = 48
+	#Multiplier on the anti aliasing width. Above 1 is crisper, below 1 is softer.
+	# Default: 1.0
+	# Range: 0.1 ~ 4.0
+	sdfSharpness = 1.0
+	#Stem thickening in pixels. Raise slightly if small text looks too thin.
+	# Default: 0.0
+	# Range: -0.5 ~ 0.5
+	sdfWeight = 0.0
+	#Largest device pixel line height the raster path will bake; above this the distance
+	#field is used instead. A text element's line height works out to fontSize * guiScale,
+	#so 256 covers font size 64 at every GUI scale.
+	# Default: 256
+	# Range: 16 ~ 512
+	fontRasterMaxSize = 256
+	#Drop a rasterized size that has not been drawn for this many seconds, freeing its
+	#atlas. Keeps zooming through many sizes from growing without bound.
+	# Default: 30
+	# Range: 1 ~ 600
+	fontRasterEvictSeconds = 30
+	#Reuse the glyph positions of a string between frames instead of walking the text
+	#again every frame. Turn off if text ever renders with stale styling.
+	textLayoutCache = true

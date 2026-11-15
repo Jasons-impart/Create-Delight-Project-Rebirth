@@ -1,0 +1,33 @@
+# Default: 1.5
+# Range: 1.0 ~ 100.0
+smoothingHealingFactor = 1.5
+# Default: 60
+# Range: 0 ~ 10000
+teaHealingPeriod = 60
+# Default: 60
+# Range: 0 ~ 10000
+udumbaraHealingPeriod = 60
+# Default: 200
+# Range: 0 ~ 100000
+udumbaraDuration = 200
+# Default: 4
+# Range: 0 ~ 100
+udumbaraFullMoonReduction = 4
+# Default: 1200
+# Range: 0 ~ 100000
+youkaifyingTime = 1200
+# Default: 6000
+# Range: 0 ~ 1000000
+youkaifyingThreshold = 6000
+# Default: 24000
+# Range: 0 ~ 1000000
+youkaifiedDuration = 24000
+# Default: 20
+# Range: 0 ~ 100
+youkaifyingChance = 20
+# Default: 200
+# Range: 0 ~ 100000
+youkaifyingConfusionTime = 200
+# Default: 6000
+# Range: 0 ~ 100000
+youkaifiedProlongation = 6000

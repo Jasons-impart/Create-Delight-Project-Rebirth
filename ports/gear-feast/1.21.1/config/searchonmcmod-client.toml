@@ -1,0 +1,5 @@
+[client]
+	#Show the 'Opening MCMOD' toast after triggering search key.
+	showSearchingHint = false
+	#Show a toast after copying hovered item name to clipboard.
+	showCopyToClipboardHint = false

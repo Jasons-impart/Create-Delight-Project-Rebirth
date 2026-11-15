@@ -1,0 +1,11 @@
+[client]
+	#Disable all Deep Seas startup UI screens (Welcome screen and Update notifications).
+	#Highly recommended to set this to TRUE if you are creating a modpack to avoid annoying your players.
+	disableStartupScreens = false
+	#For photosensitive or epileptic players: the Industrial Alarm
+	#no longer throws its coloured flashing light, only normal Minecraft light.
+	#Other coloured lights are not affected.
+	photosensitiveMode = true
+	#Tunnel vision and a racing heartbeat while the hull is under too much pressure,
+	#growing until the implosion.
+	pressureEffects = true

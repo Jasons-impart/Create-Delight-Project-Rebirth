@@ -1,0 +1,24 @@
+#Abyssal Ocean underwater visibility settings.
+[visibility]
+	#Enable the custom Abyssal Ocean underwater effect.
+	enabled = true
+	#Underwater view-distance multiplier. 1.0 is the original/default effect.
+	#Higher values improve visibility; lower values make the abyss murkier.
+	# Default: 1.0
+	# Range: 0.25 ~ 4.0
+	visibilityMultiplier = 1.0
+	#Color-darkening strength. 1.0 is the original/default effect; 0 disables color darkening.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	darknessStrength = 1.0
+	#How strongly Night Vision reduces abyss darkness. 0 keeps the original behavior; 1 gives full relief.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	nightVisionEffectiveness = 0.0
+	#How strongly the sun, moon and stars disappear with depth. 1.0 is the original/default effect.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	celestialFadeStrength = 1.0
+	#Show the Abyssal Ocean config shortcut in the bottom-right corner of the pause menu.
+	#The normal Mods -> Abyssal Ocean -> Config entry remains available when this is false.
+	showPauseMenuButton = true

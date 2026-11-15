@@ -1,0 +1,30 @@
+[auth]
+	# Default: 10000
+	# Range: 1000 ~ 600000
+	timeoutMs = 10000
+	#false:超时踢出(默认)true:超时放行为离线
+	allowOfflineOnTimeout = false
+	#false:失败时踢出true:任何鉴权失败放行为离线(默认)
+	allowOfflineOnFailure = true
+	timeoutKickMessage = "登录超时，未完成账号校验"
+	offlineFallbackMessage = "注意：你当前以离线模式进入服务器；如果你是正版账号，可能是网络原因导致无法成功鉴权，请重新登陆重试。继续游玩，若后续鉴权成功可能会丢失玩家数据。"
+	offlineShortSubtitle = "鉴权失败：离线模式"
+	onlineShortSubtitle = "已通过正版校验"
+	#一旦该名字成功验证过正版，后续鉴权失败时禁止以离线身份进入。
+	knownPremiumDenyOffline = true
+	#仅对从未验证为正版的新名字允许离线兜底。
+	allowOfflineForUnknownOnly = true
+	#启用调试日志输出
+	debug = false
+
+	[auth.recentIpGrace]
+		#启用“近期同 IP 成功”容错，在 TTL 内失败时临时按正版处理。
+		enabled = true
+		#“近期同 IP 成功”容错的 TTL 秒数。建议 60~600。
+		# Default: 300
+		# Range: 30 ~ 3600
+		ttlSeconds = 300
+
+	[auth.nomojang]
+		#开启后关闭对 Mojang 会话服务的在线校验逻辑；同 IP 且近期有正版成功的名称按正版 UUID 处理，其余直接按离线进入处理。
+		enabled = false

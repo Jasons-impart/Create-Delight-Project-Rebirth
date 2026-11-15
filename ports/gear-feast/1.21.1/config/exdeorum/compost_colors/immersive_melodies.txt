@@ -1,0 +1,12 @@
+// Compost colors for immersive_melodies. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bagpipe, #b96f46
+didgeridoo, #90513c
+ender_bass, #61412c
+flute, #c07250
+handpan, #c58666
+lute, #ea9a5a
+piano, #9d7c68
+tiny_drum, #cfc28d
+triangle, #fffc50
+trumpet, #f0a74b
+vielle, #985222

@@ -1,0 +1,2 @@
+#Whether a sandwich's ingredients should be listed in the tooltip
+list_ingredients_in_tooltip = false

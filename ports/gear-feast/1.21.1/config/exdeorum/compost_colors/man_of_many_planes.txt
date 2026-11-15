@@ -1,0 +1,3 @@
+// Compost colors for man_of_many_planes. You may add your own colors, change existing ones, or remove colors that aren't needed.
+economy_plane, #ffffff
+scarlet_biplane, #ffffff

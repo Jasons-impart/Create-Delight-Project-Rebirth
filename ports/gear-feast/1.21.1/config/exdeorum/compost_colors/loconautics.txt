@@ -1,0 +1,10 @@
+// Compost colors for loconautics. You may add your own colors, change existing ones, or remove colors that aren't needed.
+boiler_tubes, #626466
+cerisene_bucket, #b2899b
+hose, #5b5550
+industrial_iron_rod, #696b6c
+industrial_iron_sheet, #8a898a
+raw_cerisene, #ff7297
+steel_cable, #414141
+unprocessed_reinforced_iron_sheet, #af8e73
+valve_gear, #8a898a

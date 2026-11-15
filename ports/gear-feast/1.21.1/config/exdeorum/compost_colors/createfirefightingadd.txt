@@ -1,0 +1,3 @@
+// Compost colors for createfirefightingadd. You may add your own colors, change existing ones, or remove colors that aren't needed.
+fire_handbook, #cd6850
+fire_hose, #c69184

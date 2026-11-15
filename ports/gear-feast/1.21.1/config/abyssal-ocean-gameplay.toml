@@ -1,0 +1,93 @@
+#Abyssal ecology. World-generation options affect new chunks only.
+[ecology]
+	#Master switch for the coral patches placed by Abyssal Ocean.
+	coralsEnabled = true
+	#Patch attempts per abyssal chunk. Version 1.9.2 used 5-7; the sparse 2.0 default is 1.
+	# Default: 1
+	# Range: 0 ~ 32
+	coralAttemptsPerChunk = 1
+	#Solid coral block IDs. Blocks from other mods are accepted when installed.
+	coralBlockIds = ["minecraft:tube_coral_block", "minecraft:brain_coral_block", "minecraft:bubble_coral_block", "minecraft:fire_coral_block", "minecraft:horn_coral_block"]
+	#Coral plant IDs used on top of patches. Keep this empty to place only solid coral.
+	coralPlantIds = ["minecraft:tube_coral", "minecraft:brain_coral", "minecraft:bubble_coral", "minecraft:fire_coral", "minecraft:horn_coral"]
+	#Apply abyssal darkness, pressure and configured deep mob spawning to every biome
+	#in #minecraft:is_ocean. Disable this to restrict those systems to Abyssal Ocean.
+	effectsInAllOceanBiomes = true
+	#Additional ocean-like biome IDs from mods that do not use the vanilla ocean tag.
+	additionalOceanBiomeIds = []
+	#Structures that are allowed to be moved down onto the generated abyss floor.
+	#Add compatible structure IDs from other mods here. The structure must already spawn in the biome.
+	groundedStructureIds = ["minecraft:shipwreck", "minecraft:shipwreck_beached", "minecraft:monument"]
+	#Fraction of ocean monuments retained in Abyssal Ocean. 0 disables them; 1 keeps vanilla frequency.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	abyssalMonumentChance = 0.35
+	#Optional deep-ocean mob entries: 'namespace:entity|weight|minGroup|maxGroup'.
+	#Example: 'othermod:anglerfish|12|1|2'. Empty uses only normal biome spawning.
+	customMobSpawns = []
+	#Ticks between custom spawn attempts for each player.
+	# Default: 200
+	# Range: 40 ~ 2400
+	customMobSpawnIntervalTicks = 200
+	#Maximum mobs from the custom list within 32 blocks of a player.
+	# Default: 8
+	# Range: 1 ~ 64
+	customMobNearbyCap = 8
+	#Minimum depth below the ocean surface for configured mobs to spawn.
+	#This is depth-based and applies to every matching ocean biome, not only Abyssal Ocean.
+	# Default: 15
+	# Range: 1 ~ 128
+	customMobMinimumDepthBlocks = 15
+
+#Water pressure, decompression and diving equipment.
+[survival]
+	#Master switch for the underwater pressure system.
+	pressureEnabled = true
+	#Enable unsafe-ascent checks and the Pulmonary Barotrauma effect.
+	#Turn this off to keep depth pressure damage without decompression sickness.
+	barotraumaEnabled = true
+	#Atmospheric pressure where unprotected direct pressure damage begins.
+	#Absolute pressure is 1 atmosphere at the surface plus 1 per 10 blocks of depth.
+	# Default: 4.0
+	# Range: 1.5 ~ 20.0
+	pressureDamageStartsAt = 4.0
+	#Ticks between direct pressure damage pulses.
+	# Default: 40
+	# Range: 10 ~ 400
+	pressureDamageIntervalTicks = 40
+	#Maximum safe vertical ascent speed in blocks per second before decompression risk.
+	# Default: 3.0
+	# Range: 0.5 ~ 12.0
+	safeAscentBlocksPerSecond = 3.0
+	#Pulmonary barotrauma duration in seconds. Default 600 = 10 minutes.
+	# Default: 600
+	# Range: 10 ~ 1800
+	barotraumaDurationSeconds = 600
+	#Apply Minecraft's real Blindness effect for the same duration as pulmonary barotrauma.
+	barotraumaCausesBlindness = true
+	#Breathing time supplied by one undamaged oxygen cylinder.
+	# Default: 360
+	# Range: 30 ~ 3600
+	oxygenCylinderSeconds = 360
+	#Show pressure and cylinder oxygen above the hotbar while underwater.
+	showPressureHud = true
+	#Apply survival pressure rules to creative and spectator players.
+	affectCreativePlayers = false
+
+	#Optional integrations. Neither Create nor Create: Deep Seas is required.
+	[survival.compatibility]
+		#Recognize Create's three-piece diving set: helmet, worn backtank and boots.
+		#The backtank must still contain pressurized air.
+		createDivingEquipment = true
+		#Maximum absolute pressure handled by a complete copper Create diving set.
+		# Default: 8.0
+		# Range: 1.0 ~ 40.0
+		createCopperSuitMaxAtmospheres = 8.0
+		#Maximum absolute pressure handled by a complete netherite Create diving set.
+		#The default 14 atmospheres reaches the normal Abyssal Ocean floor.
+		# Default: 14.0
+		# Range: 1.0 ~ 40.0
+		createNetheriteSuitMaxAtmospheres = 14.0
+		#Treat sealed Create: Deep Seas submarine compartments as pressurized shelter.
+		#Flooded or breached compartments remain exposed to water pressure.
+		createDeepSeasSealedCompartments = true

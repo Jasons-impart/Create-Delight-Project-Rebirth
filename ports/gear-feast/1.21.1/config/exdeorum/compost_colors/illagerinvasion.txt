@@ -1,0 +1,10 @@
+// Compost colors for illagerinvasion. You may add your own colors, change existing ones, or remove colors that aren't needed.
+hallowed_gem, #f134a8
+horn_of_sight, #ca975e
+illusionary_dust, #a4c0f7
+lost_candle, #ffda89
+platinum_chunk, #97c8c6
+platinum_infused_hatchet, #6f7c7c
+platinum_sheet, #a5d4d4
+primal_essence, #5bffff
+unusual_dust, #e189a7

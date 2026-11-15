@@ -1,0 +1,84 @@
+#.
+#Options to help improve the behaviour of Bits 'n' Bobs alongside other mods. (Opt-in)
+[compatabilityOptions]
+	#.
+	#Suppresses wooden cogwheels from other mods in favour of Bits 'n' Bobs' behaviour system. Intended for Create: Encased but may work with other mods with proper tags.
+	suppressExternalWoodenCogwheels = true
+
+#.
+#Feature flags to enable or disable certain features of the mod.
+[featureFlags]
+
+	#.
+	#Block feature toggles.
+	[featureFlags.blocks]
+		#.
+		#Ability for the player to create chain drives using the flanged gear cogwheels.
+		flangedChainDrives = true
+		#.
+		#Availability of the Chain Pulley block.
+		chainPulley = true
+		#.
+		#Availability of the Flywheel Bearing block.
+		flywheelBearing = true
+		#.
+		#Availability of the weathered girder block.
+		weatheredGirder = true
+		#.
+		#Availability of the girder strut blocks.
+		girderStrut = true
+		#.
+		#Availability of Nixie Board block.
+		nixieBoard = true
+		#.
+		#Availability of Large Nixie Tube block.
+		largeNixieTube = true
+		#.
+		#Availability of the Lightbulb block.
+		lightbulb = true
+		#.
+		#Availability of the Brass Lamp block. (Legacy)
+		brassLamp = false
+		#.
+		#Availability of the Headlamp block.
+		headlamp = true
+		#.
+		#Availability of the Chair blocks.
+		chairs = true
+		#.
+		#Availability of the tile decoration blocks.
+		tiles = true
+		#.
+		#Availability of the industrial grating blocks.
+		industrialGrating = true
+		#.
+		#Availability of the industrial truss blocks.
+		industrialTruss = true
+		#.
+		#Availability of the Cogwheel Chain Carriage block.
+		cogwheelChainCarriage = true
+		#.
+		#Availability of the Cable Girder Strut block.
+		cableGirderStrut = true
+		#.
+		#Availability of the Weathered Metal Bracket block.
+		weatheredMetalBracket = true
+		#.
+		#Availability of the Industrial Iron encased block variants.
+		industrialIronEncasing = true
+		#.
+		#Availability of the Weathered Iron encased block variants.
+		weatheredIronEncasing = true
+
+	#.
+	#Behaviour feature toggles.
+	[featureFlags.behaviours]
+		#.
+		#Ability for the player to create chain drives on components that are not dedicated for chains (i.e. not flanged)
+		undedicatedCogwheelChainDrives = true
+		#.
+		#Ability to dye fluid pipes.
+		dyeablePipes = true
+		#.
+		#Ability to dye fluid tanks.
+		dyeableTanks = true

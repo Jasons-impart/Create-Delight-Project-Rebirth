@@ -1,0 +1,17 @@
+{
+    "type":  "someassemblyrequired:sandwich_spouting",
+    "fluid":  {
+                  "amount":  125,
+                  "fluid":  "fruitsdelight:apple_jam"
+              },
+    "result":  {
+                   "id":  "fruitsdelight:apple_jello",
+                   "count":  1
+               },
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "fruitsdelight"
+                                }
+                            ]
+}

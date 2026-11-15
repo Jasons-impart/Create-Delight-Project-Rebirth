@@ -1,0 +1,1703 @@
+{
+	autofocus_id: "67AD3AB43ED298A0"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tetra_weapons"
+	group: "7A00000000000004"
+	icon: {
+		id: "tetra:modular_sword"
+	}
+	id: "733D8D6D133580DF"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "67AD3AB43ED298A0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "252DEAB66E41955B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67AD3AB43ED298A0"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "184B9F233262EE9D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "592F825D2EB1966C"
+				type: "checkmark"
+			}]
+			x: -9.65d
+			y: -5.0d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "56581EA4D362850F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "276FCEB9AF25AFEE"
+				type: "checkmark"
+			}]
+			x: -14.55d
+			y: -9.0d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "34686EAD8EB7860B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "568E8D940B0F9FEC"
+				type: "checkmark"
+			}]
+			x: -18.08d
+			y: -11.7d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "297D3EBCB07EE273"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4CBBDE51AA27CEDE"
+				type: "checkmark"
+			}]
+			x: -15.73d
+			y: -11.7d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "3B701E7269CEAA5E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7C3ED7F8486359B0"
+				type: "checkmark"
+			}]
+			x: -13.38d
+			y: -11.7d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "77290DC43B689682"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "69DE927F69A833E0"
+				type: "checkmark"
+			}]
+			x: -11.03d
+			y: -11.7d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "2BCC8F3DFE001719"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3812E17182A5D59E"
+				type: "checkmark"
+			}]
+			x: -18.08d
+			y: -13.8d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7E1B33C0877F38CF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2C73430F277E3AB2"
+				type: "checkmark"
+			}]
+			x: -15.73d
+			y: -13.8d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "1B2F5087AB725954"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1C9C20DB410A1733"
+				type: "checkmark"
+			}]
+			x: -13.38d
+			y: -13.8d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "4EFA57552E032C46"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "12B59EB8347AE555"
+				type: "checkmark"
+			}]
+			x: -11.03d
+			y: -13.8d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "2E86041505F88C8A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "503A174C14FFB0F5"
+				type: "checkmark"
+			}]
+			x: -18.08d
+			y: -15.9d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "061E2D7E5A90D0BF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "229E5719D3CC296C"
+				type: "checkmark"
+			}]
+			x: -15.73d
+			y: -15.9d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "37E8CADE740D6622"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "01B84B5A51DE1D5D"
+				type: "checkmark"
+			}]
+			x: -13.38d
+			y: -15.9d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "28D8CA557E29F3FA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6ACE07C79A276097"
+				type: "checkmark"
+			}]
+			x: -11.03d
+			y: -15.9d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "1D356F99F81D632D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "44B5975337EAD545"
+				type: "checkmark"
+			}]
+			x: -18.08d
+			y: -18.0d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "1EF21A8362A4C822"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0D5757B83531C4AD"
+				type: "checkmark"
+			}]
+			x: -15.73d
+			y: -18.0d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "43CCA02E6BEA47D3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "70CF107C605E532C"
+				type: "checkmark"
+			}]
+			x: -13.38d
+			y: -18.0d
+		}
+		{
+			dependencies: ["56581EA4D362850F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "4939288978AA37C4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7B38D51E51067F56"
+				type: "checkmark"
+			}]
+			x: -11.03d
+			y: -18.0d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "3FB436A498FB568F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "53416670D485B2FA"
+				type: "checkmark"
+			}]
+			x: -3.57d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3FB436A498FB568F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "4327D9F4CE405CED"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6D22C3E36EA70D19"
+				type: "checkmark"
+			}]
+			x: -4.75d
+			y: -11.7d
+		}
+		{
+			dependencies: ["3FB436A498FB568F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "05750DB756999074"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "45367FFD3347F994"
+				type: "checkmark"
+			}]
+			x: -2.4d
+			y: -11.7d
+		}
+		{
+			dependencies: ["3FB436A498FB568F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "557B2311D1730F5B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2B273568500A0207"
+				type: "checkmark"
+			}]
+			x: -4.75d
+			y: -13.8d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "1ED97E978FC59917"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6E908E19008DB5D1"
+				type: "checkmark"
+			}]
+			x: -3.57d
+			y: -18.7d
+		}
+		{
+			dependencies: ["1ED97E978FC59917"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "5C7BA1417314D5A0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "71268D46A25B7708"
+				type: "checkmark"
+			}]
+			x: -5.92d
+			y: -21.4d
+		}
+		{
+			dependencies: ["1ED97E978FC59917"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7D65272F4691229E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "206D61347A5C177A"
+				type: "checkmark"
+			}]
+			x: -3.57d
+			y: -21.4d
+		}
+		{
+			dependencies: ["1ED97E978FC59917"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "3590F8812D0E8ED4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6B7EA729130ED688"
+				type: "checkmark"
+			}]
+			x: -1.22d
+			y: -21.4d
+		}
+		{
+			dependencies: ["1ED97E978FC59917"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "74305D1EA38FBFCD"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "205407D76231FE01"
+				type: "checkmark"
+			}]
+			x: -5.92d
+			y: -23.5d
+		}
+		{
+			dependencies: ["1ED97E978FC59917"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7238B09790F538D9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3D78B18765B79244"
+				type: "checkmark"
+			}]
+			x: -3.57d
+			y: -23.5d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "6DE1537EF603312F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "1C96EF57EF291147"
+				type: "checkmark"
+			}]
+			x: -14.55d
+			y: -22.9d
+		}
+		{
+			dependencies: ["6DE1537EF603312F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7B6DD206D20AD334"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "209B40EE12F33841"
+				type: "checkmark"
+			}]
+			x: -14.55d
+			y: -25.6d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7974A6593D18FA89"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "248F9A4D8E995DF8"
+				type: "checkmark"
+			}]
+			x: -3.57d
+			y: -28.4d
+		}
+		{
+			dependencies: ["7974A6593D18FA89"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "7F02DC3317797901"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "03997F03A8E2FDA9"
+				type: "checkmark"
+			}]
+			x: -4.75d
+			y: -31.1d
+		}
+		{
+			dependencies: ["7974A6593D18FA89"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "3FB6748F0C0E3095"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "74D712F9D09D9ECF"
+				type: "checkmark"
+			}]
+			x: -2.4d
+			y: -31.1d
+		}
+		{
+			dependencies: ["7974A6593D18FA89"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "47A479C14CBB0B92"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "56391EA68DDB3B58"
+				type: "checkmark"
+			}]
+			x: -4.75d
+			y: -33.2d
+		}
+		{
+			dependencies: ["184B9F233262EE9D"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "264964357977C5F1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "454AFFF882249A48"
+				type: "checkmark"
+			}]
+			x: -14.55d
+			y: -30.5d
+		}
+		{
+			dependencies: ["264964357977C5F1"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "64AE37050534D9E8"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "5B20B4D4D6BCDFE4"
+				type: "checkmark"
+			}]
+			x: -15.73d
+			y: -33.2d
+		}
+		{
+			dependencies: ["264964357977C5F1"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "648898675A3B13C6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "086A85397487E0FB"
+				type: "checkmark"
+			}]
+			x: -13.38d
+			y: -33.2d
+		}
+		{
+			dependencies: ["67AD3AB43ED298A0"]
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "407D5F62675F8B9F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "59C602AF7224EEA0"
+				type: "checkmark"
+			}]
+			x: 11.98d
+			y: -5.0d
+		}
+		{
+			dependencies: ["407D5F62675F8B9F"]
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "71593E9F3C3B5ED3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6A068C36756E8736"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -9.0d
+		}
+		{
+			dependencies: ["71593E9F3C3B5ED3"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "512324962B987313"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "77F870E9B6DB2969"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -11.7d
+		}
+		{
+			dependencies: ["407D5F62675F8B9F"]
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "201E9D6E7D937716"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "7C667308C8C0544E"
+				type: "checkmark"
+			}]
+			x: 16.88d
+			y: -9.0d
+		}
+		{
+			dependencies: ["201E9D6E7D937716"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "15F6E927B750D947"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7F3DFF1AA84E06BF"
+				type: "checkmark"
+			}]
+			x: 15.7d
+			y: -11.7d
+		}
+		{
+			dependencies: ["201E9D6E7D937716"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "391DAFA662900370"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "421230571B174996"
+				type: "checkmark"
+			}]
+			x: 18.05d
+			y: -11.7d
+		}
+		{
+			dependencies: ["201E9D6E7D937716"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "6B9FD0351091638C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3E69FAACCC7040E0"
+				type: "checkmark"
+			}]
+			x: 15.7d
+			y: -13.8d
+		}
+		{
+			dependencies: ["407D5F62675F8B9F"]
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "286032FC14D00F7F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "45D77FD63A376DAB"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -16.6d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "6339D70F95D2A827"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "48A3ACD5C291E35B"
+				type: "checkmark"
+			}]
+			x: 5.88d
+			y: -19.3d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "75C182D1637F72D4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "5AEF096EB8402731"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -19.3d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "33B0090D3056F5B1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0BA4D6407F79ED95"
+				type: "checkmark"
+			}]
+			x: 10.58d
+			y: -19.3d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "5181A1AF3EDF90D0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "475196B2C288E625"
+				type: "checkmark"
+			}]
+			x: 5.88d
+			y: -21.4d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "0C561B2AEFD337B9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0EF027D5664C37E1"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -21.4d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "2993573ED9B0C2D4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "198A02BF2C8809FD"
+				type: "checkmark"
+			}]
+			x: 10.58d
+			y: -21.4d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "2CDF4533AC252825"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3B84E16F692332B2"
+				type: "checkmark"
+			}]
+			x: 5.88d
+			y: -23.5d
+		}
+		{
+			dependencies: ["286032FC14D00F7F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "583A9AB5BC31514B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "10D8BA576A583973"
+				type: "checkmark"
+			}]
+			x: 8.23d
+			y: -23.5d
+		}
+		{
+			dependencies: ["407D5F62675F8B9F"]
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "3F45E8AF360B845F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "5FDC248EAC3ABBA9"
+				type: "checkmark"
+			}]
+			x: 16.88d
+			y: -18.7d
+		}
+		{
+			dependencies: ["3F45E8AF360B845F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "13B9CCB6185E01E6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "16F3EE066BBA1067"
+				type: "checkmark"
+			}]
+			x: 15.7d
+			y: -21.4d
+		}
+		{
+			dependencies: ["3F45E8AF360B845F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_single"
+			}
+			id: "7648144DE1C11075"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "61B31A61228B5091"
+				type: "checkmark"
+			}]
+			x: 18.05d
+			y: -21.4d
+		}
+		{
+			dependencies: ["67AD3AB43ED298A0"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "60F3CE2F6DBE0D1F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "0F0DB1D17E4B0F23"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["60F3CE2F6DBE0D1F"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "7590E3A20E995025"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "2705C8D78EF07748"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7590E3A20E995025"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3D30C9007ED67B07"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2BC773FE2D23747D"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 11.7d
+		}
+		{
+			dependencies: ["60F3CE2F6DBE0D1F"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3FB7597DDDD13BD4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6FA0BB979E38A78A"
+				type: "checkmark"
+			}]
+			x: -3.6d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3FB7597DDDD13BD4"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "35E48FF1C3A1F594"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3AB162900D20163E"
+				type: "checkmark"
+			}]
+			x: -3.6d
+			y: 11.7d
+		}
+		{
+			dependencies: ["60F3CE2F6DBE0D1F"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3C922AF5ABD87B4A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "20AD1E6EA4A5A0EF"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 16.6d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "4108E34BF67C230F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2CE94FA9736B2B05"
+				type: "checkmark"
+			}]
+			x: -14.6d
+			y: 19.3d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "2D89C3B0D39E00EF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2DBF54A5652AE7C8"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 19.3d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "00E39243E8CBA8C9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "79D076A088E06FB3"
+				type: "checkmark"
+			}]
+			x: -9.9d
+			y: 19.3d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "58A9F52F1533F412"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4B879B053471FA9B"
+				type: "checkmark"
+			}]
+			x: -14.6d
+			y: 21.4d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "38A3B176616107B5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2BFB46C14EBF7B2D"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 21.4d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "491AD37CFDC94FC5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "53BC893C6EB0087E"
+				type: "checkmark"
+			}]
+			x: -9.9d
+			y: 21.4d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3EA3AB106E6F998E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "5012C08456C04B70"
+				type: "checkmark"
+			}]
+			x: -14.6d
+			y: 23.5d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "0F335FC3AF830EC6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "707C3B8D8CF3F96C"
+				type: "checkmark"
+			}]
+			x: -12.25d
+			y: 23.5d
+		}
+		{
+			dependencies: ["3C922AF5ABD87B4A"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "1DFCAED1D2BF8D69"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7512C15C29C41299"
+				type: "checkmark"
+			}]
+			x: -9.9d
+			y: 23.5d
+		}
+		{
+			dependencies: ["60F3CE2F6DBE0D1F"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "37C99DE0A1214A18"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "379BED6DFBC62384"
+				type: "checkmark"
+			}]
+			x: -3.6d
+			y: 16.6d
+		}
+		{
+			dependencies: ["37C99DE0A1214A18"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "21A6F755777FE28E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3A1FC903ACA2B22F"
+				type: "checkmark"
+			}]
+			x: -4.77d
+			y: 19.3d
+		}
+		{
+			dependencies: ["37C99DE0A1214A18"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "206AF684F409A74B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1EBD0E20BAAA7621"
+				type: "checkmark"
+			}]
+			x: -2.42d
+			y: 19.3d
+		}
+		{
+			dependencies: ["67AD3AB43ED298A0"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "614F0E01A8C91444"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "18A071639BF1437A"
+				type: "checkmark"
+			}]
+			x: 9.65d
+			y: 5.0d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3244AEB824727F64"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "18100AF16B47B58E"
+				type: "checkmark"
+			}]
+			x: 5.9d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3244AEB824727F64"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "414735ED0517B45E"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "135628A044C4442F"
+				type: "checkmark"
+			}]
+			x: 5.9d
+			y: 11.7d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3434D0C066A01FFF"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "24E882DA9982CDA7"
+				type: "checkmark"
+			}]
+			x: 13.4d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3434D0C066A01FFF"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "478E54ABFCD65A6B"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4EE9F9C6840C24D4"
+				type: "checkmark"
+			}]
+			x: 13.4d
+			y: 11.7d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "610741598ABB0016"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0C45646F9AD684C0"
+				type: "checkmark"
+			}]
+			x: 5.9d
+			y: 16.6d
+		}
+		{
+			dependencies: ["610741598ABB0016"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "1B75B62CA671A1FC"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7E076F76F0249CDF"
+				type: "checkmark"
+			}]
+			x: 4.73d
+			y: 19.3d
+		}
+		{
+			dependencies: ["610741598ABB0016"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "5FB6743F20736C8B"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0EAAF4BFCDF5C71A"
+				type: "checkmark"
+			}]
+			x: 7.08d
+			y: 19.3d
+		}
+		{
+			dependencies: ["610741598ABB0016"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "00951F65B81F623B"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "274107CD39EC8BE7"
+				type: "checkmark"
+			}]
+			x: 4.73d
+			y: 21.4d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "04CB876F2F392D4E"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "75E4684F1AFBFC3C"
+				type: "checkmark"
+			}]
+			x: 13.4d
+			y: 16.6d
+		}
+		{
+			dependencies: ["04CB876F2F392D4E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3D43068462F0B430"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "477EBD6F4CEEC503"
+				type: "checkmark"
+			}]
+			x: 12.22d
+			y: 19.3d
+		}
+		{
+			dependencies: ["04CB876F2F392D4E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "5774CF914D62E9B0"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4D3B7348566F5A76"
+				type: "checkmark"
+			}]
+			x: 14.58d
+			y: 19.3d
+		}
+		{
+			dependencies: ["04CB876F2F392D4E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "27DE94ADDA67C5DE"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2B8ACFDEB5E4CCD9"
+				type: "checkmark"
+			}]
+			x: 12.22d
+			y: 21.4d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "038E933716D9DB8B"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "63CB9B2D55ED44F3"
+				type: "checkmark"
+			}]
+			x: 5.9d
+			y: 26.3d
+		}
+		{
+			dependencies: ["038E933716D9DB8B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3C5C95196FC73CE1"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "065AC5624D464657"
+				type: "checkmark"
+			}]
+			x: 4.73d
+			y: 29.0d
+		}
+		{
+			dependencies: ["038E933716D9DB8B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "3644E71B1250AE65"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "40DAD6BDF37278DA"
+				type: "checkmark"
+			}]
+			x: 7.08d
+			y: 29.0d
+		}
+		{
+			dependencies: ["614F0E01A8C91444"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "6A427B480484384E"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "4C7AC4AB18C82D82"
+				type: "checkmark"
+			}]
+			x: 13.4d
+			y: 26.3d
+		}
+		{
+			dependencies: ["6A427B480484384E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "355F268A3037A14B"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1A5FD686EE7C39A5"
+				type: "checkmark"
+			}]
+			x: 13.4d
+			y: 29.0d
+		}
+		{
+			dependencies: ["2BCC8F3DFE001719"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "0DDD3CC9D5CF72B4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "pentagon"
+			size: 1.75d
+			tasks: [{
+				id: "6C3E8D411DE2DB35"
+				type: "checkmark"
+			}]
+			x: -20.58d
+			y: -13.8d
+		}
+		{
+			dependencies: ["0DDD3CC9D5CF72B4"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "0224BE2CE5FCE22A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "pentagon"
+			size: 1.75d
+			tasks: [{
+				id: "7D73DB22E1D42AD7"
+				type: "checkmark"
+			}]
+			x: -23.08d
+			y: -13.8d
+		}
+		{
+			dependencies: ["0224BE2CE5FCE22A"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "6E93AA504FC9FD63"
+			quest_enhance_disable_scroll_paging: false
+			shape: "pentagon"
+			size: 1.75d
+			tasks: [{
+				id: "4BD01161F028DCBB"
+				type: "checkmark"
+			}]
+			x: -20.58d
+			y: -16.3d
+		}
+		{
+			dependencies: ["6E93AA504FC9FD63"]
+			icon: {
+				id: "tetra:modular_sword"
+			}
+			id: "4099008596F32C52"
+			quest_enhance_disable_scroll_paging: false
+			shape: "pentagon"
+			size: 1.75d
+			tasks: [{
+				id: "53EAC53A21D4EE91"
+				type: "checkmark"
+			}]
+			x: -23.08d
+			y: -16.3d
+		}
+		{
+			dependencies: ["3EA3AB106E6F998E"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "2832C4A43B0CF7A7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "octagon"
+			size: 1.75d
+			tasks: [{
+				id: "69817A327D226099"
+				type: "checkmark"
+			}]
+			x: -17.3d
+			y: 21.0d
+		}
+		{
+			dependencies: ["3EA3AB106E6F998E"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "79CF36DF5E276A20"
+			quest_enhance_disable_scroll_paging: false
+			shape: "octagon"
+			size: 1.75d
+			tasks: [{
+				id: "6976042891A8D84A"
+				type: "checkmark"
+			}]
+			x: -17.3d
+			y: 23.5d
+		}
+		{
+			dependencies: ["3EA3AB106E6F998E"]
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "5BF31F11A0167554"
+			quest_enhance_disable_scroll_paging: false
+			shape: "octagon"
+			size: 1.75d
+			tasks: [{
+				id: "211B75160FD59760"
+				type: "checkmark"
+			}]
+			x: -17.3d
+			y: 26.0d
+		}
+	]
+}

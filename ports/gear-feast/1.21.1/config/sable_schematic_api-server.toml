@@ -1,0 +1,59 @@
+[camera]
+	#Maximum distance, in blocks, at which a camera may capture a Sable body.
+	# Default: 128
+	# Range: 1 ~ 32768
+	maxCaptureRange = 128
+	#Maximum number of Sable bodies a single camera capture may contain.
+	# Default: 128
+	# Range: 1 ~ 4096
+	maxCapturedBodies = 128
+	#Maximum compressed byte size of a camera capture.
+	# Default: 16777216
+	# Range: 1024 ~ 67108864
+	maxBlueprintBytes = 16777216
+
+[manuscript]
+	#Maximum compressed byte size of one blueprint manuscript upload.
+	# Default: 16777216
+	# Range: 1024 ~ 268435456
+	maxUploadBytes = 16777216
+
+[filmPrinter]
+	#Film printer manufacturing work units completed per server tick.
+	# Default: 64
+	# Range: 1 ~ 4096
+	blocksPerTick = 64
+
+[projector]
+	# Default: 256
+	# Range: 1 ~ 1024
+	maxRayDistance = 256
+	# Default: 4096
+	# Range: 1 ~ 65536
+	maxScreenBlocks = 4096
+	#Whole-server budget shared fairly by all active projector scans.
+	# Default: 4096
+	# Range: 1 ~ 1048576
+	terrainChecksPerTick = 4096
+	# Default: 8.0
+	# Range: 0.01 ~ 1024.0
+	frontierSpeedBlocksPerSecond = 8.0
+	# Default: 0.25
+	# Range: 0.0 ~ 64.0
+	anchorTranslationThreshold = 0.25
+	# Default: 2.0
+	# Range: 0.0 ~ 180.0
+	anchorRotationThresholdDegrees = 2.0
+	# Default: 45.0
+	# Range: 1.0 ~ 89.9
+	halfConeAngleDegrees = 45.0
+
+[honeyWelder]
+	#Maximum fuel stored by one honey welder.
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	capacity = 1000
+	#Fuel granted by one vanilla honey bottle.
+	# Default: 250
+	# Range: 1 ~ 1000000
+	fuelPerBottle = 250

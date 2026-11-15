@@ -1,0 +1,2 @@
+// Compost colors for naturescompass. You may add your own colors, change existing ones, or remove colors that aren't needed.
+naturescompass, #c9cd98

@@ -1,0 +1,7 @@
+// Compost colors for entity_map. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blank_survey_chart, #fffedc
+brass_survey_frame, #ca833a
+incomplete_calibrator, #624d34
+large_map, #968a50
+medium_map, #a79454
+small_map, #9b8a4d

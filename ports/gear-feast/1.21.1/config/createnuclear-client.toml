@@ -1,0 +1,6 @@
+#.
+#Enable the bright flash at the start of a nuclear explosion.
+nuclear_bomb_flash = true
+#.
+#Enable screen shake effect during a nuclear explosion.
+screen_shake = true

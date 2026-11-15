@@ -1,0 +1,127 @@
+#Fermentation Barrel, Apple Press, fruit growth and the Grapevine Pot.
+[Blocks]
+	#How long the Fermentation Barrel needs for one wine, in ticks. 20 ticks = 1 second.
+	# Default: 6000
+	# Range: 1 ~ 72000
+	totalFermentationTime = 6000
+	#How much juice fits into the Fermentation Barrel.
+	# Default: 100
+	# Range: 10 ~ 1000
+	maxFluidLevel = 100
+	#How much juice one bottle of grape juice adds to the Fermentation Barrel.
+	# Default: 25
+	# Range: 1 ~ 1000
+	maxFluidIncrease = 25
+	#How long the Apple Press needs to mash apples, in ticks. 20 ticks = 1 second.
+	# Default: 600
+	# Range: 1 ~ 72000
+	applePressMashingTime = 600
+	#How long the Apple Press needs to ferment the mash, in ticks. 20 ticks = 1 second.
+	# Default: 800
+	# Range: 1 ~ 72000
+	applePressFermentationTime = 800
+	#Chance in percent per random tick that cherries grow on cherry leaves.
+	# Default: 40
+	# Range: 0 ~ 100
+	cherryGrowthChance = 40
+	#Chance in percent per random tick that apples grow on apple leaves.
+	# Default: 40
+	# Range: 0 ~ 100
+	appleGrowthChance = 40
+	#Chance in percent per random tick that grapes grow.
+	# Default: 50
+	# Range: 0 ~ 100
+	grapeGrowthChance = 50
+	#Multiplies the growth chance of grape bushes, grapevine stems and lattices. 1.0 = normal, 0 = grapes never grow.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	grapeGrowthMultiplier = 1.0
+	#Grapevine stems grow a canopy of leaves around them after some time.
+	enableGrapevineLeaves = true
+	#How many jumps it takes to stomp a full Grapevine Pot.
+	# Default: 12
+	# Range: 1 ~ 100
+	grapevinePotStomps = 12
+	#How much faster you stomp in heavy armor (iron or better), in percent.
+	# Default: 10
+	# Range: 0 ~ 100
+	grapevinePotHeavyArmorBonus = 10
+	#Juice splashes out of the Grapevine Pot while stomping.
+	enableGrapevinePotSplash = true
+
+#How wine ages and gets stronger over time.
+[Wine]
+	#Wine gets stronger with age. If off, every wine uses the values from Effects.
+	enableWineAging = true
+	#Wine only ages while it sits in a storage block like wine racks, the wine box, shelves or as a placed bottle.
+	ageOnlyInStorage = false
+	#How much faster wine ages in storage without sky light, underground or fully roofed. 1.0 = no bonus.
+	# Default: 1.5
+	# Range: 1.0 ~ 5.0
+	cellarAgingMultiplier = 1.5
+	#Minecraft days that make one wine year. 1 day = 20 minutes.
+	# Default: 24
+	# Range: 1 ~ 100
+	daysPerYear = 24
+	#Wine years needed for each additional effect level.
+	# Default: 6
+	# Range: 1 ~ 100
+	yearsPerEffectLevel = 6
+	#Maximum effect levels gained through aging, added to the base level of the wine.
+	# Default: 5
+	# Range: 0 ~ 10
+	maxLevel = 5
+	#Effect duration in ticks added per wine year. 20 ticks = 1 second.
+	# Default: 200
+	# Range: 0 ~ 10000
+	durationPerYear = 200
+	#Maximum effect duration in ticks reachable through aging. 20 ticks = 1 second.
+	# Default: 15000
+	# Range: 1 ~ 100000
+	maxDuration = 15000
+	#Effect of each wine, one entry per wine as wine|effect|amplifier|durationTicks. Amplifier 0 = level I, the duration is for a fresh bottle.
+	effects = ["vinery:apple_cider|minecraft:strength|0|1800", "vinery:apple_wine|minecraft:resistance|0|1800", "vinery:mead|minecraft:haste|0|1800", "vinery:glowing_wine|minecraft:glowing|0|1800", "vinery:solaris_wine|minecraft:health_boost|0|1800", "vinery:kelp_cider|vinery:water_walker|0|1800", "vinery:eiswein|vinery:frosty_armor|0|1800", "vinery:aegis_wine|vinery:armor_effect|0|1800", "vinery:villagers_fright|minecraft:bad_omen|0|1800", "vinery:clark_wine|vinery:double_jump|0|1800", "vinery:jellie_wine|vinery:jellie|0|1800", "vinery:noir_wine|minecraft:jump_boost|0|1800", "vinery:red_wine|minecraft:slow_falling|0|1800", "vinery:strad_wine|minecraft:night_vision|0|1800", "vinery:cherry_wine|minecraft:invisibility|0|1800", "vinery:cristel_wine|minecraft:water_breathing|0|1800", "vinery:lilitu_wine|vinery:party_effect|0|1800", "vinery:jo_special_mixture|vinery:climbing_effect|0|1800", "vinery:bolvar_wine|vinery:lava_walker|0|1800", "vinery:magnetic_wine|vinery:magnet|0|1800", "vinery:stal_wine|vinery:health_effect|0|1800", "vinery:chenet_wine|vinery:climbing_effect|0|1800", "vinery:bottle_mojang_noir|vinery:experience_effect|0|1800", "vinery:chorus_wine|vinery:teleport|0|10", "vinery:creepers_crush|vinery:creeper_effect|0|100", "vinery:mellohi_wine|minecraft:instant_health|0|1"]
+
+#The wandering winemaker.
+["Wandering Trader"]
+	#Chance in percent that the wandering winemaker spawns when a spawn is attempted.
+	# Default: 50
+	# Range: 0 ~ 100
+	spawnChance = 50
+	#The wandering winemaker arrives with mules.
+	spawnWithMules = true
+	#Time between spawn attempts in ticks. 24000 ticks = 1 day.
+	# Default: 48000
+	# Range: 1 ~ 168000
+	spawnDelay = 48000
+
+#Trades of the winemaker villager. Changes need a game restart.
+["Villager Trades"]
+	#Novice trades, one entry per trade as item|buy or sell|price|count|maxUses|experience.
+	level1Trades = ["vinery:red_grape|buy|15|1|4|5", "vinery:white_grape|buy|15|1|4|5", "vinery:red_grape_seeds|sell|2|1|1|5", "vinery:white_grape_seeds|sell|2|1|1|5"]
+	#Apprentice trades, one entry per trade as item|buy or sell|price|count|maxUses|experience.
+	level2Trades = ["vinery:wine_bottle|sell|1|1|4|7", "vinery:cherry|buy|12|1|4|6", "vinery:apple_mash|sell|1|1|4|6"]
+	#Journeyman trades, one entry per trade as item|buy or sell|price|count|maxUses|experience.
+	level3Trades = ["vinery:white_grape_bag|sell|7|1|2|10", "vinery:red_grape_bag|sell|7|1|2|10", "vinery:cherry_bag|sell|7|1|2|10", "vinery:apple_bag|sell|7|1|2|10"]
+	#Expert trades, one entry per trade as item|buy or sell|price|count|maxUses|experience.
+	level4Trades = ["vinery:window|sell|12|1|2|10", "vinery:dark_cherry_beam|sell|6|4|2|10", "vinery:grapevine_pot|sell|6|1|2|10", "vinery:taiga_grape_seeds_red|sell|2|1|2|5", "vinery:taiga_grape_seeds_white|sell|2|1|2|5"]
+	#Master trades, one entry per trade as item|buy or sell|price|count|maxUses|experience.
+	level5Trades = ["vinery:wine_box|sell|10|1|2|10", "vinery:lilitu_wine|sell|4|1|2|10", "vinery:winemaker_apron|sell|18|1|1|15", "vinery:straw_hat|sell|12|1|1|12"]
+
+#Info tooltips that appear when looking at a block. Only affects your own screen.
+["Info Tooltips"]
+	#Info tooltips only show while wearing the Straw Hat.
+	needStrawHat = false
+	#Shows an info tooltip when looking at the Grapevine Pot.
+	showGrapevinePotInfo = true
+	#Shows an info tooltip when looking at wine racks, the wine box and other wine storage.
+	showStorageInfo = true
+
+#Fine-tuning of the effects.
+[Effects]
+
+	[Effects."Completionist Banner Effect"]
+		#The Completionist Banner gives its effect to players nearby.
+		bannerGiveEffect = true
+		#The Completionist Banner shows its effect in the item tooltip. Hidden while the banner effect is off.
+		bannerShowTooltip = true

@@ -1,0 +1,7 @@
+[visuals]
+	#Visual effect used while an afterburner is active.
+	#RENDERED uses the smooth rendered flame and nozzle glow.
+	#TEXTURED uses the translucent animated cuboid flame and combustion-cap textures.
+	#PARTICLES uses the original particle-only exhaust effect.
+	#Allowed Values: RENDERED, TEXTURED, PARTICLES
+	afterburnerEffect = "PARTICLES"

@@ -1,0 +1,55 @@
+#Settings for the Gyroscope block.
+[gyroscope]
+	#Target natural frequency of the closed loop in rad/s. Higher = snappier correction. 3.0 rad/s gives ~2 second natural period. Goes up to ~10 before discretization at 80 Hz starts to bite.
+	# Default: 3.0
+	# Range: 0.1 ~ 10.0
+	omegaTarget = 3.0
+	#Target damping ratio of the closed loop. 0.9 settles fast with negligible overshoot, 0.7 is faster to first peak but bounces ~5%, 1.0 is critically damped (no overshoot, slower).
+	# Default: 0.9
+	# Range: 0.1 ~ 2.0
+	dampingRatio = 0.9
+	#How much ship inertia (kg*m^2) one gyro fully stabilizes at reference RPM. Bigger ship needs more gyros, ratio determines how many. Under-powered fleets degrade gracefully (slower correction, still stable).
+	# Default: 5000.0
+	# Range: 100.0 ~ 1000000.0
+	authorityPerUnit = 5000.0
+	#Fraction of the observed external disturbance the controller cancels via feed-forward. 1.0 = full cancellation (firmest hold on unbalanced ships), 0.0 = disable feed-forward, leaving only the PD loop. Lower if the controller feels too aggressive on heavily unbalanced contraptions.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	feedForwardGain = 1.0
+	#Exponential moving average factor for the disturbance estimate. Lower = smoother but slower to track changes, higher = more responsive but noisier. 0.2 (default) corresponds to a ~5-substep time constant at 80 Hz.
+	# Default: 0.2
+	# Range: 0.01 ~ 1.0
+	feedForwardSmoothing = 0.2
+	#Yaw-rate damping strength, as the fraction of yaw rate bled off per second at full fleet authority. 1.0 settles a spin in ~1-2 seconds. 0.0 disables it.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	yawDamping = 1.0
+	#RPM at which the gyroscope reaches 100% effectiveness. Above this, output is capped.
+	# Default: 256.0
+	# Range: 1.0 ~ 4096.0
+	referenceRpm = 256.0
+	#Base stress impact in SU per RPM. Total SU draw is roughly impact * |RPM|.
+	# Default: 16.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 16.0
+
+#Settings for the Mechanical Servo block.
+[mechanical_servo]
+	#Stress impact in SU per RPM. Applied whenever the input shaft has nonzero speed, including while the servo is held at its target.
+	# Default: 4.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 4.0
+
+#Settings for the Stepper Servo block.
+[stepper_servo]
+	#Stress impact in SU per RPM. Applied whenever the input shaft has nonzero speed, including while the servo is held at its target.
+	# Default: 4.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 4.0
+
+#Settings for modular control consoles.
+[console]
+	#Raw mouse pixels per axis step for mouse-driven modules. Lower = more sensitive. Full deflection (15 steps) is reached after 15x this many pixels of mouse movement.
+	# Default: 30.0
+	# Range: 1.0 ~ 500.0
+	pixelsPerStep = 30.0

@@ -1,0 +1,33 @@
+{
+    "type":  "refurbished_furniture:workbench_constructing",
+    "materials":  [
+                      {
+                          "count":  6,
+                          "ingredient":  {
+                                             "tag":  "minecraft:planks"
+                                         }
+                      },
+                      {
+                          "count":  16,
+                          "ingredient":  {
+                                             "item":  "farmersdelight:straw"
+                                         }
+                      },
+                      {
+                          "count":  2,
+                          "ingredient":  {
+                                             "item":  "minecraft:white_wool"
+                                         }
+                      },
+                      {
+                          "count":  1,
+                          "ingredient":  {
+                                             "item":  "minecraft:yellow_dye"
+                                         }
+                      }
+                  ],
+    "result":  {
+                   "id":  "refurbished_furniture:yellow_sofa",
+                   "count":  2
+               }
+}

@@ -1,0 +1,18 @@
+#Presentation of the warp sequence. None of this affects gameplay.
+[visualEffects]
+	#Scales every particle count the warp effects emit. 0 disables warp particles.
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	particleDensity = 1.0
+	#Draw the spatial distortion disc when a rift forms.
+	riftDistortion = true
+	#Draw lightning sparking off a rift's aperture and down its corridor.
+	riftLightning = true
+	#Draw the corridor streaks and wake while the airship is in warp.
+	warpCorridor = true
+	#Shake the camera during rift formation and exit.
+	screenShake = true
+	#Volume multiplier for warp sounds emitted by this mod.
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	effectVolume = 1.0

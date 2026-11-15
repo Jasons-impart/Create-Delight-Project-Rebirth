@@ -1,0 +1,40 @@
+{
+	id: "778E7B910C4FCFF7"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{
+			id: "2B14DB192A89CB79"
+			item: {
+				count: 1
+				id: "createdelightcore:iron_coin"
+			}
+			weight: 2.0f
+		}
+		{ id: "2C2A024D371F2A4B", item: { count: 1, id: "createdelightcore:copper_coin" } }
+		{
+			id: "5EAE49ADEAB51762"
+			item: {
+				count: 1
+				id: "createdelightcore:gold_coin"
+			}
+			weight: 0.75f
+		}
+		{
+			id: "68EE92928A7DFCEC"
+			item: {
+				count: 1
+				id: "createdelightcore:emerald_coin"
+			}
+			weight: 0.1f
+		}
+		{
+			id: "311AFF63C6320366"
+			item: {
+				count: 1
+				id: "createdelightcore:netherite_coin"
+			}
+			weight: 0.01f
+		}
+	]
+}

@@ -1,0 +1,2 @@
+#Controls if perks data should be queried on startup
+query_perks = true

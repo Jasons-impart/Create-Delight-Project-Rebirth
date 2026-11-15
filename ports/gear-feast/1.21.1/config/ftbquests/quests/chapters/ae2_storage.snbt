@@ -1,0 +1,1209 @@
+{
+	autofocus_id: "05D7688036D40AE4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae2_storage"
+	group: "7A00000000000002"
+	icon: {
+		id: "ae2:drive"
+	}
+	id: "467649501F6EE065"
+	images: [ ]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "15B8BBCFE27CD2D0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A2E899F05046D94"
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "040A303EBE3CF34D"
+				item: { count: 1, id: "ae2:controller" }
+				type: "item"
+			}]
+			x: 12.75d
+			y: -3.75d
+		}
+		{
+			dependencies: ["6894705A95F46440"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			id: "05D7688036D40AE4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "50FEC657E3D7C1E8"
+				type: "random"
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "501CE0ECEB196B6D"
+				item: { count: 1, id: "ae2:drive" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "2EAA35BF40FB182A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41B722EEA4830F96"
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0A18195B948CC8EC"
+				item: { count: 1, id: "ae2:condenser" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7777519D3A23C2C7"
+				"6B3F181B4E31BCE2"
+				"05D7688036D40AE4"
+			]
+			icon: {
+				id: "ae2:item_storage_cell_1k"
+			}
+			id: "4EC043194AF40AC4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "7B87D26CB5D9E376"
+					item: { count: 1, id: "ae2:item_storage_cell_1k" }
+					type: "item"
+				}
+				{
+					id: "6AF922B8BC896C49"
+					item: { count: 1, id: "ae2:fluid_storage_cell_1k" }
+					type: "item"
+				}
+				{
+					id: "0B30204A8D9938CF"
+					item: { count: 1, id: "megacells:item_storage_cell_1m" }
+					type: "item"
+				}
+				{
+					id: "1FF2601FA2B73394"
+					item: { count: 1, id: "megacells:fluid_storage_cell_1m" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			dependency_requirement: "one_completed"
+			id: "7777519D3A23C2C7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6532ECCDEBDC2A02"
+					item: { count: 1, id: "ae2:item_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "21E506C4750FA008"
+					item: { count: 1, id: "ae2:fluid_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "1BF88044724E3728"
+					item: { count: 1, id: "megacells:mega_item_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "602C3D744A37713A"
+					item: { count: 1, id: "megacells:mega_fluid_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "018E5ED1C60BD308"
+					item: { count: 1, id: "ae2omnicells:omni_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "79D6349A99C2BB88"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_housing" }
+					type: "item"
+				}
+				{
+					id: "5613F687C0C65019"
+					item: { count: 1, id: "ae2omnicells:quantum_omni_cell_housing" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "328FC706631222E9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "09E0A231A2C3E972"
+				item: { components: { "ftbfiltersystem:filter": "#ae2:illuminated_panel" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"328FC706631222E9"
+				"05D7688036D40AE4"
+			]
+			id: "397829BA5DDD0B7F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73DE09174A0E4C7C"
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1EA803F622F9B7F4"
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "048F1D26625104B6"
+				item: { count: 1, id: "ae2:terminal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["397829BA5DDD0B7F"]
+			id: "45AF2B6B2E0C53A2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C507653D2AE76DA"
+				type: "random"
+			}]
+			tasks: [{
+				id: "20E174E05B87C4CF"
+				item: { count: 1, id: "ae2:pattern_encoding_terminal" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["397829BA5DDD0B7F"]
+			id: "16D27498A669E663"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D76A189AF4272FD"
+				type: "random"
+			}]
+			tasks: [{
+				id: "7B6C14482F6379D2"
+				item: { count: 1, id: "ae2:crafting_terminal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["397829BA5DDD0B7F"]
+			id: "0F844891015AC97E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EF814E4CC6FC22A"
+				type: "random"
+			}]
+			tasks: [{
+				id: "7A93B40B74EB6E14"
+				item: { count: 1, id: "ae2:pattern_access_terminal" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A0C5687C12AC0F5"]
+			id: "53B9C32DE375CA79"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D16F50CB66BC58E"
+					type: "random"
+				}
+				{
+					id: "69B8E8A45B6FCCA9"
+					item: {
+						count: 1
+						id: "ae2:wireless_booster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "130040B036DA32DE"
+				item: { count: 1, id: "ae2:wireless_crafting_terminal" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A0C5687C12AC0F5"]
+			id: "65108BBE9196309E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5D59181AE064F154"
+					type: "random"
+				}
+				{
+					id: "5C7A0F5593F24405"
+					item: {
+						count: 1
+						id: "ae2:wireless_booster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "45F69101EAA7CB0B"
+				item: { count: 1, id: "ae2wtlib:wireless_pattern_encoding_terminal" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A0C5687C12AC0F5"]
+			id: "3F4D28BD754C09AE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3F276E74157CECAD"
+					type: "random"
+				}
+				{
+					id: "4C6181F870D232C8"
+					item: {
+						count: 1
+						id: "ae2:wireless_booster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0FE30C85742091CC"
+					item: { count: 1, id: "ae2wtlib:wireless_pattern_access_terminal" }
+					type: "item"
+				}
+				{
+					id: "1AE449F6E6642834"
+					item: { components: { "ftbquests:missing_item": "expatternprovider:wireless_ex_pat" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"397829BA5DDD0B7F"
+				"3B6CEAAD30105F16"
+			]
+			id: "0A0C5687C12AC0F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "794812BAB94920A8"
+				item: { count: 1, id: "ae2:wireless_terminal" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"65108BBE9196309E"
+				"53B9C32DE375CA79"
+				"3F4D28BD754C09AE"
+			]
+			id: "7488BEAEFA05C2AA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "08F1A5F652716AEF"
+				item: {
+					count: 1
+					id: "ae2:wireless_booster"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "2661DA3F8369EBF8"
+				item: { count: 1, id: "ae2wtlib:wireless_universal_terminal" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["67C0556009A49A92"]
+			id: "0B51D01823292EC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3141B9103AC30CC1"
+				item: { count: 1, id: "ae2:wireless_access_point" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			id: "67C0556009A49A92"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7E1850B9B927EEB7"
+				item: { count: 1, id: "ae2:wireless_receiver" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67C0556009A49A92"]
+			id: "5D79E39B5F14FC5A"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [
+				{
+					id: "4489A28803498C6D"
+					item: { components: { "ftbquests:missing_item": "expatternprovider:wireless_connect" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "7C2798BC7E1C99D7"
+					item: { components: { "ftbquests:missing_item": "expatternprovider:wireless_tool" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37602625EB8C5460"]
+			id: "5A1BDACB580F9129"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "641CA52F579A0239"
+				item: { count: 1, id: "createdelightcore:space_casing" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5A1BDACB580F9129"
+				"15B8BBCFE27CD2D0"
+				"4EF2A414ADA718B6"
+				"05D7688036D40AE4"
+			]
+			id: "1091641256B0E30C"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "1E8FD179F797EFBD"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "5A6E5D0DCD12527C"
+					item: { count: 1, id: "ae2:quantum_link" }
+					type: "item"
+				}
+			]
+			x: 12.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37602625EB8C5460"]
+			id: "4EF2A414ADA718B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "53C4D5F59144E0FC"
+				item: { count: 1, id: "ae2:quantum_entangled_singularity" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "37602625EB8C5460"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B6DDCAEE96D070F"
+				item: { count: 1, id: "ae2:singularity" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "548ACB7AEFD5E1DE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "66634E5C2B7251D1"
+					item: {
+						count: 1
+						id: "ae2:spatial_cell_component_128"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "338ECDCDBF1B6621"
+					item: {
+						count: 1
+						id: "megacells:mega_energy_cell"
+					}
+					type: "item"
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				id: "7BA0188925941627"
+				item: { count: 1, id: "ae2:spatial_anchor" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1091641256B0E30C"]
+			id: "523CC92B15E7341E"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "0B982F1DA15A8253"
+				item: { count: 1, id: "ae2wtlib:quantum_bridge_card" }
+				type: "item"
+			}]
+			x: 12.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "5B1FE048249D6374"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1697AD17CA5104EA"
+				item: { count: 1, id: "ae2:color_applicator" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "2D2D6BFD75BBCDB6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "502716273B28DA96"
+				item: { count: 1, id: "ae2:entropy_manipulator" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "03E528F58B572D48"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6704F40DCD791E08"
+				item: { count: 1, id: "ae2:charged_staff" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "6B3F181B4E31BCE2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "112370E121DD6375"
+					item: { count: 1, id: "ae2:cell_component_1k" }
+					type: "item"
+				}
+				{
+					id: "2CD2383B398F2F50"
+					item: { count: 1, id: "ae2:cell_component_4k" }
+					type: "item"
+				}
+				{
+					id: "2BEE5E9F5D450F99"
+					item: { count: 1, id: "ae2:cell_component_16k" }
+					type: "item"
+				}
+				{
+					id: "55EE3C17CDB7B8A4"
+					item: { count: 1, id: "ae2:cell_component_64k" }
+					type: "item"
+				}
+				{
+					id: "7E6062EC9580C51E"
+					item: { count: 1, id: "ae2:cell_component_256k" }
+					type: "item"
+				}
+				{
+					id: "1A452ACC017C0952"
+					item: { count: 1, id: "megacells:cell_component_1m" }
+					type: "item"
+				}
+				{
+					id: "7A8D5CF7FF82B61F"
+					item: { count: 1, id: "megacells:cell_component_4m" }
+					type: "item"
+				}
+				{
+					id: "367A08579E7CA1F7"
+					item: { count: 1, id: "megacells:cell_component_16m" }
+					type: "item"
+				}
+				{
+					id: "2AA4DA46E814B507"
+					item: { count: 1, id: "megacells:cell_component_64m" }
+					type: "item"
+				}
+				{
+					id: "74B1E7E12BD9AFFF"
+					item: { count: 1, id: "megacells:cell_component_256m" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "589EED2DA50DE0F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72F0DC157603B8C2"
+				item: { count: 1, id: "ae2:energy_cell" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["589EED2DA50DE0F1"]
+			id: "3B6CEAAD30105F16"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66774A5254590B15"
+				item: { count: 1, id: "ae2:dense_energy_cell" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"1E7DEA74331684BC"
+			]
+			id: "21B45DF11F4DEDEB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0BD3C8CD820BF141"
+				item: { count: 1, id: "ae2:storage_bus" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"1E7DEA74331684BC"
+			]
+			id: "458445CB85B01EAC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10161D132C237268"
+				item: { count: 1, id: "ae2:import_bus" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"1E7DEA74331684BC"
+			]
+			id: "1BEF4A754211498E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "001803F8D7DC9BF7"
+				item: { count: 1, id: "ae2:export_bus" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"05D7688036D40AE4"
+			]
+			id: "1E7DEA74331684BC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "128A4ED3860A238A"
+				item: { components: { "ftbfiltersystem:filter": "#ae2:interface" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"1E7DEA74331684BC"
+			]
+			id: "1A36ACBD35C97BBE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7E77DEDC6EFFE01A"
+				item: { count: 1, id: "ae2:annihilation_plane" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62AA7E83D24E4093"
+				"1E7DEA74331684BC"
+			]
+			id: "1FA597D57F70B9B2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "3C2714E8148958B6"
+					item: { count: 1, id: "ae2:formation_plane" }
+					type: "item"
+				}
+				{
+					id: "54687544FD8A0B14"
+					item: { components: { "ftbquests:missing_item": "expatternprovider:active_formation_plane" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "62AA7E83D24E4093"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "47C2E0FD61305C41"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "34C42CE03FCE8705"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "1FE33F6D5F80AAEB"
+					item: { count: 1, id: "ae2:formation_plane" }
+					type: "item"
+				}
+				{
+					id: "1D962F69A8203BAD"
+					item: { components: { "ftbquests:missing_item": "expatternprovider:active_formation_plane" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "771CFF6FC24EDCD6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3AC83368D8A5C874"
+				item: { count: 1, id: "ae2:annihilation_plane" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "5E712745894090A8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "69C92EB34CB4E405"
+				item: { count: 1, id: "ae2:import_bus" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "68313FFEE76C5EC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "790C2923FF598472"
+				item: { count: 1, id: "ae2:export_bus" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "3AD20853381BE07D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2B4AE13EC6F499DC"
+				item: { count: 1, id: "ae2:storage_bus" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "629F5A2C1CAB5FEE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67706A4F2B5240E8"
+				item: { components: { "ftbfiltersystem:filter": "#ae2:interface" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			id: "387C22C99791E5FE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1D91A34323C34AB8"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3AD20853381BE07D"
+				"629F5A2C1CAB5FEE"
+			]
+			id: "6FE549E0ABDCA79E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "01DD2C6396128F39"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["62AA7E83D24E4093"]
+			id: "79C92A2E1542C1A7"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "4619D04FF9B6674D"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["79C92A2E1542C1A7"]
+			id: "0E63C201EF1FC4FB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7B3F7199EDE33A91"
+				item: { components: { "ftbfiltersystem:filter": "#ae2:pattern_provider" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["79C92A2E1542C1A7"]
+			id: "170FFDD0A797062B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "024C544E2640A514"
+				item: { count: 1, id: "ae2:blank_pattern" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["79C92A2E1542C1A7"]
+			id: "51D17CDCB592067D"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "015F1D00C4784035"
+				item: { count: 1, id: "ae2:me_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51D17CDCB592067D"]
+			id: "3C9E15524517317A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3F735CBED7A782FE"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "4CDF583196DFCFEC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "156C9B86890D35D2"
+				item: { count: 1, id: "ae2:redstone_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "157F26DF8C8B0B29"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "78B8A406AFB43539"
+				item: { count: 1, id: "ae2:me_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "6C8DDA49FF55BAA1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "71DF3D3617190F92"
+				item: { count: 1, id: "ae2:item_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "50C8AC8386E3EF9C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5FDF7129043C6521"
+				item: { count: 1, id: "ae2:fluid_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "772919645004D87B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5864667788D8A2FF"
+				item: { count: 1, id: "ae2:fe_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C9E15524517317A"]
+			id: "7E5E6D786E71CC56"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "64B85F5348C5416F"
+				item: { count: 1, id: "ae2:light_p2p_tunnel" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["79C92A2E1542C1A7"]
+			id: "0CDB09C088830F26"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "726AD139DC01E4F5"
+				item: { count: 1, id: "ae2:crafting_unit" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0E63C201EF1FC4FB"]
+			id: "24DCD6EE3AEBA742"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "101D3FC9738E2E1B"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["79C92A2E1542C1A7"]
+			id: "1499DD7E2925CBAA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "340DE43666B60F94"
+				item: { count: 1, id: "ae2:molecular_assembler" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			id: "701D1095A0E85BAC"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "0C5C80C591A163D8"
+				item: { count: 1, id: "ae2:memory_card" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"6B3F181B4E31BCE2"
+				"00C814CDA34573FF"
+			]
+			id: "1AE78824AE3CE5F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "1393B14ABBC98120"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_1k" }
+					type: "item"
+				}
+				{
+					id: "4E15E40244356367"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_4k" }
+					type: "item"
+				}
+				{
+					id: "53FB3169035EDF95"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_16k" }
+					type: "item"
+				}
+				{
+					id: "6F79E70473EBDBFE"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_64k" }
+					type: "item"
+				}
+				{
+					id: "584827F37B1F991A"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_256k" }
+					type: "item"
+				}
+				{
+					id: "50585BC09EE61C7C"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_1m" }
+					type: "item"
+				}
+				{
+					id: "3AC17668C367BDB4"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_4m" }
+					type: "item"
+				}
+				{
+					id: "261BB53603592CAB"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_16m" }
+					type: "item"
+				}
+				{
+					id: "0992F81FB068F180"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_64m" }
+					type: "item"
+				}
+				{
+					id: "5D1F5EFC8242037D"
+					item: { count: 1, id: "ae2omnicells:omni_cell_component_256m" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6B3F181B4E31BCE2"
+				"00C814CDA34573FF"
+			]
+			id: "0FEDB6580A3661C6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6FC018908EE799FD"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_1k" }
+					type: "item"
+				}
+				{
+					id: "56A9AA2E4FCE946A"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_4k" }
+					type: "item"
+				}
+				{
+					id: "6A486FC6F8E3DC86"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_16k" }
+					type: "item"
+				}
+				{
+					id: "18B73B76DD2C6F26"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_64k" }
+					type: "item"
+				}
+				{
+					id: "65E390C347BCFC54"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_256k" }
+					type: "item"
+				}
+				{
+					id: "1E4A57BD796D6406"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_1m" }
+					type: "item"
+				}
+				{
+					id: "0398B5ED6045F7EF"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_4m" }
+					type: "item"
+				}
+				{
+					id: "24B055528C0A9919"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_16m" }
+					type: "item"
+				}
+				{
+					id: "7C78F6770785499F"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_64m" }
+					type: "item"
+				}
+				{
+					id: "593DFA30DFB7D780"
+					item: { count: 1, id: "ae2omnicells:complex_omni_cell_component_256m" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6B3F181B4E31BCE2"
+				"00C814CDA34573FF"
+			]
+			id: "06850FB3D640CCA5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "300BFFB33D67A28A"
+				item: { count: 1, id: "ae2omnicells:quantum_omni_cell_component_1k" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05D7688036D40AE4"]
+			hide_dependency_lines: true
+			id: "00C814CDA34573FF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "71434A19CB5917F8"
+				item: {
+					count: 1
+					id: "ae2omnicells:omni_cell_component_1k"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "42F00ACD91E61C70"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+	]
+}

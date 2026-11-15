@@ -1,0 +1,224 @@
+[foundation]
+	#Lets a Station assemble Loconautics physics Trains.
+	enableSableTrains = true
+	#Lets a Station assemble regular Create Trains.
+	enableCreateTrains = true
+
+[train]
+	#Top speed at 256 RPM with the Bearing Axle in gear 0. -1 follows Create's train top speed.
+	# Default: -1.0
+	# Range: -1.0 ~ 1000.0
+	bearingAxleMaxSpeed = -1.0
+	#Hard ceiling on any Train's speed, overdrive included. -1 leaves only the physics safety ceiling of 200.
+	# Default: -1.0
+	# Range: -1.0 ~ 1000.0
+	trainMaxSpeed = -1.0
+	# Default: 2
+	# Range: 1 ~ 16
+	maxBogeysPerCarriage = 2
+
+	[train.gearing]
+		#Lets a redstone signal into a Bearing Axle shift it into an overdrive gear. Off, every axle stays in gear 0.
+		enabled = true
+		#How much top speed each spare SU of the kinetic network buys in the highest gear.
+		#Raise it and a small network reaches silly speeds, lower it and overdrive needs a bigger build.
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		overdriveScale = 1.0
+		#Keeps every gear under Create's train top speed. Gears then only reach that speed at a lower RPM.
+		capAtCreateTopSpeed = false
+
+	[train.station]
+		loadChunksWhileStopped = true
+
+	[train.dynamics]
+		#The consist mass that gets exactly baseAcceleration. Lighter accelerates harder, heavier softer.
+		#Rolling resistance is weighed against it too.
+		# Default: 400.0
+		# Range: 1.0 ~ 1000000.0
+		referenceMass = 400.0
+		#How hard a consist of exactly referenceMass pulls away. Scaled by referenceMass / consist mass.
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		baseAcceleration = 3.0
+		#How hard the brakes bite, the same number whatever the train is hauling.
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		baseDeceleration = 3.0
+		#How hard a car with no power and no brake slows down on its own.
+		#Raise it and a shunted car coasts a shorter distance, 0 lets it roll forever.
+		#Scaled by the car's mass against referenceMass, so a loaded car drags harder.
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		rollingResistance = 0.6
+		#Turn off to climb any grade at flat track stress.
+		slopeEffects = true
+
+	[train.relocation]
+		enabled = true
+		derailedOnly = false
+
+[track]
+	# Default: 3
+	# Range: 0 ~ 16
+	railSearchRadius = 3
+
+	[track.derailment]
+		#How far the rail under a Train may lean away from level before the Train falls off it.
+		#Set it to 180 and a Train rides a trackway that has rolled right over.
+		# Default: 55.0
+		# Range: 0.0 ~ 180.0
+		maxTiltDegrees = 55.0
+		#On, a strong enough upward push such as the Physics Staff lifts a Train off the rail. Off, nothing can lift it off.
+		derailOnExternalForce = true
+		#Off, a fast curve only lifts the wheels on the outside a little. On, curves are full physics and a car taken too fast tips off.
+		derailOnCurve = false
+		derailAtTrackEnd = true
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		derailedSlipFactor = 0.25
+		#Speed change in blocks per second a Carriage can take from hitting another Train before it leaves the rail.
+		#The lighter side of a hit takes most of the change, so shunting stays on the rail and a fast hit does not.
+		# Default: 8.0
+		# Range: 0.0 ~ 1000.0
+		collisionDerailSpeed = 8.0
+		#Lets two Carriages coupled into the same Train derail each other when they hit.
+		coupledCollisionDerail = false
+
+	[track.rerail]
+		autoRerailEnabled = true
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		autoRerailMaxSpeed = 0.5
+
+[boiler]
+	#Allowed Values: REALISTIC, ARCADE
+	boilerRealism = "REALISTIC"
+	# Default: 20.0
+	# Range: -100.0 ~ 1000.0
+	ambientTemperatureC = 20.0
+	# Default: 200.0
+	# Range: 0.0 ~ 2000.0
+	workingTemperatureC = 200.0
+	# Default: 1800
+	# Range: 20 ~ 72000
+	warmupTicks = 1800
+	# Default: 83.0
+	# Range: 0.0 ~ 100000.0
+	suPerBodyBlock = 83.0
+	#Most body blocks a boiler may span along its length before it stops working.
+	#Longer boilers burn more fuel and draw more water.
+	# Default: 8
+	# Range: 1 ~ 256
+	maxLength = 8
+	# Default: 8000
+	# Range: 1 ~ 1000000
+	bodyWaterCapacity = 8000
+	# Default: 8000
+	# Range: 1000 ~ 1000000
+	injectorTankCapacity = 8000
+
+	[boiler.pressure]
+		# Default: 0.0015
+		# Range: 0.0 ~ 1.0
+		pressureRisePerTick = 0.0015
+		# Default: 1.6
+		# Range: 1.0 ~ 10.0
+		burstPressure = 1.6
+		# Default: 900
+		# Range: 20 ~ 72000
+		draftChokeTicks = 900
+
+	[boiler.failure]
+		# Default: 600
+		# Range: 20 ~ 72000
+		crownSheetTicks = 600
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		failureExplosionBase = 3.0
+		# Default: 9.0
+		# Range: 0.0 ~ 100.0
+		failureExplosionMax = 9.0
+
+	[boiler.crash]
+		explodeOnCrash = true
+		# Default: 4.0
+		# Range: 0.0 ~ 1000.0
+		crashImpactThreshold = 4.0
+		# Default: 4.0
+		# Range: 0.0 ~ 100.0
+		explosionPower = 4.0
+
+	[blocks.bearing_axle]
+		#Stress multiplier for a Bearing Axle pushing against the rest of its train.
+		#Raising it makes a fight between two engines expensive instead of merely slow.
+		# Default: 1.5
+		# Range: 1.0 ~ 5.0
+		opposedStressFactor = 1.5
+
+	[blocks.analog_controller]
+		# Default: 20
+		# Range: 1 ~ 200
+		decayTicks = 20
+
+	[blocks.transmission]
+		# Default: 8.0
+		# Range: 0.0 ~ 100.0
+		suImpact = 8.0
+
+	[blocks.turntable_bearing]
+		#Stress the Turntable Bearing costs per RPM of plate speed.
+		#A turntable driven above its input speed is billed for the speed it turns at, not the speed it is fed.
+		# Default: 4.0
+		# Range: 0.0 ~ 100.0
+		suImpact = 4.0
+
+	[items.steel_cable]
+		# Default: 64.0
+		# Range: 1.0 ~ 10000.0
+		maxRange = 64.0
+
+	[couplers.knuckle]
+		# Default: 5
+		# Range: 1 ~ 100
+		scanInterval = 5
+
+[hose]
+	# Default: 28
+	# Range: 1 ~ 256
+	maxLength = 28
+
+	[explosions.sub_level_push]
+		subLevelPushEnabled = true
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		subLevelPushRadiusMultiplier = 3.0
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		subLevelPushStrength = 2.0
+		# Default: 0.3
+		# Range: 0.0 ~ 10.0
+		subLevelPushUpward = 0.3
+
+	[compat.computercraft]
+		#Lets a computer drive any train, signal, point or turntable by id.
+		#Off keeps control to computers inside the train.
+		remoteControl = true
+
+	[compat.createbigcannons]
+		globalKnockbackEnabled = false
+
+		[compat.createbigcannons.derailment]
+			derailEnabled = true
+
+		[compat.createbigcannons.recoil]
+			recoilEnabled = true
+
+[debug]
+	force = false
+	forceLines = false
+
+[patch]
+	enableRollerPatch = true
+	enablePloughPatch = true
+	requireMaterialConsumption = true

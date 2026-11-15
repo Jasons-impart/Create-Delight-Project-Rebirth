@@ -1,0 +1,16 @@
+["Stirling Engine"]
+	#Revolution period of the simulated shaft (affects only piston movement).
+	"Revolution period" = 0.2
+	#Radius of the simulated crank.
+	"Crank radius" = 0.125
+	#Length of the simulated conrod.
+	"Conrod length" = 0.5
+
+[Debug]
+	#Render thruster debug overlays (plume ray, obstruction hits, damage zones).
+	Thruster = false
+
+["Thruster Plumes"]
+	#How every thruster plume is rendered. Particle uses normal particle effects; Shader uses the procedural plume shader.
+	#Allowed Values: PARTICLE, SHADER
+	renderMode = "PARTICLE"

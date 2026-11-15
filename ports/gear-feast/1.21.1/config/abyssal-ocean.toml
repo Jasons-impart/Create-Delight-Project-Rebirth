@@ -1,0 +1,63 @@
+#Abyssal Ocean world-generation settings.
+#Worldgen changes affect only newly generated chunks. Restarting the world is recommended.
+[worldgen]
+	#LOWER values make Abyssal Ocean more common; HIGHER values make it rarer.
+	#Default: 0.55 (common). Suggested: 0.55 common, 0.70 balanced, 0.78 rare.
+	# Default: 0.55
+	# Range: 0.55 ~ 0.9
+	rarityThreshold = 0.55
+	#Horizontal diameter multiplier for each continuous region.
+	#This changes region size, not the rarity threshold. Default: 2.0.
+	# Default: 2.0
+	# Range: 0.25 ~ 8.0
+	regionScale = 2.0
+	#How much of the selected region reaches the deepest abyssal plain.
+	#Higher values widen the deepest inner valleys. Default: 1.5.
+	# Default: 1.5
+	# Range: 0.25 ~ 4.0
+	deepAreaScale = 1.5
+	#Legacy 2.1.0 offshore value retained for TOML and UI compatibility.
+	#Biome selection now uses actual ocean tags so modded generators are supported.
+	# Default: -0.3
+	# Range: -1.2 ~ -0.19
+	maximumContinentalness = -0.3
+	#Keep the interior of Abyssal Ocean regions as an island-free deadzone.
+	#Only small land patches enclosed by ocean are absorbed; mainland and large islands remain.
+	removeSmallInteriorIslands = true
+	#Ocean-enclosure sampling radius used to distinguish tiny islands from real land.
+	#Higher values can absorb wider islands. Default: 96 blocks.
+	# Default: 96
+	# Range: 32 ~ 256
+	smallIslandMaximumRadius = 96
+	#Width in blocks of the progressive shelf and slope at biome borders. Default: 192.
+	# Default: 192
+	# Range: 32 ~ 768
+	slopeWidth = 192
+	#Deepest sandy floor height above minimum build height.
+	#6 places the floor six blocks above the bottom bedrock.
+	# Default: 6
+	# Range: 6 ~ 96
+	floorHeightAboveMinY = 6
+	#Maximum small-scale rolling relief on the deepest floor. Default: 10.
+	#Higher values create taller dunes and hummocks on the abyssal plain.
+	# Default: 10
+	# Range: 0 ~ 16
+	maxFloorRelief = 10
+	#Strength of natural trench, branching-rift and hadal-pit variants. Default: 0.72.
+	# Default: 0.72
+	# Range: 0.0 ~ 1.0
+	fissureStrength = 0.72
+	#How frequently secondary fissures appear inside a valley. Default: 0.55.
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	fissureDensity = 0.55
+	#Horizontal size multiplier of fissure variants. Default: 1.20.
+	# Default: 1.2
+	# Range: 0.25 ~ 4.0
+	fissureScale = 1.2
+	#Ground ocean and compatible modded structures on the generated abyss floor.
+	preserveStructures = true
+	#Local floor sampling radius used to ground structures. Default: 12.
+	# Default: 12
+	# Range: 4 ~ 48
+	structureProtectionRadius = 12

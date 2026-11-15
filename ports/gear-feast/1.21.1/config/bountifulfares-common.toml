@@ -1,0 +1,66 @@
+#Gristmill milling time, in seconds
+# Default: 4
+# Range: 1 ~ 10
+milling_time = 4
+#Fermentation time, in seconds
+# Default: 300
+# Range: 1 ~ 600
+fermentation_time = 300
+#Size of area where Infused Candles give effects
+# Default: 3
+# Range: 1 ~ 16
+infused_candle_radius = 3
+#Fruits on trees replant when picked
+fruit_replace_when_picked = true
+#Flour can be thrown
+flour_throwing = true
+#Flour throwing cooldown, in ticks
+# Default: 0
+# Range: 0 ~ 20
+flour_throwing_cooldown = 0
+#Foods with containers can be eaten on Ceramic Dishes
+container_foods_eatable_on_dish = false
+#Pumpkin Pie can be placed as a block
+placeable_pumpkin_pie = true
+#Cakes make eating sounds
+cake_eating_sounds = true
+#Sweet Berries cannot place Sweet Berry Bushes
+sweet_berry_pips = true
+#Sniffers can dig up Hoary Seeds
+hoary_seeds = true
+#Sniffers can dig up Lapisberry Seeds
+lapisberry_seeds = true
+#Grass loot tables are overridden
+grass_loot_table_override = true
+#Guardians drop Spongekin Seeds
+spongekin_seeds_guardian = true
+#Show compatibility items in recipe viewers
+show_compat_items_in_recipe_viewers = true
+#Add items to vanilla creative tabs
+add_items_to_vanilla_tabs = true
+#Apple trees generate
+generate_apple_trees = true
+#Orange trees generate
+generate_orange_trees = true
+#Lemon trees generate
+generate_lemon_trees = true
+#Plum trees generate
+generate_plum_trees = true
+#Palm trees generate
+generate_palm_trees = true
+#Walnut trees generate
+generate_walnut_trees = true
+#Wild Beetroot generates
+generate_wild_beetroot = true
+#Wild Carrots generate
+generate_wild_carrots = true
+#Wild Leeks generate
+generate_wild_leeks = true
+#Wild Maize generates
+generate_wild_maize = true
+#Wild Potatoes generate
+generate_wild_potatoes = true
+#Wild Wheat generates
+generate_wild_wheat = true
+#Grassy dirt patches generate
+generate_grassy_dirt_patches = true

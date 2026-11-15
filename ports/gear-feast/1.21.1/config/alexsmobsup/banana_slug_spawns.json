@@ -1,0 +1,63 @@
+{
+    "biomes":  [
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "minecraft:old_growth_pine_taiga"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "minecraft:old_growth_spruce_taiga"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "minecraft:is_taiga"
+                       },
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "c:is_dense_vegetation/overworld"
+                       },
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "c:is_rare"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:forested_highlands"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:shield"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:skylands_autumn"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:yosemite_lowlands"
+                       }
+                   ]
+               ]
+}

@@ -1,0 +1,16 @@
+// Compost colors for someassemblyrequired. You may add your own colors, change existing ones, or remove colors that aren't needed.
+apple_slices, #bfa755
+bread_slice, #f1c57c
+burger_bun, #fba039
+burger_bun_bottom, #faac51
+burger_bun_top, #fea53e
+chopped_beetroot, #5b3eac
+chopped_carrot, #ff981f
+chopped_golden_carrot, #d3b97f
+enchanted_golden_apple_slices, #cac558
+golden_apple_slices, #cac558
+raw_burger_bun, #f5ffb8
+sliced_onion, #64a051
+spread, #ffffff
+toasted_bread_slice, #ca8334
+tomato_slices, #af7573

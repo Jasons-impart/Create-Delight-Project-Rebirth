@@ -1,0 +1,18 @@
+# Default: 4
+# Range: 1 ~ 100
+baseServe = 4
+# Default: 0.1
+# Range: 0.0 ~ 100.0
+baseNutrition = 0.1
+# Default: 0.2
+# Range: 0.0 ~ 100.0
+varietyBonus = 0.2
+# Default: 0.5
+# Range: 0.0 ~ 100.0
+perfectionBonus = 0.5
+# Default: 9
+# Range: 1 ~ 20
+maxIngredient = 9
+# Default: 100
+# Range: 1 ~ 10000
+nourishmentDuration = 100

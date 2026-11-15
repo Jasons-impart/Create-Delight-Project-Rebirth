@@ -1,0 +1,58 @@
+#All settings below will only take effect after restarting the server or client.
+[general]
+	#Items that can be put into the material slot of the platform builder screen.
+	#Use #namespace:path for tags, namespace:path for item IDs.
+	#The item tag industrial_platform:platform_material is accepted as well.
+	#Examples: #c:stones, minecraft:cobblestone
+	platform_material = ["#c:stones", "minecraft:cobblestone"]
+	#Extra items treated as a platform adjuster: right-click a platform block to cycle its type,
+	#hold one to display the block boundary preview.
+	#The fill adjuster (industrial_platform:fill_adjuster) is built in and needs no entry here.
+	#Use #namespace:path for tags, namespace:path for item IDs.
+	#Examples: #c:tools/wrench, minecraft:stick
+	adjuster = ["#c:tools/wrench"]
+	#Default value of the fill-up field shown in the platform builder screen.
+	#The player can still change it in the screen, range: 0 ~ 64
+	#type: int
+	#default: 5
+	# Default: 5
+	# Range: 0 ~ 64
+	top_filling_distance = 5
+	#Default value of the fill-down field shown in the platform builder screen.
+	#The player can still change it in the screen, range: 0 ~ 64
+	#type: int
+	#default: 5
+	# Default: 5
+	# Range: 0 ~ 64
+	bottom_filling_distance = 5
+
+#Platform footprint limits, measured in chunks per side.
+[platform]
+	#Smallest platform footprint, in chunks per side.
+	#default: 1
+	# Default: 1
+	# Range: 1 ~ 8
+	min_platform_chunks = 1
+	#Largest platform footprint, in chunks per side.
+	#default: 4 (64x64 blocks)
+	# Default: 4
+	# Range: 1 ~ 8
+	max_platform_chunks = 4
+
+#How many items a single platform build consumes.
+[cost]
+	#Cost of a standard platform (1x1 chunk).
+	#default: 1
+	# Default: 1
+	# Range: 0 ~ 4096
+	light_platform_cost = 1
+	#Cost of a heavy platform (3x3 chunks).
+	#default: 1, raise it if a heavy platform should cost more
+	# Default: 1
+	# Range: 0 ~ 4096
+	heavy_platform_cost = 1
+	#Extra cost for every layer filled up / down.
+	#default: 0
+	# Default: 0
+	# Range: 0 ~ 4096
+	filling_layer_cost = 0

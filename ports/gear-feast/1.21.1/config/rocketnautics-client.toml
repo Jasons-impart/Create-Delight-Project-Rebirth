@@ -1,0 +1,39 @@
+#Has the world border warning been shown to the player?
+hasShownWorldBorderWarning = true
+
+[Visuals]
+	#Intensity multiplier for camera shake near engines
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	shakeIntensity = 0.5
+	#Radius in blocks where camera shake is felt
+	# Default: 8.0
+	# Range: 1.0 ~ 64.0
+	shakeRadius = 8.0
+	#Enable automatic render distance adjustment based on altitude
+	enableDynamicRenderDistance = true
+	#Enable custom sky rendering (nebula, stars, planet beneath, custom sun/moon etc). Disable to return to standard Minecraft sky.
+	enableCustomSky = false
+	#Enable merging of adjacent thruster plumes into a single larger plume cluster
+	enablePlumeMerging = true
+	#Distance threshold in blocks within which adjacent engine plumes are clustered and merged
+	# Default: 4.0
+	# Range: 1.0 ~ 16.0
+	plumeMergeRadius = 4.0
+	#Show the Cosmonautics debug overlay (Alt/Speed/etc)
+	showDebugOverlay = false
+	#The maximum texture scale for the planet render.
+	#Recommended scale for the render to maintain visual structure is 15 or 16.
+	# Default: 100
+	# Range: 14 ~ 100
+	planetRenderMaximumScale = 100
+	#Controls the rotation in degrees between each step in the hologram table's orbit prediction.
+	#A smaller number will increase visual fidelity and accuracy, but reduce prediction length and increase the cost of rendering the orbits of planets.
+	# Default: 4.0
+	# Range: 0.5 ~ 20.0
+	orbitPredictionAngularThreshold = 4.0
+	#The number of steps to compute in the hologram table's orbit prediction.
+	#Set to zero to disable the prediction entirely. Too many steps can cause lag!
+	# Default: 1000
+	# Range: 0 ~ 10000
+	orbitPredictionSteps = 1000

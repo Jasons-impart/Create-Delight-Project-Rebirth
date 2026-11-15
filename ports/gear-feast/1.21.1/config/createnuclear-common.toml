@@ -1,0 +1,7 @@
+#.
+#Modify how CreateNuclear affects world generation.
+[worldGen]
+	#.
+	#.
+	#When true, CreateNuclear world generation features are active. Set to false to disable all added ores/structures.
+	enable_world_gen = true

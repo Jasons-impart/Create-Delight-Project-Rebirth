@@ -1,0 +1,18 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "tag":  "minecraft:flowers"
+                        },
+                        {
+                            "tag":  "minecraft:flowers"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "createaddition:biomass",
+                        "count":  1
+                    }
+                ],
+    "heat_requirement":  "heated"
+}

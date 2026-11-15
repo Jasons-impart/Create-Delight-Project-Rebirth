@@ -1,0 +1,75 @@
+# 二进制与运行时产物
+*.jar
+*.zip
+*.log
+*.log.gz
+*.bak
+*.tmp
+*.dat_old
+
+# 实例运行时目录
+logs/
+crash-reports/
+saves/
+backups/
+simplebackups/
+local/
+downloads/
+schematics/
+resourcepacks/
+shaderpacks/
+defaultconfigs/
+patchouli_books/
+tacz/
+tacz_backup/
+tlm_custom_pack/
+fancymenu_data/
+skin_palettes/
+trees/
+nodes/
+moddata/
+xaero/
+XaeroWaypoints_BACKUP*/
+齿轮盛宴-natives/
+.flake/
+
+# 缓存与生成物
+.cache/
+.mixin.out/
+.sable/
+.pg-native/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+vista_web_content_cache/
+config/jei_biome/
+config/fancymenu/slideshows/*/images/
+
+# 运行时状态文件
+options.txt
+usercache.json
+usernamecache.json
+command_history.txt
+hec_cape.json
+patchouli_data.json
+ponders_watched*.json
+TrashSlotSaveState.json
+win_event*.txt
+*.marker
+*.jar.old
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+__MACOSX/
+
+# 上游 .gitignore 按目录名（tacz/、xaero/、server/）排除运行时目录，
+# 会误伤本快照内的源码与配置，这里显式放行。
+!config/attributefix/tacz/
+!config/attributefix/tacz/**
+!config/xaero/
+!config/xaero/**
+!kubejs/assets/tacz/
+!kubejs/assets/tacz/**
+!patches/cdprfps/src/cdprfps/mixin/server/
+!patches/cdprfps/src/cdprfps/mixin/server/**

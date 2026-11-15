@@ -1,0 +1,33 @@
+{
+    "type":  "refurbished_furniture:workbench_constructing",
+    "materials":  [
+                      {
+                          "count":  3,
+                          "ingredient":  {
+                                             "tag":  "minecraft:planks"
+                                         }
+                      },
+                      {
+                          "count":  8,
+                          "ingredient":  {
+                                             "item":  "farmersdelight:straw"
+                                         }
+                      },
+                      {
+                          "count":  1,
+                          "ingredient":  {
+                                             "item":  "minecraft:white_wool"
+                                         }
+                      },
+                      {
+                          "count":  1,
+                          "ingredient":  {
+                                             "item":  "minecraft:brown_dye"
+                                         }
+                      }
+                  ],
+    "result":  {
+                   "id":  "refurbished_furniture:brown_stool",
+                   "count":  2
+               }
+}

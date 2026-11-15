@@ -1,0 +1,21 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "tag":  "minecraft:saplings"
+                        },
+                        {
+                            "tag":  "minecraft:saplings"
+                        },
+                        {
+                            "tag":  "minecraft:saplings"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "createaddition:biomass",
+                        "count":  1
+                    }
+                ],
+    "heat_requirement":  "heated"
+}

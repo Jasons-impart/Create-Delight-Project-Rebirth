@@ -1,0 +1,10 @@
+{
+    "type":  "bakeries:dough_crafting_table",
+    "ingredient":  {
+                       "item":  "ratatouille:salty_dough"
+                   },
+    "result":  {
+                   "id":  "bakeries:country_bread_dough",
+                   "count":  1
+               }
+}

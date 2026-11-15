@@ -1,0 +1,14 @@
+#The maximum amount of items a sandwich can contain
+# Default: 32
+# Range: 2 ~ 256
+maximum_sandwich_height = 32
+#Whether randomly generated sandwiches should be added to chests in villages and some other locations
+generate_chest_loot = true
+#The effect applied by sandwiches, depending on the number of unique ingredients
+sandwich_effect = "farmersdelight:comfort"
+#The effect applied by burgers, depending on the number of unique ingredients
+burger_effect = "farmersdelight:nourishment"
+#The durations of the effect applied by sandwiches in seconds, depending on the number of unique ingredients
+sandwich_effect_durations = [0, 0, 60, 120, 180, 240, 300]
+#The durations of the effect applied by burgers in seconds, depending on the number of unique ingredients
+burger_effect_durations = [0, 0, 60, 120, 180, 240, 300]

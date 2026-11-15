@@ -1,0 +1,54 @@
+{
+    "biomes":  [
+                   [
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  true,
+                           "value":  "c:no_default_monsters"
+                       },
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "c:is_hot/overworld"
+                       },
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "c:is_dry/overworld"
+                       },
+                       {
+                           "type":  "BIOME_TAG",
+                           "negate":  false,
+                           "value":  "c:is_sandy"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:ancient_sands"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:desert_canyon"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:desert_spires"
+                       }
+                   ],
+                   [
+                       {
+                           "type":  "REGISTRY_NAME",
+                           "negate":  false,
+                           "value":  "terralith:ashen_savanna"
+                       }
+                   ]
+               ]
+}

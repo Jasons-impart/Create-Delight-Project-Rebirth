@@ -1,0 +1,10 @@
+#The probability of generating a railway in a region. 0 means never generate, 1 means always generate.
+# Default: 0.4
+# Range: 0.0 ~ 1.0
+areaGenerationRailwayProbability = 0.4
+#Can the track spawner work
+enableTrackSpawner = true
+#Can the track spawner be generated
+generateTrackSpawner = true
+#Use the track spawner,(true) or place rails during world generation.(false)
+placeTracksUsingTrackSpawner = true

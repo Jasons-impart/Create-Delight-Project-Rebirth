@@ -1,0 +1,311 @@
+{
+    "size":  "large",
+    "color":  "#2F4F4F",
+    "waves":  [
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:corrodent",
+                                           "count":  12
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  4.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  5
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.80
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.20
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.20
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:corrodent",
+                                          "rolls":  16
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:hood_of_darkness",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:cloak_of_darkness",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1400,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:underzealot",
+                                           "count":  14
+                                       },
+                                       {
+                                           "entity":  "alexscavesup:gloomoth",
+                                           "count":  4
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  4.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  6
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.60
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.20
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.20
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:underzealot",
+                                          "rolls":  14
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:darkened_apple",
+                                                        "count":  8
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:desolate_dagger",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1400,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:vesper",
+                                           "count":  8
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  3.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  5
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.50
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.20
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.20
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:vesper",
+                                          "rolls":  16
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:vesper_stew",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:totem_of_possession",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1400,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:watcher",
+                                           "count":  18
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  2.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  7
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.60
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.20
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.20
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:watcher",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:occult_gem",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:dreadbow",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1400,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:forsaken",
+                                           "count":  1
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  10.5
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  6
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.8
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.20
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.20
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:pure_darkness",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:forsaken",
+                                          "rolls":  4
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "gateways:gate_pearl",
+                                                        "count":  2,
+                                                        "components":  {
+                                                                           "gateways:gateway":  "createdelightcore:infinite_and_dark_trials"
+                                                                       }
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  3600,
+                      "setup_time":  100
+                  }
+              ],
+    "failures":  [
+                     {
+                         "type":  "gateways:explosion",
+                         "strength":  6,
+                         "fire":  true,
+                         "block_damage":  true
+                     }
+                 ]
+}

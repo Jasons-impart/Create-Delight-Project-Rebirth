@@ -1,0 +1,24 @@
+{
+    "type":  "dungeonsdelight:monster_cooking",
+    "cookingtime":  200,
+    "experience":  1.0,
+    "ingredients":  [
+                        {
+                            "item":  "dungeonsdelight:gritty_flesh"
+                        },
+                        {
+                            "item":  "dungeonsdelight:gritty_flesh"
+                        },
+                        {
+                            "tag":  "createdelightcore:silverfish_meat"
+                        },
+                        {
+                            "tag":  "c:crops/cabbage"
+                        }
+                    ],
+    "recipe_book_tab":  "drinks",
+    "result":  {
+                   "id":  "dungeonsdelight:bloody_mary",
+                   "count":  1
+               }
+}

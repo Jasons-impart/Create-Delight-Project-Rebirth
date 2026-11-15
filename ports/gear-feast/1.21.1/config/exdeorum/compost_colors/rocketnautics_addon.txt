@@ -1,0 +1,17 @@
+// Compost colors for rocketnautics_addon. You may add your own colors, change existing ones, or remove colors that aren't needed.
+desh_ingot, #c5a45f
+desh_nugget, #799e68
+hematite_ingot, #ab7050
+hematite_nugget, #739365
+platinum_ingot, #9eb9b5
+platinum_nugget, #6ca176
+raw_desh, #a5a264
+raw_hematite, #91805a
+raw_platinum, #8db19e
+raw_siderite, #e7b566
+raw_tridymite, #9eb279
+siderite_ingot, #ebbb6e
+siderite_nugget, #d39852
+sulfur_dust, #9aa04b
+tridymite_ingot, #b2bc80
+tridymite_nugget, #75a46f

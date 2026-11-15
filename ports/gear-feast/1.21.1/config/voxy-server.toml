@@ -1,0 +1,26 @@
+#Master switch for streaming distant train poses to clients. Off = no distant
+#trains for anyone on this server (zero train bandwidth).
+distantTrainsEnabled = true
+#Uniform ceiling, in chunks, for how far the server streams train poses to any
+#client. Lower cuts bandwidth for everyone; a client asking for less still gets
+#less. Around 32 matches a default client LOD radius - streaming farther than a
+#client draws is wasted. Bandwidth scales with the streamed area, so this is the
+#main lever.
+# Default: 128
+# Range: 8 ~ 192
+maxTrainStreamChunks = 128
+#Ticks between train pose samples (server-wide). Higher = proportionally less
+#bandwidth but choppier distant motion; the client interpolates and adapts to the
+#rate automatically. 5 = default (4 samples/second).
+# Default: 5
+# Range: 1 ~ 40
+sampleIntervalTicks = 5
+#Master switch for streaming far-player snapshots (position, pose, equipment ids)
+#to voxy clients. Off = no far-player proxies for anyone on this server.
+farPlayersEnabled = true
+#Uniform ceiling, in blocks, for how far the server streams player snapshots to
+#any client. A client asking for more still gets this. Data-exposure lever: the
+#radius within which other players' positions are shared.
+# Default: 8192
+# Range: 0 ~ 32768
+maxFarPlayerDistanceBlocks = 8192

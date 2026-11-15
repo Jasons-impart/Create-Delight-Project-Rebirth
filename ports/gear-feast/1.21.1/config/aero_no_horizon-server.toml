@@ -1,0 +1,194 @@
+#Tracked drivetrain settings
+[tracks]
+	#Maximum allowed RPM for track blocks and wheels.
+	# Default: 256
+	# Range: 1 ~ 4096
+	maxTrackRPM = 256
+	#Whether explosions or removing a track block should throw the connected belt.
+	enableTrackThrow = true
+	#Maximum search distance used to pair wheels for mirrored offset adjustment.
+	# Default: 8
+	# Range: 1 ~ 16
+	wheelPairDistance = 8
+	#Whether wheel blocks can pass rotation through their rear side when the front is connected.
+	wheelRPMPassthrough = true
+	#Minimum absolute RPM before moving track contact points push nearby entities.
+	# Default: 8.0
+	# Range: 0.0 ~ 1024.0
+	entityPushSpeedThreshold = 8.0
+	#Base horizontal push strength applied by moving tracks.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	entityPushStrengthBase = 0.05
+	#Extra push strength gained per RPM when moving tracks push entities.
+	# Default: 512.0
+	# Range: 1.0 ~ 8192.0
+	entityPushStrengthScale = 512.0
+	#Maximum horizontal push strength applied by moving tracks.
+	# Default: 0.18
+	# Range: 0.0 ~ 2.0
+	entityPushStrengthMax = 0.18
+
+	#Physics coefficients used by the Trackwork-style suspension port.
+	[tracks.suspensionPhysics]
+		#Legacy multiplier applied on top of the physically-derived wheel spring rate.
+		# Default: 3.2
+		# Range: 0.0 ~ 64.0
+		wheelSpringForceCoefficient = 3.2
+		#Legacy multiplier applied on top of the physically-derived wheel damping rate.
+		# Default: 2.7
+		# Range: 0.0 ~ 32.0
+		wheelDampingForceCoefficient = 2.7
+		#Legacy multiplier applied on top of the physically-derived track spring rate.
+		# Default: 0.4
+		# Range: 0.0 ~ 64.0
+		trackSpringForceCoefficient = 0.4
+		#Legacy multiplier applied on top of the physically-derived track damping rate.
+		# Default: 0.15
+		# Range: 0.0 ~ 32.0
+		trackDampingForceCoefficient = 0.15
+		#Maximum suspension damping force magnitude per node, expressed as a multiple of the node's effective gravity load.
+		# Default: 0.5
+		# Range: 0.0 ~ 16.0
+		suspensionDampingForceLimitG = 0.5
+		#Maximum total suspension support force magnitude applied by each grounded suspension-track node, expressed as a multiple of that node's allocated sprung gravity load.
+		# Default: 3.0
+		# Range: 0.0 ~ 16.0
+		trackSuspensionForceLimitG = 3.0
+		#Portion of wheel suspension travel near first contact that uses a softened nonlinear compression curve before blending back to linear spring travel.
+		# Default: 0.18
+		# Range: 0.0 ~ 1.0
+		wheelLowCompressionNonlinearWindowRatio = 0.18
+		#Exponent used inside the wheel low-compression nonlinear window. Values above 1 soften the initial force buildup.
+		# Default: 1.8
+		# Range: 1.0 ~ 8.0
+		wheelLowCompressionNonlinearExponent = 1.8
+		#Portion of track suspension travel near first contact that uses a softened nonlinear compression curve before blending back to linear spring travel.
+		# Default: 0.714
+		# Range: 0.0 ~ 1.0
+		trackLowCompressionNonlinearWindowRatio = 0.714
+		#Exponent used inside the track low-compression nonlinear window. Values above 1 soften the initial force buildup.
+		# Default: 1.55
+		# Range: 1.0 ~ 8.0
+		trackLowCompressionNonlinearExponent = 1.55
+		#Global traction multiplier for simple wheels.
+		# Default: 1.0
+		# Range: 0.0 ~ 16.0
+		wheelTractionScale = 1.0
+		#Global traction multiplier for suspension tracks.
+		# Default: 0.85
+		# Range: 0.0 ~ 16.0
+		trackTractionScale = 0.85
+		#Global traction multiplier for phys tracks.
+		# Default: 1.0
+		# Range: 0.0 ~ 16.0
+		physTrackTractionScale = 1.0
+		#Global traction multiplier for oleo wheels.
+		# Default: 1.0
+		# Range: 0.0 ~ 16.0
+		oleoTractionScale = 1.0
+		#Additional drive-slip force scale applied by phys tracks.
+		# Default: 0.4
+		# Range: 0.0 ~ 16.0
+		physTrackDriveSlipScale = 0.4
+		#Maximum allowed acceleration clamp, in Gs, before wheel and track forces are limited.
+		# Default: 2.0
+		# Range: 0.1 ~ 64.0
+		maxAccelerationG = 2.0
+		#Linear-velocity deadzone for static ground damping.
+		# Default: 0.12
+		# Range: 0.0 ~ 8.0
+		staticLinearVelocityDeadzone = 0.12
+		#Angular-velocity deadzone for static ground damping.
+		# Default: 0.12
+		# Range: 0.0 ~ 8.0
+		staticAngularVelocityDeadzone = 0.12
+		#Linear-velocity threshold for the residual-motion lock.
+		# Default: 0.18
+		# Range: 0.0 ~ 8.0
+		staticLockLinearVelocityThreshold = 0.18
+		#Angular-velocity threshold for the residual-motion lock.
+		# Default: 0.18
+		# Range: 0.0 ~ 8.0
+		staticLockAngularVelocityThreshold = 0.18
+		#Whether Track Adjuster X/Z tilt should bias per-node spring scale. Disabled by default under Sable to avoid persistent side-to-side ride-height bias on symmetric vehicles.
+		controllerTiltAffectsPhysics = true
+		#Half-width of the lateral three-point contact patch used by suspension tracks and phys tracks, in blocks. Lower values reduce one-sided early hits on edges.
+		# Default: 0.38
+		# Range: 0.0 ~ 2.0
+		trackContactSampleHalfWidth = 0.38
+		#Arc angle in degrees used for left/right wheel contact samples. Lower values keep side samples closer to the bottom of the tire and reduce aggressive edge catching.
+		# Default: 30.0
+		# Range: 1.0 ~ 89.0
+		wheelContactSampleArcDegrees = 30.0
+		#Extra vertical damping used only while grounded, idle and nearly static to help vehicles settle faster.
+		# Default: 3.5
+		# Range: 0.0 ~ 64.0
+		parkingAssistVerticalDamping = 3.5
+		#Extra pitch/roll damping used only while grounded, idle and nearly static to help vehicles settle faster.
+		# Default: 2.0
+		# Range: 0.0 ~ 64.0
+		parkingAssistPitchRollDamping = 2.0
+		#Elastic left/right coupling strength that encourages paired tracks or wheels to settle toward equal suspension length when both sides contact nearly the same ground height.
+		# Default: 0.45
+		# Range: 0.0 ~ 8.0
+		equalLengthCouplingStiffness = 0.45
+		#Damping applied to the left/right equal-length coupling term to suppress oscillation while both sides are being equalized.
+		# Default: 0.35
+		# Range: 0.0 ~ 8.0
+		equalLengthCouplingDamping = 0.35
+		#Maximum local ground-height difference between paired nodes before equal-length coupling is disabled.
+		# Default: 0.08
+		# Range: 0.0 ~ 2.0
+		equalLengthGroundHeightTolerance = 0.08
+		#Maximum forward-position mismatch allowed when pairing left and right nodes for equal-length coupling.
+		# Default: 0.75
+		# Range: 0.0 ~ 4.0
+		equalLengthPairingTolerance = 0.75
+
+	#Per-block default suspension travel values. These are synced from the server and applied to all matching Trackwork-derived blocks.
+	[tracks.blockTuning]
+		#Default suspension travel for small simple wheels.
+		# Default: 1.0
+		# Range: 0.05 ~ 8.0
+		smallSimpleWheelSuspensionTravel = 1.0
+		#Default suspension travel for simple wheels.
+		# Default: 1.5
+		# Range: 0.05 ~ 8.0
+		simpleWheelSuspensionTravel = 1.5
+		#Default suspension travel for medium simple wheels.
+		# Default: 1.5
+		# Range: 0.05 ~ 8.0
+		medSimpleWheelSuspensionTravel = 1.5
+		#Default suspension travel for large simple wheels.
+		# Default: 2.0
+		# Range: 0.05 ~ 8.0
+		largeSimpleWheelSuspensionTravel = 2.0
+		#Default suspension travel for suspension tracks.
+		# Default: 1.5
+		# Range: 0.05 ~ 8.0
+		suspensionTrackSuspensionTravel = 1.5
+		#Default suspension travel for medium suspension tracks.
+		# Default: 1.5
+		# Range: 0.05 ~ 8.0
+		medSuspensionTrackSuspensionTravel = 1.5
+		#Default suspension travel for large suspension tracks.
+		# Default: 2.0
+		# Range: 0.05 ~ 8.0
+		largeSuspensionTrackSuspensionTravel = 2.0
+		#Default suspension travel for phys tracks.
+		# Default: 0.5
+		# Range: 0.05 ~ 8.0
+		physTrackSuspensionTravel = 0.5
+		#Default suspension travel for medium phys tracks.
+		# Default: 0.75
+		# Range: 0.05 ~ 8.0
+		medPhysTrackSuspensionTravel = 0.75
+		#Default suspension travel for large phys tracks.
+		# Default: 1.0
+		# Range: 0.05 ~ 8.0
+		largePhysTrackSuspensionTravel = 1.0
+		#Default suspension travel for oleo wheels.
+		# Default: 1.5
+		# Range: 0.05 ~ 8.0
+		oleoWheelSuspensionTravel = 1.5

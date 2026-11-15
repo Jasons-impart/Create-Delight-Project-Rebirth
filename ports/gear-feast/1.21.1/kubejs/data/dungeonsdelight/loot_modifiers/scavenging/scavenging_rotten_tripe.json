@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "attacker",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": "#farmersdelight:tools/knives"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#dungeonsdelight:scavenging_rotten_tripe"
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.4
+    }
+  ],
+  "item": "dungeonsdelight:rotten_tripe"
+}

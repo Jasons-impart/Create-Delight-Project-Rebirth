@@ -1,0 +1,18 @@
+// Compost colors for exposure. You may add your own colors, change existing ones, or remove colors that aren't needed.
+aged_photograph, #fffffe
+album, #824a39
+black_and_white_film, #9d9a96
+broken_interplanar_projector, #64837c
+camera_stand, #ffffff
+chromatic_sheet, #fffff2
+color_film, #b8905f
+developed_black_and_white_film, #b1aaa2
+developed_color_film, #dc9e7a
+glass_photograph_frame, #daf1f7
+high_sensitivity_black_and_white_film, #938d94
+high_sensitivity_color_film, #a8866e
+interplanar_projector, #728d64
+photograph, #fffffa
+photograph_frame, #d3b690
+signed_album, #7d4737
+stacked_photographs, #fcf7f0

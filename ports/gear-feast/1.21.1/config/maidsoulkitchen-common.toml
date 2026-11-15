@@ -1,0 +1,61 @@
+[Task]
+	#These entries configure the melon stem and melon_block item list.
+	#rule: [melon_block_id, attached_melon_stem_block_id]
+	#Eg: ["minecraft:melon", "minecraft:attached_melon_stem"]
+	MelonAndStemList = [["simplefarming:cantaloupe", "simplefarming:attached_cantaloupe_stem"], ["simplefarming:honeydew", "simplefarming:attached_honeydew_stem"], ["simplefarming:squash", "simplefarming:attached_squash_stem"]]
+	#The max number of the different type animal around when the maid breeds animals
+	# Default: 20
+	# Range: 6 ~ 65536
+	FeedSingleAnimalMaxNumber = 20
+
+[Register]
+	#This can make the berry farm task enabled or not.
+	BerryTaskEnabled = true
+	#This can make the fruit farm task enabled or not.
+	FruitTaskEnabled = true
+	#This can make the compat melon farm task enabled or not.
+	CompatMelonFarmTaskEnabled = true
+	#This can make the feed animal t farm task enabled or not.
+	FeedAnimalTTaskEnabled = true
+	#This can make the sereneseasons farm task enabled or not.
+	SereneSeasonsTaskEnabled = true
+	#This can make the eclipticseasons farm task enabled or not.
+	EclipticSeasonsTaskEnabled = true
+	#This can make the feed and drink owner task enabled or not.
+	FeedAndDrinkOwnerTaskEnabled = true
+	#This can make the furnace task enabled or not.
+	FurnaceTaskEnabled = true
+	#This can make the fd cook pot task enabled or not.
+	FdCookPotTaskEnabled = true
+	#This can make the fd cutting board task enabled or not.
+	FdCuttingBoardTaskEnabled = true
+	#This can make the fd skillet task enabled or not.
+	FdSkilletTaskEnabled = true
+	#This can make the cd cuisine skillet task enabled or not.
+	CdCuisineSkilletTaskEnabled = true
+	#This can make the md cook pot task enabled or not.
+	MdCookPotTaskEnabled = true
+	#This can make the bnc key task enabled or not.
+	BncKeyTaskEnabled = true
+	#This can make the cd basin task enabled or not.
+	CdBasinTaskEnabled = true
+	#This can make the cd grill task enabled or not.
+	CdGrillTaskEnabled = true
+	#This can make the fr kettle task enabled or not.
+	FrKettleTaskEnabled = true
+	#This can make the yhc moka task enabled or not.
+	YhcMokaTaskEnabled = true
+	#This can make the yhc tea kettle task enabled or not.
+	YhcTeaKettleTaskEnabled = true
+	#This can make the yhc tea kettle task enabled or not.
+	YhcDryingRackTaskEnabled = true
+	#This can make the yhc fermentation tank task enabled or not.
+	YhcFermentationTaskEnabled = true
+	#This can make the ck crock pot task enabled or not.
+	CkCrockPotTaskEnabled = true
+	#This can make the db beer task enabled or not.
+	DbBeerTaskEnabled = true
+	#This can make the kc brew barrel task enabled or not.
+	KkBrewBarrelTaskEnabled = true
+	#This can make the kc air compressor task enabled or not.
+	KkAirCompressorTaskEnabled = true

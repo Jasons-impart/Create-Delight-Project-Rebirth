@@ -1,0 +1,4 @@
+// Compost colors for create_flight_control. You may add your own colors, change existing ones, or remove colors that aren't needed.
+control_unit, #bcbfa8
+incomplete_control_unit, #b8beae
+navigation_profile, #658aaa

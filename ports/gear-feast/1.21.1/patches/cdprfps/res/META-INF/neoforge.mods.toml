@@ -1,0 +1,30 @@
+﻿modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="cdprfps"
+version="1.4.0"
+displayName="CDPRFPS - 齿轮盛宴帧数优化"
+description='''CDPR 客户端 + 服务端帧数优化补丁（定点剔除，不重写渲染管线）：
+客户端：方块实体距离剔除 / 掉落物距离剔除 / 粒子总量封顶
+服务端：远距离生物 tick 节流 / 掉落物合并 / 每区块生物上限
+维度闸门：无玩家维度分三档 always|throttle|freeze（默认 freeze），带单维度区块上限
+指令：/cdprfps list | status | set <维度> <模式>（权限等级 2）
+全部开关位于 config/cdprfps.json，游戏内按 F6 一键关闭全部优化项。'''
+
+[[dependencies.cdprfps]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.cdprfps]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="CLIENT"
+
+

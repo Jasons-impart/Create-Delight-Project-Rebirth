@@ -1,0 +1,24 @@
+[Features]
+	#Disable Vanila Food(mushroom stew,rabbit stew,beetroot soup) Placement. Set to true if vanila food placement conflicts with other mods
+	Disable-Vanila-Food-Placement = false
+	#Should placeable tooltips be enabled?
+	Tooltips = true
+	#Should a message be enabled when attempting to place a food item?
+	Display-Message = true
+	#This mod uses hardcoded check to remove annoying eating animation while plating some foods.
+	# Try setting this to true if there are any related issues(can't eat foods, can't plate foods, etc.). (only applicable for Forge version)
+	Disable-Eating-Animation-Fix = false
+	#Whether to drop the food block item when food block is broken by silktouch
+	SilkTouchDropFoodBlock = true
+	#Should wandering traders sell food block items that are unobtainable in survival due to missing compat?
+	WanderingTraderSellFoodBlock = true
+	#Should creative tab items disabled? Try turning this on if this mod's items take too much space in JEI
+	DisableCreativeTabItems = false
+	#Should shift right-click interation to place all items be disabled?
+	DisablePlaceAllInteratction = false
+	#Should shift right-click interation to take all items be disabled?
+	DisableTakeAllInteratction = false
+	#Should axe right-click interation to hide plates disabled?
+	DisableHidePlateInteratction = false
+	#Should palte right-click interation to put back the plates disabled?
+	DisablePutPlateInteratction = false

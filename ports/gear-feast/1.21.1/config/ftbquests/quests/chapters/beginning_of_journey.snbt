@@ -1,0 +1,563 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "beginning_of_journey"
+	group: "7A00000000000005"
+	icon: {
+		id: "minecraft:writable_book"
+	}
+	id: "1FBB3B0AC0A81E03"
+	images: [
+		{
+			height: 3.0d
+			id: "59BECD24811E7F0C"
+			image: "quark:block/black_crystal_lamp"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			id: "4D9F1D57C6B15C0B"
+			image: "quark:block/ender_watcher"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			height: 2.0d
+			id: "2121823049932032"
+			image: "quark:block/blaze_lantern"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			alpha: 150
+			height: 2.0d
+			id: "7C2F549BF7B51BF9"
+			image: "minecraft:block/fire_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			height: 2.0d
+			id: "5B8256026621817B"
+			image: "mynethersdelight:block/nether_stove_top_on"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			height: 2.0d
+			id: "548E9021E282E41D"
+			image: "mynethersdelight:block/nether_stove_top_soul"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			height: 2.0d
+			id: "31509E6931739594"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.55d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			id: "70F13D4A76465C25"
+			image: "minecraft:block/hay_block_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			height: 2.0d
+			id: "2B544BE4934070D2"
+			image: "vinery:item/straw_hat_item"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			click_action: "open_quest:5981A5D70F26A7A5"
+			height: 3.0d
+			id: "7145B2A7BD738A4F"
+			image: "quark:block/black_crystal_lamp_on"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			height: 3.0d
+			id: "2A1B206BE7489D52"
+			image: "farmersdelight:textures/gui/hanging_signs/canvas.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			id: "78DA019FE3441A9F"
+			image: "alexscavesup:item/vesper_wing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.0d
+			y: 4.0d
+		}
+	]
+	order_index: 8
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31628FC783AE3161"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "1FC2DFE800C615BE"
+				item: {
+					count: 1
+					id: "minecraft:ender_pearl"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "21DA432C0CE1DA4E"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31628FC783AE3161"]
+			id: "554ED4A8BCAAF378"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "239E237A771B1C1A"
+				type: "xp_levels"
+				xp_levels: 12
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				id: "1A553A10A32488FD"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "0229C1C79FE257F3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19DB7B117BABAF34"
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "271D86DFE8F5AF83"
+					item: {
+						components: {
+							"ftbquests:missing_item": "casualness_delight:green_tongue"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 6
+					type: "item"
+				}
+				{
+					id: "797A66CEFC49932A"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "679D613BA78A5ECD"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "6A98BCA222849318"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "254CB5D455C7833D"
+					item: {
+						count: 1
+						id: "ends_delight:end_mixed_salad"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "74C58787CB5FBA8B"
+					item: {
+						count: 1
+						id: "ends_delight:ender_congee"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "6C0D87F927721F94"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "78690DCDA7E3B137"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "3C992FDB9AA8CA28"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "5D2A4A56D3FEB44E"
+					item: {
+						count: 1
+						id: "mynethersdelight:spicy_skewer"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "3293477C442DA126"
+					item: {
+						count: 1
+						id: "culturaldelights:spicy_curry"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "2A73EB28223CFDD0"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "4EB10F9B466A7971"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "45902A2F17DBD52B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0EC511ECC3A4D1C6"
+					item: {
+						count: 1
+						id: "mynethersdelight:twisted_ghasta"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1D40A33CB00FAA6F"
+					item: {
+						count: 1
+						id: "mynethersdelight:bread_loaf"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "5118C453CE0254F0"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "7F2810A85F577AAC"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C992FDB9AA8CA28"]
+			id: "4321131AB2437B04"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "4DFE1B7A953A462F"
+					item: {
+						count: 1
+						id: "mynethersdelight:spicy_curry"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "7C09CD86E8A2B563"
+					item: {
+						count: 1
+						id: "mynethersdelight:spicy_noodle_soup"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "45FDB8ECAD4BDCE3"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "079B1C693C9094E0"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4321131AB2437B04"]
+			id: "14BAD5E84CB36736"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "04E78EFFF1A84E6B"
+					item: {
+						count: 1
+						id: "mynethersdelight:roast_stuffed_hoglin"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "3338A09151829760"
+					item: {
+						count: 1
+						id: "brewinandchewin:fiery_fondue_pot"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "522925F773148068"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "300C2D63A7B97E77"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "6F382488615A5891"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "37B6CFC9966D9901"
+					item: {
+						count: 1
+						id: "youkaishomecoming:tarte_lune"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 2
+					id: "280BDF1CF387AD96"
+					item: {
+						count: 1
+						id: "youkaishomecoming:full_moons_eve"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "2FB19D6B4E4A399D"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "1B5FCECAC9450A9C"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["554ED4A8BCAAF378"]
+			id: "36C956A6AAF25A0B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "38D5ECC5AC68743F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "createdelightcore:vegetable_pizza"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52746A83CF58717F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "miners_delight:pasta_with_veggieballs"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "03FD63A9CF725699"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "64506C61B3DB66B6"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"45902A2F17DBD52B"
+				"14BAD5E84CB36736"
+				"36C956A6AAF25A0B"
+				"6F382488615A5891"
+				"0229C1C79FE257F3"
+				"6A98BCA222849318"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "supplementaries:flute"
+			}
+			id: "4C520BFAB5B97C59"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "291D634299BD1891"
+				type: "xp_levels"
+				xp_levels: 12
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "4562C91F55455148"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31628FC783AE3161"]
+			id: "4EA5D70C56931162"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "3E39DDC2239949C0"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+	]
+}

@@ -1,0 +1,14 @@
+[visual]
+	#Sail mesh subdivision level (GPU tessellation).
+	#Lower = blockier, more vanilla-Minecraft look. Higher = smoother, cloth-like billowing.
+	#Purely aesthetic: GPU tessellation runs on the graphics card with negligible performance cost.
+	#1 = flat faces (no subdivision), 8 = very smooth. Applies when you close the config screen.
+	# Default: 4
+	# Range: 1 ~ 8
+	sailSubdivisions = 4
+	#Billowing sails while an Iris shader pack is in use.
+	#Turn off to draw them flat. Applies the next time the shader pack is loaded.
+	shaderpackSails = true
+	#Camera shake and wind speed-lines at full seaglide speed.
+	#Turn off if the motion bothers you; speed itself is unchanged.
+	seaglideScreenEffects = true

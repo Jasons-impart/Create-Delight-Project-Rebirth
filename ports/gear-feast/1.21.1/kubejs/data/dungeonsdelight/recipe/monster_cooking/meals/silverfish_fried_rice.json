@@ -1,0 +1,27 @@
+{
+    "type":  "dungeonsdelight:monster_cooking",
+    "cookingtime":  200,
+    "experience":  1.0,
+    "ingredients":  [
+                        {
+                            "tag":  "createdelightcore:silverfish_meat"
+                        },
+                        {
+                            "item":  "minecraft:carrot"
+                        },
+                        {
+                            "tag":  "c:crops/cabbage"
+                        },
+                        {
+                            "item":  "farmersdelight:rice"
+                        },
+                        {
+                            "tag":  "c:foods/cooked_egg"
+                        }
+                    ],
+    "recipe_book_tab":  "meals",
+    "result":  {
+                   "id":  "dungeonsdelight:silverfish_fried_rice",
+                   "count":  1
+               }
+}

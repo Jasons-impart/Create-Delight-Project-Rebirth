@@ -1,0 +1,49 @@
+#Whether to log the dirt block on common setup
+logDirtBlock = true
+#FE consumed by a single Test Drive activation
+# Default: 2000000
+# Range: 0 ~ 2147483647
+warpCostFE = 2000000
+#Ticks between pressing Warp and the actual jump (hyperspace charge-up). 20 ticks = 1 second
+# Default: 60
+# Range: 0 ~ 24000
+warpChargeTicks = 60
+#Number of converging particles spawned around the ship per tick while charging
+# Default: 32
+# Range: 0 ~ 256
+warpParticleCount = 32
+#What the Warp Drive's console screen shows
+#Allowed Values: FE, COUNTDOWN, COORDINATES, POINT_NAME
+warpDriveDisplayMode = "FE"
+#Minimum ship speed (blocks/tick) required, while armed, for a redstone pulse to trigger a Test Drive warp
+# Default: 0.5
+# Range: 0.0 ~ 100.0
+testDriveMinSpeed = 0.5
+#Fraction of the ship's own propulsion force allowed through while a Test Drive is armed; the rest is cancelled every physics substep, producing the slow "crouching start" drift while charging
+# Default: 0.03333333333333333
+# Range: 0.0 ~ 1.0
+testDriveThrottleFraction = 0.03333333333333333
+#Charge cap in ticks; jump distance scales linearly from 0 up to testDriveMaxJumpDistance as charge approaches this
+# Default: 200
+# Range: 1 ~ 24000
+testDriveMaxChargeTicks = 200
+#Delay (ticks) between the top-face signal being detected and the jump actually executing. Kept longer than a vanilla button's own auto-reset time (stone: 20 ticks, wood: 30 ticks) on purpose, so the button has already popped back up on its own before the structure (and the button along with it) gets relocated -- otherwise the button's own "pop back up" schedule gets lost in the move and it stays stuck pressed. Also doubles as a natural place to eventually hang a charge-up visual effect.
+# Default: 40
+# Range: 0 ~ 24000
+testDriveFireDelayTicks = 40
+#Distance in blocks covered by a fully-charged Test Drive jump
+# Default: 500.0
+# Range: 1.0 ~ 1000000.0
+testDriveMaxJumpDistance = 500.0
+#Max number of warp points a Memory Card can hold
+# Default: 5
+# Range: 1 ~ 10
+memoryCardCapacity = 5
+#A magic number
+# Default: 42
+# Range: > 0
+magicNumber = 42
+#What you want the introduction message to be for the magic number
+magicNumberIntroduction = "The magic number is... "
+#A list of items to log on common setup.
+items = ["minecraft:iron_ingot"]

@@ -1,0 +1,2 @@
+// Compost colors for big_tires_scaler. You may add your own colors, change existing ones, or remove colors that aren't needed.
+wheel_scaling_tool, #e36e47

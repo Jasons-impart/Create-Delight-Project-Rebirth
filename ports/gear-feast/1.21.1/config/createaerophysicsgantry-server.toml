@@ -1,0 +1,4 @@
+#Maximum allowed link distance for Belt Wheel (hard capped at 64 blocks)
+# Default: 64
+# Range: 1 ~ 64
+beltWheelMaxDistance = 64

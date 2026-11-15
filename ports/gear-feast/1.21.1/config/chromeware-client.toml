@@ -1,0 +1,9 @@
+[visuals]
+	#Show cyberpsychosis screen distortion. Does not disable episodes, sounds or involuntary attacks.
+	cyberpsychosis_vfx = true
+	#Show time slow filter and afterimages.
+	time_slow_vfx = true
+	#Show screen filter for Berserk.
+	berserk_vfx = true
+	#Show screen effects when you are hit by a quickhack. World effects stay visible.
+	quickhack_vfx = true

@@ -1,0 +1,11 @@
+#.
+#Allowed Values: CELSIUS, FAHRENHEIT, KELVIN
+temperatureUnit = "CELSIUS"
+#.
+#Allowed Values: PASCAL, BAR, ATMOSPHERE, PSI, MM_OF_MERCURY, INCH_OF_MERCURY
+pressureUnit = "PASCAL"
+
+#.
+[debug]
+	#.
+	debugSealerBounds = false

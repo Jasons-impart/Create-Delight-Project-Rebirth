@@ -1,0 +1,396 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "valley_of_eerie_silence"
+	group: "7A00000000000005"
+	icon: {
+		id: "alexscavesup:darkened_apple"
+	}
+	id: "1B7D651FA31589F3"
+	images: [ ]
+	order_index: 6
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1F6B56E6DE97C1D7"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "citadel:icon_item"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0B95654E79A80C3D"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/discover_forlorn_hollows"
+				criterion: ""
+				id: "258831EFD983106F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "46F22198F00A2AFB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66CCE68247CBA9E8"
+				item: { count: 1, id: "alexscavesup:guano" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "545C666105761EB1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "763C0E59A909BBC3"
+				item: {
+					count: 1
+					id: "alexscavesup:moth_dust"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "2369155AF676D99A"
+				item: { count: 1, id: "alexscavesup:moth_dust" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46F22198F00A2AFB"]
+			id: "27BF78E66F004F00"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "57C00F359D8313EF"
+				item: { count: 1, id: "alexscavesup:fertilizer" }
+				type: "item"
+			}]
+			x: 1.8d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33D6BD5E0F1AD170"]
+			id: "4AB86BB3B2C545DF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1D2433C0CC28819A"
+				item: { count: 1, id: "alexscavesup:dark_tatters" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["029CDC329FE594B3"]
+			id: "0654F98C91F74DB9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7D9124B673A94BE2"
+				item: { count: 1, id: "alexscavesup:beholder" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["029CDC329FE594B3"]
+			id: "5F6FCB8CF60F51A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "490C88D6971DC724"
+				item: { count: 1, id: "alexscavesup:occult_gem" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["029CDC329FE594B3"]
+			id: "602379782C797A11"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7CD5DC5713DFCDD5"
+				item: {
+					count: 1
+					id: "alexscavesup:thornwood_branch"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "25AAF9C5A53E8A7D"
+				item: { count: 1, id: "alexscavesup:totem_of_possession" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "682DA95227508EBC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "51DE219E6BD0AE10"
+				item: {
+					count: 1
+					id: "alexscavesup:corrodent_teeth"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "2782B5DA57A8F0F2"
+				item: { count: 1, id: "alexscavesup:corrodent_teeth" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11CDE75EEE580D3A"]
+			id: "60610EE33D8F9D3C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "659ADDEF35E80C9E"
+				item: { count: 1, id: "alexscavesup:pure_darkness" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["545C666105761EB1"]
+			id: "608BFD00A009F863"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6276F6052C6C04C8"
+				item: { count: 1, id: "alexscavesup:moth_ball" }
+				type: "item"
+			}]
+			x: -1.8d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "024E324EC0D728BF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "alexscavesup:vesper"
+				id: "3D2457E7CB77257B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["024E324EC0D728BF"]
+			id: "1C870AB59DC819B5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63CB7496B228DAD4"
+				item: { count: 1, id: "alexscavesup:vesper_stew" }
+				type: "item"
+			}]
+			x: 1.8d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60610EE33D8F9D3C"]
+			id: "0AA7B1780FD3B8CF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "47F8834EE10B9B50"
+				item: {
+					count: 1
+					id: "alexscavesup:pure_darkness"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "39E7B5D5ACEB60C3"
+				item: { count: 1, id: "alexscavesup:darkened_apple" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33D6BD5E0F1AD170"]
+			id: "14FFFE3355E6391A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1BAD91D301EF07FB"
+				item: { count: 1, id: "alexscavesup:desolate_dagger" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["682DA95227508EBC"]
+			id: "3976BE2EA778986F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "22756152E6E754F1"
+				item: { count: 1, id: "alexscavesup:burrowing_arrow" }
+				type: "item"
+			}]
+			x: -1.8d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60610EE33D8F9D3C"]
+			id: "1DF98FA22D59625D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "7E942177C6F1B45F"
+				item: {
+					count: 1
+					id: "alexscavesup:shadow_silk"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E4D3F153CE77F9E"
+				item: { count: 1, id: "alexscavesup:dreadbow" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60610EE33D8F9D3C"]
+			id: "053ABC3755F56930"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "6A98C44E360CEBE9"
+					item: {
+						count: 1
+						id: "alexscavesup:pure_darkness"
+					}
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "212ACC2F5B45053C"
+					item: {
+						count: 1
+						id: "minecraft:armor_stand"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4EF08F17C14721A8"
+					item: { count: 1, id: "alexscavesup:hood_of_darkness" }
+					type: "item"
+				}
+				{
+					id: "540AFDDDCD072F6C"
+					item: { count: 1, id: "alexscavesup:cloak_of_darkness" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "029CDC329FE594B3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4EFE99B885E91DDF"
+				item: {
+					count: 1
+					id: "alexscavesup:occult_gem"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/defeat_watcher"
+				criterion: ""
+				id: "1C5CCC4189A31926"
+				type: "advancement"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11CDE75EEE580D3A"]
+			hide_dependency_lines: true
+			id: "522E6CAEAD1E0D7E"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				id: "0E05F9E6D562C000"
+				item: { count: 1, id: "createdelightcore:devil_eye" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33D6BD5E0F1AD170"]
+			id: "11CDE75EEE580D3A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4882E6CC01B5B300"
+				item: {
+					count: 1
+					id: "alexscavesup:pure_darkness"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/defeat_forsaken"
+				criterion: ""
+				id: "4FE639D2CA48D742"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B95654E79A80C3D"]
+			id: "33D6BD5E0F1AD170"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "351CDDD3A282BD01"
+				item: {
+					count: 1
+					id: "alexscavesup:dark_tatters"
+				}
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/discover_underzealot"
+				criterion: ""
+				id: "01C0A96E2A61E1BC"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+}

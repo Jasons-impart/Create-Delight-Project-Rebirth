@@ -1,0 +1,80 @@
+["Main Config"]
+	#Probability in % for Chorus to summon an Endermite when broken. Includes all blocks in the 'unusualend:endermites_infested' tag
+	"Endermite Infestation Probability" = 8.0
+	#Probability in % for Gloopy Urns to summon an Endermite when broken. Includes all blocks in the 'unusualend:more_endermites_infested' tag
+	"Frequent Endermite Infestation Probability" = 20.0
+	#Probability in % for the Chorus Helmet ability to trigger
+	"Chorus Helmet Trigger Probability" = 20.0
+	#Maximal amount of damages the Chorus Helmet will negate when dodging an attack. Attacks superior to this value won't be affected or reduced
+	"Chorus Helmet Dodged Damages" = 8.0
+	#Probability in % for an Endermite or Enderblob to infect you when hurt
+	"Blob Infection Probability" = 10.0
+	#Maximal amount of Warped Infusions a player can drink in a row with the Warped Tenacity effect stacking
+	"Max Warped Infusions" = 5.0
+	#Number of attempts the Citrine Totem will do to try and find a plant to fertilize (every 2 seconds)
+	"Citrine Totem Accuracy" = 3.0
+	#Probability in % for Draglings to inflict Disruption
+	"Dragling Disruption" = 20.0
+	#Whether 'Le Fishe au Chocolat' should play each time a Chocolate Bluk is eaten
+	"Fishe Music" = false
+	#Whether players will be affected by the Endblob Shield knockback (Multiplayer PvP)
+	"Blob Shields PvP" = true
+	#Whether Endblob bouncing properties should apply to all mobs. Standing on an Endblob block will make entities bounce infinitely, which could be abused
+	"Universal Bounce" = true
+	#Whether players can bonemeal End Stone
+	"Endstone Bonemeal" = true
+	#Whether players can bonemeal Raw Purpur
+	"Purpur Bonemeal" = true
+	#Whether players can bonemeal Gloopstone and Gloopslate
+	"Gloopy Bonemeal" = true
+	#Whether a Warped Balloon that missed or is unable to capture its target will drop the Warped Ballon back at the target's localisation.
+	"Get Warped Ballons Back" = true
+	#Probability in % for an Undead Enderling to spawn with an Enderling Mask
+	"Enderling Mask Probability" = 22.0
+	#Whether the Crystal Flower should inflict Nausea to entities interacting with it
+	"Crystal Flower Nausea" = true
+	#The Y altitude under which the Void Totem will be triggered
+	"Void Totem Altitude" = -1.0
+	#The scale the Ancient Podium will display items as
+	"Podium Item Size" = 0.55
+	#The scale the Ancient Podium will display blocks at
+	"Podium Block Size" = 0.4
+	#Whether the player will be able to obtain Everlasting (makes items never despawn)
+	"Can Everlasting be obtained" = true
+	#Probability in % for Orbs to trigger
+	"Orb Activation" = 5.0
+
+["Cooldowns (in tick)"]
+	"Prismatic Mirror" = 6000.0
+	"Totem of the Void" = 120.0
+	"Floating Pouch" = 100.0
+	"Shiny Charge" = 100.0
+	"Warped Balloon" = 100.0
+
+["Teleportation Anchor"]
+	#Can players link the Teleportation Anchor to a Prismatic Mirror
+	"Mirror Link" = true
+	#Can players link the Teleportation Anchor to a Totem of the Void
+	"Void Totem Link" = true
+	#Can players link the Teleportation Anchor to a Totem of Undying
+	"Undying Totem Link" = true
+	#Whether a Teleportation Anchor is needed to teleport with a Linked Prismatic Mirror to it. If false, teleporting to a broken Anchor will instead randomly teleport the player in a 1000 block radius around the dimension's center
+	"Mirror requiere Anchor" = true
+	#Whether a Teleportation Anchor is needed to teleport with a Totem of the Void or Totem of Undying. If false, teleporting to a broken Anchor will instead randomly teleport the player in a 1000 block radius around the dimension's center
+	"Totems requiere Anchor" = false
+
+[Biomes]
+	"Fog inside of the Gloopstone Biomes" = false
+	"Fog inside of the Warped Reef" = false
+
+[Generation]
+	"End Highlands Vegetation" = true
+	"End Highlands Raw Purpur" = true
+	"Infested Endstone" = true
+	"Overgrown Small End Islands" = true
+
+["Potion Effect Durations (in seconds)"]
+	"Wandering Stew" = 600.0
+	"Bolok Fin" = 600.0
+	"Cooked Bolok Fin" = 1200.0
+	"Warped Infusion" = 60.0

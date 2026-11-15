@@ -1,0 +1,29 @@
+laserRenderAdditive = true
+laserRenderInverted = true
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+laserTransparency = 0.5
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+farDanmakuFading = 0.5
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+selfDanmakuFading = 0.5
+# Default: 8.0
+# Range: 0.0 ~ 128.0
+fadingStart = 8.0
+# Default: 64.0
+# Range: 0.0 ~ 128.0
+fadingEnd = 64.0
+# Default: 1
+# Range: -1 ~ 1
+powerInfoXAnchor = 1
+# Default: -8
+# Range: -1000 ~ 1000
+powerInfoXOffset = -8
+# Default: 0
+# Range: -1 ~ 1
+powerInfoYAnchor = 0
+# Default: 0
+# Range: -1000 ~ 1000
+powerInfoYOffset = 0

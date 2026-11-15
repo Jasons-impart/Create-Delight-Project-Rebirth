@@ -1,0 +1,83 @@
+[soul_catcher]
+	#Entity ids that should not be capturable
+	entity_blacklist = ["minecraft:iron_golem", "minecraft:snow_golem", "minecraft:warden"]
+	#Maximum distance at which entities can be captured
+	# Default: 15.0
+	# Range: 5.0 ~ 50.0
+	max_distance = 15.0
+	#Entity health needs to be at or below this percentage to be able to be caught
+	#1.0 = 100% -> Entities can be caught at full health
+	#0.0 = Entities can only be caught at half a heart
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	max_health_percentage = 1.0
+	#Allow bosses to be captured
+	allow_bosses = false
+	#(This option is only relevant if bosses are allowed to be captured, they cannot be weakened so the remaining health needs to be checked)
+	#Boss entity health needs to be at or below this percentage to be able to be caught
+	#1.0 = 100% -> Entities can be caught at full health
+	#0.0 = Entities can only be caught at half a heart
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	max_boss_health_percentage = 0.05
+	#Require weakening a mob by applying Weakness before it's capturable
+	require_weakness = true
+
+[mechanical_spawner]
+	#Maximum stress impact (impact scales with entity health)
+	# Default: 80.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	max_stress_impact = 80.0
+	#Minimum RPM required to progress
+	# Default: 128.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	min_rpm = 128.0
+	#Maximum number of nearby spawned entities
+	#If exceeded, the spawner will stall
+	# Default: 6
+	# Range: > 1
+	max_nearby_entities = 6
+	#Whether the configuration of the spawning area by players is allowed or not
+	#true = allowed
+	player_configuration_allowed = true
+	#Minimum square width of the spawning area
+	# Default: 3
+	# Range: > 3
+	spawn_area_min_width = 3
+	#Maximum square width of the spawning area
+	# Default: 11
+	# Range: > 3
+	spawn_area_max_width = 11
+	#Default square width of the spawning area
+	# Default: 9
+	# Range: > 3
+	spawn_area_default_width = 9
+	#Minimum height of the spawning area
+	# Default: 1
+	# Range: > 1
+	spawn_area_min_height = 1
+	#Maximum height of the spawning area
+	# Default: 7
+	# Range: > 1
+	spawn_area_max_height = 7
+	#Default height of the spawning area
+	# Default: 3
+	# Range: > 1
+	spawn_area_default_height = 3
+	#Minimum height offset of the spawning area
+	# Default: -4
+	# Range: > -2147483648
+	spawn_area_min_height_offset = -4
+	#Maximum height offset of the spawning area
+	# Default: 4
+	# Range: > -2147483648
+	spawn_area_max_height_offset = 4
+	#Default height offset of the spawning area
+	# Default: 0
+	# Range: > -2147483648
+	spawn_area_default_height_offset = 0
+	#Time (in ticks) of immunity against despawning for mobs spawned by the Mechanical Spawner
+	#0 = Vanilla despawn mechanics apply
+	# Default: 600
+	# Range: 0 ~ 72000
+	despawn_immunity_ticks = 600

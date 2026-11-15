@@ -1,0 +1,18 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "item":  "minecraft:honeycomb"
+                        },
+                        {
+                            "item":  "minecraft:honeycomb"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "createaddition:biomass",
+                        "count":  1
+                    }
+                ],
+    "heat_requirement":  "heated"
+}

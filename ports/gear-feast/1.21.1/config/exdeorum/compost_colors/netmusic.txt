@@ -1,0 +1,3 @@
+// Compost colors for netmusic. You may add your own colors, change existing ones, or remove colors that aren't needed.
+music_cd, #906f69
+music_player_backpack, #cfb4a5

@@ -1,0 +1,6 @@
+#How to open the redstone link frequency menu (Client-side)
+#SLOT - Right-click frequency slot with empty hand (default)
+#SHIFT_SLOT - Shift + right-click frequency slot
+#SHIFT_BLOCK - Shift + right-click anywhere on the block
+#Allowed Values: SLOT, SHIFT_SLOT, SHIFT_BLOCK
+clickMode = "SHIFT_SLOT"

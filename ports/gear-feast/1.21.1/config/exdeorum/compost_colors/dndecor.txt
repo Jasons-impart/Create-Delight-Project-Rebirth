@@ -1,0 +1,3 @@
+// Compost colors for dndecor. You may add your own colors, change existing ones, or remove colors that aren't needed.
+belt_connector, #3c3432
+ornate_iron_glass_pane, #948e87

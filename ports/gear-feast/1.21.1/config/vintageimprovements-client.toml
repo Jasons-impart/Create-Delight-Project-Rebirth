@@ -1,0 +1,31 @@
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+
+	#.
+	#Position of Create: Vintage Improvements config button in the main menu & pause menu
+	[client.configButton]
+		#.
+		#Choose the menu row that the Vintage Improvements config button appears on in the main menu
+		#Set to 0 to disable the button altogether
+		# Default: 1
+		# Range: 0 ~ 4
+		mainMenuConfigButtonRow = 1
+		#.
+		#Offset the Vintage Improvements config button in the main menu by this many pixels on the X axis
+		#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+		# Default: -4
+		# Range: > -2147483648
+		mainMenuConfigButtonOffsetX = -4
+		#.
+		#Choose the menu row that the Vintage Improvements config button appears on in the in-game menu
+		#Set to 0 to disable the button altogether
+		# Default: 2
+		# Range: 0 ~ 5
+		ingameMenuConfigButtonRow = 2
+		#.
+		#Offset the Vintage Improvements config button in the in-game menu by this many pixels on the X axis
+		#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+		# Default: -4
+		# Range: > -2147483648
+		ingameMenuConfigButtonOffsetX = -4

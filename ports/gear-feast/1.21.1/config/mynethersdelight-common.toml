@@ -1,0 +1,45 @@
+[settings]
+	#Allows Piglins to barter food items and Strider Rocks from this mod.
+	#Special hunting-related trades are not affected.
+	enablePiglinFoodTrades = true
+	#Chance that a Piglin barter gives food or Strider Rocks from this mod.
+	#0.25 equals 25%; 0 disables these results.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	piglinFoodTradeChance = 0.25
+	#Allows Frogs to seek out Magma Cake and Magma Cake Slices,
+	#and lets players feed slices directly to a Frog.
+	enableFrogMagmaCakeBehavior = true
+
+[farming]
+	#Allows Resurgent Soil and Resurgent Soil Farmland to propagate nearby plants.
+	enableResurgentSoilPropagation = true
+	#Multiplier for growth, transformation and propagation attempts made by Resurgent Soil
+	#and Resurgent Soil Farmland. Farmland hydration and drying are not affected.
+	# Default: 1.0
+	# Range: 0.0 ~ 16.0
+	resurgentSoilTickMultiplier = 1.0
+	#Maximum vertical distance that Resurgent Soil follows connected plants while applying growth.
+	#Default: 10. Range: 0 ~ 64.
+	resurgentSoilGrowthRange = 10
+	#Horizontal radius that Resurgent Soil Farmland searches for valid heat sources.
+	#Vertical range is half this value. Set to 0 to disable heat hydration.
+	#Default: 7. Range: 0 ~ 16.
+	resurgentFarmlandHeatSearchRadius = 7
+
+[crafting]
+	#Master switch for the Blazier. Disabling hides its creative-tab item and recipes,
+	#and stops its behavior.
+	enableBlazier = true
+	#Multiplier for cooking time in every Blazier mode.
+	#Preserves the original 6 / 3 / 1 / 6 proportions; higher values take longer.
+	# Default: 1.0
+	# Range: 0.0 ~ 64.0
+	blazierCookingTimeMultiplier = 1.0
+	#Enables Nether Brick, Red Nether Brick and Blackstone Brick Cabinets.
+	#Disabling hides their creative-tab items and recipes.
+	enableStoneCabinets = true
+
+[world]
+	#Controls whether Powdery Cane patches generate naturally in Crimson Forests.
+	generatePowderyCane = true

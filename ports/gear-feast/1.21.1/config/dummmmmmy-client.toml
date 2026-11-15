@@ -1,0 +1,42 @@
+[visuals]
+	#How much the dummy swings in degrees with respect to the damage dealt
+	# Default: 0.75
+	# Range: 0.0 ~ 2.0
+	animation_intensity = 0.75
+	#Skin used by the dummy
+	#Allowed Values: DEFAULT, ORIGINAL, ALTERNATIVE, DUNGEONS
+	texture = "DEFAULT"
+	#Show hay particles when dealing damage
+	hay_particles = true
+
+[damage_numbers]
+	#Floating damage numbers popping off the dummy every time it's hit
+	enabled = true
+	#Show hearths instead of damage dealt? (1 hearth = two damage)
+	show_hearths = false
+	#Display the numbers fullbright, so they stay readable in the dark
+	full_bright = true
+	#How crits should be shown
+	#Allowed Values: OFF, COLOR, COLOR_AND_MULTIPLIER
+	crit_mode = "COLOR_AND_MULTIPLIER"
+	#Make critical hit damage numbers bold
+	crit_bold = false
+
+	#Color to use for each damage type. Keys are damage type ids, or #tags, and are tested in insertion order
+	[damage_numbers.damage_type_colors]
+		"dummmmmmy:true" = "#910038"
+		"dummmmmmy:critical" = "#FF0000"
+		"minecraft:generic" = "#FFFFFF"
+		"minecraft:trident" = "#00FF9D"
+		"minecraft:dragon_breath" = "#E600FF"
+		"minecraft:sonic_boom" = "#074550"
+		"minecraft:wind_charge" = "#BEF3FF"
+		"attributeslib:bleeding" = "#810A0A"
+		"#dummmmmmy:is_explosion" = "#FFBB29"
+		"#dummmmmmy:is_cold" = "#09D2FF"
+		"#dummmmmmy:is_thorn" = "#0FA209"
+		"#dummmmmmy:is_fire" = "#FF7700"
+		"#dummmmmmy:is_wither" = "#666666"
+		"#minecraft:is_lightning" = "#FFF200"
+		"#minecraft:is_drowning" = "#1898E3"
+		"#minecraft:witch_resistant_to" = "#844CE7"

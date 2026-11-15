@@ -1,0 +1,18 @@
+// Compost colors for simplehats. You may add your own colors, change existing ones, or remove colors that aren't needed.
+hatbag_common, #bca497
+hatbag_easter, #f587e3
+hatbag_epic, #8a55ff
+hatbag_festive, #d47668
+hatbag_halloween, #966598
+hatbag_rare, #7ccfe1
+hatbag_summer, #cc751b
+hatbag_uncommon, #d6c644
+hatdisplay, #a88964
+haticon, #8d6f51
+hatscraps_common, #7c6e6e
+hatscraps_easter, #d9a491
+hatscraps_festive, #795a4a
+hatscraps_halloween, #a87857
+hatscraps_rare, #2d84e3
+hatscraps_summer, #756b43
+hatscraps_uncommon, #b88e5a

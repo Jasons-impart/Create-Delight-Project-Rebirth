@@ -1,0 +1,18 @@
+// Compost colors for beyonddimensions. You may add your own colors, change existing ones, or remove colors that aren't needed.
+matter_compress_ball, #181818
+net_ae_storage_cell, #69a5da
+net_creater, #8aacc3
+net_destroyer, #b9a1a4
+net_feeder_item, #af8487
+net_gifter, #c9e88c
+net_magnet_item, #207ac5
+net_manager_inviter, #ca8691
+net_member_inviter, #58e7b9
+net_restocker_item, #7fcfff
+net_terminal_item, #587587
+shattered_space_time_crystallization, #129eee
+space_time_bar, #58ede
+space_time_stable_frame, #61cfe7
+stable_space_time_fragment, #5a4490
+unstable_space_time_fragment, #7664a4
+xp_exchange_item, #987cbc

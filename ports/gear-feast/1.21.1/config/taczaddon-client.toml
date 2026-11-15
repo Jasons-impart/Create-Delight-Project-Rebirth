@@ -1,0 +1,39 @@
+["Melee Setting"]
+	#Guns in this list are treated as melee weapons. Firing is replaced with a melee attack.
+	#Use F3+H to inspect the GunId tag.
+	MeleeWeaponList = ["tacz:type_82", "tacz:type_83"]
+
+["Gun Setting"]
+	#Allow firing to interrupt a reload when the gun still contains fireable ammunition.
+	#Normal TaCZ client and server firing checks still apply.
+	enableShootWhileReloading = true
+
+["GunSmithTable Presentation"]
+	#Show an item toast after a successful craft at a gun smith table.
+	enableCraftToast = true
+
+["Attachment Setting"]
+	#Maximum number of compatible guns shown in advanced attachment tooltips.
+	# Default: 16
+	# Range: 0 ~ 1024
+	allowGunDisplayCount = 16
+	#Show detailed attachment stat changes in attachment tooltips.
+	#This requires both the client option and the server showAttachmentDetail gamerule.
+	#The main hand must also hold a gun that accepts the attachment.
+	#The server rule defaults to true and is authoritative; server operators can disable detail tooltips with /gamerule showAttachmentDetail false.
+	enableAttachmentDetail = true
+
+["Other Setting"]
+	#Automatically switch to first person while aiming from another camera perspective.
+	#Restore the previous perspective after aiming ends.
+	enableBetterAimCamera = true
+	#Deprecated: this option no longer controls any cooldown prediction.
+	#Fast swap behavior is decided by the server-side config option enableFastSwapGun.
+	#The server value is synchronized to clients; client prediction uses only that synchronized value.
+	#This option is kept only to avoid errors in old configuration files and has no effect.
+	enableFastSwapGun = true
+	#Highlight related items while hovering over an item.
+	enableShowItemRelation = true
+	#Highlight related items in Sophisticated Backpacks and Sophisticated Storage screens.
+	#This also requires enableShowItemRelation.
+	enableShowItemRelationInSophisticatedStorage = true

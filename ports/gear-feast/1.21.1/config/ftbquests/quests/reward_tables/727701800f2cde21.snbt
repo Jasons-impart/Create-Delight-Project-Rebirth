@@ -1,0 +1,79 @@
+{
+	id: "727701800F2CDE21"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{
+			count: 4
+			id: "77B609978BC7A075"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:glimmering_gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "521575B8896FE548"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:chorus_gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "5D796905DA2799B7"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:taiga_gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "168AD7D9530340FB"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:underground_gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "5B27380595EC1DF9"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:strawberry_gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "78E82022001215F4"
+			item: {
+				components: {
+					"ftbquests:missing_item": "cosmopolitan:gulime"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+	]
+}

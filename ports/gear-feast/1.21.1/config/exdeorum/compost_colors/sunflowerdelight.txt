@@ -1,0 +1,25 @@
+// Compost colors for sunflowerdelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blooming_salad, #c27898
+chocolate_sunflower_seed_muffin, #b67544
+flavored_ice_cream, #c26166
+flavored_milkshake, #f49ed3
+flower_punch, #a5935c
+fried_sunflower_seed, #f2aa69
+glowy_ice_cream, #dc8d54
+glowy_milkshake, #ffc396
+golden_sunflower_seed, #f4a73e
+halva, #af8464
+lilac_flower, #e690ed
+lilac_tincture, #ffe0ff
+peeled_sunflower_seed, #ffcfb1
+peony_candy, #ffd9ff
+peony_flower, #ffe4ff
+peony_syrup, #e0c0ff
+rose_candy, #ffa7d2
+rose_lemonade, #e194ae
+rosebud, #b82f2d
+sunflower_oil, #f8e3bb
+sunflower_seed, #796c6c
+sunflower_seed_muffin, #cc9839
+taiga_custard, #d6b8f1
+tom_kha_kai, #c09e6c

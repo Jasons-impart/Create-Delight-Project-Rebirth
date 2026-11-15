@@ -1,0 +1,16 @@
+// Compost colors for luncheonmeatsdelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+can_shell, #9497a4
+can_shell_abandon, #8e9abc
+can_shell_dough, #b1b9d3
+can_shell_small_toast, #ccbbb6
+flesh_mud_bucket, #d3aa9e
+fried_egg_luncheon_meat, #e6a473
+fry_luncheon_meat, #ff7c4e
+luncheon_meat, #ff8c6b
+luncheon_meat_can, #c39da0
+luncheon_meat_can_raw, #cca09b
+luncheon_meat_rice_ball, #f7e0cc
+luncheon_meat_rice_ball_block, #ddc8ac
+luncheon_meat_sandwich, #e1944b
+minced_pork, #ff9b9b
+sliced_toast, #edb164

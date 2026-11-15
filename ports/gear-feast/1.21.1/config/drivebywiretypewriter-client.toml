@@ -1,0 +1,5 @@
+#How long to hold the channel selection key before opening the keyboard overlay, in milliseconds.
+#Set to 0 to open immediately.
+# Default: 300
+# Range: 0 ~ 5000
+channelSelectionHoldMs = 300

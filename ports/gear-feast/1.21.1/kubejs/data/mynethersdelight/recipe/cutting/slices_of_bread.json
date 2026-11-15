@@ -1,0 +1,25 @@
+{
+    "type":  "farmersdelight:cutting",
+    "ingredients":  [
+                        {
+                            "item":  "mynethersdelight:bread_loaf"
+                        }
+                    ],
+    "result":  [
+                   {
+                       "item":  {
+                                    "id":  "bakeries:sliced_toast",
+                                    "count":  5
+                                }
+                   }
+               ],
+    "tool":  [
+                 {
+                     "type":  "farmersdelight:item_ability",
+                     "action":  "knife_dig"
+                 },
+                 {
+                     "tag":  "c:tools/knife"
+                 }
+             ]
+}

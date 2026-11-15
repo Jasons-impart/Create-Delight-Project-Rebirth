@@ -1,0 +1,2 @@
+// Compost colors for gateways. You may add your own colors, change existing ones, or remove colors that aren't needed.
+gate_pearl, #5f726f

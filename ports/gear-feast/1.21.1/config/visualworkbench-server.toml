@@ -1,0 +1,3 @@
+#Leftover vanilla crafting tables will transform when trying to use them.
+#Default Value: true
+convert_vanilla_workbench_when_interacting = true

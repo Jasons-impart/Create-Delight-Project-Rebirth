@@ -1,0 +1,112 @@
+version = 2
+
+	[common.biome]
+		MixinBiome = true
+
+	[common.block]
+		MixinBlockState = true
+		MixinBlockStateBase = true
+		MixinBubbleColumnBlock = true
+		MixinFallingBlock = true
+		MixinIBlockExtension = true
+		MixinLayeredCauldronBlock = true
+
+	[common.chunk]
+		MixinAccessorLevelChunkSection = true
+		MixinChunkAccess = true
+		MixinLevelChunk = true
+		MixinPalettedContainer = true
+		MixinSimpleBitStorage = true
+		MixinZeroBitStorage = true
+
+	[common.command]
+		MixinWeatherCommand = true
+
+	[common.entity]
+		MixinEntity = true
+		MixinLivingEntity = true
+		MixinServerPlayer = true
+
+	[common.item]
+		MixinMapItem = true
+
+	[common.level]
+		MixinDimensionType = true
+		MixinLevel = true
+		MixinLevelTimeAccess = true
+		MixinServerLevel = true
+
+	[common.worldgen]
+		MixinSurfaceSystem = true
+
+	[compat.sodium]
+		Mixin_FoliageColorSource = true
+		Mixin_ColorSource = true
+		MixinAbstractBlockRenderContext = true
+		MixinBlockOcclusionCache = true
+		MixinBlockRenderer = true
+		MixinBlockRenderTask = true
+		MixinClonedChunkSection = true
+		MixinLevelSlice = true
+		MixinNeoForgeModelAccess = true
+
+	[compat.iris]
+		MixinBiomeUniforms = true
+		MixinBlockRenderTask = true
+		MixinIrisForgeHelpers = true
+
+[data]
+	MixinsDataProvider = true
+	MixinsDelegatingOps = true
+	MixinsDynamicOps = true
+	MixinsRegistriesDatapackGenerator = true
+	RegistrySetBuilderMixin = true
+
+[game]
+	MixinBee_BeePollinateGoal = true
+	MixinBeehiveBlockEntity = true
+	MixinBreedGoal = true
+	MixinCow = true
+	MixinFishingHook = true
+
+[client]
+	MixinClientClientLevel = true
+	MixinClientLevelChunk = true
+	MixinGameRenderer = true
+	MixinLevelRender = true
+	MixinLocalPlayer = true
+	MixinMinecraftClient = true
+
+	[client.biome]
+		MixinBiomeColors = true
+		MixinClientBiome = true
+
+	[client.block]
+		MixinBlockColors = true
+		MixinClientBlockState = true
+
+		[client.block.sign]
+			MixinHangingSignRenderer = true
+			MixinHangingSignScreen = true
+
+	[client.chunk]
+		MixinBlockRenderVanilla = true
+		MixinChunkRenderDispatcher = true
+		MixinChunkRendererRegion_ExtendBlockView = true
+		MixinRenderChunkRegion_IMapSlice = true
+		MixinRenderChunkRegion_ISeedProvider = true
+
+	[client.gui]
+		MixinCycleButtonBuilder = true
+		MixinAbstractButton = true
+
+	[client.model]
+		MixinModelBakery = true
+		MixinModelManager = true
+		MixinMultiPart = true
+		MixinSpriteLoader = true
+		MixinSpriteLoader2 = true
+		MixinTextureAtlasSprite = true
+
+	[client.sound]
+		MixinMusicManager = true

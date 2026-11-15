@@ -1,0 +1,14 @@
+// Compost colors for createpropulsion. You may add your own colors, change existing ones, or remove colors that aren't needed.
+assembler_stick, #bfbfbb
+auto_glue, #ebb58a
+contraption_remover, #d7e4ff
+coral_bucket, #bb9ba0
+glued_contraption_cloner, #86b690
+glued_contraption_mover, #915058
+oxidizer_bucket, #a1b6bf
+pine_resin, #fffab1
+platinum_ingot, #aed9f0
+platinum_nugget, #d4deff
+platinum_sheet, #bbe7fc
+raw_platinum, #dcdebe
+turpentine_bucket, #bbb2a1

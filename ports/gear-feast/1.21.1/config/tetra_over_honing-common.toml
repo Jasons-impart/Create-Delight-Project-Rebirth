@@ -1,0 +1,6 @@
+#过量打磨转换为打磨值的默认转换率
+#Default conversion rate for converting excess polish to polish value
+"OverHoning default conversion rate" = 0.7
+#过量打磨的最大转化率，可以通过添加"over_honing:conversion"的effect提高转化率
+#The maximum conversion rate of over-honing can be increased by adding the effect of "over_honing:conversion"
+"OverHoning max conversion rate" = 1.0

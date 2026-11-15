@@ -1,0 +1,11 @@
+// Compost colors for let_it_walk. You may add your own colors, change existing ones, or remove colors that aren't needed.
+articulation_unit, #585c61
+incomplete_articulation_unit, #585c61
+incomplete_jet_nozzle, #65696e
+incomplete_stabilization_module, #5e6266
+jet_nozzle, #65696e
+klaxium_ingot, #868c90
+klaxium_nugget, #767a7f
+klaxium_sheet, #878c90
+klaxium_spike, #64686c
+stabilization_module, #5e6266

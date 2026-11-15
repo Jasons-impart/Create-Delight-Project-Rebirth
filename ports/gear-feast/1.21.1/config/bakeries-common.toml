@@ -1,0 +1,10 @@
+#After disabling this option, there will be no April Fool's Day effect.
+aprilFoolsDayEffect = true
+#Enjoy effect increases the damage dealt by Eternal Baguette
+# Default: 2.0
+# Range: 0.0 ~ 1.7976931348623157E308
+eternalBaguetteDamageUp = 2.0
+#After being turned off, the Cocoa Manin effect will not remove the invincibility frame of the creatures
+fermentationGameplay = true
+#A tutorial book is provided when players enter the world for the first time
+provideTutorialBooks = true

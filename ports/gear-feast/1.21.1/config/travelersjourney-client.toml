@@ -1,0 +1,10 @@
+#主菜单画窗的环境表现
+[environment]
+	#画窗跟随本地时间做昼夜光照变化
+	enableDayNight = true
+	#联网获取当地真实天气（离线或失败时自动回退晴天）
+	enableRealWeather = true
+	#季节轮播时每个季节的时长（秒），切换过渡占单季最后约 20%
+	# Default: 90
+	# Range: 20 ~ 600
+	seasonSlideSeconds = 90

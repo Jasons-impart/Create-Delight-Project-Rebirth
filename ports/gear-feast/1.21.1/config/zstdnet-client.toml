@@ -1,0 +1,4 @@
+#zstd compression level for client->server stream
+# Default: 3
+# Range: 1 ~ 22
+level = 3

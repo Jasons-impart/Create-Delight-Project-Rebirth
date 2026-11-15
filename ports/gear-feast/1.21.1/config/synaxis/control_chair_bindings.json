@@ -1,0 +1,258 @@
+{
+  "axes": {
+    "lx": {
+      "positive": {
+        "analog": {
+          "type": "MOUSE_YAW_POSITIVE",
+          "code": -1
+        },
+        "button": {
+          "type": "NONE",
+          "code": -1
+        }
+      },
+      "negative": {
+        "analog": {
+          "type": "MOUSE_YAW_NEGATIVE",
+          "code": -1
+        },
+        "button": {
+          "type": "NONE",
+          "code": -1
+        }
+      },
+      "sensitivity": 1.0
+    },
+    "ry": {
+      "positive": {
+        "analog": {
+          "type": "MOUSE_PITCH_POSITIVE",
+          "code": -1
+        },
+        "button": {
+          "type": "NONE",
+          "code": -1
+        }
+      },
+      "negative": {
+        "analog": {
+          "type": "MOUSE_PITCH_NEGATIVE",
+          "code": -1
+        },
+        "button": {
+          "type": "NONE",
+          "code": -1
+        }
+      },
+      "sensitivity": 1.0
+    },
+    "rx": {
+      "positive": {
+        "analog": {
+          "type": "NONE",
+          "code": -1
+        },
+        "button": {
+          "type": "KEYBOARD_KEY",
+          "code": 69
+        }
+      },
+      "negative": {
+        "analog": {
+          "type": "NONE",
+          "code": -1
+        },
+        "button": {
+          "type": "KEYBOARD_KEY",
+          "code": 81
+        }
+      },
+      "sensitivity": 1.0
+    },
+    "ly": {
+      "positive": {
+        "analog": {
+          "type": "NONE",
+          "code": -1
+        },
+        "button": {
+          "type": "KEYBOARD_KEY",
+          "code": 87
+        }
+      },
+      "negative": {
+        "analog": {
+          "type": "NONE",
+          "code": -1
+        },
+        "button": {
+          "type": "KEYBOARD_KEY",
+          "code": 83
+        }
+      },
+      "sensitivity": 1.0
+    }
+  },
+  "buttons": {
+    "b0": {
+      "primary": {
+        "type": "MOUSE_BUTTON",
+        "code": 0
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b1": {
+      "primary": {
+        "type": "MOUSE_BUTTON",
+        "code": 1
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b2": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 32
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b3": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 340
+      },
+      "secondary": {
+        "type": "KEYBOARD_KEY",
+        "code": 344
+      }
+    },
+    "b4": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 341
+      },
+      "secondary": {
+        "type": "KEYBOARD_KEY",
+        "code": 345
+      }
+    },
+    "b5": {
+      "primary": {
+        "type": "MOUSE_BUTTON",
+        "code": 2
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b6": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 87
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b7": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 83
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b8": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 65
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b9": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 68
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b10": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 81
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b11": {
+      "primary": {
+        "type": "KEYBOARD_KEY",
+        "code": 69
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b12": {
+      "primary": {
+        "type": "NONE",
+        "code": -1
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b13": {
+      "primary": {
+        "type": "NONE",
+        "code": -1
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b14": {
+      "primary": {
+        "type": "NONE",
+        "code": -1
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    },
+    "b15": {
+      "primary": {
+        "type": "NONE",
+        "code": -1
+      },
+      "secondary": {
+        "type": "NONE",
+        "code": -1
+      }
+    }
+  }
+}

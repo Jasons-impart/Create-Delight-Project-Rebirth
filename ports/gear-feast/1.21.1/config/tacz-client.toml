@@ -1,0 +1,92 @@
+[key]
+	#True if you want to hold the right mouse button to aim
+	HoldToAim = true
+	#True if you want to hold the crawl button to crawl
+	HoldToCrawl = true
+	#Try to reload automatically when the gun is empty
+	AutoReload = false
+
+[render]
+	#Whether or not apply fadeout effect on the laser beam. Close this may improve laser performance under some shaders.
+	EnableLaserFadeOut = true
+	#How far to display the lod model, 0 means always display
+	# Default: 0
+	# Range: > 0
+	GunLodRenderDistance = 0
+	#The existence time of bullet hole particles, in tick
+	# Default: 400
+	# Range: > 0
+	BulletHoleParticleLife = 400
+	#The threshold for fading out when rendering bullet hole particles
+	# Default: 0.98
+	# Range: 0.0 ~ 1.0
+	BulletHoleParticleFadeThreshold = 0.98
+	#The crosshair when holding a gun
+	#Allowed Values: EMPTY, DOT_1, CIRCLE_1, CIRCLE_2, CIRCLE_3, CROSS_1, CROSS_2, CROSS_3, CROSS_4, CROSS_5, CROSS_6, LINE_1, LINE_2, LINE_3, SQUARE_1, SQUARE_2, SQUARE_3, SQUARE_4, SQUARE_5, SQUARE_6, TRIDENT_1, TRIDENT_2
+	CrosshairType = "DOT_1"
+	#The starting position of the hit marker
+	# Default: 4.0
+	# Range: -1024.0 ~ 1024.0
+	HitMarketStartPosition = 4.0
+	#Whether or not to display the head shot's hitbox
+	HeadShotDebugHitbox = false
+	#Whether or not to display the gun's HUD
+	GunHUDEnable = true
+	#Whether or not to display the kill amount
+	KillAmountEnable = true
+	#The duration of the kill amount, in second
+	# Default: 3.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	KillAmountDurationSecond = 3.0
+	#The farthest render distance of the target, including minecarts type
+	# Default: 128
+	# Range: > 0
+	TargetRenderDistance = 128
+	#Whether or not to render first person bullet trail
+	FirstPersonBulletTracerEnable = true
+	#Disable the interact hud text in center of the screen
+	DisableInteractHudText = false
+	#Whether or not to automatically select the gun smith table's held item filter when opening it with a gun, attachment or ammo in main hand
+	AutoSelectGunSmithTableFilter = true
+	#Max time the damage counter will reset
+	# Default: 2000
+	# Range: > 10
+	DamageCounterResetTime = 2000
+	#Disable the fov effect from the movement speed attribute while holding a gun
+	DisableMovementAttributeFov = true
+	#Enable the display of the TACZ ID in the tooltip when Advanced Tooltip is enabled
+	EnableTaczIdInTooltip = true
+	#Enable translucent while render block entity or not. Enable this option will result in ADDITIONAL PERFORMANCE OVERHEAD.
+	EnableBlockEntityTranslucent = false
+
+[resource]
+	#Build heavy TACZ client assets such as models and animation state machines on demand.
+	#Inventory items are pre-warmed in the background when possible.
+	#If a render needs an asset before warmup finishes, the render thread will wait for it once.
+	EnableLazyClientAssetLoad = true
+
+[sound]
+	#Max active hit marker sounds for the same entity and sound id. 0 disables this limit.
+	# Default: 1
+	# Range: 0 ~ 128
+	HitSoundConcurrencyLimit = 1
+	#Max active normal gun sounds for the same entity and sound id. 0 disables this limit.
+	# Default: 2
+	# Range: 0 ~ 128
+	DefaultSoundConcurrencyLimit = 2
+	#Max active high-frequency gun sounds, such as shooting and animation keyframe sounds, for the same entity and sound id. 0 disables this limit.
+	# Default: 4
+	# Range: 0 ~ 128
+	HighFrequencySoundConcurrencyLimit = 4
+	#Use a non-relative entity-tracking world sound source for first-person animation keyframe sounds. This can improve compatibility with physical sound mods, but may introduce slight stereo drift while moving.
+	FirstPersonAnimationSoundTracking = false
+
+[Zoom]
+	#Screen distance coefficient for zoom, using MDV standard, default is MDV133
+	# Default: 1.33
+	# Range: 0.0 ~ 3.0
+	ScreenDistanceCoefficient = 1.33
+	#Zoom sensitivity is multiplied by this factor
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	ZoomSensitivityBaseMultiplier = 1.0

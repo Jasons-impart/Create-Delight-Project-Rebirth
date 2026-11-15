@@ -1,0 +1,3 @@
+// Compost colors for tetrawhetstone. You may add your own colors, change existing ones, or remove colors that aren't needed.
+overwhetstone, #84ffff
+whetstone, #6c6665

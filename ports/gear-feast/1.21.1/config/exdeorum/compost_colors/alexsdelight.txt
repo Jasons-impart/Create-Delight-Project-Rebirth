@@ -1,0 +1,24 @@
+// Compost colors for alexsdelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+acacia_blossom_soup, #b6a75e
+bison_burger, #916626
+bison_mince, #f2503c
+bison_patty, #96573e
+bunfungus_sandwich, #cf893e
+cooked_bison, #985b43
+cooked_bunfungus, #e49d7f
+cooked_bunfungus_drumstick, #da9a7c
+cooked_catfish_slice, #ffd48e
+cooked_centipede_leg, #ff754b
+cooked_kangaroo_shank, #c8a598
+cooked_loose_moose_rib, #ffccbf
+gongylidia_bruschetta, #e4c8a1
+kangaroo_pasta, #aa7c43
+kangaroo_shank, #ffffff
+kangaroo_stew, #914e1b
+lobster_pasta, #f2a152
+loose_moose_rib, #ffffff
+maggot_salad, #90803c
+raw_bison, #ff7861
+raw_bunfungus, #f4cfea
+raw_bunfungus_drumstick, #e6c5da
+raw_catfish_slice, #ffffee

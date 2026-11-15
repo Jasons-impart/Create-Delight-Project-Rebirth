@@ -1,0 +1,93 @@
+[mirror]
+	#Block entity render distance for mirrors. Mirrors beyond this distance will not render their reflection.
+	# Default: 64
+	# Range: 1 ~ 2048
+	render_distance = 64
+	#Scale factor for mirror reflection resolution. Each mirror block is 16 virtual pixels wide; this multiplies that area. Higher values are sharper but more expensive.
+	# Default: 8
+	# Range: 1 ~ 32
+	resolution_scale = 8
+	#How mirror reflections are dispatched. RENDER_TICK_END (default, recommended): the BE renderer queues mirrors into a pending list; the queue is flushed from a top-level frame hook (Fabric mixin after GameRenderer.render; NeoForge RenderFrameEvent.Post) that's guaranteed to run outside any level render — safe under recursive renderLevel calls from other mods. TEXTURE_REFRESH: piggybacks on the live-feed texture refresh dispatch (one render per visible mirror, end-of-frame). Switch to TEXTURE_REFRESH if you suspect a timing-related rendering glitch.
+	#Allowed Values: TEXTURE_REFRESH, RENDER_TICK_END
+	update_mode = "RENDER_TICK_END"
+	#Smooth the mirror reflection with bilinear texture filtering. Enabled gives a softer, less pixelated reflection; disabled keeps it crisp and pixelated.
+	smooth_reflection = false
+
+	[mirror.recursion]
+		#How mirrors-inside-mirrors are handled. OFF: nested mirrors don't render at all (you see the frame, no reflection). SHARED (cheap): each mirror reuses its own self-reflection texture when seen inside another mirror — looks fine at a glance but parallax is wrong at depth >=1 (the deeper reflections won't slide correctly as you move). RECURSIVE (expensive): each chain gets its own off-axis render with correct parallax, up to max_depth. Beyond the depth cap the nested mirror is not drawn at all.
+		#Allowed Values: OFF, SHARED, RECURSIVE
+		mode = "RECURSIVE"
+		#Max nesting depth in RECURSIVE recursion mode. 0 = no recursion (equivalent to OFF). 1 = one level of correct nested reflection. Each extra level multiplies cost, but resolution_divider and distance_divider attenuate per-level cost.
+		# Default: 1
+		# Range: 0 ~ 8
+		max_depth = 1
+		#Per-level resolution divider for RECURSIVE recursion mode. Texture resolution at depth D = base * (1 / divider^D). 2.0 means each nesting halves resolution.
+		# Default: 2.0
+		# Range: 1.0 ~ 16.0
+		resolution_divider = 2.0
+		#Per-level render-distance divider for RECURSIVE recursion mode. Render distance at depth D = base / divider^D. 2.0 means each nesting halves render distance.
+		# Default: 2.0
+		# Range: 1.0 ~ 16.0
+		distance_divider = 2.0
+
+[television]
+	#Render distance that television will use when rendering the live feed. Decreasing this will improve the performance of TVs, possibly by a lot
+	# Default: 64
+	# Range: 1 ~ 2048
+	render_distance = 64
+
+	[television.screen_effects]
+		enabled = true
+		#Pixel density of televisions, in pixels per block side
+		# Default: 1.3700000047683716
+		# Range: 0.10000000149011612 ~ 10.0
+		pixel_density = 1.3700000047683716
+		#Make connected tvs have higher pixel density, such that the per block pixel density is constant
+		constant_pixel_density = true
+		#Amount of vignette effect applied to television live feed (0 = none, 1 = full)
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		vignette = 1.0
+		#Plays an animation when the television is turned off or on
+		turn_off_animation = true
+
+	[television.live_feed]
+		#How many times per second the television updates its live feed texture. Lowering this will improve performance but make the video less smooth, fractions work too
+		# Default: 10.0
+		# Range: 1.0 ~ 60.0
+		update_fps = 10.0
+		#The minimum update fps for live feed. The mod will throttle update rate when fps are low so this serves at a lower limit
+		# Default: 4.0
+		# Range: 1.0 ~ 60.0
+		min_update_fps = 4.0
+		#The maximum number of milliseconds all the logic for updating live feeds can take before fps throttling begins. Lowering this will improve performance but make the video less smooth. 16.66ms equals to 5fps
+		# Default: 16.66
+		# Range: 0.0 ~ 1000000.0
+		throttling_update_ms = 16.66
+		#Distance from a TV after which the feed will update in real time
+		# Default: 24.0
+		# Range: 1.0 ~ 512.0
+		update_distance = 24.0
+		#Scale factor for live feed resolution. A tv screen is 12x12 pixels, this number multiplies that area
+		# Default: 8
+		# Range: 1 ~ 32
+		resolution_scale = 8
+		#Enables rendering of debug information for televisions
+		render_debug = false
+		#Attempts to disable iris shaders in the live feed view
+		iris_off_hack = true
+
+[wave_gate]
+	#Enable FFmpeg use. This is needed if you want to use the Wave Gate
+	ffmpeg_enabled = false
+	#Scale factor for web images resolution
+	# Default: 8
+	# Range: 1 ~ 32
+	resolution_scale = 8
+	#Scaling mode for web images
+	#Allowed Values: STRETCH, FIT_WIDTH, FIT_HEIGHT, CONTAIN, COVER
+	scaling_mode = "COVER"
+	#Enable bilinear sampling for rescaled images. Enable for a less pixelated look
+	bilinear_sampling = false
+	#A list of regex which will filter out valid URLs. At least one of these must match for a URL video to work
+	safe_urls = []

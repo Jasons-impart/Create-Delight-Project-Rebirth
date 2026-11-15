@@ -1,0 +1,3 @@
+// Compost colors for cmr. You may add your own colors, change existing ones, or remove colors that aren't needed.
+frozen_cake, #e8ffff
+frozen_cake_base, #ffffff

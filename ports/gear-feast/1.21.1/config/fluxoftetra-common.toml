@@ -1,0 +1,5 @@
+#电量抵扣耐久比例
+#default : 320
+ForgeEnergy2Durability = 320
+#不附加电力的物品id
+NotEnergyItems = []

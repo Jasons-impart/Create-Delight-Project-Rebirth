@@ -1,0 +1,3 @@
+// Compost colors for cbc_firepower_components. You may add your own colors, change existing ones, or remove colors that aren't needed.
+large_autocannon_he_round, #e88e4a
+large_autocannon_round, #c9a161

@@ -1,0 +1,4 @@
+#Building Tools
+[buildingTools]
+	#Replace blocks without breaking them first
+	blockSwap = false

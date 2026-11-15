@@ -1,0 +1,34 @@
+{
+	id: "2CC3EC4FCDFB4E3E"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{
+			count: 2
+			id: "1C181086BE308E28"
+			item: {
+				count: 1
+				id: "vinery:red_grape_seeds"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 2
+			id: "5E9DCDAFCB164935"
+			item: {
+				count: 1
+				id: "vinery:taiga_grape_seeds_red"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 2
+			id: "119813C8246BDFE3"
+			item: {
+				count: 1
+				id: "vinery:white_grape_seeds"
+			}
+			random_bonus: 2
+		}
+	]
+}

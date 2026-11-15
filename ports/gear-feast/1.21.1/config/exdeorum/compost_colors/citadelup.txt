@@ -1,0 +1,3 @@
+// Compost colors for citadelup. You may add your own colors, change existing ones, or remove colors that aren't needed.
+citadel_book, #83af8d
+debug, #e1ffe7

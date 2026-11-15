@@ -1,0 +1,2 @@
+// Compost colors for bits_n_bobs. You may add your own colors, change existing ones, or remove colors that aren't needed.
+test_rope, #f0f0f0

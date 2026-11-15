@@ -1,0 +1,25 @@
+	[blocks.smokestack]
+		#Smoke particles one smokestack spawns each tick at full power, lower power spawns less.
+		#Higher is denser smoke and costs fps, most of all with a shader pack.
+		# Default: 0.8
+		# Range: 0.1 ~ 2.0
+		particlesPerTick = 0.8
+		#Spawns less smoke while the fps is under the target and brings it back when the fps recovers.
+		adaptiveParticles = true
+		#The fps adaptive smoke tries to hold. Higher thins the smoke sooner.
+		# Default: 60
+		# Range: 20 ~ 240
+		targetFps = 60
+
+[gauges]
+	#Allowed Values: CELSIUS, FAHRENHEIT, KELVIN
+	temperatureUnit = "CELSIUS"
+	# Default: 1.2
+	# Range: 0.0 ~ 20.0
+	dialWobbleDegrees = 1.2
+
+[bogeys]
+	#Classic bogeys stay level with the rail they sit on.
+	#Rolling bogeys keep the roll of the car instead.
+	#Allowed Values: CLASSIC, ROLLING
+	renderStyle = "CLASSIC"

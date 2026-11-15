@@ -1,0 +1,18 @@
+{
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "food",
+    "ingredients":  [
+                        {
+                            "item":  "minecraft:brown_mushroom"
+                        }
+                    ],
+    "result":  {
+                   "id":  "minecraft:mushroom_stew",
+                   "count":  1
+               },
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:false"
+                                }
+                            ]
+}

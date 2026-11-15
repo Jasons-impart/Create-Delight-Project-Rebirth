@@ -1,0 +1,18 @@
+// Compost colors for functionalstorage. You may add your own colors, change existing ones, or remove colors that aren't needed.
+collector_upgrade, #f1e7e6
+configuration_tool, #ebfff4
+copper_upgrade, #ffe4d2
+creative_vending_upgrade, #edbbff
+diamond_upgrade, #bbffff
+dripping_upgrade, #af9d91
+gold_upgrade, #ffffb6
+iron_downgrade, #f2f2f2
+linking_tool, #e1fffa
+max_storage_upgrade, #faccff
+netherite_upgrade, #b8b2b2
+obsidian_upgrade, #807d86
+puller_upgrade, #f2e7e7
+pusher_upgrade, #f1e7e7
+redstone_upgrade, #d69693
+void_upgrade, #a09ba8
+water_generator_upgrade, #a2a7b5

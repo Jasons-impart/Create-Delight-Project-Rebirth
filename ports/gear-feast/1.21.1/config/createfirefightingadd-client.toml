@@ -1,0 +1,16 @@
+#Particle density multiplier for firefighting spray effects (0.0-1.0). 1.0 = full particles, 0.5 = half, 0.0 = none. Client-side only.
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+particleDensity = 1.0
+#Maximum distance in blocks at which firefighting spray particles can spawn (16-1024). Client-side only; fog and render distance may hide them sooner.
+# Default: 48
+# Range: 16 ~ 1024
+sprayParticleViewDistance = 48
+#Base volume percentage for nozzle spray loop sounds on this client (0-100). Minecraft sound category sliders are still applied on top of this value.
+# Default: 100
+# Range: 0 ~ 100
+nozzleSprayVolume = 100
+#Render the hose between a bound fire hydrant cabinet and the handheld nozzle in first person. Disable this if a camera or first-person animation mod causes visual issues.
+renderHandheldHoseFirstPerson = true
+#Render the hose between a bound fire hydrant cabinet and the handheld nozzle in third person or external camera views. Disable this if a camera mod causes visual issues.
+renderHandheldHoseThirdPerson = true

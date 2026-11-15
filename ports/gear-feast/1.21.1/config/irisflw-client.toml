@@ -1,0 +1,9 @@
+#Use IrisFlw's custom checkerboard texture instead of the default Create one. It is highly recommended to turn it on, as Create's own checkerboard maps are completely opaque in some shaderpacks.
+replaceCheckerboardTexture = true
+#Use screen-door translucency (ordered dithering) for ghost block preview instead of alpha blending. Dithering works with both forward and deferred shaderpacks. Disable to fall back to alpha-blended terrain shader.
+useDithering = true
+#Dithering noise method:
+#  IGN  — Interleaved Gradient Noise (default). No visible pattern, no texture needed.
+#  BAYER — 8×8 Bayer matrix. Deterministic, but shows cross-hatch pattern.
+#Only effective when useDithering=true.
+ditheringMethod = "IGN"

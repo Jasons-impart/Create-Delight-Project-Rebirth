@@ -1,0 +1,91 @@
+["CPU Processors Config (Must restart your game after changed)"]
+	# Default: 4
+	# Range: 0 ~ 81920
+	omni_coprocessor_1k = 4
+	# Default: 4
+	# Range: 0 ~ 81920
+	omni_coprocessor_4k = 4
+	# Default: 4
+	# Range: 0 ~ 81920
+	omni_coprocessor_16k = 4
+	# Default: 4
+	# Range: 0 ~ 81920
+	omni_coprocessor_64k = 4
+	# Default: 4
+	# Range: 0 ~ 81920
+	omni_coprocessor_256k = 4
+	# Default: 8
+	# Range: 0 ~ 81920
+	omni_coprocessor_1m = 8
+	# Default: 8
+	# Range: 0 ~ 81920
+	omni_coprocessor_4m = 8
+	# Default: 8
+	# Range: 0 ~ 81920
+	omni_coprocessor_16m = 8
+	# Default: 8
+	# Range: 0 ~ 81920
+	omni_coprocessor_64m = 8
+	# Default: 8
+	# Range: 0 ~ 81920
+	omni_coprocessor_256m = 8
+	# Default: 0
+	# Range: 0 ~ 81920
+	complex_coprocessor_1k = 0
+	# Default: 1
+	# Range: 0 ~ 81920
+	complex_coprocessor_4k = 1
+	# Default: 2
+	# Range: 0 ~ 81920
+	complex_coprocessor_16k = 2
+	# Default: 4
+	# Range: 0 ~ 81920
+	complex_coprocessor_64k = 4
+	# Default: 8
+	# Range: 0 ~ 81920
+	complex_coprocessor_256k = 8
+	# Default: 16
+	# Range: 0 ~ 81920
+	complex_coprocessor_1m = 16
+	# Default: 32
+	# Range: 0 ~ 81920
+	complex_coprocessor_4m = 32
+	# Default: 64
+	# Range: 0 ~ 81920
+	complex_coprocessor_16m = 64
+	# Default: 128
+	# Range: 0 ~ 81920
+	complex_coprocessor_64m = 128
+	# Default: 256
+	# Range: 0 ~ 81920
+	complex_coprocessor_256m = 256
+	# Default: 512
+	# Range: 0 ~ 81920
+	quantum_coprocessor_1k = 512
+	# Default: 512
+	# Range: 0 ~ 81920
+	quantum_coprocessor_4k = 512
+	# Default: 1024
+	# Range: 0 ~ 81920
+	quantum_coprocessor_16k = 1024
+	# Default: 1024
+	# Range: 0 ~ 81920
+	quantum_coprocessor_64k = 1024
+	# Default: 2048
+	# Range: 0 ~ 81920
+	quantum_coprocessor_256k = 2048
+	# Default: 2048
+	# Range: 0 ~ 81920
+	quantum_coprocessor_1m = 2048
+	# Default: 4096
+	# Range: 0 ~ 81920
+	quantum_coprocessor_4m = 4096
+	# Default: 4096
+	# Range: 0 ~ 81920
+	quantum_coprocessor_16m = 4096
+	# Default: 8192
+	# Range: 0 ~ 81920
+	quantum_coprocessor_64m = 8192
+	# Default: 8192
+	# Range: 0 ~ 81920
+	quantum_coprocessor_256m = 8192

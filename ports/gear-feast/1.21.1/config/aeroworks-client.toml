@@ -1,0 +1,6 @@
+#Client-only console feel settings (input pacing).
+[console]
+	#Milliseconds between repeat steps while a bound direction key is held on a module axis. Lower = full deflection reached faster (snappier). Higher = slower sweep.
+	# Default: 100
+	# Range: 10 ~ 2000
+	keyRepeatDelayMs = 100

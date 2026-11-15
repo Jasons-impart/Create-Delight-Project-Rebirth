@@ -1,0 +1,21 @@
+// Compost colors for tetra. You may add your own colors, change existing ones, or remove colors that aren't needed.
+combustion_chamber, #e3e0e0
+dragon_sinew, #ffffff
+earthpiercer, #ffffff
+forged_beam, #545052
+forged_bolt, #5b4e48
+forged_mesh, #58585c
+geode, #7d7275
+lubricant_dispenser, #ffffff
+metal_scrap, #55545a
+planar_stabilizer, #ffffff
+pristine_amethyst, #ac93ff
+pristine_diamond, #97ccff
+pristine_emerald, #23ab7f
+pristine_lapis, #4b64e7
+pristine_quartz, #b5b6f0
+quick_latch, #584b46
+scroll_rolled, #e4d9bf
+stonecutter, #e3e3e3
+thermal_cell, #55575c
+vent_plate, #655751

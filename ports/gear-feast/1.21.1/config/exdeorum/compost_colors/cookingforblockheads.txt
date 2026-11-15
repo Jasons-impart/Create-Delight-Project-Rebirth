@@ -1,0 +1,7 @@
+// Compost colors for cookingforblockheads. You may add your own colors, change existing ones, or remove colors that aren't needed.
+crafting_book, #f7d7c2
+heating_unit, #ffffff
+ice_unit, #feffff
+no_filter_edition, #e3dcc8
+preservation_chamber, #dddddd
+recipe_book, #e3eab8

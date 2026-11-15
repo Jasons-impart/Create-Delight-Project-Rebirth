@@ -1,0 +1,190 @@
+[damping_stress_bearing]
+	#Maximum damping resistance selectable in the bearing GUI.
+	# Default: 256
+	# Range: 1 ~ 4096
+	max_resistance = 256
+	#Default damping resistance for newly placed damping stress bearings.
+	# Default: 64
+	# Range: 0 ~ 4096
+	default_resistance = 64
+	#RPM at which full configured stress output is reached at maximum resistance.
+	# Default: 256.0
+	# Range: 1.0 ~ 4096.0
+	rated_output_speed_rpm = 256.0
+	#Maximum stress capacity output at rated speed and maximum resistance.
+	# Default: 200000.0
+	# Range: 0.0 ~ 1.0E7
+	max_full_speed_stress_output = 200000.0
+	#Stress capacity cap while a blacklisted block is attached. Speed output is preserved.
+	# Default: 40000.0
+	# Range: 0.0 ~ 1.0E7
+	suppressed_stress_output = 40000.0
+	#Physical damping impulse strength per resistance point.
+	# Default: 20.0
+	# Range: 0.0 ~ 10000.0
+	resistance_torque_per_unit = 20.0
+	#RPM above which damping grows faster to tame high speed assemblies.
+	# Default: 128.0
+	# Range: 1.0 ~ 4096.0
+	speed_damping_base_rpm = 128.0
+	#Blocks that disable damping bearing stress output when found on the attached child sublevel or an adjacent physical structure.
+	#Speed output is preserved; stress capacity is limited by suppressed_stress_output.
+	#Use full block ids such as simulated:swivel_bearing.
+	#Required safety entries are always included even if old configs do not list them.
+	stress_output_blacklist = ["simulated:swivel_bearing", "simulated:swivel_bearing_link_block", "offroad:wheel_mount", "simulated:spring", "simulated:docking_connector", "simulated:paired_docking_connector"]
+
+[hydraulic_rod]
+	#Minimum allowed hydraulic rod length, in blocks.
+	# Default: 2.0
+	# Range: 0.5 ~ 128.0
+	min_link_length = 2.0
+	#Maximum normal hydraulic rod length before limit force starts, in blocks.
+	# Default: 15.0
+	# Range: 0.5 ~ 128.0
+	max_link_length = 15.0
+	#Hydraulic rod length that breaks the link, in blocks.
+	# Default: 17.0
+	# Range: 0.5 ~ 128.0
+	break_link_length = 17.0
+	#Hydraulic rod length that starts the red strain warning effect, in blocks.
+	# Default: 16.5
+	# Range: 0.5 ~ 128.0
+	strain_link_length = 16.5
+	#Maximum stretch resistance value available in the hydraulic rod GUI.
+	# Default: 65536
+	# Range: 1 ~ 1048576
+	max_stretch_resistance = 65536
+	#Default stretch resistance for newly linked hydraulic rods.
+	# Default: 256
+	# Range: 0 ~ 1048576
+	default_stretch_resistance = 256
+	#Maximum return force value available in the hydraulic rod GUI.
+	# Default: 4096
+	# Range: 1 ~ 1048576
+	max_return_force = 4096
+	#Default return force for newly linked hydraulic rods.
+	# Default: 1024
+	# Range: 0 ~ 1048576
+	default_return_force = 1024
+	#Physical stiffness applied when the rod is pushed shorter than min_link_length or longer than max_link_length.
+	# Default: 48.0
+	# Range: 0.0 ~ 100000.0
+	length_limit_stiffness = 48.0
+	#Exponential curve for hydraulic rod length limit force.
+	# Default: 4.0
+	# Range: 0.0 ~ 32.0
+	length_limit_curve = 4.0
+	#Constraint motor damping contributed by each stretch resistance point.
+	# Default: 0.5
+	# Range: 0.0 ~ 10000.0
+	stretch_damping_per_unit = 0.5
+	#Maximum constraint motor force contributed by each stretch resistance point.
+	# Default: 12.0
+	# Range: 0.0 ~ 100000.0
+	stretch_max_force_per_unit = 12.0
+	#Restoring force contributed by each return force point.
+	# Default: 2.0
+	# Range: 0.0 ~ 100000.0
+	return_force_per_unit = 2.0
+	#Exponential curve for expected-length return force.
+	# Default: 0.5
+	# Range: 0.0 ~ 32.0
+	return_force_curve = 0.5
+	#Blocks per second that expected length can move before regulator speed multipliers.
+	# Default: 3.0
+	# Range: 0.0 ~ 128.0
+	expected_length_approach_rate = 3.0
+	#Return force points per second used when smoothing GUI changes.
+	# Default: 1024.0
+	# Range: 0.0 ~ 1048576.0
+	return_force_approach_rate = 1024.0
+	#Maximum per-tick impulse applied by hydraulic rod length limit force.
+	# Default: 256.0
+	# Range: 0.0 ~ 1000000.0
+	max_length_limit_impulse = 256.0
+	#Maximum per-tick impulse applied by expected-length return force.
+	# Default: 256.0
+	# Range: 0.0 ~ 1000000.0
+	max_expected_return_impulse = 256.0
+	#Maximum combined per-tick impulse from hydraulic rod length control.
+	# Default: 512.0
+	# Range: 0.0 ~ 1000000.0
+	max_combined_length_control_impulse = 512.0
+
+[hydraulic_regulator]
+	#Create stress impact of each pneumatic regulator.
+	# Default: 8.0
+	# Range: 0.0 ~ 1024.0
+	stress_impact = 8.0
+	#RPM mapped to the minimum hydraulic length transition multiplier.
+	# Default: 16.0
+	# Range: 0.0 ~ 4096.0
+	min_transition_speed = 16.0
+	#RPM mapped to the maximum hydraulic length transition multiplier.
+	# Default: 256.0
+	# Range: 1.0 ~ 4096.0
+	max_transition_speed = 256.0
+	#Slowest hydraulic length transition multiplier applied by a powered regulator.
+	# Default: 0.5
+	# Range: 0.01 ~ 64.0
+	min_transition_multiplier = 0.5
+	#Fastest hydraulic length transition multiplier applied by a powered regulator.
+	# Default: 4.0
+	# Range: 0.01 ~ 64.0
+	max_transition_multiplier = 4.0
+
+	[universal_joint.andesite]
+		#Maximum distance for creating an andesite universal joint link.
+		# Default: 15.0
+		# Range: 0.5 ~ 128.0
+		link_range = 15.0
+		#Allowed stretch or compression from rest length before andesite elastic pull starts.
+		# Default: 1.0
+		# Range: 0.0 ~ 128.0
+		soft_range = 1.0
+		#Stretch or compression from rest length that breaks an andesite joint link.
+		# Default: 2.5
+		# Range: 0.01 ~ 128.0
+		disconnect_range = 2.5
+		#Elastic pull stiffness for andesite joint links beyond the soft range.
+		# Default: 1320.0
+		# Range: 0.0 ~ 100000.0
+		pull_stiffness = 1320.0
+		#Elastic damping for andesite joint links beyond the soft range.
+		# Default: 18.0
+		# Range: 0.0 ~ 10000.0
+		pull_damping = 18.0
+
+	[universal_joint.brass]
+		#Maximum distance for creating a brass universal joint link.
+		# Default: 5.0
+		# Range: 0.5 ~ 128.0
+		link_range = 5.0
+		#Distance before brass joint elastic pull starts.
+		# Default: 4.0
+		# Range: 0.0 ~ 128.0
+		soft_range = 4.0
+		#Distance that breaks a brass joint link.
+		# Default: 5.5
+		# Range: 0.01 ~ 128.0
+		disconnect_range = 5.5
+		#Elastic pull stiffness for brass joint links beyond the soft range.
+		# Default: 12.0
+		# Range: 0.0 ~ 100000.0
+		pull_stiffness = 12.0
+		#Exponential pull curve for brass joint links beyond the soft range.
+		# Default: 4.0
+		# Range: 0.0 ~ 32.0
+		pull_curve = 4.0
+		#Base damping for brass joint links beyond the soft range.
+		# Default: 7.0
+		# Range: 0.0 ~ 10000.0
+		pull_damping = 7.0
+		#Additional damping per block of brass joint overshoot.
+		# Default: 3.0
+		# Range: 0.0 ~ 10000.0
+		pull_damping_gain = 3.0
+		#Extra pull multiplier as brass links approach disconnect range.
+		# Default: 4.0
+		# Range: 1.0 ~ 128.0
+		endpoint_pull_multiplier = 4.0

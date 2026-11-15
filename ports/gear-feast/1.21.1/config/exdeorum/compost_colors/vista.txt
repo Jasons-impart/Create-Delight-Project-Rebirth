@@ -1,0 +1,8 @@
+// Compost colors for vista. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cassette, #4a484b
+crystalline, #97c5c6
+hollow_cassette, #343e41
+mirror, #a2c6c3
+music_disc_sojourn, #4b5455
+picture_tape, #86898a
+viewfinder, #7a7c7c

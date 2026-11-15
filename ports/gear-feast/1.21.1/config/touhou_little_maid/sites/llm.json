@@ -1,0 +1,193 @@
+{
+  "aliyun": {
+    "id": "aliyun",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/aliyun.png",
+    "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      "qwen3.5-flash",
+      "qwen3.5-plus",
+      "qwen3-max"
+    ]
+  },
+  "deepseek": {
+    "id": "deepseek",
+    "api_type": "openai",
+    "enabled": true,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/deepseek.png",
+    "url": "https://api.deepseek.com/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "has_thinking_field": true,
+    "models": [
+      "deepseek-v4-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "doubao": {
+    "id": "doubao",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/doubao.png",
+    "url": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "has_thinking_field": true,
+    "models": [
+      "doubao-seed-2-0-mini-260215",
+      "doubao-seed-2-0-pro-260215",
+      "doubao-seed-2-0-lite-260215"
+    ]
+  },
+  "gemini": {
+    "id": "gemini",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/gemini.png",
+    "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      "gemini-3-flash-preview",
+      "gemini-3.1-pro-preview",
+      "gemini-3.1-flash-lite-preview"
+    ]
+  },
+  "grok": {
+    "id": "grok",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/grok.png",
+    "url": "https://api.x.ai/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      "grok-4.20-0309-non-reasoning",
+      "grok-4-1-fast-non-reasoning"
+    ]
+  },
+  "kimi": {
+    "id": "kimi",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/kimi.png",
+    "url": "https://api.moonshot.cn/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "has_thinking_field": true,
+    "models": [
+      "kimi-k2.5",
+      "kimi-k2-turbo-preview"
+    ]
+  },
+  "minimax": {
+    "id": "minimax",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/minimax.png",
+    "url": "https://api.minimaxi.com/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      "MiniMax-M2.5-highspeed",
+      "MiniMax-M2.7-highspeed",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ]
+  },
+  "openai": {
+    "id": "openai",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/openai.png",
+    "url": "https://api.openai.com/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      {
+        "name": "gpt-5.4",
+        "reasoning": true
+      },
+      {
+        "name": "gpt-5-mini",
+        "reasoning": true
+      },
+      "gpt-4.1",
+      {
+        "name": "gpt-5.1",
+        "reasoning": true
+      },
+      "gpt-4o",
+      {
+        "name": "gpt-5.2",
+        "reasoning": true
+      }
+    ]
+  },
+  "openrouter": {
+    "id": "openrouter",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/openrouter.png",
+    "url": "https://openrouter.ai/api/v1/chat/completions",
+    "secret_key": "",
+    "headers": {
+      "HTTP-Referer": "https://github.com/TartaricAcid/TouhouLittleMaid",
+      "X-OpenRouter-Title": "Touhou Little Maid Mod (Minecraft)"
+    },
+    "models": [
+      "x-ai/grok-4.1-fast",
+      "xiaomi/mimo-v2-flash",
+      "google/gemini-3-flash-preview"
+    ]
+  },
+  "player2": {
+    "id": "player2",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/player2.png",
+    "url": "http://127.0.0.1:4315/v1/chat/completions",
+    "secret_key": "",
+    "headers": {
+      "player2-game-key": "TouhouLittleMaid"
+    },
+    "models": [
+      "default"
+    ]
+  },
+  "siliconflow": {
+    "id": "siliconflow",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/siliconflow.png",
+    "url": "https://api.siliconflow.cn/v1/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "models": [
+      "Pro/MiniMaxAI/MiniMax-M2.5",
+      "Pro/zai-org/GLM-5",
+      "Pro/moonshotai/Kimi-K2.5",
+      "Qwen/Qwen3.5-397B-A17B",
+      "Pro/deepseek-ai/DeepSeek-V3.2"
+    ]
+  },
+  "zhipu": {
+    "id": "zhipu",
+    "api_type": "openai",
+    "enabled": false,
+    "icon": "touhou_little_maid:textures/gui/ai_chat/zhipu.png",
+    "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "secret_key": "",
+    "headers": {},
+    "has_thinking_field": true,
+    "models": [
+      "glm-5-turbo",
+      "glm-4.6",
+      "glm-4.7",
+      "glm-5"
+    ]
+  }
+}

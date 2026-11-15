@@ -1,0 +1,56 @@
+[food_effect]
+	# Default: 60
+	# Range: 0 ~ 10000
+	higiHealingPeriod = 60
+	# Default: 2.0
+	# Range: 1.0 ~ 100.0
+	fairyHealingFactor = 2.0
+
+[suwako_hat]
+	# Default: 3
+	# Range: 1 ~ 10
+	frogEatCountForHat = 3
+	# Default: 20
+	# Range: 1 ~ 64
+	frogEatRaiderVillagerSightRange = 20
+	# Default: 10
+	# Range: 1 ~ 64
+	frogEatRaiderVillagerNoSightRange = 10
+
+[koishi_attack]
+	koishiAttackEnable = true
+	# Default: 6000
+	# Range: 1 ~ 1000000
+	koishiAttackCoolDown = 6000
+	# Default: 0.001
+	# Range: 0.0 ~ 1.0
+	koishiAttackChance = 0.001
+	# Default: 100
+	# Range: 0 ~ 100000000
+	koishiAttackDamage = 100
+	# Default: 3
+	# Range: 0 ~ 100
+	koishiAttackBlockCount = 3
+
+[danmaku_battle]
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	danmakuMinPHPDamage = 0.02
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	danmakuPlayerPHPDamage = 0.1
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	danmakuHealOnHitTarget = 0.2
+	#Enable extra damage cool down on some youkai
+	enableExtraCoolDown = true
+
+[fairy]
+	fairyAttackYoukaified = true
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	fairySummonReinforcement = 0.5
+
+[reimu]
+	reimuSummonFlesh = true
+	rumiaHairbandDrop = true

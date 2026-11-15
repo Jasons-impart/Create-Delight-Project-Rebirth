@@ -1,0 +1,77 @@
+[Client]
+	#Displays Explorer's Compass information on the HUD even while chat is open.
+	displayWithChatOpen = true
+	#How much the compass says about itself in its own tooltip. COMPACT keeps it to what the compass is doing and what follows from that, with the rest a held shift key away; FULL shows all of it at once; NONE leaves the tooltip empty. Whether the coordinates are among what it may show is the server's to decide, not this. Ex: NONE, COMPACT, FULL
+	#Allowed Values: NONE, COMPACT, FULL
+	tooltipDetail = "COMPACT"
+	#Attempts to translate structure names before fixing the unlocalized names. Translations may not be available for all structures.
+	translateStructureNames = true
+	#Attempts to translate biome names before fixing the unlocalized names. Unlike structures, almost every biome is named by the game itself or by the mod that adds it, so there is rarely anything left to fix up.
+	translateBiomeNames = true
+	#Mirrors each waypoint the compass records into Xaero's Minimap as well. Has no effect when that mod is not installed. The compass keeps a waypoint of its own for every place it locates either way, marked on the direction strip and listed on the waypoints screen; this is about whether the minimap gets a copy. It is also what keeps the two in step the other way: a copy renamed, recoloured, moved or deleted in the minimap does the same to the compass's waypoint.
+	createXaeroWaypoints = true
+	#Takes the waypoints the player makes in Xaero's Minimap in as waypoints of the compass too, so that they are marked on the direction strip, listed on the waypoints screen, and can be pointed at and travelled to. The minimap's death markers and its temporary waypoints are left alone. Needs the setting above. A world never takes in more than maxWaypointsPerWorld allows it to keep.
+	importXaeroWaypoints = true
+	#The color of the waypoints the compass records, as an index into Xaero's Minimap's own color list, which is also the game's list of text colors. Used on the direction strip as well as in the minimap.
+	# Default: 6
+	# Range: 0 ~ 15
+	xaeroWaypointColor = 6
+	#Where Xaero's Minimap draws the waypoints this mod mirrors into it. The direction strip marks them in the world either way, so the minimap's own floating labels are one marker too many. WORLD_MAP_ONLY keeps them on the full-screen world map and nowhere else, which is the minimap's own "world map only" visibility; MINIMAP_AND_WORLD lets the minimap draw them everywhere as it did before; HIDDEN leaves them in the minimap's list but switched off there. Applies to every copy made from then on; the button on the waypoints screen changes this too and applies it to the copies already made. Ex: WORLD_MAP_ONLY, MINIMAP_AND_WORLD, HIDDEN
+	#Allowed Values: MINIMAP_AND_WORLD, WORLD_MAP_ONLY, HIDDEN
+	xaeroWaypointDisplay = "WORLD_MAP_ONLY"
+	#How many waypoints the compass keeps for one world or server before the oldest are forgotten. Set to 0 to keep them all.
+	# Default: 200
+	# Range: 0 ~ 10000
+	maxWaypointsPerWorld = 200
+	#Marks the waypoints the compass has recorded in this dimension on the direction strip, each in its own color, with the name and distance of whichever lies nearest to straight ahead read out under the strip. The strip stays up for them while a compass is held, or carried where the strip is kept up for a carried compass, whether or not the compass is pointing at anything. Each waypoint can be taken off the strip on its own from the waypoints screen.
+	directionBarWaypoints = true
+	#How many waypoints the direction strip marks at once, nearest first, before it stops saying anything and just looks busy.
+	# Default: 12
+	# Range: 1 ~ 64
+	directionBarWaypointLimit = 12
+	#The shape a waypoint is marked with on the direction strip, and beside its name on the waypoints screen. BOOKMARK hangs a notched ribbon from the top of the strip; PIN stands a round-headed pin on the bottom of it; FLAG stands a pole with a pennant; DIAMOND puts a small diamond in the middle, which takes the least room. Ex: BOOKMARK, PIN, FLAG, DIAMOND
+	#Allowed Values: BOOKMARK, PIN, FLAG, DIAMOND
+	directionBarWaypointStyle = "BOOKMARK"
+	#Keeps the panel of compass information on the HUD while the compass is only carried, rather than only while one is held. A carried compass reports what it is doing exactly as a held one does: how far the search it is running has got, where the place it points at lies, or that its last search came back empty. Where several are carried, the one pointing at a place located in this dimension is the one the panel speaks for.
+	showOverlayWhileCarried = false
+	#The line offset for information rendered on the HUD.
+	# Default: 1
+	# Range: 0 ~ 50
+	overlayLineOffset = 1
+	#The side for information rendered on the HUD. Ex: LEFT, RIGHT
+	#Allowed Values: LEFT, RIGHT
+	overlaySide = "LEFT"
+	#Draws the compass information on the HUD on a panel of its own, which keeps it legible against a bright sky or a snowy landscape. Turn this off for plain text.
+	overlayBackground = true
+	#Fills in the strip along the top of the compass screens, which holds the title, the filter field and the filters in force. Turn this off to have it outlined but see through.
+	guiHeaderBackground = true
+	#Fills in the column of controls beside the list on the compass screens. Turn this off to have it outlined but see through.
+	guiSidebarBackground = true
+	#Fills in the bar along the bottom of the structure screen, which reports what the compass is doing. Turn this off to have it outlined but see through.
+	guiStatusBarBackground = true
+	#Displays a compass strip at the top of the screen marking the direction of the located structure.
+	showDirectionBar = true
+	#Keeps the direction strip on the HUD while the compass is only carried, rather than only while one is held, so long as the carried one is pointing at a place located in this dimension. Turn this off to have the strip appear only while the compass is in hand. What the panel of compass information does while one is only carried is showOverlayWhileCarried's to say.
+	showDirectionBarWhileCarried = true
+	#How far down from the top of the screen the direction strip is drawn.
+	# Default: 4
+	# Range: 0 ~ 200
+	directionBarY = 4
+	#How wide the direction strip is, in pixels of the scaled interface. A strip wider than the screen is cut down to it, so any large value here makes the strip span the whole width of whatever screen it is drawn on.
+	# Default: 240
+	# Range: 60 ~ 4096
+	directionBarWidth = 240
+	#How much of the horizon the direction strip covers, in degrees. Lower values spread the marks further apart and make small changes in direction easier to see, higher values keep more of the horizon in view at once. Pair a full width strip with a large span to have the whole horizon on screen at once.
+	# Default: 120
+	# Range: 60 ~ 360
+	directionBarSpan = 120
+	#Draws the direction strip on a panel of its own. Turn this off to leave only the marks, the compass points and the readout, with nothing behind them: they carry their own shadows, and fade out towards the ends of the strip on their own.
+	directionBarBackground = true
+	#Turns a structure preview slowly on its own, so that it is seen from more than one side without being dragged around. The button on the preview screen switches this on and off as well.
+	structurePreviewAutoSpin = true
+	#Marks chests and other loot containers on a structure preview, even through walls, so they can be found without cutting the building open. The button on the preview screen switches this on and off as well.
+	structurePreviewLootMarkers = true
+	#How many cells a structure preview may hold before it opens drawn as coloured blocks instead of real ones. Both are one cell to one block; what the coloured tier gives up is the textures, not the detail. Real blocks take longer to assemble into a model, which happens in the background while a coloured stand-in is shown, so this decides which of the two a large structure settles on rather than how long it takes to appear. The button on the preview screen switches between the two for the structure being looked at either way. Raise this to have real blocks on larger structures by default; set it to 0 to open every preview in colours.
+	# Default: 40000
+	# Range: 0 ~ 400000
+	structurePreviewDetailLimit = 40000

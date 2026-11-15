@@ -1,0 +1,7 @@
+// Compost colors for createutilities. You may add your own colors, change existing ones, or remove colors that aren't needed.
+graviton_tube, #6b6faa
+polished_amethyst, #b88afe
+void_steel_bars, #259784
+void_steel_ingot, #e5247
+void_steel_ladder, #1c8372
+void_steel_sheet, #125a4e

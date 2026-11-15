@@ -1,0 +1,32 @@
+{
+    "type":  "youkaishomecoming:simple_fermentation",
+    "ingredients":  [
+                        {
+                            "item":  "minecraft:rose_bush"
+                        },
+                        {
+                            "item":  "minecraft:rose_bush"
+                        },
+                        {
+                            "item":  "minecraft:poppy"
+                        },
+                        {
+                            "item":  "youkaishomecoming:red_circle_danmaku"
+                        },
+                        {
+                            "item":  "youkaishomecoming:red_circle_danmaku"
+                        }
+                    ],
+    "inputFluid":  {
+                       "amount":  1000,
+                       "id":  "butchercraft:blood_fluid"
+                   },
+    "outputFluid":  {
+                        "amount":  1000,
+                        "id":  "youkaishomecoming:scarlet_mist"
+                    },
+    "results":  [
+
+                ],
+    "time":  3600
+}

@@ -1,0 +1,4 @@
+// Compost colors for idas. You may add your own colors, change existing ones, or remove colors that aren't needed.
+disc_fragment_slither, #ffff83
+music_disc_calidum, #5c4e4a
+music_disc_slither, #ffff8a

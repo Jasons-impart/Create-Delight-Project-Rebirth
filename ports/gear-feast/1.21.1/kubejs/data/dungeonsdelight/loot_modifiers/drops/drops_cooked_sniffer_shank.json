@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#dungeonsdelight:drops_cooked_sniffer_shank",
+        "flags": {
+          "is_on_fire": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player",
+      "inverse": false
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.75
+    }
+  ],
+  "item": "dungeonsdelight:cooked_sniffer_shank"
+}

@@ -1,0 +1,9 @@
+// Compost colors for create_enchantment_industry. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blazes_enchanting_handbook, #725543
+enchanting_template, #caffa0
+experience_bucket, #9ee07a
+experience_cake, #5fc09a
+experience_cake_base, #3066d9
+experience_cake_slice, #54aa9e
+super_enchanting_template, #86ffff
+super_experience_nugget, #b6ffff

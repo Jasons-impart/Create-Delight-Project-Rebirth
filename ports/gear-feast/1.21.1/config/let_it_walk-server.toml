@@ -1,0 +1,3 @@
+#Walkers standing on Jet Feet can fly (G). Off: no flight, but the jets still throw the charged jump
+#three times as high.
+jetFlight = true

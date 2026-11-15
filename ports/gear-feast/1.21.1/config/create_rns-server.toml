@@ -1,0 +1,24 @@
+# How many mining operations a miner with no attachments can complete in one hour,
+# at 256 RPM, with one deposit block claimed.
+# Default: 45
+# Range: > 0
+miningSpeed = 45
+# Radius in which a miner can claim deposit blocks for mining. Radius of 2 results
+# in a 5x5 square mining area with the Mine Head in the middle.
+# Warning: active miners have to be reassembled to apply this setting.
+# Default: 2
+# Range: > 0
+miningRadius = 2
+# How many blocks deep can a miner claim deposit blocks.
+# Warning: active miners have to be reassembled to apply this setting.
+# Default: 10
+# Range: > 0
+miningDepth = 10
+# Whether deposits never run out of resources.
+infiniteDeposits = true
+# Whether deposits can be attached to a contraption or moved by a piston.
+movableDeposits = false
+# Maximum scanning distance of the Deposit Scanner in chunks.
+# Default: 300
+# Range: > 0
+maxScanDistance = 300

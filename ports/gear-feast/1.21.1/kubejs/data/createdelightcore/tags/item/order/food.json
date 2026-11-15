@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#createdelightcore:order/fast_food",
+      "required": false
+    },
+    {
+      "id": "#createdelightcore:order/cookie",
+      "required": false
+    },
+    {
+      "id": "#createdelightcore:order/sandwich",
+      "required": false
+    },
+    {
+      "id": "#createdelightcore:order/fried_food",
+      "required": false
+    },
+    {
+      "id": "#createdelightcore:order/bread",
+      "required": false
+    }
+  ]
+}

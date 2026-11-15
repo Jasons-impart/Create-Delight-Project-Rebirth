@@ -1,0 +1,5 @@
+// Compost colors for aeronautics. You may add your own colors, change existing ones, or remove colors that aren't needed.
+aviators_goggles, #877f6e
+end_stone_powder, #dad094
+levitite_blend_bucket, #93aba7
+music_disc_cloud_skipper, #707d94

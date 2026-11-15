@@ -1,0 +1,6 @@
+#Rainbow Compound settings
+[CRC_config]
+	#Speed multiplier for Dynamic Elytra
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	dynamic_elytra_speed = 1.0

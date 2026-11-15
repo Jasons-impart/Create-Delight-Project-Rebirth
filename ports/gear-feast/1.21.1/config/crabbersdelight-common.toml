@@ -1,0 +1,103 @@
+#Game Settings
+[Settings]
+	#Should fisherman buy/sell items related to this mods items (Seafood and pearls)
+	fishermanBuyCDItems = true
+	#Should the Wandering Trader sell items in exchange for pearls?
+	wanderingTraderDealsPearls = true
+	#Should seafood only be able to be cooked through the Farmer's Delight pot?
+	cookInPot = true
+	#Minimum ticks before seafood can be gathered by the crab trap. Default = 4000
+	minTicks = 4000
+	#Maximum ticks before seafood can be gathered by the crab trap. Default = 8000
+	maxTicks = 8000
+	#Requires the crab trap to have a 3x3 of open water or waterlogged blocks around it to be able to function. Default = true
+	require_surrounding_water = true
+
+#World generation
+[world]
+
+	#Palm Tree generation
+	[world.palm_trees]
+		#Should palm trees generate on beaches?
+		generatePalmTrees = true
+		#Chance of generating. Smaller value = more frequent.
+		# Default: 1
+		# Range: > 1
+		chance = 1
+
+	#Wormy Dirt generation
+	[world.wormy_dirt]
+		#Should wormy dirt generate in newly generated terrain?
+		generateWormyDirt = true
+		#Chance of generating per chunk. Smaller value = more frequent. Searches the entire vertical column for dirt to replace, not just near the surface. Default = 3
+		# Default: 3
+		# Range: > 1
+		chance = 3
+		#Allows any block in the 'dirt' block tag to drop worms at a 1% chance when broken. Default = true
+		dirt_drops_worms = true
+
+	#Seashell generation
+	[world.seashells]
+		#Should seashells generate on beaches and ocean floors?
+		generateSeashells = true
+		#Chance of generating on beaches. Smaller value = more frequent.
+		# Default: 2
+		# Range: > 1
+		chanceBeach = 2
+		#Chance of generating on ocean floors. Smaller value = more frequent.
+		# Default: 2
+		# Range: > 1
+		chanceUnderwater = 2
+		#Number of seashell variants available (must match textures/models/blockstates files)
+		# Default: 7
+		# Range: 1 ~ 7
+		seashellVariantCount = 7
+
+	#Crab spawning
+	[world.crab_spawns]
+		#Should crabs spawn naturally in the world?
+		generateCrabSpawns = true
+		#Spawn weight. Higher value = more frequent relative to other mobs.
+		# Default: 10
+		# Range: > 1
+		spawnWeight = 10
+		#Minimum crabs per spawn attempt.
+		# Default: 2
+		# Range: > 1
+		minCount = 2
+		#Maximum crabs per spawn attempt.
+		# Default: 3
+		# Range: > 1
+		maxCount = 3
+
+#Notes and Messages in a Bottle
+[notes]
+	#If true, notes thrown into the water in a bottle stay in the world's loot pool
+	#forever and can be fished up by multiple players. If false (default), each thrown
+	#note is single-use - once someone finds it, it's gone.
+	thrownNotesPersist = false
+
+#Fishing Spots
+[fishing_spots]
+	#Ticks between fishing spot spawn attempts per player. Lower value = more common/frequent fishing spots. Default = 200
+	# Default: 200
+	# Range: > 20
+	spawnAttemptInterval = 200
+	#Maximum number of fishing spots allowed to cluster within the same area (a 64-block radius).
+	#Higher value = fishing spots can be denser/more common in a given region. Default = 3
+	# Default: 3
+	# Range: > 1
+	maxPerArea = 3
+	#If true, fishing outside a fishing spot applies a negative luck penalty by default, making it harder to get good catches. Default = true
+	outsideSpotLuckPenaltyEnabled = true
+	#How much luck is subtracted when fishing outside a fishing spot, if the penalty above is enabled. Default = 4.0
+	# Default: 4.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	outsideSpotLuckPenaltyAmount = 4.0
+
+#Fish Size
+[fish_size]
+	#If true, caught fish randomly roll a size (Tiny/Small/Regular/Large/Huge) that scales their
+	#hunger/saturation value, is shown in their tooltip, carries through cooking (furnace/smoker/
+	#blast furnace/campfire), and affects Farmer's Delight Cutting Board yields. Default = true
+	fishSizeEnabled = true

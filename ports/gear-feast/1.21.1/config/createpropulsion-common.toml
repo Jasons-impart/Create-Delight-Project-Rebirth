@@ -1,0 +1,504 @@
+[thruster]
+	#Base thrust at redstone 15 and full obstruction efficiency for the standard thruster.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	#Effective thrust uses: baseThrust * fuel_thrust_percent / 100.
+	# Default: 533.333333333
+	# Range: 1.0 ~ 1.0E7
+	baseThrust = 533.333333333
+	#How many blocks behind the nozzle are checked for obstruction.
+	# Default: 10
+	# Range: 1 ~ 64
+	obstructionScanLength = 10
+	#Ignore non-sublevel blocks when checking for obstruction.
+	obstructionIgnoreOtherSubLevels = true
+	#Internal fuel tank capacity in millibuckets.
+	# Default: 1000
+	# Range: 250 ~ 10000000
+	fuelTankCapacityMb = 1000
+	#Fuel consumption in millibuckets per tick at full redstone throttle.
+	# Default: 1.0
+	# Range: 1.0E-4 ~ 1000.0
+	fuelMbPerTickAtFullThrottle = 1.0
+	#If true, entities inside active thruster plume are damaged.
+	damageEntities = true
+	#Max client particles per tick while active.
+	# Default: 4
+	# Range: 0 ~ 64
+	clientParticlesPerTick = 4
+
+[ionThruster]
+	#Ion thruster internal FE capacity.
+	# Default: 4000
+	# Range: 1 ~ 100000000
+	ionThrusterEnergyCapacityFe = 4000
+	#Ion thruster energy consumption in FE per tick at full redstone throttle.
+	# Default: 40.0
+	# Range: 1.0E-4 ~ 1000000.0
+	ionThrusterFePerTickAtFullThrottle = 40.0
+	#Ion thruster base thrust at redstone 15 and full obstruction efficiency.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 800.0
+	# Range: 1.0 ~ 1.0E7
+	ionThrusterBaseThrust = 800.0
+	#Ion thruster thrust multiplier for 2x2x2 multiblock (1.30 = +30%).
+	# Default: 1.3
+	# Range: 0.01 ~ 10.0
+	ionMultiblock2xThrustMultiplier = 1.3
+	#Ion thruster thrust multiplier for 3x3x3 multiblock (1.40 = +40%).
+	# Default: 1.4
+	# Range: 0.01 ~ 10.0
+	ionMultiblock3xThrustMultiplier = 1.4
+
+["Creative Thruster"]
+	#Starting thrust value (kN) when a creative thruster is placed.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 666.666666667
+	# Range: 1.0 ~ 1000000.0
+	creativeThrusterBaseThrust = 666.666666667
+	#Maximum thrust (kN) the scroll can reach on a creative thruster.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 10000.0
+	# Range: 10.0 ~ 1000000.0
+	creativeThrusterMaxThrust = 10000.0
+	#Maximum thrust (kN) the scroll can reach on a 2x2x2 creative thruster multiblock.
+	# Default: 100000.0
+	# Range: 10.0 ~ 1.0E8
+	creativeThrusterMultiblock2x2x2MaxThrust = 100000.0
+	#Maximum thrust (kN) the scroll can reach on a 3x3x3 creative thruster multiblock.
+	# Default: 5000000.0
+	# Range: 10.0 ~ 1.0E8
+	creativeThrusterMultiblock3x3x3MaxThrust = 5000000.0
+
+[vectorThruster]
+	#Vector thruster base thrust at redstone 15 and full obstruction efficiency.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 733.333333333
+	# Range: 1.0 ~ 1.0E7
+	vectorThrusterBaseThrust = 733.333333333
+
+[liquidVectorThruster]
+	#Liquid vector thruster base thrust at redstone 15 and full obstruction efficiency.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 733.333333333
+	# Range: 1.0 ~ 1.0E7
+	liquidVectorThrusterBaseThrust = 733.333333333
+	#Liquid vector thruster internal fuel tank capacity in millibuckets.
+	# Default: 1000
+	# Range: 250 ~ 10000000
+	liquidVectorThrusterFuelTankCapacityMb = 1000
+	#Liquid vector thruster fuel consumption in millibuckets per tick at full redstone throttle.
+	# Default: 1.0
+	# Range: 1.0E-4 ~ 1000.0
+	liquidVectorThrusterFuelMbPerTickAtFullThrottle = 1.0
+
+[solidFuelThruster]
+	#Solid fuel thruster base thrust at redstone 15 and full obstruction efficiency.
+	#Defaults lower than liquid thrusters for a compact solid-fuel engine.
+	# Default: 200.0
+	# Range: 1.0 ~ 1.0E7
+	solidFuelThrusterBaseThrust = 200.0
+	#Nozzle offset from block center for solid fuel thruster force application.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.5
+	solidFuelThrusterNozzleOffset = 0.75
+	#Scales exhaust particle count for solid fuel thrusters (0 disables extra scaling below base emit logic).
+	# Default: 0.35
+	# Range: 0.0 ~ 32.0
+	solidFuelThrusterParticleCountMultiplier = 0.35
+	#Scales exhaust particle velocity for solid fuel thrusters.
+	# Default: 0.4
+	# Range: 0.0 ~ 32.0
+	solidFuelThrusterParticleVelocityMultiplier = 0.4
+
+[multiblockThruster]
+	#Thrust multiplier for a 2x2x2 multiblock thruster (e.g. 1.10 = 10% bonus).
+	# Default: 1.25
+	# Range: 0.01 ~ 10.0
+	multiblock2xThrustMultiplier = 1.25
+	#Thrust multiplier for a 3x3x3 multiblock thruster (e.g. 1.25 = 25% bonus).
+	# Default: 1.5
+	# Range: 0.01 ~ 10.0
+	multiblock3xThrustMultiplier = 1.5
+	#Fuel cost multiplier for a 2x2x2 multiblock thruster (e.g. 1.0 = no reduction, 0.8 = 20% cheaper).
+	# Default: 0.6
+	# Range: 0.01 ~ 10.0
+	multiblock2xFuelEfficiency = 0.6
+	#Fuel cost multiplier for a 3x3x3 multiblock thruster (e.g. 0.95 = 5% cheaper).
+	# Default: 0.4
+	# Range: 0.01 ~ 10.0
+	multiblock3xFuelEfficiency = 0.4
+	#Oxidizer cost multiplier for a 2x2x2 multiblock thruster. 0.85 = 15% savings.
+	# Default: 0.85
+	# Range: 0.01 ~ 10.0
+	multiblock2xOxidizerEfficiency = 0.85
+	#Oxidizer cost multiplier for a 3x3x3 multiblock thruster. 0.75 = 25% savings.
+	# Default: 0.75
+	# Range: 0.01 ~ 10.0
+	multiblock3xOxidizerEfficiency = 0.75
+
+[creativeVectorThruster]
+	#Starting thrust value (kN) when a creative vector thruster is placed.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 666.666666667
+	# Range: 1.0 ~ 1000000.0
+	creativeVectorThrusterBaseThrust = 666.666666667
+	#Maximum thrust (kN) the scroll can reach on a creative vector thruster.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 6666.666666667
+	# Range: 10.0 ~ 1000000.0
+	creativeVectorThrusterMaxThrust = 6666.666666667
+
+[physics]
+	#Offset from the block center where force is applied.
+	# Default: 0.45
+	# Range: 0.0 ~ 1.5
+	nozzleOffsetFromCenter = 0.45
+	#If true, atmospheric pressure affects thruster output at altitude.
+	useAtmosphericPressure = false
+	#Strength of atmospheric pressure influence. 1.0 = full effect, 0.0 = no effect.
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	atmosphericPressureAmount = 1.0
+	#Shared thrust unit scale: how many internal thrust units correspond to 1 kN.
+	#Used by physics conversion, tooltip display, and ComputerCraft kN helpers.
+	# Default: 1000.0
+	# Range: 1.0 ~ 1000000.0
+	thrustUnitsPerKn = 1000.0
+
+["Stirling Engine"]
+	#Change this value to modify the amount of stress units produced by stirling engine. Value of 16 corresponds to 4096 SU.
+	# Default: 16.0
+	# Range: 1.0 ~ 64.0
+	"Generated stress units" = 16.0
+
+["Tilt Adapter"]
+	#Maximum absolute output angle in degrees, reached at full redstone differential.
+	# Default: 45.0
+	# Range: 0.0 ~ 180.0
+	"Maximum angle range" = 45.0
+	#Maximum configurable angle per side for the Advanced Tilt Adapter.
+	# Default: 90
+	# Range: 1 ~ 180
+	"Advanced maximum angle" = 90
+
+[Burners]
+	#If true - both solid and liquid burners can provide heat to heated mixers allowing for pre-nether brass.
+	"Burners power heated mixers" = true
+	#Allow propulsion burners to heat Create steam engines.
+	"Burners heat steam engines" = true
+	#Allow seething burners to count as superheated for steam engines.
+	"Burners superheat steam engines" = true
+	#Allow vanilla blaze burners under stirling engines to provide heat.
+	"Blaze burners heat stirling engines" = true
+	#Fuel consumption multiplier for solid burners. Higher values make inserted items burn faster.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	"Solid burner fuel consumption multiplier" = 1.0
+
+[Cable]
+	#Maximum FE moved per tick by a single cable block.
+	# Default: 1000
+	# Range: 1 ~ 100000000
+	"Energy transfer" = 1000
+
+["Fuel Configuration"]
+	#Additional thruster fuel lines (same format as defaults: fluid_id=efficiencyPercent,burnRatePercent).
+	#Use for fluids that do not have a fuelProperties subsection. Entries here override matching fluids from the table above.
+	additionalThrusterFuelLines = []
+
+	#Fuel properties by fluid id. Configure efficiency and burn rate separately as percentages.
+	["Fuel Configuration".fuelProperties]
+
+		["Fuel Configuration".fuelProperties.createpropulsion_turpentine]
+			#Fuel efficiency percentage for createpropulsion:turpentine.
+			# Default: 100
+			# Range: 0 ~ 10000
+			efficiency = 100
+			#Fuel burn rate percentage for createpropulsion:turpentine.
+			# Default: 150
+			# Range: 0 ~ 10000
+			burnRate = 150
+
+		["Fuel Configuration".fuelProperties.minecraft_lava]
+			#Fuel efficiency percentage for minecraft:lava.
+			# Default: 75
+			# Range: 0 ~ 10000
+			efficiency = 75
+			#Fuel burn rate percentage for minecraft:lava.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+		["Fuel Configuration".fuelProperties.createdieselgenerators_plant_oil]
+			#Fuel efficiency percentage for createdieselgenerators:plant_oil.
+			# Default: 55
+			# Range: 0 ~ 10000
+			efficiency = 55
+			#Fuel burn rate percentage for createdieselgenerators:plant_oil.
+			# Default: 170
+			# Range: 0 ~ 10000
+			burnRate = 170
+
+		["Fuel Configuration".fuelProperties.immersiveengineering_plantoil]
+			#Fuel efficiency percentage for immersiveengineering:plantoil.
+			# Default: 55
+			# Range: 0 ~ 10000
+			efficiency = 55
+			#Fuel burn rate percentage for immersiveengineering:plantoil.
+			# Default: 170
+			# Range: 0 ~ 10000
+			burnRate = 170
+
+		["Fuel Configuration".fuelProperties.createdieselgenerators_ethanol]
+			#Fuel efficiency percentage for createdieselgenerators:ethanol.
+			# Default: 70
+			# Range: 0 ~ 10000
+			efficiency = 70
+			#Fuel burn rate percentage for createdieselgenerators:ethanol.
+			# Default: 140
+			# Range: 0 ~ 10000
+			burnRate = 140
+
+		["Fuel Configuration".fuelProperties.immersiveengineering_ethanol]
+			#Fuel efficiency percentage for immersiveengineering:ethanol.
+			# Default: 70
+			# Range: 0 ~ 10000
+			efficiency = 70
+			#Fuel burn rate percentage for immersiveengineering:ethanol.
+			# Default: 140
+			# Range: 0 ~ 10000
+			burnRate = 140
+
+		["Fuel Configuration".fuelProperties.mekanismgenerators_bioethanol]
+			#Fuel efficiency percentage for mekanismgenerators:bioethanol.
+			# Default: 75
+			# Range: 0 ~ 10000
+			efficiency = 75
+			#Fuel burn rate percentage for mekanismgenerators:bioethanol.
+			# Default: 135
+			# Range: 0 ~ 10000
+			burnRate = 135
+
+		["Fuel Configuration".fuelProperties.northstar_biofuel]
+			#Fuel efficiency percentage for northstar:biofuel.
+			# Default: 80
+			# Range: 0 ~ 10000
+			efficiency = 80
+			#Fuel burn rate percentage for northstar:biofuel.
+			# Default: 125
+			# Range: 0 ~ 10000
+			burnRate = 125
+
+		["Fuel Configuration".fuelProperties.createdieselgenerators_biodiesel]
+			#Fuel efficiency percentage for createdieselgenerators:biodiesel.
+			# Default: 90
+			# Range: 0 ~ 10000
+			efficiency = 90
+			#Fuel burn rate percentage for createdieselgenerators:biodiesel.
+			# Default: 110
+			# Range: 0 ~ 10000
+			burnRate = 110
+
+		["Fuel Configuration".fuelProperties.immersiveengineering_biodiesel]
+			#Fuel efficiency percentage for immersiveengineering:biodiesel.
+			# Default: 90
+			# Range: 0 ~ 10000
+			efficiency = 90
+			#Fuel burn rate percentage for immersiveengineering:biodiesel.
+			# Default: 110
+			# Range: 0 ~ 10000
+			burnRate = 110
+
+		["Fuel Configuration".fuelProperties.immersiveengineering_high_power_biodiesel]
+			#Fuel efficiency percentage for immersiveengineering:high_power_biodiesel.
+			# Default: 105
+			# Range: 0 ~ 10000
+			efficiency = 105
+			#Fuel burn rate percentage for immersiveengineering:high_power_biodiesel.
+			# Default: 95
+			# Range: 0 ~ 10000
+			burnRate = 95
+
+		["Fuel Configuration".fuelProperties.createdieselgenerators_diesel]
+			#Fuel efficiency percentage for createdieselgenerators:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			efficiency = 100
+			#Fuel burn rate percentage for createdieselgenerators:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+		["Fuel Configuration".fuelProperties.tfmg_diesel]
+			#Fuel efficiency percentage for tfmg:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			efficiency = 100
+			#Fuel burn rate percentage for tfmg:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+		["Fuel Configuration".fuelProperties.stellaris_diesel]
+			#Fuel efficiency percentage for stellaris:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			efficiency = 100
+			#Fuel burn rate percentage for stellaris:diesel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+		["Fuel Configuration".fuelProperties.tfmg_naphtha]
+			#Fuel efficiency percentage for tfmg:naphtha.
+			# Default: 95
+			# Range: 0 ~ 10000
+			efficiency = 95
+			#Fuel burn rate percentage for tfmg:naphtha.
+			# Default: 105
+			# Range: 0 ~ 10000
+			burnRate = 105
+
+		["Fuel Configuration".fuelProperties.tfmg_kerosene]
+			#Fuel efficiency percentage for tfmg:kerosene.
+			# Default: 230
+			# Range: 0 ~ 10000
+			efficiency = 230
+			#Fuel burn rate percentage for tfmg:kerosene.
+			# Default: 90
+			# Range: 0 ~ 10000
+			burnRate = 90
+
+		["Fuel Configuration".fuelProperties.createdieselgenerators_gasoline]
+			#Fuel efficiency percentage for createdieselgenerators:gasoline.
+			# Default: 125
+			# Range: 0 ~ 10000
+			efficiency = 125
+			#Fuel burn rate percentage for createdieselgenerators:gasoline.
+			# Default: 80
+			# Range: 0 ~ 10000
+			burnRate = 80
+
+		["Fuel Configuration".fuelProperties.tfmg_gasoline]
+			#Fuel efficiency percentage for tfmg:gasoline.
+			# Default: 125
+			# Range: 0 ~ 10000
+			efficiency = 125
+			#Fuel burn rate percentage for tfmg:gasoline.
+			# Default: 80
+			# Range: 0 ~ 10000
+			burnRate = 80
+
+		["Fuel Configuration".fuelProperties.tfmg_lpg]
+			#Fuel efficiency percentage for tfmg:lpg.
+			# Default: 120
+			# Range: 0 ~ 10000
+			efficiency = 120
+			#Fuel burn rate percentage for tfmg:lpg.
+			# Default: 85
+			# Range: 0 ~ 10000
+			burnRate = 85
+
+		["Fuel Configuration".fuelProperties.northstar_hydrocarbon]
+			#Fuel efficiency percentage for northstar:hydrocarbon.
+			# Default: 130
+			# Range: 0 ~ 10000
+			efficiency = 130
+			#Fuel burn rate percentage for northstar:hydrocarbon.
+			# Default: 75
+			# Range: 0 ~ 10000
+			burnRate = 75
+
+		["Fuel Configuration".fuelProperties.stellaris_fuel]
+			#Fuel efficiency percentage for stellaris:fuel.
+			# Default: 115
+			# Range: 0 ~ 10000
+			efficiency = 115
+			#Fuel burn rate percentage for stellaris:fuel.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+		["Fuel Configuration".fuelProperties.mekanism_hydrogen]
+			#Fuel efficiency percentage for mekanism:hydrogen.
+			# Default: 230
+			# Range: 0 ~ 10000
+			efficiency = 230
+			#Fuel burn rate percentage for mekanism:hydrogen.
+			# Default: 90
+			# Range: 0 ~ 10000
+			burnRate = 90
+
+		["Fuel Configuration".fuelProperties.createaddition_bioethanol]
+			#Fuel efficiency percentage for createaddition:bioethanol.
+			# Default: 75
+			# Range: 0 ~ 10000
+			efficiency = 75
+			#Fuel burn rate percentage for createaddition:bioethanol.
+			# Default: 135
+			# Range: 0 ~ 10000
+			burnRate = 135
+
+		["Fuel Configuration".fuelProperties.createaddition_seed_oil]
+			#Fuel efficiency percentage for createaddition:seed_oil.
+			# Default: 55
+			# Range: 0 ~ 10000
+			efficiency = 55
+			#Fuel burn rate percentage for createaddition:seed_oil.
+			# Default: 170
+			# Range: 0 ~ 10000
+			burnRate = 170
+
+		["Fuel Configuration".fuelProperties.northstar_methane]
+			#Fuel efficiency percentage for northstar:methane.
+			# Default: 105
+			# Range: 0 ~ 10000
+			efficiency = 105
+			#Fuel burn rate percentage for northstar:methane.
+			# Default: 95
+			# Range: 0 ~ 10000
+			burnRate = 95
+
+		["Fuel Configuration".fuelProperties.northstar_liquid_hydrogen]
+			#Fuel efficiency percentage for northstar:liquid_hydrogen.
+			# Default: 230
+			# Range: 0 ~ 10000
+			efficiency = 230
+			#Fuel burn rate percentage for northstar:liquid_hydrogen.
+			# Default: 90
+			# Range: 0 ~ 10000
+			burnRate = 90
+
+		["Fuel Configuration".fuelProperties.immersivepetroleum_diesel_sulfur]
+			#Fuel efficiency percentage for immersivepetroleum:diesel_sulfur.
+			# Default: 100
+			# Range: 0 ~ 10000
+			efficiency = 100
+			#Fuel burn rate percentage for immersivepetroleum:diesel_sulfur.
+			# Default: 100
+			# Range: 0 ~ 10000
+			burnRate = 100
+
+	#Coral conversion entries. Each key is a fluid id and each value is '<fe_per_mb>'.
+	#Example value: 16
+	["Fuel Configuration".coralFuelConversionRates]
+		createpropulsion_coral = "500"
+
+[thrusterDyeColors]
+	#Particle color overrides when a dye is applied to a thruster. Values are RRGGBB hex strings.
+	white = "FFFFFF"
+	orange = "FF8000"
+	magenta = "FF00FF"
+	light_blue = "00BFFF"
+	yellow = "FFFF00"
+	lime = "7FFF00"
+	pink = "FF69B4"
+	gray = "808080"
+	light_gray = "C0C0C0"
+	cyan = "00FFFF"
+	purple = "BF00FF"
+	blue = "5555FF"
+	brown = "C86400"
+	green = "00C800"
+	red = "FF0000"
+	black = "2A2A2A"

@@ -1,0 +1,7 @@
+#Fly Higher - Air Pressure Configuration
+[pressure]
+	#Height scale multiplier. Scales altitude distances from the 1.0 atm anchor point.
+	#1.0 = default, 2.0 = double height range, 0.5 = half height range
+	# Default: 1.0
+	# Range: 0.1 ~ 5.0
+	heightMultiplier = 1.0

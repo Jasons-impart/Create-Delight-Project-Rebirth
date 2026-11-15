@@ -1,0 +1,6 @@
+#Mushroom Settings
+[mushroom]
+	#Only relevant if 'replaceVanillaSapling' to be set to TRUE in Dynamic Trees common config. If enabled mushrooms will be replaced by their dynamic counterparts as soon as they are placed.
+	replaceMushroomSaplingOnPlacement = false
+	#Only relevant if 'replaceVanillaSapling' to be set to TRUE in Dynamic Trees common config. If enabled mushrooms will be replaced by their dynamic counterparts when they grow into a giant mushroom.
+	replaceMushroomSaplingOnGrowth = true

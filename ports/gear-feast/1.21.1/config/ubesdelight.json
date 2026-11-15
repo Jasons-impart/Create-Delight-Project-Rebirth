@@ -1,0 +1,12 @@
+{
+  "enableUDCropCrates": true,
+  "farmersBuyUDCrops": true,
+  "wanderingTraderSellsUDItems": true,
+  "generateUDChestLoot": true,
+  "generateWildUbe": true,
+  "generateWildGarlic": true,
+  "generateWildGinger": true,
+  "generateWildLemongrass": true,
+  "bakingMatFortuneBonus": 0.1,
+  "isFoodEffectTooltip": true
+}

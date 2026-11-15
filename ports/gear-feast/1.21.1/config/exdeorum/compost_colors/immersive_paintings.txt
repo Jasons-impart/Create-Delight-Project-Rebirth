@@ -1,0 +1,5 @@
+// Compost colors for immersive_paintings. You may add your own colors, change existing ones, or remove colors that aren't needed.
+glow_graffiti, #ca9d5b
+glow_painting, #c0ae94
+graffiti, #ff827d
+painting, #a29e8a

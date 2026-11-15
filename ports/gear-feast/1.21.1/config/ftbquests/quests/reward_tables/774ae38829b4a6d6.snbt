@@ -1,0 +1,36 @@
+{
+	id: "774AE38829B4A6D6"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ id: "0F7E361F75B1400B", item: { count: 1, id: "minecraft:dirt" } }
+		{ id: "18EF635A22B6B62E", item: { count: 1, id: "minecraft:mangrove_roots" } }
+		{ id: "262196E4BBD5BBA4", item: { count: 1, id: "minecraft:dead_tube_coral_block" } }
+		{ id: "62F3E184E86F1267", item: { count: 1, id: "minecraft:cut_red_sandstone_slab" } }
+		{ id: "3295B9300AB63559", item: { count: 1, id: "minecraft:cobweb" } }
+		{
+			count: 8
+			id: "14C3E0D8A895C8EA"
+			item: {
+				count: 1
+				id: "minecraft:iron_nugget"
+			}
+		}
+		{
+			count: 8
+			id: "1EAAEB57699D8436"
+			item: {
+				count: 1
+				id: "quark:clear_shard"
+			}
+		}
+		{
+			count: 4
+			id: "2DC21BDE10461AE0"
+			item: {
+				count: 1
+				id: "vinery:coarse_dirt_slab"
+			}
+		}
+	]
+}

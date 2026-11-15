@@ -1,0 +1,8 @@
+	[dragonlib_server_config.time_system]
+		#These settings determine the default time system in DragonLib. Mods can use a fixed time system, meaning these settings may not always work. Datapacks can override all these settings!
+		#When ON, the custom time settings from the common config are used. When OFF, the standard vanilla time system is used. (Default: OFF)
+		use_custom = false
+		#When ON, DragonLib tries to detect time changing mods (like TimeControl) and uses its settings. When OFF, Vanilla or Custom is used. (Default: ON)
+		auto_detect_time_system = true
+		#Specifies the preferred time changing mod. If multiple such mods are installed, it cannot be clearly determined which mod DragonLib is using to retrieve the data. This option allows you to specify a particular mod. However, installing multiple such mods simultaneously is not recommended. If this value is empty, the mod will be selected automatically, as before. If the specified mod does not exist, vanilla will be used. (Default: '')
+		preferred_mod = ""

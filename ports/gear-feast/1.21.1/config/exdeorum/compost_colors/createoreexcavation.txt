@@ -1,0 +1,9 @@
+// Compost colors for createoreexcavation. You may add your own colors, change existing ones, or remove colors that aren't needed.
+diamond_drill, #5ce0d4
+drill, #aaaaaa
+netherite_drill, #4a4346
+raw_diamond, #62faf2
+raw_emerald, #37e365
+raw_redstone, #a50f07
+vein_atlas, #586f82
+vein_finder, #657851

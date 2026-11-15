@@ -1,0 +1,75 @@
+[General]
+	#Allows a player to teleport to a located structure when in creative mode, opped, or in cheat mode.
+	allowTeleport = true
+	#The minimum time in milliseconds between teleports requested by the same player. Teleporting loads, and usually generates, the destination chunk, so this keeps a modified client from queueing up that work as fast as it can send packets. Set to 0 to disable.
+	# Default: 2000
+	# Range: 0 ~ 60000
+	teleportCooldownMillis = 2000
+	#The maximum number of times a player can search for the next instance of a located structure, skipping the locations already found. The collected locations are forgotten and the search starts over from the closest instance again once this many have been collected, and likewise once every instance within the search radius has been collected. Set to 0 to disable searching for further instances and make the compass always locate the nearest one.
+	# Default: 100
+	# Range: 0 ~ 1024
+	maxNextSearches = 100
+	#Allows players to view the precise coordinates and distance of a located structure on the HUD, rather than relying on the direction the compass is pointing.
+	displayCoordinates = true
+	#The maximum radius that will be searched for a structure. Raising this value will increase search accuracy but will potentially make the process more resource intensive.
+	# Default: 10000
+	# Range: 0 ~ 1000000
+	maxRadius = 10000
+	#A list of structures that the compass will not display in the GUI and will not be able to search for. Wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:stronghold", "minecraft:endcity", "minecraft:*village*"]
+	structureBlacklist = []
+	#A list of biomes that the compass will not display in the GUI and will not be able to search for. Wildcards work the same way they do for the structure blacklist. Ex: ["minecraft:deep_dark", "minecraft:*ocean*"]
+	biomeBlacklist = []
+	#Leaves the structures this world cannot generate out of the compass, rather than offering them and having every search for one report that nothing was found. A structure is only ever placed by a structure set that names it and whose biomes this world actually has, so what this drops is the structures no dimension of this world could place: the ones whose biome tag a data pack has emptied out, the ones a data pack has taken out of every structure set, the ones belonging to no set in the first place, and every structure at once in a superflat world configured without any or in a world generating no structures at all. This is the same rule the compass already searches by, so what it leaves out is exactly what a search could never find. Turn it off to be offered every structure this world's registries hold, whether it can generate or not.
+	hideStructuresThatCannotGenerate = true
+	#The maximum number of samples to be taken when searching for a structure.
+	# Default: 100000
+	# Range: 0 ~ 100000000
+	maxSamples = 100000
+	#The maximum number of samples to be taken when searching for a biome. A biome can lie anywhere, where a structure can only lie where its placement allows one, so a biome search takes far more samples than a structure search does. Each of them is much cheaper, since which biome generates somewhere follows from the world seed alone and needs no part of the world to have been generated.
+	# Default: 2000000
+	# Range: 0 ~ 100000000
+	maxBiomeSamples = 2000000
+	#How far apart in blocks the locations sampled by a biome search are. Lower values make the search less likely to step over a small biome entirely, higher values let it cover the same area in fewer samples.
+	# Default: 32
+	# Range: 4 ~ 512
+	biomeSampleSpacing = 32
+	#How far apart in blocks the heights sampled by a biome search are. Sampling the whole height of a dimension is what makes the biomes that fill the caves findable from the surface. Set to 0 to sample only the height the search was started at, which searches several times faster but only finds the biomes reaching it.
+	# Default: 64
+	# Range: 0 ~ 512
+	biomeVerticalSampleSpacing = 64
+	#How many locations apart, along each axis, a biome search looks at the heights other than the one it was started at. The height a search starts at is sampled everywhere, since that is where the biome being looked for usually is; the rest of the dimension is sampled on a coarser grid, since a biome that fills the caves covers far more ground than the spacing between two locations. Raising this searches faster but can step over a small cave biome, and 1 samples every height at every location.
+	# Default: 4
+	# Range: 1 ~ 64
+	biomeDepthSampleInterval = 4
+	#Runs biome searches on threads of their own rather than in slices of the server tick, which finishes them several times sooner and costs the server nothing while they run. A search is shared out over as many threads as searching is allowed, each taking its own share of the ground. This is safe because which biome generates somewhere follows from the world seed and the generator's noise alone, which the game itself samples from its own worldgen threads. Turn it off if a mod that adds a biome source of its own turns out not to be safe to sample from another thread.
+	asyncBiomeSearch = true
+	#Runs structure searches off the server thread, shared out over as many threads as searching is allowed, by working out where a structure would generate the same way world generation decides it instead of asking chunk storage about every location the search looks at. Almost all of what a structure search costs is that question, and asking world generation instead reads no part of the world, so the search leaves the server thread free while it runs and finishes far sooner. The location it settles on is still put to chunk storage before the compass is pointed at it. What this can differ over is ground that was generated under settings that have since changed, such as an old world or a data pack that has been edited: there the compass answers with where a structure would generate now. Turn it off to have every location answered by chunk storage on the server thread, as it was before, and also if a mod that adds structures of its own turns out not to be safe to generate from another thread.
+	asyncStructureSearch = true
+	#The maximum amount of time in milliseconds that searches may spend on the server thread during a single tick. Sampling a location can be expensive, so this caps how much of each tick searching is allowed to consume. This is shared by every search running on the server, which take turns within it, so raising it does not let one player's search crowd out another's. Lower values keep the game responsive while a search is running, higher values complete searches sooner.
+	# Default: 10
+	# Range: 1 ~ 50
+	maxSearchTimePerTick = 10
+	#The minimum time in milliseconds between searches started by the same player. Search requests arriving faster than this are ignored. This guards against modified clients restarting expensive searches as fast as they can send packets. Set to 0 to disable.
+	# Default: 500
+	# Range: 0 ~ 10000
+	searchRequestCooldownMillis = 500
+	#How many located structures a compass remembers, so that they can be pointed at again later. The oldest is dropped once this many have been collected. Set to 0 to disable remembering them.
+	# Default: 64
+	# Range: 0 ~ 1024
+	maxBookmarks = 64
+	#Allows players to announce a located structure to everyone else on the server.
+	allowSharing = true
+	#The minimum time in milliseconds between locations shared by the same player, so that sharing cannot be used to flood chat. Set to 0 to disable.
+	# Default: 3000
+	# Range: 0 ~ 60000
+	shareCooldownMillis = 3000
+	#Allows players to see what a structure looks like before searching for one. The server assembles the structure the way world generation would, without placing any of it anywhere, off the server thread, and sends back a small model of it. The most recently viewed structures are kept assembled, so looking at one again costs nothing while it stays in use. Turn it off to have the compass answer that there is nothing to show.
+	allowStructurePreview = true
+	#How many cells across a structure preview may be. The default is large enough that no structure is shrunk to fit it, so a preview is one cell to one block and shows the structure at its own size; lower it to cap how large a preview may be however large the structure is. What actually decides whether a preview is shown one to one is the cell budget below.
+	# Default: 1024
+	# Range: 8 ~ 1024
+	structurePreviewResolution = 1024
+	#How many cells of a structure preview may be sent. Only the cells that can be seen from outside the structure are ever sent, and a structure whose surface does not fit inside this is shrunk until it does, at which point it is no longer one cell to one block. The default clears every structure the game itself adds by several times over: the largest of them, a bastion, comes to under 60000 solid blocks even counting every piece it could possibly be assembled from, and only part of that is ever visible from outside. A structure that does not fit is named in the log. Previews are sent in pieces and each is built once and then kept, so this is what one costs the first time it is opened rather than what it costs to show.
+	# Default: 200000
+	# Range: 512 ~ 400000
+	structurePreviewMaxBlocks = 200000

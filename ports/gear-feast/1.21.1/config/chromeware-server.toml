@@ -1,0 +1,1674 @@
+[systems]
+	#Turn the cyberware capacity limit on or off. When on, going over the limit shows red and multiplies chrome-use Humanity loss (Cyberpsychosis > Chrome Use).
+	capacity_enabled = true
+	#Cyberware capacity a new player starts with. Create advancements, cyber limbs and the Chrome Compressor add more.
+	# Default: 38
+	# Range: 0 ~ 10000
+	starting_capacity = 38
+
+	[cyberpsychosis.humanity]
+		#Turn the whole Humanity and cyberpsychosis system on or off.
+		enabled = true
+		#Most Humanity that installed chrome alone can take (%). Using chrome can take the rest.
+		# Default: 30.0
+		# Range: 0.0 ~ 100.0
+		installed_chrome_cap = 30.0
+		#Humanity lost for each point of installed cyberware capacity (%). Cyber limbs add their own loss (Implant stats).
+		# Default: 0.08333333333333333
+		# Range: 0.0 ~ 100.0
+		installed_chrome_per_capacity_point = 0.08333333333333333
+
+	[cyberpsychosis.chrome_use]
+		#Permanent Humanity loss each time you use an implant, per capacity point of that implant (%). A 44-capacity Sandevistan costs 44 times this. Never wears off.
+		# Default: 0.002
+		# Range: 0.0 ~ 100.0
+		per_implant_use = 0.002
+		#Permanent Humanity loss for each creature an arm implant hits (%).
+		# Default: 0.015
+		# Range: 0.0 ~ 100.0
+		per_arm_hardware_hit = 0.015
+		#Permanent Humanity loss for each RAM spent on a quickhack (%).
+		# Default: 0.0016
+		# Range: 0.0 ~ 100.0
+		per_quickhack_ram = 0.0016
+		#All chrome-use loss is multiplied by used capacity / capacity limit. Each point over the limit counts this many extra times (needs the capacity limit on in Systems).
+		# Default: 4.0
+		# Range: 0.0 ~ 1000.0
+		overflow_multiplier = 4.0
+		#Removing chrome turns its share of chrome-use loss into strain. Installing any chrome while you still carry strain turns all of it back into permanent loss, times this.
+		# Default: 1.25
+		# Range: 0.0 ~ 100.0
+		reinstall_penalty = 1.25
+
+	[cyberpsychosis.strain]
+		#Strain (temporary Humanity loss) recovered per minute. Paused while Cyberpsycho.
+		# Default: 0.5
+		# Range: 0.0 ~ 6000.0
+		recovery_per_minute = 0.5
+		#Strain recovery is multiplied by this while one of your tamed animals is near.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		pet_recovery_multiplier = 2.0
+		#Blocks a tamed animal can be from you to count as near.
+		# Default: 8.0
+		# Range: 0.0 ~ 64.0
+		pet_range = 8.0
+		#Strain for killing a creature (%).
+		# Default: 0.25
+		# Range: 0.0 ~ 100.0
+		creature_kill = 0.25
+		#Strain for killing a player, villager, wandering trader or someone else's pet (%).
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		person_kill = 1.0
+		#Strain when your tamed animal dies (%).
+		# Default: 15.0
+		# Range: 0.0 ~ 100.0
+		own_pet_died = 15.0
+		#Strain when you kill your own tamed animal, instead of the above (%).
+		# Default: 30.0
+		# Range: 0.0 ~ 100.0
+		own_pet_killed_by_you = 30.0
+
+	[cyberpsychosis.stages]
+		#Episodes start at this Humanity (%): short glitches, with your eyes glitching for others.
+		# Default: 60.0
+		# Range: 1.0 ~ 100.0
+		flickers_below_humanity = 60.0
+		#From this Humanity (%) episodes can also zone you out (longer distortion, muffled sound) and show hallucinations.
+		# Default: 40.0
+		# Range: 0.0 ~ 100.0
+		spacing_out_below_humanity = 40.0
+		#From this Humanity (%) episodes can also force attacks, and using implants can Short Circuit you.
+		# Default: 20.0
+		# Range: 0.0 ~ 100.0
+		losing_control_below_humanity = 20.0
+		#At 0% Humanity you become a Cyberpsycho. Dying ends it and leaves you at this Humanity (%).
+		# Default: 10.0
+		# Range: 0.0 ~ 100.0
+		humanity_after_cyberpsycho_death = 10.0
+
+	[cyberpsychosis.episodes]
+		#Chance of an episode each second when episodes start (%).
+		# Default: 1.0
+		# Range: 0.001 ~ 100.0
+		chance_per_second_at_start = 1.0
+		#Chance of an episode each second near 0% Humanity (%). It rises smoothly between the two.
+		# Default: 50.0
+		# Range: 0.001 ~ 100.0
+		chance_per_second_near_zero = 50.0
+		#Once spacing out: chance an episode zones you out (%).
+		# Default: 50.0
+		# Range: 0.0 ~ 100.0
+		spacing_out_chance = 50.0
+		#Once spacing out: chance an episode shows a hallucination (another player, a dead pet, a Wither or Warden) (%).
+		# Default: 50.0
+		# Range: 0.0 ~ 100.0
+		hallucination_chance = 50.0
+		#Once losing control: chance an episode makes you attack whatever you look at (%).
+		# Default: 25.0
+		# Range: 0.0 ~ 100.0
+		forced_attack_chance = 25.0
+		#The same chance near 0% Humanity (%).
+		# Default: 60.0
+		# Range: 0.0 ~ 100.0
+		forced_attack_chance_near_zero = 60.0
+		#How long a forced attack keeps clicking when losing control starts.
+		# Default: 1.0
+		# Range: 0.0 ~ 60.0
+		forced_attack_seconds = 1.0
+		#How long a forced attack keeps clicking near 0% Humanity.
+		# Default: 3.0
+		# Range: 0.0 ~ 60.0
+		forced_attack_seconds_near_zero = 3.0
+		#Once losing control: chance an implant use Short Circuits you, rising from 0 to this near 0% Humanity (%).
+		# Default: 25.0
+		# Range: 0.0 ~ 100.0
+		short_circuit_chance_near_zero = 25.0
+		#Least seconds between two implant Short Circuits.
+		# Default: 5.0
+		# Range: 0.0 ~ 3600.0
+		short_circuit_cooldown_seconds = 5.0
+
+	[cyberpsychosis.immunosuppressants]
+		#Humanity loss a Standard dose clears (%). Strain goes first, then permanent loss.
+		# Default: 50.0
+		# Range: 0.0 ~ 100.0
+		standard_clears_percent = 50.0
+		#Minutes a Standard dose keeps it cleared. Standard cannot end the Cyberpsycho state.
+		# Default: 50.0
+		# Range: 0.01 ~ 1440.0
+		standard_minutes = 50.0
+		#When a Standard dose wears off, seconds for each 1% to come back.
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		standard_return_seconds_per_percent = 5.0
+		#Humanity loss a Military dose clears (%). Strain goes first, then permanent loss.
+		# Default: 100.0
+		# Range: 0.0 ~ 100.0
+		military_clears_percent = 100.0
+		#Minutes a Military dose keeps it cleared. Military ends the Cyberpsycho state.
+		# Default: 10.0
+		# Range: 0.01 ~ 1440.0
+		military_minutes = 10.0
+		#When a Military dose wears off, seconds for each 1% to come back.
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		military_return_seconds_per_percent = 1.0
+
+[bosses]
+	#Mobs with at least this max health count as bosses.
+	# Default: 150.0
+	# Range: 1.0 ~ 1000000.0
+	boss_max_health = 150.0
+	#Suicide, System Collapse and lone Cyberpsychosis damage to a boss, as a fraction of its max health.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	lethal_damage_fraction = 0.25
+	#Blackwall Gateway damage to a boss, as a fraction of its max health.
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	blackwall_damage_fraction = 0.4
+	#RAM cost multiplier for lethal quickhacks on bosses.
+	# Default: 1.5
+	# Range: 1.0 ~ 10.0
+	lethal_ram_multiplier = 1.5
+	#Seconds before a boss can take another lethal quickhack.
+	# Default: 10.0
+	# Range: 0.0 ~ 3600.0
+	lethal_cooldown_seconds = 10.0
+
+[launcher]
+	#Items the Projectile Launch System will not fire: item ids (minecraft:tnt), item tags (#createbigcannons:big_cartridges) or whole mods (createbigcannons:*).
+	ammo_blacklist = []
+
+	[implants.adrenaline_booster]
+		armor = 0.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		hunger_refill_fraction = 0.25
+
+	[implants.adrenaline_converter]
+		armor = 0.0
+		# Default: 6
+		# Range: 0 ~ 10000
+		capacity = 6
+		# Default: 9.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 9.0
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.6
+
+	[implants.adreno_trigger]
+		armor = 0.0
+		# Default: 20
+		# Range: 0 ~ 10000
+		capacity = 20
+		# Default: 35.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 35.0
+		# Default: 0.4
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.4
+
+	[implants.atomic_sensors]
+		armor = 0.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 24.0
+		# Range: 0.0 ~ 512.0
+		enemy_radius = 24.0
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.6
+
+	[implants.axolotl]
+		armor = 0.0
+		# Default: 48
+		# Range: 0 ~ 10000
+		capacity = 48
+		# Default: 0.075
+		# Range: 0.0 ~ 1.0
+		kill_refund_fraction = 0.075
+
+	[implants.bioconductor]
+		armor = 0.0
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		quickhack_critical_chance = 0.35
+		# Default: 4
+		# Range: 0 ~ 256
+		ram_penalty = 4
+
+	[implants.biomonitor]
+		armor = 0.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		extra_pump_healing = 2.0
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		pump_health_threshold_fraction = 0.5
+
+	[implants.bionic_joints]
+		armor = 3.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+
+	[implants.black_mamba]
+		armor = 0.0
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		poison_damage_multiplier = 2.0
+		# Default: 1.2
+		# Range: 0.0 ~ 1000.0
+		poisoned_target_damage_multiplier = 1.2
+
+	[implants.blood_pump]
+		armor = 0.0
+		# Default: 15
+		# Range: 0 ~ 10000
+		capacity = 15
+		# Default: 2
+		# Range: 1 ~ 128
+		charges = 2
+		# Default: 30.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 30.0
+		# Default: 6.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 6.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		healing_per_second = 1.0
+		# Default: 6.0
+		# Range: 0.0 ~ 1000.0
+		instant_healing = 6.0
+
+	[implants.camillo_ram_manager]
+		armor = 0.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 80.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 80.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		low_ram_threshold_fraction = 0.2
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		ram_refill_fraction = 0.2
+
+	[implants.carapace]
+		armor = 2.5
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		directional_toughness = 3.0
+
+	[implants.chitin]
+		armor = 5.0
+		# Default: 50
+		# Range: 0 ~ 10000
+		capacity = 50
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		natural_healing_multiplier = 2.0
+
+	[implants.chrome_compressor]
+		armor = 0.0
+		# Default: 0
+		# Range: 0 ~ 10000
+		capacity = 0
+		# Default: 70
+		# Range: 0 ~ 10000
+		capacity_bonus = 70
+
+	[implants.clairvoyant]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 20.0
+		# Range: 0.0 ~ 256.0
+		enemy_range = 20.0
+
+	[implants.clutch_padding]
+		armor = 0.0
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		hunger_multiplier = 0.5
+
+	[implants.cockatrice]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 30
+		# Range: 0 ~ 10000
+		capacity = 30
+		# Default: 0.35
+		# Range: 0.0 ~ 1000.0
+		critical_damage_bonus = 0.35
+
+	[implants.cogito_lattice]
+		armor = 2.5
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+		# Default: 2.4
+		# Range: 0.0 ~ 1000.0
+		conditional_armor_multiplier = 2.4
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		ram_threshold = 10.0
+
+	[implants.countershell]
+		armor = 2.0
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+		# Default: 6.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 6.0
+		# Default: 4.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 4.0
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		mitigation_chance = 0.5
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		trauma_threshold_fraction = 0.35
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		trauma_window_seconds = 3.0
+
+	[implants.cox_2_cybersomatic_optimizer]
+		armor = 0.0
+		# Default: 50
+		# Range: 0 ~ 10000
+		capacity = 50
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		quickhack_critical_chance = 1.0
+		# Default: 4
+		# Range: 0 ~ 256
+		ram_penalty = 4
+
+	[implants.cyber_arm]
+		armor = 1.0
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		attack_damage_bonus = 2.0
+		# Default: 0
+		# Range: 0 ~ 10000
+		capacity = 0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity_bonus = 10
+		# Default: 5.0
+		# Range: 0.0 ~ 100.0
+		humanity_loss_percent = 5.0
+
+	[implants.cyber_leg]
+		armor = 3.5
+		# Default: 0
+		# Range: 0 ~ 10000
+		capacity = 0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity_bonus = 10
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		fall_damage_reduction_fraction = 0.25
+		# Default: 5.0
+		# Range: 0.0 ~ 100.0
+		humanity_loss_percent = 5.0
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		safe_fall_distance = 2.0
+
+	[implants.cyber_torso]
+		armor = 6.0
+		# Default: 0
+		# Range: 0 ~ 10000
+		capacity = 0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity_bonus = 10
+		# Default: 5.0
+		# Range: 0.0 ~ 100.0
+		humanity_loss_percent = 5.0
+
+	[implants.cyberdeck]
+		armor = 0.0
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 30.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 30.0
+		# Default: 14.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 14.0
+		# Default: 28
+		# Range: 1 ~ 256
+		base_ram = 28
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		overclock_extension_per_kill_seconds = 3.0
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		ram_recovery_per_second = 0.5
+
+	[implants.deep_field_visual_interface]
+		armor = 0.0
+		# Default: 40
+		# Range: 0 ~ 10000
+		capacity = 40
+		# Default: 100.0
+		# Range: 0.1 ~ 512.0
+		critical_bonus_distance = 100.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		maximum_critical_bonus = 1.0
+
+	[implants.dense_marrow]
+		armor = 1.5
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 0.8
+		# Range: 0.0 ~ 1000.0
+		hunger_multiplier = 0.8
+		# Default: 1.3
+		# Range: 0.0 ~ 1000.0
+		melee_damage_multiplier = 1.3
+
+	[implants.doomsayer]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 2
+		# Range: 0 ~ 10000
+		capacity = 2
+		# Default: 30.0
+		# Range: 0.0 ~ 256.0
+		trap_range = 30.0
+
+	[implants.electromag_recycler]
+		armor = 0.0
+		# Default: 40
+		# Range: 0 ~ 10000
+		capacity = 40
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		restore_fraction = 0.05
+
+	[implants.epimorphic_skeleton]
+		armor = 4.0
+		# Default: 40
+		# Range: 0 ~ 10000
+		capacity = 40
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		health_bonus = 0.5
+
+	[implants.ex_disk]
+		armor = 0.0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity = 10
+		# Default: 6
+		# Range: 0 ~ 256
+		ram_bonus = 6
+		# Default: 1.35
+		# Range: 0.0 ~ 1000.0
+		upload_speed_multiplier = 1.35
+
+	[implants.extendo_grip]
+		armor = 0.0
+		# Default: 4
+		# Range: 0 ~ 10000
+		capacity = 4
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		knockback = 2.0
+		# Default: 3.0
+		# Range: 0.0 ~ 64.0
+		reach = 3.0
+
+	[implants.feedback_circuit]
+		armor = 0.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 0.035
+		# Range: 0.0 ~ 1.0
+		restore_fraction = 0.035
+
+	[implants.feen_x]
+		armor = 1.0
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 7.0
+		# Range: 0.0 ~ 1000.0
+		ram_threshold = 7.0
+		# Default: 3.5
+		# Range: 0.0 ~ 1000.0
+		recovery_multiplier = 3.5
+
+	[implants.fortified_ankles]
+		armor = 2.5
+		# Default: 0.42
+		# Range: 0.0 ~ 1000.0
+		base_jump_velocity = 0.42
+		# Default: 6
+		# Range: 0 ~ 10000
+		capacity = 6
+		# Default: 2.0
+		# Range: 0.05 ~ 60.0
+		charge_seconds = 2.0
+		# Default: 0.58
+		# Range: 0.0 ~ 1000.0
+		charged_jump_velocity_bonus = 0.58
+
+	[implants.gorilla_arms]
+		armor = 0.0
+		# Default: 7.0
+		# Range: 0.0 ~ 1000.0
+		attack_damage_bonus = 7.0
+		# Default: 1.6
+		# Range: 0.01 ~ 1000.0
+		attack_speed = 1.6
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		bleed_chance = 0.2
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		bleed_duration_seconds = 3.0
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		bleed_health_fraction = 0.05
+		# Default: 4
+		# Range: 0 ~ 10000
+		capacity = 4
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		charged_cooldown_seconds = 1.0
+		# Default: 1.5
+		# Range: 0.0 ~ 1000.0
+		charged_damage_multiplier = 1.5
+		# Default: 0.25
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 0.25
+		# Default: 3.0
+		# Range: 0.0 ~ 64.0
+		shockwave_radius = 3.0
+
+	[implants.handle_wrap]
+		armor = 0.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 1.3
+		# Range: 0.0 ~ 1000.0
+		ranged_damage_multiplier = 1.3
+
+	[implants.heal_on_kill]
+		armor = 0.0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity = 10
+		# Default: 0.075
+		# Range: 0.0 ~ 1.0
+		heal_fraction = 0.075
+
+	[implants.immovable_force]
+		armor = 0.0
+		# Default: 35
+		# Range: 0 ~ 10000
+		capacity = 35
+		# Default: 0.65
+		# Range: 0.0 ~ 10.0
+		recoil_multiplier = 0.65
+		# Default: 0.75
+		# Range: 0.0 ~ 10.0
+		spread_multiplier = 0.75
+
+	[implants.isometric_stabilizer]
+		armor = 0.0
+		# Default: 40
+		# Range: 0 ~ 10000
+		capacity = 40
+		# Default: 0.0
+		# Range: 0.0 ~ 1000.0
+		hunger_multiplier = 0.0
+
+	[implants.jenkins_tendons]
+		armor = 1.5
+		# Default: 6
+		# Range: 0 ~ 10000
+		capacity = 6
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		fatigue_seconds = 5.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		initial_sprint_bonus = 1.0
+		# Default: 0.8
+		# Range: 0.0 ~ 1000.0
+		sprint_bonus_decay = 0.8
+
+	[implants.kinetic_frame]
+		armor = 2.5
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 16.0
+		# Range: 0.0 ~ 1000.0
+		hunger_threshold = 16.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		mitigation_chance = 0.2
+
+	[implants.kiroshi_optics]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 2
+		# Range: 0 ~ 10000
+		capacity = 2
+
+	[implants.leeroy_ligament_system]
+		armor = 1.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 0.4
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.4
+
+	[implants.lynx_paws]
+		armor = 1.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		crouch_speed_bonus = 0.5
+		# Default: 0.8
+		# Range: 0.0 ~ 1000.0
+		fall_damage_multiplier = 0.8
+
+	[implants.mantis_blades]
+		armor = 0.0
+		# Default: 4
+		# Range: 0 ~ 10000
+		capacity = 4
+		# Default: 0.65
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 0.65
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		cross_cooldown_seconds = 1.0
+		# Default: 20.0
+		# Range: 0.0 ~ 1000.0
+		cross_damage = 20.0
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		damage = 10.0
+		# Default: 12.0
+		# Range: 0.0 ~ 64.0
+		leap_range = 12.0
+		# Default: 6.25
+		# Range: 0.5 ~ 64.0
+		lunge_distance = 6.25
+
+	[implants.mechatronic_core]
+		armor = 0.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 0.15
+		# Range: 0.0 ~ 1000.0
+		cyberlimb_target_damage_bonus = 0.15
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+
+	[implants.memory_boost]
+		armor = 0.0
+		# Default: 18
+		# Range: 0 ~ 10000
+		capacity = 18
+		# Default: 1
+		# Range: 0 ~ 256
+		ram_bonus = 1
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		ram_per_kill = 1.0
+
+	[implants.microgenerator]
+		armor = 0.0
+		# Default: 9
+		# Range: 0 ~ 10000
+		capacity = 9
+		# Default: 5
+		# Range: 1 ~ 5
+		maximum_charges = 5
+
+	[implants.microrotors]
+		armor = 0.0
+		# Default: 0.25
+		# Range: 0.0 ~ 1000.0
+		attack_speed_bonus = 0.25
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+
+	[implants.monowire]
+		armor = 0.0
+		# Default: 4
+		# Range: 0 ~ 10000
+		capacity = 4
+		# Default: 0.6
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 0.6
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		cross_cooldown_seconds = 1.0
+		# Default: 14.0
+		# Range: 0.0 ~ 1000.0
+		cross_damage = 14.0
+		# Default: 7.0
+		# Range: 0.0 ~ 1000.0
+		damage = 7.0
+
+	[implants.neofiber]
+		armor = 0.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		mitigation_chance = 0.1
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		mitigation_strength_bonus = 0.1
+
+	[implants.newton_module]
+		armor = 0.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 0.015
+		# Range: 0.0 ~ 1.0
+		cooldown_refund_fraction = 0.015
+
+	[implants.optical_camo]
+		armor = 1.0
+		# Default: 20
+		# Range: 0 ~ 10000
+		capacity = 20
+		# Default: 50.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 50.0
+		# Default: 7.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 7.0
+
+	[implants.pain_editor]
+		armor = 3.0
+		# Default: 35
+		# Range: 0 ~ 10000
+		capacity = 35
+		# Default: 0.9
+		# Range: 0.0 ~ 1000.0
+		damage_multiplier = 0.9
+
+	[implants.painducer]
+		armor = 4.0
+		# Default: 30
+		# Range: 0 ~ 10000
+		capacity = 30
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		deferred_damage_fraction = 0.3
+		# Default: 5.0
+		# Range: 1.0 ~ 120.0
+		duration_seconds = 5.0
+
+	[implants.para_bellum]
+		armor = 3.0
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		armor_bonus = 0.1
+		# Default: 25
+		# Range: 0 ~ 10000
+		capacity = 25
+
+	[implants.peripheral_inverse]
+		armor = 1.5
+		# Default: 30
+		# Range: 0 ~ 10000
+		capacity = 30
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		damage_reduction_fraction = 0.4
+		# Default: 6.0
+		# Range: 0.01 ~ 256.0
+		falloff_end_range = 6.0
+		# Default: 3.0
+		# Range: 0.0 ~ 256.0
+		full_strength_range = 3.0
+
+	[implants.projectile_launch_system]
+		armor = 0.0
+		# Default: 12.0
+		# Range: 0.0 ~ 1000.0
+		brass_nugget_damage = 12.0
+		# Default: 4
+		# Range: 0 ~ 10000
+		capacity = 4
+		# Default: 0.5
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 0.5
+		# Default: 8.0
+		# Range: 0.0 ~ 1000.0
+		copper_nugget_damage = 8.0
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		experience_nugget_damage = 3.0
+		# Default: 7.0
+		# Range: 0.0 ~ 1000.0
+		gold_nugget_damage = 7.0
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		iron_nugget_damage = 10.0
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		tier_2_cooldown_seconds = 1.0
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		tier_3_cooldown_seconds = 3.0
+		# Default: 8.0
+		# Range: 0.05 ~ 3600.0
+		tier_4_cooldown_seconds = 8.0
+		# Default: 20.0
+		# Range: 0.05 ~ 3600.0
+		tier_5_cooldown_seconds = 20.0
+		# Default: 5
+		# Range: 1 ~ 64
+		volley_shots = 5
+		# Default: 6.0
+		# Range: 0.0 ~ 1000.0
+		zinc_nugget_damage = 6.0
+
+	[implants.proxishield]
+		armor = 1.0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity = 10
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		damage_reduction_fraction = 0.2
+		# Default: 6.0
+		# Range: 0.01 ~ 256.0
+		falloff_end_range = 6.0
+		# Default: 3.0
+		# Range: 0.0 ~ 256.0
+		full_strength_range = 3.0
+
+	[implants.quantum_tuner]
+		armor = 0.0
+		# Default: 45
+		# Range: 0 ~ 10000
+		capacity = 45
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		cooldown_reduction_fraction = 0.15
+		# Default: 60.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 60.0
+		# Default: 50.0
+		# Range: 0.05 ~ 3600.0
+		reserve_seconds = 50.0
+
+	[implants.ram_reallocator]
+		armor = 0.0
+		# Default: 40
+		# Range: 0 ~ 10000
+		capacity = 40
+		# Default: 85.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 85.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		low_ram_threshold_fraction = 0.2
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		ram_refill_fraction = 0.4
+
+	[implants.ram_recoup]
+		armor = 1.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		damage_to_ram_fraction = 0.2
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+
+	[implants.ram_upgrade]
+		armor = 0.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		ram_recovery_per_second = 0.2
+
+	[implants.rangeguard]
+		armor = 1.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		conditional_armor_multiplier = 3.0
+		# Default: 6.0
+		# Range: 0.0 ~ 128.0
+		enemy_radius = 6.0
+
+	[implants.rara_avis]
+		armor = 0.0
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		armor_bonus_fraction = 0.4
+		# Default: 45
+		# Range: 0 ~ 10000
+		capacity = 45
+
+	[implants.reflex_tuner]
+		armor = 0.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 35.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 35.0
+		# Default: 4.5
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 4.5
+		# Default: 48.0
+		# Range: 0.5 ~ 512.0
+		field_radius = 48.0
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		health_threshold_fraction = 0.25
+		# Default: 60
+		# Range: 0 ~ 99
+		slowdown_percent = 60
+
+	[implants.reinforced_tendons]
+		armor = 0.5
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		double_jump_strength = 0.6
+
+	[implants.revulsor]
+		armor = 0.0
+		# Default: 35
+		# Range: 0 ~ 10000
+		capacity = 35
+		# Default: 35.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 35.0
+		# Default: 4.5
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 4.5
+		# Default: 48.0
+		# Range: 0.5 ~ 512.0
+		field_radius = 48.0
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		health_threshold_fraction = 0.25
+		# Default: 60
+		# Range: 0 ~ 99
+		slowdown_percent = 60
+
+	[implants.sandevistan]
+		armor = 0.0
+		# Default: 44
+		# Range: 0 ~ 10000
+		capacity = 44
+		# Default: 30.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 30.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		critical_damage_bonus = 0.2
+		# Default: 10.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 10.0
+		# Default: 48.0
+		# Range: 0.0 ~ 512.0
+		field_radius = 48.0
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		heal_per_kill_fraction = 0.1
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		kill_extension_seconds = 1.0
+		# Default: 90
+		# Range: 0 ~ 99
+		slowdown_percent = 90
+
+	[implants.scar_coalescer]
+		armor = 1.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		armor_bonus = 0.2
+		# Default: 20
+		# Range: 0 ~ 10000
+		capacity = 20
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		health_threshold_fraction = 0.5
+
+	[implants.scarab]
+		armor = 1.0
+		# Default: 14
+		# Range: 0 ~ 10000
+		capacity = 14
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		crouched_armor_multiplier = 3.0
+		# Default: -0.3
+		# Range: -0.99 ~ 1.0
+		movement_speed_penalty_fraction = -0.3
+
+	[implants.second_heart]
+		armor = 0.0
+		# Default: 30
+		# Range: 0 ~ 10000
+		capacity = 30
+		# Default: 220.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 220.0
+
+	[implants.self_ice]
+		armor = 0.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 20.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 20.0
+		# Default: 2
+		# Range: 0 ~ 256
+		ram_bonus = 2
+
+	[implants.sentry]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 2
+		# Range: 0 ~ 10000
+		capacity = 2
+		# Default: 40.0
+		# Range: 0.0 ~ 256.0
+		device_range = 40.0
+
+	[implants.shock_absorber]
+		armor = 0.0
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+		# Default: 0.75
+		# Range: 0.0 ~ 10.0
+		recoil_multiplier = 0.75
+
+	[implants.shock_n_awe]
+		armor = 2.5
+		# Default: 25
+		# Range: 0 ~ 10000
+		capacity = 25
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		discharge_chance = 0.2
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		discharge_damage = 10.0
+		# Default: 6.0
+		# Range: 0.0 ~ 128.0
+		discharge_radius = 6.0
+
+	[implants.spring_joints]
+		armor = 1.0
+		# Default: 16
+		# Range: 0 ~ 10000
+		capacity = 16
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		mitigation_strength_bonus = 0.2
+
+	[implants.stabber]
+		armor = 0.0
+		# Default: 12
+		# Range: 0 ~ 10000
+		capacity = 12
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		critical_damage_bonus = 0.2
+
+	[implants.stalker]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 2
+		# Range: 0 ~ 10000
+		capacity = 2
+		# Default: 20.0
+		# Range: 0.0 ~ 256.0
+		horizontal_range = 20.0
+		# Default: 50.0
+		# Range: 0.0 ~ 256.0
+		vertical_range = 50.0
+
+	[implants.subdermal_armor]
+		armor = 1.5
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+
+	[implants.the_oracle]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		effect_seconds = 5.0
+		armor = 0.0
+		# Default: 10
+		# Range: 0 ~ 10000
+		capacity = 10
+
+	[implants.threat_evac]
+		armor = 0.0
+		# Default: 5
+		# Range: 0 ~ 10000
+		capacity = 5
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		extra_low_health_bonus = 0.5
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		health_threshold_fraction = 0.25
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.5
+
+	[implants.titanium_bones]
+		armor = 1.0
+		# Default: 6
+		# Range: 0 ~ 10000
+		capacity = 6
+
+	[implants.tyrosine_injector]
+		armor = 0.0
+		# Default: 8
+		# Range: 0 ~ 10000
+		capacity = 8
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 15.0
+		# Default: 10
+		# Range: 1 ~ 100
+		maximum_stacks = 10
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.1
+
+	[implants.universal_booster]
+		armor = 4.0
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		armor_bonus_per_stack = 0.1
+		# Default: 6.0
+		# Range: 0.05 ~ 3600.0
+		armor_duration_seconds = 6.0
+		# Default: 25
+		# Range: 0 ~ 10000
+		capacity = 25
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		hunger_duration_seconds = 5.0
+		# Default: 0.7
+		# Range: 0.0 ~ 1000.0
+		hunger_multiplier = 0.7
+
+	[implants.visual_cortex_support]
+		armor = 0.0
+		# Default: 20
+		# Range: 0 ~ 10000
+		capacity = 20
+		# Default: 30.0
+		# Range: 0.1 ~ 512.0
+		critical_bonus_distance = 30.0
+		# Default: 0.3
+		# Range: 0.0 ~ 1000.0
+		maximum_critical_bonus = 0.3
+
+	[implants.zetatech_berserk]
+		armor = 0.0
+		# Default: 0.3
+		# Range: 0.0 ~ 1000.0
+		attack_speed_bonus = 0.3
+		# Default: 35
+		# Range: 0 ~ 10000
+		capacity = 35
+		# Default: 25.0
+		# Range: 0.05 ~ 3600.0
+		cooldown_seconds = 25.0
+		# Default: 11.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 11.0
+		# Default: 0.25
+		# Range: 0.0 ~ 1000.0
+		heal_per_kill_fraction = 0.25
+		# Default: 0.8
+		# Range: 0.001 ~ 1.0
+		maximum_bonus_missing_health_fraction = 0.8
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		maximum_melee_damage_bonus_fraction = 0.5
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		movement_speed_bonus = 0.5
+		# Default: 6.0
+		# Range: 0.0 ~ 1000.0
+		slam_damage = 6.0
+		# Default: 0.8
+		# Range: 0.0 ~ 1000.0
+		slam_knockback = 0.8
+		# Default: 4.0
+		# Range: 0.0 ~ 128.0
+		slam_radius = 4.0
+
+	[quickhacks.quickhack_short_circuit]
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		control_extension_seconds = 3.0
+		# Default: 0.1
+		# Range: 0.0 ~ 10.0
+		damage_fraction = 0.1
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		disable_seconds = 3.0
+		# Default: 10
+		# Range: 0 ~ 1000
+		ram = 10
+		# Default: 0.5
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.5
+
+	[quickhacks.quickhack_overheat]
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		armor_reduction = 0.4
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 5.0
+		# Default: 9
+		# Range: 0 ~ 1000
+		ram = 9
+		# Default: 2.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 2.0
+
+	[quickhacks.quickhack_contagion]
+		# Default: 0.15
+		# Range: 0.0 ~ 10.0
+		damage_bonus_per_target = 0.15
+		# Default: 8.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 8.0
+		# Default: 12
+		# Range: 0 ~ 1000
+		ram = 12
+		# Default: 4
+		# Range: 0 ~ 64
+		spread_count = 4
+		# Default: 8.0
+		# Range: 0.0 ~ 64.0
+		spread_range = 8.0
+		# Default: 2.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 2.0
+
+	[quickhacks.quickhack_synapse_burnout]
+		# Default: 15.0
+		# Range: 0.0 ~ 1000.0
+		damage = 15.0
+		# Default: 4.0
+		# Range: 0.0 ~ 100.0
+		damage_bonus_max = 4.0
+		# Default: 0.1
+		# Range: 0.0 ~ 10.0
+		damage_bonus_per_ram = 0.1
+		# Default: 2
+		# Range: 0 ~ 1000
+		kill_discount_ram = 2
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		kill_discount_seconds = 15.0
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		overclock_damage_multiplier = 2.0
+		# Default: 16
+		# Range: 0 ~ 1000
+		ram = 16
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 3.0
+
+	[quickhacks.quickhack_reboot_optics]
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 15.0
+		# Default: 3.0
+		# Range: 0.0 ~ 1000.0
+		kill_ram = 3.0
+		# Default: 7
+		# Range: 0 ~ 1000
+		ram = 7
+		# Default: 0.3
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.3
+
+	[quickhacks.quickhack_weapon_glitch]
+		# Default: 14.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 14.0
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		explosion_power = 1.0
+		# Default: 6
+		# Range: 0 ~ 1000
+		ram = 6
+		# Default: 0.3
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.3
+
+	[quickhacks.quickhack_cripple_movement]
+		# Default: 12.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 12.0
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		kill_heal_fraction = 0.05
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		kill_ram = 2.0
+		# Default: 0.15
+		# Range: 0.0 ~ 10.0
+		melee_damage_bonus = 0.15
+		# Default: 6
+		# Range: 0 ~ 1000
+		ram = 6
+		# Default: 0.3
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.3
+
+	[quickhacks.quickhack_cyberware_malfunction]
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		burn_damage_fraction = 0.02
+		# Default: 3
+		# Range: 1 ~ 64
+		burn_stacks = 3
+		# Default: 10.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 10.0
+		# Default: 8
+		# Range: 1 ~ 64
+		explode_stacks = 8
+		# Default: 4.0
+		# Range: 0.0 ~ 100.0
+		explosion_power = 4.0
+		# Default: 2
+		# Range: 1 ~ 64
+		permanent_stacks_others = 2
+		# Default: 2
+		# Range: 1 ~ 64
+		permanent_stacks_players = 2
+		# Default: 4
+		# Range: 0 ~ 1000
+		ram = 4
+		# Default: 0.3
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.3
+
+	[quickhacks.quickhack_bait]
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 15.0
+		# Default: 4
+		# Range: 0 ~ 1000
+		ram = 4
+		# Default: 0.3
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.3
+
+	[quickhacks.quickhack_request_backup]
+		# Default: 5
+		# Range: 1 ~ 64
+		baited_calls = 5
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 15.0
+		# Default: 6
+		# Range: 0 ~ 1000
+		ram = 6
+		# Default: 30.0
+		# Range: 0.0 ~ 128.0
+		range = 30.0
+		# Default: 2.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 2.0
+
+	[quickhacks.quickhack_memory_wipe]
+		# Default: 5.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 5.0
+		# Default: 10
+		# Range: 0 ~ 1000
+		ram = 10
+		# Default: 1.5
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.5
+
+	[quickhacks.quickhack_system_collapse]
+		# Default: 28
+		# Range: 0 ~ 1000
+		ram = 28
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.0
+
+	[quickhacks.quickhack_cyberpsychosis]
+		# Default: 0.4
+		# Range: 0.0 ~ 10.0
+		damage_bonus_per_hack = 0.4
+		# Default: 0.0
+		# Range: 0.0 ~ 1000.0
+		damage_per_second = 0.0
+		# Default: 0.4
+		# Range: 0.0 ~ 10.0
+		duration_bonus_per_hack = 0.4
+		# Default: 20.0
+		# Range: 0.05 ~ 3600.0
+		duration_seconds = 20.0
+		# Default: 22
+		# Range: 0 ~ 1000
+		ram = 22
+		# Default: 1.5
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.5
+		# Default: 16.0
+		# Range: 0.0 ~ 128.0
+		victim_range = 16.0
+
+	[quickhacks.quickhack_detonate_grenade]
+		# Default: 15
+		# Range: 0 ~ 1000
+		discount_ram = 15
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		discount_seconds = 3.0
+		# Default: 24
+		# Range: 0 ~ 1000
+		ram = 24
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.0
+
+	[quickhacks.quickhack_suicide]
+		# Default: 10
+		# Range: 0 ~ 1000
+		discount_ram = 10
+		# Default: 30.0
+		# Range: 0.05 ~ 3600.0
+		discount_seconds = 30.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		heal_fraction = 0.2
+		# Default: 24
+		# Range: 0 ~ 1000
+		ram = 24
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.0
+
+	[quickhacks.quickhack_blackwall_gateway]
+		# Default: 12
+		# Range: 0 ~ 1000
+		ram = 12
+		# Default: 2
+		# Range: 0 ~ 1000
+		spread_cost_per_hop = 2
+		# Default: 3
+		# Range: 0 ~ 64
+		spread_count = 3
+		# Default: 20.0
+		# Range: 0.0 ~ 128.0
+		spread_range = 20.0
+		# Default: 0.5
+		# Range: 0.01 ~ 10.0
+		spread_upload_fraction = 0.5
+		# Default: 3.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 3.0
+
+	[quickhacks.quickhack_remote_activation]
+		# Default: 2
+		# Range: 0 ~ 1000
+		ram = 2
+		# Default: 0.5
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 0.5
+
+	[quickhacks.quickhack_take_control]
+		# Default: 4
+		# Range: 0 ~ 1000
+		ram = 4
+		# Default: 1.0
+		# Range: 0.05 ~ 3600.0
+		upload_seconds = 1.0
+
+	[slots.circulatory_system]
+		# Default: 3
+		# Range: > 1
+		sockets = 3
+
+	[slots.frontal_cortex]
+		# Default: 3
+		# Range: > 1
+		sockets = 3
+
+	[slots.skeleton]
+		# Default: 3
+		# Range: > 1
+		sockets = 3
+
+	[slots.nervous_system]
+		# Default: 3
+		# Range: > 1
+		sockets = 3
+
+	[slots.integumentary_system]
+		# Default: 3
+		# Range: > 1
+		sockets = 3
+
+	[slots.legs]
+		# Default: 1
+		# Range: > 1
+		sockets = 1
+
+	[slots.hands]
+		# Default: 2
+		# Range: > 1
+		sockets = 2
+
+	[slots.face]
+		# Default: 2
+		# Range: > 1
+		sockets = 2
+
+	[slots.operating_system]
+		# Default: 1
+		# Range: > 1
+		sockets = 1

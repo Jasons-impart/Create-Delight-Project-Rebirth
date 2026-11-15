@@ -1,0 +1,1717 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "acknowledgement"
+	group: ""
+	icon: {
+		id: "minecraft:player_head"
+	}
+	id: "594FBA0D053A2225"
+	images: [
+		{
+			height: 5.0d
+			id: "7D4B84D4DAC6CC6E"
+			image: "minecraft:item/music_disc_otherside"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: -6.5d
+			y: 9.0d
+		}
+		{
+			height: 1.5d
+			id: "0B13513C0CE2EE8F"
+			image: "create:block/andesite_casing"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			height: 2.5d
+			id: "4D8EAEDB76668A17"
+			image: "create:block/andesite_casing"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			height: 2.5d
+			id: "333802E177D0039E"
+			image: "create:block/andesite_casing"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			height: 2.0d
+			id: "4E884B88CD4625F4"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "20977A32ADA34F7E"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "61A9B15B89766B75"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "6E8204F1607B0CF2"
+			image: "minecraft:block/stone_bricks"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			id: "15A4363C8E771B91"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			id: "6A8A26248BCCC4D5"
+			image: "youkaishomecoming:item/crops/udumbara_flower"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			height: 1.5d
+			id: "4A63385A10CEAAA7"
+			image: "create:item/brass_hand"
+			order: 7
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			height: 1.5d
+			id: "66AEF898311B9118"
+			image: "create:item/brass_hand"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 14.5d
+			y: 4.0d
+		}
+		{
+			height: 1.5d
+			id: "23218B0EE4D45F81"
+			image: "vintageimprovements:block/andesite_frame"
+			order: 4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			height: 1.5d
+			id: "5C0DF6E53980642B"
+			image: "supplementaries:item/candle_holders/base"
+			order: 9
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			id: "4C4DFEEC3EB6643D"
+			image: "supplementaries:item/candle_holders/base"
+			order: 9
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			id: "48A9B4E537E6E990"
+			image: "supplementaries:item/candle_holders/base"
+			order: 7
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			height: 2.0d
+			id: "27C97553FEA16753"
+			image: "displaydelight:item/food_plate"
+			order: 9
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			id: "163403E7940CA1A0"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "29EE25BF1C896F01"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "37DCEB6041B06081"
+			image: "minecraft:block/stone_bricks"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			id: "7365D60B772A44C2"
+			image: "minecraft:block/stone_bricks"
+			order: -2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			id: "189F5FC00B95C3FF"
+			image: "minecraft:block/stone_bricks"
+			order: -2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			height: 4.6d
+			id: "7C6D1BA9480758F1"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			height: 3.3d
+			id: "008EE61ABF472AC7"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			height: 3.3d
+			id: "48BDDEA647D2BAF9"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			id: "2EFE57C4B68C593A"
+			image: "ae2:block/controller"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			id: "1FD22CE3E8318C72"
+			image: "ae2:block/controller_lights"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			height: 1.5d
+			id: "2A2343C62019E87C"
+			image: "create:item/goggles"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 17.5d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			id: "79EFA813744884EB"
+			image: "createprism:block/andesite_glass_casing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 17.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			id: "5114A2C35A22E313"
+			image: "minecraft:item/nether_star"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			id: "2D5025103353DB90"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			id: "27FE79441303DC6E"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			id: "3A00D9C136D9FD25"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			id: "7AAC3812D6700687"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			id: "764C0185E44C47DF"
+			image: "minecraft:item/nether_star"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			height: 1.8d
+			id: "73E3C5A58369D44F"
+			image: "create:item/precision_mechanism"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.8d
+			x: 22.0d
+			y: -0.5d
+		}
+		{
+			height: 3.3d
+			id: "63000B8F0C2D17D5"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 25.63d
+			y: 3.0d
+		}
+		{
+			height: 3.3d
+			id: "6320B7530C5C6FCC"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 27.36d
+			y: 3.0d
+		}
+		{
+			height: 1.5d
+			id: "0CF8269AA2208145"
+			image: "create:block/andesite_casing"
+			order: 5
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 23.0d
+			y: 3.0d
+		}
+		{
+			height: 1.5d
+			id: "2D8D1F301DF40D84"
+			image: "create:item/brass_hand"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 24.0d
+			y: 4.0d
+		}
+		{
+			height: 3.3d
+			id: "33489C6646F03734"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 25.63d
+			y: 0.0d
+		}
+		{
+			height: 3.3d
+			id: "09A6F1B0890B8B54"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 27.36d
+			y: 0.0d
+		}
+		{
+			height: 3.3d
+			id: "0711FA227F52DBCF"
+			image: "create:block/andesite_casing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 22.0d
+			y: -0.5d
+		}
+		{
+			height: 3.3d
+			id: "0A23A19551D4A87F"
+			image: "create:block/andesite_casing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			height: 3.3d
+			id: "43DB72A2D97FA21D"
+			image: "create:block/andesite_casing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 22.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "6AE8E9FD723CD4F7"
+			image: "cuisinedelight:item/plate"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			height: 1.7d
+			id: "451DF3C264C01D43"
+			image: "create:block/palettes/stone_types/alternatives/andesite_cut_bond"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.7d
+			x: 22.0d
+			y: 4.5d
+		}
+		{
+			height: 1.5d
+			id: "32EEA110268B79BA"
+			image: "create:item/brass_hand"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 24.0d
+			y: 1.0d
+		}
+		{
+			height: 1.7d
+			id: "7609CEDE208F2AFF"
+			image: "create:block/palettes/stone_types/alternatives/andesite_cut_bond"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.7d
+			x: 22.0d
+			y: -0.5d
+		}
+		{
+			height: 1.7d
+			id: "0F38CBC29152D6AD"
+			image: "create:block/palettes/stone_types/alternatives/andesite_cut_bond"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.7d
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			height: 5.0d
+			id: "28E63C9B88EF6CEF"
+			image: "create:block/andesite_casing"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			height: 1.5d
+			id: "219C4839E44B46F1"
+			image: "ae2:block/io_port_side"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 5.5d
+			y: 14.5d
+		}
+		{
+			height: 1.5d
+			id: "657327392656251C"
+			image: "ae2:block/io_port_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 5.5d
+			y: 13.25d
+		}
+		{
+			height: 1.5d
+			id: "35ABDC719322CDAE"
+			image: "ae2:block/io_port_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			height: 1.5d
+			id: "53942D3356A524E1"
+			image: "create:block/andesite_casing"
+			order: 5
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			height: 3.0d
+			id: "073A5A2B14B767D1"
+			image: "createcafe:item/blood_orange"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 35.0d
+			y: 3.5d
+		}
+		{
+			height: 6.0d
+			id: "356BE43A817C8DFA"
+			image: "fruitsdelight:item/orange_juice"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 34.0d
+			y: 2.0d
+		}
+		{
+			height: 3.0d
+			id: "3F3FE85977084B20"
+			image: "createcafe:item/blood_orange"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 35.5d
+			y: 2.5d
+		}
+		{
+			height: 3.0d
+			id: "3A6DF0B2F5513914"
+			image: "createcafe:item/blood_orange"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 36.0d
+			y: 3.5d
+		}
+		{
+			height: 1.5d
+			id: "5970200452A8D3C2"
+			image: "create:block/andesite_casing"
+			order: 5
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 34.0d
+			y: 3.5d
+		}
+		{
+			height: 7.0d
+			id: "4C4ABAF5AB85AEEF"
+			image: "create:block/andesite_casing"
+			order: -2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 7.0d
+			x: 36.5d
+			y: 1.0d
+		}
+		{
+			height: 3.0d
+			id: "7A909C74419AAE92"
+			image: "createcafe:item/blood_orange"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 33.5d
+			y: -2.0d
+		}
+		{
+			height: 4.0d
+			id: "208C2E8F24563C7D"
+			image: "fruitsdelight:block/orange_sapling"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 39.5d
+			y: 2.5d
+		}
+		{
+			height: 3.0d
+			id: "70F1A89042B11202"
+			image: "minecraft:block/orange_tulip"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 38.5d
+			y: 3.0d
+		}
+		{
+			height: 2.6d
+			id: "37C6CAC9DCCC0763"
+			image: "alexscavesup:block/radon_lamp_orange"
+			order: 6
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.6d
+			x: 39.0d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			id: "5839BEFFB3646087"
+			image: "cuisinedelight:item/plate"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 39.0d
+			y: 3.5d
+		}
+		{
+			height: 4.0d
+			id: "6C657A90B5AD62EC"
+			image: "create:item/crafting_blueprint"
+			order: 10
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 44.5d
+			y: -1.0d
+		}
+		{
+			height: 11.0d
+			id: "295C0DA49EFDB44E"
+			image: "create:entity/blueprint_large"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 11.0d
+			x: 49.0d
+			y: 2.0d
+		}
+		{
+			height: 4.0d
+			id: "44997741857F0A70"
+			image: "create:item/empty_schematic"
+			order: 10
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 51.5d
+			y: -1.0d
+		}
+		{
+			height: 4.0d
+			id: "47A15F77EBABDDF8"
+			image: "farmersdelight:block/spruce_cabinet_side"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 47.0d
+			y: 4.0d
+		}
+		{
+			height: 4.0d
+			id: "346729296DBBE71C"
+			image: "farmersdelight:block/spruce_cabinet_side"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 49.5d
+			y: 4.0d
+		}
+		{
+			height: 2.5d
+			id: "4DE3DD922C0A5BAF"
+			image: "farmersdelight:block/spruce_cabinet_side"
+			order: 4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 45.0d
+			y: 2.5d
+		}
+		{
+			height: 2.5d
+			id: "00F8935BD3C64022"
+			image: "farmersdelight:block/spruce_cabinet_side"
+			order: 4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 51.5d
+			y: 2.5d
+		}
+		{
+			height: 3.5d
+			id: "18052251E7EA72BA"
+			image: "farmersdelight:block/spruce_cabinet_side"
+			order: 4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.5d
+			x: 48.25d
+			y: 0.5d
+		}
+		{
+			height: 1.5d
+			id: "1BAB3E1929A2D503"
+			image: "create:block/andesite_casing"
+			order: 10
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 48.25d
+			y: 2.0d
+		}
+		{
+			height: 1.5d
+			id: "7253840D3E625F34"
+			image: "create:item/brass_hand"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 44.0d
+			y: 3.5d
+		}
+		{
+			height: 1.5d
+			id: "065832BC264890C6"
+			image: "create:item/brass_hand"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 45.5d
+			y: 5.5d
+		}
+		{
+			height: 1.5d
+			id: "41C47D98A3B0E3EF"
+			image: "create:item/brass_hand"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 50.5d
+			y: 3.5d
+		}
+		{
+			height: 3.0d
+			id: "64A61998CAE55B09"
+			image: "fruitsdelight:item/orange_juice"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 31.0d
+			y: 3.0d
+		}
+		{
+			height: 3.0d
+			id: "4B1F47B2D7015180"
+			image: "fruitsdelight:item/orange_juice"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 31.0d
+			y: 0.5d
+		}
+		{
+			height: 3.0d
+			id: "7A15324D7CC02B79"
+			image: "fruitsdelight:item/orange_juice"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 31.0d
+			y: -2.0d
+		}
+		{
+			height: 4.6d
+			id: "3A12BDD37FCBC253"
+			image: "vintageimprovements:block/andesite_frame"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			height: 3.3d
+			id: "1AB53DC5E743B3C8"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 15.5d
+			y: 12.0d
+		}
+		{
+			height: 3.3d
+			id: "51BF6B9243E1D3B1"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 17.5d
+			y: 12.0d
+		}
+		{
+			height: 3.3d
+			id: "5F68C5E2679D31A7"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 15.5d
+			y: 15.0d
+		}
+		{
+			height: 3.3d
+			id: "19524A19F7FD9926"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.3d
+			x: 17.5d
+			y: 15.0d
+		}
+		{
+			height: 1.5d
+			id: "0291AFCB4FE808B2"
+			image: "create:block/andesite_casing"
+			order: 5
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			height: 1.5d
+			id: "390C7210121E8313"
+			image: "create:block/andesite_casing"
+			order: 5
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			height: 6.0d
+			id: "7E4E83031B651A85"
+			image: "create:block/andesite_casing"
+			order: 4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 61.0d
+			y: 1.0d
+		}
+		{
+			height: 4.0d
+			id: "637504314BDE6012"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 68.0d
+			y: -3.5d
+		}
+		{
+			height: 7.0d
+			id: "4D30AD9B730EED46"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: 57.5d
+			y: -3.5d
+		}
+		{
+			height: 4.0d
+			id: "301801C84BDDDB43"
+			image: "create:item/empty_clipboard"
+			order: 13
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 58.5d
+			y: 3.5d
+		}
+		{
+			height: 3.0d
+			id: "0AB08E3BFFE78D2C"
+			image: "create_pattern_schematics:item/pattern_schematic"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 69.5d
+			y: 2.0d
+		}
+		{
+			height: 3.0d
+			id: "5ED26A79C1F15B88"
+			image: "create_pattern_schematics:item/pattern_schematic"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 69.5d
+			y: 5.5d
+		}
+		{
+			height: 3.0d
+			id: "59BA1EEBA1550C48"
+			image: "create_pattern_schematics:item/pattern_schematic"
+			order: 11
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 69.5d
+			y: -2.0d
+		}
+		{
+			height: 1.5d
+			id: "234AC4F26261094D"
+			image: "create:block/andesite_casing"
+			order: 10
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.5d
+			x: 61.0d
+			y: 3.5d
+		}
+		{
+			height: 7.0d
+			id: "0F8C6E2DBB66E469"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: 57.5d
+			y: 0.5d
+		}
+		{
+			height: 4.0d
+			id: "04AFF3BC44068B5C"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 66.0d
+			y: -3.5d
+		}
+		{
+			height: 4.0d
+			id: "444720457B5E7202"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 66.0d
+			y: 0.5d
+		}
+		{
+			height: 4.0d
+			id: "23F13F1DA1D7D2DA"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 68.0d
+			y: 0.5d
+		}
+		{
+			height: 3.0d
+			id: "296059509E97D09B"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 65.5d
+			y: 4.5d
+		}
+		{
+			height: 3.0d
+			id: "3274E67B60E2DE44"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 68.5d
+			y: 4.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/wanquanw"
+			height: 4.6d
+			id: "5133EBF17BD0EF30"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: -5.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/JasonQ1123"
+			height: 4.6d
+			id: "079D1D888FCD4B30"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 0.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/SSWTLZZ69"
+			height: 4.6d
+			id: "7475779A0E2FCA07"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 5.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/SSWTLZZ"
+			height: 4.6d
+			id: "4F48CE10934A4C41"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 10.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/KazeShukufuku"
+			height: 4.6d
+			id: "51ABB17F3EAB4C7D"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 15.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/JIAFALSEDREAM"
+			height: 4.6d
+			id: "3BED5CF0BFBBEDBB"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 20.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/LightLeaves001"
+			height: 4.6d
+			id: "627EECAF9EA91597"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 25.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/LuJiChi"
+			height: 4.6d
+			id: "03EF381DC79FF9C6"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 30.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/cawyyds"
+			height: 4.6d
+			id: "45922B464D1DB81E"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 35.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/CPearl0"
+			height: 4.6d
+			id: "4C7BFD3BC6548980"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 40.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/lnsanes"
+			height: 4.6d
+			id: "443014C88E8ECCA6"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 45.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/prithief"
+			height: 4.6d
+			id: "093A65A5A536402D"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 50.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/nanchuan211"
+			height: 4.6d
+			id: "01D7EF27AFB805E4"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 55.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/isaccseter"
+			height: 4.6d
+			id: "6D61543C787DDFDA"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 60.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/nimeng1299"
+			height: 4.6d
+			id: "07090C38B6E216DD"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 65.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/wish131400"
+			height: 4.6d
+			id: "43BD5BA429817BBB"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 70.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/HYisen"
+			height: 4.6d
+			id: "7DE9DD9161908508"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 75.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/azure-crab"
+			height: 4.6d
+			id: "19FB95523E06AFC0"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 80.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/Florlet"
+			height: 4.6d
+			id: "154B8B40960C08A8"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 85.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/LangQi99"
+			height: 4.6d
+			id: "47D3547D05A9C5A6"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 90.0d
+			y: -13.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/MoePus"
+			height: 4.6d
+			id: "784D74135C354D63"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/louielogan"
+			height: 4.6d
+			id: "353A94E8E486D64B"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/EnderLiquid"
+			height: 4.6d
+			id: "2441FE3DB3BC7F5A"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/SliverKeigo"
+			height: 4.6d
+			id: "26C6DF8D5412F710"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 10.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/cvrunmin"
+			height: 4.6d
+			id: "22DA8041C7FA24DF"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 15.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/Pearl-Luo"
+			height: 4.6d
+			id: "54957FA0BF584232"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 20.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/mixiaobaozi"
+			height: 4.6d
+			id: "5DE11A2F462FCD76"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 25.0d
+			y: -7.5d
+		}
+		{
+			click_action: "open_uri:https://github.com/xiankuang"
+			height: 4.6d
+			id: "628D85E2CD957EB8"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.6d
+			x: 30.0d
+			y: -7.5d
+		}
+		{
+			height: 2.0d
+			id: "3ABFB6C59E113BD4"
+			image: "abnormals_delight:item/duck_noodles"
+			order: 3
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 22.0d
+			y: 4.5d
+		}
+	]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6C3ED350AA7C4E08"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "5E37890467D7E2BA"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "29DF95CE1A83396C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "67D2F0FA4995F833"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1E71FA92EBCF3F94"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "12026DFD10F71758"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "431E8EABC0F061D4"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "4A6F385B07F9043D"
+				type: "checkmark"
+			}]
+			x: 34.0d
+			y: 3.5d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "571BD8F01BEFC03C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0DC14D0E972E9F71"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1FBE0508FDF59E32"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "305E5B982C26DADB"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "716A81004865F5AC"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "055BC3227061C5C3"
+				type: "checkmark"
+			}]
+			x: 23.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "03194F6C5C2D8686"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6484924EA52560BB"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "086C3E55352250BF"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "0AED8B8373AD8C79"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "36B894148AB92CA1"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1C1A6F32B076CDFC"
+				type: "checkmark"
+			}]
+			x: 48.25d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12026DFD10F71758"]
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "1FE0CF25565790DC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "0589BA04CE015E01"
+				item: {
+					count: 1
+					id: "createcafe:orange_milk_tea"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "5A77AD0E1F390F8A"
+					type: "checkmark"
+				}
+				{
+					id: "4445521E660DB2C3"
+					item: { count: 1, id: "minecraft:player_head" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "605D9BB0E5470356"
+					item: { count: 1, id: "createcafe:blood_orange" }
+					type: "item"
+				}
+			]
+			x: 31.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12026DFD10F71758"]
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "69C462326A1C4475"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "6588232A20542074"
+				item: {
+					count: 1
+					id: "fruitsdelight:orange_juice"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1B5A9EA23189F5BF"
+					type: "checkmark"
+				}
+				{
+					id: "107E64D593EF8628"
+					item: { count: 1, id: "minecraft:player_head" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1A3DED65D8D1779E"
+					item: { count: 1, id: "createcafe:blood_orange" }
+					type: "item"
+				}
+			]
+			x: 31.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12026DFD10F71758"]
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "2A9DEDC057449AFF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 12
+					id: "08EDE1F0CC8693E2"
+					item: {
+						count: 1
+						id: "minecraft:orange_stained_glass"
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4436ADD79B2F1871"
+					item: {
+						count: 1
+						id: "alexscavesup:radon_lamp_orange"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "77DC3C5CD44025D3"
+					type: "checkmark"
+				}
+				{
+					id: "276B1E51EC1CFE32"
+					item: { count: 1, id: "minecraft:player_head" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6CA0AA721A46CD72"
+					item: { count: 1, id: "createcafe:blood_orange" }
+					type: "item"
+				}
+			]
+			x: 31.0d
+			y: 4.0d
+		}
+		{
+			id: "77102957237A4BAE"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "01617C8F5DC3B6D2"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "030FA9D8319DBDA7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "131E70E512F04002"
+				item: {
+					count: 1
+					id: "minecraft:player_head"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "23B31EC53D449141"
+				type: "checkmark"
+			}]
+			x: 61.0d
+			y: 3.5d
+		}
+	]
+}

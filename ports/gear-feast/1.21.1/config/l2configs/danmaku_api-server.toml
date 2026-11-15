@@ -1,0 +1,21 @@
+# Default: 20
+# Range: 5 ~ 1000
+playerDanmakuCooldown = 20
+# Default: 80
+# Range: 5 ~ 1000
+playerLaserCooldown = 80
+# Default: 40
+# Range: 5 ~ 1000
+playerSpellCooldown = 40
+# Default: 100
+# Range: 5 ~ 1000
+playerLaserDuration = 100
+# Default: 60
+# Range: 1 ~ 1000
+customSpellMaxDuration = 60
+# Default: 32
+# Range: 1 ~ 1024
+ringSpellDanmakuPerItemCost = 32
+# Default: 8
+# Range: 1 ~ 1024
+homingSpellDanmakuPerItemCost = 8

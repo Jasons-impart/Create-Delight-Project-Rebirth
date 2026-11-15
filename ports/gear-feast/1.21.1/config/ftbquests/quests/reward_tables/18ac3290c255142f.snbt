@@ -1,0 +1,55 @@
+{
+	id: "18AC3290C255142F"
+	loot_size: 1
+	order_index: 29
+	rewards: [
+		{
+			count: 4
+			id: "24DCB280F600B600"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "3FA653DE8B625788"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:con_panna"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 2
+			id: "47443D3DF043B41C"
+			item: {
+				count: 1
+				id: "ends_delight:fried_dragon_egg"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 4
+			id: "646BDF692148A7A0"
+			item: {
+				count: 1
+				id: "minecraft:potion"
+			}
+			random_bonus: 8
+		}
+		{
+			count: 4
+			id: "1EF59654033BDB78"
+			item: {
+				count: 1
+				id: "minecraft:potion"
+			}
+			random_bonus: 8
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	id: "65186445C11E1F21"
+	loot_size: 1
+	order_index: 28
+	rewards: [
+		{ id: "4C9ECC9D09882E65", item: { components: { "ftbquests:missing_item": "youkaishomecoming:kiku" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "719CF72B418363DE", item: { components: { "ftbquests:missing_item": "youkaishomecoming:hakutsuru" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7FACA0599928E3CE", item: { components: { "ftbquests:missing_item": "youkaishomecoming:kappa_village" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "4212FFEC8C9F785B", item: { components: { "ftbquests:missing_item": "youkaishomecoming:suigei" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "02DE2E099B0195FE", item: { components: { "ftbquests:missing_item": "youkaishomecoming:daiginjo" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "36E1CC763438B688", item: { components: { "ftbquests:missing_item": "youkaishomecoming:dassai" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "25D438606612CBF0", item: { components: { "ftbquests:missing_item": "youkaishomecoming:tengu_tango" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7F6D61C4AF048224", item: { components: { "ftbquests:missing_item": "youkaishomecoming:full_moons_eve" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "037E1CE169FEA750", item: { components: { "ftbquests:missing_item": "youkaishomecoming:sparrow_sake" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

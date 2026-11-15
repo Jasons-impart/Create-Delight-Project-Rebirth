@@ -1,0 +1,8 @@
+#Whether to show the hovering tooltips on modules or not
+show_module_tooltips = true
+#Whether to show the hovering tooltips on modules when the HUD is invisible
+module_tooltips_hud = false
+#Click to hold a module instead of holding the mouse button
+click_for_module_hold = false
+#Default palette that loads when you open the paint wheel screen
+default_skin_palette = "default"

@@ -1,0 +1,36 @@
+#.
+#Client/server settings
+[common]
+	#.
+	#Defines default Belt Grinder appearance
+	# Default: 0
+	# Range: 0 ~ 4
+	defaultBeltGrinderSkin = 0
+	#.
+	#You can insert and extract from the Centrifuge while it is working.
+	easyCentrifuge = false
+	#.
+	#If enabled, compat items with not loaded mod still appears in the creative tab
+	forceCompatItemsIntoCreativeTab = false
+	#.
+	#If enabled, Shadow Steel & Refined Radiance items appears in the creative tab
+	legacyMaterialsIntoCreativeTab = false
+
+	#.
+	#Choose items to hide from creative tab & JEI
+	[common.hideItems]
+		#.
+		#Hides all Springs from creative tab & JEI (you still can craft it)
+		hideSprings = false
+		#.
+		#Hides all Small Springs from creative tab & JEI (you still can craft it)
+		hideSmallSprings = false
+		#.
+		#Hides all Rods from creative tab & JEI (you still can craft it)
+		hideRods = false
+		#.
+		#Hides all Sheets from creative tab & JEI (you still can craft it)
+		hideSheets = false
+		#.
+		#Hides all Wires from creative tab & JEI (you still can craft it)
+		hideWires = false

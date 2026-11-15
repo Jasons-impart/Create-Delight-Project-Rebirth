@@ -1,0 +1,3 @@
+// Compost colors for universalscroll. You may add your own colors, change existing ones, or remove colors that aren't needed.
+omni_scroll, #d0aa62
+universal_scroll, #84f4ff

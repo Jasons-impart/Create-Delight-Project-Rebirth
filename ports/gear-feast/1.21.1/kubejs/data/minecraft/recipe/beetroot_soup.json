@@ -1,0 +1,18 @@
+{
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "food",
+    "ingredients":  [
+                        {
+                            "item":  "minecraft:beetroot"
+                        }
+                    ],
+    "result":  {
+                   "id":  "minecraft:beetroot_soup",
+                   "count":  1
+               },
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:false"
+                                }
+                            ]
+}

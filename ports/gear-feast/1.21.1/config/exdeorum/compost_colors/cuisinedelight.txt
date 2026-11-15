@@ -1,0 +1,25 @@
+// Compost colors for cuisinedelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+fried_egg, #ffffff
+fried_meat_and_melon, #b16430
+fried_mushroom, #bb7046
+fried_pasta, #d9a250
+fried_rice, #edd3ac
+ham_fried_rice, #ccab83
+meat_fried_rice, #d4a578
+meat_pasta, #c37a44
+meat_platter, #aa6830
+meat_with_seafood, #a2582f
+meat_with_vegetables, #a87837
+mixed_fried_rice, #d2aa73
+mixed_pasta, #cd9850
+plate, #cdb8a0
+scrambled_egg_and_tomato, #ff9143
+seafood_fried_rice, #c3a07c
+seafood_pasta, #d09352
+seafood_platter, #a4693e
+seafood_with_vegetables, #a86e3e
+spatula, #a8a19e
+suspicious_mix, #cc9061
+vegetable_fried_rice, #d3b56e
+vegetable_pasta, #c9a050
+vegetable_platter, #ae8946

@@ -1,0 +1,259 @@
+{
+    "size":  "large",
+    "color":  "#ADFF2F",
+    "waves":  [
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:brainiac",
+                                           "count":  12
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  2.4
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.4
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.6
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.4
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:brainiac",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:slam",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:radon_bottle",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:waste_drum",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:brainiac",
+                                           "count":  8
+                                       },
+                                       {
+                                           "entity":  "alexscavesup:gammaroach",
+                                           "count":  4
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  3.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  10
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.4
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.4
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:brainiac",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:gammaroach",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:polymer_plate",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:spelunkie",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "gateways:gate_pearl",
+                                                        "count":  2,
+                                                        "components":  {
+                                                                           "gateways:gateway":  "createdelightcore:a_place_of_melting"
+                                                                       }
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  150
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:nucleeper",
+                                           "count":  4
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  6.5
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  100.0
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.8
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.4
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:nucleeper",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:nuclear_bomb",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:raygun",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:music_disc_fusion",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:tremorzilla",
+                                           "count":  1
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  36.0
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  10.0
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  6.0
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.8
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:tremorzilla",
+                                          "rolls":  6
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:block_of_uranium",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:tremorzilla_egg",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  2400,
+                      "setup_time":  100
+                  }
+              ],
+    "failures":  [
+                     {
+                         "type":  "gateways:explosion",
+                         "strength":  5,
+                         "fire":  true,
+                         "block_damage":  false
+                     }
+                 ]
+}

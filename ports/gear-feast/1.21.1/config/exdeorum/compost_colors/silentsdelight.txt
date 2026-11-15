@@ -1,0 +1,23 @@
+// Compost colors for silentsdelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+baked_warden_ear_on_a_stick, #347d70
+cut_warden_ear, #7c6cd
+heartburger, #7d6c2a
+minced_warden_heart, #112c36
+plate_of_warden_heart, #2f503d
+plated_warden_heart, #225046
+sculk_barbecue_stick, #6e867c
+sculk_catalyst_pie, #7aa2a0
+sculk_catalyst_pie_crust, #a2b8b2
+sculk_catalyst_pie_slice, #5a7d7c
+sculk_sensor_sprinkles, #2f8268
+sculk_sensor_tendril, #bb9bb
+sculk_sensor_tendril_roll, #26908d
+sculk_sensor_tendril_roll_slice, #5ca29a
+sculk_shrieker_shake, #6297af
+sculk_soup, #917334
+sculk_vein_salad, #47574d
+warden_ear, #ca7b1
+warden_ear_fried_rice, #80ab7d
+warden_ear_on_a_stick, #368679
+warden_heart, #f5258
+warden_heart_patty, #c222a

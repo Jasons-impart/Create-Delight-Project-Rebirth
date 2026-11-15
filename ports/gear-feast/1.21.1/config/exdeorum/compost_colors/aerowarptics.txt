@@ -1,0 +1,8 @@
+// Compost colors for aerowarptics. You may add your own colors, change existing ones, or remove colors that aren't needed.
+handbook, #7f655a
+rift_beacon, #cd9daa
+rift_core, #abb67d
+rift_goggles, #b4839b
+rift_lens, #d4aa5b
+singularity_core, #d7948e
+stabiliser_ring, #a5aa7a

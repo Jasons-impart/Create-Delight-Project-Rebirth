@@ -1,0 +1,22 @@
+{
+	id: "1CD4E0DD3154FC5C"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ id: "71A188EDFE7F1F33", item: { count: 1, id: "minecraft:diamond" } }
+		{ id: "75B0B529FA32F0E3", item: { count: 1, id: "tetra:pristine_diamond" } }
+		{ id: "0B7B17DEDC75B0EC", item: { count: 1, id: "minecraft:lapis_lazuli" } }
+		{ id: "6C4B2406F1B57E67", item: { count: 1, id: "tetra:pristine_lapis" } }
+		{ id: "332ECEFEB87EFF11", item: { count: 1, id: "tetra:pristine_emerald" } }
+		{
+			id: "71A80D32112387E5"
+			item: {
+				count: 1
+				id: "minecraft:amethyst_shard"
+			}
+			weight: 5.0f
+		}
+		{ id: "2FEFE7425933B671", item: { count: 1, id: "tetra:pristine_amethyst" } }
+		{ id: "1A645698C6F58354", item: { count: 1, id: "minecraft:ender_pearl" } }
+	]
+}

@@ -1,0 +1,46 @@
+{
+	id: "341A06B78D03A5E6"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{
+			id: "28A164AE5F367298"
+			item: {
+				count: 1
+				id: "minecraft:wheat_seeds"
+			}
+			weight: 5.0f
+		}
+		{ id: "6757DB36DAF012A3", item: { count: 1, id: "minecraft:pumpkin_seeds" } }
+		{ id: "774809D78B65F1F9", item: { count: 1, id: "minecraft:melon_seeds" } }
+		{ id: "53C68536AB80AF2F", item: { count: 1, id: "minecraft:beetroot_seeds" } }
+		{ id: "612C4393720FC3B7", item: { count: 1, id: "fruitsdelight:durian_sapling" } }
+		{ id: "1923A1C0E866B4EB", item: { count: 1, id: "fruitsdelight:lemon_seeds" } }
+		{ id: "092D76AF5CCC57F9", item: { count: 1, id: "createcafe:cassava_seeds" } }
+		{
+			id: "20EADC32504EE4F6"
+			item: {
+				count: 1
+				id: "farmersdelight:cabbage_seeds"
+			}
+			weight: 5.0f
+		}
+		{
+			id: "2DAB7B0D5A9A8329"
+			item: {
+				count: 1
+				id: "farmersdelight:tomato_seeds"
+			}
+			weight: 5.0f
+		}
+		{ id: "6AB918AE9EAF525C", item: { components: { "ftbquests:missing_item": "vintagedelight:cucumber_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "71DB6D7B3DDD8AF6", item: { count: 1, id: "culturaldelights:eggplant_seeds" } }
+		{ id: "4DA623409E49D312", item: { count: 1, id: "culturaldelights:eggplant_seeds" } }
+		{ id: "4B7E95F68AB772F0", item: { components: { "ftbquests:missing_item": "festival_delicacies:chinese_cabbage_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "799BE8D03CD6ABAA", item: { components: { "ftbquests:missing_item": "festival_delicacies:eggplant_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "75BD890A65289FEB", item: { components: { "ftbquests:missing_item": "festival_delicacies:garlic_chive_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "69F77C86C072E0E0", item: { components: { "ftbquests:missing_item": "festival_delicacies:fennel_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "60632CE5A9F87D9C", item: { count: 1, id: "quark:seed_pouch" } }
+		{ id: "7E09D69016EA9F32", item: { count: 1, id: "supplementaries:flax_seeds" } }
+	]
+}

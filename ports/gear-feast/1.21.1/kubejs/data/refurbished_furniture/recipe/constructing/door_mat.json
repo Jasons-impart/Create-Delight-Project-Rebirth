@@ -1,0 +1,15 @@
+{
+    "type":  "refurbished_furniture:workbench_constructing",
+    "materials":  [
+                      {
+                          "count":  8,
+                          "ingredient":  {
+                                             "item":  "farmersdelight:straw"
+                                         }
+                      }
+                  ],
+    "result":  {
+                   "id":  "refurbished_furniture:door_mat",
+                   "count":  1
+               }
+}

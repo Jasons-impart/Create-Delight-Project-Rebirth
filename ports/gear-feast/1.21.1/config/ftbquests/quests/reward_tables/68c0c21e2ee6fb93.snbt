@@ -1,0 +1,66 @@
+{
+	icon: {
+		id: "minecraft:potion"
+	}
+	id: "68C0C21E2EE6FB93"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ id: "7CD26BF2E79CCFCD", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "58AB747D69F7B255", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "17F2B733A3CF4B17", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "694D3843C71F6D38", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "611E46ACF7FC823F", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "6DEFE95F56577C99", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "58D23755479CF6A3", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "0385DD1F760567EA", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "0BA39B1321D0A56B", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "6D2160F32ED1E083", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "2B3BA888DD7AB37F", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "4518C6B362D89CA2", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "3A31A28C04D243D1", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "0CE18518B04488EE", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "00B15D98C2DC2267", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "24BCD57604620833", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "26BB70062A686B7D", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "488A7ACE6B95A181", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "6440C53168437482", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "255E73F8A67F57FB", item: { count: 1, id: "minecraft:potion" } }
+		{ id: "54F504A163D7D726", item: { count: 1, id: "minecraft:potion" } }
+		{
+			command: "/effect give @p blindness 10 255"
+			id: "21F53667C69F0ADA"
+			silent: true
+			type: "command"
+			weight: 5.0f
+		}
+		{
+			command: "/effect give @p minecraft:hunger 10 255"
+			id: "1CA28549D9C38E0F"
+			silent: true
+			type: "command"
+			weight: 3.0f
+		}
+		{
+			command: "/effect give @p nausea 10 255"
+			id: "08118429977D287B"
+			silent: true
+			type: "command"
+			weight: 3.0f
+		}
+		{
+			command: "/effect give @p poison 10 255"
+			id: "367556FCCEB138E1"
+			silent: true
+			type: "command"
+			weight: 3.0f
+		}
+		{
+			command: "/effect give @p wither 10 255"
+			id: "2E7168DD93A1D65E"
+			silent: true
+			type: "command"
+			weight: 3.0f
+		}
+	]
+}

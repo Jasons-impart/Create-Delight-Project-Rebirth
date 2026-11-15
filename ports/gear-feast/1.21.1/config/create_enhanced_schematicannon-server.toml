@@ -1,0 +1,9 @@
+[schematic]
+	#Maximum allowed schematic volume (X * Y * Z)
+	# Default: 500000
+	# Range: 1 ~ 10000000
+	maxVolume = 500000
+	#Maximum allowed schematic edge length (X/Y/Z)
+	# Default: 256
+	# Range: 1 ~ 1024
+	maxEdge = 256

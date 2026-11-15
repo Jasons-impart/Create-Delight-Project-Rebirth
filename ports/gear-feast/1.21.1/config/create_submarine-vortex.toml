@@ -1,0 +1,108 @@
+[vortex]
+	#Master switch of the Vortex Engine.
+	#Turning it off disables everything the engine draws or computes.
+	enabled = true
+
+[lights]
+	#Coloured light around glowing blocks, and the moving lights of the Sonar,
+	#the Industrial Alarm and the Submarine Staff. Off while an Iris shader pack is in use.
+	lights = true
+	#Brightness of the coloured light, in percent of the default.
+	# Default: 100
+	# Range: 10 ~ 200
+	brightness = 100
+	#How far the light of each glowing block reaches, in percent of the default.
+	# Default: 100
+	# Range: 50 ~ 200
+	reach = 100
+	#How strong the colours of the light are, in percent. 0 gives white light.
+	# Default: 100
+	# Range: 0 ~ 200
+	saturation = 100
+	#Torches, fire and lava flicker, glowing plants pulse. Off for steady light.
+	animatedLights = true
+	#How far from the camera, in blocks, coloured lights are drawn.
+	# Default: 64
+	# Range: 16 ~ 256
+	lightDistance = 64
+	#Most coloured lights drawn at once; the closest ones are kept.
+	#Lower it on weak graphics cards.
+	# Default: 256
+	# Range: 16 ~ 8192
+	maxLights = 256
+	#Light fades in steps of one texture pixel, like Minecraft's own textures.
+	#Turn off for a smooth gradient.
+	pixelLighting = true
+	#Solid blocks stop coloured light and cast shadows, within 64 blocks of the camera.
+	#Costs more on the graphics card.
+	shadows = true
+	#Coloured lights glow through the water around them, and the Sonar's beams show in it.
+	haze = true
+	#Every block of the mod that gives off light, or has glowing parts, glows in a colour
+	#taken from its own texture. Definitions in assets/<namespace>/vortex/glow/*.json override it.
+	autoGlow = true
+	#Every block that gives off light casts coloured light, vanilla blocks and blocks from
+	#other mods included (torches, lanterns, Sea Lanterns...), in the colour of its own texture.
+	#Off: only the blocks of Create Deep Seas, Create High Seas and Create Abyss do.
+	allBlocks = false
+	#Lit areas spill a soft, pixelated glow around them, out of the water too.
+	bloom = true
+	#Strength of the bloom, in percent of the default.
+	# Default: 100
+	# Range: 0 ~ 200
+	bloomStrength = 100
+	#Strength of the glow of lights in the water around them, in percent of the default.
+	# Default: 100
+	# Range: 0 ~ 200
+	haloStrength = 100
+	#Strength of the sun shafts and caustics under the water, in percent of the default.
+	# Default: 100
+	# Range: 0 ~ 200
+	sunlight = 100
+
+[mist]
+	#Drifting mist and smoke volumes, lit by the world and by coloured lights.
+	#Off while an Iris shader pack is in use.
+	mist = true
+	#Most smoke puffs alive at once, all mist volumes together.
+	# Default: 1500
+	# Range: 64 ~ 8000
+	maxPuffs = 1500
+
+[styles]
+	#How coloured light reaches the blocks around it. Switch in game with /vortex style.
+	#VOLUMES: one sphere of light per source, with sharp shadows (the first version).
+	#FLOOD: light spreads block by block and blends its colours, wrapping around corners
+	#and never through walls, like Complementary or Rethinking Voxels.
+	#VANILLA: the same spreading, but falling off one step per block like Minecraft's light.
+	#HYBRID: FLOOD for the soft bounce, plus sharp shadows from the lights close to you,
+	#like Rethinking Voxels.
+	#PIXEL: every glowing block is its own light, falling off one level per block like
+	#Minecraft's light, in texture pixels, with block shadows and a halo of glowing cubes.
+	#Allowed Values: VOLUMES, FLOOD, VANILLA, HYBRID, PIXEL
+	lightStyle = "FLOOD"
+	#How light shows in the water around its source.
+	#CORE: a small halo around each source (the first version).
+	#GLOW_FOG: the water itself glows where the light reaches, stopped by walls.
+	#Needs the FLOOD or VANILLA light style, otherwise CORE is used.
+	#NONE: no halo.
+	#Allowed Values: CORE, GLOW_FOG, NONE
+	haloStyle = "GLOW_FOG"
+	#Sunlight under the water.
+	#SUN_RAYS: shafts of sunlight and moving caustics on the sea floor, in the daytime.
+	#ALL_RAYS: the same, and the brightest lights near you throw beams through the water,
+	#cut by anything standing in front of them. Works with every light style.
+	#Allowed Values: NONE, SUN_RAYS, ALL_RAYS
+	waterStyle = "ALL_RAYS"
+	#How mist from /vortex mist is drawn.
+	#PUFFS: large smoke puffs that hug the ground (the first version).
+	#VOXEL: a volume of small cubes of fog, lit by every coloured light around.
+	#Needs the FLOOD or VANILLA light style, otherwise PUFFS is used.
+	#Allowed Values: PUFFS, VOXEL
+	mistStyle = "VOXEL"
+	#Tiny specks floating in the water, one pixel wide.
+	#PLANKTON: glowing plankton that twinkles in the colour of the light around it.
+	#SNOW: marine snow slowly sinking, caught by sunlight and coloured lights.
+	#Needs the FLOOD or VANILLA light style.
+	#Allowed Values: NONE, PLANKTON, SNOW
+	motesStyle = "PLANKTON"

@@ -1,0 +1,55 @@
+{
+	id: "2AFC4E1002D1C32D"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{
+			count: 2
+			id: "323F02FD1CDE805F"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:green_tea"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 2
+			id: "70688D437401F8C9"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:white_tea"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 2
+			id: "5EE481BFC3FFFDBE"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:black_tea"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 2
+		}
+		{
+			count: 2
+			id: "39795D5D64941104"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:oolong_tea"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			random_bonus: 2
+		}
+	]
+}

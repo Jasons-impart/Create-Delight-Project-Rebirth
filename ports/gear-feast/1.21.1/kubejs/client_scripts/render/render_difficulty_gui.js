@@ -1,0 +1,78 @@
+let Difficulty = {}
+
+/**
+ *
+ * @param {Internal.LocalPlayer} player
+ * @returns {number}
+ */
+Difficulty.getPlayerRawValue = function () {
+    let value = global.difficultyCache
+    if (value == null)
+        return 0
+    if (typeof value == "number")
+        return value
+    if (value.getAsInt != null)
+        return value.getAsInt()
+    if (value.intValue != null)
+        return value.intValue()
+    value = Number(value)
+    return isNaN(value) ? 0 : value
+}
+
+Difficulty.getPlayerTier = function () {
+    for (let index = 0; index < this.tierThreshold.length; index++) {
+        if (this.getPlayerRawValue() <= this.tierThreshold[index])
+            return index
+    }
+    return this.tierThreshold.length
+}
+
+Difficulty.getPlayerCurrentProcess = function () {
+    let tier = Difficulty.getPlayerTier()
+    let rawValue = Difficulty.getPlayerRawValue()
+    if (tier > 0 && tier != this.tierThreshold.length) {
+        return (rawValue - this.tierThreshold[tier - 1]) / (this.tierThreshold[tier] - this.tierThreshold[tier - 1])
+    }
+    else
+        return tier == this.tierThreshold.length ? 1 : 0
+}
+
+Difficulty.tierThreshold = [0, 100, 200, 300, 450, 600]
+
+RenderJSEvents.onGuiPreRender(e => {
+    // 1.21.1: CDConfig 已移除 isDifficultyHudVisible，改为始终显示
+
+    let location = "createdelightcore:textures/gui/difficulty_progress_bar"
+    let textureWidth = 8, textureHeight = 32
+    let windowWidth = e.window.guiScaledWidth
+    let windowHeight = e.window.guiScaledHeight
+    let tierColor = [[173, 216, 230], [204, 255, 204], [255, 204, 77], [255, 153, 153], [255, 128, 128]]
+    let tierTextColor = [[200, 200, 200], [173, 216, 230], [204, 255, 204], [255, 204, 77], [255, 153, 153], [255, 128, 128], [200, 70, 70]]
+    let tier = Difficulty.getPlayerTier()
+    let process = Difficulty.getPlayerCurrentProcess()
+    let rawValue = Difficulty.getPlayerRawValue()
+
+    let tierName = Text.translatable(`difficulty.createdelight.tier.${tier}`)
+    let colorArr = tierTextColor[Math.min(tier, tierTextColor.length - 1)]
+    let textColor = (colorArr[0] << 16) | (colorArr[1] << 8) | colorArr[2]
+    e.drawString(tierName, windowWidth * 0.02 + 14, windowHeight * 0.5 - 10, textColor)
+
+    e.translate(windowWidth * 0.02, windowHeight * 0.5)
+    e.mulPose(new Quaternionf().rotateZ(JavaMath.PI))
+    e.pushPose()
+    e.drawTexture(`${location}_under.png`, -textureWidth / 2, 0, textureWidth, textureHeight, 0, textureHeight, textureWidth, textureHeight)
+    e.drawTexture(`${location}_over.png`, -textureWidth / 2, 0, textureWidth, textureHeight, 0, textureHeight, textureWidth, textureHeight)
+    e.popPose()
+    for (let index = 0; index < tier - 1; index++) {
+        e.pushPose()
+        e.guiGraphics.setColor(tierColor[index][0] / 255, tierColor[index][1] / 255, tierColor[index][2] / 255, 1)
+        e.drawTexture(`${location}.png`, -textureWidth / 2, 0, textureWidth, textureHeight, 0, textureHeight, textureWidth, textureHeight)
+        e.popPose()
+    }
+    if (tier > 0 && tier != Difficulty.tierThreshold.length) {
+        e.guiGraphics.setColor(tierColor[tier - 1][0] / 255, tierColor[tier - 1][1] / 255, tierColor[tier - 1][2] / 255, 1)
+        e.pushPose()
+        e.drawTexture(`${location}.png`, -textureWidth / 2, 0, textureWidth, textureHeight, 0, textureHeight, textureWidth, textureHeight * process)
+        e.popPose()
+    }
+})

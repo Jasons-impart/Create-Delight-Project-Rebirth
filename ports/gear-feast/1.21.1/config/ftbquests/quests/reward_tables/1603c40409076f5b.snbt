@@ -1,0 +1,69 @@
+{
+	id: "1603C40409076F5B"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			count: 2
+			id: "432BBCB60F91CBA7"
+			item: {
+				count: 1
+				id: "ends_delight:chorus_fruit_wine"
+			}
+		}
+		{
+			count: 5
+			id: "0814C544C81D1376"
+			item: {
+				count: 1
+				id: "ends_delight:bubble_tea"
+			}
+		}
+		{ id: "6985BD012AC1B4AD", item: { count: 1, id: "ends_delight:stuffed_rice_cake" } }
+		{ id: "7E663270D2B68C8D", item: { count: 1, id: "ends_delight:roasted_dragon_meat" } }
+		{ id: "17AA5D950A4242DD", item: { count: 1, id: "ends_delight:smoked_dragon_leg" } }
+		{ id: "7C9DACA9D89AB56C", item: { count: 1, id: "ends_delight:roasted_shulker_meat" } }
+		{ id: "1524AC642FEF4463", item: { count: 1, id: "ends_delight:shulker_meat" } }
+		{ id: "3F39B03A993B6A2B", item: { count: 1, id: "ends_delight:fried_dragon_egg" } }
+		{ id: "37DE35F2965A55F2", item: { count: 1, id: "ends_delight:liquid_dragon_egg" } }
+		{ id: "1F0EFD598F19BD3E", item: { count: 1, id: "ends_delight:dragon_breath_soda" } }
+		{
+			count: 3
+			id: "2FFA7855999ECBA6"
+			item: {
+				count: 1
+				id: "ends_delight:chorus_fruit_milk_tea"
+			}
+		}
+		{ id: "1E8E4E5E2FA21ECA", item: { count: 1, id: "ends_delight:steamed_dragon_egg" } }
+		{ id: "2C2367C3AE169921", item: { count: 1, id: "ends_delight:dragon_leg_with_sauce" } }
+		{ id: "4462859D7477B770", item: { count: 1, id: "ends_delight:end_barbecue_stick" } }
+		{ id: "1F3CDD76404BE0A2", item: { count: 1, id: "ends_delight:stir_fried_shulker_meat" } }
+		{ id: "7C98FB1527037EBB", item: { count: 1, id: "ends_delight:roasted_dragon_steak" } }
+		{
+			count: 4
+			id: "7D72CB09148BBC72"
+			item: {
+				count: 1
+				id: "ends_delight:chorus_fruit_pie_slice"
+			}
+		}
+		{
+			count: 10
+			id: "1478E8D7DD73FACF"
+			item: {
+				count: 1
+				id: "ends_delight:chorus_fruit_popsicle"
+			}
+		}
+		{
+			count: 2
+			id: "778F7D9E416C0CA8"
+			item: {
+				count: 1
+				id: "ends_delight:chorus_flower_tea"
+			}
+		}
+		{ id: "603AA2E9262BACE4", item: { count: 1, id: "ends_delight:grilled_shulker" } }
+	]
+}

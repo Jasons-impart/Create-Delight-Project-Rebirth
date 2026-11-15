@@ -1,0 +1,757 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "oil_fired_power"
+	group: "7A00000000000001"
+	icon: {
+		id: "create_new_age:generator_coil"
+	}
+	id: "54356C1067ECB809"
+	images: [ ]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [{
+		id: "0180D3A673FAA934"
+		linked_quest: "4458E27C5252B296"
+		x: 0.0d
+		y: 4.5d
+	}]
+	quests: [
+		{
+			dependencies: ["3C02610297BB8C09"]
+			id: "1ADBDFB31928124D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "3AC97109BB7FD888"
+				item: { count: 1, id: "createdieselgenerators:oil_scanner" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1ADBDFB31928124D"]
+			hide_until_deps_visible: false
+			id: "43B45F9D2DC4BD3E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4013E54D1442DFC7"
+				item: {
+					count: 1
+					id: "createdelightcore:gold_coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "21730CD203A63AFB"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+					type: "item"
+				}
+				{
+					id: "7166F10AFA1A094F"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
+					type: "item"
+				}
+				{
+					id: "5FC6CE5E5190C4B9"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
+					type: "item"
+				}
+				{
+					id: "3F59BADB72CC0EA3"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_crank" }
+					type: "item"
+				}
+				{
+					id: "4140E609BECE9455"
+					item: { count: 1, id: "create:fluid_pipe" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1ADBDFB31928124D"]
+			id: "16E31AE06BF8CE13"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 9
+				id: "3864CCE25D855EC8"
+				item: {
+					count: 1
+					id: "createdieselgenerators:distillation_controller"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "10CD9BD0B5F80CE7"
+				item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1A10B417B7C082DF"]
+			id: "692E9718A4E1F811"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "15E6D868014AB3E1"
+				item: { count: 1, id: "createdieselgenerators:diesel_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"692E9718A4E1F811"
+				"1A10B417B7C082DF"
+			]
+			id: "1AAA21CD44B36815"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3C70F5DD03156E31"
+				item: {
+					count: 1
+					id: "createdelightcore:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "4903E879E49DC3F7"
+				item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"692E9718A4E1F811"
+				"1AAA21CD44B36815"
+				"081AEF9714B8960E"
+			]
+			hide_until_deps_visible: false
+			id: "0C33D433CB5C97E5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "7248F08CB9202DB7"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "79DC39D870E2C4AF"
+				item: { count: 1, id: "createdieselgenerators:engine_silencer" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"43B45F9D2DC4BD3E"
+				"16E31AE06BF8CE13"
+			]
+			id: "61A945984843E55A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7D4A6E933F19184E"
+				item: {
+					count: 1
+					id: "minecraft:flint_and_steel"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "3EC3BC0630EC3A9C"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6DBEF23BA8608F4B"
+				"1ADBDFB31928124D"
+				"3C02610297BB8C09"
+				"1D724B9AB0915D18"
+			]
+			id: "1A10B417B7C082DF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "623600AC495BEF51"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1AAA21CD44B36815"
+				"081AEF9714B8960E"
+				"692E9718A4E1F811"
+			]
+			id: "1CD3AA0F0A453C62"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B1A79A5F2B4910D"
+				item: { count: 1, id: "createdieselgenerators:engine_turbocharger" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["61A945984843E55A"]
+			id: "24FAD19B32A0FEBE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2F33D51054EC7BB5"
+				item: { count: 1, id: "createdieselgenerators:crude_oil_bucket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["24FAD19B32A0FEBE"]
+			id: "5EB7ED288E82C023"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "341DDD982810CEBD"
+				item: { count: 1, id: "createdelightcore:light_crude_oil_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5EB7ED288E82C023"]
+			id: "65602AA94EEB3AA3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "611B55784533271A"
+				item: { count: 1, id: "createdelightcore:ethylene_fluid_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5EB7ED288E82C023"
+				"24FAD19B32A0FEBE"
+			]
+			dependency_requirement: "one_completed"
+			id: "4E1668942F94DB7C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "506FFBD96BCD07CE"
+				item: { count: 1, id: "createdieselgenerators:diesel_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5EB7ED288E82C023"
+				"24FAD19B32A0FEBE"
+			]
+			dependency_requirement: "one_completed"
+			id: "1033CA5B5B983290"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "038B8611A3020142"
+				item: { count: 1, id: "createdieselgenerators:gasoline_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EB7ED288E82C023"]
+			id: "1568A6972CBA1592"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6ECE4DE5113C2789"
+				item: { count: 1, id: "createdelightcore:lubricating_oil_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1033CA5B5B983290"
+				"4E1668942F94DB7C"
+			]
+			id: "59E1D11E91310AA3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DCB222EABDB4D1B"
+				item: { count: 1, id: "createdelightcore:fuel_mixtures_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61A945984843E55A"]
+			id: "530B929865B8E11B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "485D76DD3071845C"
+				item: { count: 1, id: "createdieselgenerators:oil_barrel" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["43B45F9D2DC4BD3E"]
+			icon: {
+				id: "create:schematic"
+			}
+			id: "1C15411E37F6A896"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "105CA8D198D47B3C"
+				item: {
+					count: 1
+					id: "create:empty_schematic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0705391803740AC7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["24FAD19B32A0FEBE"]
+			icon: {
+				id: "create:schematic"
+			}
+			id: "7CE7C533E8A267F0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "777F432BA2F1A054"
+				item: {
+					count: 1
+					id: "create:empty_schematic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "147879D962784545"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7BA43E50785D2492"]
+			id: "2034DC15562715B2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "28BEB553111D0273"
+				item: { count: 1, id: "create_new_age:basic_motor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3CB8FDF09F47FD4F"]
+			id: "36E5C4C6A8E9DAB5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "706355E893B4CE8C"
+				item: { count: 1, id: "create_new_age:basic_energiser" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2034DC15562715B2"]
+			id: "657B0199F1F6BC9A"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "010E4549CE7BA651"
+				item: { count: 1, id: "create_new_age:advanced_motor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["657B0199F1F6BC9A"]
+			id: "183ED0CEDF627017"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "3FC4E3A01DE47555"
+				item: { count: 1, id: "create_new_age:reinforced_motor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["36E5C4C6A8E9DAB5"]
+			id: "40D0657E9DDB5663"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "2CD1A33502541B2A"
+				item: { count: 1, id: "create_new_age:advanced_energiser" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["40D0657E9DDB5663"]
+			id: "7D7F82D2E50E2CDF"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "7BA290D7428578CF"
+				item: { count: 1, id: "create_new_age:reinforced_energiser" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2034DC15562715B2"]
+			id: "037F074C7A3AACF5"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "0029A7C17CA33063"
+				item: { count: 1, id: "create_new_age:basic_motor_extension" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["037F074C7A3AACF5"]
+			id: "4346D9DC0525D683"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "0232BB698CCD4636"
+				item: { count: 1, id: "create_new_age:advanced_motor_extension" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["38E346D9F782E7BC"]
+			id: "3CB8FDF09F47FD4F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "1ED7940863577832"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "3A4510150979636D"
+				item: { count: 1, id: "createaddition:alternator" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4458E27C5252B296"]
+			id: "2F0B3291F14AAA89"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "22635BC82C9D788A"
+				item: {
+					count: 1
+					id: "createdelightcore:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2DB6DCE9C9F2B5CB"
+					item: { count: 1, id: "create_new_age:generator_coil" }
+					type: "item"
+				}
+				{
+					id: "12A42D34B94B6B30"
+					item: { count: 1, id: "create_new_age:carbon_brushes" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3CB8FDF09F47FD4F"]
+			dependency_requirement: "one_completed"
+			hide_until_deps_visible: false
+			id: "7506866B743A60C1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "1AFD7DF6F50AD16C"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "343572112DFCFA1C"
+				item: { count: 1, id: "createaddition:connector" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["38E346D9F782E7BC"]
+			hide_dependency_lines: true
+			id: "7DA3417CB0E6E7DB"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7204F07714B3B84B"
+				item: {
+					count: 1
+					id: "createaddition:capacitor"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "48FA24AEF202F105"
+				item: { count: 1, id: "createaddition:capacitor" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"7DA3417CB0E6E7DB"
+				"35F33D9F772B4551"
+			]
+			id: "39D218E0652E1CE0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "1D79BA603CCD9485"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "362F55100242D671"
+				item: { count: 1, id: "createaddition:modular_accumulator" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3CB8FDF09F47FD4F"]
+			id: "7BA43E50785D2492"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "72F0D811DB91CBC6"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "43BEA6B93B6CA71A"
+				item: { count: 1, id: "createaddition:electric_motor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1A10B417B7C082DF"]
+			id: "081AEF9714B8960E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3A1F87D199AE297D"
+				item: { count: 1, id: "createdieselgenerators:huge_diesel_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7506866B743A60C1"]
+			id: "462CF1F71BC69A50"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BDA2FCB3031E5EE"
+				item: { count: 1, id: "createaddition:large_connector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["462CF1F71BC69A50"]
+			id: "5A8B370796F17329"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4DAEEEC60F692F61"
+				item: { components: { "ftbquests:missing_item": "createaddition:superconducting_connector" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2CC8B87D086B3275"]
+			id: "38E346D9F782E7BC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "751CDAB9B19BDBD6"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"70B8B43D6B542EEC"
+				"5A8FA422166974A0"
+				"38E346D9F782E7BC"
+			]
+			id: "3C02610297BB8C09"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "2A746506F606C0CA"
+				item: { count: 1, id: "createmetallurgy:steel_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A8FA422166974A0"
+				"38E346D9F782E7BC"
+			]
+			id: "1D724B9AB0915D18"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5BEC0EA27248CE26"
+				item: { count: 1, id: "createdelightcore:bronze_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5A8FA422166974A0"
+				"38E346D9F782E7BC"
+			]
+			id: "318E6868ED07188E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 6
+				id: "67C7F9B2BAAFEFF6"
+				item: {
+					count: 1
+					id: "createaddition:electrum_ingot"
+				}
+				random_bonus: 6
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D279E549523227A"
+				item: { count: 1, id: "createaddition:electrum_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"50711781910527C4"
+				"2F0B3291F14AAA89"
+			]
+			id: "2E60B3BAD25E14CA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2732B3DFAEF1E64A"
+				item: {
+					count: 1
+					id: "trashcans:energy_trash_can"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "3442A1B8EC9CE32E"
+				item: { count: 1, id: "createdelightcore:fission_reactor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+	]
+}

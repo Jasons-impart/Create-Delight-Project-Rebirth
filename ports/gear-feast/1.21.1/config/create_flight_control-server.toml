@@ -1,0 +1,55 @@
+[sonicBoomTrigger]
+	#Master switch for all sonic boom effects.
+	enabled = true
+	#Minimum ticks between sonic booms for the same structure.
+	# Default: 40
+	# Range: 0 ~ 12000
+	cooldownTicks = 40
+
+[sonicBoomCloud]
+	#Cone mouth radius multiplier based on the structure's largest bounding-box dimension.
+	# Default: 0.26
+	# Range: 0.01 ~ 10.0
+	meshRadiusScale = 0.26
+	#Cone length multiplier based on the cloud radius.
+	# Default: 0.78
+	# Range: 0.1 ~ 10.0
+	meshLengthScale = 0.78
+	#Global sonic boom cloud size multiplier.
+	# Default: 1.0
+	# Range: 0.1 ~ 20.0
+	meshSizeMultiplier = 1.0
+	#Minimum cone mouth radius.
+	# Default: 2.5
+	# Range: 0.25 ~ 256.0
+	meshMinRadius = 2.5
+	#Maximum cone mouth radius.
+	# Default: 14.0
+	# Range: 1.0 ~ 512.0
+	meshMaxRadius = 14.0
+	#How long the cloud follows the structure.
+	# Default: 80
+	# Range: 1 ~ 1200
+	lifetimeTicks = 80
+	#Number of sides used by the client-rendered cone mesh. Lower values are cheaper.
+	# Default: 24
+	# Range: 8 ~ 64
+	meshSegments = 24
+
+[sonicBoomSound]
+	#Base sound volume.
+	# Default: 6.0
+	# Range: 0.0 ~ 64.0
+	baseVolume = 6.0
+	#Extra volume added per block of largest structure dimension.
+	# Default: 0.04
+	# Range: 0.0 ~ 4.0
+	volumePerBlock = 0.04
+	#Maximum sound volume.
+	# Default: 10.0
+	# Range: 0.1 ~ 64.0
+	maxVolume = 10.0
+	#Global sonic boom sound volume multiplier.
+	# Default: 1.5
+	# Range: 0.0 ~ 20.0
+	volumeMultiplier = 1.5

@@ -1,0 +1,857 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "candyland"
+	group: "7A00000000000005"
+	icon: {
+		id: "alexscavesup:gumball_pile"
+	}
+	id: "11CC1E726D9118BC"
+	images: [ ]
+	order_index: 7
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "278C1A8A569B34B7"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/discover_candy_cavity"
+				criterion: ""
+				id: "1D70BDB09A28DC13"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "2CC1BC6ACE08C47A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2AD00BA8AFCFDC5E"
+				item: {
+					count: 1
+					id: "create_confectionery:bar_of_caramel"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:caramel_cube"
+				id: "6E2A924B448CC879"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "3646EB84565B8EDF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "29F128F20F6C48EB"
+				item: {
+					count: 1
+					id: "alexscavesup:gumball_pile"
+				}
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/defeat_gumbeeper"
+				criterion: ""
+				id: "5C982C7D2E7050B3"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E87AE1160C2E83A"]
+			id: "2C227E1C5201EC1D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "75539295612ECC60"
+				item: {
+					count: 1
+					id: "minecraft:armor_stand"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "365F3CC94483A650"
+					item: { count: 1, id: "alexscavesup:gingerbread_helmet" }
+					type: "item"
+				}
+				{
+					id: "58A01B2DA85BBFBA"
+					item: { count: 1, id: "alexscavesup:gingerbread_chestplate" }
+					type: "item"
+				}
+				{
+					id: "5564949B8046752B"
+					item: { count: 1, id: "alexscavesup:gingerbread_leggings" }
+					type: "item"
+				}
+				{
+					id: "27F14BD1A7510B5A"
+					item: { count: 1, id: "alexscavesup:gingerbread_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4BD0AD910E185807"]
+			id: "7F1F5AD57B3C3E57"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7E2841E4C63A7A8C"
+				item: { count: 1, id: "alexscavesup:gingerbread_crumbs" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "38FEB46E9F16E159"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DA3936E8A7BF249"
+				item: { components: { "ftbfiltersystem:filter": "#alexscaves:ice_cream_scoop" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "5750ECB9C1709BB9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4711CAE14D0B1BF6"
+				item: { components: { "ftbfiltersystem:filter": "#alexscaves:gelatins" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "46A2A4617CF4877C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0793E1E7DE45DEDA"
+				item: { count: 1, id: "alexscavesup:peppermint_powder" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E33F1249238AF9E"]
+			id: "69944633AC8D22F7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3F65E24440299B86"
+				item: { count: 1, id: "alexscavesup:radiant_essence" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4BD0AD910E185807"]
+			id: "2E87AE1160C2E83A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "158DC3A11EED1735"
+				item: {
+					count: 1
+					id: "alexscavesup:radiant_essence"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "32C85FC7CA748D7D"
+				item: { count: 1, id: "alexscavesup:confection_oven" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69944633AC8D22F7"]
+			id: "338129D1624B153A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "452406A307701F1A"
+				item: {
+					count: 1
+					id: "minecraft:gold_block"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "75CE668C31EC8C21"
+				item: { count: 1, id: "alexscavesup:conversion_crucible" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4BD0AD910E185807"
+				"7F1F5AD57B3C3E57"
+			]
+			id: "275E2EAA61ABC223"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "693A5E674117F67E"
+				item: { count: 1, id: "alexscavesup:gingerbarrel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D8177D02710667A"]
+			id: "1D983ED8ED5B0BFB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "28F0DB84123DFD2D"
+				item: { count: 1, id: "alexscavesup:gobthumper" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "54368B2A50A6A0A7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "24DBFE6E3F7B85F7"
+				item: {
+					count: 1
+					id: "alexscavesup:peppermint_powder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DD8771706A0A2BE"
+				item: { count: 1, id: "alexscavesup:candy_cane" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "22C2E93C6347BF12"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "27D49F860D91151C"
+				item: {
+					count: 1
+					id: "alexscavesup:frostmint"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "2029BC5D4E8DE54D"
+				item: { count: 1, id: "alexscavesup:frostmint" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "7E971B325ED93F82"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "115A6D0123CC9F60"
+				item: { count: 1, id: "alexscavesup:giant_sweetberry" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5750ECB9C1709BB9"]
+			id: "5EE546E079A6747B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "51706F7C22F7663B"
+					item: { count: 1, id: "alexscavesup:gummy_ring_red" }
+					type: "item"
+				}
+				{
+					id: "039F80D05773E5E4"
+					item: { count: 1, id: "alexscavesup:gummy_ring_green" }
+					type: "item"
+				}
+				{
+					id: "3F901F86A7C7F391"
+					item: { count: 1, id: "alexscavesup:gummy_ring_yellow" }
+					type: "item"
+				}
+				{
+					id: "66B00BFAF951CB30"
+					item: { count: 1, id: "alexscavesup:gummy_ring_blue" }
+					type: "item"
+				}
+				{
+					id: "69F92E120183C0D1"
+					item: { count: 1, id: "alexscavesup:gummy_ring_pink" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.7d
+		}
+		{
+			dependencies: ["2CC1BC6ACE08C47A"]
+			id: "35A44DD49F796034"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "534E114D795F4827"
+				item: {
+					count: 1
+					id: "alexscavesup:caramel_apple"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "40F5B2A92623F450"
+				item: { count: 1, id: "alexscavesup:caramel_apple" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35A44DD49F796034"]
+			id: "6FCB5249B7643E44"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/tame_candicorn"
+				criterion: ""
+				id: "28B058DAD785FEB3"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "4BD0AD910E185807"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/gingerbread_town"
+				criterion: ""
+				id: "0542CEA462EEF7B1"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "0228E972777A85C9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6A2741D74E3D297D"
+				item: { count: 1, id: "alexscavesup:hot_chocolate_bottle" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1DC5E003961CA53D"]
+			id: "7141C1EC0D7702D2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6B662BAC280022B5"
+				item: {
+					count: 1
+					id: "alexscavesup:jelly_bean"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26277D6CE5C3C69B"
+				item: { components: { "ftbfiltersystem:filter": "#netherexp:doesnt_modify_potion_stack_size" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "126AD66CE6378CF8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "491775515930C481"
+				item: { count: 1, id: "alexscavesup:purple_soda_bottle" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2CC1BC6ACE08C47A"
+				"46A2A4617CF4877C"
+				"54368B2A50A6A0A7"
+				"7E971B325ED93F82"
+				"38FEB46E9F16E159"
+			]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "1A740811A8BAC55B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3BB4217D9EE35DFA"
+				item: {
+					count: 1
+					id: "alexscavesup:sundae"
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "35F5CBB063923B87"
+				item: { count: 1, id: "alexscavesup:sundae" }
+				type: "item"
+			}]
+			x: 5.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "1DC5E003961CA53D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "413BCDB393EB807F"
+				item: { components: { "ftbfiltersystem:filter": "#alexscaves:sweetish_fish" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			hide_dependency_lines: true
+			id: "008FCE2C7E01286C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "34B60853CEEE7A98"
+					item: {
+						count: 1
+						id: "minecraft:bowl"
+					}
+					type: "item"
+				}
+				{
+					id: "29C80DFE6A6335B6"
+					item: {
+						count: 1
+						id: "minecraft:carrot"
+					}
+					type: "item"
+				}
+				{
+					id: "23A3085C74AEC2E5"
+					item: {
+						count: 1
+						id: "minecraft:baked_potato"
+					}
+					type: "item"
+				}
+				{
+					id: "6997C57E6FC6DAC4"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+				{
+					id: "53007E896D656381"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "564EE0F3CF5CE596"
+					item: {
+						count: 1
+						id: "alexscavesup:gingerbread_crumbs"
+					}
+					type: "item"
+				}
+				{
+					id: "67263831AEB9A402"
+					item: {
+						count: 1
+						id: "alexscavesup:gingerbread_crumbs"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "376C34464ED644C6"
+				item: { count: 1, id: "alexscavesup:alex_meal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1D8177D02710667A"]
+			id: "1E98DA71B3E82F6F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1E8695D3F656BF95"
+				item: { count: 1, id: "alexscavesup:candy_cane_hook" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["126AD66CE6378CF8"]
+			id: "7AE5D359B0B7CA65"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "03D5585F3D210AA0"
+				item: {
+					count: 1
+					id: "alexscavesup:purple_soda_bottle_rocket"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D64B498DD6F0A03"
+				item: { count: 1, id: "alexscavesup:purple_soda_bottle_rocket" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04778EFD56A81C80"]
+			id: "11387D5437F357DD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/sack_of_sating"
+				criterion: ""
+				id: "0E63C1B0FC8B594E"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["22C2E93C6347BF12"]
+			id: "496B6D902F85E8D9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2C82E5F3D7D2305B"
+				item: { count: 1, id: "alexscavesup:frostmint_spear" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.8d
+		}
+		{
+			dependencies: ["54368B2A50A6A0A7"]
+			id: "479D2AA0928D94D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "195B32CE740DE939"
+				item: { count: 1, id: "alexscavesup:sharpened_candy_cane" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.8d
+		}
+		{
+			dependencies: ["2E33F1249238AF9E"]
+			id: "06A9DC545F9F0E68"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0DEEA25B4FA3C06F"
+				item: { count: 1, id: "alexscavesup:sugar_staff" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3646EB84565B8EDF"]
+			id: "18A6FA761345806D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6935D051A0B185D3"
+				item: { count: 1, id: "alexscavesup:shot_gum" }
+				type: "item"
+			}]
+			x: -4.3d
+			y: -1.5d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "1D8177D02710667A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6489660DE4845637"
+				item: { count: 1, id: "alexscavesup:licoroot_vine" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1E98DA71B3E82F6F"]
+			id: "04778EFD56A81C80"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "6E6BDA452113A2DD"
+					item: {
+						count: 1
+						id: "alexscavesup:sweet_tooth"
+					}
+					type: "item"
+				}
+				{
+					id: "3D42E1752CA22550"
+					item: {
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/defeat_gum_worm"
+				criterion: ""
+				id: "724BCD59DF75AB50"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			hide_dependency_lines: true
+			id: "0E304FB124AC4C64"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E192E9D447AD83A"
+					type: "choice"
+				}
+				{
+					id: "3098F1A9D9BB063A"
+					item: {
+						count: 1
+						id: "alexscavesup:sweet_tooth"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "15B8B8E9E8713445"
+					item: { count: 1, id: "alexscavesup:rock_candy_white" }
+					type: "item"
+				}
+				{
+					id: "2F2FC47F59A5C651"
+					item: { count: 1, id: "alexscavesup:rock_candy_orange" }
+					type: "item"
+				}
+				{
+					id: "7A748D0582E3D90A"
+					item: { count: 1, id: "alexscavesup:rock_candy_magenta" }
+					type: "item"
+				}
+				{
+					id: "2C14F6B779CA8531"
+					item: { count: 1, id: "alexscavesup:rock_candy_light_blue" }
+					type: "item"
+				}
+				{
+					id: "2E5DF95E2638084D"
+					item: { count: 1, id: "alexscavesup:rock_candy_yellow" }
+					type: "item"
+				}
+				{
+					id: "1E643D03108B0659"
+					item: { count: 1, id: "alexscavesup:rock_candy_lime" }
+					type: "item"
+				}
+				{
+					id: "6747914E78CBA4AE"
+					item: { count: 1, id: "alexscavesup:rock_candy_pink" }
+					type: "item"
+				}
+				{
+					id: "40C18D39C6D87DE6"
+					item: { count: 1, id: "alexscavesup:rock_candy_gray" }
+					type: "item"
+				}
+				{
+					id: "39BD3D4A08D2D377"
+					item: { count: 1, id: "alexscavesup:rock_candy_light_gray" }
+					type: "item"
+				}
+				{
+					id: "6274F7613A64E899"
+					item: { count: 1, id: "alexscavesup:rock_candy_cyan" }
+					type: "item"
+				}
+				{
+					id: "7D30A45510FA3F28"
+					item: { count: 1, id: "alexscavesup:rock_candy_purple" }
+					type: "item"
+				}
+				{
+					id: "73F00416FE22E02A"
+					item: { count: 1, id: "alexscavesup:rock_candy_blue" }
+					type: "item"
+				}
+				{
+					id: "3A3C3220015E3757"
+					item: { count: 1, id: "alexscavesup:rock_candy_brown" }
+					type: "item"
+				}
+				{
+					id: "43C885E6375E094C"
+					item: { count: 1, id: "alexscavesup:rock_candy_green" }
+					type: "item"
+				}
+				{
+					id: "5F5DEA1ABDDA7F52"
+					item: { count: 1, id: "alexscavesup:rock_candy_red" }
+					type: "item"
+				}
+				{
+					id: "06CBA636F8ACB1C3"
+					item: { count: 1, id: "alexscavesup:rock_candy_black" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["278C1A8A569B34B7"]
+			id: "2E33F1249238AF9E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "53ACE5D6839E8BF6"
+				item: {
+					count: 1
+					id: "alexscavesup:radiant_essence"
+				}
+				random_bonus: 1
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:licowitch"
+				id: "098B81259A9C6D98"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["58FA73E9933465FA"]
+			id: "028A18E266C539E7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6FAECB05908BC98A"
+				item: { count: 1, id: "alexscavesup:rainbounce_boots" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["69944633AC8D22F7"]
+			id: "58FA73E9933465FA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "665FD3B0BF723D11"
+				item: { count: 1, id: "alexscavesup:sundrop" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["38FEB46E9F16E159"]
+			id: "731F8C9DC5ADC57F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "704838DD5AB2E2B4"
+				item: { components: { "ftbfiltersystem:filter": "#alexscaves:ice_cream" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.3d
+		}
+		{
+			dependencies: ["1D8177D02710667A"]
+			id: "410E78E98F2CA0E2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7CAB3D536BC5417B"
+				item: { count: 1, id: "alexscavesup:licoroot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "0501DD97040BC06D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "41B0CD4618CB03F2"
+				item: { count: 1, id: "alexscavesup:candy_cane" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "general": {
+    "loadForgeConfigs": true,
+    "loadClothConfigs": true,
+    "configButtonReplacement": "UNAVAILABLE_ONLY",
+    "redirectAutoConfigScreen": false
+  }
+}

@@ -1,0 +1,85 @@
+#Adds badge to mod in this format "modid=badge1, badge2"
+mod_badges = []
+#Make mods apear under another mod in this format "parenModId=childId1, childId2", add ! at the beginning of parentId to prevent creating a fake parent
+mod_parents = []
+
+[main]
+	#Allowed Values: ASCENDING, DESCENDING
+	sorting = "ASCENDING"
+	#Makes list more compacted
+	compact_list = false
+	#Allowed Values: CLASSIC, REPLACE_REALMS, SHRINK, SHRINK_LEFT, ICON
+	mods_button_style = "CLASSIC"
+	#Allowed Values: REPLACE, INSERT, ICON
+	game_menu_button_style = "REPLACE"
+	#Allowed Values: TITLE_SCREEN, MODS_BUTTON, TITLE_SCREEN_AND_MODS_BUTTON, NONE
+	mod_count_location = "TITLE_SCREEN"
+	#Shows secret mod count translations defined by modmenu.mods.MOD_COUND.secret
+	easter_eggs = true
+	#Makes java mod have random colors
+	random_java_colors = false
+	#Make mod names translatable defining by modmenu.nameTranslation.modid
+	translate_names = true
+	#Make mod descriptions translatable defining by modmenu.descriptionTranslation.modid
+	translate_descriptions = true
+	#Shows config button above mod icon on the left
+	quick_configure = true
+	#Modifies title screen, if false will be neoforge default with default mods button
+	modify_title_screen = true
+	#Changes pause screen's button position and replaces neoforge's mods button with better modlist's one
+	modify_game_menu = true
+	#Will only show mods with config available
+	config_mode = false
+	#Allows to edit mod badges and parents ingame by dragging or button
+	editor_mode = false
+	#Disables drag and drop mods adding
+	disable_drag_and_drop = false
+	#Will use catalogue's icon if present
+	use_catalogue_icon = true
+	#Will use the square icon on the right instead of banner
+	always_use_square_icon = false
+	#If above 0 and fake parent mod doesn't have an icon it will cycle through icons of it's children
+	# Default: 20
+	# Range: 0 ~ 200
+	dummy_animation_interval = 20
+	#how fast next icon fades in
+	# Default: 5
+	# Range: 0 ~ 200
+	dummy_animation_fade = 5
+
+[hide]
+	#Shows mods with library badge
+	show_libraries = false
+	#Hides links of the mod
+	hide_mod_links = false
+	#Hides mod's license
+	hide_mod_license = false
+	#Hides mod's badges
+	hide_badges = false
+	#Add id of the badge to hide it
+	hide_badge = []
+	#Hides mod's credits
+	hide_mod_credits = false
+	#Hides mod's config button
+	hide_config_buttons = false
+	#Hides search bar and drag and drop text, also moves mod's icon up
+	hide_screen_top = false
+	#Add modid of the mod to hide it from the modlist
+	hidden_mods = []
+	#Add modid of the mod to hide its config
+	hidden_configs = []
+	#deprecated
+	library_list = []
+
+	#deprecated
+	[hide.disable_default_badges_section]
+		disable_default_badges_all = false
+		disable_default_badges = []
+
+[count]
+	#Makes hidden mods count added to the total mods count
+	count_hidden_mods = true
+	#Makes childrens count get added to the total mods count
+	count_children = true
+	#Makes libraries count get added to the total mods count
+	count_libraries = true

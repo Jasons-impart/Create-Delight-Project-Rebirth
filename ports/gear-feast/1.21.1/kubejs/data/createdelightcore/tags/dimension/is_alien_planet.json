@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "northstar:mercury",
+    "northstar:mars",
+    "northstar:venus",
+    "northstar:moon"
+  ]
+}

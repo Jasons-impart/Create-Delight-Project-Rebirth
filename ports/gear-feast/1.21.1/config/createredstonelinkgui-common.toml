@@ -1,0 +1,4 @@
+#Maximum distance in blocks a redstone link can be moved
+# Default: 24
+# Range: 1 ~ 256
+moveRange = 24

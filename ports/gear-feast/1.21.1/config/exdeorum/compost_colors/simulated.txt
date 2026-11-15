@@ -1,0 +1,9 @@
+// Compost colors for simulated. You may add your own colors, change existing ones, or remove colors that aren't needed.
+contraption_diagram, #f5ead4
+engine_assembly, #afaba2
+gyroscopic_mechanism, #afa89d
+honey_glue, #ebb58a
+incomplete_engine_assembly, #b8b4a8
+incomplete_gyroscopic_mechanism, #9b9a96
+rope_coupling, #8c571f
+spring, #919191

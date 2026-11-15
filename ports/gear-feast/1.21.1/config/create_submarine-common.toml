@@ -1,0 +1,16 @@
+[gameplay]
+	#Deepen the ocean floor below vanilla.
+	#Off = vanilla ocean depth. Set the amount with deeperOceansDepth.
+	#Requires the 'Lithostitched' mod to be installed.
+	enableDeeperOceans = false
+	#How many blocks deeper to push the ocean floor when enableDeeperOceans is on.
+	#WARNING: large values generate and render far more terrain below the sea floor
+	#and can badly hurt world-generation and rendering performance. Raise it carefully.
+	# Default: 10
+	# Range: 1 ~ 256
+	deeperOceansDepth = 10
+
+[experimental]
+	#Experimental: replace the Abyss terrain with the tectonic seafloor (plates, trenches, ridges, three biomes).
+	#Only new Abyss chunks change. The Abyss height range changes too, so test it on a new world.
+	experimentalAbyssWorldgen = false

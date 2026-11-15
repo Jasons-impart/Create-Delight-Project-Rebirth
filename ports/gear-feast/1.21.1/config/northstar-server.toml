@@ -1,0 +1,187 @@
+#.
+#The maximum waypoints the space atlas can hold
+# Default: 256
+# Range: > 0
+spaceAtlasMaxWaypoints = 256
+
+#.
+[atmosphere]
+	#.
+	#The height after which the atmosphere starts to fade out. Relative to the maximum build height.
+	# Default: 480
+	# Range: > -2147483648
+	atmosphereBaseHeight = 480
+	#.
+	#The thickness of the atmosphere
+	# Default: 200
+	# Range: > 1
+	atmosphereThickness = 200
+	#.
+	#The height at which the rocket changes dimension, relative to the atmosphere base height + thickness
+	# Default: 1000
+	# Range: > 0
+	atmosphereTeleportHeight = 1000
+	#.
+	allowDimensionTraversal = true
+
+#.
+[rocket]
+	#.
+	#Wether return tickets should be created after the rocket lands.
+	enableReturnTicketCreation = true
+	#.
+	#The total fuel efficiency applied for the maximum amount of targeting computers
+	# Default: 0.4000000059604645
+	# Range: 0.0 ~ 1.0
+	targetingComputerEfficiency = 0.4000000059604645
+	#.
+	#The amount of targeting computers required to reach maximum efficiency
+	# Default: 48
+	# Range: > 0
+	targetingComputersNeeded = 48
+	#.
+	#From how far away should the launch countdown messages/sound be announced to players
+	# Default: 20
+	# Range: > 0
+	launchCountdownRadius = 20
+	#.
+	#The engine's force in Newtons (kg/m/s^2) assuming rocket weight is in kg
+	# Default: 500.0
+	# Range: 1.0 ~ 3.4028234663852886E38
+	thrusterPower = 500.0
+	#.
+	#The maximum safe speed in blocks/second the rocket can move at before exploding on landing
+	# Default: 5.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	landingMaxSafeSpeed = 5.0
+	#.
+	#The fraction of blocks to explode when a rocket crash lands. Set to zero to disable.
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
+	rocketExplosionFraction = 0.10000000149011612
+	#.
+	#The size of individual explosions when a rocket crash lands.
+	# Default: 10
+	# Range: > 1
+	rocketExplosionSize = 10
+
+	#.
+	#Fuel properties for rockets
+	[rocket.fuel]
+		#.
+		# Default: 30.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		takeoffFuelScale = 30.0
+		#.
+		# Default: 10.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		landingFuelScale = 10.0
+		#.
+		# Default: 10.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		travelFuelScale = 10.0
+
+#.
+[gameplay]
+	#.
+	#The amount of oxygen that can be stored in spacesuits, uses 1 mB/second
+	# Default: 1800
+	# Range: > 0
+	spacesuitBaseOxygen = 1800
+	#.
+	#The added oxygen capacity for each level of capacity
+	# Default: 600
+	# Range: > 0
+	spacesuitAdditionalOxygen = 600
+	#.
+	#Wether to allow dripstones to drip in places with no gravity
+	doDripstoneDripWithoutGravity = false
+	#.
+	#Wether to allow dripstones to grow in places with no gravity
+	doDripstoneGrowWithoutGravity = false
+	#.
+	#The jump strength scale applied in zero gravity worlds
+	# Default: 0.20000000298023224
+	# Range: 0.0 ~ 3.4028234663852886E38
+	zeroGravityJumpStrength = 0.20000000298023224
+	#.
+	#If enabled, triggers a collision with stopped projectiles in zero gravity dimensions. Causes arrows to despawn, potions / experience bottles to explode, loyalty tridents to return, etc...
+	removeStalledProjectiles = true
+
+#.
+[sealer]
+	#.
+	#Base maximum blocks tested per tick, higher values increase the speed at which seals updates but decreases performance, value increases dynamically with additional blocks that might add volume.
+	# Default: 128
+	# Range: > 1
+	baseCheckBlocksPerTick = 128
+	#.
+	#Absolute maximum blocks tested per tick
+	# Default: 4096
+	# Range: > 1
+	maxCheckedBlocksPerTick = 4096
+	#.
+	#Delay in ticks before checking again after a seal completed
+	# Default: 20
+	# Range: > 1
+	checkDelay = 20
+
+	#.
+	[sealer.oxygen]
+		#.
+		# Default: 16
+		# Range: > 1
+		blocksPerRpm = 16
+		#.
+		# Default: 2500
+		# Range: > 0
+		maxContraptionSealed = 2500
+		#.
+		#Passive oxygen drain in mB per block per tick
+		# Default: 9.999999747378752E-5
+		# Range: 0.0 ~ 3.4028234663852886E38
+		passiveDrain = 9.999999747378752E-5
+		#.
+		#Active drain scaling in mB per block per tick. Applies to block with dynamic consumption like fire, torches, leaves, etc...
+		# Default: 0.009999999776482582
+		# Range: 0.0 ~ 3.4028234663852886E38
+		blockActiveDrain = 0.009999999776482582
+		#.
+		#Active drain for entity in mB per entity per tick.
+		# Default: 0.05000000074505806
+		# Range: 0.0 ~ 3.4028234663852886E38
+		entityActiveDrain = 0.05000000074505806
+		#.
+		#The speed of oxygen fillers mounted on contraptions, in mB/t. Set to 0 to disable.
+		# Default: 5
+		# Range: > 0
+		mountedOxygenFillerSpeed = 5
+
+	#.
+	[sealer.temperature]
+		#.
+		# Default: 16
+		# Range: > 1
+		blocksPerRpm = 16
+		#.
+		# Default: 2500
+		# Range: > 0
+		maxContraptionSealed = 2500
+
+#.
+[largeFan]
+	#.
+	#Maximum size of large fans.
+	# Default: 5
+	# Range: > 1
+	maxSize = 5
+	#.
+	#A constant used to calculate the volume added by large fans using the following formula: (|speed| / 256 * 64) * size^sizeExp * C * (1 + log2(blades))
+	# Default: 2.200000047683716
+	# Range: 0.0 ~ 3.4028234663852886E38
+	sizeExp = 2.200000047683716
+	#.
+	#A constant used to calculate the volume added by large fans using the following formula: (|speed| / 256 * 64) * size^sizeExp * C * (1 + log2(blades))
+	# Default: 12.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	multiplier = 12.0

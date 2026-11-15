@@ -1,0 +1,25 @@
+{
+    "type":  "farmersdelight:cutting",
+    "ingredients":  [
+                        {
+                            "item":  "vintagedelight:cucumber_noodles"
+                        }
+                    ],
+    "result":  [
+                   {
+                       "item":  {
+                                    "id":  "youkaishomecoming:cucumber_slice",
+                                    "count":  2
+                                }
+                   }
+               ],
+    "tool":  [
+                 {
+                     "type":  "farmersdelight:item_ability",
+                     "action":  "knife_dig"
+                 },
+                 {
+                     "tag":  "c:tools/knife"
+                 }
+             ]
+}

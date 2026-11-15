@@ -1,0 +1,68 @@
+	[pantographsandwires_common_config.wires]
+		#[in Blocks]
+		#The maximum length of the catenary wire between two masts.
+		#Default: 50
+		# Default: 50
+		# Range: 16 ~ 128
+		catenary_max_length = 50
+		#[in Blocks]
+		#The maximum length of the energy wire between two masts.
+		#Default: 64
+		# Default: 64
+		# Range: 16 ~ 128
+		energy_max_length = 64
+		#[in Blocks]
+		#The maximum length of the catenary headspan wire between two masts.
+		#Default: 50
+		# Default: 50
+		# Range: 16 ~ 128
+		catenary_headspan_length = 50
+		#[in Blocks]
+		#The maximum length of the support wire between two masts.
+		#Default: 64
+		# Default: 64
+		# Range: 16 ~ 128
+		support_length = 64
+		#Whether blocks placed in wires can destroy them.
+		#Default: true
+		block_destroy_wires = true
+		#Whether powered wires should cause damage to entities touching them.
+		#Default: true
+		wire_entity_damage = true
+
+		[pantographsandwires_common_config.wires.catenary_headspan]
+			#[in Blocks]
+			#The minimum distance between the two tension wires. The minimum distance cannot be larger than the maximum distance. If it is entered incorrectly, the minimum distance is 'max - 1'.
+			#Default: 1
+			# Default: 1
+			# Range: 1 ~ 7
+			upper_tension_wire_min_height = 1
+			#[in Blocks]
+			#The maximum distance between the two tension wires. The maximum distance cannot be smaller than the minimum distance. If it is entered incorrectly, the maximum distance is 'min + 1'.
+			#Default: 4
+			# Default: 4
+			# Range: 2 ~ 8
+			upper_tension_wire_max_height = 4
+			#[in Blocks]
+			#The additional maximum distance between the top support wire and the upper tension wire. This value is added to the automatically calculated value (= minimum) as the max difference. The minimum is calculated from the distance between the two masts.
+			#Default: 4
+			# Default: 4
+			# Range: 0 ~ 8
+			top_support_wire_max_height_difference = 4
+
+		[pantographsandwires_common_config.wires.calculation]
+			#[in Block Pixels]
+			#The step size used in the collision calculation of the wires. Lower values increase precision but require more computing power. Higher values are more inaccurate but require less performance.
+			#If in doubt, leave unchanged.
+			#Default: 1
+			# Default: 1.0
+			# Range: 0.1 ~ 4.0
+			collision_tracer_step_size = 1.0
+
+	[pantographsandwires_common_config.gameplay]
+		#When activated, metal blocks oxidize and concrete blocks erode slowly, similar to copper.
+		#Default: ON
+		oxidation = true
+		#When enabled, wires drop items if the player modifying the wire is in creative mode.
+		#Default: OFF
+		drop_wire_items_in_creative = false

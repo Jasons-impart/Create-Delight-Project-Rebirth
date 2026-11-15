@@ -1,0 +1,30 @@
+[GunSmithTable]
+	#Allow supported TaCZ crafting/refit features to use
+	#nearby loaded block inventories. When false, player
+	#inventory sources remain available but nearby block
+	#sources are disabled for both gunsmith crafting and
+	#the refit external candidate list. Carried Sophisticated
+	#Backpacks remain available for refitting.
+	enableContainerReader = true
+	#Horizontal radius around the authoritative anchor.
+	#Gunsmith uses the workbench root position; refit uses
+	#the server player position. Only loaded positions
+	#from Y-1 through Y+1 are inspected.
+	# Default: 3
+	# Range: 1 ~ 16
+	containerScanRadius = 3
+	#Maximum number of craft executions accepted from one shift-click request.
+	# Default: 64
+	# Range: 1 ~ 64
+	batchCraftMax = 64
+
+[Gameplay]
+	#Allow shooting to immediately interrupt a tactical reload
+	#when the gun still has fireable ammunition.
+	enableShootWhileReloading = true
+	#Skip TaCZ's put-away animation before the next draw.
+	#This is a gameplay policy owned by the server: the value
+	#is synchronized to every client, and client-side cooldown
+	#prediction uses the synchronized value. A dedicated server
+	#reads this file, never a client configuration.
+	enableFastSwapGun = true

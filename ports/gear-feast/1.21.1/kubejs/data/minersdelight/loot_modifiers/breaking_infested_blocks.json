@@ -1,0 +1,15 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minersdelight:block_tag",
+      "tag": "minersdelight:infested_blocks"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.35
+    }
+  ],
+  "item": "minersdelight:silverfish_eggs",
+  "count": 1
+}

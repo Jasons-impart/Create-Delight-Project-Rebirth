@@ -1,0 +1,2 @@
+#When enabled, some modded container will be skipped when exiting
+tabSafeMode = false

@@ -1,0 +1,7 @@
+// Compost colors for create_fantasizing. You may add your own colors, change existing ones, or remove colors that aren't needed.
+alternative_chromatic_compound, #faf7fb
+incomplete_compact_hydraulic_engine, #f4f2f7
+incomplete_compact_wind_engine, #eef1ff
+prismarine_fan_blades, #ffffff
+sturdy_conduit, #fffffa
+sturdy_heavy_core, #f0f0f7

@@ -1,0 +1,32 @@
+#Amount of stress per operation in ME storage
+# Default: 16384
+# Range: > 1
+amountPerOperation = 16384
+#Amount of stress per byte in ME storage
+# Default: 1048576
+# Range: > 1
+amountPerByte = 1048576
+#Default speed (RPM) for ME Gearbox export mode
+# Default: 32
+# Range: 1 ~ 256
+defaultSpeed = 32
+#Default stress multiplier for ME Gearbox
+# Default: 64.0
+# Range: 0.0 ~ 65536.0
+defaultStress = 64.0
+#Maximum stress multiplier for ME Gearbox
+# Default: 65536.0
+# Range: 1.0 ~ 1000000.0
+maxStress = 65536.0
+#AE energy generated per 256 RPM
+# Default: 640.0
+# Range: 1.0 ~ 10000.0
+aePer256Rpm = 640.0
+#Base stress units (SU) for Kinetic Energy Acceptor calculation
+# Default: 16384
+# Range: > 1
+baseStressSu = 16384
+#Maximum multiplier for Kinetic Energy Acceptor
+# Default: 16
+# Range: 1 ~ 256
+maxMultiplier = 16

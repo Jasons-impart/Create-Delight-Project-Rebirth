@@ -1,0 +1,1402 @@
+{
+	autofocus_id: "4F4B89AF71FA7538"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tetra_armor_curios"
+	group: "7A00000000000004"
+	icon: {
+		components: {
+			"!minecraft:damage": { }
+			"!minecraft:max_damage": { }
+		}
+		id: "geotetraarmor:chest"
+	}
+	id: "4ED32291AEAD9E7F"
+	images: [ ]
+	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "4F4B89AF71FA7538"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "6408F995587E240E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F4B89AF71FA7538"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "2EA468C04A5F96E2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "7BF835E562A31BA1"
+				type: "checkmark"
+			}]
+			x: -19.65d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EA468C04A5F96E2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "358E3E08807EB29D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "17B276C43B709FAD"
+				type: "checkmark"
+			}]
+			x: -29.3d
+			y: -5.0d
+		}
+		{
+			dependencies: ["358E3E08807EB29D"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "1C1923D6875E014B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6FAD60ADA9A4D538"
+				type: "checkmark"
+			}]
+			x: -33.05d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1C1923D6875E014B"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "67DBF7F3436BB718"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "61E3C7753BBA5EB7"
+				type: "checkmark"
+			}]
+			x: -33.05d
+			y: -11.7d
+		}
+		{
+			dependencies: ["358E3E08807EB29D"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "751437A06FBE4D39"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0013DD6B2F103DF7"
+				type: "checkmark"
+			}]
+			x: -25.55d
+			y: -9.0d
+		}
+		{
+			dependencies: ["751437A06FBE4D39"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "3753850032BA3348"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4F76CB3BD8A6D9E4"
+				type: "checkmark"
+			}]
+			x: -26.72d
+			y: -11.7d
+		}
+		{
+			dependencies: ["751437A06FBE4D39"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "36B95ABB0167C834"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0EB41D629C6418EA"
+				type: "checkmark"
+			}]
+			x: -24.37d
+			y: -11.7d
+		}
+		{
+			dependencies: ["751437A06FBE4D39"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "3F95367DF3ABE4F6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4394E4F705F7EDA0"
+				type: "checkmark"
+			}]
+			x: -26.72d
+			y: -13.8d
+		}
+		{
+			dependencies: ["358E3E08807EB29D"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "36472E2FDE160820"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "060842EF61DC804A"
+				type: "checkmark"
+			}]
+			x: -33.05d
+			y: -16.6d
+		}
+		{
+			dependencies: ["36472E2FDE160820"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "0734DB923E24A9E3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "588693721AE46FD3"
+				type: "checkmark"
+			}]
+			x: -33.05d
+			y: -19.3d
+		}
+		{
+			dependencies: ["2EA468C04A5F96E2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "79A8E7A7D6717C3B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "1A49A4E2BE858990"
+				type: "checkmark"
+			}]
+			x: -11.15d
+			y: -5.0d
+		}
+		{
+			dependencies: ["79A8E7A7D6717C3B"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "42D81D7504ACA399"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "52F7A9A7BE2FB1FF"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: -9.0d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "6A85C83C922954B6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "78053956AE35AA75"
+				type: "checkmark"
+			}]
+			x: -17.25d
+			y: -11.7d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "397EED5D552AA0B1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1C33C9C54F52E46B"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: -11.7d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "027C23211AAC6E54"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0670928C0634A651"
+				type: "checkmark"
+			}]
+			x: -12.55d
+			y: -11.7d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "11B0C849828D029B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "008DB38A77565748"
+				type: "checkmark"
+			}]
+			x: -17.25d
+			y: -13.8d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "7E765C793B4CD094"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6E5066535423FC47"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: -13.8d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "0C5C54D148A90158"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "452BC00413A6A117"
+				type: "checkmark"
+			}]
+			x: -12.55d
+			y: -13.8d
+		}
+		{
+			dependencies: ["42D81D7504ACA399"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "15D814487EFB129D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "584B0C082441F0E5"
+				type: "checkmark"
+			}]
+			x: -17.25d
+			y: -15.9d
+		}
+		{
+			dependencies: ["79A8E7A7D6717C3B"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "3D3473F03AC960AB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "267DB609E0DD290D"
+				type: "checkmark"
+			}]
+			x: -6.25d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3D3473F03AC960AB"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "6D0C0A2D92AC92DC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1A362D6246D17B15"
+				type: "checkmark"
+			}]
+			x: -7.42d
+			y: -11.7d
+		}
+		{
+			dependencies: ["3D3473F03AC960AB"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "797CCA4BBCDBF822"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "30010E5CF1B596DB"
+				type: "checkmark"
+			}]
+			x: -5.07d
+			y: -11.7d
+		}
+		{
+			dependencies: ["79A8E7A7D6717C3B"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "635CA8FDE6B93F99"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "533D0B52FB22CE20"
+				type: "checkmark"
+			}]
+			x: -6.25d
+			y: -16.6d
+		}
+		{
+			dependencies: ["635CA8FDE6B93F99"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "7B47FD0ABFE56E48"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "655DEB049FA5A696"
+				type: "checkmark"
+			}]
+			x: -7.42d
+			y: -19.3d
+		}
+		{
+			dependencies: ["635CA8FDE6B93F99"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:chest"
+			}
+			id: "7AB4958B83999B4F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "3BF03F17E736620B"
+				type: "checkmark"
+			}]
+			x: -5.07d
+			y: -19.3d
+		}
+		{
+			dependencies: ["2EA468C04A5F96E2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "6AE111829BE06AE2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "4D458056C8D06FB3"
+				type: "checkmark"
+			}]
+			x: -28.15d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6AE111829BE06AE2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "7552F4FB614608FC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "15AD26108BE86640"
+				type: "checkmark"
+			}]
+			x: -31.9d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7552F4FB614608FC"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "4879DA01FD242A10"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2C45A0C8AD46543C"
+				type: "checkmark"
+			}]
+			x: -33.07d
+			y: 11.7d
+		}
+		{
+			dependencies: ["7552F4FB614608FC"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "2F28C5F0F31F2DB9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "54E73F4384279742"
+				type: "checkmark"
+			}]
+			x: -30.72d
+			y: 11.7d
+		}
+		{
+			dependencies: ["7552F4FB614608FC"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "57C8E59C244FE404"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "159BDCFA7894F507"
+				type: "checkmark"
+			}]
+			x: -33.07d
+			y: 13.8d
+		}
+		{
+			dependencies: ["7552F4FB614608FC"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "6A24D1C296C97942"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7262AB6BD4A0057C"
+				type: "checkmark"
+			}]
+			x: -30.72d
+			y: 13.8d
+		}
+		{
+			dependencies: ["6AE111829BE06AE2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "1CB4BDD307B3F0A3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "5A1024BF47C76C98"
+				type: "checkmark"
+			}]
+			x: -24.4d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1CB4BDD307B3F0A3"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "76A1EEB804477B34"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "66A141CA85D39848"
+				type: "checkmark"
+			}]
+			x: -25.57d
+			y: 11.7d
+		}
+		{
+			dependencies: ["1CB4BDD307B3F0A3"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:legs"
+			}
+			id: "03203B1E3F2A96CA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "090E9177B98F1F5E"
+				type: "checkmark"
+			}]
+			x: -23.22d
+			y: 11.7d
+		}
+		{
+			dependencies: ["2EA468C04A5F96E2"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "244D797723DEC1F8"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "283A8E52E9BDE04C"
+				type: "checkmark"
+			}]
+			x: -11.15d
+			y: 5.0d
+		}
+		{
+			dependencies: ["244D797723DEC1F8"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "1917B35D0B018CF9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "5DCD276E35E6CBD5"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1917B35D0B018CF9"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "4E5540B38BC8BFA2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "514977CC65863458"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: 11.7d
+		}
+		{
+			dependencies: ["244D797723DEC1F8"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "7C429DAA88774E63"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "7494080FE9E15878"
+				type: "checkmark"
+			}]
+			x: -7.4d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7C429DAA88774E63"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "36FF6371BF3A72B8"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2BDB9379C2673998"
+				type: "checkmark"
+			}]
+			x: -8.57d
+			y: 11.7d
+		}
+		{
+			dependencies: ["7C429DAA88774E63"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "67CFA3F0EEC60E77"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6147CFA6B323EF25"
+				type: "checkmark"
+			}]
+			x: -6.22d
+			y: 11.7d
+		}
+		{
+			dependencies: ["244D797723DEC1F8"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "5C3ABC59DF3F008E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "59B37723C7D84434"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: 16.6d
+		}
+		{
+			dependencies: ["5C3ABC59DF3F008E"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "525C29C3F8EE5DF6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "15F0AC752B31A4AD"
+				type: "checkmark"
+			}]
+			x: -14.9d
+			y: 19.3d
+		}
+		{
+			dependencies: ["244D797723DEC1F8"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "542A211756A3D517"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "3F4186995245F69C"
+				type: "checkmark"
+			}]
+			x: -7.4d
+			y: 16.6d
+		}
+		{
+			dependencies: ["542A211756A3D517"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "4E0FD74CA7C51834"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6ED03ED44A27FD6F"
+				type: "checkmark"
+			}]
+			x: -8.57d
+			y: 19.3d
+		}
+		{
+			dependencies: ["542A211756A3D517"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "4AA06EF7AF6254C6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "0847306AA8C61A98"
+				type: "checkmark"
+			}]
+			x: -6.22d
+			y: 19.3d
+		}
+		{
+			dependencies: ["542A211756A3D517"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "5D8CB4F8066805C4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "1B3CC6E87274B84E"
+				type: "checkmark"
+			}]
+			x: -8.57d
+			y: 21.4d
+		}
+		{
+			dependencies: ["4F4B89AF71FA7538"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "2691D35FB3C8D235"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "258A77C6AEE0CBD2"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -24.7d
+		}
+		{
+			dependencies: ["2691D35FB3C8D235"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "0A2914E62079AE6D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "03AC9C980D0FCBE5"
+				type: "checkmark"
+			}]
+			x: 14.75d
+			y: -28.7d
+		}
+		{
+			dependencies: ["0A2914E62079AE6D"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "48ADF44CE0045515"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "68A033F62681C804"
+				type: "checkmark"
+			}]
+			x: 13.57d
+			y: -31.4d
+		}
+		{
+			dependencies: ["0A2914E62079AE6D"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "2F19A53815478F4F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "21E9688E42397572"
+				type: "checkmark"
+			}]
+			x: 15.93d
+			y: -31.4d
+		}
+		{
+			dependencies: ["0A2914E62079AE6D"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "7793DF575058F689"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "28EDBD4A790FC604"
+				type: "checkmark"
+			}]
+			x: 13.57d
+			y: -33.5d
+		}
+		{
+			dependencies: ["0A2914E62079AE6D"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "7C5BF1B0E6FC52C0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "7546BA3C9B9A0F61"
+				type: "checkmark"
+			}]
+			x: 15.93d
+			y: -33.5d
+		}
+		{
+			dependencies: ["2691D35FB3C8D235"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "69F8F96CC7FA20D9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "754A130AE40D832D"
+				type: "checkmark"
+			}]
+			x: 22.25d
+			y: -28.7d
+		}
+		{
+			dependencies: ["69F8F96CC7FA20D9"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "168963EBE8235BEA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "318FD501963F1E55"
+				type: "checkmark"
+			}]
+			x: 21.07d
+			y: -31.4d
+		}
+		{
+			dependencies: ["69F8F96CC7FA20D9"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "6EF02023D042EC8E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "4E07F619FD4CA5A5"
+				type: "checkmark"
+			}]
+			x: 23.43d
+			y: -31.4d
+		}
+		{
+			dependencies: ["69F8F96CC7FA20D9"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:feet"
+			}
+			id: "2DD34D97288CAEF9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2EA5E2AF017F37F1"
+				type: "checkmark"
+			}]
+			x: 21.07d
+			y: -33.5d
+		}
+		{
+			dependencies: ["4F4B89AF71FA7538"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "59E0127E37C28DD6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "58C503313572EE7C"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["59E0127E37C28DD6"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "373DB4B0230573BB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "71FBA18E86F7A473"
+				type: "checkmark"
+			}]
+			x: 6.25d
+			y: 9.0d
+		}
+		{
+			dependencies: ["373DB4B0230573BB"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "4D2727E26E6B1D0E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "66CA57531DD67F6F"
+				type: "checkmark"
+			}]
+			x: 5.08d
+			y: 11.7d
+		}
+		{
+			dependencies: ["373DB4B0230573BB"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "6974DE22C7CD87D7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "38CF768EAB8A9524"
+				type: "checkmark"
+			}]
+			x: 7.42d
+			y: 11.7d
+		}
+		{
+			dependencies: ["59E0127E37C28DD6"]
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "092DDD0716C6511F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "2C40ED2333B9EB3B"
+				type: "checkmark"
+			}]
+			x: 13.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["092DDD0716C6511F"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"!minecraft:damage": { }
+					"!minecraft:max_damage": { }
+				}
+				id: "geotetraarmor:head"
+			}
+			id: "18A006F18F458118"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "6EDFF48E5C3B8E3F"
+				type: "checkmark"
+			}]
+			x: 13.75d
+			y: 11.7d
+		}
+		{
+			dependencies: ["4F4B89AF71FA7538"]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "5739B18A47DD7A0C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "77BB927DAAB92E1F"
+				type: "checkmark"
+			}]
+			x: 27.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5739B18A47DD7A0C"]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "4E72820B03EDFB4D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "422652D4C136862B"
+				type: "checkmark"
+			}]
+			x: 23.25d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4E72820B03EDFB4D"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "09FD9388E32BCF5B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "2D30EF1A2D993278"
+				type: "checkmark"
+			}]
+			x: 23.25d
+			y: 11.7d
+		}
+		{
+			dependencies: ["5739B18A47DD7A0C"]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "5E747AB62CCB655B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "54B1F2272AA78DBF"
+				type: "checkmark"
+			}]
+			x: 30.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5E747AB62CCB655B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "7E455F4C7A1C0144"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.75d
+			tasks: [{
+				id: "12040473B02645C1"
+				type: "checkmark"
+			}]
+			x: 30.75d
+			y: 11.7d
+		}
+	]
+}

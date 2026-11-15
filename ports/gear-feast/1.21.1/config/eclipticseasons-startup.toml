@@ -1,0 +1,3 @@
+[Resource]
+	#Enable extra built-in snow definitions resourcepack for game.
+	ExtraSnowDefinitions = false

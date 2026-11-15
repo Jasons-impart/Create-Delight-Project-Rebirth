@@ -1,0 +1,3 @@
+// Compost colors for elysium_api. You may add your own colors, change existing ones, or remove colors that aren't needed.
+mob_barrier, #fffb5
+panorama_camera, #865e29

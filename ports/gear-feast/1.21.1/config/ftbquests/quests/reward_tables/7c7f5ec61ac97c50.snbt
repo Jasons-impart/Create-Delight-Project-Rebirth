@@ -1,0 +1,10 @@
+{
+	id: "7C7F5EC61AC97C50"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{ id: "7AACDF65D8284DA3", item: { components: { "ftbquests:missing_item": "blackknightarmor:frost_beast_axe" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "34439BC64CC39739", item: { components: { "ftbquests:missing_item": "blackknightarmor:black_knight_sword" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "37B463ED80CB597E", item: { components: { "ftbquests:missing_item": "blackknightarmor:lava_great_sword" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

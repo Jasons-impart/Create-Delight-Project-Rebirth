@@ -1,0 +1,273 @@
+{
+    "size":  "large",
+    "color":  "#CD9B9B",
+    "waves":  [
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:caniac",
+                                           "count":  12
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  1.5
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.5
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.2
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  -0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:caniac",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:gingerbread_crumbs",
+                                                        "count":  18
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:music_disc_tasty",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:gumbeeper",
+                                           "count":  8
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  1.5
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  10
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  4.0
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  -0.2
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  -0.4
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:gumbeeper",
+                                          "rolls":  8
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:shot_gum",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:frostmint_spear",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  150
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:caramel_cube",
+                                           "count":  12
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  1.5
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.5
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.2
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:caramel_cube",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:sack_of_sating",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:licowitch",
+                                           "count":  12
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  2.0
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.5
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.2
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  -0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:licowitch",
+                                          "rolls":  8
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:sugar_staff",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:licowitch",
+                                           "count":  1
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  24.0
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  4.0
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.8
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.1
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  1.5
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "gateways:gate_pearl",
+                                                        "count":  2,
+                                                        "components":  {
+                                                                           "gateways:gateway":  "createdelightcore:sweettide_brokenpoint"
+                                                                       }
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:biome_treat",
+                                                        "count":  4
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  }
+              ],
+    "failures":  [
+                     {
+                         "type":  "gateways:explosion",
+                         "strength":  5,
+                         "fire":  true,
+                         "block_damage":  false
+                     }
+                 ]
+}

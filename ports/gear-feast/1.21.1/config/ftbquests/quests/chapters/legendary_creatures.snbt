@@ -1,0 +1,1220 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "legendary_creatures"
+	group: "7A00000000000005"
+	icon: {
+		id: "iceandfire:dragon_skull_ice"
+	}
+	id: "045A2479E8D37705"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["32EA89B38D6BE059"]
+			id: "2AE0738C43D5A42B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "563231D73D0221EB"
+					item: { count: 1, id: "iceandfire:bestiary" }
+					type: "item"
+				}
+				{
+					id: "0AD480E364AEC877"
+					item: { count: 1, id: "iceandfire:lectern" }
+					type: "item"
+				}
+				{
+					id: "1DD6F6BC913214BF"
+					item: { count: 1, id: "iceandfire:manuscript" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"244B2CABBB89B269"
+				"0B2D858482173126"
+			]
+			dependency_requirement: "one_completed"
+			id: "17D9DB61D8A8DC98"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				id: "7CAC1922654F1A46"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17D9DB61D8A8DC98"]
+			id: "69CC188E28D83004"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "1CCA3E7282C3E14B"
+				item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["556B30C5A2ED0D94"]
+			id: "5B93E8E6D33CF5E4"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "1B4CDE18988A75E8"
+				item: { count: 1, id: "iceandfire:dragonsteel_fire_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0961AD88179B18C4"]
+			id: "1929725D08B07686"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "13B7F82AD6466515"
+				item: { count: 1, id: "iceandfire:dragonsteel_ice_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["34E1D8B005ACD4CF"]
+			id: "5C0EC9448D4B3AD4"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "4103F79378D8D3C5"
+				item: { count: 1, id: "iceandfire:dragonsteel_lightning_ingot" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["17D9DB61D8A8DC98"]
+			id: "556B30C5A2ED0D94"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67FA75267D4F62AF"
+				item: { count: 1, id: "iceandfire:fire_dragon_blood" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			id: "6AF0BCF34F1E3853"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:moon"
+				id: "034E20100DBC39D7"
+				type: "dimension"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			id: "244B2CABBB89B269"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:mars"
+				id: "6A87D73715BD6733"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			icon: {
+				id: "ftbquests:custom_icon"
+			}
+			id: "1BEE7AD2537F2428"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:mars"
+				id: "5F61EA66AEFBD9B5"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			id: "0B2D858482173126"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:mercury"
+				id: "3E2F7F0F21A35C3B"
+				type: "dimension"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			id: "5246A4941FE396AC"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:venus"
+				id: "24F96FC782F1BB94"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			id: "17FCCF7445960374"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "northstar:europa"
+				id: "3EAF57C672EA0655"
+				type: "dimension"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6AF0BCF34F1E3853"]
+			id: "36C9F799E0135534"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:cockatrice"
+				id: "0CF304DA0C1B4795"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6AF0BCF34F1E3853"]
+			id: "727D7C9DEF77A306"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "0543E20840257248"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["36C9F799E0135534"]
+			id: "6361FC8177EE1302"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "403A557411B5F5CD"
+				item: { count: 1, id: "iceandfire:cockatrice_eye" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["36C9F799E0135534"]
+			id: "1675A1ED2A110DAA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6339972979BFB29D"
+				item: { count: 1, id: "iceandfire:rotten_egg" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["36C9F799E0135534"]
+			hide_dependency_lines: true
+			id: "2B63A71C7958334A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "303FC9FB56C75EC5"
+				item: { count: 1, id: "iceandfire:cockatrice_skull" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["36C9F799E0135534"]
+			id: "6128230B90665EA9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "64025D219ED87AFE"
+				item: { count: 1, id: "iceandfire:witherbone" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["727D7C9DEF77A306"]
+			hide_dependency_lines: true
+			id: "299E52DB76168756"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "424FF61EA150C51D"
+				item: { count: 1, id: "iceandfire:cyclops_skull" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["727D7C9DEF77A306"]
+			id: "771C223810F33BB5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "333BB491F781CD41"
+				item: { count: 1, id: "iceandfire:cyclops_eye" }
+				type: "item"
+			}]
+			x: 34.0d
+			y: -8.0d
+		}
+		{
+			id: "33AEA40FA5FE2CE3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				id: "7AAEA2F3ABDE5020"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17D9DB61D8A8DC98"]
+			id: "7B89E928C3A6F2E6"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [
+				{
+					id: "2FF588316CBC4D9A"
+					item: { count: 1, id: "iceandfire:dragonegg_red" }
+					type: "item"
+				}
+				{
+					id: "1D81A1859324C81D"
+					item: { count: 1, id: "iceandfire:dragonegg_green" }
+					type: "item"
+				}
+				{
+					id: "1D1E8703BD5FE749"
+					item: { count: 1, id: "iceandfire:dragonegg_bronze" }
+					type: "item"
+				}
+				{
+					id: "79C062F131E11096"
+					item: { count: 1, id: "iceandfire:dragonegg_gray" }
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5246A4941FE396AC"]
+			id: "7C9857F0DAD1E04E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:lightning_dragon"
+				id: "115E13A1686B728B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B2D858482173126"]
+			id: "6A6D74966776E49B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:stymphalian_bird"
+				id: "490C2B557DE4AE68"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1BEE7AD2537F2428"]
+			id: "1D34EBFF1D60EA85"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:ice_dragon"
+				id: "4EDEBE19A0009358"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["244B2CABBB89B269"]
+			id: "71CBDE6F46E867ED"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:deathworm"
+				id: "3564736E44D0BA17"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5246A4941FE396AC"]
+			id: "6DAF4BB49D52FD8B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "059DBA24B756E367"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "77B14A2DDB78829C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:amphithere"
+				id: "43FF49493AD282D9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["244B2CABBB89B269"]
+			hide_until_deps_visible: false
+			id: "2652F9C2A88605B3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0D279802D4ABD131"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1BEE7AD2537F2428"]
+			id: "5DAF3876129A89A9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5FD95F53CFAA4342"
+				structure: "idas:iceandfire/dread_citadel"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2AE0738C43D5A42B"]
+			disable_toast: true
+			id: "06E9305FCDABCD28"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "3782FD07D15E1C1B"
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "36350630DD6F9724"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5C92E6CBAAEE44F1"
+				structure: "idas:labyrinth"
+				type: "structure"
+			}]
+			x: -15.0d
+			y: -6.0d
+		}
+		{
+			id: "569303FE1B0810A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:siren"
+				id: "14F19DCE413F9DE5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "3A6EEE7BAE1ACB81"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:ghost"
+				id: "1DC55AE58ED4C046"
+				type: "kill"
+				value: 1L
+			}]
+			x: -13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "6A73BFA1FD7B98A9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:troll"
+				id: "21A610ACD207D0B7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["36350630DD6F9724"]
+			id: "1F4036E773E1E9F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				id: "372C2920DB9B9E61"
+				type: "kill"
+				value: 1L
+			}]
+			x: -34.0d
+			y: -8.0d
+		}
+		{
+			id: "1E07922289055F60"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6D5A5ED5D027F85A"
+				item: { count: 1, id: "iceandfire:dread_key" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "43A601DE6C882054"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "iceandfire:hippocampus"
+				id: "044C25C464CEB713"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6A6D74966776E49B"]
+			id: "467341A4C358239B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7EE05E0995682E8B"
+				item: { count: 1, id: "iceandfire:stymphalian_bird_feather" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6A6D74966776E49B"]
+			hide_dependency_lines: true
+			id: "35CB668138E064AE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "35846881A8164428"
+				item: { count: 1, id: "iceandfire:stymphalian_skull" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["77B14A2DDB78829C"]
+			id: "2F52C516A27808AB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "661FF83D8A03DA7B"
+				item: { count: 1, id: "iceandfire:amphithere_feather" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["77B14A2DDB78829C"]
+			hide_dependency_lines: true
+			id: "10D7D2F45F340CB9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "42864CB645B8ADE1"
+				item: { count: 1, id: "iceandfire:amphithere_skull" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2F52C516A27808AB"]
+			id: "381DC063C664C331"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3E1D555C36267207"
+				item: { count: 1, id: "iceandfire:amphithere_macuahuitl" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6DAF4BB49D52FD8B"]
+			id: "40D76FD4DD98DAE0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14475C97BFF6AA6A"
+				item: { count: 1, id: "iceandfire:hydra_fang" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6DAF4BB49D52FD8B"]
+			id: "20CFDECA4CDAC23D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "682A15D4458A85F6"
+				item: { count: 1, id: "iceandfire:hydra_heart" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6DAF4BB49D52FD8B"]
+			hide_dependency_lines: true
+			id: "7A2059FFBC323C17"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2B891F77E48C86C9"
+				item: { count: 1, id: "iceandfire:hydra_skull" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["40D76FD4DD98DAE0"]
+			id: "0C21536C9F0C3F73"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "56AC4C21ACD447EE"
+				item: { count: 1, id: "iceandfire:hydra_arrow" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["467341A4C358239B"]
+			id: "04991DB0C39DC87D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "68722C468E7B90D5"
+				item: { count: 1, id: "iceandfire:stymphalian_arrow" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["467341A4C358239B"]
+			id: "03B077B14F60E82E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "678F1B4989DA2C02"
+				item: { count: 1, id: "iceandfire:stymphalian_bird_dagger" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["467341A4C358239B"]
+			id: "64E80D7A66E01780"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "256505E40B2E2248"
+				item: { count: 1, id: "iceandfire:stymphalian_feather_bundle" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7C9857F0DAD1E04E"]
+			id: "34E1D8B005ACD4CF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0C7FB94BA4DD0E01"
+				item: { count: 1, id: "iceandfire:lightning_dragon_blood" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C9857F0DAD1E04E"]
+			id: "1231C11A3F017724"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "2AB440B017346073"
+				item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C9857F0DAD1E04E"]
+			id: "3C3F2A2F6691A1C0"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [
+				{
+					id: "04B660EB566C6E91"
+					item: { count: 1, id: "iceandfire:dragonegg_electric" }
+					type: "item"
+				}
+				{
+					id: "32C9B57C22F74799"
+					item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0168E8E24025505A"
+					item: { count: 1, id: "iceandfire:dragonegg_copper" }
+					type: "item"
+				}
+				{
+					id: "534F3EBAD9378EF1"
+					item: { count: 1, id: "iceandfire:dragonegg_black" }
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1D34EBFF1D60EA85"]
+			id: "0961AD88179B18C4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3FC907D6EA3DAE91"
+				item: { count: 1, id: "iceandfire:ice_dragon_blood" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1D34EBFF1D60EA85"]
+			id: "1EA272CB25BF206C"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [{
+				id: "70B49ECD45A64864"
+				item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1D34EBFF1D60EA85"]
+			id: "13006D610CC27C68"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.25d
+			tasks: [
+				{
+					id: "1309ADA19F4F17B9"
+					item: { count: 1, id: "iceandfire:dragonegg_blue" }
+					type: "item"
+				}
+				{
+					id: "046F8A4C82EA419C"
+					item: { count: 1, id: "iceandfire:dragonegg_white" }
+					type: "item"
+				}
+				{
+					id: "2DBB78A6362B98A3"
+					item: { count: 1, id: "iceandfire:dragonegg_sapphire" }
+					type: "item"
+				}
+				{
+					id: "2D0DC3477502E379"
+					item: { count: 1, id: "iceandfire:dragonegg_silver" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["71CBDE6F46E867ED"]
+			id: "650660906D7664C1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "116A6089A5DCFE3D"
+					item: { count: 1, id: "iceandfire:deathworm_chitin_yellow" }
+					type: "item"
+				}
+				{
+					id: "13958E63BFA7C03B"
+					item: { count: 1, id: "iceandfire:deathworm_chitin_white" }
+					type: "item"
+				}
+				{
+					id: "4070764BEAF11444"
+					item: { count: 1, id: "iceandfire:deathworm_chitin_red" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["71CBDE6F46E867ED"]
+			id: "2CCC53476B772751"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6CFBE0E2F3795655"
+					item: { count: 1, id: "iceandfire:deathworm_egg" }
+					type: "item"
+				}
+				{
+					id: "117898CB20829E5F"
+					item: { count: 1, id: "iceandfire:deathworm_egg_giant" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["71CBDE6F46E867ED"]
+			id: "0E90A52B08FC7E68"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1A76AF53F9A4B7CD"
+				item: { count: 1, id: "iceandfire:deathworm_tounge" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"650660906D7664C1"
+				"0E90A52B08FC7E68"
+			]
+			icon: {
+				id: "iceandfire:deathworm_gauntlet_yellow"
+			}
+			id: "0A6D670B4F9781B1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "464011398DDF965F"
+					item: { count: 1, id: "iceandfire:deathworm_gauntlet_yellow" }
+					type: "item"
+				}
+				{
+					id: "18611A99B98AF4CA"
+					item: { count: 1, id: "iceandfire:deathworm_gauntlet_white" }
+					type: "item"
+				}
+				{
+					id: "6C3E65ADD9CD1A0C"
+					item: { count: 1, id: "iceandfire:deathworm_gauntlet_red" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1F4036E773E1E9F1"]
+			id: "025901F2AD873757"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DC729C146BD6D9C"
+				item: { count: 1, id: "iceandfire:gorgon_head" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"1E07922289055F60"
+				"5DAF3876129A89A9"
+			]
+			id: "46059198877920C4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5A3F12393815BC64"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "iceandfire:dreadwood_planks_lock"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["46059198877920C4"]
+			icon: {
+				id: "iceandfire:dread_queen_staff"
+			}
+			id: "2FFDB418D3340352"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0857D5B86D261385"
+					item: { count: 1, id: "iceandfire:dread_queen_staff" }
+					type: "item"
+				}
+				{
+					id: "106EDCAF5C863585"
+					item: { count: 1, id: "iceandfire:dread_queen_sword" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["33AEA40FA5FE2CE3"]
+			id: "77CA69069CEFB85C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "45554369C0462279"
+				item: { count: 1, id: "iceandfire:sea_serpent_fang" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33AEA40FA5FE2CE3"]
+			id: "2A1F4B842B1E2BC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "655F2B936FB21B13"
+				item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33AEA40FA5FE2CE3"]
+			hide_dependency_lines: true
+			id: "58A54CEFDAD34F09"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "57C385AE64FAF929"
+				item: { count: 1, id: "iceandfire:seaserpent_skull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2A1F4B842B1E2BC9"
+				"77CA69069CEFB85C"
+				"33AEA40FA5FE2CE3"
+			]
+			id: "5E9A8A49C031C736"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "40EBA487606F18F8"
+				item: { count: 1, id: "iceandfire:tide_trident" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A6EEE7BAE1ACB81"]
+			id: "14F9E4CD19758F87"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4BF3EE0CF7102A01"
+				item: { count: 1, id: "iceandfire:ghost_ingot" }
+				type: "item"
+			}]
+			x: -32.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["14F9E4CD19758F87"]
+			id: "76E204D2A7D2811A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7F9DC90802D39ACE"
+				item: { count: 1, id: "iceandfire:ghost_sword" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["569303FE1B0810A0"]
+			id: "400234CC8ED2B1BD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "57FCC2243AFBB3BC"
+				item: { count: 1, id: "iceandfire:siren_tear" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"400234CC8ED2B1BD"
+				"5C55AEC3BFC5F1ED"
+				"569303FE1B0810A0"
+			]
+			id: "212D459A5C90D5B5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "45F3A548B5A23287"
+				item: { count: 1, id: "iceandfire:siren_flute" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"43A601DE6C882054"
+				"569303FE1B0810A0"
+				"3A6EEE7BAE1ACB81"
+			]
+			dependency_requirement: "one_completed"
+			id: "5C55AEC3BFC5F1ED"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "114B1E48353B115B"
+				item: { count: 1, id: "iceandfire:shiny_scales" }
+				type: "item"
+			}]
+			x: -28.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["43A601DE6C882054"]
+			id: "6958BE55BE855A43"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1787D4CAE2ACD1BB"
+				item: { count: 1, id: "iceandfire:hippocampus_fin" }
+				type: "item"
+			}]
+			x: -30.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6958BE55BE855A43"]
+			id: "4FC16528BDCDA273"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6E4E4B9132C79642"
+				item: { count: 1, id: "iceandfire:hippocampus_slapper" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6A73BFA1FD7B98A9"]
+			hide_dependency_lines: true
+			id: "7434CED99A7AED4C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0A968AF71015039E"
+				item: { count: 1, id: "iceandfire:troll_skull" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6A73BFA1FD7B98A9"]
+			icon: {
+				id: "iceandfire:troll_weapon_axe"
+			}
+			id: "5A0E6C0E9936C499"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "05F30732AE5D45BA"
+					item: { count: 1, id: "iceandfire:troll_weapon_axe" }
+					type: "item"
+				}
+				{
+					id: "05AA16C94ABDDBE1"
+					item: { count: 1, id: "iceandfire:troll_weapon_column" }
+					type: "item"
+				}
+				{
+					id: "358284F599CECF70"
+					item: { count: 1, id: "iceandfire:troll_weapon_column_forest" }
+					type: "item"
+				}
+				{
+					id: "377A730401F5F575"
+					item: { count: 1, id: "iceandfire:troll_weapon_column_frost" }
+					type: "item"
+				}
+				{
+					id: "339981BE6B754677"
+					item: { count: 1, id: "iceandfire:troll_weapon_hammer" }
+					type: "item"
+				}
+				{
+					id: "4FE6142632926B8D"
+					item: { count: 1, id: "iceandfire:troll_weapon_trunk" }
+					type: "item"
+				}
+				{
+					id: "5F90D186D9C5D086"
+					item: { count: 1, id: "iceandfire:troll_weapon_trunk_frost" }
+					type: "item"
+				}
+			]
+			x: -26.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["06E9305FCDABCD28"]
+			id: "6736C76B71256499"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7DA5E2F5EBC4DA02"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["46059198877920C4"]
+			id: "1E7A7D06ACE02244"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0BDB223D2E7CA061"
+				item: { count: 1, id: "iceandfire:dread_shard" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["17D9DB61D8A8DC98"]
+			id: "4AF5258EEB87544A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "49E82251AF1F79E4"
+				item: { count: 1, id: "iceandfire:fire_dragon_heart" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C9857F0DAD1E04E"]
+			id: "5425A4C3DA6A9FA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "74527E7F74B4C460"
+				item: { count: 1, id: "iceandfire:lightning_dragon_heart" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1D34EBFF1D60EA85"]
+			id: "47595C181772F96D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21E7409264AD9980"
+				item: { count: 1, id: "iceandfire:ice_dragon_heart" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			id: "32EA89B38D6BE059"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DEAE035CAF46F6C"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+}

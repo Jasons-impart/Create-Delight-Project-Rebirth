@@ -1,0 +1,4 @@
+#Feywild Client Config
+[client]
+	#Whether giant flowers should have particles
+	flower_particles = true

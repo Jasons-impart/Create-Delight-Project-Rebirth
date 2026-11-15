@@ -1,0 +1,2 @@
+// Compost colors for industrial_platform. You may add your own colors, change existing ones, or remove colors that aren't needed.
+fill_adjuster, #94a4be

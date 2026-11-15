@@ -1,0 +1,352 @@
+{
+	autofocus_id: "3D02EA3A30EE1933"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magnet_field"
+	group: "7A00000000000005"
+	icon: {
+		id: "alexscavesup:scarlet_magnet"
+	}
+	id: "4E5A1B3CF93FA385"
+	images: [ ]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "0BA848A4275438F0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4339EDAAB2E0D86F"
+				item: {
+					count: 1
+					id: "alexscavesup:heart_of_iron"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:magnetron"
+				id: "44FFD57A15076871"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "4B748035C627E9DF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "13EF8C72EF52CB59"
+				item: {
+					count: 1
+					id: "alexscavesup:telecore"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:teletor"
+				id: "100774A7F09A9E32"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "63270DD652001F56"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "28C43305427C9B52"
+				item: {
+					count: 1
+					id: "alexscavesup:heavyweight"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:boundroid"
+				id: "45E0C1C9420CC5E2"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "180CDA283387C562"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "086DAF232A89D02B"
+				item: {
+					count: 1
+					id: "alexscavesup:notor_gizmo"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:notor"
+				id: "3C0AF63AF41CB0D6"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["037862C796CCCB11"]
+			id: "2F7BA8CDC979CD77"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0B48526BBDDE9840"
+				item: {
+					count: 1
+					id: "alexscavesup:ferrouslime_ball"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscavesup:ferrouslime"
+				id: "7DB963E96B85E767"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D9DCFAF35EA9A37"]
+			id: "3ADE82155D21C08E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6E6EFEDF0322DE56"
+					item: { count: 1, id: "alexscavesup:quarry_smasher" }
+					type: "item"
+				}
+				{
+					id: "1D8F9A295649079A"
+					item: { count: 1, id: "alexscavesup:quarry" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7051FFB7E7405229"
+					item: { count: 1, id: "alexscavesup:magnetic_light" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "55819F6D302C7D1B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "03CE65D91C76E92A"
+				item: { count: 1, id: "alexscavesup:galena_gauntlet" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D9DCFAF35EA9A37"]
+			id: "248E6F06D046CD49"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "40DEB1D2E7895EC0"
+					item: { count: 1, id: "alexscavesup:hologram_projector" }
+					type: "item"
+				}
+				{
+					id: "48A8F812D4126166"
+					item: { count: 1, id: "alexscavesup:holocoder" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "39B8696FAAEB50BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4DA0715CA89F240D"
+				item: { count: 1, id: "alexscavesup:resistor_shield" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "4A50B0E44E0B4734"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6AB931A3B0008E3A"
+				item: { count: 1, id: "alexscavesup:raw_scarlet_neodymium" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "1951731AF0CD32FF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "707266E6939C18E9"
+				item: { count: 1, id: "alexscavesup:galena" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4A50B0E44E0B4734"]
+			id: "2AB7E9D1015C8BC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "587C5CB978DCD020"
+				item: { count: 1, id: "alexscavesup:scarlet_neodymium_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B748035C627E9DF"]
+			id: "6345A669963AC5F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "227573945C65643D"
+				item: { count: 1, id: "alexscavesup:tesla_bulb" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "037862C796CCCB11"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "22C32413FDC5B21A"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "434A05E6705701FE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7A1880899E0D89C1"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["434A05E6705701FE"]
+			id: "5AA2E471FBF94A7D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66B496E68E9DC39E"
+				item: { count: 1, id: "alexscavesup:raw_azure_neodymium" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5AA2E471FBF94A7D"]
+			id: "6841073A1C1A2CFA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "49058318095424DD"
+				item: { count: 1, id: "alexscavesup:azure_neodymium_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "2214DB76B8B59112"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "43871935AB42F251"
+				item: { count: 1, id: "alexscavesup:seeking_arrow" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D02EA3A30EE1933"]
+			id: "3D9DCFAF35EA9A37"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2D9EBB4105E9D7EB"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"089E81F7DCA47A98"
+				"287CEBB5775C8F96"
+			]
+			id: "3D02EA3A30EE1933"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7D179E43DEDC0DAF"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.5d
+			tasks: [{
+				biome: "alexscavesup:magnetic_caves"
+				id: "0DF24A26AE7DB999"
+				type: "biome"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"119E0BF4CFAA0B5F"
+				"25377BD23842CC96"
+			]
+			id: "287CEBB5775C8F96"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				advancement: "northstar:one_small_step"
+				criterion: ""
+				id: "2BA773A47A017409"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+	]
+}

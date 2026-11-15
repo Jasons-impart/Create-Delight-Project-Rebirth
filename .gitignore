@@ -65,6 +65,9 @@
 !/roots/**
 !/scripts/
 !/scripts/**
+# Downstream port snapshots (each port lives in its own subdirectory).
+!/ports/
+!/ports/**
 
 # Explicit runtime exclusions inside allowed directories.
 docs/generated/

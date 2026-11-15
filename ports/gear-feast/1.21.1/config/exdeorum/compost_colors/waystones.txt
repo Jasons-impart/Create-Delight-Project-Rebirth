@@ -1,0 +1,11 @@
+// Compost colors for waystones. You may add your own colors, change existing ones, or remove colors that aren't needed.
+attuned_shard, #78048c
+blank_scroll, #977a47
+bound_scroll, #8e6f4a
+crumbling_attuned_shard, #640075
+deepslate_shard, #58585b
+dormant_shard, #8c8c8c
+return_scroll, #937343
+warp_dust, #e432ff
+warp_scroll, #8a7848
+warp_stone, #9844d6

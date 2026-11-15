@@ -1,0 +1,211 @@
+{
+  "spawnInfo": {
+    "entities": [],
+    "whitelist": false
+  },
+  "showCharts": true,
+  "defaultBlockLootFunctions": [
+    "minecraft:explosion_decay"
+  ],
+  "ignoredPredicateConditions": [
+    "minecraft:random_chance",
+    "minecraft:random_chance_with_enchanted_bonus",
+    "minecraft:table_bonus",
+    "minecraft:survives_explosion"
+  ],
+  "entityLootTables": {},
+  "tooltipColors": {
+    "branch": "dark_gray",
+    "secondary": "gray",
+    "levels": [
+      "green",
+      "yellow",
+      "light_purple",
+      "blue",
+      "red",
+      "gold"
+    ],
+    "text": "gold",
+    "value": "aqua",
+    "error": "red"
+  },
+  "hideDefaultBlockLoot": true,
+  "showUnboundedGlobalLootModifiers": false,
+  "showEntitiesWithoutLoot": false,
+  "defaultBlockLootConditions": [
+    "minecraft:survives_explosion"
+  ],
+  "tradeCategories": [
+    {
+      "pattern": [
+        ".*"
+      ],
+      "key": "ali:trade_loot",
+      "icon": "minecraft:emerald_block"
+    }
+  ],
+  "disabledEntities": [],
+  "logMoreStatistics": false,
+  "showInGameNames": true,
+  "configVersion": 2,
+  "blockCategories": [
+    {
+      "blocks": [
+        "#minecraft:crops"
+      ],
+      "key": "ali:plant_loot",
+      "icon": "minecraft:diamond_hoe"
+    },
+    {
+      "blocks": [],
+      "key": "ali:block_loot",
+      "icon": "minecraft:diamond_pickaxe"
+    }
+  ],
+  "entityCategories": [
+    {
+      "entityTypes": [],
+      "key": "ali:entity_loot",
+      "icon": "minecraft:skeleton_skull"
+    }
+  ],
+  "gameplayCategories": [
+    {
+      "pattern": [
+        "^.*:chests/[a-z_]*$",
+        "^.*:chests/village/[a-z_]*$"
+      ],
+      "key": "ali:chest_loot",
+      "icon": "minecraft:chest"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:trial_spawner"
+        },
+        {
+          "item": "minecraft:trial_key"
+        },
+        {
+          "item": "minecraft:ominous_trial_key"
+        }
+      ],
+      "pattern": [
+        "^.*:chests/trial_chambers/.*$",
+        "^.*:pots/trial_chambers/.*$",
+        "^.*:dispensers/trial_chambers/.*$",
+        "^.*:spawners/ominous/trial_chamber/.*$",
+        "^.*:spawners/trial_chamber/.*$"
+      ],
+      "key": "ali:trial_chambers",
+      "icon": "minecraft:trial_spawner"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "pattern": [
+        "^.*:gameplay/fishing.*$"
+      ],
+      "key": "ali:fishing_loot",
+      "icon": "minecraft:fishing_rod"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:brush"
+        },
+        {
+          "item": "minecraft:suspicious_sand"
+        },
+        {
+          "item": "minecraft:suspicious_gravel"
+        }
+      ],
+      "pattern": [
+        "^.*:archaeology/.*$"
+      ],
+      "key": "ali:archaeology_loot",
+      "icon": "minecraft:decorated_pot"
+    },
+    {
+      "pattern": [
+        "^.*:gameplay/hero_of_the_village/.*$"
+      ],
+      "key": "ali:hero_loot",
+      "icon": "minecraft:emerald"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:cat_spawn_egg"
+        }
+      ],
+      "pattern": [
+        "^.*:gameplay/cat_morning_gift.*$"
+      ],
+      "key": "ali:cat_morning_gift",
+      "icon": "minecraft:phantom_membrane"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:piglin_spawn_egg"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        }
+      ],
+      "pattern": [
+        "^.*:gameplay/piglin_bartering.*$"
+      ],
+      "key": "ali:piglin_bartering",
+      "icon": "minecraft:gold_ingot"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:sniffer_spawn_egg"
+        }
+      ],
+      "pattern": [
+        "^.*:gameplay/sniffer_digging.*$"
+      ],
+      "key": "ali:sniffer_digging",
+      "icon": "minecraft:sniffer_egg"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:panda_spawn_egg"
+        }
+      ],
+      "pattern": [
+        "^.*:gameplay/panda_sneeze.*$"
+      ],
+      "key": "ali:panda_sneeze",
+      "icon": "minecraft:bamboo"
+    },
+    {
+      "catalysts": [
+        {
+          "item": "minecraft:shears"
+        }
+      ],
+      "pattern": [
+        "^.*:shearing/.*$"
+      ],
+      "key": "ali:shearing",
+      "icon": "minecraft:shears"
+    },
+    {
+      "pattern": [
+        ".*"
+      ],
+      "key": "ali:gameplay_loot",
+      "icon": "minecraft:compass"
+    }
+  ]
+}

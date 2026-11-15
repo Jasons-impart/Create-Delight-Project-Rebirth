@@ -1,0 +1,298 @@
+[RopeLatch]
+	#Attached tailhook pitch damping in the 70-30 degree range (0-0.99). Higher values slow the response.
+	# Default: 0.5
+	# Range: 0.0 ~ 0.99
+	UpperSwingDamping = 0.5
+	#Attached tailhook pitch damping in the 30-0 degree range (0-0.99). Higher values slow the response; deployment is unaffected.
+	# Default: 0.9
+	# Range: 0.0 ~ 0.99
+	SwingDamping = 0.9
+	#Scan once every N ticks while armed. Shared per-tick work budgets still apply.
+	# Default: 10
+	# Range: 1 ~ 60
+	ScanIntervalTicks = 10
+	#Search window in seconds after a redstone trigger. Applies to the next trigger.
+	# Default: 30
+	# Range: 5 ~ 60
+	SearchDurationSeconds = 30
+	#Default mode for newly placed rope hooks: true for sliding, false for locked. Each block's empty-hand mode dial can override this.
+	SlidingEnabled = true
+	#Log loaded latch state and sliding measurements every five seconds for troubleshooting. Disabled by default.
+	DebugSliding = false
+	#Stretch difference dead zone. Lower values respond to smaller differences.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	Friction = 0.01
+	#Geometric tautness difference dead zone. Lower values are more sensitive.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	GeometricFriction = 0.2
+	#Length-transfer response to stretch and geometric differences.
+	# Default: 100.0
+	# Range: 0.0 ~ 10000.0
+	ResponseGain = 100.0
+	#Maximum length transfer in blocks per second. High values may cause solver jolts.
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	MaxSpeed = 5.0
+	#Approximate downhill acceleration for a moving latch in blocks per second squared.
+	# Default: 7.0
+	# Range: 0.0 ~ 100.0
+	GravityAcceleration = 7.0
+	#Gravity velocity retained each tick. Closer to one means less damping.
+	# Default: 0.98
+	# Range: 0.0 ~ 1.0
+	GravityVelocityRetention = 0.98
+	#Endpoint distance divided by rest length required to treat a rope as taut.
+	# Default: 0.97
+	# Range: 0.5 ~ 1.0
+	TautRatio = 0.97
+
+[ConeNozzle]
+	#Maximum effective spray distance of the cone firefighting nozzle in blocks (1-512). Clamped to the physical limit imposed by projectile speed and friction.
+	# Default: 50
+	# Range: 1 ~ 512
+	"MaxDistance(blocks)" = 50
+	#Muzzle velocity of cone nozzle spray droplets in blocks per tick (0.5-10.0). Higher = farther reach and flatter trajectory.
+	# Default: 1.8
+	# Range: 0.5 ~ 10.0
+	ProjectileSpeed = 1.8
+	#Downward acceleration per tick for cone nozzle droplets (0.0-0.1). Default 0.015 matches vanilla projectile gravity.
+	# Default: 0.015
+	# Range: 0.0 ~ 0.1
+	ProjectileGravity = 0.015
+	#Air friction retention per tick for cone nozzle droplets (0.8-0.999). Velocity is multiplied by this value each tick. Higher = droplets carry farther.
+	# Default: 0.97
+	# Range: 0.8 ~ 0.999
+	ProjectileFriction = 0.97
+
+[FlatNozzle]
+	#Maximum effective spray distance of the flat spray nozzle in blocks (1-512). Clamped to the physical limit imposed by projectile speed and friction.
+	# Default: 35
+	# Range: 1 ~ 512
+	"MaxDistance(blocks)" = 35
+	#Muzzle velocity of flat nozzle spray droplets in blocks per tick (0.5-10.0).
+	# Default: 1.5
+	# Range: 0.5 ~ 10.0
+	ProjectileSpeed = 1.5
+	#Downward acceleration per tick for flat nozzle droplets (0.0-0.1).
+	# Default: 0.0125
+	# Range: 0.0 ~ 0.1
+	ProjectileGravity = 0.0125
+	#Air friction retention per tick for flat nozzle droplets (0.8-0.999).
+	# Default: 0.97
+	# Range: 0.8 ~ 0.999
+	ProjectileFriction = 0.97
+
+[BucketController]
+	#Default spray height, initial scroll value when the block is placed (1-256). Players can adjust this on the block itself via the value board
+	# Default: 64
+	# Range: 1 ~ 256
+	"DefaultHeight(blocks)" = 64
+	#Maximum spray height the player can set on the value board (1-256). Caps the scroll value, not the board UI range
+	# Default: 256
+	# Range: 1 ~ 256
+	"MaxHeight(blocks)" = 256
+	#Extinguishing cylinder radius of the bucket controller (1-128)
+	# Default: 16
+	# Range: 1 ~ 128
+	"Radius(blocks)" = 16
+	#Water consumption rate of the bucket controller (1-10000)
+	# Default: 200
+	# Range: 1 ~ 10000
+	"WaterConsumption(mB/s)" = 200
+	#Ticks between each fire scan of the bucket controller (1-40). Lower = faster extinguishing but more CPU load
+	# Default: 5
+	# Range: 1 ~ 40
+	"ScanInterval(tick)" = 5
+	#Fluid transfer rate (mB/tick) when the bucket controller pulls directly from an adjacent fluid tank or vessel (1-10000)
+	# Default: 500
+	# Range: 1 ~ 10000
+	"DirectTransferSpeed(mB/tick)" = 500
+
+[WaterIntake]
+	#Radius the water intake scans for infinite water sources (1-64)
+	# Default: 16
+	# Range: 1 ~ 64
+	"ScanRange(blocks)" = 16
+	#Ticks between each water source scan of the water intake (1-200). Higher = less CPU load
+	# Default: 40
+	# Range: 1 ~ 200
+	"ScanInterval(tick)" = 40
+
+[WirelessTransfer]
+	#Maximum distance between water intake and bound bucket controller (1-256)
+	# Default: 32
+	# Range: 1 ~ 256
+	"MaxBindDistance(blocks)" = 32
+	#Wireless transfer rate between water intake and bound bucket controller (1-64)
+	# Default: 5
+	# Range: 1 ~ 64
+	"TransferSpeed(B/tick)" = 5
+
+[FireExtinguish]
+	#Radius (in blocks) around an extinguished fire to clear TFC Wildfire smolder heat (0-8). Larger values prevent re-ignition more aggressively
+	# Default: 2
+	# Range: 0 ~ 8
+	"HeatClearRadius(blocks)" = 2
+	#Ticks between full-area fire sweeps (1-6000). The sweep ignores obstacles to catch all fires in range. Lower = faster catch but more CPU load
+	# Default: 100
+	# Range: 1 ~ 6000
+	"FullSweepInterval(ticks)" = 100
+
+[FireHose]
+	#Maximum distance (blocks) between fire hose endpoints before snapping (1-32)
+	# Default: 16
+	# Range: 1 ~ 32
+	hoseMaxLength = 16
+	#Snap distance multiplier. Actual snap distance = maxLength * snapMultiplier (1.0-4.0)
+	# Default: 1.5
+	# Range: 1.0 ~ 4.0
+	hoseSnapMultiplier = 1.5
+	#Shared internal fluid buffer of one fire hose pair (100-64000 mB). Larger buffers tolerate high-flow custom pumps and long hose chains better.
+	# Default: 1000
+	# Range: 100 ~ 64000
+	hoseTankCapacity = 1000
+	#Easy Connector cooldown after connecting or disconnecting, in seconds (0-30). Set to 0 to disable the cooldown.
+	# Default: 5
+	# Range: 0 ~ 30
+	connectorCooldownSeconds = 5
+
+[FireHosePressure]
+	#Ticks between fire hose source scans (1-100). Lower updates pump direction and adjacent hose chains faster, but costs more CPU.
+	# Default: 5
+	# Range: 1 ~ 100
+	"pumpScanInterval(ticks)" = 5
+	#Ticks between remote output topology refreshes (1-200). Lower reacts faster to pipe edits far from the hose output, but costs more CPU.
+	# Default: 20
+	# Range: 1 ~ 200
+	"topologyRefreshInterval(ticks)" = 20
+	#Smoothing factor for observed hose input flow (0.01-1.0). Higher reacts faster; lower is more stable.
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	inputSmoothing = 0.15
+	#Pressure inferred from generic external fluid insertion. pressure = mB/t * this value. Create pump baseline: 128 mB/t -> 256 pressure, so default is 2.0.
+	# Default: 2.0
+	# Range: 0.1 ~ 64.0
+	externalInputPressureScale = 2.0
+	#Compatibility limiter estimate for how much pressure the observed input flow can sustain. Higher is more permissive for custom pumps; lower limits output sooner when the buffer runs dry.
+	# Default: 4.0
+	# Range: 0.1 ~ 64.0
+	observedFlowPressureScale = 4.0
+	#Maximum pressure recovered per tick after the hose has enough input again (1-4096).
+	# Default: 32.0
+	# Range: 1.0 ~ 4096.0
+	pressureRecoveryPerTick = 32.0
+	#Maximum pressure dropped per tick when the hose detects sustained under-supply (1-4096).
+	# Default: 48.0
+	# Range: 1.0 ~ 4096.0
+	pressureDropPerTick = 48.0
+	#Consecutive low-buffer ticks before dynamic output limiting starts (1-200). Higher tolerates brief bursts; lower protects small buffers sooner.
+	# Default: 10
+	# Range: 1 ~ 200
+	lowBufferTicksToLimit = 10
+	#Ticks to remember generic external fluid insertion as a hose source after the last fill call (1-100).
+	# Default: 10
+	# Range: 1 ~ 100
+	externalInputMemoryTicks = 10
+	#Output pipe propagation range when a generic non-Create fluid source inserts into a hose and the opposite end drives a Create pipe network (4-64).
+	# Default: 16
+	# Range: 4 ~ 64
+	"externalInputOutputRange(blocks)" = 16
+
+[HighPressurePump]
+	#Amplification multiplier relative to Create's mechanical pump. This scales both pressure and pipe propagation range. Default 2.0 means 2x pressure and 2x Create pump range.
+	# Default: 2.0
+	# Range: 1.0 ~ 16.0
+	amplificationMultiplier = 2.0
+
+[HydraulicRam]
+	#Fraction of the hydraulic ram's charged buffer that is pumped out. The remaining fluid is consumed by the water hammer cycle.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	outputRatio = 0.5
+
+[PipelineTurbine]
+	#Maximum rotation speed produced by the pipeline turbine after pressure conversion. Default 256; raise this if custom pumps provide higher pressure.
+	# Default: 256
+	# Range: > 64
+	maxOutputSpeed = 256
+	#Fraction of the detected pressure source stress cost recovered by the pipeline turbine (0.0-1.0). Default 0.75 prevents stress-positive loops.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	stressEfficiency = 0.75
+	#Maximum pipe distance the pipeline turbine scans to identify the pressure source for stress recovery (4-256).
+	# Default: 64
+	# Range: 4 ~ 256
+	"sourceScanRange(blocks)" = 64
+
+[NozzleFireChance]
+	#Probability (0-100%) per air block per tick that lava/ignited spray places fire (wide cone only; projectile core path is 100%)
+	# Default: 100
+	# Range: 0 ~ 100
+	NozzleFireChance = 100
+
+[NozzleSpray]
+	#Number of projectile entities spawned per tick on the server for game logic (1-10). Lower TPS cost. Visual density comes from client particles
+	# Default: 1
+	# Range: 1 ~ 10
+	serverProjectilesPerTick = 1
+	#Soft target for active spray projectiles simulated by all spray devices on the server (64-4096). Above this value, nozzles keep working but create new projectiles more slowly.
+	# Default: 768
+	# Range: 64 ~ 4096
+	serverMaxActiveSprayProjectiles = 768
+	#Absolute cap for active spray projectiles simulated by all spray devices on the server (64-8192). This prevents runaway load if many nozzles are stacked.
+	# Default: 1536
+	# Range: 64 ~ 8192
+	serverHardMaxActiveSprayProjectiles = 1536
+	#Ticks between auxiliary spray processing passes such as depot recipes and item processing (1-100). Fire extinguishing is not delayed by this value.
+	# Default: 5
+	# Range: 1 ~ 100
+	sprayAuxiliaryInterval = 5
+	#Ticks between auxiliary processing passes projected into Sable sub-structures (1-200). Higher values reduce TPS load when many moving sub-structures are sprayed.
+	# Default: 10
+	# Range: 1 ~ 200
+	spraySableProcessingInterval = 10
+	#Maximum depot/block-entity recipe candidates processed by one spray source per auxiliary pass (0-512). 0 disables depot recipe processing from spray.
+	# Default: 16
+	# Range: 0 ~ 512
+	sprayRecipeProcessingBudget = 16
+	#Approximate active spray sources before auxiliary processing is automatically slowed down (1-256). Use this to tune large server builds.
+	# Default: 20
+	# Range: 1 ~ 256
+	sprayMaxActiveNozzlesBeforeDegrade = 20
+	#Fraction of projectile lifetime (0.0-1.0) where the stream begins breaking into mist. 0.6 = mist starts at 60% of max range
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	mistTransitionStart = 0.6
+	#Maximum random spread radius (blocks) of mist particles around the projectile (0.5-8.0)
+	# Default: 2.0
+	# Range: 0.5 ~ 8.0
+	mistSpreadRadius = 2.0
+	#Ticks for the spray range to build up from 0 to full distance when the nozzle starts spraying (1-60). Uses ease-in quadratic curve for natural pressure buildup feel
+	# Default: 20
+	# Range: 1 ~ 60
+	BuildupTicks = 20
+	#Whether spray nozzles produce recoil thrust on the contraption. True = nozzles push the contraption backward when spraying
+	nozzleThrustEnabled = true
+	#Global recoil thrust multiplier for nozzle spray (0.0-500.0). At 10.0, a flat nozzle at full range with water produces ~10N of thrust
+	# Default: 10.0
+	# Range: 0.0 ~ 500.0
+	nozzleThrustMultiplier = 10.0
+	#Global locked nozzle fluid rules. Players can view these rules but cannot edit them with the configurator.
+	#Format: one JSON object per list entry.
+	#Example: {"fluid":"modid:fluid","colors":[{"rgb":"#4D8CFF","weight":60},{"rgb":"#8FCBFF","weight":25},{"rgb":"#245EBF","weight":15}],"flammable":false,"extinguishing":true,"igniting":false,"effects":["minecraft:speed"],"fan_processing":"create:splashing"}
+	#Supported fields: fluid, colors[3].rgb, colors[3].weight, flammable, extinguishing, igniting, effects, fan_processing.
+	globalFluidRules = []
+
+[CDGCompat]
+	#When Create Diesel Generators is installed, allow flammable fuel spray to be ignited by fire sources (fire blocks, lava, campfires, CDG lighters, CDG chemical projectiles). Ignited spray places fire blocks (same as LAVA) and particle effect changes to match CDG's ignited spray
+	cdgIgnitionEnabled = true
+	#Maximum distance (blocks) between projectiles for flame propagation along the spray stream. Ignited projectiles ignite nearby unignited flammable projectiles within this radius
+	# Default: 3.0
+	# Range: 0.5 ~ 16.0
+	flamePropagationRadius = 3.0
+
+[FirefighterHandbook]
+	#Whether the server keeps authoritative firefighter extinguish records for the Firefighter Handbook.
+	extinguishRecordsEnabled = true

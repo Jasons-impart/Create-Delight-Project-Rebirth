@@ -1,0 +1,124 @@
+[wind]
+	#Wind strength with no weather and no gust, before terrain and altitude.
+	#This is the baseline every other wind figure is measured against.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	baseWind = 1.0
+	#How far gusts swing above and below the baseline, as a fraction of it.
+	#0 = perfectly steady wind, 1 = gusts from nothing to double strength.
+	# Default: 0.25
+	# Range: 0.0 ~ 2.0
+	gustAmplitude = 0.25
+	#Extra wind while it rains, as a fraction of the baseline.
+	# Default: 0.8
+	# Range: 0.0 ~ 5.0
+	rainBoost = 0.8
+	#Extra wind during a thunderstorm, as a fraction of the baseline.
+	# Default: 1.6
+	# Range: 0.0 ~ 5.0
+	thunderBoost = 1.6
+	#How much terrain upwind can steal from the wind.
+	#0 = terrain never blocks wind, 1 = a cliff can cut it entirely.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	terrainShelter = 0.5
+
+[sails]
+	#Hull speed coefficient. A fully rigged ship running before the wind
+	#cruises at this times the square root of its length, in m/s.
+	#4.0 gives about 8 m/s for a 4-block raft and 14 m/s (the cap) for a 13-block ship.
+	# Default: 4.0
+	# Range: 0.1 ~ 10.0
+	sailHullSpeed = 4.0
+	#Speed no sailing ship can go past, however big it is, in m/s.
+	# Default: 14.0
+	# Range: 0.5 ~ 30.0
+	sailMaxSpeed = 14.0
+	#Share of its speed a ship keeps on a heading none of its sails can use,
+	#such as square sails beating upwind or any sail straight into the wind.
+	#0 = dead in the water, 1 = heading and rig no longer matter.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	sailUpwindEfficiency = 0.1
+	#How much canvas a ship needs for its size to reach full speed.
+	#Higher means big ships need more sails before they get going.
+	# Default: 0.2
+	# Range: 0.05 ~ 5.0
+	sailCanvasNeeded = 0.2
+	#Seconds a small ship takes to pick up speed. Big ships take up to twice as long.
+	# Default: 5.0
+	# Range: 0.5 ~ 30.0
+	sailResponseTime = 5.0
+	#Ticks between two sweeps looking for sails on a ship.
+	#Higher is cheaper but slower to notice a sail being added or removed.
+	# Default: 20
+	# Range: 1 ~ 200
+	sailRescanInterval = 20
+
+[hull]
+	#How hard a floating boat swings back upright, like a weighted keel, in rad/s² at a full side tilt.
+	#Keeps tall masts from tipping narrow hulls over. 0 leaves only the buoyancy of the hold.
+	# Default: 4.0
+	# Range: 0.0 ~ 20.0
+	selfRighting = 4.0
+
+[boatEngine]
+	#Boat engine thrust at full throttle.
+	# Default: 36.0
+	# Range: 0.0 ~ 200.0
+	enginePower = 36.0
+	#Share of that power available in reverse.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	engineReversePower = 0.5
+
+[oars]
+	#Push delivered by one oar stroke.
+	# Default: 130.0
+	# Range: 0.0 ~ 1000.0
+	oarStrokePower = 130.0
+	#Speed past which rowing stops helping, in blocks per tick.
+	# Default: 1.1
+	# Range: 0.0 ~ 10.0
+	oarMaxSpeed = 1.1
+
+[seaglide]
+	#Push the seaglide adds each tick while running.
+	# Default: 0.045
+	# Range: 0.0 ~ 1.0
+	seaglidePower = 0.045
+	#Top speed under the seaglide, in blocks per tick.
+	#0.45 is about 9 blocks per second.
+	# Default: 0.45
+	# Range: 0.0 ~ 5.0
+	seaglideMaxSpeed = 0.45
+	#Speed the seaglide pulls you to while gliding with an elytra, in blocks per tick.
+	#0.425 is about 8.5 blocks per second, a quarter of the speed of a firework rocket (about 1.7).
+	# Default: 0.425
+	# Range: 0.0 ~ 5.0
+	seaglideFlightSpeed = 0.425
+	#Run the seaglide on the air of a worn Create backtank instead of the player's hunger.
+	#It stops when every backtank is empty.
+	seaglideUsesBacktank = false
+	#Backtank air used per second of running when seaglideUsesBacktank is on.
+	#Gliding with an elytra counts double. A plain copper backtank holds 900.
+	# Default: 1
+	# Range: 1 ~ 100
+	seaglideAirPerSecond = 1
+
+[buoy]
+	#Fastest a buoy climbs back to the surface, in blocks per second.
+	# Default: 9.0
+	# Range: 0.0 ~ 100.0
+	buoyMaxRiseSpeed = 9.0
+	#Fastest a buoy is allowed to be dragged under, in blocks per second.
+	# Default: 6.0
+	# Range: 0.0 ~ 100.0
+	buoyMaxSinkSpeed = 6.0
+
+[anchor]
+	#Mass a dropped anchor pins the ship with once it bites the sea floor.
+	#Raise it if big ships still drift at anchor.
+	# Default: 2000.0
+	# Range: 0.0 ~ 100000.0
+	anchorHoldingMass = 2000.0

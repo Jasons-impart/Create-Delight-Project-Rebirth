@@ -1,0 +1,134 @@
+[hullStrength]
+	#CLASSIC: each block holds down to its own maxWaterDepth, whatever the shape of the hull.
+	#HYBRID: that depth is scaled by the shape of the hull. Wide flat walls hold less,
+	#small panels, thick walls, ribs and rounded hulls hold more.
+	#REALISTIC: a structural solver computes how much every block of the hull really bends under the water,
+	#from its material (stiffness, strength, wood grain) and the shape of the whole ship.
+	#Allowed Values: CLASSIC, HYBRID, REALISTIC
+	pressureModel = "HYBRID"
+	#Cap applied to maxWaterDepth of all non-create_submarine blocks.
+	#Per-block values are stored in config/submarine_hull.json.
+	# Default: 400
+	# Range: 1 ~ 10000
+	globalMaxDepthCap = 400
+	#Multiplier on every block's effective maxWaterDepth at runtime.
+	#Lower = more fragile hulls, higher = tougher hulls.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	maxDepthMultiplier = 1.0
+	#Multiplier on every block's implosionChance at runtime.
+	#Lower = slower cracking, higher = faster cracking.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	implosionChanceMultiplier = 1.0
+	#HYBRID only: free width, in blocks, of a single-thickness wall that keeps exactly its block's maxWaterDepth.
+	#Wider panels hold less, narrower or thicker ones hold more.
+	# Default: 7
+	# Range: 2 ~ 64
+	shapeReferenceSpan = 7
+	#HYBRID only: lowest multiplier the shape of the hull can put on a block's maxWaterDepth.
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	shapeFactorMin = 0.5
+	#HYBRID only: highest multiplier the shape of the hull can put on a block's maxWaterDepth.
+	# Default: 2.0
+	# Range: 1.0 ~ 5.0
+	shapeFactorMax = 2.0
+	#HYBRID only: ships with more solid blocks than this skip the shape analysis and use CLASSIC depths.
+	#WARNING: the analysis of very large ships takes more memory and time.
+	# Default: 200000
+	# Range: 1000 ~ 10000000
+	shapeMaxBlocks = 200000
+	#REALISTIC only: how thick, in metres, the steel or wood plate a single block stands for.
+	#Depths grow with the square of it: 1.0 is raw physics for walls one metre thick,
+	#0.46 suits an Abyss around 700 blocks deep.
+	# Default: 0.46
+	# Range: 0.05 ~ 3.0
+	realisticWallThickness = 0.46
+	#REALISTIC only: ships with more solid blocks than this fall back to CLASSIC depths.
+	#The solver runs on its own threads; bigger ships take longer to refresh after an edit.
+	# Default: 30000
+	# Range: 500 ~ 1000000
+	realisticMaxBlocks = 30000
+	#Density of each liquid compared to water, as "fluid=density" or "#tag=density".
+	#A denser liquid presses harder: at the same depth, lava (3.0) cracks a hull three times sooner than water.
+	#Liquids not listed count as water (1.0).
+	liquidDensities = ["#minecraft:lava=3.0"]
+	#Flammable hull blocks (wood, wool...) touching lava catch fire.
+	lavaBurnsHull = true
+	#Deep water hurts and finally crushes players swimming past their depth limit
+	#(120 m, or 280 m in the full Copper Diving Suit).
+	diverPressure = true
+
+[gameplay]
+	#Disable all hull implosion damage from pressure.
+	disableImplosion = false
+	#Depth below the surface, in blocks, past which a hull block giving way to the pressure implodes the whole submarine.
+	#Above it, the block only bursts and the room floods through the hole.
+	#Past it, a submarine more than 30 blocks beyond its hull limit also seizes its pump controllers and shakes its crew.
+	# Default: 120
+	# Range: 1 ~ 2048
+	implosionDepth = 120
+	#Maximum size, in blocks, of a creation that oxygen diffusers can scan and fill with breathable air.
+	#Raise this if air pockets stop working on very large ships.
+	#WARNING: large values make the air scan use more memory and take longer to finish.
+	# Default: 500000
+	# Range: 1000 ~ 10000000
+	oxygenMaxFillBlocks = 500000
+
+[mechanics]
+	#Multiplier on the vertical force ballast tanks apply.
+	#Lower = slower dive/ascend, higher = snappier.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	ballastForceMultiplier = 1.0
+	#Submarine mass each ballast tank can drive up or down (Sable mass units, roughly 1 per block).
+	#Total lift scales with the number of tanks: a heavy submarine needs more of them.
+	# Default: 75.0
+	# Range: 1.0 ~ 100000.0
+	ballastLiftPerTank = 75.0
+	#Mass each floater can push toward the surface (Sable mass units, roughly 1 per block).
+	#Total lift scales with the number of floaters.
+	# Default: 25.0
+	# Range: 1.0 ~ 100000.0
+	floaterLift = 25.0
+	#Maximum vertical speed (blocks per tick) ballast tanks drive the submarine at when diving or ascending.
+	#Higher = faster dive and climb. The old fixed value was 2.0.
+	# Default: 2.0
+	# Range: 0.1 ~ 20.0
+	ballastVerticalSpeed = 2.0
+	#Multiplier on the ballast vent fill/drain transfer rate.
+	#Lower = slower filling/emptying, higher = faster.
+	# Default: 2.0
+	# Range: 0.1 ~ 20.0
+	ballastTransferRateMultiplier = 2.0
+	#Multiplier on water thruster thrust output.
+	#Lower = weaker propulsion, higher = stronger.
+	# Default: 6.0
+	# Range: 0.1 ~ 50.0
+	waterThrusterPowerMultiplier = 6.0
+	#Multiplier on Submarine Propeller thrust and airflow output.
+	#Lower = weaker propulsion, higher = stronger.
+	# Default: 3.0
+	# Range: 0.1 ~ 50.0
+	submarinePropellerPowerMultiplier = 3.0
+	#Maximum sliding speed of a pulley along a steel cable (blocks/s).
+	#Above this speed the pulley starts overheating.
+	# Default: 24.0
+	# Range: 1.0 ~ 200.0
+	pulleyMaxSlideSpeed = 24.0
+	#Maximum length of a steel cable in blocks (distance between its two attachment points).
+	#Very long cables can cause server lag; lower this on servers.
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	steelCableMaxLength = 1000
+	#Industrial Alarms keep their lamp and light on while they sound instead of flashing.
+	#Turn this on if a photosensitive or epileptic player is on the server. Applies to every player.
+	alarmSteadyLight = false
+
+[experimental]
+	#Experimental: hide the ocean surface seen inside floating boats (sub-levels without an oxygen system).
+	enableBoatWaterCulling = true
+	#Experimental: a breach fills the ship block by block with real water that weighs it down.
+	#When off, a breach below the waterline lets the sea into the whole room at once.
+	progressiveFlooding = false

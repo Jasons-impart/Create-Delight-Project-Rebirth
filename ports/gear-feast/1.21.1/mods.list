@@ -1,0 +1,415 @@
+# 齿轮盛宴 1.21.1 移植版 · mods 清单（只出清单，不含 jar）
+# 生成时间：2026-11-15（实例快照）　实测 jar 数：406
+# 来源判定顺序：① 自建标识 → ② 上游 CDPR packwiz 元数据（sha1/文件名命中）→ ③ Modrinth sha1 查询 → ④ 未确认
+# 列（TAB 分隔）：文件名 | modid | 版本 | 来源 | 判定依据
+# 说明：版本优先取 jar 内 neoforge.mods.toml，缺失时回退文件名；同一 jar 含多个 modId 时在 modid 列以 ; 分隔。
+#
+文件名	modid	版本	来源	判定依据
+[1.3support]trailandtales_delight-2.40.jar	trailandtales_delight	2.40	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1198527
+[3D 皮肤层] skinlayers3d-neoforge-1.11.4-mc1.21.1.jar	skinlayers3d	1.11.4	Modrinth	sha1 命中 modrinth:3dskinlayers（project-id zV5r3pPn）
+[AE2扩展] ExtendedAE-1.21-2.2.43-neoforge.jar	extendedae	1.21-2.2.43-neoforge	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[AE2无线终端] ae2wtlib-19.5.1.jar	ae2wtlib	19.5.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 459929
+[FTB 团队] ftb-teams-neoforge-2101.1.10.jar	ftbteams	2101.1.10	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[FTB任务] ftb-quests-neoforge-2101.1.38.jar	ftbquests	2101.1.38	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[JEI工作方块] JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar	justenoughprofessions	n/a	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[JEI群系信息查询] jei_biome-1.21.1-neoforge-1.11fix.jar	jei_biome	1.21.1-neoforge-1.11fix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[JEI物品管理器] jei-1.21.1-neoforge-19.70.0.469.jar	jei	19.70.0.469	Modrinth	sha1 命中 modrinth:jei（project-id u6dRKJwZ）
+[MC百科搜索] searchonmcmod-neoforge-1.21-1.21.8-0.1.0.jar	searchonmcmod	0.1.0	Modrinth	sha1 命中 modrinth:search-on-mcmod（project-id cPF7RWdR）
+[MEGA存储单元] megacells-4.11.0.jar	megacells	4.11.0	Modrinth	sha1 命中 modrinth:mega（project-id jjuIRIVr）
+[OMNI 存储元件] ae2omnicells-1.21.1-neoforge-1.1.6.jar	ae2omnicells	1.1.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1359517
+[RS 无限范围增幅卡] rsinfinitybooster-neoforge-2.0.0+mc1.21.1.jar	rsinfinitybooster	2.0.0	Modrinth	sha1 命中 modrinth:rsinfinitybooster（project-id Sjzdj2cy）
+[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.6.0.jar	xaerominimap	26.6.0	Modrinth	sha1 命中 modrinth:xaeros-minimap（project-id 1bokaNcj）
+[YUNG 的菜单调整] YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar	yungsmenutweaks	1.21.1-NeoForge-2.1.2	Modrinth	sha1 命中 modrinth:yungs-menu-tweaks（project-id Hcy2DFKF）
+[YUNG 的末地岛屿优化] YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar	betterendisland	1.21.1-NeoForge-3.1.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1015127
+[YUNG 的桥] YungsBridges-1.21.1-NeoForge-5.1.1.jar	yungsbridges	1.21.1-NeoForge-5.1.1	Modrinth	sha1 命中 modrinth:yungs-bridges（project-id Ht4BfYp6）
+[搬运] carryon-neoforge-1.21.1-2.2.6.13.jar	carryon	2.2.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 274259
+[崩溃助手] CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar	crash_assistant	1.11.12	Modrinth	sha1 命中 modrinth:crash-assistant（project-id ix1qq8Ux）
+[冰山] Iceberg-1.21.1-neoforge-1.3.2.jar	iceberg	1.3.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 520110
+[超越维度] beyonddimensions-1.21.1-neoforge-0.7.30.jar	beyonddimensions	0.7.30	Modrinth	sha1 命中 modrinth:beyonddimensions（project-id 6zGxpbt7）
+[潮汐小镇] tidal-towns-2.0.jar	mr_tidal_towns	n/a	Modrinth	sha1 命中 modrinth:tidal-towns（project-id EEIwvQVo）
+[车万女仆] touhoulittlemaid-1.5.3-neoforge+mc1.21.1.jar	touhou_little_maid	1.5.3-neoforge+mc1.21.1	Modrinth	sha1 命中 modrinth:touhou-little-maid（project-id R0bDWFAW）
+[沉浸工程] ImmersiveEngineering-1.21.1-12.4.2-194.jar	immersiveengineering	12.4.2-194	Modrinth	sha1 命中 modrinth:immersiveengineering（project-id tIm2nV03）
+[传奇怪物] legendary_monsters-2.2.4 MC 1.21.1.jar	legendary_monsters	1.21.1	Modrinth	sha1 命中 modrinth:legendary-monsters（project-id 9d9Bkqva）
+[窗帘] curtain-mc1.21-1.3.2+build.314.jar	curtain	1.3.2+build.314	Modrinth	sha1 命中 modrinth:curtain（project-id 2Vw36Ezz）
+[地牢浮现之时] DungeonsArise-1.21.1-2.1.68-release.jar	dungeons_arise	2.1.68	Modrinth	sha1 命中 modrinth:when-dungeons-arise（project-id 8DfbfASn）
+[地牢建筑统合] idas-1.13.7+1.21.1-neoforge.jar	idas	1.13.7+1.21.1-neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 605375
+[地下城与酒馆] dungeons-and-taverns-v4.4.4 [NeoForge].jar	mr_dungeons_andtaverns	n/a	Modrinth	sha1 命中 modrinth:dungeons-and-taverns（project-id tpehi7ww）
+[动力乐事] delightfulcreators-1.2.1.jar	delightfulcreators	1.2.1	Modrinth	sha1 命中 modrinth:delightful-creators（project-id jmJ87gsb）
+[动态 FPS] dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar	dynamic_fps	3.11.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 335493
+[动态准星] dynamiccrosshair-9.11+1.21.1-neoforge.jar	dynamiccrosshair	9.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 623800
+[多趣乐事] moredelight-26.05.20a-1.21-neoforge.jar	moredelight	26.05.20a-1.21-neoforge	Modrinth	sha1 命中 modrinth:more-delight（project-id znHQQtuU）
+[多态合成] polymorph-neoforge-1.2.0+1.21.1.jar	polymorph	1.2.0+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 388800
+[多元乐事] culturaldelights-1.21.1-0.18.1.jar	culturaldelights	0.18.1	Modrinth	sha1 命中 modrinth:cultural-delights（project-id YttyNOFA）
+[丰富的生态] ecologics-1.21.1-2.3.8.jar	ecologics	2.3.8	Modrinth	sha1 命中 modrinth:ecologics（project-id NCKpPR0Z）
+[丰饶食记] bountifulfares-neoforge-1.21.1-3.0.13.jar	bountifulfares	3.0.13	Modrinth	sha1 命中 modrinth:bountiful-fares（project-id YgrSDjlb）
+[凤梨乐事] pineapple_delight-1.1.4-1.21.1-neoforge.jar	pineapple_delight	1.1.4-1.21.1-neoforge	Modrinth	sha1 命中 modrinth:pineapple-delight（project-id 8wXnuOvg）
+[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar	flerovium	1.1.2	Modrinth	sha1 命中 modrinth:flerovium（project-id 4Rh1Mobu）
+[高级战利品信息显示] AdvancedLootInfo-neoforge-1.21.1-2.5.0.jar	ali	2.5.0	Modrinth	sha1 命中 modrinth:advanced-loot-info（project-id PEPVViac）
+[更好的Boss血条] enhanced_boss_bars-1.1.3-1.21.1-neoforge.jar	enhanced_boss_bars	1.1.3	Modrinth	sha1 命中 modrinth:enhanced-boss-bars-mod（project-id J5bVsBt9）
+[更好的F3] BetterF3-11.0.3-NeoForge-1.21.1.jar	betterf3	11.0.3	Modrinth	sha1 命中 modrinth:betterf3（project-id 8shC1gFX）
+[更好的村庄] bettervillage-neoforge-1.21.1-3.3.1.jar	bettervillage	3.3.1	Modrinth	sha1 命中 modrinth:better-village（project-id dGVX5JbJ）
+[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar	betteradvancements	0.4.3.21	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 272515
+[更好的模组列表] better_modlist-21.1.5.jar	mod_menu	21.1.5	Modrinth	sha1 命中 modrinth:better-modlist（project-id sbpqhzIG）
+[更美观的血条] colorfulhearts-neoforge-1.21.1-10.5.9.jar	colorfulhearts	10.5.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 854213
+[工业平台] Industrial Platform-1.21.1-2.0.1.jar	industrial_platform	2.0.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[功能性存储] functionalstorage-1.21.1-1.5.7.jar	functionalstorage	n/a	Modrinth	sha1 命中 modrinth:functional-storage（project-id cO40ZIg3）
+[怪物增强] improvedmobs-1.21.1-1.16.0.b-neoforge.jar	improvedmobs	1.21.1-1.16.0.b-neoforge	Modrinth	sha1 命中 modrinth:improved-mobs（project-id 23MovWyi）
+[果园乐事] fruitsdelight-1.2.14.jar	fruitsdelight	1.2.14	Modrinth	sha1 命中 modrinth:fruits-delight（project-id g6sbyCTu）
+[航空学：Addition] aero_addition-1.0.2.jar	aero_addition	1.0.2	Modrinth	sha1 命中 modrinth:aeronautics-addition（project-id uCWxfksC）
+[航空学：传动与连结] create_aeronautics_transmission_linkage-0.2.9.jar	aeronautics_utility_objects	0.2.9	Modrinth	sha1 命中 modrinth:create-aeronautics-transmission-linkage（project-id Y1dq5ioE）
+[航空学：无界] aero_no_horizon-1.0.4.jar	aero_no_horizon	1.0.4	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[合成树] ae2ct-1.21.1-1.1.1.jar	ae2ct	1.21.1-1.1.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1086241
+[烘焙坊] bakeries-1.21.1-NeoForge-1.0.5.jar	bakeries	1.21.1-NeoForge-1.0.4	Modrinth	sha1 命中 modrinth:bakeries-renyigesai（project-id ZugnklTp）
+[护甲显示上限突破] overloadedarmorbar-neoforge-1.21-2.jar	overloadedarmorbar	2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 314002
+[火花] spark-1.10.124-neoforge.jar	spark	1.10.124	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 361579
+[火炬大师] torchmaster-neoforge-1.21.1-21.1.13.jar	torchmaster	21.1.13	Modrinth	sha1 命中 modrinth:torchmaster（project-id Tl8ESrhX）
+[机械动力：臂力臂力炒菜] create_cuisine-1.0.0-mc1.21.1-neoforge.jar	create_cuisine	1.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[机械动力：彩虹化合物] rainbowcompound-1.21.1-1.3.5.d.jar	rainbowcompound	1.3.5.d	Modrinth	sha1 命中 modrinth:rainbowcompound（project-id DNwAgUpx）
+[机械动力：柴油动力] createdieselgenerators-1.21.1-1.3.15.jar	createdieselgenerators	1.21.1-1.3.15	Modrinth	sha1 命中 modrinth:create-diesel-generators（project-id ZM3tt6p1）
+[机械动力：齿轮与麦穗] create_ratatouille-1.21.1-1.4.0.jar	ratatouille	1.4.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 983234
+[机械动力：创想附加] createaddition-1.7.2.jar	createaddition	1.7.2	Modrinth	sha1 命中 modrinth:createaddition（project-id kU1G12Nn）
+[机械动力：创意传动] create_connected-1.3.3-mc1.21.1.jar	create_connected	1.3.3-mc1.21.1	Modrinth	sha1 命中 modrinth:create-connected（project-id Vg5TIO6d）
+[机械动力：电气时代] create-new-age-1.2.0+neoforge-mc1.21.1.jar	create_new_age	1.2.0+mc1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 905861
+[机械动力：动力刷怪笼] create_mechanical_spawner-1.21.1-1.3.2-6.0.10.jar	create_mechanical_spawner	1.3.1-6.0.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 821828
+[机械动力：高级遥控器] create_tweaked_controllers-1.21.1-1.2.7.jar	create_tweaked_controllers	1.21.1-1.2.7	Modrinth	sha1 命中 modrinth:create-tweaked-controllers（project-id H6bJ8Ju4）
+[机械动力：更多仪表] extra_gauges-2.1.3.jar	extra_gauges	2.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1263228
+[机械动力：更快的蓝图加农炮] CreateFastSchematicCannon-1.4.1-neoforge-1.21.1.jar	createfastschematiccannon	1.4.1-neoforge	Modrinth	sha1 命中 modrinth:create-fast-schematic-cannon（project-id DebMSCVn）
+[机械动力：航空发动机] AeroEngine-1.3.0.jar	aeroengineering	1.0.2	Modrinth	sha1 命中 modrinth:aeroengine（project-id CRh10iJF）
+[机械动力：航空学] create-aeronautics-bundled-1.21.1-1.3.2.jar	aeronautics_bundled	1.3.2	Modrinth	sha1 命中 modrinth:create-aeronautics（project-id oWaK0Q19）
+[机械动力：红石信号终端GUI] createredstonelinkgui-1.21.1-1.9.2.jar	createredstonelinkgui	1.21.1-1.9.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1547849
+[机械动力：火炮] createbigcannons-5.11.7+mc.1.21.1.jar	createbigcannons	5.11.7	Modrinth	sha1 命中 modrinth:create-big-cannons（project-id GWp4jCJj）
+[机械动力：交错电网] powergrid-mc1.21.1-0.6.2.jar	powergrid	0.6.2	Modrinth	sha1 命中 modrinth:power-grid（project-id eWiBLJ9R）
+[机械动力：咖啡馆] createcafe-1.4.3.jar	createcafe	1.4.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 542235
+[机械动力：矿石开掘] createoreexcavation-1.21-1.6.8.jar	createoreexcavation	1.6.8	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 649832
+[机械动力：流光溢彩] createprism-1.2.2.jar	createprism	1.2.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1355767
+[机械动力：龙+] CreateDragonsPlus-1.11.9.jar	create_dragons_plus	1.11.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1216624
+[机械动力：内饰] interiors-0.6.1 v3.jar	interiors	0.6.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[机械动力：喷气背包] create_jetpack-forge-5.2.1.jar	create_jetpack	5.2.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 655608
+[机械动力：实用物品 J版] Create-Utilities-J-1.21.1-0.3.5+1.21.1.jar	createutilities	0.3.5+1.21.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[机械动力：甜食] create-confectionery1.21.1_v1.1.3b.jar	create_confectionery	1.1.3.	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 531834
+[机械动力：推进工程] createpropulsion-1.1.5.jar	createpropulsion	1.1.5	Modrinth	sha1 命中 modrinth:create-propulsion-simulated（project-id ApkoHNO9）
+[机械动力：伪装方块+] copycats-3.0.11+mc.1.21.1-neoforge.jar	copycats	3.0.11+mc.1.21.1-neoforge	Modrinth	sha1 命中 modrinth:copycats（project-id UT2M39wf）
+[机械动力：无人机物流] create_mobile_packages-1.21.1-0.7.8.jar	create_mobile_packages	0.7.8	Modrinth	sha1 命中 modrinth:create-mobile-packages（project-id 1vXRfEHZ）
+[机械动力：物品附加] create-stuff-additions1.21.1_v2.1.4b.jar	create_sa	2.1.4.	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 466792
+[机械动力：乡村结构] create_rustic_structures-1.0.1-neoforge-1.21.1.jar	create_rustic_structures	1.0.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1232975
+[机械动力：冶金学] createmetallurgy-1.0.3-1.21.1.jar	createmetallurgy	1.0.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1007404
+[机械动力：液体燃料] createliquidfuel-3.0.0-1.21.1.jar	createliquidfuel	3.0.0-1.21.1	Modrinth	sha1 命中 modrinth:create-liquid-fuel（project-id sH9tXU9f）
+[机械动力：油炸] create_deepfried+1.21.1-0.1.4.jar	create_deepfried	0.1.4	Modrinth	sha1 命中 modrinth:create-deepfried（project-id 76TqKW7O）
+[机械动力：原子核动] createnuclear-2.0.0-neoforge.jar	createnuclear	2.0.0	Modrinth	sha1 命中 modrinth:createnuclear（project-id z611fdf7）
+[机械动力：中央厨房] create-central-kitchen-2.6.2b.jar	create_central_kitchen	2.6.2b	Modrinth	sha1 命中 modrinth:create-central-kitchen（project-id btq68HMO）
+[机械动力] create-1.21.1-6.0.10.jar	create	6.0.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 328085
+[机械动力火炮：火力组件] cbc_firepower_components-neoforge-1.21.1-0.4.4+mc.1.21.1-neoforge.jar	cbc_firepower_components	0.4.4	Modrinth	sha1 命中 modrinth:cbc-firepower-components（project-id fRWr6eJq）
+[机械动力汽鸣铁道：重铸] railways-0.2.1+neoforge-mc1.21.1.jar	railways	0.2.1+neoforge-mc1.21.1	Modrinth	sha1 命中 modrinth:create-steam-n-rails-1.21.1（project-id L3Jv0QZI）
+[鸡尾酒乐事] Cocktails-Delight-1.21.1-NeoForge-1.1.12.jar	cocktailsdelight	1.1.10	Modrinth	sha1 命中 modrinth:cocktails-delight（project-id hzcliQdE）
+[简单备份] SimpleBackups-1.21-4.0.21.jar	simplebackups	1.21-4.0.21	Modrinth	sha1 命中 modrinth:simple-backups（project-id fzSKSXVK）
+[简单帽子] simplehats-neoforge-1.21.1-0.4.1.jar	simplehats	0.4.1	Modrinth	sha1 命中 modrinth:simple-hats（project-id iSkQCp6b）
+[键位冲突显示] Controlling-neoforge-1.21.1-19.0.5.jar	controlling	19.0.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 250398
+[节日乐事] festive_delight-2.0.0-neoforge-1.21.1.jar	festive_delight	2.0.0	Modrinth	sha1 命中 modrinth:festive-delight（project-id AsUUCoXX）
+[锦致装饰] supplementaries-1.21.1-4.0.2-neoforge.jar	supplementaries	1.21.1-4.0.2	Modrinth	sha1 命中 modrinth:supplementaries（project-id fFEIiSDQ）
+[经验机制改革] Clumps-neoforge-1.21.1-19.0.0.1.jar	clumps	19.0.0.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 256717
+[精妙背包] sophisticatedbackpacks-1.21.1-3.26.19.2243.jar	sophisticatedbackpacks	3.26.19	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[精妙核心] sophisticatedcore-1.21.1-1.5.25.2451.jar	sophisticatedcore	1.5.25	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[精致存储] refinedstorage-neoforge-2.0.9.jar	refinedstorage	2.0.9	Modrinth	sha1 命中 modrinth:refined-storage（project-id KDvYkUg3）
+[咖啡乐事] coffee_delight-1.4.1.jar	coffee_delight	1.4.1	Modrinth	sha1 命中 modrinth:coffee-delight（project-id jn1HiMrY）
+[可视化工作台] VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar	visualworkbench	21.1.2	Modrinth	sha1 命中 modrinth:visual-workbench（project-id kfqD1JRw）
+[苦力怕改革 ／ 苦力怕革新] CreeperOverhaul-neoforge-1.21.1-4.0.6.jar	creeperoverhaul	4.0.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 561625
+[夸克] Quark-4.1-488.jar	quark	4.1-488	Modrinth	sha1 命中 modrinth:quark（project-id qnQsVE2z）
+[旷野之息高塔 ：再重制] totw_modded-neoforge-1.21-1.0.9.jar	totw_modded	1.0.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 859365
+[矿工乐事] minersdelight-1.21.1-1.4.5.jar	minersdelight	1.4.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 689630
+[扩充乐事] expandeddelight-0.1.4.jar	expandeddelight	0.1.4	Modrinth	sha1 命中 modrinth:expanded-delight（project-id e9V6wFcR）
+[垃圾槽] trashslot-neoforge-1.21.1-21.1.11.jar	trashslot	21.1.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 235577
+[垃圾桶] trashcans-1.1.2-neoforge-mc1.21.jar	trashcans	1.1.2	Modrinth	sha1 命中 modrinth:trash-cans（project-id 4QrnfueM）
+[锂] lithium-neoforge-0.15.4+mc1.21.1.jar	lithium	0.15.4+mc1.21.1	Modrinth	sha1 命中 modrinth:lithium（project-id gvQqBUqZ）
+[连锁破坏] ftb-ultimine-neoforge-2101.1.15.jar	ftbultimine	2101.1.15	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 386134
+[聊天头像] chat_heads-0.15.7-neoforge-1.21.jar	chat_heads	0.15.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 407206
+[料理乐事] cuisinedelight-1.2.10.jar	cuisinedelight	1.2.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 893541
+[旅人标题] TravelersTitles-1.21.1-NeoForge-5.1.3.jar	travelerstitles	1.21.1-NeoForge-5.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1015155
+[蜜蜂领域／黄蜂领域] the_bumblezone-7.17.3+1.21.1-neoforge.jar	the_bumblezone;neoforge;minecraft;resourcefullib;structureessentials	7.17.3+1.21.1-neoforge	Modrinth	sha1 命中 modrinth:the-bumblezone（project-id 38tpSycf）
+[末地乐事] ends_delight-2.6.1+neoforge.1.21.1.jar	ends_delight	2.6.1+neoforge.1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 662675
+[钠 · 扩展] sodium-extra-neoforge-0.9.5+mc1.21.1.jar	sodium_extra	0.9.5+mc1.21.1	Modrinth	sha1 命中 modrinth:sodium-extra（project-id PtjYWJkn）
+[钠] sodium-neoforge-0.8.13+mc1.21.1.jar	sodium	0.8.13+mc1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 394468
+[女仆摇曲柄] MaidUseHandCrank_1.6.2-neoforge_21.1.219-1.21.1.jar	muhc	1.6.2	Modrinth	sha1 命中 modrinth:maidusehandcrank（project-id kVNtrRcL）
+[帕秋莉手册] Patchouli-1.21.1-93-NEOFORGE.jar	patchouli	n/a	Modrinth	sha1 命中 modrinth:patchouli（project-id nU0bVIaL）
+[配置界面] configured-neoforge-1.21.1-2.6.3.jar	configured	2.6.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 457570
+[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar	smoothswapping	0.9.3.2	Modrinth	sha1 命中 modrinth:smooth-swapping（project-id ydZic5r4）
+[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar	appleskin	n/a	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 248787
+[葡园酒香] letsdo-vinery-neoforge-1.5.6.jar	vinery	1.5.6	Modrinth	sha1 命中 modrinth:lets-do-vinery（project-id 1DWmBJVA）
+[群系间谍] biomespy-neoforge-1.21.1-1.3.3.jar	biomespy	1.3.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1376024
+[三角洲乐事] delta_delight-1.3.926_neoforge_1.21.1.jar	delta_delight	1.3.926	Modrinth	sha1 命中 modrinth:delta-delight（project-id 5FDnq7t9）
+[深暗之园] The_Undergarden-1.21.1-0.9.6.jar	undergarden	0.9.6	Modrinth	sha1 命中 modrinth:the-undergarden（project-id Ejfl5qDL）
+[深暗之园乐事] undergardendelight-2.0.2-neoforge-1.21.1.jar	undergardendelight	2.0.2	Modrinth	sha1 命中 modrinth:undergarden-delight（project-id H340jsJv）
+[生活调味料：胡萝卜版] solcarrot-1.21.1-1.16.6.jar	solcarrot	1.16.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 277616
+[生于混沌] born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar	born_in_chaos_v1	1.7.6	Modrinth	sha1 命中 modrinth:borninchaos（project-id 1kcHy4de）
+[时装盔甲重置版] cosmeticarmorreworked-1.21-v1-neoforge.jar	cosmeticarmorreworked	1.21-v1-neoforge	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[实体渲染机制优化] entityculling-neoforge-1.11.3-mc1.21.1.jar	entityculling	1.11.3	Modrinth	sha1 命中 modrinth:entityculling（project-id NNAgCjsB）
+[拾光定影] exposure-neoforge-1.21.1-1.9.19.jar	exposure	1.9.19	Modrinth	sha1 命中 modrinth:exposure（project-id hB899VmG）
+[试验假人] dummmmmmy-1.21-2.1.2-neoforge.jar	dummmmmmy	1.21-2.1.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 225738
+[首领崛起] block_factorys_bosses-2.1.2-neo-1.21.1.jar	block_factorys_bosses	2.1.2	Modrinth	sha1 命中 modrinth:bossesrise（project-id q2bV1Tm1）
+[输入法冲突修复] IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar	imblocker	5.6.2.1	Modrinth	sha1 命中 modrinth:imblocker-original（project-id WMDesFsZ）
+[属性修复] attributefix-neoforge-1.21.1-21.1.3.jar	attributefix	21.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 280510
+[鼠标手势] MouseTweaks-neoforge-mc1.21-2.26.1.jar	mousetweaks	2.26.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 60089
+[树叶快速腐烂] fastleafdecay-35.jar	fastleafdecay	35	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[钛] titanium-1.21-4.0.52.jar	titanium	n/a	Modrinth	sha1 命中 modrinth:titanium（project-id 1Ro7m06l）
+[探险者指南针] ExplorersCompass-1.21.1-3.4.0-neoforge.jar	explorerscompass	1.21.1-neoforge-2.0.01	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[铁氧体磁芯] ferritecore-7.0.3-neoforge.jar	ferritecore	7.0.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 429235
+[通达铁路] tongdarailway-1.1.5+mc21.1.jar	tongdarailway	1.1.5+mc21.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+[通用机械] Mekanism-1.21.1-10.7.19.85.jar	mekanism	10.7.19	Modrinth	sha1 命中 modrinth:mekanism（project-id Ce6I4WUE）
+[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.30.jar	jecharacters	4.5.30	Modrinth	sha1 命中 modrinth:justenoughcharacters（project-id I7k4B65h）
+[屠宰工艺] butchercraft-2.6.3.jar	butchercraft	2.6.3	Modrinth	sha1 命中 modrinth:butchercraft（project-id MT2Xm0ih）
+[网络音乐机] netmusic-1.3.0-neoforge+mc1.21.1.jar	netmusic	1.3.0-neoforge+mc1.21.1	Modrinth	sha1 命中 modrinth:net-music（project-id gKNuqaQq）
+[煨茶酝露] letsdo-herbalbrews-neoforge-1.1.4.jar	herbalbrews	1.1.4	Modrinth	sha1 命中 modrinth:lets-do-herbalbrews（project-id Eh11TaTm）
+[物品边框] ItemBorders-1.21-neoforge-1.2.5.jar	itemborders	1.2.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 513769
+[现代化修复] modernfix-neoforge-5.27.27+mc1.21.1.jar	modernfix	5.27.27+mc1.21.1	Modrinth	sha1 命中 modrinth:modernfix（project-id nmDcB62a）
+[线缆控制：Sable兼容] drivebywire-0.3.0.jar	drivebywire	0.3.0	Modrinth	sha1 命中 modrinth:drive-by-wire-sable（project-id KsqvI0hD）
+[香芋乐事] ubesdelight-neoforge-1.21.1-0.4.15.jar	ubesdelight	0.4.15	Modrinth	sha1 命中 modrinth:ubes-delight（project-id PYjpoAys）
+[向日葵乐事] sunflowerdelight-1.21.1-1.0.1n.jar	sunflowerdelight	1.0.1n	Modrinth	sha1 命中 modrinth:sunflower-delight（project-id meomOFXx）
+[蟹农乐事] crabbersdelight-1.21.1-1.3.1.jar	crabbersdelight	1.3.1	Modrinth	sha1 命中 modrinth:crabbers-delight（project-id gBGdVBJy）
+[一键背包整理Next] InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar	inventoryprofilesnext	2.2.5	Modrinth	sha1 命中 modrinth:inventory-profiles-next（project-id O7RBXm3n）
+[饮酒作乐] BrewinAndChewin-neoforge-4.5.0+1.21.1.jar	brewinandchewin	4.5.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 637808
+[应用能源：水晶科技] ae2cs-1.21.1-1.2.1.jar	ae2cs	1.2.1	Modrinth	sha1 命中 modrinth:ae2-crystal-science（project-id uJ9afomy）
+[应用能源：通用机械附属] Applied-Mekanistics-1.6.3.jar	appmek	1.6.3	Modrinth	sha1 命中 modrinth:applied-mekanistics（project-id IiATswDj）
+[永恒之门] GatewaysToEternity-1.21.1-5.1.0.jar	gateways	5.1.0	Modrinth	sha1 命中 modrinth:gateways-to-eternity（project-id 8OIeAukW）
+[预生成区块] Chunky-NeoForge-1.4.23.jar	chunky	1.4.23	Modrinth	sha1 命中 modrinth:chunky（project-id fALzjamp）
+[越肩视角重制] ShoulderSurfing-NeoForge-1.21.1-5.3.1.jar	shouldersurfing	1.21.1-5.3.1	Modrinth	sha1 命中 modrinth:shoulder-surfing-reloaded（project-id kepjj2sy）
+[灾变] L_Ender's Cataclysm 1.21.1-3.33.jar	cataclysm	3.33	Modrinth	sha1 命中 modrinth:l_enders-cataclysm（project-id 46KJle7n）
+[灾厄侵扰] IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar	illagerinvasion	21.1.6	Modrinth	sha1 命中 modrinth:illager-invasion（project-id jSV9w0J5）
+[展示乐事] displaydelight-1.7.0.jar	displaydelight	1.7.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1144296
+[正版离线共存] trueuuid-1.0.4-neoforge1.21.1.jar	trueuuid	1.0.4	Modrinth	sha1 命中 modrinth:trueuuid（project-id fMgRLYNA）
+[直上九霄] flyhigher-1.21.1-1.0.2.jar	flyhigher	1.0.2	Modrinth	sha1 命中 modrinth:flyhigher（project-id cePRJjRZ）
+[装箱乐事] cratedelight-26.07.01-1.21-neoforge.jar	cratedelight	26.07.01-1.21-neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 958291
+[资源包惰性重载／抑验怠载] 0Pack2Reload-NeoForge-1.21.1-1.0.1.jar	opack2reload	1.21.1-1.0.1	Modrinth	sha1 命中 modrinth:0pack2reload（project-id 2hl2n0xu）
+[自动汉化更新] I18nUpdateMod-3.7.0-all.jar	i18nupdatemod	3.7.0	未确认	非普通 mod：ITransformationService 语言提供器，jar 内无 mods.toml
+[自然罗盘／生物群系指南针] NaturesCompass-1.21.1-3.4.0-neoforge.jar	naturescompass	1.21.1-3.4.0-neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 252848
+1.1.1.jar	entity_map	1.0.0-r437	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+abnormals_delight-1.21.1-6.0.2.jar	abnormals_delight	6.0.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 442719
+accessories-neoforge-1.1.0-beta.54+1.21.1.jar	accessories	1.1.0-beta.54+1.21.1	Modrinth	sha1 命中 modrinth:accessories（project-id jtmvUHXj）
+AdvancedCoreInfo-neoforge-1.21.1-1.5.0.jar	aci	1.5.0	Modrinth	sha1 命中 modrinth:advanced-core-info（project-id BaR4ijFC）
+ae2jeiintegration-1.2.1.jar	ae2jeiintegration	1.2.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1074338
+aerowarptics-1.3.0.jar	aerowarptics	1.3.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+aeroworks-1.5.0.jar	aeroworks	1.5.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+alexscavesup-0.1.1.jar	alexscavesup	0.1.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1611643
+alexsdelight-1.6.jar	alexsdelight	1.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 556448
+alexsmobsup-0.2.8.jar	alexsmobsup	0.2.8	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1539192
+AlwaysEat-neoforge-1.0.0.jar	always_eat	1.0.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1259229
+ApothicAttributes-1.21.1-2.11.0.jar	apothic_attributes	2.11.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+appliedcreate-1.21.1-1.1.7.jar	appliedcreate	1.1.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1474758
+appliedenergistics2-19.2.17.jar	ae2	19.2.17	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 223794
+architectury-13.0.11-neoforge.jar	architectury	13.0.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 419699
+art_of_forging-1.21.1-1.8.4.jar	art_of_forging	1.21.1-1.8.4	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+azimuth-1.4.10.jar	azimuth	1.4.10	Modrinth	sha1 命中 modrinth:azimuth-api（project-id RpH8tmT1）
+badpackets-neo-0.8.2.jar	badpackets	0.8.2	Modrinth	sha1 命中 modrinth:badpackets（project-id ftdbN0KK）
+bais-treasure-box-1.21-1.0.0.jar	universalscroll	1.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+balm-neoforge-1.21.1-21.0.65.jar	balm	21.0.65	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 531761
+better-advanced-tooltips-2101.1.0-build.5.jar	betteradvancedtooltips	2101.1.0-build.5	Modrinth	sha1 命中 modrinth:better-advanced-tooltips（project-id iHLDc0eo）
+bettercombat-neoforge-2.0.4+1.21.1.jar	bettercombat	2.0.4+1.21.1	Modrinth	sha1 命中 modrinth:better-combat（project-id 5sy6g3kz）
+better-compatability-checker-neoforge-21.1.8.jar	bcc	21.1.8	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 551894
+bits_n_bobs-2.3.5.jar	bits_n_bobs	2.3.5	Modrinth	sha1 命中 modrinth:create-bits-n-bobs（project-id T8bvmqVZ）
+blueprint-1.21.1-8.2.0.jar	blueprint	8.2.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 382216
+bookshelf-neoforge-1.21.1-21.1.81.jar	bookshelf	21.1.81	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 228525
+bountiful-neoforge-8.0.0-beta.2.jar	bountiful	8.0.0-beta.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 309516
+caelus-neoforge-7.0.1+1.21.1.jar	caelus	7.0.1+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 308989
+cavesdelight-1.3.1-neoforge-1.21.1.jar	cavesdelight	1.3.1	Modrinth	sha1 命中 modrinth:caves-delights（project-id 6N1cZMWh）
+CBC-Military-Supplement-1.21.1-2.1.4.jar	cbcmoreshells	2.1.4-1.21.1	Modrinth	sha1 命中 modrinth:cbc-more-shells（project-id WnQUCdnh）
+CBCmoreshells-1.2.3.jar	cbc_enhanced_shells	1.2.3	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+cdc-mbd-guard-1.0.0.jar	cdcguard	1.0.0	自建	自研 Mixin 兜底补丁（createdelightcore MbdRecipeValues.rebuild 空指针）
+cdc-seq-guard-1.0.0.jar	cdcseqguard	1.0.0	自建	自研 Mixin 兜底补丁（Create 序列装配配方空成分崩溃）
+cdprfps-1.3.1.jar	cdprfps	1.3.1	自建	自研帧数补丁，源码见 patches/cdprfps；本仓库不含 jar
+chromeware-1.3.0.jar	chromeware	1.3.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+citadelup-0.1.9.jar	citadelup	0.1.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1539190
+cloth-config-15.0.140-neoforge.jar	cloth_config	15.0.140	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 348521
+cobweb-neoforge-1.21-1.4.0.jar	cobweb	1.4.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 968456
+collectorsreap-1.21.1-1.5.5.jar	collectorsreap	1.21.1-1.5.5	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+comforts-neoforge-9.0.5+1.21.1.jar	comforts	9.0.5+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 276951
+cookscollection-0.6.1.jar	cookscollection	0.6.1	Modrinth	sha1 命中 modrinth:cooks-collection（project-id QC7N8ljN）
+corn_delight-1.2.10-1.21.1.jar	corn_delight	1.2.10-1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 577805
+coroutil-neoforge-1.21.0-1.3.8.jar	coroutil	1.21.0-1.3.8	Modrinth	sha1 命中 modrinth:coroutil（project-id rLLJ1OZM）
+cosmonautics-26.08.307.jar	rocketnautics;dimensional_sable	n/a	Modrinth	sha1 命中 modrinth:create-cosmonatics（project-id micg1iTH）
+cosmowarp-1.1.0.jar	cosmowarp	1.1.0	Modrinth	sha1 命中 modrinth:cosmonautics-warp-drive（project-id hS575ieU）
+cpapireforged-neo-1.21.1-1.2.2.jar	cpapireforged	1.2.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 902717
+Create More Recipes-1.21.1-1.2.1-fix1.jar	cmr	1.2.1-fix1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1103188
+create_aeronautics_throwable_rope_connector-0.4.3.jar	create_aeronautics_throwable_rope_connector	0.4.3	Modrinth	sha1 命中 modrinth:create-aeronautics-throwable-rope-connector（project-id 9xiCbKmM）
+create_bb-1.0.8-1.21.1.jar	create_bb	1.0.8	Modrinth	sha1 命中 modrinth:blocks-bogies（project-id j4ARnQwY）
+create_bitterballen+1.21.1-1.0.4.jar	create_bic_bit	1.0.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 918751
+create_compatible_storage-2.14.0-mc1.21.1-neoforge.jar	create_compatible_storage	2.14.0	Modrinth	sha1 命中 modrinth:create-compatible-storage（project-id 5ofroZ5W）
+create_enhanced_schematicannon-1.0.4.jar	create_enhanced_schematicannon	1.0.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1408767
+create_fantasizing-1.21.1-1.1.3.jar	create_fantasizing	1.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1279337
+create_flight_control-neoforge-0.8.3.jar	create_flight_control	0.8.3	Modrinth	sha1 命中 modrinth:create-flight-control（project-id IGVrnkhH）
+create_jetpack_curios-1.2.0-neoforge-1.21.1.jar	create_jetpack_curios	1.2.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1057194
+create_mob_spawners-1.1.0.jar	create_mob_spawners	1.1.0	Modrinth	sha1 命中 modrinth:create-mob-spawners（project-id bklciXlt）
+create_pattern_schematics-2.0.10.jar	create_pattern_schematics	2.0.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1072349
+create_rns-1.3.1-1.21.1-6.jar	create_rns	1.3.1-1.21.1-6	Modrinth	sha1 命中 modrinth:create-rns（project-id wy2arhik）
+create_simulated_additions-0.2.3-neoforge-1.21.1.jar	create_simulated_additions	0.2.3	Modrinth	sha1 命中 modrinth:create-simulated-additions（project-id rlv7S1aF）
+create_structures_overhaul-1.4.0-neoforge-1.21.1.jar	create_structures_overhaul	1.4.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+create_submarine-3.4.5.jar	create_submarine;create_abyss;create_high_seas	3.4.5	Modrinth	sha1 命中 modrinth:create-deep-seas（project-id mva5q4qZ）
+createaerophysicsgantry-1.1.2.jar	createaerophysicsgantry	1.1.2	Modrinth	sha1 命中 modrinth:create-aeronautics-physics-gantry（project-id tptzZZl3）
+createbetterfps-1.21.1-1.1.5.jar	createbetterfps	1.1.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1217518
+createcobblestone-1.5.1+neoforge-1.21.1-160.jar	createcobblestone	1.5.1+neoforge-1.21.1-160	Modrinth	sha1 命中 modrinth:create-cobblestone（project-id ihpnEd80）
+CreateCyberGoggles-1.21.1-8.6.3-NeoForge.jar	create_cyber_goggles	8.6.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1233804
+createdeco-2.1.3.jar	createdeco	2.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 509285
+createdelightcore-2.0.0.7+1.21.1.jar	createdelightcore	2.0.0.7+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1062344
+create-enchantment-industry-2.5.4.jar	create_enchantment_industry	2.5.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 688768
+createfirefightingadd-0.2.7-beta.jar	createfirefightingadd	0.2.7-beta	Modrinth	sha1 命中 modrinth:create-firefighting-additions（project-id tlmPPRct）
+createfluidstuffs-neoforge-1.2.1.jar	createfluidstuffs	1.2.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1535283
+create-integrated-farming-1.2.6.jar	create_integrated_farming	1.2.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1249131
+CreateLazyTick-2.6.25-6.0.10-neoforge-1.21.1.jar	createlazytick	2.6.25-6.0.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1409401
+createpickywheels-neoforge-1.21.1-6.0.9-6.jar	createpickywheels	1.21.1-6.0.9-6	Modrinth	sha1 命中 modrinth:create-picky-wheels（project-id Zotbxaw6）
+create-scalable-wheels-1.2.3.jar	big_tires_scaler	1.2.3	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+createstockbridge-1.21.1-0.2.0.jar	createstockbridge	0.2.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1256341
+Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar	create_structures_arise	176.49.49	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1010066
+createultimine-1.21.1-neoforge-1.3.2.jar	createultimine	1.3.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1231381
+cristellib-neoforge-1.21.1-3.1.7.jar	cristellib	3.1.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 856996
+curios-neoforge-9.5.1+1.21.1.jar	curios	9.5.1+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 309927
+DangoMusic-1.7.2+1.21.1-neoforge.jar	dangomusic	1.7.2	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+dashpanels-2.1+neoforge1.21.1.jar	dashpanels	2.1	Modrinth	sha1 命中 modrinth:dashpanels（project-id xZJfGh82）
+deeperdarker-neoforge-1.21.1-1.4.1.jar	deeperdarker	1.4.1	Modrinth	sha1 命中 modrinth:deeperdarker（project-id fnAffV0n）
+delightlib-26.05.18-1.21-neoforge.jar	delightlib	26.05.18-1.21-neoforge	Modrinth	sha1 命中 modrinth:delight-lib（project-id rmDY6fYt）
+deployer-0.1.3.jar	deployer	0.1.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1516421
+Design-n-Decor-1.21.1-2.2b.jar	dndecor	2.2b	Modrinth	sha1 命中 modrinth:create-design-n-decor（project-id x49wilh8）
+dg_js-1.21.1-1.2.4.jar	dg_js	1.21.1-1.2.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1152400
+dragonlib-3.0.29+mc1.21.1-neoforge.jar	dragonlib	3.0.29	Modrinth	sha1 命中 modrinth:dragonlib（project-id sbIsGaOV）
+drivebywire-typewriter-1.2.0.jar	drivebywiretypewriter	1.2.0	Modrinth	sha1 命中 modrinth:drive-by-wiretypewriter（project-id lDYpnxit）
+DumplingsDelightRewrapped-1.21.1-1.4.1.jar	dumplings_delight	1.4.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1093375
+EclipticSeasons-1.21.1-neoforge-0.15.0-rc-3-1.jar	eclipticseasons	0.15.0-rc-3-1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1118306
+ElysiumAPI-1.21.1-2.0.1.jar	elysium_api	2.0.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1158628
+exdeorum-3.12.jar	exdeorum	3.12	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+extraholopage-1.21-1.21.1-6.9.0-1.2.13.jar	extraholopage	1.21.1-6.9.0-1.2.13	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+fancymenu_neoforge_3.10.0_MC_1.21.1.jar	fancymenu	3.10.0	Modrinth	sha1 命中 modrinth:fancymenu（project-id Wq5SjeWM）
+FarmersDelight-1.21.1-1.3.2.jar	farmersdelight	1.3.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 398521
+fastboot-1.21.x-v1.3neo.jar	fastboot	1.3.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1030285
+feywild-1.21.1-5.6.4.jar	feywild	5.6.4	Modrinth	sha1 命中 modrinth:feywild（project-id BCfFCoTU）
+fluxoftetra-1.21-1.21.1-6.9.0-1.0.3-fix.jar	fluxoftetra	1.21.1-6.9.0-1.0.3-fix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+ForgeConfigAPIPort-v21.1.6-1.21.1-NeoForge.jar	forgeconfigapiport	21.1.6	Modrinth	sha1 命中 modrinth:forge-config-api-port（project-id ohNO6lps）
+framework-neoforge-1.21.1-0.13.11.jar	framework	0.13.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 549225
+ftb-essentials-neoforge-2101.1.10.jar	ftbessentials	2101.1.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 410811
+ftb-filter-system-neoforge-21.1.4.jar	ftbfiltersystem	21.1.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 943925
+ftb-library-neoforge-2101.1.39.jar	ftblibrary	2101.1.39	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+ftb-xmod-compat-neoforge-21.1.14.jar	ftbxmodcompat	21.1.14	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+fzzy_config-0.7.7+1.21+neoforge.jar	fzzy_config	0.7.7+1.21+neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1005914
+geckolib-neoforge-1.21.1-4.9.3.jar	geckolib	4.9.3	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 388172
+geotetraarmor-1.21-1.21.1-6.9.0-1.0.4-fix.jar	geotetraarmor	1.21.1-6.9.0-1.0.4-fix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+Glodium-1.21-2.2-neoforge.jar	glodium	1.21-2.2-neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 957920
+guideme-21.1.22.jar	guideme	21.1.22	Modrinth	sha1 命中 modrinth:guideme（project-id Ck4E7v7R）
+hadal-depths-neoforge-1.21.1-2.2.0.jar	hadal_depths	2.2.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+IceAndFireCE-2.0-beta.16-1.21.1-neoforge.jar	iceandfire	2.0-beta.16	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1040076
+immersive_aircraft-1.5.2+1.21.1-neoforge.jar	immersive_aircraft	1.5.2+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 666014
+immersive_paintings-neoforge-1.21.1-0.7.9.jar	immersive_paintings	0.7.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 639584
+integrated_api-neoforge-1.21.1-1.9.1.jar	integrated_api	1.9.1	Modrinth	sha1 命中 modrinth:integrated-api（project-id V6fKbpBN）
+iris-flywheel-compat-NeoForge-2.4.0.jar	irisflw	2.4.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 659897
+iris-neoforge-1.8.14-beta.1+mc1.21.1.jar	iris	1.8.14-beta.1+mc1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 455508
+Jade-1.21.1-NeoForge-15.10.6.jar	jade	n/a	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 324717
+JadeAddons-1.21.1-NeoForge-6.1.2.jar	jadeaddons	n/a	Modrinth	sha1 命中 modrinth:jade-addons-forge（project-id xuDOzCLy）
+Jadens-Nether-Expansion-2.4.1.jar	netherexp	2.4.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1111833
+jupiter-2.3.7-1.21.1-neoforge.jar	jupiter	2.3.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1072905
+justenoughbreeding-neoforge-1.21.1-3.3.1.jar	justenoughbreeding	3.3.1	Modrinth	sha1 命中 modrinth:justenoughbreeding（project-id 9Pk89J3g）
+kaleidoscopedoll-1.4.1-neoforge+mc1.21.1.jar	kaleidoscope_doll	1.4.1-neoforge+mc1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1233277
+kambrik-neoforge-8.0.0-beta.2.jar	kambrik	8.0.0-beta.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 455585
+konkrete_neoforge_1.9.9_MC_1.21.jar	konkrete	1.9.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 410295
+kotlinforforge-5.12.0-all.jar	kotlinforforge	5.12.0	未确认	Kotlin 语言提供器（FML Language Provider），jar 内无 mods.toml
+kubejs-create-neoforge-2101.3.1-build.18.jar	kubejs_create	2101.3.1-build.18	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 429371
+kubejsdelight-1.1.6.jar	kubejsdelight	1.1.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 864875
+kubejs-editor-0.18.0.jar	kubejs_editor	0.18.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+kubejs-neoforge-2101.7.2-build.381.jar	kubejs	2101.7.2-build.381	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+lctech-1.21-0.2.2.7.jar	lctech	1.21-0.2.2.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 548152
+ldlib2-neoforge-1.21.1-2.2.45-all.jar	ldlib2	2.2.45	Modrinth	sha1 命中 modrinth:ldlib（project-id B1CBVXHX）
+let_it_walk-0.1.2.jar	let_it_walk	0.1.2	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+libIPN-neoforge-1.21.1-6.6.3.jar	libipn	6.6.3	Modrinth	sha1 命中 modrinth:libipn（project-id onSQdWhM）
+libraryferret-neoforge-1.21.1-4.0.0.jar	libraryferret	4.0.0	Modrinth	sha1 命中 modrinth:library-ferret（project-id DOB2l4oJ）
+lightmanscurrency-1.21-2.3.0.5.jar	lightmanscurrency	1.21-2.3.0.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 472521
+lionfishapi-3.1.jar	lionfishapi	3.1	Modrinth	sha1 命中 modrinth:lionfish-api（project-id FoVacERa）
+lithostitched-1.8.1-neoforge-21.1.jar	lithostitched	1.8.1	Modrinth	sha1 命中 modrinth:lithostitched（project-id XaDC71GB）
+loconautics-0.1.2BETA.jar	loconautics	0.1.2BETA	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+lodestone-1.21.1-1.8.2.jar	lodestone	1.8.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 616457
+lootjs-neoforge-1.21.1-3.7.0.jar	lootjs	1.21.1-3.7.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 570630
+lootr-neoforge-1.21.1-1.11.38.127.jar	lootr	1.21.1-1.11.38.127	Modrinth	sha1 命中 modrinth:lootr（project-id EltpO5cN）
+luncheon-meat-s-delight-1.0.6-neoforge-1.21.1.jar	luncheonmeatsdelight	1.21.1-1.0.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1218605
+mafglib-0.4.3+mc1.21.1.jar	mafglib;malilib	0.4.3+mc1.21.1	Modrinth	sha1 命中 modrinth:mafglib（project-id SKI34J7B）
+man_of_many_planes-0.2.2+1.21.1-neoforge.jar	man_of_many_planes	0.2.2+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 984493
+mechanicals-1.21.1-1.1.6.jar	mechanicals	1.1.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1253573
+melody_neoforge_1.0.10_MC_1.21.jar	melody	1.0.10	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 938643
+mezz_config-1.21.1-neoforge-0.6.10-standalone.jar	mezz_config	0.6.10	未确认	JarJar 包装，元数据在内嵌 mezz_config-1.21.1-neoforge-0.6.10.jar
+moonlight-1.21.1-3.7.2-neoforge.jar	moonlight	1.21.1-3.7.2	Modrinth	sha1 命中 modrinth:moonlight（project-id twkfQtEc）
+morejs-neoforge-1.21.1-0.16.0.jar	morejs	1.21.1-0.16.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 666198
+morerequirement-1.21-1.21.1-1.2.2.jar	morerequirement	1.2.2	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+Multiblocked2-1.21-1.21.1-21.0.6.jar	mbd2	21.0.6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1104057
+mutil-1.21.1-7.0.0.jar	mutil	7.0.0	Modrinth	sha1 命中 modrinth:mutil（project-id HWHl8Evb）
+MyNethersDelight-1.21.1-1.10.4.1.jar	mynethersdelight	1.10.4.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1003673
+mysterious_mountain_lib-1.2.15-1.21.1.jar	mysterious_mountain_lib	1.2.15-1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 368098
+neapolitan-1.21.1-6.0.1.jar	neapolitan	6.0.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 382016
+neoforge-dungeonsdelight-1.21.1-1.4.6.jar	dungeonsdelight	1.4.5	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1258923
+neoforge-runiclib-1.21.1-5.0.7.jar	runiclib	5.0.7	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 880879
+neoterraforged-1.21.1-0.0.6 (1).jar	reterraforged	0.0.6	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+neo-voxy-0.4.0-NHblock714.jar	voxy	0.4.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+nexuslib-neoforge-1.21.1-1.2.0.jar	nexuslib	1.2.0	Modrinth	sha1 命中 modrinth:nexuslib（project-id bgDhVmqz）
+Northstar-0.6.1+1.21.1.jar	northstar	0.6.1+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1318310
+nowheel-2.1.1+1.21.1neoforge.jar	nowheel	2.1.1	Modrinth	sha1 命中 modrinth:create-nowheel（project-id c47YxuuI）
+obe+1.21.1-neoforge-1.2.1-patch.1.jar	obe	1.2.1-patch.1	Modrinth	sha1 命中 modrinth:obe（project-id AtOSAunf）
+offcutting-1.1.0-1.21.1.jar	offcutting	1.1.0+1.21.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar	owo	0.12.15.6-beta.1+1.21	Modrinth	sha1 命中 modrinth:owo-lib（project-id ccKDOlHs）
+pantographsandwires-neoforge-1.21.1-beta-0.2.3-C6.jar	pantographsandwires	1.21.1-beta-0.2.3-C6	Modrinth	sha1 命中 modrinth:create-pantographs-and-wires（project-id VzdCnMqW）
+Placebo-1.21.1-9.9.4.jar	placebo	9.9.4	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+player-animation-lib-forge-2.0.4+1.21.1.jar	playeranimator	2.0.4+1.21.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 658587
+ponderjs-neoforge-1.21.1-2.4.0.jar	ponderjs	1.21.1-2.4.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 622888
+prickle-neoforge-1.21.1-21.1.11.jar	prickle	21.1.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1023259
+Prism-1.21.1-neoforge-1.0.11.jar	prism	1.0.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 638111
+prometheus-neoforge-1.21.1-1.2.5.jar	prometheus	1.2.5	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+puzzleslib-v21.1.66-mc1.21.1+neoforge.jar	puzzleslib	21.1.66	Modrinth	sha1 命中 modrinth:puzzles-lib（project-id QAGBst4M）
+quality_food-1.21.1-2.3.6-cdpr.2.jar	quality_food	2.3.6-cdpr.2	自建	CDPR 定制构建（版本号含 -cdpr），非上游原始构建
+quest_enhance-1.21.1-neoforge-3.14.jar	quest_enhance	1.21.1-neoforge-3.14	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+quest_giver-1.21.1-1.5.3.jar	quest_giver	1.5.3	Modrinth	sha1 命中 modrinth:quest-giver（project-id C3F7F9TB）
+refurbished_furniture-neoforge-1.21.1-1.0.22.jar	refurbished_furniture	1.0.22	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 897116
+renderjs-neoforge-2101.2.4.jar	renderjs	2101.2.4	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1064413
+resourcefulconfig-neoforge-1.21-3.0.11.jar	resourcefulconfig	3.0.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 714059
+resourcefullib-neoforge-1.21-3.0.12.jar	resourcefullib	3.0.12	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 570073
+rhino-2101.2.7-build.85.jar	rhino	2101.2.7-build.85	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar	ritchiesprojectilelib	2.1.2	Modrinth	sha1 命中 modrinth:rpl（project-id B3pb093D）
+rocketnautics_addon-1.0.0.jar	rocketnautics_addon	1.0.0	Modrinth	sha1 命中 modrinth:create-cosmonautics-expansion（project-id gD7M0IgY）
+sablemassview-1.0.0.jar	sablemassview	1.0.0	Modrinth	sha1 命中 modrinth:create-aeronautics-sable-mass-view（project-id f5uobnkD）
+sable-neoforge-1.21.1-2.0.6.jar	sable	2.0.6	Modrinth	sha1 命中 modrinth:sable（project-id T9PomCSv）
+sable-photomancy-1.0.1.jar	sable_schematic_api	1.0.1	Modrinth	sha1 命中 modrinth:sable-schematic-tool（project-id hNGBYvQN）
+Searchables-neoforge-1.21.1-1.0.2.jar	searchables	1.0.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 858542
+seasonals-6.0.0.jar	seasonals	6.0.0	Modrinth	sha1 命中 modrinth:seasonals-ported（project-id lWlBcEy7）
+silentsdelight-1.21.1-1.0.1.jar	silentsdelight	1.21.1-1.0.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+simplejadetetra-1.21-1.21.1-6.9.0-1.0.0.jar	simplejadetetra	6.9.0-1.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+sliceanddice-4.3.4-neoforge.jar	sliceanddice	4.3.4	Modrinth	sha1 命中 modrinth:slice-and-dice（project-id GmjmRQ0A）
+someassemblyrequired-5.2.8.jar	someassemblyrequired	5.2.8	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 422951
+soul-fire-d-neoforge-1.21-6.1.0.jar	soul_fire_d	6.1.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 662413
+structurify-neoforge-2.0.43+mc1.21.1.jar	structurify	2.0.43	Modrinth	sha1 命中 modrinth:structurify（project-id yz7AM2zx）
+struts-1.3.1.jar	struts	1.3.1	Modrinth	sha1 命中 modrinth:strut-your-stuff（project-id sHO3MhQx）
+sunken-spires-1.0.jar	mr_sunken_spires	n/a	Modrinth	sha1 命中 modrinth:sunken-spires（project-id annHP7q0）
+supermartijn642configlib-1.1.8-neoforge-mc1.21.jar	supermartijn642configlib	1.1.8	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 438332
+supermartijn642corelib-1.1.26-neoforge-mc1.21.jar	supermartijn642corelib	1.1.26	Modrinth	sha1 命中 modrinth:supermartijn642s-core-lib（project-id rOUBggPv）
+synaxis-1.5.0.jar	synaxis	1.5.0	Modrinth	sha1 命中 modrinth:synaxis（project-id aJewFWOb）
+t_and_t-fabric-neoforge-1.13.11.jar	t_and_t	1.13.11	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 626761
+tacz_aero_compat-1.8.0.jar	tacz_aero_compat	1.8.0	Modrinth	sha1 命中 modrinth:tacz-aeronautics-compat（project-id jgOzA8I4）
+taczaddon-1.1.8.3-neoforge-1.21.1.jar	taczaddon	1.1.8.3	Modrinth	sha1 命中 modrinth:taczaddon（project-id 3Ihyt5WL）
+tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar	tacz	1.1.8-hotfix-r6	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1353462
+tcdcommons-3.12.8+neoforge-1.21.1-rev.1.jar	tcdcommons	3.12.8+neoforge-1.21.1-rev.1	Modrinth	sha1 命中 modrinth:tcdcommons（project-id Eldc1g37）
+tectonic-3.0.28-neoforge-21.1.jar	tectonic	3.0.28	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 686836
+tenshilib-1.21.1-2.3.1-neoforge.jar	tenshilib	1.21.1-2.3.1-neoforge	Modrinth	sha1 命中 modrinth:tenshilib（project-id P2rffivS）
+Terralith_1.21.x_v2.6.2.jar	lithostitched;lithostitched;terralith	2.6.2	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 513688
+tetra_addition-1.21-1.21.1-6.9.0-1.1.jar	tetra_addition	6.9.0-1.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_attribute_rebalancing-1.21-1.21.1-6.9.0-1.0.0-PrecisionFix.jar	tetra_attribute_rebalancing	6.9.0-1.0.0-PrecisionFix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_inherit_enchant-1.21-1.21.1-6.9.0-1.0.0.jar	tetra_inherit_enchant	6.9.0-1.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_material_overhaul-1.21-1.21.1-6.9.0-1.0.1.jar	tetra_material_overhaul	6.9.0-1.0.1	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_modify_core-1.21-1.21.1-6.9.0-1.0.10.jar	tetra_modify_core	6.9.0-1.0.10	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_over_honing-1.21-1.21.1-6.9.0-1.0.1-fix.jar	tetra_over_honing	6.9.0-1.0.1-fix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra_view-1.21-1.21.1-6.9.0-1.0.2.jar	tetra_view	6.9.0-1.0.2	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetra-1.21.1-7.0.0.jar	tetra	7.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetracompat-1.21-1.21.1-1.0.0.jar	tetracompat	1.21.1-1.0.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetratic_combat_expanded-1.21-1.21.1-2.8.3.jar	tetratic_combat_expanded	1.21.1-2.8.3	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tetrawhetstone-1.21-1.21.1-1.1.0.jar	tetrawhetstone	1.21.1-1.1.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+tweakerge-0.4.3+mc1.21.1.jar	tweakerge;tweakeroo	0.4.3+mc1.21.1	Modrinth	sha1 命中 modrinth:tweakerge（project-id yke6wdGF）
+uranus-2.4.1-bugfix-1.21.1-neoforge.jar	uranus	2.4.1-bugfix	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+vintagedelight-1.21.1-0.1.6.jar	vintagedelight	1.21.1-0.1.6	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+vintageimprovements-1.21.1-0.0.0.8.jar	vintageimprovements	1.21.1-0.0.0.8	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+VS-Sable-HoseConnectors-0.2.2-1.21.1.jar	vsfluidlink	0.2.2	Modrinth	sha1 命中 modrinth:vs-hose-connectors（project-id YaZEkFmd）
+waystones-neoforge-1.21.1-21.1.30.jar	waystones	21.1.30	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 245755
+xaeros_waystones_compatibility-NeoForge-1.21.1-2.1.0.jar	w2w2	2.1.0	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 887484
+yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar	yet_another_config_lib_v3;neoforge;minecraft	3.8.2+1.21.1-neoforge	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 667299
+youkaishomecoming-4.2.1.jar	youkaishomecoming	4.2.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1554230
+YungsApi-1.21.1-NeoForge-5.1.9.jar	yungsapi	1.21.1-NeoForge-5.1.9	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1015100
+YungsExtras-1.21.1-NeoForge-5.1.1.jar	yungsextras	1.21.1-NeoForge-5.1.1	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 1015146
+Zeta-1.1-40.jar	zeta	1.1-40	CurseForge	上游 CDPR packwiz 元数据；curseforge project-id 968868
+zstdnet-1.21.1-neoforge-1.5.0.jar	zstdnet	1.5.0	未确认	Modrinth sha1 未命中，上游无对应条目；可能来自 CurseForge / GitHub / 自制
+#
+# 来源统计：CurseForge=160，Modrinth=175，未确认=67，自建=4

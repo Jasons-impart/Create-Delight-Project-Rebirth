@@ -1,0 +1,4 @@
+// Compost colors for create_pattern_schematics. You may add your own colors, change existing ones, or remove colors that aren't needed.
+empty_pattern_schematic, #ffe3ff
+pattern_schematic, #ffe8ff
+pattern_schematic_and_quill, #fffcff

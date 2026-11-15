@@ -1,0 +1,32 @@
+[general]
+	#Merge all dynamic resource packs from all mods that use this library into a single pack
+	merge_dynamic_resource_packs = true
+	#Prevents map texture from being upladed to GPU when only map markers have changed.Could increase performance
+	lazy_map_upload = true
+	#Renders map textures using mipmap. Vastly improves look from afar as well when inside a Map Atlas from Map Atlases or similar. Set to 0 to have no mipmap like vanilla
+	# Default: 3
+	# Range: 0 ~ 4
+	maps_mipmap = 3
+	#Fix minecraft entity shading to be exactly the same that blocks use. (1 for up,0.8 for north, 0.6 for west and 0.5 for down).This means that if you have a model and render it with a tile renderer or entity it will appear identical as one rendered via baked models.Using no gui will prevent it from changing item rendered in GUIs, in case you dont like that look.Note there is a known compat issue with Figura mod. Keep this True or False with that one
+	#Allowed Values: FALSE, NO_GUI, TRUE
+	consistent_entity_renderer_shading = "NO_GUI"
+	#Enables some debug renderers. Require the use of the /supp debug command to enable their data being sent
+	debug_renderers = false
+	#Show Item and Block tags on item tooltip
+	#Allowed Values: OFF, ON, ADVANCED_ONLY
+	tags_tooltips = "OFF"
+
+[config_screen]
+	#Use Moonlight's config screen. When off, configs open the loader's screen instead: NeoForge's own (or Configured), Cloth Config or YACL on Fabric
+	custom_config_screen = true
+	#Give every installed mod with a config screen a tile, not just the ones using Moonlight. Their own screen opens when clicked
+	show_all_mod_configs = false
+	#Draw other mods' configs inside Moonlight's screen instead of theirs (NeoForge only). GENERIC_ONLY covers just the mods that never wrote a screen of their own, ALWAYS covers every mod. Per world server configs are only shown while a world is open. Best effort: options we can't show are left as they are
+	#Allowed Values: NEVER, GENERIC_ONLY, ALWAYS
+	convert_foreign_configs = "GENERIC_ONLY"
+	#Show a slowly panning strip of a mod's items on its config screen
+	config_item_carousel = true
+	#Mods pinned to the top of the mods screen. Click the star on a mod tile to add or remove one
+	favourite_mods = []
+	#Sort the mods screen from Z to A
+	mod_list_descending = false

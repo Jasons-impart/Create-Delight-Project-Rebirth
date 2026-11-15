@@ -1,0 +1,13 @@
+// Compost colors for cookscollection. You may add your own colors, change existing ones, or remove colors that aren't needed.
+chocolate_muffin, #823d20
+cooking_oil, #d3dac5
+fish_and_chips, #d09a5c
+fried_potato, #feb12a
+lemon, #ffff34
+lemon_muffin, #fba244
+lemon_sapling, #8e8e46
+lemonade, #ffffbc
+rustic_loaf, #976b2f
+rustic_loaf_slice, #d0a157
+salt, #fff8eb
+salt_spike, #ffffff

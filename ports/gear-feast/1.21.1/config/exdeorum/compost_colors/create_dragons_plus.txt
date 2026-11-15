@@ -1,0 +1,3 @@
+// Compost colors for create_dragons_plus. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blaze_upgrade_smithing_template, #a14d33
+dragon_breath_bucket, #d9b2c8

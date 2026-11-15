@@ -1,0 +1,17 @@
+{
+    "type":  "someassemblyrequired:sandwich_spouting",
+    "fluid":  {
+                  "amount":  250,
+                  "fluid":  "the_bumblezone:royal_jelly_fluid_still"
+              },
+    "result":  {
+                   "id":  "the_bumblezone:royal_jelly_bottle",
+                   "count":  1
+               },
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "neoforge:mod_loaded",
+                                    "modid":  "the_bumblezone"
+                                }
+                            ]
+}

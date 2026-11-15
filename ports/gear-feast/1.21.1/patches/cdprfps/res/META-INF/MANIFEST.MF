@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Specification-Title: CDPRFPS
+Implementation-Title: cdprfps
+Implementation-Version: 1.0.0
+MixinConfigs: cdprfps.mixins.json

@@ -1,0 +1,312 @@
+{
+    "size":  "large",
+    "color":  "#4169E1",
+    "waves":  [
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:mine_guardian",
+                                           "count":  6
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  5.5
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  12
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  8.0
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:mine_guardian",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "minecraft:experience_bottle",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "minecraft:conduit",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:drain",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:hullbreaker",
+                                           "count":  4
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  4.5
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  4
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  -0.2
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.4
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:glow_ink_bomb",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:ink_bomb",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:sea_staff",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:ortholance",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "minecraft:trident",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1600,
+                      "setup_time":  150
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:hullbreaker",
+                                           "count":  1
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  14.0
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  12
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.8
+                                        },
+                                        {
+                                            "attribute":  "generic.movement_speed",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.4
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  -0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:hullbreaker",
+                                          "rolls":  8
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "gateways:gate_pearl",
+                                                        "count":  2,
+                                                        "components":  {
+                                                                           "gateways:gateway":  "createdelightcore:the_legacy_of_the_abyss"
+                                                                       }
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:submarine",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:magic_conch",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  2400,
+                      "setup_time":  100
+                  },
+                  {
+                      "entities":  [
+                                       {
+                                           "entity":  "alexscavesup:lanternfish",
+                                           "count":  4
+                                       },
+                                       {
+                                           "entity":  "alexscavesup:sea_pig",
+                                           "count":  4
+                                       },
+                                       {
+                                           "entity":  "alexscavesup:gossamer_worm",
+                                           "count":  4
+                                       },
+                                       {
+                                           "entity":  "alexscavesup:tripodfish",
+                                           "count":  4
+                                       }
+                                   ],
+                      "modifiers":  [
+                                        {
+                                            "attribute":  "generic.max_health",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  6.5
+                                        },
+                                        {
+                                            "attribute":  "generic.armor",
+                                            "operation":  "add_value",
+                                            "value":  12
+                                        },
+                                        {
+                                            "attribute":  "generic.attack_damage",
+                                            "operation":  "add_multiplied_total",
+                                            "value":  0.5
+                                        },
+                                        {
+                                            "attribute":  "generic.knockback_resistance",
+                                            "operation":  "add_value",
+                                            "value":  0.2
+                                        }
+                                    ],
+                      "rewards":  [
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:lanternfish",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:sea_pig",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:gossamer_worm",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:entity_loot",
+                                          "entity":  "alexscavesup:tripodfish",
+                                          "rolls":  12
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:sea_glass_shards",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:marine_snow",
+                                                        "count":  12
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:deep_sea_sushi_roll",
+                                                        "count":  4
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:submarine",
+                                                        "count":  1
+                                                    }
+                                      },
+                                      {
+                                          "type":  "gateways:stack",
+                                          "stack":  {
+                                                        "id":  "alexscavesup:floater",
+                                                        "count":  1
+                                                    }
+                                      }
+                                  ],
+                      "max_wave_time":  1200,
+                      "setup_time":  60
+                  }
+              ],
+    "failures":  [
+                     {
+                         "type":  "gateways:explosion",
+                         "strength":  5,
+                         "fire":  true,
+                         "block_damage":  false
+                     }
+                 ]
+}

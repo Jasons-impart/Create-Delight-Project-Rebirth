@@ -1,0 +1,3 @@
+// Compost colors for maidsoulkitchen. You may add your own colors, change existing ones, or remove colors that aren't needed.
+burn_protect_bauble, #f08980
+culinary_hub, #97502d

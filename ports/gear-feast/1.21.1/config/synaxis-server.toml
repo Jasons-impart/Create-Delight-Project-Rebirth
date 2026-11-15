@@ -1,0 +1,28 @@
+	[cimulink.luacuit]
+		#Allows a Luacuit script to request synchronous game-tick execution in define().
+		allow_script_sync = false
+		#Allows a script to request the light trusted watcher mode.
+		allow_trusted_light = false
+		#Allows scripts to run without the Luacuit watcher hook. Unsafe on public servers.
+		allow_trusted_unwatched = false
+		#Default Luacuit execution mode: async_wait or async_non_blocking.
+		#Allowed Values: ASYNC_NON_BLOCKING, ASYNC_WAIT
+		default_execution_mode = "ASYNC_WAIT"
+		#Maximum main-thread wait for async game-tick Luacuit results, in microseconds.
+		# Default: 24000
+		# Range: 0 ~ 1000000
+		max_async_wait_game_tick_micros = 24000
+		#Maximum main-thread wait for async physics Luacuit results, in microseconds.
+		# Default: 8000
+		# Range: 0 ~ 1000000
+		max_async_wait_physics_micros = 8000
+		#Maximum watcher wall-clock budget for synchronous game-tick Luacuit execution, in microseconds.
+		# Default: 1000
+		# Range: 1 ~ 1000000
+		max_sync_game_tick_micros = 1000
+		#Allows synchronous execution in physics substep domains. Off by default.
+		allow_sync_in_physics_substep = false
+		#Maximum synchronous Luacuit executions allowed per server tick.
+		# Default: 64
+		# Range: 0 ~ 1000000
+		max_sync_luacuits_per_tick = 64

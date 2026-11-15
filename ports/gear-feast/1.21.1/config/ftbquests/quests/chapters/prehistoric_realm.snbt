@@ -1,0 +1,547 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prehistoric_realm"
+	group: "7A00000000000005"
+	icon: {
+		id: "alexscavesup:dinosaur_nugget"
+	}
+	id: "08647BF807EC9951"
+	images: [ ]
+	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5649C232503A8C1C"]
+			id: "5C43147A8657C3D9"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/discover_primordial_caves"
+				criterion: ""
+				id: "6164200B248E9199"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "6AA5DA7F114BB2F8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "15BABCEB5881A5A3"
+				item: { count: 1, id: "alexscavesup:fiddlehead" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "63921A7821A17AAB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "087287B09D5AD497"
+				item: { count: 1, id: "alexscavesup:tree_star" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "38E550D21F26F5A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "058C52410D3EAF62"
+				item: { count: 1, id: "alexscavesup:pine_nuts" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"63921A7821A17AAB"
+				"38E550D21F26F5A0"
+				"6AA5DA7F114BB2F8"
+			]
+			id: "0CFD677D1EB3B847"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58465B23D1292C7E"
+				item: { count: 1, id: "alexscavesup:serene_salad" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "304303BF98E147F9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0C233306B702FA09"
+				item: {
+					count: 1
+					id: "alexscavesup:amber_curiosity"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "280DAE6FCE576D3C"
+				item: { count: 1, id: "alexscavesup:amber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "4D6604F85F2D6867"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D53F93A4ECEEFD8"
+				item: { count: 1, id: "alexscavesup:ambersol" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6AA5DA7F114BB2F8"]
+			id: "41EAF3036CC3B838"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3EC3FF43951CD0A5"
+				item: { count: 1, id: "alexscavesup:fern_thatch" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D3F02C18B30D9D0"]
+			id: "5F021C9A8492642C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D0B69E6019FE814"
+				item: { count: 1, id: "alexscavesup:primitive_club" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "4848E0F5A240A6C9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0A19C45D31781A54"
+				item: { count: 1, id: "alexscavesup:trilocaris_tail" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4848E0F5A240A6C9"]
+			id: "54DD7424BBD9ED64"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "57A1C0E54A6EFB2D"
+				item: { count: 1, id: "alexscavesup:primordial_soup" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D3F02C18B30D9D0"]
+			id: "42636B787B03B2F6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "137FB5AE6703FEC4"
+				item: { count: 1, id: "alexscavesup:seething_stew" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "3D3F02C18B30D9D0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "44E82154DE0D03EA"
+				item: { count: 1, id: "alexscavesup:heavy_bone" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "446B51A2BCC2C316"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "04AC05FFEE8A254C"
+				item: { count: 1, id: "alexscavesup:cooked_dinosaur_chop" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["446B51A2BCC2C316"]
+			id: "73A47C934FC5AB13"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "74E664698503AAC2"
+				item: { count: 1, id: "alexscavesup:dinosaur_nugget" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "76FB631588448D5C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7F09AD6D4448F7A7"
+				item: { count: 1, id: "alexscavesup:limestone_spear" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"167D70EB2245F91E"
+				"3D3F02C18B30D9D0"
+			]
+			id: "22397D2C9BB4A736"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "65E67DE700D17EDC"
+					item: {
+						count: 1
+						id: "alexscavesup:heavy_bone"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D3E44ED81F95472"
+					item: {
+						count: 1
+						id: "alexscavesup:tough_hide"
+					}
+					random_bonus: 6
+					type: "item"
+				}
+				{
+					id: "089F86026C10D12B"
+					item: {
+						count: 1
+						id: "minecraft:armor_stand"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "108BA690AC5603F0"
+					item: { count: 1, id: "alexscavesup:primordial_helmet" }
+					type: "item"
+				}
+				{
+					id: "765F63F0C053C3CC"
+					item: { count: 1, id: "alexscavesup:primordial_tunic" }
+					type: "item"
+				}
+				{
+					id: "3EB5481ADA221F9B"
+					item: { count: 1, id: "alexscavesup:primordial_pants" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["304303BF98E147F9"]
+			id: "51EBB8CB2DE0FBB9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "56E2D5EC7D349A8C"
+				item: { count: 1, id: "alexscavesup:amber_curiosity" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["304303BF98E147F9"]
+			id: "1E245C25CFFE0E50"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "568078360A426277"
+				item: { count: 1, id: "alexscavesup:amber_monolith" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51EBB8CB2DE0FBB9"]
+			id: "1CBA3ADA5EE74EA0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "24DD1BE53A1232CC"
+				item: { count: 1, id: "alexscavesup:ominous_catalyst" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["438D0BE4505D129E"]
+			id: "23FC5BBFD397D0C4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "77CDA2B61B8DD9F7"
+				item: { count: 1, id: "alexscavesup:tectonic_shard" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			id: "167D70EB2245F91E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "609B80053308738D"
+				item: { count: 1, id: "alexscavesup:tough_hide" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CBA3ADA5EE74EA0"]
+			id: "438D0BE4505D129E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/summon_luxtructosaurus"
+				criterion: ""
+				id: "4A9EEE96C8A88749"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63921A7821A17AAB"]
+			id: "1971AAA19BD8E5C7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/breed_grottoceratops"
+				criterion: ""
+				id: "1234B8DA9E560D5E"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5F021C9A8492642C"
+				"0CFD677D1EB3B847"
+			]
+			id: "5D21C1927E6D2D4E"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/tame_tremorsaurus"
+				criterion: ""
+				id: "6D5A783980F23F1C"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4848E0F5A240A6C9"]
+			id: "659DAF65F5F19578"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/tame_subterranodon"
+				criterion: ""
+				id: "58C463BC912FB7AE"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0CFD677D1EB3B847"]
+			id: "5B184A8711524524"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/tame_vallumraptor"
+				criterion: ""
+				id: "12996CCB28430858"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			hide_dependency_lines: true
+			id: "5FEB500C86C4262A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "061B7B6912BB9877"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			hide_dependency_lines: true
+			id: "4F8AB610C9119A96"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C4EC7D9C920AB79"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["23FC5BBFD397D0C4"]
+			id: "70ED6328277A5639"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/atlatitan_stomp"
+				criterion: ""
+				id: "072B9D75056349D8"
+				type: "advancement"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4848E0F5A240A6C9"]
+			id: "071706219EA51C18"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/feed_relicheirus"
+				criterion: ""
+				id: "60CED8A01D0ACFAB"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"76FB631588448D5C"
+				"23FC5BBFD397D0C4"
+			]
+			id: "471D8A04755851E6"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "051A9CD8ED00B461"
+				item: { count: 1, id: "alexscavesup:extinction_spear" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5C43147A8657C3D9"]
+			hide_dependency_lines: true
+			id: "338DDAB937B02FD6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "5F3974C5CB60E273"
+					item: {
+						count: 1
+						id: "alexscavesup:tectonic_shard"
+					}
+					random_bonus: 7
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B7D8E0DC86D77C2"
+					type: "choice"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "55178CFDCF1A8FCF"
+					item: { count: 1, id: "alexscavesup:subterranodon_egg" }
+					type: "item"
+				}
+				{
+					id: "4EE103B4B4357D49"
+					item: { count: 1, id: "alexscavesup:vallumraptor_egg" }
+					type: "item"
+				}
+				{
+					id: "6C85F7C33966E7D1"
+					item: { count: 1, id: "alexscavesup:grottoceratops_egg" }
+					type: "item"
+				}
+				{
+					id: "5BFC5A7E2D01358F"
+					item: { count: 1, id: "alexscavesup:tremorsaurus_egg" }
+					type: "item"
+				}
+				{
+					id: "0E6A766AF76AA436"
+					item: { count: 1, id: "alexscavesup:relicheirus_egg" }
+					type: "item"
+				}
+				{
+					id: "0D48F6BEB5563C44"
+					item: { count: 1, id: "alexscavesup:atlatitan_egg" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			id: "5649C232503A8C1C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "7DF4A860364559DA"
+				item: { count: 1, id: "create:limestone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+}

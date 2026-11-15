@@ -1,0 +1,32 @@
+#.
+#These values affect various miscellaneous contraptions.
+[kinetics]
+	#.
+	#Extinguisher Distance
+	# Default: 8
+	# Range: 0 ~ 128
+	extinguisherDistance = 8
+	#.
+	#Extinguisher Cooldown
+	# Default: 60
+	# Range: 0 ~ 1000
+	extinguisherCooldown = 60
+	#.
+	#Extinguisher Range
+	# Default: 2
+	# Range: 0 ~ 16
+	extinguisherRange = 2
+	#.
+	notifyOnHit = true
+
+		#.
+		#.
+		#Stressful, I know.
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				torpedo_detection_device = 32.0

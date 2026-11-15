@@ -1,0 +1,21 @@
+// Compost colors for rocketnautics. You may add your own colors, change existing ones, or remove colors that aren't needed.
+copper_anchor_boots, #ea7f73
+copper_leg_thrusters, #a87a61
+copper_nozzle, #fa845f
+crushed_raw_titanium, #b690bb
+lunar_moss_scraggly, #e6d0ab
+lunar_moss_short, #f7e3bc
+lunar_moss_stiff, #e4d0ab
+lunar_rock_smooth, #c8beab
+lunar_rock_spiky, #c5bba8
+lunar_rock_tall, #c6beaa
+music_disc_space, #526f72
+raw_titanium, #9a799d
+space_helmet, #c39a7a
+titanium_alloy, #eb61b6
+titanium_alloy_nugget, #fa6fc0
+titanium_alloy_sheet, #ff7ac9
+titanium_ingot, #b683bf
+titanium_nozzle, #e064b5
+titanium_nugget, #a576ae
+titanium_sheet, #cf9ad4

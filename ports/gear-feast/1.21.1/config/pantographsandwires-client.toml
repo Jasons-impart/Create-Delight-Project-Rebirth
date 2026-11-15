@@ -1,0 +1,4 @@
+	[pantographsandwires_client_config.debug]
+		#Shows the real AABB hitbox of rotated blocks and not a rotated version of the outline.
+		#Default: OFF
+		show_original_block_hitbox = false

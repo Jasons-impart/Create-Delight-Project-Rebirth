@@ -1,0 +1,13 @@
+#The maid pack that the client player needs to download, needs to fill in the URL value of the file
+#Example: ["https://www.dropbox.com/download/apple.zip", "https://www.dropbox.com/download/cat.zip"]
+ClientPackDownloadUrls = []
+#When turned on, when the maid AI executes more than 50ms, the entity information of the problem will be logged
+MaidAITimeDebug = false
+#The interval time (in seconds) for the maid backup mechanism to back up maid data
+# Default: 180
+# Range: > 5
+MaidBackupIntervalSeconds = 180
+#The maximum number of backups for each player when the maid backup mechanism is enabled
+# Default: 3
+# Range: 1 ~ 64
+MaidBackupMaxCount = 3

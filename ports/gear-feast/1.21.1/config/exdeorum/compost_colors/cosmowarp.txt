@@ -1,0 +1,5 @@
+// Compost colors for cosmowarp. You may add your own colors, change existing ones, or remove colors that aren't needed.
+memory_card, #e3b1b8
+moon_crystal, #f7ffff
+raw_moon_crystal, #c3bfbc
+warp_crystal, #f1cce6

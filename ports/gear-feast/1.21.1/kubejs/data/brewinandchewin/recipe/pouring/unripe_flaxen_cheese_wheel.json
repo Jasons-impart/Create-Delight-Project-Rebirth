@@ -1,0 +1,17 @@
+{
+    "type":  "brewinandchewin:keg_pouring",
+    "container":  {
+                      "item":  "minecraft:honeycomb"
+                  },
+    "fluid":  {
+                  "amount":  1000,
+                  "id":  "brewinandchewin:flaxen_cheese"
+              },
+    "output":  {
+                   "id":  "brewinandchewin:unripe_flaxen_cheese_wheel",
+                   "count":  1
+               },
+    "strict":  false,
+    "can_fill":  false,
+    "unit":  "millibuckets"
+}

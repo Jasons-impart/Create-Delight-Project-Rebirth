@@ -1,0 +1,11 @@
+// Compost colors for aeroengineering. You may add your own colors, change existing ones, or remove colors that aren't needed.
+aviation_alloy_ingot, #919ea1
+aviation_alloy_sheet, #b9c2c2
+aviation_blade, #6f6e6c
+aviation_kerosene_bucket, #beb297
+compressor_component, #9b9898
+coordinate_form, #ffe3b1
+missile_thruster, #647273
+netherite_powder, #626462
+turbine_component, #a1a09e
+vector_component, #9ba1a2

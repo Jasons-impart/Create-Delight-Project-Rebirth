@@ -1,0 +1,40 @@
+{
+	id: "743B0B748B7CE8EC"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{
+			id: "6A4D7DA24A6857C5"
+			item: {
+				count: 1
+				id: "createcafe:iced_coffee"
+			}
+			weight: 10.0f
+		}
+		{ id: "2967C45BB60884DA", item: { count: 1, id: "createcafe:iced_coffee_milk" } }
+		{ id: "7221C33E5AA4C3AA", item: { count: 1, id: "createcafe:strawberry_iced_coffee" } }
+		{ id: "192526D4DA1C5818", item: { count: 1, id: "createcafe:vanilla_iced_coffee" } }
+		{ id: "21FE44348040E0D5", item: { count: 1, id: "createcafe:mint_iced_coffee" } }
+		{ id: "1223023E413635DD", item: { count: 1, id: "createcafe:caramel_iced_coffee" } }
+		{ id: "32F3D7D4AF769A3A", item: { count: 1, id: "createcafe:banana_iced_coffee" } }
+		{
+			id: "6E2EACAEA086D164"
+			item: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:espresso"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 10.0f
+		}
+		{ id: "075E1AD256EFC2C3", item: { components: { "ftbquests:missing_item": "youkaishomecoming:americano" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "79674D761CAECE24", item: { components: { "ftbquests:missing_item": "youkaishomecoming:ristretto" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "29F345137F9A4E7F", item: { components: { "ftbquests:missing_item": "youkaishomecoming:latte" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "32C8B66C18A0234A", item: { components: { "ftbquests:missing_item": "youkaishomecoming:affogato" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "3F7B6B0FC47E5819", item: { components: { "ftbquests:missing_item": "youkaishomecoming:con_panna" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "546818AB7420EF0F", item: { components: { "ftbquests:missing_item": "youkaishomecoming:cappuccino" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "1E5DAB68491676DD", item: { components: { "ftbquests:missing_item": "youkaishomecoming:macchiato" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "4D0A755A406D77B4", item: { components: { "ftbquests:missing_item": "youkaishomecoming:mocha" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

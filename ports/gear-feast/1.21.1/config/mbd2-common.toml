@@ -1,0 +1,12 @@
+#Whether search for recipes asynchronously.
+asyncRecipeSearching = true
+#Whether use vbo for preview page rendering.
+useVBO = true
+#Duration of the multiblock in-world preview (s)
+# Default: 10
+# Range: 1 ~ 999
+multiblockPreviewDuration = 10
+#Duration of the multiblock in-world pattern error position (s)
+# Default: 10
+# Range: 1 ~ 999
+multiblockPatternErrorPosDuration = 10

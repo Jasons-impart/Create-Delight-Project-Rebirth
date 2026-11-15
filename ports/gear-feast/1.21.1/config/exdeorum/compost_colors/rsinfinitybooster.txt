@@ -1,0 +1,3 @@
+// Compost colors for rsinfinitybooster. You may add your own colors, change existing ones, or remove colors that aren't needed.
+dimension_card, #54644e
+infinity_card, #625057

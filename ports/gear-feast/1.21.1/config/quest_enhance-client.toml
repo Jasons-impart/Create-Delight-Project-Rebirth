@@ -1,0 +1,4 @@
+#使用生物模型替代击杀实体任务的刷怪蛋图标
+render_kill_task_entity_models = true
+#左键点击进度任务时打开对应的原版进度界面
+open_advancement_tasks = true

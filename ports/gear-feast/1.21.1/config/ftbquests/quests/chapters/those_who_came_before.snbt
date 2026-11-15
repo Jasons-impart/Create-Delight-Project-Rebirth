@@ -1,0 +1,4702 @@
+{
+	autofocus_id: "0B417F149D8B4ED5"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "those_who_came_before"
+	group: "7A00000000000004"
+	icon: {
+		id: "tetra:modular_double"
+	}
+	id: "214BED3560F53D72"
+	images: [
+		{
+			height: 1.17d
+			id: "1DE2F132C18073E9"
+			image: "minecraft:block/crafting_table_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			id: "54B006CE20882014"
+			image: "tetra:block/crafting_table_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			id: "763F33C4134CA80A"
+			image: "tetra:block/forged_schematic/earthpiercer_0_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "4D6455A2A005BB46"
+			image: "tetra:block/forged_schematic/earthpiercer_1_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "1DCEDB4946B6157E"
+			image: "tetra:block/forged_schematic/earthpiercer_0_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "00721DEA14F218E3"
+			image: "tetra:block/forged_schematic/earthpiercer_1_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "42A388CA531035C7"
+			image: "minecraft:block/crafting_table_front"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			id: "3B2642D58BF66CFA"
+			image: "tetra:block/crafting_table_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			id: "28E1FC2D894B0746"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			id: "1AD9E75B4D3A99BD"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "05A06BCF088596F3"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "669528CCAF7B93D0"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "24E2DB9E4DDA618E"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "08B9B339C9B85F61"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "1117F4FE71F711FC"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "14898FA3AFF432B9"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "1AB015B13EC1848D"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "25579F5E15AAEE8D"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "5A91B8C88AFE2F90"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "7FF96423898FD3EF"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "4DE163CA934FEA3D"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "68A319EC3DC28AC2"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "3E0613DEF15AE81A"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "68C973AACC622A94"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "3784BF633D82B475"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "4F251982664F2B70"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "185EAE839B2F94D0"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "208342A9D4056D6C"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "3DDE7B81884E4C71"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "43BE5E0E87485FC4"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "26A0464F14FC3DCD"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "0A6D22BD4AE755E7"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "5CEBFA129713494E"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "335F0DAF57A0F343"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "2A261383C1F75337"
+			image: "minecraft:block/iron_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "74F6594F556E6487"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "0F2034BA192DDC9D"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "2C5A297D1897F300"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "0193DF0346F8FF9F"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "145B3C34FD1C947C"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "10B849755811C823"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "0AE2056BC701F1F9"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "2E44F9C737178986"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "56E65423D57E9148"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "472BDF6A4EC2F7DB"
+			image: "minecraft:block/coal_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "6E5371799040FC45"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "38D2A4680BDE64D5"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "4F1A62B1C2DDDD0F"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "6E1AD0632C123F96"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "6AA738AC1B5645DD"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "69D01964A03A0B9E"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "26B36FC25EAD36D2"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "017B594F3DDB0176"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "285A470F90E4EC7F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "2098D6AF5051FB6F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "555785FE15101EF2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "5FD22540E120DB8B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "0A7141DB5ADBFB28"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "2153510EF3FCBF2C"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "0D65BEFD2B735475"
+			image: "minecraft:block/deepslate_coal_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "27E7D695A144A524"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "3BFD13A851A6FB63"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "49FF1FC4EED4D833"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "66668B2B0433C274"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "70D591576F524734"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "4E6837B00EE16A69"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "2A0C6E0C988C4BF7"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "5C85BB00D64A56E8"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "7910670534D76548"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "2ECB6CEC36EBB7E6"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "5DE88359ECB2C6A2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "1335EEF39DD317FB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "3574A37CD8942417"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "5F20EA9D3AE3A07C"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "4E172C2ABCBA9424"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "2860710F27269C5E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "3147C384BD9E5CF9"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "39F9A4C52E5D583E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "4F4C4EDB911D7900"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "172BBDE3D1469D1F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "7DEBB11310DE25A8"
+			image: "minecraft:block/deepslate_gold_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "57195F5505D87ACB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "3DC8FCFC0CBF81BA"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "262A3D33F5E90A7E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "2E98A6C68E1B12CB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "35F7A6A4AB5BF621"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "73DC097C3973B850"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "450040431B68E21A"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "0EBCDAC796683DE7"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "5D763423AF7F9FAB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "1081BD9049E4B1AB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "720E2FEF82C18817"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "0036CD3C46802D66"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "77700517B9D2417E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "2DFA9BD8724B6BAC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "11C5A1E9A06B0419"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "338070CB0C0E625D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "1F745C70D30D99CF"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "6AA3BCB941F3D4D1"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "163156F2B2908A38"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "4DD059BAC0842815"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "3EAF715BA67AF4F0"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "4CAFD67187E16C70"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "68E8F0DA502ECBBD"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "460D059642286DD8"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "4D0C5E49AE6B71A4"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "1E7565B925409EB4"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "2010CDCDA26B8654"
+			image: "minecraft:block/coal_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "12BA202DEB3DE428"
+			image: "minecraft:block/coal_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "1324D8E89BB859CA"
+			image: "minecraft:block/iron_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "4A182E1E02FAE346"
+			image: "minecraft:block/deepslate_coal_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "332CCAFA3505B9A6"
+			image: "minecraft:block/deepslate_gold_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "0C9D0E74421F2FEC"
+			image: "minecraft:block/iron_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "7ADEDA5CED68A2FD"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "286087CC92438123"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "4E950CC54AC3F69E"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "4E10ACDE3E3CED00"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "2185ACF10CB0A7DE"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "065CBFF9006B7886"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "6E350728ADC0B0B2"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "0C4730F6951E6323"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "5A46FA9D248AF639"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "1A4BC03964E7D2F3"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "4664A1EDA36BBC3A"
+			image: "tetra:block/forged_schematic/stonecutter_0_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "1A56A733D1C4F1F6"
+			image: "tetra:block/forged_schematic/stonecutter_1_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "2E53777F90AF4834"
+			image: "tetra:block/forged_schematic/stonecutter_2_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "706CE8C7E6A47511"
+			image: "tetra:block/forged_schematic/stonecutter_0_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "61155FC5DDFDFD34"
+			image: "tetra:block/forged_schematic/stonecutter_1_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "2FA6DBF852EE1313"
+			image: "tetra:block/forged_schematic/stonecutter_2_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "1B0AAFD1462B52AD"
+			image: "tetra:block/forged_schematic/extractor_0_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "4254E34108A32967"
+			image: "tetra:block/forged_schematic/extractor_1_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "70650D6C60B74927"
+			image: "tetra:block/forged_schematic/extractor_2_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "6C2A40C720A0380D"
+			image: "tetra:block/forged_schematic/extractor_0_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "74A4B0E453D701BD"
+			image: "tetra:block/forged_schematic/extractor_1_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "7DB3455FB8342F28"
+			image: "tetra:block/forged_schematic/extractor_2_1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "11246972F3703FED"
+			image: "tetra:block/forged_schematic/extractor_0_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "1F26AB0FCAAC16CF"
+			image: "tetra:block/forged_schematic/extractor_1_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "79C4B5DFF4A6AB18"
+			image: "tetra:block/forged_schematic/extractor_2_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "387A24CE4B96BD31"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "7B9CF8A1E7986069"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "03F8CDA4FD1820A8"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "4B62BFDAF04B19D6"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "1CDCDA122B0DE399"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "71D38C4C9988C699"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "1BC758811A4CDC09"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "67B36F865FA47135"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "1A26E1E815E3C6E7"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "14989F4E7A4E53B0"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "7E7FD3D377827357"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "27E9766B23CD8C88"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "0C2431EF5D006E50"
+			image: "tetra:block/forged_hammer/hammer_base_socket"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "48A57D7EE5DE5F6A"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "7F09F2740F1B6097"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "125520797571E3EE"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "1DB91C8D3CA94DEE"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "599F66B972053F9D"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "3AC06C3E4C91BF95"
+			image: "tetra:block/forged_vent1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 180.0d
+			width: 1.17d
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "12C0F01FD120E38D"
+			image: "tetra:block/forged_vent2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 180.0d
+			width: 1.17d
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "0D91FCB6B23094C6"
+			image: "tetra:block/forged_vent2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "427E59F916152D19"
+			image: "tetra:block/forged_vent1"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "2589EACF24A08BA3"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "522C6831F4A5D2EE"
+			image: "tetra:block/hammer_head_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.113d
+			y: 8.7d
+		}
+		{
+			height: 1.17d
+			id: "7FAC125F1726208D"
+			image: "tetra:block/cell_top_charged"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.334d
+			y: 8.834d
+		}
+		{
+			height: 1.17d
+			id: "6258D957AADA98DA"
+			image: "tetra:block/forged_bench_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			height: 1.17d
+			id: "013551B4F9EFFD93"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "760F35EBA28BF12D"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "770BF570143DDDD5"
+			image: "tetra:block/forged_wall_3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "07AFC1192FE3ADD4"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "0549652E908806CD"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "078EB1E5A8A64EA1"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "2E272001540E38ED"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "6382BFC9DE8B7BDD"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "1D541BD4CB771A46"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "4EB8B346D8C2DD63"
+			image: "tetra:block/forged_wall_3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "1643DA0A8D855D23"
+			image: "tetra:block/forged_wall_3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "3D9961CFEF3BE320"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "363C640CC1B0F977"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "07EEA48D92FA5831"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "3AEC9BE2977EE723"
+			image: "tetra:block/forged_wall"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "44135ABC399D0A52"
+			image: "tetra:block/forged_wall_3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "54C4C3E642E2C90F"
+			image: "tetra:block/forged_wall_3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "7FC4BA4F8D2363AE"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "344CC7570636BFB0"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "5D039804E759F6D0"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "06C31F38D744C209"
+			image: "tetra:block/forged_wall_2"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 4.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "4D5D6D2133986E77"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "2F188BAB77517E87"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "01036FF0FF11DEFF"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "65651BE7771FDCFD"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "5DF7CE3938688A01"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "10B5986356014A97"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "54C4298F8EDA4DAA"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "3A1D3B1FE5EF5CC0"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "0426EB51A8DBED55"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "74119E261BD03E11"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "0BEE5F1589A65A8D"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "4286D96F05BE8C33"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "6A5C40036B3A9160"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "1F519321A9D24AA7"
+			image: "minecraft:block/grass_block_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "0A0E7E0B2426BEB2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "362A9888E02476E2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "412357E396DCA101"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "2897DFE6602D21CD"
+			image: "minecraft:block/deepslate_diamond_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "1D5831859BF669F0"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "6DEDBBFF7611469D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "759C4F1A21FD8B9D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "7F0551C8F50261C7"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "4701FF111CF93D92"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "3CC8CB91241A9C61"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "0043BF3585698AB2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "0FCE3E1CDFCACFAE"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "0C62DC9FF14DAF64"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "77BF9AA89FB5AE98"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "00BE7CE3F3AE4341"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "13A900641D4D45C4"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "11CC120AFBAB035E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "65E6A5171C0035F1"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "59B192555B87755A"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "0D557E2D683C9C03"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "447E104FF4ECD0DA"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "5485697A061B9701"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "6817F50891B4B069"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "28C4D2037B3DFADE"
+			image: "minecraft:block/deepslate_diamond_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "10EBE114C2208C53"
+			image: "minecraft:block/deepslate_diamond_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "749971FB3A8B5884"
+			image: "tetra:block/forged_crate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 180.0d
+			width: 1.17d
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "43835EF1CC1D34A0"
+			image: "tetra:block/forged_crate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "3B47F091F6E4F601"
+			image: "tetra:block/forged_crate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: -90.0d
+			width: 1.17d
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "697945913A69FAB0"
+			image: "tetra:block/forged_crate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "2AFBA1586D1588EB"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "737DCEAA4AA3B0AA"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "7FF820089432F171"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "24AB9976193DA439"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "6F108B2455C2C433"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "7E3351BDEE88610E"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "35F7795EA5CDA1CF"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 90.0d
+			width: 1.17d
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "7E0B9C15869DFBE3"
+			image: "tetra:block/forged_pillar_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "5D75129EEF68696F"
+			image: "tetra:block/forged_container/forged_container_front"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.9d
+			y: 10.9d
+		}
+		{
+			height: 1.17d
+			id: "05CF5EEAC7BD80BC"
+			image: "tetra:block/forged_container/forged_container_lid_front"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.9d
+			y: 10.75d
+		}
+		{
+			height: 1.17d
+			id: "7DCE39D177D56796"
+			image: "tetra:block/extractor_pipe"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "25D4753574198F7D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "2CE729E86A8F95C0"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "2E7E3AC324BE0488"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "4D192FA93C4CB335"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "1DC877DEC5D805B8"
+			image: "minecraft:block/deepslate_redstone_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "20EA1F98A225505E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "60FA30F0C459630F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "3CB50A9E7DA2EA11"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "4C9F6A90EE893B4B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "55536C30B1AD0EF0"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "0AE1EB6485FC4DE1"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "4C224CBA22ECC26F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "4C42E8A1D1520734"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "64DE34BAB33261B6"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "125B892DC9C663FC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "18A9C144A54DDD29"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "028D3D28831717DC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "610971E029CC902E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "0839572F5A96046F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "2472A0A2A4757805"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "16F0F178F41FC7FC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "12CA299D83680178"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "7CE953C88BDF5770"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "3EDF682D4F5B60CC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "119A7F2C7C9551AC"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "4A2D16175FAF15B0"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "3DE89A17285D9139"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "0A5B3FF0D5B90ED7"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "63DC72454365BD0B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "57425090C4A768D6"
+			image: "tetra:block/seeping_bedrock_active"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "3BBC76F87691D317"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "19FD05B66122C476"
+			image: "tetra:block/seeping_bedrock_inactive"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "111EADFDE28BDFA1"
+			image: "tetra:block/seeping_bedrock_active"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "548A1B4A079DB4E6"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "45AC839A821BA2BE"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "26987F0A8C95BF77"
+			image: "tetra:block/seeping_bedrock_inactive"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "74B541029112F644"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "5A6A9D54EF2AC6FE"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "54306E919F48BB7E"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "7AC4C3E1E352880E"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "76EA341A4F387C0B"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "5DBD44DF079B17DB"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "5ECFCF7029CF2A98"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "2270EBBE0A39757F"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "267CA72917FB334E"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "68BF75EB3E7A705C"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "691CA5D30512D212"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "3A6DEA04D5D95496"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "5F5305156D79FA5C"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "2274044E32E2EF00"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "60CE914FA7CCAB1A"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "5970D5E6DF620B25"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "58830446387F6EB8"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "7F16C2930240AE9C"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "28A66D1FF0E63073"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "728EF80606D3B89E"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "5036132B383F1F98"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "71E5A76F9560D729"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "6219FEA2F14F876B"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "2DE3F797254B1480"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "3E012B4C47696F9A"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "1904FDD00BB190AD"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "1795A17C929B9E28"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "76A5EF7567FCA4E3"
+			image: "tetra:block/extractor_pipe_powered"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "014E5329B283F4BD"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "6947451A885D7EED"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "58FF6A6BFA8222D2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "69431186A5516911"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "0D125D0ABD85437F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "5D59BB9F7B794545"
+			image: "minecraft:block/deepslate_diamond_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "16D826D422065659"
+			image: "minecraft:block/deepslate_diamond_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "7497A7DC3AAF4C9D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "6D174F31275037DE"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "248CAACD7E40CFF2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "1145C76B59A27E79"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "4DB626F70CEBF5F1"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "264E3A23B3D54667"
+			image: "minecraft:block/deepslate_redstone_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "2ECB6547BC8F3633"
+			image: "minecraft:block/deepslate_redstone_ore"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "093C144CBC8317D4"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "78B1502189CAF75A"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "30B8E1F15B8A63C5"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "73C02905B8EFD9B8"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "2F7FE9B15CE4ECA1"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "18DCC8B5F5F95D44"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "4E080EE79C3F453E"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "528AF1C6BAD341C2"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "230F8790BBC6598D"
+			image: "tetra:block/forged_platform_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "4CEC643D930A32BB"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "2DF55C320CF5A72D"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "1531E2D0614EE8E8"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "7B6639D1EE2C57C6"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "12D7A6AD38DEF015"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "5FEB80BEC8EE8A89"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "47364D5C9F4C2155"
+			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "18F75A8B169439BC"
+			image: "tetra:block/seeping_bedrock_inactive"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "4E0FB592E64FAAE2"
+			image: "tetra:block/forged_crate"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: -90.0d
+			width: 1.17d
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "75F0CE7A3D3A5592"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			height: 1.17d
+			id: "18C694AA3AF19386"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "0D27D512A0DD7EE6"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "4B0C02E1D95B8275"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "1836EA36F5744EA9"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "4C4D4233DDD011E7"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "3016B3608CF8CDD3"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "27EDDE678383EF2D"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "37DF86F0638768D1"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "1FE3B2919E941D35"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "33637A364C9CE656"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "448775DB7C23BB7A"
+			image: "minecraft:block/grass_block_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "3612CFD37C4071BF"
+			image: "minecraft:block/grass_block_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "41C984EC422E9985"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "18C56B826CCB8D78"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "003C2D517E77B263"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "6BF63BFB7DE718FE"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			id: "50C5603798188AE9"
+			image: "eclipticseasons:block/snowy_tall_grass_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			height: 1.17d
+			id: "7CAAC56E5EB3C9BE"
+			image: "minecraft:block/grass_block_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "2A9C7837BA6161FF"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "4FD2F62F36B2AD5C"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			height: 1.17d
+			id: "4769BF785013BE29"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "7DF69374EFA3E42F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "69F09F9F302A9601"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "73B7F8FE0E824345"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "757785160B778121"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "10B65936682DF18B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "5C9FD0E491E261DA"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "40CC245CA4633C99"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "6FEBD77840726E0E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "00C9598FBA525B1E"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "35D0D71CC2946B3B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "048CB652A253B720"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "5F1B485790307101"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "198AC21A6209643F"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			height: 1.17d
+			id: "4F5BE085625B7148"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			height: 1.17d
+			id: "666246C83588B903"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			height: 1.17d
+			id: "36C3CE2B8862FBA7"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			height: 1.17d
+			id: "42BA395773982030"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			height: 1.17d
+			id: "2B4C3D11659E2D54"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			height: 1.17d
+			id: "073C6341B41D18A9"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			height: 1.17d
+			id: "64D6E230B36F04AF"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			height: 1.17d
+			id: "01C1ACCEAB9515C2"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			height: 1.17d
+			id: "51106109BEB121FE"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			height: 1.17d
+			id: "699DD676FA502696"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			height: 1.17d
+			id: "2CF890714A590B8B"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 11.5d
+		}
+		{
+			height: 1.17d
+			id: "7D0C38A811782770"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			height: 1.17d
+			id: "36E07DD1C1E96CF1"
+			image: "minecraft:block/deepslate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 13.5d
+		}
+		{
+			height: 1.17d
+			id: "3C95ED37E37C33F0"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "0A55E8532550A5DC"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			height: 1.17d
+			id: "0F5A9E3343BF353F"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "1AD0F4604BAE73CE"
+			image: "minecraft:textures/gui/advancements/backgrounds/stone.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			height: 1.17d
+			id: "29606E3708D8783A"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 14.5d
+		}
+		{
+			height: 1.17d
+			id: "5A278C17EC3498EF"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "1864640CAD082B98"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "626F8FDEBDC44A13"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 15.5d
+		}
+		{
+			height: 1.17d
+			id: "0DE318F94F88082F"
+			image: "minecraft:block/bedrock"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: 16.5d
+		}
+		{
+			height: 1.17d
+			id: "54D94FA26D0F5CC4"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "1570CAB4FB8D375A"
+			image: "minecraft:block/grass_block_snow"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			height: 1.17d
+			id: "6B8C75F45E9AD4F5"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			height: 1.17d
+			id: "32C47818161D8B76"
+			image: "minecraft:block/dirt"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.17d
+			x: -6.0d
+			y: -1.5d
+		}
+	]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"70988A6AD2A847CC"
+				"15227B34FECD8131"
+			]
+			dependency_requirement: "one_started"
+			id: "5A6D79DE721FDC09"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "539ABAA53C57393B"
+				item: {
+					count: 1
+					id: "minecraft:leather"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_2"
+				criterion: ""
+				id: "6DDFFF37A49F007A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57CB54C976B1A7F3"]
+			id: "0B417F149D8B4ED5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "17BE1094E5770D56"
+				item: {
+					count: 1
+					id: "minecraft:iron_ingot"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tetra:upgrades/workbench"
+				criterion: ""
+				id: "0F9C8EB8462A64F8"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"15227B34FECD8131"
+				"5A6D79DE721FDC09"
+			]
+			dependency_requirement: "one_completed"
+			id: "6CE10FD43D4FB06A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "0D29D3CBA2595116"
+				item: {
+					count: 1
+					id: "minecraft:rabbit_hide"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_3"
+				criterion: ""
+				id: "6E4994A19AC34E1A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["16D02C3A2328C706"]
+			id: "22948EA51ED44E63"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "779B6EB632C88FEF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+				id: "5B6D3DAF73A0BA4C"
+				type: "advancement"
+			}]
+			x: 3.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22948EA51ED44E63"]
+			id: "5555DB0FF8A6282C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2BA1684444FD1BC2"
+				type: "checkmark"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"22948EA51ED44E63"
+				"6993F7FC751ADB38"
+			]
+			id: "7A9DBC659CF9F16A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "39EFA74EFC240BF0"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7DC56C8752CA872B"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:hammer_base"
+					type: "observation"
+				}
+				{
+					id: "70A196F18D882403"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:forged_workbench"
+					type: "observation"
+				}
+			]
+			x: 3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5E1DB9E0E6D42440"
+				"0277D08366772667"
+			]
+			dependency_requirement: "one_completed"
+			id: "2C45BF71BECF6F56"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_5"
+				criterion: ""
+				id: "36E7FDB2A97F5702"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["761964547C5C2C6E"]
+			id: "3D81F66FE42EDF81"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1B002C8D2BDF2E55"
+				item: { count: 1, id: "tetra:planar_stabilizer" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["22948EA51ED44E63"]
+			id: "5CACDF74C673B52A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14031F8F0DEDA3AE"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tetra:forged_container"
+				type: "observation"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5E1DB9E0E6D42440"
+				"2C45BF71BECF6F56"
+				"0277D08366772667"
+			]
+			dependency_requirement: "one_completed"
+			id: "108873A7A16C93A3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "522FCF4811A60BE5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_6"
+				criterion: ""
+				id: "41E16E8D6AFF8CBF"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["15227B34FECD8131"]
+			id: "57CB54C976B1A7F3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6EF22C89F214545A"
+				item: {
+					count: 1
+					id: "minecraft:crafting_table"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3429C2F55FB054F0"
+				item: { count: 1, id: "tetra:holo" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A9DBC659CF9F16A"]
+			id: "57F16658F8B7E80A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "5B83ECBFF9F100CE"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:extractor_pipe"
+					type: "observation"
+				}
+				{
+					id: "3C38809622B6A5F2"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:core_extractor"
+					type: "observation"
+				}
+				{
+					id: "090E62CE4639D985"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tetra:transfer_unit"
+					type: "observation"
+				}
+			]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["761964547C5C2C6E"]
+			dependency_requirement: "one_completed"
+			id: "6993F7FC751ADB38"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "05CABEC9AA03DA4A"
+				item: {
+					count: 1
+					id: "tetra:thermal_cell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E8F27853059502E"
+				item: { count: 1, id: "tetra:thermal_cell" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["22948EA51ED44E63"]
+			dependency_requirement: "one_completed"
+			id: "19BD9F83352F0561"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 8
+				id: "5A6504FE2ECCF954"
+				item: {
+					count: 1
+					id: "tetra:metal_scrap"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A5CA460580E7CE6"
+				item: { count: 1, id: "tetra:metal_scrap" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			id: "4E731D351D54D91E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6AB98E103D8BA605"
+				type: "random"
+			}]
+			tasks: [{
+				id: "2122470CF0D19464"
+				item: { count: 1, id: "tetra:geode" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["108873A7A16C93A3"]
+			id: "299E2462A3710039"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "12EF78D217264A3D"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "64C3AB864E49B83C"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"15227B34FECD8131"
+				"5A6D79DE721FDC09"
+				"6CE10FD43D4FB06A"
+			]
+			dependency_requirement: "one_completed"
+			id: "0277D08366772667"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "4F9451F577F050DB"
+				item: {
+					count: 1
+					id: "minecraft:twisting_vines"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "tetra:upgrades/hammer_4"
+				criterion: ""
+				id: "5C094015C742DF4F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0277D08366772667"
+				"6CE10FD43D4FB06A"
+				"1CB33EA048068637"
+				"15227B34FECD8131"
+				"5A6D79DE721FDC09"
+			]
+			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
+			id: "16D02C3A2328C706"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4B5640E32F21C931"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22948EA51ED44E63"]
+			hide_dependency_lines: true
+			id: "761964547C5C2C6E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "55F704AB765008DD"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tetra:forged_crate"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A9DBC659CF9F16A"]
+			id: "1863FD9872645EA2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "tetra:spelunking/hammer_jam"
+				criterion: ""
+				id: "5720F34CB41ADE54"
+				type: "advancement"
+			}]
+			x: 3.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["19BD9F83352F0561"]
+			id: "582C8B77BF5BCD41"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 32
+					id: "22391B4ABF158D13"
+					item: {
+						count: 1
+						id: "tetra:metal_scrap"
+					}
+					type: "item"
+				}
+				{
+					id: "198C3642FE0C87F6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7BD8367E6A244C1B"
+				item: { count: 1, id: "northstar:martian_steel_ingot" }
+				type: "item"
+			}]
+			x: 7.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3D81F66FE42EDF81"]
+			icon: {
+				id: "minecraft:enchanted_book"
+			}
+			id: "20B30D10E08EB159"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "441FA4C794562470"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			id: "550A19B72855B474"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/sword_upgrade"
+				criterion: ""
+				id: "4FEE77EA5652A0E2"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			id: "65E6A1004A7DA27C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "4F8A0D75503A37AE"
+				item: {
+					count: 1
+					id: "minecraft:iron_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "72284E9C0902A143"
+				item: { count: 1, id: "tetra:rack" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "033BB60A13DEFD81"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/shield_upgrade"
+					criterion: ""
+					id: "5CAC1F9A7F7DE439"
+					type: "advancement"
+				}
+				{
+					id: "2A359DF75F809166"
+					item: { count: 1, id: "minecraft:shield" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			id: "2E8CD8B82C5838AF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/bow_upgrade"
+				criterion: ""
+				id: "2E0276B54F810535"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "0E917414701F0C6C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				advancement: "tetra:upgrades/tool_upgrade"
+				criterion: ""
+				id: "3008A0DAD5B5D32B"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			icon: {
+				id: "minecraft:iron_shovel"
+			}
+			id: "7BBABE05EF8C8B93"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				icon: {
+					id: "minecraft:iron_shovel"
+				}
+				id: "78D44D2A8E17C55C"
+				item: { components: { "ftbfiltersystem:filter": "#c:tools/shovels" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B417F149D8B4ED5"]
+			id: "48F3DF24DC2E2149"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/toolbelt"
+					criterion: ""
+					id: "07B1E68993BB26BB"
+					type: "advancement"
+				}
+				{
+					id: "6BB6416EE4AC1595"
+					item: { count: 1, id: "tetra:modular_toolbelt" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "70988A6AD2A847CC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3208097EC7AE20C3"
+				type: "checkmark"
+			}]
+			x: -2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70988A6AD2A847CC"]
+			dependency_requirement: "one_started"
+			icon: {
+				id: "tetra:modular_double"
+			}
+			id: "15227B34FECD8131"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 8
+				id: "4503D977B994C415"
+				item: {
+					count: 1
+					id: "minecraft:vine"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "tetra:upgrades/root"
+				criterion: ""
+				icon: {
+					id: "tetra:modular_double"
+				}
+				id: "44EF0352DF71CFBD"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["761964547C5C2C6E"]
+			id: "33FD5DECA1F87303"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DA4FB9F66C8A35F"
+				item: { count: 1, id: "tetra:combustion_chamber" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["761964547C5C2C6E"]
+			id: "657C5D95A638CF1B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58805C0F2F8C0DFD"
+				item: { count: 1, id: "tetra:vent_plate" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["761964547C5C2C6E"]
+			id: "3CDC7D6108B39DBE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5215D651B4CC103F"
+				item: { count: 1, id: "tetra:lubricant_dispenser" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A9DBC659CF9F16A"]
+			id: "5E1DB9E0E6D42440"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "3836568F9E633036"
+					item: { count: 1, id: "tetra:forged_workbench" }
+					type: "item"
+				}
+				{
+					id: "327BA9E80CA79E54"
+					item: { count: 1, id: "tetra:hammer_base" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70988A6AD2A847CC"]
+			icon: {
+				id: "minecraft:diamond_sword"
+			}
+			id: "776CD960DD534AE1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "23F3F082B15B1623"
+				type: "checkmark"
+			}]
+			x: -2.25d
+			y: -1.5d
+		}
+	]
+}

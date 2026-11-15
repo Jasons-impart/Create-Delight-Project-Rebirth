@@ -1,0 +1,24 @@
+[harvester]
+	uses_knife = true
+
+[slicer]
+	consume_tool_durability = true
+	ignore_rotation = false
+	jei_show_converted_recipes = false
+
+[basin_cooking]
+	enabled = true
+	replace_fluid_containers = true
+	#Allowed Values: NONE, HEATED, SUPERHEATED, COOLED, FROZEN
+	heat_condition = "HEATED"
+
+[sprinkler]
+	# Default: 300
+	# Range: 10 ~ 2048
+	fluid_capacity = 300
+	# Default: 100
+	# Range: 0 ~ 2048
+	fluid_per_use = 100
+	# Default: 5
+	# Range: 1 ~ 32
+	horizontal_range = 5

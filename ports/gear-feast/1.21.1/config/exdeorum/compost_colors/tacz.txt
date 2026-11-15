@@ -1,0 +1,4 @@
+// Compost colors for tacz. You may add your own colors, change existing ones, or remove colors that aren't needed.
+statue, #b2b1b5
+target, #ffe6e1
+target_minecart, #ffeae7

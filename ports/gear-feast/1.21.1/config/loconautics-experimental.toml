@@ -1,0 +1,8 @@
+#Features that are not ready. Off, a feature is hidden from the creative tab, cannot be placed or used, and its recipes do not load.
+#Changes need a restart.
+[experimental]
+	boilerworks = false
+	dieselworks = false
+	industrialFluids = false
+	screwLink = false
+	handbrake = false

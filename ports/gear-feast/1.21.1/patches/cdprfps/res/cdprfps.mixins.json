@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "cdprfps.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "server.FarEntityTickThrottleMixin",
+    "server.ItemEntityMergeMixin",
+    "server.EntityChunkCapMixin",
+    "server.DimensionModeMixin",
+    "server.ChunkTicketLimitMixin",
+    "server.PlayerViewDistanceMixin",
+    "server.ChunkMapPlayerViewDistanceMixin",
+    "server.PlayerListDistanceMixin",
+    "server.PlayerTickRadiusMixin",
+    "server.DistanceManagerAccessor",
+    "server.ServerChunkCacheAccessor"
+  ],
+  "client": [
+    "BlockEntityDistanceCullingMixin",
+    "ItemEntityDistanceCullingMixin",
+    "ParticleLimitMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "alexsmobsup:skreechers_can_spawn_wardens"
+      }
+    ]
+  ]
+}

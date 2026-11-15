@@ -1,0 +1,25 @@
+{
+    "type":  "farmersdelight:cutting",
+    "ingredients":  [
+                        {
+                            "item":  "luncheonmeatsdelight:small_toast"
+                        }
+                    ],
+    "tool":  [
+                 {
+                     "type":  "farmersdelight:item_ability",
+                     "action":  "knife_dig"
+                 },
+                 {
+                     "tag":  "c:tools/knife"
+                 }
+             ],
+    "result":  [
+                   {
+                       "item":  {
+                                    "id":  "bakeries:sliced_toast",
+                                    "count":  2
+                                }
+                   }
+               ]
+}

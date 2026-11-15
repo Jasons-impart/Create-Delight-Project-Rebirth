@@ -1,0 +1,632 @@
+#Global limits on where a Rift Drive may take an airship.
+[range]
+	#Warps shorter than this, in blocks, are rejected. A rift is not worth opening for a short hop.
+	# Default: 128.0
+	# Range: 0.0 ~ 1.0E7
+	minimumWarpDistance = 128.0
+	#Hard upper bound on warp distance regardless of drive tier.
+	# Default: 2000000.0
+	# Range: 1.0 ~ 1.0E9
+	maximumWarpDistance = 2000000.0
+
+#Warp cost is a fraction of a full drive charge.
+#cost = baseWarpCost + distance * distanceMultiplier + (mass / massReference) * sizeMultiplier
+#then divided by the tier's costEfficiency.
+[cost]
+	#Flat cost of opening a rift at all.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	baseWarpCost = 0.2
+	#Additional cost per block of travel.
+	# Default: 4.0E-5
+	# Range: 0.0 ~ 1.0
+	distanceMultiplier = 4.0E-5
+	#Additional cost per massReference units of airship mass.
+	# Default: 0.15
+	# Range: 0.0 ~ 10.0
+	sizeMultiplier = 0.15
+	#Airship mass counting as one unit of sizeMultiplier. Sable reports a physical mass per sub-level.
+	# Default: 40000.0
+	# Range: 1.0 ~ 1.0E9
+	massReference = 40000.0
+
+#How the exit point is chosen once the rift opens.
+[arrival]
+	#Blocks of daylight left between the anchor and the airship's underside.
+	#The search starts here and climbs, so an airship never materialises sitting on its anchor.
+	# Default: 6.0
+	# Range: 0.0 ~ 256.0
+	arrivalGroundBuffer = 6.0
+	#Horizontal radius, in blocks, searched around an anchor for a clear arrival volume.
+	# Default: 48
+	# Range: 0 ~ 512
+	safeArrivalRadius = 48
+	#Vertical radius, in blocks, searched around an anchor for a clear arrival volume.
+	# Default: 32
+	# Range: 0 ~ 512
+	safeArrivalVerticalRadius = 32
+	#Spacing between candidate arrival positions. Larger values search faster but coarser.
+	# Default: 4
+	# Range: 1 ~ 32
+	safeArrivalStep = 4
+	#Extra clearance, in blocks, required around the airship on arrival.
+	# Default: 2.0
+	# Range: 0.0 ~ 32.0
+	arrivalClearance = 2.0
+	#Most blocks the arrival check may read while proving one candidate clear.
+	#
+	#A safety valve, not a sampling rate. The check reads every block in the
+	#volume a hull would occupy - it has to, because a check that skipped any of
+	#them could clear a ship to arrive inside a one-block floor. Whole chunk
+	#sections of open air are dismissed without being read, so in practice only
+	#the parts of the volume with anything in them cost anything.
+	#
+	#Running out means the candidate could not be PROVED clear, and an unproven
+	#volume is refused rather than accepted. Lowering this does not make arrivals
+	#cheaper, it makes them fail.
+	# Default: 4000000
+	# Range: 4096 ~ 64000000
+	maxArrivalBlockChecks = 4000000
+	#Keep an assembled airship carrying a Rift Drive - and any ground it warps onto -
+	#loaded, so a ship can jump into unloaded wilderness and simply stay there. While
+	#the drive ticks it renews a self-expiring claim over the hull's footprint and its
+	#own plot chunk; a claim that must be renewed cannot leak, so the ground lets go on
+	#its own within half a minute of the drive going quiet (the ship disassembled, the
+	#drive broken). This is what makes a warp to an unattended anchor safe rather than a
+	#way to lose a ship. Turn it off to let drive-bearing ships unload like any other
+	#build - in which case consider turning requireLoadedArrival back on.
+	keepAirshipsLoaded = true
+	#Refuse a warp whose landing zone will not stay loaded on its own once the arrival
+	#ticket lapses - i.e. no player stands within view and no force-loaded region
+	#reaches it. This is the old, strict behaviour: it refuses the jump at the mooring
+	#rather than flying into wilderness. It is off by default because keepAirshipsLoaded
+	#now holds such a landing resident through the drive itself, so the ship is not lost.
+	#Only turn this on if you have also turned keepAirshipsLoaded off and want warps to
+	#unattended anchors forbidden rather than kept loaded.
+	requireLoadedArrival = false
+
+#The flight through the rift: the run at the entry aperture, the passage
+#through it, and the run out of the far one. The corridor is flown inside the
+#entry aperture rather than anywhere else, so it needs no settings of its own -
+#how long it lasts comes from the drive's tier.
+[flight]
+	#Blocks between the bow and the entry rift, on top of half the hull's length.
+	# Default: 24.0
+	# Range: 4.0 ~ 512.0
+	riftLeadDistance = 24.0
+	#Rift aperture radius as a multiple of the hull's own radius.
+	# Default: 1.35
+	# Range: 1.0 ~ 8.0
+	riftRadiusFactor = 1.35
+	#Blocks per tick the airship flies at the entry rift.
+	# Default: 1.6
+	# Range: 0.1 ~ 32.0
+	approachSpeed = 1.6
+	#Ticks the run at the entry rift may take before the airship is pulled through anyway.
+	# Default: 120
+	# Range: 20 ~ 1200
+	approachLimitTicks = 120
+	#How fast a drive spins up when turning at exactly its minimum speed, as a
+	#fraction of its rate at optimal speed. Lower makes the shaft you feed it
+	#matter more; 1.0 makes rotational speed irrelevant to spin-up.
+	# Default: 0.35
+	# Range: 0.05 ~ 1.0
+	spinMinimumRate = 0.35
+	#Ticks the hull spends being drawn through an aperture, bow to stern.
+	#The same figure is used at both ends, so a departure and an arrival mirror
+	#each other. Speed is worked out from the hull's own length, so a large ship
+	#does not take any longer to pass through than a small one.
+	# Default: 60
+	# Range: 5 ~ 600
+	riftTransitTicks = 60
+	#How far back from its resting place the airship appears, as a multiple of hull length.
+	#The whole run-out is checked for obstructions before the warp is allowed to start.
+	# Default: 1.25
+	# Range: 0.0 ~ 8.0
+	emergeDistanceFactor = 1.25
+	#Hard ceiling, in blocks per tick, on any velocity the drive commands or the
+	#hull is allowed to report while a warp is being flown. A backstop, not a speed
+	#setting: it sits far above the fastest legitimate passage a top-tier drive
+	#flies at and far below the thousands-of-blocks-a-tick a physics ejection
+	#produces, so a solver glitch or a unit slip that would fling the hull across
+	#the world is clamped at source and, if the hull is somehow already moving that
+	#fast, the warp is aborted and the ship put back rather than launched. Raise it
+	#only if a legitimate passage is ever clamped, which would show in the warp
+	#trace; the default clears every shipped tier with room to spare.
+	# Default: 48.0
+	# Range: 4.0 ~ 4096.0
+	maxCommandedSpeed = 48.0
+
+#Who may use drives and anchors.
+[permissions]
+	#Allow a redstone signal into a Rift Drive to start a warp.
+	#The signal can only fire a course a player already set on an Astrolabe
+	#Cartography Table, so wiring a drive up grants no access the person who set
+	#the course did not already have. Turn this off to require a hand on a control.
+	allowRedstoneInitiation = true
+	#Allow warping to anchors in other dimensions.
+	#Sable sub-levels are bound to the plot grid of a single ServerLevel and expose no API for
+	#moving one between dimensions, so this stays false unless an extension registers a handler
+	#with CrossDimensionWarp.setHandler.
+	allowCrossDimensionWarp = false
+	#Allow anchors that anybody may warp to.
+	allowPublicAnchors = true
+	#Allow anchors restricted to their owner.
+	allowPrivateAnchors = true
+	#Require the initiating player to be standing on the airship that is about to warp.
+	requirePlayerAboard = true
+	#Maximum distance, in blocks, between the player and the Rift Drive they are commanding.
+	# Default: 12
+	# Range: 1 ~ 64
+	maxInteractionDistance = 12
+	#Maximum number of registered Warp Anchors a single player may own. 0 disables the limit.
+	# Default: 0
+	# Range: 0 ~ 10000
+	maxAnchorsPerPlayer = 0
+
+#Rift Gates: the standing doorways vehicles and people drive through.
+[gates]
+	#Rift Essence, in millibuckets, spent striking a connection, before size.
+	# Default: 250
+	# Range: 0 ~ 1000000
+	gateDialCost = 250
+	#Extra millibuckets per block of opening. A bigger doorway is a bigger tear,
+	#which is what stops the largest gate being the obvious one to build everywhere.
+	# Default: 12
+	# Range: 0 ~ 10000
+	gateDialCostPerBlock = 12
+	#Rift Essence, in millibuckets, spent every upkeep interval to hold a
+	#connection open, before size. A doorway is a tear somebody is holding apart,
+	#and holding it costs for as long as it is held. Set to 0, along with the
+	#per-block figure, to go back to essence being a one-off price for dialling.
+	# Default: 10
+	# Range: 0 ~ 1000000
+	gateUpkeepCost = 10
+	#Extra millibuckets per block of opening, every upkeep interval.
+	#A wider doorway is heavier to hold as well as dearer to strike.
+	# Default: 1
+	# Range: 0 ~ 10000
+	gateUpkeepCostPerBlock = 1
+	#Ticks between upkeep charges. Twenty is once a second, which is what the
+	#goggle and Display Link readings are worded for.
+	# Default: 20
+	# Range: 1 ~ 1200
+	gateUpkeepInterval = 20
+	#Stress the gate draws while it is holding an aperture open, before size.
+	#A gate standing dark costs nothing: essence strikes a connection and keeps it
+	#standing, and rotation holds the machinery that does the keeping.
+	# Default: 4.0
+	# Range: 0.0 ~ 1024.0
+	gateStress = 4.0
+	#Extra stress per block of opening while held open.
+	# Default: 0.25
+	# Range: 0.0 ~ 64.0
+	gateStressPerBlock = 0.25
+	#Rotation speed needed to hold a gate open. Falling below it drops the
+	#connection - which is the whole of what makes rotation the holding cost.
+	# Default: 32
+	# Range: 1 ~ 256
+	gateMinimumRpm = 32
+	#Ticks between striking a connection and the aperture being safe to cross.
+	# Default: 40
+	# Range: 5 ~ 600
+	gateDialTicks = 40
+	#Maximum number of Rift Gates a single player may own. 0 disables the limit.
+	# Default: 0
+	# Range: 0 ~ 10000
+	maxGatesPerPlayer = 0
+
+#Rift Probes: soundings thrown at ground nobody has stood on.
+[probe]
+	#Rift Essence, in millibuckets, spent throwing a sounding, before distance.
+	# Default: 400
+	# Range: 0 ~ 1000000
+	probeCost = 400
+	#Extra millibuckets per block of range. Reaching further costs more, which is
+	#what keeps a probe a decision rather than something to spam at the horizon.
+	# Default: 0.35
+	# Range: 0.0 ~ 100.0
+	probeCostPerBlock = 0.35
+	#Closest a sounding may be thrown, in blocks. Below this a probe is only
+	#surveying ground the ship could already see.
+	# Default: 512
+	# Range: 16 ~ 1000000
+	probeMinimumRange = 512
+	#Furthest a sounding may be thrown, in blocks. A probe is still bounded by the
+	#drive's own range when the course is actually flown.
+	# Default: 24000
+	# Range: 32 ~ 10000000
+	probeMaximumRange = 24000
+	#Shortest a sounding takes. The wait is the server bringing that ground into
+	#being, so this is a floor on it rather than a delay for its own sake.
+	# Default: 60
+	# Range: 0 ~ 12000
+	probeReachTicks = 60
+	#Ticks after which a sounding reads whatever has arrived and stops waiting.
+	#A thin reading is reported as thin rather than being waited on forever.
+	# Default: 400
+	# Range: 20 ~ 72000
+	probeTimeoutTicks = 400
+
+#Rift Chutes: belt-fed holes in space that hand items to another chute.
+[chute]
+	#Rift Essence, in millibuckets, spent for each item that crosses.
+	#Charged per item rather than per transfer, so moving a stack costs a stack's
+	#worth - otherwise one expensive rift becomes free bulk logistics.
+	#Set to 0 to make chutes run on nothing.
+	# Default: 2
+	# Range: 0 ~ 10000
+	chuteCostPerItem = 2
+	#Most items one chute may send in a single transfer.
+	#Caps the burst rather than the throughput: a chute still transfers several
+	#times a second, but it cannot move an entire double chest in one tick.
+	# Default: 16
+	# Range: 1 ~ 64
+	chuteBatchSize = 16
+
+#Rift Modulators: cosmetic modules that let a Rift Drive's pilot
+#choose the rift's colour and look. Essence is spent only while the linked
+#drive is actually running a warp - an idle drive costs a Modulator nothing.
+[modulator]
+	#Rift Essence, in millibuckets, spent every upkeep interval while the
+	#Modulator is dressing a warp in progress. Set to 0 to make it run on nothing.
+	# Default: 5
+	# Range: 0 ~ 10000
+	modulatorUpkeepCost = 5
+	#Ticks between upkeep charges. Twenty is once a second.
+	# Default: 20
+	# Range: 1 ~ 1200
+	modulatorUpkeepInterval = 20
+
+#Rift Beacons: hand-held summons for a ship you are not standing on.
+[beacon]
+	#Ticks before a beacon may be used again, successful or not.
+	#Applied to refusals too. A drive that has just said no will keep saying no,
+	#and without this a held right-click asks it sixty times a second.
+	# Default: 100
+	# Range: 0 ~ 72000
+	beaconCooldownTicks = 100
+	#Ticks the marker beam stands at a summon site.
+	#Purely cosmetic, and deliberately independent of the warp it marks: the beam
+	#is lit by the client that saw the summon, so it cannot be told to stop by a
+	#warp that failed on a server the viewer is no longer near.
+	# Default: 200
+	# Range: 20 ~ 12000
+	beaconBeamTicks = 200
+	#How far a beacon's aim reaches, in blocks.
+	#This is the ray from the holder's eye, not the drive's range - the ship still
+	#has to be able to reach wherever the ray lands. Deliberately well past normal
+	#interaction range: pointing at a clearing across a valley is the whole gesture.
+	# Default: 128
+	# Range: 8 ~ 512
+	beaconAimRange = 128
+
+#What happens when a warp cannot complete.
+[failure]
+	#Fraction of the drive's charge lost when a warp aborts.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	failureChargePenalty = 0.35
+	#Ticks the drive spends in its error state after an aborted warp.
+	# Default: 200
+	# Range: 0 ~ 72000
+	failureCooldownTicks = 200
+	#When enabled, an aborted warp also shoves the airship around.
+	#Off by default: the addon never damages or deletes an airship as a failure consequence.
+	dangerousFailures = false
+	#Impulse magnitude applied by a dangerous failure, relative to airship mass.
+	# Default: 1.5
+	# Range: 0.0 ~ 100.0
+	dangerousFailureImpulse = 1.5
+	#How long a crew manifest outlives the last refresh, in ticks.
+	#A warp that dies at the crossing leaves the manifest running so that
+	#passengers who came off the hull are still recovered while the ship
+	#coasts to a stop. Larger values cover larger hulls that take longer
+	#to settle; shorter values mean a failed warp stops tracking people
+	#sooner. The default of 600 (30 seconds) covers any hull the game can
+	#generate.
+	# Default: 600
+	# Range: 100 ~ 12000
+	manifestGraceTicks = 600
+
+#Rift Fissures: the tears that generate in the world rather than being
+#opened by a machine. Only a player wearing Rift Infused Goggles can see one,
+#and only a Spatial Siphon standing near it can empty it.
+[fissure]
+	#Fewest millibuckets of Rift Essence a fissure holds. A siphon holds 4,000.
+	# Default: 6000
+	# Range: 0 ~ 1000000
+	reservoirLeast = 6000
+	#Most it may hold. How much any one fissure has is rolled from where it is,
+	#so the answer is the same for everybody and survives the chunk unloading.
+	# Default: 18000
+	# Range: 0 ~ 1000000
+	reservoirMost = 18000
+	#Millibuckets a tick a fissure gives up, shared between every vessel in range.
+	#The tear is the limit rather than the plumbing: a ring of siphons fills no
+	#faster than one, it just holds more of what comes out.
+	# Default: 12
+	# Range: 1 ~ 10000
+	drainRate = 12
+	#Blocks from the fissure a Spatial Siphon may stand and still draw from it.
+	# Default: 6
+	# Range: 1 ~ 32
+	siphonRadius = 6
+
+#Diagnostics. Off by default and of no interest during normal play.
+[debug]
+	#Log every warp in detail: the plan, each stage change, both teleports and any
+	#abort, with the numbers behind them - where the hull is relative to each
+	#aperture, how far its bow and stern are from the plane, and how long each stage
+	#actually took. Written at INFO so it lands in latest.log without touching the
+	#logging configuration. One line per stage change, so a warp costs about ten lines.
+	#Turn this on when reporting that a warp looked wrong; leave it off otherwise.
+	traceWarps = false
+
+#Per-tier Rift Drive settings. New tiers only need an enum entry plus these values.
+[drives]
+
+	[drives.mk_i]
+		#Rotational speed below which the drive cannot charge at all.
+		# Default: 64
+		# Range: 1 ~ 4096
+		minimumRpm = 64
+		#Rotational speed at which the drive charges at its full rate.
+		# Default: 128
+		# Range: 1 ~ 4096
+		optimalRpm = 128
+		#Create stress impact of this drive, in stress units per RPM.
+		# Default: 16.0
+		# Range: 0.0 ~ 8192.0
+		stressImpact = 16.0
+		#Maximum warp distance this tier can reach, in blocks.
+		# Default: 4000.0
+		# Range: 1.0 ~ 1.0E9
+		maximumRange = 4000.0
+		#Ticks needed to charge from empty to full at optimalRpm.
+		# Default: 2400
+		# Range: 1 ~ 432000
+		chargeTicks = 2400
+		#Spin needed to open a rift to somewhere close by, in ticks at
+		#full rate. A drive turning below its optimal speed takes longer.
+		# Default: 60
+		# Range: 1 ~ 12000
+		stabilizeTicks = 60
+		#Spin needed to open a rift at the very limit of this drive's range.
+		#Everything between here and stabilizeTicks is interpolated on a log
+		#curve, so a short hop is cheap and a long haul is a commitment.
+		# Default: 180
+		# Range: 1 ~ 48000
+		stabilizeTicksFar = 180
+		#Ticks the airship spends in the warp corridor.
+		# Default: 100
+		# Range: 5 ~ 12000
+		warpTicks = 100
+		#Ticks the airship takes to coast out of the exit rift and settle.
+		# Default: 40
+		# Range: 5 ~ 12000
+		arriveTicks = 40
+		#Ticks of cooldown after a completed warp.
+		# Default: 2400
+		# Range: 0 ~ 432000
+		cooldownTicks = 2400
+		#Cost divisor. Higher is more efficient.
+		# Default: 1.0
+		# Range: 0.01 ~ 100.0
+		costEfficiency = 1.0
+		#Chance per warp that the drive scatters its arrival point.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		instability = 0.0
+
+	[drives.mk_ii]
+		#Rotational speed below which the drive cannot charge at all.
+		# Default: 96
+		# Range: 1 ~ 4096
+		minimumRpm = 96
+		#Rotational speed at which the drive charges at its full rate.
+		# Default: 192
+		# Range: 1 ~ 4096
+		optimalRpm = 192
+		#Create stress impact of this drive, in stress units per RPM.
+		# Default: 24.0
+		# Range: 0.0 ~ 8192.0
+		stressImpact = 24.0
+		#Maximum warp distance this tier can reach, in blocks.
+		# Default: 24000.0
+		# Range: 1.0 ~ 1.0E9
+		maximumRange = 24000.0
+		#Ticks needed to charge from empty to full at optimalRpm.
+		# Default: 1800
+		# Range: 1 ~ 432000
+		chargeTicks = 1800
+		#Spin needed to open a rift to somewhere close by, in ticks at
+		#full rate. A drive turning below its optimal speed takes longer.
+		# Default: 50
+		# Range: 1 ~ 12000
+		stabilizeTicks = 50
+		#Spin needed to open a rift at the very limit of this drive's range.
+		#Everything between here and stabilizeTicks is interpolated on a log
+		#curve, so a short hop is cheap and a long haul is a commitment.
+		# Default: 150
+		# Range: 1 ~ 48000
+		stabilizeTicksFar = 150
+		#Ticks the airship spends in the warp corridor.
+		# Default: 90
+		# Range: 5 ~ 12000
+		warpTicks = 90
+		#Ticks the airship takes to coast out of the exit rift and settle.
+		# Default: 35
+		# Range: 5 ~ 12000
+		arriveTicks = 35
+		#Ticks of cooldown after a completed warp.
+		# Default: 1800
+		# Range: 0 ~ 432000
+		cooldownTicks = 1800
+		#Cost divisor. Higher is more efficient.
+		# Default: 1.6
+		# Range: 0.01 ~ 100.0
+		costEfficiency = 1.6
+		#Chance per warp that the drive scatters its arrival point.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		instability = 0.0
+
+	[drives.mk_iii]
+		#Rotational speed below which the drive cannot charge at all.
+		# Default: 128
+		# Range: 1 ~ 4096
+		minimumRpm = 128
+		#Rotational speed at which the drive charges at its full rate.
+		# Default: 256
+		# Range: 1 ~ 4096
+		optimalRpm = 256
+		#Create stress impact of this drive, in stress units per RPM.
+		# Default: 32.0
+		# Range: 0.0 ~ 8192.0
+		stressImpact = 32.0
+		#Maximum warp distance this tier can reach, in blocks.
+		# Default: 120000.0
+		# Range: 1.0 ~ 1.0E9
+		maximumRange = 120000.0
+		#Ticks needed to charge from empty to full at optimalRpm.
+		# Default: 1400
+		# Range: 1 ~ 432000
+		chargeTicks = 1400
+		#Spin needed to open a rift to somewhere close by, in ticks at
+		#full rate. A drive turning below its optimal speed takes longer.
+		# Default: 40
+		# Range: 1 ~ 12000
+		stabilizeTicks = 40
+		#Spin needed to open a rift at the very limit of this drive's range.
+		#Everything between here and stabilizeTicks is interpolated on a log
+		#curve, so a short hop is cheap and a long haul is a commitment.
+		# Default: 120
+		# Range: 1 ~ 48000
+		stabilizeTicksFar = 120
+		#Ticks the airship spends in the warp corridor.
+		# Default: 80
+		# Range: 5 ~ 12000
+		warpTicks = 80
+		#Ticks the airship takes to coast out of the exit rift and settle.
+		# Default: 30
+		# Range: 5 ~ 12000
+		arriveTicks = 30
+		#Ticks of cooldown after a completed warp.
+		# Default: 1400
+		# Range: 0 ~ 432000
+		cooldownTicks = 1400
+		#Cost divisor. Higher is more efficient.
+		# Default: 2.4
+		# Range: 0.01 ~ 100.0
+		costEfficiency = 2.4
+		#Chance per warp that the drive scatters its arrival point.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		instability = 0.0
+
+	[drives.singularity]
+		#Rotational speed below which the drive cannot charge at all.
+		# Default: 192
+		# Range: 1 ~ 4096
+		minimumRpm = 192
+		#Rotational speed at which the drive charges at its full rate.
+		# Default: 256
+		# Range: 1 ~ 4096
+		optimalRpm = 256
+		#Create stress impact of this drive, in stress units per RPM.
+		# Default: 48.0
+		# Range: 0.0 ~ 8192.0
+		stressImpact = 48.0
+		#Maximum warp distance this tier can reach, in blocks.
+		# Default: 2000000.0
+		# Range: 1.0 ~ 1.0E9
+		maximumRange = 2000000.0
+		#Ticks needed to charge from empty to full at optimalRpm.
+		# Default: 1200
+		# Range: 1 ~ 432000
+		chargeTicks = 1200
+		#Spin needed to open a rift to somewhere close by, in ticks at
+		#full rate. A drive turning below its optimal speed takes longer.
+		# Default: 30
+		# Range: 1 ~ 12000
+		stabilizeTicks = 30
+		#Spin needed to open a rift at the very limit of this drive's range.
+		#Everything between here and stabilizeTicks is interpolated on a log
+		#curve, so a short hop is cheap and a long haul is a commitment.
+		# Default: 90
+		# Range: 1 ~ 48000
+		stabilizeTicksFar = 90
+		#Ticks the airship spends in the warp corridor.
+		# Default: 70
+		# Range: 5 ~ 12000
+		warpTicks = 70
+		#Ticks the airship takes to coast out of the exit rift and settle.
+		# Default: 30
+		# Range: 5 ~ 12000
+		arriveTicks = 30
+		#Ticks of cooldown after a completed warp.
+		# Default: 6000
+		# Range: 0 ~ 432000
+		cooldownTicks = 6000
+		#Cost divisor. Higher is more efficient.
+		# Default: 3.2
+		# Range: 0.01 ~ 100.0
+		costEfficiency = 3.2
+		#Chance per warp that the drive scatters its arrival point.
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		instability = 0.15
+
+	[drives.creative]
+		#Rotational speed below which the drive cannot charge at all.
+		# Default: 1
+		# Range: 1 ~ 4096
+		minimumRpm = 1
+		#Rotational speed at which the drive charges at its full rate.
+		# Default: 1
+		# Range: 1 ~ 4096
+		optimalRpm = 1
+		#Create stress impact of this drive, in stress units per RPM.
+		# Default: 0.0
+		# Range: 0.0 ~ 8192.0
+		stressImpact = 0.0
+		#Maximum warp distance this tier can reach, in blocks.
+		# Default: 1.0E8
+		# Range: 1.0 ~ 1.0E9
+		maximumRange = 1.0E8
+		#Ticks needed to charge from empty to full at optimalRpm.
+		# Default: 1
+		# Range: 1 ~ 432000
+		chargeTicks = 1
+		#Spin needed to open a rift to somewhere close by, in ticks at
+		#full rate. A drive turning below its optimal speed takes longer.
+		# Default: 1
+		# Range: 1 ~ 12000
+		stabilizeTicks = 1
+		#Spin needed to open a rift at the very limit of this drive's range.
+		#Everything between here and stabilizeTicks is interpolated on a log
+		#curve, so a short hop is cheap and a long haul is a commitment.
+		# Default: 1
+		# Range: 1 ~ 48000
+		stabilizeTicksFar = 1
+		#Ticks the airship spends in the warp corridor.
+		# Default: 60
+		# Range: 5 ~ 12000
+		warpTicks = 60
+		#Ticks the airship takes to coast out of the exit rift and settle.
+		# Default: 25
+		# Range: 5 ~ 12000
+		arriveTicks = 25
+		#Ticks of cooldown after a completed warp.
+		# Default: 0
+		# Range: 0 ~ 432000
+		cooldownTicks = 0
+		#Cost divisor. Higher is more efficient.
+		# Default: 100.0
+		# Range: 0.01 ~ 100.0
+		costEfficiency = 100.0
+		#Chance per warp that the drive scatters its arrival point.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		instability = 0.0

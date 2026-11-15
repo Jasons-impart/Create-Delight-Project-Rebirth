@@ -1,0 +1,56 @@
+#Feywild General Config
+[feywild]
+	#The duration in ticks for the levitation effect applied by fey dust. (Minimum: 1)
+	# Default: 30
+	# Range: 1 ~ 100
+	fey_dust_duration = 30
+	#Whether players should spawn with a Feywild Lexicon
+	spawn_with_lexicon = true
+	#Whether fey should have voice acting on
+	voices_active = true
+	#Spawn weight of Autumn Pixies. Set to 0 to disable natural spawning.
+	# Default: 2
+	# Range: 0 ~ 1000
+	autumn_pixie_spawn_weight = 2
+	#Spawn weight of Spring Pixies. Set to 0 to disable natural spawning.
+	# Default: 2
+	# Range: 0 ~ 1000
+	spring_pixie_spawn_weight = 2
+	#Spawn weight of Summer Pixies. Set to 0 to disable natural spawning.
+	# Default: 2
+	# Range: 0 ~ 1000
+	summer_pixie_spawn_weight = 2
+	#Spawn weight of Winter Pixies. Set to 0 to disable natural spawning.
+	# Default: 2
+	# Range: 0 ~ 1000
+	winter_pixie_spawn_weight = 2
+	#Spawn weight of Mandragoras. Set to 0 to disable natural spawning.
+	# Default: 3
+	# Range: 0 ~ 1000
+	mandragora_spawn_weight = 3
+	#Spawn weight of the Bee Knights. Set to 0 to disable natural spawning.
+	# Default: 3
+	# Range: 0 ~ 1000
+	bee_knight_spawn_weight = 3
+	#Spawn weight of Bellsnickels. Set to 0 to disable natural spawning.
+	# Default: 5
+	# Range: 0 ~ 1000
+	bellsnickel_spawn_weight = 5
+	#Spawn weight of Shroomlings. Set to 0 to disable natural spawning.
+	# Default: 5
+	# Range: 0 ~ 1000
+	shroomling_spawn_weight = 5
+	#Attack damage of Tree Ents
+	# Default: 12.0
+	# Range: 0.0 ~ 30.0
+	tree_ent_attack_damage = 12.0
+	#Chance for Tree Ent logs to be cracked when grown from a sapling. 1 in N chance
+	# Default: 1200
+	# Range: 1 ~ 10000
+	tree_ent_spawn_sapling = 1200
+	#Chance for Tree Ent logs to be cracked when spawned naturally in world. 1 in N chance
+	# Default: 100
+	# Range: 1 ~ 10000
+	tree_ent_spawn_world = 100
+	#Whether Tree Ents should attack players
+	tree_ent_attack_players = true

@@ -1,0 +1,57 @@
+[television]
+	#Maximum size of connected TVs (in blocks). Set to 1 to disable multi-block TVs.
+	# Default: 8
+	# Range: 1 ~ 24
+	max_connected_size = 8
+	#Makes connected tvs just have a square aspect ratio. If you set to false cassettes will be stretched and will look worse as a result
+	square_aspect_ratio = true
+	#Whether TVs should consume Forge energy (NeoForge only).
+	consume_energy = false
+	#Energy consumption rate per tick when TV is powered and has a cassette.
+	# Default: 20
+	# Range: 1 ~ 10000
+	energy_consumption_rate = 20
+
+[picture_tape]
+	#Whether the picture tape (and its recipe) is enabled. Disabling hides it from the creative tab and disables its recipe.
+	enabled = true
+	#Maximum number of pictures (filled maps) a single picture tape can hold.
+	# Default: 32
+	# Range: 1 ~ 256
+	max_entries = 32
+
+[mirror]
+	#Whether mirrors (and the crystalline item used to craft them) are enabled. Disabling hides them from creative tabs, disables the mirror recipe, and stops crystalline from dropping from elder guardians.
+	enabled = true
+	#Maximum size of connected mirrors (in blocks). Set to 1 to disable multi-block mirrors.
+	# Default: 8
+	# Range: 1 ~ 24
+	max_connected_size = 8
+	#Forces connected mirrors to have a square aspect ratio.
+	square_aspect_ratio = true
+	#Which mirror placements are allowed. NEAR: surface always flush with the front face. FAR: surface always recessed into the block. BOTH: near or far is chosen from where you click along the block's depth axis (near half = near, far half = recessed).
+	#Allowed Values: NEAR, FAR, BOTH
+	placement = "BOTH"
+
+[wave_gate]
+	#Whether the wave gate exists at all. Disabling hides it from creative tabs and disables its recipe.
+	enabled = true
+	#Whether the wave gate is craftable in survival. When off it is creative-only. Ignored when ComputerCraft is installed, which always makes it craftable.
+	craftable = false
+
+[view_finder]
+	#How right-clicking a view finder behaves. GUI: opens a screen with the lens slot, pitch/yaw angle controls and a 'view' button (sneak to jump straight into viewing). LEGACY: no screen at all - click to look through it directly, and use items on it to insert/remove the lens.
+	#Allowed Values: GUI, LEGACY
+	interaction = "GUI"
+	#Radius (in chunks) of the extra chunk zone sent to clients for each far-away view finder linked to a nearby TV. Set to 0 to disable client chunk sending.
+	# Default: 4
+	# Range: 0 ~ 16
+	send_viewed_chunks = 4
+	#Server loads chunks that are near a far away view finder linked to a tv that's close to at least 1 player. Will increase server strain
+	load_viewed_chunks = false
+
+[drops]
+	#Whether creepers should drop tapes when killed by the pillagers.
+	creeper_drop = true
+	#Whether loot chests could contain cassette tapes.
+	chest_drop = true
