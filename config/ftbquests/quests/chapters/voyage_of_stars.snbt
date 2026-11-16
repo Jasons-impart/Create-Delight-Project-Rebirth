@@ -1,0 +1,760 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "voyage_of_stars"
+	group: "7A00000000000001"
+	icon: {
+		id: "northstar:telescope"
+	}
+	id: "5C904287FAE8488A"
+	images: [{
+		click_action: "none:quest_enhance:text_v3:1.0:17:minecraft:default我不到啊"
+		height: 0.4583333333333333d
+		id: "78CB6167C4AB7432"
+		image: ""
+		quest_enhance_exclude_from_box_selection: 0b
+		rotation: 0.0d
+		width: 1.4166666666666667d
+		x: 25.0d
+		y: 0.5d
+	}]
+	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "74C003BD7D88167E"
+			linked_quest: "24CCC43BD4994237"
+			size: 2.0d
+			x: 22.5d
+			y: -2.5d
+		}
+		{
+			id: "4C0C1A274518BAD5"
+			linked_quest: "3D02EA3A30EE1933"
+			size: 2.0d
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			id: "472A56C083FB5D30"
+			linked_quest: "475F0BF3666A12AB"
+			size: 2.0d
+			x: 26.5d
+			y: -2.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["1EF771A80F0460CF"]
+			id: "5D413834648E277E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "43CDABE68393929D"
+				item: { count: 1, id: "northstar:astronomy_table" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EF771A80F0460CF"]
+			id: "49759BA2FFD9ED2D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "361B8B8E75482FFF"
+				item: { count: 1, id: "northstar:astronomical_reading" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"49759BA2FFD9ED2D"
+				"5D413834648E277E"
+			]
+			hide_dependency_lines: true
+			id: "6C6B2505ED53D1F2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5D2B2E81F5C3A7D0"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"49759BA2FFD9ED2D"
+				"5D413834648E277E"
+			]
+			id: "1F75964D5DF64594"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05EEF2BA49205DC1"
+				item: { count: 1, id: "northstar:space_atlas" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F75964D5DF64594"]
+			id: "298DCE38C0E0D5B9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21D7DEFD42EBACF7"
+				item: { count: 1, id: "northstar:rocket_station" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F75964D5DF64594"]
+			id: "1DD55129A6C4D355"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "16F0AC2789780655"
+				item: { count: 1, id: "northstar:rocket_controls" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1F75964D5DF64594"]
+			id: "0A974EE1B5462D2A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "638F884BA21A6BD9"
+				item: { count: 1, id: "northstar:rocket_thruster" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"119E0BF4CFAA0B5F"
+				"25377BD23842CC96"
+			]
+			id: "089E81F7DCA47A98"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "northstar:one_small_step"
+				criterion: ""
+				id: "00682A403F82D3BF"
+				type: "advancement"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			id: "591CA06C6483B19B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "65B3285F63DC4542"
+				type: "checkmark"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["591CA06C6483B19B"]
+			icon: {
+				id: "alexscavesup:pure_darkness"
+			}
+			id: "1F6B56E6DE97C1D7"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				dimension: "createdelight:lunar_farside"
+				id: "76C2EE32057A2768"
+				type: "dimension"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6E1FA3004CE9768C"
+				"089E81F7DCA47A98"
+			]
+			id: "53F8AADD69D02613"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4A0B3550BF43FA98"
+				item: { count: 1, id: "northstar:titanium_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"08C745BBD482DFE1"
+				"3AB22C937A6B1E8C"
+			]
+			id: "2E6B5F41CF4AA9BC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "03647EC8926C208F"
+					item: { count: 1, id: "northstar:titanium_tetrachloride_bucket" }
+					type: "item"
+				}
+				{
+					id: "0BFCA2DB3C2E68AC"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			hide_dependency_lines: true
+			id: "08C745BBD482DFE1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "49F9E599DDA4FE2E"
+				item: { count: 1, id: "northstar:rutile_concentrate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2E6B5F41CF4AA9BC"
+				"3AB22C937A6B1E8C"
+			]
+			id: "6E1FA3004CE9768C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5F879AB9186E94AF"
+				item: { count: 1, id: "createdelightcore:titanium_dust" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			id: "0A838A84677688BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6E16BCDDD0EAA6E6"
+				item: { count: 1, id: "northstar:polished_lunar_sapphire" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"53F8AADD69D02613"
+				"0A838A84677688BA"
+			]
+			id: "54954EA4980915B0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "13AFACBA70E3AA15"
+				item: { count: 1, id: "northstar:interplanetary_navigator" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54954EA4980915B0"]
+			id: "77DBDCB991847E35"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "northstar:one_giant_leap"
+				criterion: ""
+				id: "596E02BC4409566D"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77DBDCB991847E35"]
+			id: "2322C47E80F706AA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "08F14997892AB57F"
+				item: { count: 1, id: "northstar:raw_martian_iron_ore" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2322C47E80F706AA"]
+			id: "0A78650F17E1E069"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "74C650668673026E"
+				item: { count: 1, id: "northstar:martian_steel_ingot" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36DA8FF6E4A847A7"]
+			id: "3AB22C937A6B1E8C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "502C2B46DFA51F45"
+				item: { count: 1, id: "bakeries:salt_water_bucket" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0A974EE1B5462D2A"
+				"298DCE38C0E0D5B9"
+				"1DD55129A6C4D355"
+			]
+			id: "119E0BF4CFAA0B5F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DA834973EBF90E4"
+				item: { components: { "ftbfiltersystem:filter": "(northstar:tungsten_sheetmetal | northstar:tungsten_plating | northstar:tungsten_pillar)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"615F08354B8D9B00"
+				"3C1CBC4F971804DF"
+			]
+			id: "25377BD23842CC96"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6CDA56C913CAFDF9"
+					item: { count: 1, id: "northstar:iron_space_suit_helmet" }
+					type: "item"
+				}
+				{
+					id: "25B0D54FE4BCDD85"
+					item: { count: 1, id: "northstar:iron_space_suit_chestpiece" }
+					type: "item"
+				}
+				{
+					id: "5B10C5D1B271D24F"
+					item: { count: 1, id: "northstar:iron_space_suit_leggings" }
+					type: "item"
+				}
+				{
+					id: "7D2BA98D2909AA5A"
+					item: { count: 1, id: "northstar:iron_space_suit_boots" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B4050EA824CAB43"]
+			id: "615F08354B8D9B00"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DABB6DC54F56730"
+				item: { count: 1, id: "northstar:oxygen_filler" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1EF771A80F0460CF"]
+			id: "3C1CBC4F971804DF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0813B5CCB8B8A1A1"
+				item: { count: 1, id: "northstar:atmospheric_concentrator" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5171DC10561530DE"]
+			id: "4500AE5CD0F890A9"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				id: "4662AB6B450F042D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4500AE5CD0F890A9"
+				"53F8AADD69D02613"
+			]
+			id: "1EBBAD136C725820"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				id: "26005FACA6FD8E3A"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1EBBAD136C725820"
+				"0A78650F17E1E069"
+			]
+			id: "53F2234B38B8E4A0"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				id: "628CB1DFBE55A98A"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1EF771A80F0460CF"]
+			id: "5171DC10561530DE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72134E9277697011"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0A78650F17E1E069"]
+			id: "3A2218D2A3F89F9E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6E3078D44DA889E8"
+					item: { count: 1, id: "northstar:martian_steel_space_suit_helmet" }
+					type: "item"
+				}
+				{
+					id: "320A8CCBD3080974"
+					item: { count: 1, id: "northstar:martian_steel_space_suit_chestpiece" }
+					type: "item"
+				}
+				{
+					id: "657A1186F9CE802D"
+					item: { count: 1, id: "northstar:martian_steel_space_suit_leggings" }
+					type: "item"
+				}
+				{
+					id: "1ED93496A9C8E91C"
+					item: { count: 1, id: "northstar:martian_steel_space_suit_boots" }
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A2218D2A3F89F9E"]
+			id: "0BAC02A069A5B123"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "northstar:venus"
+				id: "1590D41C581B6D75"
+				type: "dimension"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A2218D2A3F89F9E"]
+			id: "62C9A01A68274195"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "northstar:mercury"
+				id: "4C2E1B3581F0440E"
+				type: "dimension"
+			}]
+			x: 22.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0BAC02A069A5B123"
+				"62C9A01A68274195"
+			]
+			id: "4F2B8C9D7E1A6053"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "northstar:jupiter_orbit"
+				id: "6A19D0E4B73C82F5"
+				type: "dimension"
+			}]
+			x: 24.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F2B8C9D7E1A6053"]
+			id: "75D1E8A0C4B29F63"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "northstar:europa"
+				id: "2BEF6A9530D14C78"
+				type: "dimension"
+			}]
+			x: 26.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0A78650F17E1E069"]
+			id: "61CF86B008BB4737"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0FD89652BF8CDC3A"
+				item: { count: 1, id: "northstar:temperature_regulator" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A838A84677688BA"]
+			id: "36DA8FF6E4A847A7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "091E00CDE081CDFD"
+				item: { count: 1, id: "createdelightcore:electrolyzer" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7688588BA71116CE"]
+			id: "0B4050EA824CAB43"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "49908A1EE870CB73"
+				item: { count: 1, id: "northstar:circuit" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0B4050EA824CAB43"
+				"0A78650F17E1E069"
+			]
+			id: "332AE84038DFCBC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BE1734051F19438"
+				item: { count: 1, id: "northstar:advanced_circuit" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40BDFCC7A3B77F26"]
+			id: "1EF771A80F0460CF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4CB62B03FBA81F93"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C1CBC4F971804DF"]
+			id: "7688588BA71116CE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "567FC0A7A792A541"
+				item: { count: 1, id: "alexscavesup:polymer_plate" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			id: "3F9754F899053D6F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "06119CA65526B84E"
+				item: {
+					count: 1
+					id: "createdelightcore:gold_coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "66BD399E12832AF5"
+					item: { count: 1, id: "northstar:oxygen_sealer" }
+					type: "item"
+				}
+				{
+					id: "2215AB693422A844"
+					item: { count: 1, id: "northstar:large_fan" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A78650F17E1E069"]
+			id: "7D6E59F236540559"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "38340CC14F2A9DBF"
+				item: { count: 1, id: "fluidlogistics:infinite_fluid_tank" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"089E81F7DCA47A98"
+				"53F8AADD69D02613"
+			]
+			hide_dependency_lines: true
+			id: "667FC8409A96DA4F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7F5842B9A25AE1F4"
+				item: { count: 1, id: "createdelightcore:oxygen_tank" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0A78650F17E1E069"]
+			id: "2AD583E020458559"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1E5A5D75F507CCE2"
+				item: { count: 1, id: "createdelightcore:sturdy_oxygen_tank" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			id: "1E148D2AD79A465D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_ancient_factory"
+				criterion: ""
+				id: "3C8D901D87D046EF"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77DBDCB991847E35"]
+			id: "264224E79AD8458C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_soul_black_smith"
+				criterion: ""
+				id: "3C933CAA2A6A4600"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BAC02A069A5B123"]
+			id: "4F715326FDD9412E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_cursed_pyramid"
+				criterion: ""
+				id: "75962AA8144EFF15"
+				type: "advancement"
+			}]
+			x: 22.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62C9A01A68274195"]
+			id: "078AB159C7278790"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_burning_arena"
+				criterion: ""
+				id: "786012C81F2644E2"
+				type: "advancement"
+			}]
+			x: 24.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75D1E8A0C4B29F63"]
+			id: "6240D4B23EB3E8A2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_frosted_prison"
+				criterion: ""
+				id: "7CC6C3CC703C4964"
+				type: "advancement"
+			}]
+			x: 28.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75D1E8A0C4B29F63"]
+			id: "1AB9C234F9274019"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "cataclysm:find_sunken_city"
+				criterion: ""
+				id: "6FB8B094353E4FC9"
+				type: "advancement"
+			}]
+			x: 28.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["089E81F7DCA47A98"]
+			id: "1F2950ECAD5BEAC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BF2CB71D50411B1"
+				item: { count: 1, id: "northstar:telescope" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+	]
+}

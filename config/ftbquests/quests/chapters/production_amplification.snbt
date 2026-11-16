@@ -1,0 +1,378 @@
+{
+	always_invisible: true
+	autofocus_id: "696A502F48B90A6E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "production_amplification"
+	group: "7A00000000000006"
+	icon: {
+		id: "minecraft:paper"
+	}
+	id: "380C3F9A1B590C90"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "696A502F48B90A6E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "7D75C5D7AE7DC679"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4290279E12E3E104"]
+			disable_toast: true
+			icon: {
+				id: "minecraft:bamboo"
+			}
+			id: "73B0EDFE6627F286"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "3BDA9E48D4D4A208"
+					item: { count: 1, id: "minecraft:bamboo" }
+					type: "item"
+				}
+				{
+					id: "3200929618ACFFE0"
+					item: { count: 1, id: "createdieselgenerators:wood_chip" }
+					type: "item"
+				}
+				{
+					id: "2AD06DEE9246941F"
+					item: { count: 1, id: "farmersdelight:straw" }
+					type: "item"
+				}
+				{
+					id: "6BC67854AEE20F55"
+					item: { count: 1, id: "farmersdelight:tree_bark" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "minecraft:paper"
+			}
+			id: "4290279E12E3E104"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "7975E64E2E111876"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73B0EDFE6627F286"]
+			id: "43F6BF796F22AAA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BDD2808FD34EBFE"
+				item: { count: 1, id: "createdelightcore:unfermented_paper_pulp_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["43F6BF796F22AAA4"]
+			id: "567401BBABA2F521"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0476DD778CFF0198"
+				item: { count: 1, id: "createdelightcore:paper_pulp_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["204821A79F00A472"]
+			id: "1D67B2FB94BBC108"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 128
+				id: "2117AAA0B14AD4B7"
+				item: {
+					count: 1
+					id: "minecraft:paper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 128L
+				id: "253AE23AD596B3AE"
+				item: { count: 1, id: "minecraft:paper" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "minecraft:leather"
+			}
+			id: "06C244AEF0521053"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "40E317D6E625386E"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["567401BBABA2F521"]
+			id: "204821A79F00A472"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E7DC54ED521E193"
+				item: { count: 1, id: "createdelightcore:incomplete_paper" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7DB6E13EE8EF2082"]
+			id: "2F4B0A78F86BB9D1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76D768F54377CC59"
+				item: { count: 1, id: "createdelightcore:slime_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06C244AEF0521053"]
+			disable_toast: true
+			icon: {
+				id: "minecraft:cactus"
+			}
+			id: "5F7A132E1CFCEED3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "62522B721B4D3B1F"
+					item: { count: 1, id: "minecraft:cactus" }
+					type: "item"
+				}
+				{
+					id: "3899E7311CFA89D4"
+					item: { count: 1, id: "fruitsdelight:pineapple_sapling" }
+					type: "item"
+				}
+				{
+					id: "235F910E396674B4"
+					item: { count: 1, id: "minecraft:rotten_flesh" }
+					type: "item"
+				}
+				{
+					id: "2783A56E8384FAAC"
+					item: { count: 1, id: "farmersdelight:canvas" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2F4B0A78F86BB9D1"
+				"5F7A132E1CFCEED3"
+			]
+			id: "7BC0279C33CBC043"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "399C0324166379C4"
+				item: { count: 1, id: "createdelightcore:unfinished_leather" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7BC0279C33CBC043"]
+			id: "6A53F67B1A396606"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "3B4D8AF2B2759B0F"
+				item: {
+					count: 1
+					id: "minecraft:leather"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 32L
+				id: "58EC8F17A20201BD"
+				item: { count: 1, id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["06C244AEF0521053"]
+			disable_toast: true
+			id: "7DB6E13EE8EF2082"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "78E72C0CC160411B"
+				item: { count: 1, id: "minecraft:kelp" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CB8FDF09F47FD4F"]
+			id: "4458E27C5252B296"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "6DFC07744EB495D2"
+				item: { count: 1, id: "create_new_age:magnetite_block" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4458E27C5252B296"]
+			id: "7B70E01AFD2682DF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58ED58AA2DE0EE84"
+				item: { count: 1, id: "minecraft:iron_nugget" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4458E27C5252B296"]
+			id: "67745081E83C9431"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "23D9612B406CCC0F"
+				item: { count: 1, id: "create_new_age:magnetite_block" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4458E27C5252B296"]
+			id: "70ECE9227BC282F8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BC5E1F4FDAF8DE5"
+				item: { count: 1, id: "minecraft:deepslate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7B70E01AFD2682DF"
+				"70ECE9227BC282F8"
+				"67745081E83C9431"
+			]
+			id: "022B6494C59BA440"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "493F5B3144D2A520"
+				item: { count: 1, id: "alexscavesup:galena" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"022B6494C59BA440"
+				"394CADE1D352FDFE"
+				"6D3C402FFD2589A4"
+			]
+			id: "66B9F063DCC82118"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "69D5CBDED0ABC5AC"
+				item: { count: 1, id: "alexscavesup:energized_galena_neutral" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["022B6494C59BA440"]
+			id: "394CADE1D352FDFE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7221DEE65BAA4939"
+				item: { count: 1, id: "alexscavesup:energized_galena_scarlet" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["022B6494C59BA440"]
+			id: "6D3C402FFD2589A4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0402B4D2746DCBAA"
+				item: { count: 1, id: "alexscavesup:energized_galena_azure" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["66B9F063DCC82118"]
+			id: "0D13653994741380"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5C54750DA5464D59"
+				item: { count: 1, id: "minecraft:iron_block" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0D13653994741380"
+				"66B9F063DCC82118"
+			]
+			id: "500DE3AE5B0CD3B2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7D4696529891FBE0"
+				item: { count: 1, id: "create_new_age:magnetite_block" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+	]
+}

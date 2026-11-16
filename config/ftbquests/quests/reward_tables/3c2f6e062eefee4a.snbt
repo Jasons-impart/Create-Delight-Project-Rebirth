@@ -1,0 +1,10 @@
+{
+	id: "3C2F6E062EEFEE4A"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{ id: "6F33648CC96F0A08", item: { count: 1, id: "create:empty_schematic" } }
+		{ id: "33C8630A78B2F7D1", item: { count: 1, id: "fluidlogistics:empty_fluid_schematic" } }
+	]
+	tags: ["1"]
+}

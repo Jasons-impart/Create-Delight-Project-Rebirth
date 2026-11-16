@@ -1,0 +1,650 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "017290d6c1632677"
+	group: "7A00000000000005"
+	icon: {
+		id: "gateways:gate_pearl"
+	}
+	id: "017290D6C1632677"
+	images: [
+		{
+			height: 6.0d
+			id: "5E367B3A206AE75A"
+			image: "minecraft:textures/painting/wither.png"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: -12.0d
+			y: -6.5d
+		}
+		{
+			height: 4.0d
+			id: "3E8D615F5B2BBCEE"
+			image: "iceandfire:item/armor_silver_helmet"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			height: 4.0d
+			id: "0AE5FC1E06D9DB35"
+			image: "iceandfire:block/dread_stone_face"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			alpha: 120
+			height: 5.0d
+			id: "1F3BBDEBD1DFF120"
+			image: "iceandfire:block/dragon_ice_spikes"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.0d
+			y: -12.5d
+		}
+		{
+			height: 5.0d
+			id: "47A46F75D9CA1B42"
+			image: "iceandfire:block/dreadwood_log_top"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			alpha: 120
+			height: 5.0d
+			id: "2BE519FC51ABF814"
+			image: "iceandfire:block/dragon_ice_spikes"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.0d
+			y: -13.0d
+		}
+		{
+			alpha: 120
+			height: 5.0d
+			id: "479A6361E3C1A52F"
+			image: "iceandfire:block/dragon_ice_spikes"
+			order: -2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.0d
+			y: -14.5d
+		}
+		{
+			alpha: 120
+			height: 5.0d
+			id: "55E939A0AC39E9BE"
+			image: "iceandfire:block/dragon_ice_spikes"
+			order: -2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.5d
+			y: -15.0d
+		}
+		{
+			height: 6.0d
+			id: "44B7AF66BA482E27"
+			image: "alexsmobsup:item/void_worm_eye"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 11.0d
+			y: -7.0d
+		}
+		{
+			height: 7.0d
+			id: "23CD498F764DF513"
+			image: "cataclysm:block/void_lantern_block"
+			order: -4
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 7.0d
+			x: 11.0d
+			y: -7.0d
+		}
+		{
+			height: 7.0d
+			id: "05523DD5DAF7A8BD"
+			image: "cataclysm:item/essence_of_the_storm"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 7.0d
+			x: -8.0d
+			y: 14.0d
+		}
+		{
+			height: 7.0d
+			id: "6E963D7C5AE1028D"
+			image: "cataclysm:item/storm_eye"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 7.0d
+			x: -8.0d
+			y: 14.0d
+		}
+		{
+			height: 2.0d
+			id: "2E1A877AB96B3540"
+			image: "cataclysm:block/azure_seastone_pillar_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			height: 4.0d
+			id: "3E045415A942DE42"
+			image: "cataclysm:item/necklace_of_the_desert"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			height: 4.0d
+			id: "0992D56B19C7E08E"
+			image: "cataclysm:item/desert_eye"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			height: 5.0d
+			id: "3BC50165E13BEF3C"
+			image: "cataclysm:item/void_core"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			height: 6.0d
+			id: "7621C75CFB120607"
+			image: "cataclysm:block/witherite_block"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			height: 6.0d
+			id: "13FED493A36C1359"
+			image: "cataclysm:item/ancient_metal_nugget"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 8.5d
+			y: 12.0d
+		}
+		{
+			height: 6.0d
+			id: "2868E785902A6F31"
+			image: "cataclysm:item/ancient_metal_nugget"
+			order: 2
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: 3.5d
+			y: 16.5d
+		}
+		{
+			alpha: 100
+			height: 6.0d
+			id: "36DB7BB5DAFCC53C"
+			image: "minecraft:block/fire_0"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 6.0d
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			click_action: "none:quest_enhance:text_v3:1.0:17:minecraft:default阿八八八"
+			height: 0.6353337040715695d
+			id: "778565FB47CC621A"
+			image: ""
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.9637587216757604d
+			x: 1.0d
+			y: 2.0d
+		}
+	]
+	order_index: 10
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1DD9F7C0F4BD2170"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "333BF6EDDA0D6998"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "469BCFD055DB65B3"
+				type: "all_table"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				consume_items: true
+				id: "42F6EE3778437719"
+				item: { components: { "ftbfiltersystem:filter": "#more_mod_tetra:over_core" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"58C8AFFF5BDFF59C"
+				"333BF6EDDA0D6998"
+			]
+			icon: {
+				id: "gateways:gate_pearl"
+			}
+			id: "1133057B391B2009"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "186CA3CA5D9EA2EB"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "65DB0777EA59AC11"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D688F5DA651D29E"
+					item: {
+						count: 1
+						id: "alexscavesup:pure_darkness"
+					}
+					type: "item"
+				}
+				{
+					id: "4D91B959A613ED91"
+					item: {
+						count: 1
+						id: "alexscavesup:immortal_embryo"
+					}
+					type: "item"
+				}
+				{
+					id: "2C1E35F4EFDFB262"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4202F58219E5422D"
+					item: { components: { "gateways:gateway": "createdelightcore:piercing_withering_trial" }, count: 1, id: "gateways:gate_pearl" }
+					type: "item"
+				}
+				{
+					entity: "minecraft:wither_skeleton"
+					id: "792E7F0827271924"
+					type: "kill"
+					value: 0L
+				}
+			]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"421576F1BE1DF7D9"
+				"333BF6EDDA0D6998"
+			]
+			id: "150784A5D48732C2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6AF7C6940A47CF2F"
+				item: {
+					count: 1
+					id: "youkaishomecoming:big_popsicle"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				dimension: "northstar:mars"
+				id: "22B3E32DDC0E16B1"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["150784A5D48732C2"]
+			icon: {
+				id: "gateways:gate_pearl"
+			}
+			id: "283562A687949192"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "21B4B48B0CEA1682"
+					item: {
+						count: 1
+						id: "dreadsteel:dreadsteel_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "777204A5FAE909D5"
+					item: {
+						count: 1
+						id: "createdelightcore:dread_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "29343499F6B63CB1"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "004938CCC005CF4C"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"604734C6B3F31B97"
+				"333BF6EDDA0D6998"
+			]
+			id: "0F1628F16807D8BD"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "11BCA867F2AE8E20"
+					item: {
+						components: {
+							"ftbquests:missing_item": "tetra:pale_steel_needle"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "5E7B67D23DF8C3D2"
+					item: {
+						count: 1
+						id: "dungeonsdelight:monster_cake"
+					}
+					type: "item"
+				}
+				{
+					id: "5A6B1C1DF08414CA"
+					item: {
+						count: 1
+						id: "gateways:gate_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "74F6BA5FA92BA39E"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1866421C1715CDCD"]
+			id: "13C4DBA50880B401"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "585F166FBAF123F3"
+				item: {
+					count: 1
+					id: "gateways:gate_pearl"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "0CE6596DFE9064CB"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["333BF6EDDA0D6998"]
+			id: "5881339CB607FB65"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "25E1EACD63CEEF42"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:netherite_backpack"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "36FB03CA07C44B90"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "5CA4EE1BBF47538A"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:stack_upgrade_tier_4"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "04B224428702A002"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["333BF6EDDA0D6998"]
+			id: "1866421C1715CDCD"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "3E79CFE45D802EF0"
+					item: {
+						count: 1
+						id: "industrial_platform:industrial_platform"
+					}
+					type: "item"
+				}
+				{
+					id: "1E0ECFFB987491B0"
+					item: {
+						count: 1
+						id: "minecraft:water_bucket"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "1AF3518531FBC0CF"
+				item: { count: 1, id: "minecraft:water_bucket" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["333BF6EDDA0D6998"]
+			id: "71C778FD673292E1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "7116F6CE8113DA1B"
+					item: {
+						count: 1
+						id: "cataclysm:necklace_of_the_desert"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E9A1C964AE3A333"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "5E2C013FBF893349"
+					item: { count: 1, id: "cataclysm:necklace_of_the_desert" }
+					type: "item"
+				}
+				{
+					id: "5D9130C5990AEFCC"
+					item: { count: 1, id: "minecraft:nether_star" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["71C778FD673292E1"]
+			id: "07D6031FFAB64D87"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "53CBB035EA3D7B9F"
+				item: {
+					count: 1
+					id: "gateways:gate_pearl"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "563BE0F8AB8B4C7C"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["333BF6EDDA0D6998"]
+			id: "0662D25974179497"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "24C12E893B85D698"
+				item: {
+					count: 1
+					id: "gateways:gate_pearl"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "793AAF66CAD63FB5"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["333BF6EDDA0D6998"]
+			id: "4DD4BBF6C7189FA1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7D646AE5E8E284F7"
+				type: "xp_levels"
+				xp_levels: 12
+			}]
+			shape: "square"
+			tasks: [{
+				id: "5B4E839BF9C29969"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+	]
+}

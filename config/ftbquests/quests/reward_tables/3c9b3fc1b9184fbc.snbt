@@ -1,0 +1,39 @@
+{
+	id: "3C9B3FC1B9184FBC"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			count: 3
+			id: "497DF710D0439F03"
+			item: {
+				count: 1
+				id: "vinery:white_grape_seeds"
+			}
+		}
+		{
+			count: 3
+			id: "40C91E8CB598055E"
+			item: {
+				count: 1
+				id: "vinery:savanna_grape_seeds_white"
+			}
+		}
+		{
+			count: 3
+			id: "6B07E598797EB18C"
+			item: {
+				count: 1
+				id: "vinery:taiga_grape_seeds_white"
+			}
+		}
+		{
+			count: 3
+			id: "4C618DA144912A24"
+			item: {
+				count: 1
+				id: "vinery:jungle_grape_seeds_white"
+			}
+		}
+	]
+}

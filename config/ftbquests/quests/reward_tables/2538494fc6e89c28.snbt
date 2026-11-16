@@ -1,0 +1,75 @@
+{
+	id: "2538494FC6E89C28"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{
+			id: "684B4B9F2224666E"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "42A8B466921BEB5E"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "762F6AFF46693253"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "3FF6C5DBD9144BD4"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "70FB6CB189A4F929"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "3AD364BA0457D967"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "27B3408E131620B7"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 1.5f
+		}
+		{ id: "5CE6438E9F639188", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "36039C3F711C6D82", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "5D9FBDBF97DE8231", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "0B2CBA25B86A5121", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "5F4CB08BC79674CA", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "2E2DC29FB807175A", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "3CA8B9ED406314F2", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "023737BA04CE2628", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "66B283807AD1B39E", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "64D1D0C002BC1E41", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "76A21F15F88EA057", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "07AA479987EDAE35", item: { count: 1, id: "gateways:gate_pearl" } }
+	]
+}

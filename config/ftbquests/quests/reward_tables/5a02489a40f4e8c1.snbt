@@ -1,0 +1,15 @@
+{
+	id: "5A02489A40F4E8C1"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ id: "60DF3AE2BC39C360", item: { count: 1, id: "createcafe:oreo_milk_tea" } }
+		{ id: "16FF958DCFDAC8D2", item: { count: 1, id: "createcafe:banana_milk_tea" } }
+		{ id: "28EBD594FA706A4C", item: { count: 1, id: "createcafe:vanilla_milk_tea" } }
+		{ id: "56E76B95E93FB3F8", item: { count: 1, id: "createcafe:watermelon_milk_tea" } }
+		{ id: "56573F7F9E3F5E39", item: { count: 1, id: "createcafe:sweetberry_milk_tea" } }
+		{ id: "517D0E14A8530675", item: { count: 1, id: "createcafe:pumpkin_milk_tea" } }
+		{ id: "4CFA4825E5E5C998", item: { count: 1, id: "createcafe:apple_milk_tea" } }
+		{ id: "61D1843DB8F87716", item: { count: 1, id: "createcafe:strawberry_milk_tea" } }
+	]
+}

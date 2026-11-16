@@ -1,0 +1,1196 @@
+{
+	autofocus_id: "6CB83B142B7FB707"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "classic_storage"
+	group: "7A00000000000006"
+	icon: {
+		id: "sophisticatedbackpacks:backpack"
+	}
+	id: "34EC8C9716956C8E"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "1268F9D57D75D354"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3E56257A939EB869"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "546A45CF6C6EED31"
+				item: { count: 1, id: "sophisticatedbackpacks:crafting_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43813D8660593458"]
+			dependency_requirement: "one_started"
+			id: "6CB83B142B7FB707"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4BAC4AB52A76F032"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "75E3AD2464A4E6F0"
+				item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "7A13C2C9448883AF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1E61B276B6114C37"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "59745F6133515563"
+				item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "12CE92727FB9400F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "395D8244BF0FA867"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "27BBD63A8D9E6AD6"
+				item: { count: 1, id: "sophisticatedbackpacks:filter_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "6862190534199A59"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3AA3C0EF5D802422"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "22B0D65326ACB905"
+				item: { count: 1, id: "sophisticatedbackpacks:magnet_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "461C6E26340FD370"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "65D01AF8E79CDD8F"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "283C2DA2A9BC1088"
+				item: { count: 1, id: "sophisticatedbackpacks:feeding_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "4B6F08D3619584DF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "08528F83A9A5602D"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "04FAFD137C8B777C"
+				item: { count: 1, id: "sophisticatedbackpacks:compacting_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "2269248762671B35"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "08C5644A739477B2"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "36AC78A5DAA0DBF6"
+				item: { count: 1, id: "sophisticatedbackpacks:void_upgrade" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "29F7F2E0F7F20AF8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5B4A0C789A733CF5"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6034A8D76F326E5A"
+				item: { count: 1, id: "sophisticatedbackpacks:restock_upgrade" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "6864F65415E69D8C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6B1D02A3A2A5141C"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58ADF368A39EF994"
+				item: { count: 1, id: "sophisticatedbackpacks:deposit_upgrade" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "17D94ADAABBE71A4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0A629573F1678CC6"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "546239421C0653D0"
+				item: { count: 1, id: "sophisticatedbackpacks:refill_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "641A61495195B4B5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0F88615CA51CDAEF"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "788DEFDF7F65D40E"
+				item: { count: 1, id: "sophisticatedbackpacks:inception_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "69277AE7932158B1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3795665AB0398F40"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4426C2E07689C9E1"
+				item: { count: 1, id: "sophisticatedbackpacks:everlasting_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "2986E897F743884A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "21EA8F15EBFE2047"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0143F8A9C7B47BD9"
+				item: { count: 1, id: "sophisticatedbackpacks:smelting_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "1F30B72A2DA4C838"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "623FBB2DA4A70C9E"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26CCFB41EC50DF4B"
+				item: { count: 1, id: "sophisticatedbackpacks:smoking_upgrade" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "0037B829D9FA68E4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "298CABD7CBBB8400"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "480A9C28080E40BB"
+				item: { count: 1, id: "sophisticatedbackpacks:blasting_upgrade" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "2995C14095666E1E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2652FE87EC889ECD"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0AE56238B00E5EDF"
+				item: { count: 1, id: "sophisticatedbackpacks:stonecutter_upgrade" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "6AC880AE68D2D45A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "26D71AA52F746305"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "06BB090F5174C40C"
+				item: { count: 1, id: "sophisticatedbackpacks:stack_upgrade_tier_1" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "12986439CFFDF46A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6BE4CD83436A2719"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A7A53BFE83C89DB"
+				item: { count: 1, id: "sophisticatedbackpacks:jukebox_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "2E50E758A549D655"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "52CE71FC192EE581"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "781D5913967808D3"
+				item: { count: 1, id: "sophisticatedbackpacks:tool_swapper_upgrade" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB83B142B7FB707"]
+			dependency_requirement: "one_started"
+			id: "6C07D22D95B3ED64"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7DBCB2019C83A2B1"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "61D922B4BEC0B992"
+				item: { count: 1, id: "sophisticatedbackpacks:tank_upgrade" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6AC880AE68D2D45A"]
+			dependency_requirement: "one_started"
+			id: "67A1D17C6AFFB582"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4154F15CD42CF3FB"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "65D41AB93724E953"
+				item: { count: 1, id: "sophisticatedbackpacks:stack_upgrade_tier_2" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"67A1D17C6AFFB582"
+				"6AC880AE68D2D45A"
+			]
+			dependency_requirement: "one_started"
+			id: "15342988E94D8C86"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "31E072BA55203C0A"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7293EC6719E37DD4"
+				item: { count: 1, id: "sophisticatedbackpacks:stack_upgrade_tier_3" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"67A1D17C6AFFB582"
+				"15342988E94D8C86"
+				"6AC880AE68D2D45A"
+			]
+			dependency_requirement: "one_started"
+			id: "66D3EF87F856DEA0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7331BA5ED959C0C6"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "08D1A8DCCA271D67"
+				item: { count: 1, id: "sophisticatedbackpacks:stack_upgrade_tier_4" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A13C2C9448883AF"]
+			dependency_requirement: "one_started"
+			id: "1DD9F042EAD99A45"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2D8EC2593D06E70E"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FDE92EC1DDD46DB"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_pickup_upgrade" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12CE92727FB9400F"]
+			dependency_requirement: "one_started"
+			id: "13A62CE93299B5FB"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2E34A9BB00DD9AAD"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53ACD7C0D698DF02"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_filter_upgrade" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6862190534199A59"]
+			dependency_requirement: "one_started"
+			id: "4D0A44C255CB9C5F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0DE0D9A0315D59DD"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "338BE78FB9293434"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["461C6E26340FD370"]
+			dependency_requirement: "one_started"
+			id: "34C26DD5E6377E97"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "67258640844F3A23"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B4DE752E440BD3C"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_feeding_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4B6F08D3619584DF"]
+			dependency_requirement: "one_started"
+			id: "1262900483306A0C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "168E5AA475BF53AF"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "73482DE7758F9A3B"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_compacting_upgrade" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2269248762671B35"]
+			dependency_requirement: "one_started"
+			id: "2671A9CCA9CFB94E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "58472A660318967A"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "57C7A4AB6CECDF0C"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_void_upgrade" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2986E897F743884A"]
+			dependency_requirement: "one_started"
+			id: "0FEE33EF99BF377F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5CB730082CD7CEB1"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "098AEA22ECBD6788"
+				item: { count: 1, id: "sophisticatedbackpacks:auto_smelting_upgrade" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1F30B72A2DA4C838"]
+			dependency_requirement: "one_started"
+			id: "37E6E726631DA05A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7982045A555C9C84"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "76E284B3BDB5781E"
+				item: { count: 1, id: "sophisticatedbackpacks:auto_smoking_upgrade" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0037B829D9FA68E4"]
+			dependency_requirement: "one_started"
+			id: "01B9BC213A708345"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7ED5B4251C02E064"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "778F94C4435C2CE0"
+				item: { count: 1, id: "sophisticatedbackpacks:auto_blasting_upgrade" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2E50E758A549D655"]
+			dependency_requirement: "one_started"
+			id: "703FC2BEDF4C9BC7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "47522F40DA97D7A5"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "79B4860B6B59A071"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_tool_swapper_upgrade" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["29F7F2E0F7F20AF8"]
+			dependency_requirement: "one_started"
+			id: "5CDCD106FD89BAD6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6B58157E62F21393"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7831352AD077DC94"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_restock_upgrade" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6864F65415E69D8C"]
+			dependency_requirement: "one_started"
+			id: "28C9A5E3525878DE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7C961FE5218BA950"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A4C73EBBBB06E9D"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_deposit_upgrade" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["17D94ADAABBE71A4"]
+			dependency_requirement: "one_started"
+			id: "6233FB9B5DD57C91"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3F73A36B2081DE13"
+				item: {
+					count: 1
+					id: "createdelightcore:copper_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1066BA555F72B121"
+				item: { count: 1, id: "sophisticatedbackpacks:advanced_refill_upgrade" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["262E66AD49F385AC"]
+			dependency_requirement: "one_started"
+			id: "268EA9B525679B29"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7BA5B3C445C62800"
+				item: { count: 1, id: "functionalstorage:oak_1" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["262E66AD49F385AC"]
+			dependency_requirement: "one_started"
+			id: "4ED30BB3B015BE83"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "02D65FA265D22551"
+					item: { count: 1, id: "functionalstorage:simple_compacting_drawer" }
+					type: "item"
+				}
+				{
+					id: "07F30598B92EF87F"
+					item: { count: 1, id: "functionalstorage:compacting_drawer" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["262E66AD49F385AC"]
+			dependency_requirement: "one_started"
+			id: "2AE07B93F6BDC908"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3F733345FDC256C1"
+				item: { count: 1, id: "functionalstorage:linking_tool" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["262E66AD49F385AC"]
+			dependency_requirement: "one_started"
+			id: "5200300840269F9E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5454B73CE30FC6EC"
+				item: { count: 1, id: "functionalstorage:configuration_tool" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "0128B2E730D8FCB3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "63D7CA3A5FBB5ABA"
+				item: { count: 1, id: "ae2:crafting_terminal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A034C9BC79BD54"]
+			dependency_requirement: "one_started"
+			id: "66BB6D3AD30D249B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "770E290F3095608E"
+					item: { count: 1, id: "ae2:wireless_crafting_terminal" }
+					type: "item"
+				}
+				{
+					id: "6BA66803844DDD0D"
+					item: { count: 1, id: "ae2:wireless_access_point" }
+					type: "item"
+				}
+				{
+					id: "0C10520C2E1DBAA4"
+					item: { count: 1, id: "ae2:wireless_booster" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0128B2E730D8FCB3"]
+			dependency_requirement: "one_started"
+			id: "52A034C9BC79BD54"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "7765019F8597E4C4"
+				item: { count: 1, id: "ae2:white_smart_cable" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A034C9BC79BD54"]
+			dependency_requirement: "one_started"
+			id: "1C774B6F6F594D44"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "77051DC239F680E4"
+					item: { count: 1, id: "ae2:drive" }
+					type: "item"
+				}
+				{
+					id: "57DA1DB14625B61D"
+					item: { count: 1, id: "extendedae:ex_drive" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["52A034C9BC79BD54"]
+			dependency_requirement: "one_started"
+			id: "4D21060946DAD49C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "426E0972A30D61BA"
+				item: { count: 1, id: "ae2:storage_bus" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D21060946DAD49C"]
+			dependency_requirement: "one_started"
+			id: "5E25B67858E6E950"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "027346D2EE52B860"
+				item: { count: 1, id: "ae2:interface" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D21060946DAD49C"]
+			dependency_requirement: "one_started"
+			id: "65877729DB7620EF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6A8023BC6226CCCE"
+				item: { components: { "ftbfiltersystem:filter": "#create_bs:vaults" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D21060946DAD49C"]
+			dependency_requirement: "one_started"
+			id: "262E66AD49F385AC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7B0C845C23643802"
+				item: { count: 1, id: "functionalstorage:storage_controller" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D21060946DAD49C"]
+			dependency_requirement: "one_started"
+			id: "09470B72A195876A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4A1D070CCF8F0948"
+				item: { count: 1, id: "functionalstorage:armory_cabinet" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D21060946DAD49C"]
+			dependency_requirement: "one_started"
+			id: "43813D8660593458"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "769D44B2B6889E1B"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["262E66AD49F385AC"]
+			dependency_requirement: "one_started"
+			id: "28E3A94AB667BC29"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6FF431B1F700C128"
+				item: { count: 1, id: "functionalstorage:fluid_1" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"268EA9B525679B29"
+				"4ED30BB3B015BE83"
+				"28E3A94AB667BC29"
+			]
+			dependency_requirement: "one_started"
+			id: "1EB43DB20717F9BE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0B110F9AE889CD19"
+					item: { count: 1, id: "functionalstorage:copper_upgrade" }
+					type: "item"
+				}
+				{
+					id: "00E438B36A5D9372"
+					item: { count: 1, id: "functionalstorage:gold_upgrade" }
+					type: "item"
+				}
+				{
+					id: "0CDEAD3BCCD81843"
+					item: { count: 1, id: "functionalstorage:diamond_upgrade" }
+					type: "item"
+				}
+				{
+					id: "3BC934464374127D"
+					item: { count: 1, id: "functionalstorage:netherite_upgrade" }
+					type: "item"
+				}
+				{
+					id: "3E349519993367CF"
+					item: { count: 1, id: "functionalstorage:iron_downgrade" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"268EA9B525679B29"
+				"4ED30BB3B015BE83"
+				"28E3A94AB667BC29"
+			]
+			dependency_requirement: "one_started"
+			id: "3E6A29C20A26AE57"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0A1A1D52FA447C3B"
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:collector_upgrade" }
+					type: "item"
+				}
+				{
+					id: "208250950A2443E5"
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:puller_upgrade" }
+					type: "item"
+				}
+				{
+					id: "55C86989B1EA2034"
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:pusher_upgrade" }
+					type: "item"
+				}
+				{
+					id: "2A5884229DC5058F"
+					item: { count: 1, id: "functionalstorage:void_upgrade" }
+					type: "item"
+				}
+				{
+					id: "5B17005F01279F45"
+					item: { components: { "functionalstorage:slot": 0 }, count: 1, id: "functionalstorage:redstone_upgrade" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1C774B6F6F594D44"]
+			dependency_requirement: "one_started"
+			id: "1E2D3B6373DCB6D9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "5AE0AF3C09BD88D4"
+					item: { count: 1, id: "ae2:item_storage_cell_1k" }
+					type: "item"
+				}
+				{
+					id: "6DC97FC2CEBAEFDB"
+					item: { count: 1, id: "ae2:fluid_storage_cell_1k" }
+					type: "item"
+				}
+				{
+					id: "2F00C25E7A1862FA"
+					item: { count: 1, id: "megacells:item_storage_cell_1m" }
+					type: "item"
+				}
+				{
+					id: "6981AC00862DB803"
+					item: { count: 1, id: "megacells:fluid_storage_cell_1m" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "525EEC0BD9930D59"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10E98E30B2374575"
+				item: { count: 1, id: "quark:crate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["52A034C9BC79BD54"]
+			dependency_requirement: "one_completed"
+			id: "00C42597A26B0463"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0522F816D79F0C1B"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "0998076C377EF898"
+					item: { count: 1, id: "ae2:quantum_link" }
+					type: "item"
+				}
+				{
+					id: "7E753D71BF071DB6"
+					item: { count: 1, id: "ae2:quantum_entangled_singularity" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00C42597A26B0463"]
+			dependency_requirement: "one_started"
+			id: "5978CD53F52A976E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D6B72FC1DB235E9"
+				item: { count: 1, id: "ae2wtlib:quantum_bridge_card" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5E25B67858E6E950"]
+			dependency_requirement: "one_started"
+			id: "41082888C1B71397"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "791C0FEE19B0FA79"
+				item: { count: 1, id: "ae2:white_smart_cable" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+	]
+}
