@@ -1,0 +1,438 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abyssal_depths"
+	group: "7A00000000000005"
+	icon: {
+		id: "alexscavesup:submarine"
+	}
+	id: "747E24C142A0FBEA"
+	images: [ ]
+	order_index: 5
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75D1E8A0C4B29F63"]
+			id: "475F0BF3666A12AB"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/discover_abyssal_chasm"
+				criterion: ""
+				id: "1D1123A688CF97F6"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "33609F4D3717AC13"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "0AAA9C6BF26B8A1E"
+				item: {
+					count: 1
+					id: "minecraft:potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "52108ABD2ECDE440"
+				item: { count: 1, id: "alexscavesup:lanternfish" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33609F4D3717AC13"]
+			id: "75CC6920608A6193"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6C3496EC2F854AC7"
+				item: {
+					count: 1
+					id: "minecraft:potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "24219261B750CDBE"
+				item: { count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "3AB0158904BD71EC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "34DF48BF78DC4DEC"
+				item: {
+					count: 1
+					id: "alexscavesup:bioluminesscence"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "786A42ED7DD98457"
+				item: { count: 1, id: "alexscavesup:bioluminesscence" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3A84281CE6B202B1"]
+			id: "1F4B01D343C82824"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0D28DEF4C87EF28A"
+				item: { count: 1, id: "alexscavesup:marine_snow" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["33609F4D3717AC13"]
+			id: "4A19E68507D34B59"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "764D5EE937AD6FAE"
+				item: { count: 1, id: "alexscavesup:pearl" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3AB0158904BD71EC"]
+			id: "09191975D3CAC64F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "78996BDD6CC42D47"
+				item: { count: 1, id: "alexscavesup:floater" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A19E68507D34B59"]
+			id: "79B8A649678C0C69"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14741D35FE8D648D"
+				item: { count: 1, id: "alexscavesup:abyssal_altar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "5FC984635519A304"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0678ABBACE7213F5"
+				item: { count: 1, id: "alexscavesup:depth_charge" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4A30A6D199AE29FB"]
+			id: "6064CB76A7832C2A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "605495B7E0004898"
+				item: { count: 1, id: "alexscavesup:enigmatic_engine" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			id: "750AA8056B889C2F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "2A133426E5F7C9E0"
+					item: {
+						count: 1
+						id: "minecraft:heart_of_the_sea"
+					}
+					type: "item"
+				}
+				{
+					id: "46DF317793124272"
+					item: {
+						count: 1
+						id: "minecraft:armor_stand"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "65B72703C3D83C0A"
+					item: { count: 1, id: "alexscavesup:diving_helmet" }
+					type: "item"
+				}
+				{
+					id: "14564634096AC6FA"
+					item: { count: 1, id: "alexscavesup:diving_chestplate" }
+					type: "item"
+				}
+				{
+					id: "4A057740988EE4BB"
+					item: { count: 1, id: "alexscavesup:diving_leggings" }
+					type: "item"
+				}
+				{
+					id: "11C4E9D1E94C84A3"
+					item: { count: 1, id: "alexscavesup:diving_boots" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "3754E080CA68541E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5EA7AA4959B5AA69"
+				item: { count: 1, id: "alexscavesup:ortholance" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "1B160A317825B414"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "475F9E1587C2DEFE"
+				item: { count: 1, id: "alexscavesup:magic_conch" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "5BD33668039F91F7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5D3D42A7FBB0A442"
+				item: { count: 1, id: "alexscavesup:sea_staff" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "2F12FAADB6688EBD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "22D7955D2F1BA0CF"
+				item: { count: 1, id: "alexscavesup:tripodfish" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2F12FAADB6688EBD"
+				"3A84281CE6B202B1"
+			]
+			id: "51C710C28386E158"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "4FA90E0C6B53F35C"
+				item: {
+					count: 1
+					id: "alexscavesup:deep_sea_sushi_roll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F46041331E2FC33"
+				item: { count: 1, id: "alexscavesup:deep_sea_sushi_roll" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "689FDBFA71B753DF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4CE29A6A48F19F5F"
+				item: {
+					count: 1
+					id: "alexscavesup:cooked_mussel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "298095263608234E"
+				item: { count: 1, id: "alexscavesup:mussel" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			id: "63412B7D4D837898"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4781E3B23F4C9F5B"
+				item: { count: 1, id: "alexscavesup:game_controller" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["4A30A6D199AE29FB"]
+			id: "397579D4AA9FD0E2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3D3DDF1F0280A618"
+				item: { count: 1, id: "alexscavesup:immortal_embryo" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3AB0158904BD71EC"]
+			id: "5747450EF7797B3D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DB8115149E24DCE"
+				item: { count: 1, id: "alexscavesup:bioluminescent_torch" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["475F0BF3666A12AB"]
+			id: "3A84281CE6B202B1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5D329FF1A3D2F372"
+				item: { count: 1, id: "alexscavesup:sea_pig" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["12717011B0572A1C"]
+			id: "4A30A6D199AE29FB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				entity: "alexscavesup:hullbreaker"
+				id: "02C84ACD19F1CD43"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "21616D66B4184170"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3C61F33CA7E19BCB"
+				item: { count: 1, id: "alexscavesup:gazing_pearl" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "3064DB15B17A0C92"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "19D5AE570A66EE93"
+				item: { count: 1, id: "alexscavesup:ink_bomb" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "095B9BA10D480D11"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0ABAB2290FC38757"
+				item: { count: 1, id: "alexscavesup:glow_ink_bomb" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6064CB76A7832C2A"]
+			id: "3EBE8C557492A57D"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/ride_submarine"
+				criterion: ""
+				id: "62C50BCB2CD6B0D2"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["79B8A649678C0C69"]
+			id: "12717011B0572A1C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexscavesup:alexscaves/stalked_by_deep_one"
+				criterion: ""
+				id: "69B1C5011E27B98F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6064CB76A7832C2A"]
+			id: "29130F650B256E20"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "605A5C244AD55689"
+				item: { count: 1, id: "create_fantasizing:sturdy_conduit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+	]
+}

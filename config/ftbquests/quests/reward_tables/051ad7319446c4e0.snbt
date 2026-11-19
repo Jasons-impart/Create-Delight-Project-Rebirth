@@ -1,0 +1,16 @@
+{
+	id: "051AD7319446C4E0"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ id: "1084C03AF80A4F99", item: { count: 1, id: "ae2:logic_processor" } }
+		{ id: "2416EFB80B11353A", item: { count: 1, id: "ae2:printed_calculation_processor" } }
+		{ id: "0BF900E8BCE43659", item: { count: 1, id: "ae2:engineering_processor" } }
+		{ id: "0B374B32D4B3CBD1", item: { count: 1, id: "ae2:calculation_processor" } }
+		{ id: "724390A2E85F4968", item: { count: 1, id: "ae2:printed_engineering_processor" } }
+		{ id: "4BBDED637B181F3E", item: { count: 1, id: "ae2:printed_logic_processor" } }
+		{ id: "7630E68B49E778DE", item: { count: 1, id: "ae2:printed_silicon" } }
+		{ id: "331D1A367430F426", item: { count: 1, id: "megacells:accumulation_processor" } }
+		{ id: "6122E9A070418557", item: { count: 1, id: "megacells:printed_accumulation_processor" } }
+	]
+}

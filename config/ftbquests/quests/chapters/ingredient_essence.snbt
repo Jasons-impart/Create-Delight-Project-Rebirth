@@ -1,0 +1,1516 @@
+{
+	autofocus_id: "66D065B43FA2BF50"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ingredient_essence"
+	group: "7A00000000000003"
+	icon: {
+		id: "minecraft:wheat"
+	}
+	id: "6F878A6424801E5E"
+	images: [
+		{
+			height: 8.0d
+			id: "0F2A484F03E0C968"
+			image: "minecraft:item/pufferfish"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -67.5d
+			y: -17.5d
+		}
+		{
+			height: 8.0d
+			id: "0763CCD08F1A84CC"
+			image: "collectorsreap:item/stygian_pomegranate"
+			order: 1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -76.0d
+			y: -17.5d
+		}
+		{
+			height: 8.0d
+			id: "7C77B1F211ED1147"
+			image: "minecraft:block/glow_item_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -76.0d
+			y: -17.5d
+		}
+		{
+			height: 8.0d
+			id: "3E5011A49BEEA955"
+			image: "minecraft:block/glow_item_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -67.5d
+			y: -17.5d
+		}
+		{
+			height: 8.0d
+			id: "3BA8451FF2D9BE16"
+			image: "minecraft:block/glow_item_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -72.0d
+			y: -9.5d
+		}
+		{
+			height: 8.0d
+			id: "02B1ADDBFAA5BCC0"
+			image: "minecraft:item/netherite_hoe"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 8.0d
+			x: -72.0d
+			y: -9.5d
+		}
+	]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: true
+			id: "1E6358D568EF8155"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "378187419BC6084B"
+				item: { count: 1, id: "vintagedelight:peanut" }
+				type: "item"
+			}]
+			x: -70.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6105AFADE6997A68"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "25AC93BDD4C337E0"
+				item: { count: 1, id: "minecraft:potato" }
+				type: "item"
+			}]
+			x: -70.5d
+			y: -12.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "2C8A0A4D40645A38"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4EFED1532CBC6E4B"
+				item: { count: 1, id: "minecraft:carrot" }
+				type: "item"
+			}]
+			x: -71.5d
+			y: -12.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4DA3084BF7FB8BCD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1D98990887BA507F"
+				item: { count: 1, id: "minecraft:sugar_cane" }
+				type: "item"
+			}]
+			x: -71.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4CF89D6E0EAA6191"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5EB5864DC9A9413E"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1E6358D568EF8155"]
+			hide_until_deps_complete: true
+			id: "31A717CF38C46FFC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "532CC174A857421D"
+				item: { count: 1, id: "vintagedelight:magic_peanut" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4CA1ABF5ED0150F4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "361897B59EB82809"
+				item: { count: 1, id: "minecraft:pumpkin" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "67DE065B095778C4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "34E5FCC276FD932C"
+				item: { components: { "ftbquests:missing_item": "frycooks_delight:canola" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -70.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "105CB7DAFC6CCF85"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "04A5F99450D74437"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:chinese_cabbage" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "3D72F2D5A1DE9A58"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6157CDA4E28A8EAB"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:eggplant" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -71.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "3E63AA1AAFDE43A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32553D21388CEE0D"
+				item: { components: { "ftbfiltersystem:filter": "#vinery:white_grape" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "35CFE29C0207239D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "59C16038D45F59AF"
+				item: { components: { "ftbfiltersystem:filter": "#vinery:red_grape" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "19860C2F6F52152F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "775EAE430021927E"
+				item: { components: { "ftbquests:missing_item": "nethervinery:crimson_grape" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "50A3C86BF8510F27"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "36D52E213D6F90AA"
+				item: { components: { "ftbquests:missing_item": "nethervinery:warped_grape" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1D1CBC7F0738036B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "381267CFF42D8FF4"
+					item: {
+						count: 1
+						id: "farmersdelight:rice_panicle"
+					}
+					type: "item"
+				}
+				{
+					id: "423FEB9BF4715A10"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				id: "75F52F23C5ACE681"
+				item: { count: 1, id: "farmersdelight:rice_panicle" }
+				type: "item"
+			}]
+			x: -72.5d
+			y: -12.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1B20A484A5FC9B57"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6F0ECE50AD718AAD"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:garlic_chive" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7844869F89AA50F4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "55833F81A366694E"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:greenonion" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -72.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7BF93719AD8A448C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2C64A841B0E319D0"
+				item: { count: 1, id: "createcafe:cassava_root" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -12.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "06F725765BD4E479"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "1F677F8BF638D2C1"
+					item: {
+						count: 1
+						id: "farmersdelight:onion"
+					}
+					type: "item"
+				}
+				{
+					id: "59042338196E9693"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "39E2FCF08429D67F"
+				item: { count: 1, id: "farmersdelight:onion" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "745E03012C0A03A9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "78F7C7EDF77F3858"
+				item: { count: 1, id: "vintagedelight:ghost_pepper" }
+				type: "item"
+			}]
+			x: -71.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7AECA2A6C18C2F7F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "2F0CFF527C92596B"
+					item: {
+						count: 1
+						id: "minecraft:beetroot_seeds"
+					}
+					type: "item"
+				}
+				{
+					id: "5E10A7CE4487193E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "725C505C02C717F4"
+				item: { count: 1, id: "minecraft:beetroot" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0C4F87ACA5C4D6D9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "012DC84B62CFCE34"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_seeds"
+					}
+					type: "item"
+				}
+				{
+					id: "1AEBEED5D4E7F083"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2380A1138DEA5FFE"
+				item: { count: 1, id: "farmersdelight:cabbage" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "363BC04C1FDE411C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "1D3830098CA2E770"
+					item: {
+						count: 1
+						id: "minecraft:brown_mushroom"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "187084F4E5FF95A8"
+					item: {
+						count: 1
+						id: "minecraft:red_mushroom"
+					}
+					type: "item"
+				}
+				{
+					id: "660887504E5FC0D2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "50D3A87A3D4ACCB6"
+					item: { count: 1, id: "minecraft:brown_mushroom" }
+					type: "item"
+				}
+				{
+					id: "0C1159BB38E3917D"
+					item: { count: 1, id: "minecraft:red_mushroom" }
+					type: "item"
+				}
+			]
+			x: -74.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "468B3D8EE192C5B2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "760D9518F83C2890"
+				item: { count: 1, id: "mynethersdelight:bullet_pepper" }
+				type: "item"
+			}]
+			x: -70.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "722C511B0AA86ECD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "451FC9F0ECBE0EA9"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:garlic" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "31CA5B28794F4C00"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2E1A263C34FD4552"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:fennel" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -11.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "49425FF8BFE2D564"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2D21D37324E9D242"
+				item: { count: 1, id: "culturaldelights:eggplant" }
+				type: "item"
+			}]
+			x: -72.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "52D3BDA7B642C045"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "701CE61CF232F8FA"
+				item: { count: 1, id: "vintagedelight:cucumber" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "13AB0B4F1DC4D460"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5B44915FB25D786A"
+				item: { count: 1, id: "farmersdelight:tomato" }
+				type: "item"
+			}]
+			x: -70.5d
+			y: -10.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1FAB5DB4D7BD1C14"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "28462952F475CD4E"
+				item: { count: 1, id: "vintagedelight:oat" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -12.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6FAEFDA0867E48CA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6A2E55D520C849F1"
+				item: { count: 1, id: "vintagedelight:gearo_berry" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4E91F3B0C9186CF4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "17F02FBF9F2F0281"
+				item: { count: 1, id: "minecraft:glow_berries" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0127B9E281D268BF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7687C54875C4BD7D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "28DFB858D2E0617D"
+				item: { count: 1, id: "fruitsdelight:blueberry" }
+				type: "item"
+			}]
+			x: -78.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "550FA243BA7B736F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0610CCCF2A566067"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4AD04521009A25BE"
+				item: { count: 1, id: "minecraft:sweet_berries" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "25C77A4F65494D2A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5C2DB668B57C47CA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "43FDEB3499F228C4"
+				item: { count: 1, id: "fruitsdelight:cranberry" }
+				type: "item"
+			}]
+			x: -75.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0063494FD35EF1DE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "79A270158A99D91C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6768F71743BA80F1"
+				item: { count: 1, id: "fruitsdelight:hawberry" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0BC1A48C5F7E4AD0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1F41CD8451A6EB11"
+				item: { count: 1, id: "collectorsreap:pomegranate" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["0BC1A48C5F7E4AD0"]
+			hide_until_deps_complete: true
+			id: "1ABB1CC7C1D6566E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0AE3C77C5837336D"
+				item: { count: 1, id: "collectorsreap:stygian_pomegranate" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -15.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "27F5863D1F72F4D5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0C149DAED122A8B3"
+				item: { count: 1, id: "quark:ancient_fruit" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -15.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "2532FCB37BA9E159"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7A5C76F29A4633D0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "59F56E1A2A4A486F"
+				item: { count: 1, id: "fruitsdelight:hamimelon_slice" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "326F31C128FA35F7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4E14B7C590A11635"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "491F6CC83D8A0BA8"
+				item: { count: 1, id: "minecraft:melon_slice" }
+				type: "item"
+			}]
+			x: -78.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "43D20AFE4D13389F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3891A6A378174A4A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7F92331C061AFCFC"
+				item: { count: 1, id: "minecraft:apple" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7EE6074FA3805A00"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "07AF948CDD5E253E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "358377D636EA4E59"
+				item: { count: 1, id: "fruitsdelight:orange" }
+				type: "item"
+			}]
+			x: -75.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "3848C15C02538184"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "244445E783401118"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3C4D413AFF543E18"
+				item: { count: 1, id: "fruitsdelight:persimmon" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "60A76054159A37F7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2770636513A8A92E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "53A69FA2DB5CF273"
+				item: { count: 1, id: "fruitsdelight:pear" }
+				type: "item"
+			}]
+			x: -78.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "07886F18ABB7C8D1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5D751EDC1FEC5A6A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "72564063541AAF49"
+				item: { count: 1, id: "fruitsdelight:peach" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1C4EA0FC584EFC28"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "136C5E6002FA454F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "29B15EDEB93F3CCC"
+				item: { count: 1, id: "fruitsdelight:durian" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "44BEB5F11CE04C38"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0F5D35C51DA740B2"
+					item: { count: 1, id: "trailandtales_delight:pitcher_plant" }
+					type: "item"
+				}
+				{
+					id: "5902A4FB8EB1520E"
+					item: { count: 1, id: "minecraft:pitcher_pod" }
+					type: "item"
+				}
+			]
+			x: -75.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "59A6B34D8607FD6A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "39DB6648D8B9C2AA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6136E372191F2637"
+				item: { count: 1, id: "fruitsdelight:pineapple" }
+				type: "item"
+			}]
+			x: -75.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1F65F7E3A19CA174"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6EBBB71D8AB9DD96"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "753AA597E2E60D62"
+				item: { count: 1, id: "fruitsdelight:mango" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6CB6E1848E1C721A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "072E1365A9CABEEC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5A0D0FCBD4D6CF9B"
+				item: { count: 1, id: "fruitsdelight:lychee" }
+				type: "item"
+			}]
+			x: -78.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0D00E629D80816CF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2938225EE0D9ED91"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6C28EBAFF66B91FC"
+				item: { count: 1, id: "fruitsdelight:lemon" }
+				type: "item"
+			}]
+			x: -77.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "665D3BAA652CF952"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "23874BA4D63CB64E"
+				item: { count: 1, id: "collectorsreap:lime" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "057212DC8E0B9AF9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6EA7A323D0907869"
+				item: { count: 1, id: "minecraft:chorus_fruit" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7C53FFA4AC6FEDC3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "319DC16FACB503A5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2D59E5F67E424863"
+				item: { count: 1, id: "fruitsdelight:fig" }
+				type: "item"
+			}]
+			x: -75.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1CD404F45F375D7E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3B4ED88E290DE0FF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0C0BF2464140BE06"
+				item: { count: 1, id: "fruitsdelight:mangosteen" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6470CEFC832AE325"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72C427233D498F45"
+				item: { count: 1, id: "culturaldelights:avocado" }
+				type: "item"
+			}]
+			x: -78.5d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0DEAA38692CAC333"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4EBC827A829C08DD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7FF7C2264F4295B9"
+				item: { count: 1, id: "minecraft:nautilus_shell" }
+				type: "item"
+			}]
+			x: -68.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0DEAA38692CAC333"]
+			hide_until_deps_complete: true
+			id: "5CA3F160913BD18D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7291D5D7AA82AD5F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "612BA6D324FC0397"
+				item: { count: 1, id: "crabbersdelight:stuffed_nautilus_shell" }
+				type: "item"
+			}]
+			x: -67.5d
+			y: -15.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "2F7BE3A06FA611D6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7210AFC23B361092"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4142A0656A970633"
+				item: { count: 1, id: "crabbersdelight:clam" }
+				type: "item"
+			}]
+			x: -65.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["2F7BE3A06FA611D6"]
+			hide_until_deps_complete: true
+			id: "798FED2BBC13BE23"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "41DABEC629D7A010"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "09AF4948EE8D4B73"
+				item: { count: 1, id: "crabbersdelight:raw_clam_meat" }
+				type: "item"
+			}]
+			x: -66.5d
+			y: -15.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "437DDAAF6F64D0E0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7917F0AA643E86E6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "56D7B88E3DA1FC70"
+				item: { count: 1, id: "minecraft:pufferfish" }
+				type: "item"
+			}]
+			x: -66.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "20220744AEF253DA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4BDA38F82CEE019A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7411C8D02D848550"
+				item: { count: 1, id: "culturaldelights:squid" }
+				type: "item"
+			}]
+			x: -70.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "2911C4E82D85C333"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "75845C63335F6E02"
+				item: { count: 1, id: "crabbersdelight:raw_frog_leg" }
+				type: "item"
+			}]
+			x: -65.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4C5DB06DC3540875"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1D20E8AD723B0624"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "750974F04BDE483F"
+				item: { count: 1, id: "crabbersdelight:clawster" }
+				type: "item"
+			}]
+			x: -67.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7AA98D07FF5E4B1D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4E837B105946E004"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2850018EFD6045C7"
+				item: { count: 1, id: "youkaishomecoming:crab" }
+				type: "item"
+			}]
+			x: -68.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "284F00D6766657E8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0DDB6202A55C9771"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7A8A44EC2C9CF1D6"
+				item: { count: 1, id: "crabbersdelight:shrimp" }
+				type: "item"
+			}]
+			x: -67.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "26B5D1D5BFD13C23"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "29FE7B9E0C4CD5D4"
+				item: { components: { "ftbquests:missing_item": "festival_delicacies:mugwort" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -72.5d
+			y: -9.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "26F22F8298BE5703"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05EED7FB0067DCD4"
+				item: { count: 1, id: "minecraft:sunflower" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "34B6F55EF4870370"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79F332103CC03CF4"
+				item: { components: { "ftbquests:missing_item": "cosmopolitan:arbutus_berries" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "764710C3DCB2C8D5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0886B73F644A11E3"
+				item: { count: 1, id: "culturaldelights:glow_squid" }
+				type: "item"
+			}]
+			x: -69.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "22389E9F1F3C9808"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "27EC2674EC78E7BC"
+				item: { count: 1, id: "alexsmobsup:cosmic_cod" }
+				type: "item"
+			}]
+			x: -65.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6299163251FDC3BE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10A17533CF913537"
+				item: { count: 1, id: "minecraft:cod" }
+				type: "item"
+			}]
+			x: -70.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "5CBA00B2B32D6EC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32CADD9D571B34A3"
+				item: { count: 1, id: "minecraft:salmon" }
+				type: "item"
+			}]
+			x: -69.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "4588324DE4ADA440"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6F4A5EE0ACCDBC56"
+				item: { count: 1, id: "minecraft:tropical_fish" }
+				type: "item"
+			}]
+			x: -68.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6C35ED9C90ADDB54"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7DC8FB1C6397C1B5"
+				item: { count: 1, id: "alexscavesup:radgill" }
+				type: "item"
+			}]
+			x: -67.0d
+			y: -18.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "2FFDBD19DD91942B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2A01FF9254CAF0D5"
+				item: { count: 1, id: "alexscavesup:lanternfish" }
+				type: "item"
+			}]
+			x: -65.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "511DA716AF8B3F7F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1274EFA1A9E972DA"
+				item: { count: 1, id: "alexscavesup:tripodfish" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "24D0817E053333FA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6AC3F1D6B68F1307"
+				item: { count: 1, id: "alexsmobsup:blobfish" }
+				type: "item"
+			}]
+			x: -68.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "03001757BEE321E5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67F685EC0D2DEBC5"
+				item: { count: 1, id: "alexsmobsup:flying_fish" }
+				type: "item"
+			}]
+			x: -67.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "44064FE76E5F9BE5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "698A0625F3C8A976"
+				item: { count: 1, id: "create_bic_bit:raw_herring" }
+				type: "item"
+			}]
+			x: -66.5d
+			y: -19.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1DCFE492DB7E7B6F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0B4A69A289C60902"
+				item: { count: 1, id: "collectorsreap:platinum_bass" }
+				type: "item"
+			}]
+			x: -70.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "0F8874777A3934D4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C7768846BBFF39F"
+				item: { count: 1, id: "youkaishomecoming:raw_lamprey" }
+				type: "item"
+			}]
+			x: -69.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "1BB9E6B567C04C47"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B6CB46103AD975F"
+				item: { count: 1, id: "alexscavesup:trilocaris_tail" }
+				type: "item"
+			}]
+			x: -66.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "791FDFAD89CBD414"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "630B418EEFAED863"
+				item: { count: 1, id: "collectorsreap:tiger_prawn" }
+				type: "item"
+			}]
+			x: -65.0d
+			y: -17.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "6748C3803B272710"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "24D663D5D1CF9035"
+				item: { count: 1, id: "collectorsreap:urchin" }
+				type: "item"
+			}]
+			x: -68.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "5A8C2AA05BF2A603"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4F21AF8BB6B1EEB6"
+				item: { count: 1, id: "collectorsreap:chieftain_crab_bucket" }
+				type: "item"
+			}]
+			x: -69.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "25425115FD2F6424"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32B5108F76C8766F"
+				item: { count: 1, id: "collectorsreap:clam" }
+				type: "item"
+			}]
+			x: -66.5d
+			y: -16.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "609F6EAFD3834FA9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1162BEBEBE3E2884"
+				item: { count: 1, id: "youkaishomecoming:raw_tuna" }
+				type: "item"
+			}]
+			x: -68.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "02E3F7F8ABF7176A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0EA3C14098F12BFF"
+				item: { count: 1, id: "youkaishomecoming:otoro" }
+				type: "item"
+			}]
+			x: -67.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "19E7F23AF6D603FC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5A77C01F63548332"
+				item: { count: 1, id: "alexsmobsup:raw_catfish" }
+				type: "item"
+			}]
+			x: -66.0d
+			y: -20.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "3FB24F70796A5923"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "588180204D39D4B6"
+				item: { count: 1, id: "youkaishomecoming:udumbara_flower" }
+				type: "item"
+			}]
+			x: -72.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7216A5DD93CD16FE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "5A5624BC3FF969CD"
+					item: { count: 1, id: "youkaishomecoming:mandrake_root" }
+					type: "item"
+				}
+				{
+					id: "0BB831B620F2EA09"
+					item: { count: 1, id: "youkaishomecoming:mandrake_flower" }
+					type: "item"
+				}
+			]
+			x: -71.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "73B8BB960DE1A575"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05BA1B40B3BDDE0B"
+				item: { count: 1, id: "youkaishomecoming:soybean" }
+				type: "item"
+			}]
+			x: -74.5d
+			y: -7.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "368552762EC9FE42"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "66FA7A51564A1261"
+					item: { count: 1, id: "culturaldelights:corn_kernels" }
+					type: "item"
+				}
+				{
+					id: "6D663BBE2DF0E1C6"
+					item: { count: 1, id: "culturaldelights:corn_cob" }
+					type: "item"
+				}
+			]
+			x: -72.5d
+			y: -7.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "7D2C2A6FBEE79381"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "35585369A12E0899"
+				item: { count: 1, id: "trailandtales_delight:pitcher_taro" }
+				type: "item"
+			}]
+			x: -71.5d
+			y: -7.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "5167C57FF05E882C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0458A4966A1DA017"
+				item: { count: 1, id: "trailandtales_delight:lantern_fruit" }
+				type: "item"
+			}]
+			x: -76.5d
+			y: -15.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "3E63BAD5F2C0AFEB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "231C8F36D70A6D3C"
+				item: { count: 1, id: "neapolitan:adzuki_beans" }
+				type: "item"
+			}]
+			x: -73.5d
+			y: -7.0d
+		}
+	]
+}

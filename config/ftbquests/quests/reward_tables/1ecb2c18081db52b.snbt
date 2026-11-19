@@ -1,0 +1,73 @@
+{
+	id: "1ECB2C18081DB52B"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ id: "5FEAA006EBFC0D98", item: { count: 1, id: "create:spout" } }
+		{ id: "5669B5B99D6A4659", item: { count: 1, id: "create:item_drain" } }
+		{ id: "54C9C5EA98D7D817", item: { count: 1, id: "create:hose_pulley" } }
+		{
+			count: 8
+			id: "78A3CBE52FBDF419"
+			item: {
+				count: 1
+				id: "create:fluid_tank"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 2
+			id: "391A8BDADE8655B4"
+			item: {
+				count: 1
+				id: "create:copper_valve_handle"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 2
+			id: "5F62CCDA7D2ABF9C"
+			item: {
+				count: 1
+				id: "create:fluid_valve"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 2
+			id: "219C75472C042E86"
+			item: {
+				count: 1
+				id: "create:smart_fluid_pipe"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 2
+			id: "7D9922922ED481FC"
+			item: {
+				count: 1
+				id: "create:mechanical_pump"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 32
+			id: "20645773F8C8FF9E"
+			item: {
+				count: 1
+				id: "create:fluid_pipe"
+			}
+			weight: 10.0f
+		}
+		{
+			id: "6566AE4D271B341F"
+			item: {
+				count: 1
+				id: "create:portable_fluid_interface"
+			}
+			weight: 10.0f
+		}
+		{ id: "3F35A17E08E996F7", item: { count: 1, id: "create:steam_engine" } }
+	]
+}

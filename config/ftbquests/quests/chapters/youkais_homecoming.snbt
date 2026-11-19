@@ -1,0 +1,3365 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "youkais_homecoming"
+	group: "7A00000000000003"
+	icon: {
+		id: "youkaishomecoming:reimu_hairband"
+	}
+	id: "70C5E275C694378A"
+	images: [
+		{
+			height: 2.0d
+			id: "7E00000000000002"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -11.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000003"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -9.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000004"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000005"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000006"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000007"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000008"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -13.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000009"
+			image: "youkaishomecoming:textures/mob_effect/unconscious.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000A"
+			image: "youkaishomecoming:item/curio/koishi_hat"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000B"
+			image: "youkaishomecoming:block/plants/grape/leaves/leaves9_red"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000C"
+			image: "createcafe:block/coffee_stage3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -12.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000D"
+			image: "neapolitan:block/flowering_adzuki_sprouts_stage6"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000E"
+			image: "youkaishomecoming:block/plants/cucumber/vine7"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000000F"
+			image: "youkaishomecoming:block/plants/soybean/soybean_stage7"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -10.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000010"
+			image: "youkaishomecoming:block/plants/tea/tea_stage3"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000011"
+			image: "youkaishomecoming:block/plants/udumbara/udumbara_stage7"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -14.5d
+		}
+		{
+			height: 1.0d
+			id: "7E00000000000012"
+			image: "create_sa:textures/particle/steam_cloud_2.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			height: 1.0d
+			id: "7E00000000000013"
+			image: "create_sa:textures/particle/steam_cloud_2.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000014"
+			image: "farmersdelight:block/stove_top_on"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.0d
+			y: -14.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000015"
+			image: "farmersdelight:item/rice_roll_medley_block"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -12.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000016"
+			image: "youkaishomecoming:item/food/simple/steamed_egg_in_bamboo"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 18.5d
+			y: -14.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000017"
+			image: "supplementaries:item/globes/globe_moon"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -4.5d
+			y: -14.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000018"
+			image: "youkaishomecoming:textures/mob_effect/drunk.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			height: 2.5d
+			id: "7E00000000000019"
+			image: "minecraft:item/campfire"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000001A"
+			image: "create_sa:textures/particle/steam_cloud_2.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000001B"
+			image: "farmersdelight:item/rice"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000001D"
+			image: "vinery:item/wine_box"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 18.5d
+			y: -15.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000001E"
+			image: "youkaishomecoming:textures/mob_effect/phantom.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000001F"
+			image: "the_bumblezone:item/sugar_water_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000020"
+			image: "youkaishomecoming:item/spell/spell_sanae"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: -12.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000021"
+			image: "youkaishomecoming:item/spell/spell_reimu"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: -13.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000022"
+			image: "youkaishomecoming:item/spell/spell_marisa"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.5d
+			y: -12.0d
+		}
+		{
+			height: 2.5d
+			id: "7E00000000000023"
+			image: "supplementaries:item/lunch_basket"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 7.0d
+			y: -11.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000024"
+			image: "youkaishomecoming:item/saucer/bloody_flesh"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000025"
+			image: "youkaishomecoming:item/food/bowl/tuscan_salmon"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.0d
+			y: -9.0d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000026"
+			image: "youkaishomecoming:item/saucer/blood_curd"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000027"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000028"
+			image: "youkaishomecoming:block/plants/mandrake/mandrake_stage7"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000029"
+			image: "youkaishomecoming:textures/mob_effect/hypnosis.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002A"
+			image: "youkaishomecoming:textures/mob_effect/aphrodisiac.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002B"
+			image: "minecraft:textures/mob_effect/water_breathing.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002C"
+			image: "youkaishomecoming:textures/mob_effect/caffeinated.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002D"
+			image: "youkaishomecoming:textures/mob_effect/tea_polyphenols.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002E"
+			image: "youkaishomecoming:textures/mob_effect/sober.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -6.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000002F"
+			image: "youkaishomecoming:textures/mob_effect/smoothing.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -8.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000030"
+			image: "youkaishomecoming:textures/mob_effect/thick.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -9.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000031"
+			image: "youkaishomecoming:textures/mob_effect/refreshing.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -11.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000032"
+			image: "youkaishomecoming:textures/mob_effect/fairy.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000033"
+			image: "youkaishomecoming:textures/mob_effect/higi.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000034"
+			image: "youkaishomecoming:textures/mob_effect/native_god_bless.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000035"
+			image: "youkaishomecoming:textures/mob_effect/youkaifying.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000036"
+			image: "youkaishomecoming:textures/mob_effect/youkaified.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000037"
+			image: "youkaishomecoming:textures/mob_effect/youkaifying.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000038"
+			image: "youkaishomecoming:textures/mob_effect/youkaified.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 10.0d
+			y: 15.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000039"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000003A"
+			image: "youkaishomecoming:item/food/flesh/flesh_chocolate_mousse"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 19.0d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000003B"
+			image: "youkaishomecoming:item/curio/rumia_hairband"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 24.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000003C"
+			image: "youkaishomecoming:textures/unused/hakurei_gohei.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.0d
+			y: 21.0d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000003D"
+			image: "youkaishomecoming:item/curio/reimu_hairband"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 8.5d
+			y: 21.5d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000003E"
+			image: "youkaishomecoming:item/spell/spell_reimu"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 11.5d
+			y: 21.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000003F"
+			image: "farmersdelight:block/bamboo_basket_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.5d
+			y: 16.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000040"
+			image: "youkaishomecoming:block/deco/donation_box_up"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			height: 2.5d
+			id: "7E00000000000041"
+			image: "youkaishomecoming:item/curio/straw_hat"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000042"
+			image: "youkaishomecoming:item/curio/suwako_hat"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000043"
+			image: "youkaishomecoming:block/deco/donation_box_side"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 10.0d
+			y: 19.0d
+		}
+		{
+			height: 2.5d
+			id: "7E00000000000044"
+			image: "youkaishomecoming:item/curio/koishi_hat"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.5d
+			x: 16.5d
+			y: 16.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000045"
+			image: "youkaishomecoming:textures/mob_effect/fairy.png"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000046"
+			image: "youkaishomecoming:item/curio/cirno_hairband"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000047"
+			image: "youkaishomecoming:item/curio/cirno_wings"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000048"
+			image: "youkaishomecoming:item/spell/spell_marisa"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000049"
+			image: "youkaishomecoming:item/spell/spell_koishi"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 16.5d
+			y: 19.0d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000004A"
+			image: "youkaishomecoming:item/spell/spell_yukari"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 11.5d
+			y: 26.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000004B"
+			image: "create:block/palettes/framed_glass"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000004C"
+			image: "create:block/palettes/framed_glass"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000004D"
+			image: "youkaishomecoming:item/tuna_bucket"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000004E"
+			image: "youkaishomecoming:item/lamprey_bucket"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			height: 3.0d
+			id: "7E0000000000004F"
+			image: "youkaishomecoming:item/spell/spell_mystia"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 16.5d
+			y: 21.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000050"
+			image: "youkaishomecoming:item/spell/spell_sanae"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 8.5d
+			y: 26.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000051"
+			image: "minecraft:item/cake"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.5d
+			y: 14.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000052"
+			image: "displaydelight:item/food_plate"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000053"
+			image: "minecraft:block/rose_bush_bottom"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 16.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000054"
+			image: "youkaishomecoming:item/bullet/star/light_gray"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.5d
+			y: 21.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000055"
+			image: "youkaishomecoming:item/spell/spell_remilia"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 16.5d
+			y: 13.5d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000056"
+			image: "youkaishomecoming:item/spell/spell_clownpiece"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			height: 3.0d
+			id: "7E00000000000057"
+			image: "youkaishomecoming:item/food/drink/scarlet_tea"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			height: 2.0d
+			id: "7E00000000000058"
+			image: "minecraft:block/barrel_top"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.0d
+			y: -15.5d
+		}
+		{
+			height: 1.0d
+			id: "7E00000000000059"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.5d
+			y: -16.0d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000005A"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: -16.0d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000005B"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.5d
+			y: -16.0d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000005C"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.5d
+			y: -15.5d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000005D"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.5d
+			y: -15.5d
+		}
+		{
+			height: 1.0d
+			id: "7E0000000000005E"
+			image: "vinery:item/wine_bottle"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: -15.5d
+		}
+		{
+			height: 2.0d
+			id: "7E0000000000005F"
+			image: "vintageimprovements:block/andesite_frame"
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.0d
+			y: -15.5d
+		}
+	]
+	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"65C058041032162F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:tea_leaves"
+			}
+			id: "01015CAC20939FE1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "20EF3D0C8F27C283"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "7741DD19F1399D21"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			id: "042459BE846B6E1F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E47D43262E2DC7B"
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3A438BAC53F545C0"
+				item: { count: 1, id: "youkaishomecoming:flesh" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:steamer_pot"
+			}
+			id: "053162F4AF2CBBE7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "578A808979D4BCD7"
+					item: {
+						count: 1
+						id: "youkaishomecoming:steamed_egg_in_bamboo"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 2
+					id: "024743237202C4E1"
+					item: {
+						count: 1
+						id: "youkaishomecoming:steamer_rack"
+					}
+					random_bonus: 14
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "5C630C84A1DADC77"
+					item: { count: 1, id: "youkaishomecoming:steamer_rack" }
+					type: "item"
+				}
+				{
+					id: "5F2589434DFBB158"
+					item: { count: 1, id: "youkaishomecoming:steamer_lid" }
+					type: "item"
+				}
+				{
+					id: "04405F829EBB2708"
+					item: { count: 1, id: "youkaishomecoming:steamer_pot" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:tuna_bucket"
+			}
+			id: "0716EE4E51EA9137"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "30C1716B86883553"
+					item: {
+						count: 1
+						id: "youkaishomecoming:otoro_nigiri"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 2
+					id: "10C65245258818C0"
+					item: {
+						count: 1
+						id: "youkaishomecoming:tuna_nigiri"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 4L
+					id: "0757E9B46E4494C8"
+					item: { count: 1, id: "youkaishomecoming:raw_tuna" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4FC48D4357A73D1D"
+					item: { count: 1, id: "youkaishomecoming:otoro" }
+					type: "item"
+				}
+				{
+					entity: "youkaishomecoming:tuna"
+					id: "0FDC0D100729904D"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			id: "076E9AE613DF24E2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "6777C4577CD0F0C5"
+					item: {
+						count: 1
+						id: "youkaishomecoming:frozen_frog_cold"
+					}
+					type: "item"
+				}
+				{
+					id: "3D07F47662E80E19"
+					item: {
+						count: 1
+						id: "youkaishomecoming:frozen_frog_warm"
+					}
+					type: "item"
+				}
+				{
+					id: "5A9AD19169773EDE"
+					item: {
+						count: 1
+						id: "youkaishomecoming:frozen_frog_temperate"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "196EC384BC511894"
+				item: { count: 1, id: "youkaishomecoming:straw_hat" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			id: "0775224EAD50E581"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "7EA8535A490EE172"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2BEF70CE526D3061"]
+			id: "0B8BEE27AFC5BF83"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "56FD3628EBBC4E97"
+				item: {
+					count: 1
+					id: "youkaishomecoming:scarlet_mist"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				advancement: "youkaishomecoming:main/powerful_being"
+				criterion: ""
+				id: "7D6BD8F2198DE1AD"
+				type: "advancement"
+			}]
+			x: 10.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["69AAC8A157DAD845"]
+			icon: {
+				id: "youkaishomecoming:rumia_hairband"
+			}
+			id: "10067A20519BC920"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 32
+					id: "07C876222E670729"
+					item: {
+						count: 1
+						id: "youkaishomecoming:flesh_chocolate_mousse"
+					}
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3A443E1DF7F67F53"
+					item: {
+						count: 1
+						id: "youkaishomecoming:scarlet_mist"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "75CD1C55ABF472B2"
+				item: { count: 1, id: "youkaishomecoming:rumia_hairband" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 24.0d
+		}
+		{
+			id: "10C17347E0737D62"
+			quest_enhance_disable_scroll_paging: false
+			size: 6.0d
+			tasks: [{
+				id: "7E594F7C676DFEAD"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0B8BEE27AFC5BF83"]
+			id: "160FB9E419A92C81"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 6
+				id: "49A5689BE3826CBB"
+				item: {
+					count: 1
+					id: "youkaishomecoming:flesh"
+				}
+				random_bonus: 6
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "11BE7BFBB90F811B"
+				structure: "youkaishomecoming:youkai_nest"
+				type: "structure"
+			}]
+			x: 13.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["42F38B958F2CDAB0"]
+			id: "16172E647A9E34D4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "54F236AADC2C2968"
+					type: "random"
+				}
+				{
+					count: 2
+					id: "55D0404AA482142E"
+					item: {
+						count: 1
+						id: "displaydelight:fr_small_plated_coffee_cake_slice"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				advancement: "youkaishomecoming:main/q_grader"
+				criterion: ""
+				id: "06E8CF1703228997"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"1BF369C7B6D2126E"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:mandrake_flower"
+			}
+			id: "16FEED37B931A291"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "74B8423836607999"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "5E568A1904851C57"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:lamprey_bucket"
+			}
+			id: "17D3A109F73E6FD6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "7220CD8FCA97DA52"
+					item: {
+						count: 1
+						id: "youkaishomecoming:roasted_lamprey_fillet"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6677737D7E7777BB"
+					item: {
+						count: 1
+						id: "youkaishomecoming:grilled_eel_over_rice"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "0B95FBD4E32C5028"
+					item: { count: 1, id: "youkaishomecoming:raw_lamprey" }
+					type: "item"
+				}
+				{
+					entity: "youkaishomecoming:lamprey"
+					id: "69325038DBC91244"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6DBEECC86C2FCFD0"]
+			icon: {
+				id: "youkaishomecoming:spell_reimu"
+			}
+			id: "190A9A7EDC051CAF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1FEC8292FB6B8662"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					id: "206BFCD6CCE0FDDA"
+					type: "xp_levels"
+					xp_levels: 32
+				}
+				{
+					id: "3DBDCB465A17A268"
+					item: {
+						count: 1
+						id: "youkaishomecoming:donation_box"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:shrine_maiden"
+					id: "6C019BAFC3C6D123"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7B5EB04E9239821C"
+					item: { count: 1, id: "youkaishomecoming:spell_reimu" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["17D3A109F73E6FD6"]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:spell_marisa"
+			}
+			id: "198964DA9E2EBFAB"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "1DB6660FC55DCB47"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_mystia"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "49FE9A74C44EA767"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "18AFF23006541DAB"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:green_mentos_danmaku"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:mystia_lorelei"
+					id: "3B8F40BC767162BB"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3100447131D5E3FC"
+					item: { count: 1, id: "youkaishomecoming:spell_mystia" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:mandrake_root"
+			}
+			id: "1BF369C7B6D2126E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "4ED61EF738552FA5"
+					item: {
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "291F6F039221FB78"
+					item: {
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "1939216D1E05C029"
+					item: { count: 1, id: "youkaishomecoming:mandrake_root" }
+					type: "item"
+				}
+				{
+					id: "62D44832F252E5AD"
+					item: { count: 1, id: "youkaishomecoming:mandrake_flower" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "minecraft:potion"
+			}
+			id: "1CC439738E5A030F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "0D73BE2E9EB50460"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "vintagedelight:cucumber"
+			}
+			id: "1DC61087B89E7B71"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "6AD39A6E43E87C10"
+					item: {
+						count: 1
+						id: "vintagedelight:cucumber_salad"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "73B5AE83896570A7"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:honey_glazed_cucumber"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "41DED30DF3F5A7E3"
+					item: { count: 1, id: "vintagedelight:cucumber" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3E93C487906BFC2A"
+					item: { count: 1, id: "vintagedelight:cucumber" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6462CD448C3B791C"]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:higi_chocolate"
+			}
+			id: "1F3E75F5B6397370"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "49C0C18A81AB388C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "13F793FC6B18CD26"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["076E9AE613DF24E2"]
+			id: "1F63260D17F05213"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1636FB285215736C"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					id: "1C0568368241414A"
+					item: {
+						count: 1
+						id: "youkaishomecoming:suwako_hat"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "41159241EC0B5862"
+				item: { count: 1, id: "youkaishomecoming:suwako_hat" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"65C058041032162F"
+				"1CC439738E5A030F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:yellow_tea_leaves"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "21B8B14AD0EF29D9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5550EE926946B4FD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "54CEE38FF92DA964"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6A06275C072AE4F0"]
+			icon: {
+				id: "youkaishomecoming:cirno_hairband"
+			}
+			id: "2265CBB2249941E0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 12
+					id: "5D2F9887A080209A"
+					item: {
+						count: 1
+						id: "youkaishomecoming:fairy_ice_crystal"
+					}
+					type: "item"
+				}
+				{
+					id: "28121348183410CC"
+					item: {
+						count: 1
+						id: "youkaishomecoming:cirno_hairband"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "2CC526F9562F41DC"
+					item: { count: 1, id: "youkaishomecoming:cirno_hairband" }
+					type: "item"
+				}
+				{
+					id: "781F7CB73F78C740"
+					item: { count: 1, id: "youkaishomecoming:cirno_wings" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"735DDC4E146DECBC"
+				"0716EE4E51EA9137"
+				"1BF369C7B6D2126E"
+				"5687AC7BF0D290C5"
+				"722DEED68B0997D9"
+				"1DC61087B89E7B71"
+				"2A991696A2AF0A70"
+				"17D3A109F73E6FD6"
+				"4B637A0F747EAB46"
+				"60521CC89812A87E"
+				"3FAEDAA973D6A546"
+				"4E445E64B2E79D3E"
+				"16172E647A9E34D4"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "247D25DE94D4A024"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0CA148AC13284309"
+					table_id: 7772018159856264947L
+					type: "all_table"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "655DE7FE7A8D6EEF"
+					type: "all_table"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B2573525B644947"
+					table_id: 3097436474397803309L
+					type: "all_table"
+				}
+			]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				advancement: "youkaishomecoming:main/enthusiastic"
+				criterion: ""
+				id: "67C549C181D26746"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6DBEECC86C2FCFD0"]
+			id: "296BE596F9B73E8E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "291EC899C631E1DB"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_reimu"
+					}
+					type: "item"
+				}
+				{
+					id: "5A60CE1A0339E630"
+					item: {
+						count: 1
+						id: "youkaishomecoming:reimu_hairband"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54D39C50C1047F6D"
+					table_id: 7772018159856264947L
+					type: "all_table"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "6B797B208A8D1741"
+					item: { count: 1, id: "youkaishomecoming:reimu_hairband" }
+					type: "item"
+				}
+				{
+					advancement: "youkaishomecoming:main/feed_reimu"
+					criterion: ""
+					id: "1EABA243D220A7AC"
+					type: "advancement"
+				}
+			]
+			x: 8.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6A06275C072AE4F0"]
+			id: "2A65ED174CF69AB7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0185B9EF1ABC64C5"
+				item: {
+					count: 1
+					id: "minecraft:frogspawn"
+				}
+				random_bonus: 1
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3661911305A2418F"
+				item: { count: 1, id: "youkaishomecoming:frozen_frog_cold" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["739AFFDAB8449F64"]
+			id: "2A991696A2AF0A70"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "0F86A023446B4351"
+				item: {
+					count: 1
+					id: "youkaishomecoming:sweet_ormosia_mochi_mixed_boiled"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "0AEF9378E95F7AB2"
+				item: { count: 1, id: "youkaishomecoming:mochi" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			icon: {
+				id: "youkaishomecoming:spell_clownpiece"
+			}
+			id: "2B96D7585802C9AC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "4223438ADA832C3A"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_clownpiece"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04C6D060411A7B1E"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "17FA5A5E9143DCC2"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:red_laser"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:remilia_scarlet"
+					id: "551F629A0D65788F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "6339B864779E491E"
+					item: { count: 1, id: "youkaishomecoming:spell_clownpiece" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["042459BE846B6E1F"]
+			id: "2BEF70CE526D3061"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "2EE0CD6758053F0B"
+				item: {
+					count: 1
+					id: "youkaishomecoming:scarlet_tea"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				advancement: "youkaishomecoming:main/first_time"
+				criterion: ""
+				id: "33FA94C7D6ECA28C"
+				type: "advancement"
+			}]
+			x: 10.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7108D81901F00954"]
+			id: "2D225194755D9561"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				command: "/effect give @p youkaishomecoming:youkaifying 120 0"
+				id: "17A0444EF9299A83"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "596D8E97446E4C77"
+				item: { count: 1, id: "youkaishomecoming:scarlet_tea" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6DBEECC86C2FCFD0"]
+			icon: {
+				id: "youkaishomecoming:spell_marisa"
+			}
+			id: "2D91D568EEFA33A7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "318BE6CC309DD746"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_marisa"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01FEFAD7D8A5B491"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "262D6C310B1D0A0A"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:white_laser"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:kirisame_marisa"
+					id: "2841E1B0AD1CBFFE"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "2E11169C32191929"
+					item: { count: 1, id: "youkaishomecoming:spell_marisa" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:suwako_hat"
+			}
+			id: "2FA400CBF51BEF6F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "0BDD857816D6864E"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			id: "3150B5F44439F2ED"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4FD24E36F27DBB2A"
+					table_id: 3225681585629777470L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EC09EE50B1106FA"
+					table_id: 7284682648027275041L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "20803F20B77FF892"
+				item: { count: 1, id: "youkaishomecoming:fermentation_tank" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["160FB9E419A92C81"]
+			id: "31AB6B625A253F8F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 8
+				id: "52B7BD240D96E345"
+				item: {
+					count: 1
+					id: "youkaishomecoming:flesh_chocolate_mousse"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				advancement: "youkaishomecoming:main/trade_danmaku"
+				criterion: ""
+				id: "462B2061610839ED"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"65C058041032162F"
+				"42F38B958F2CDAB0"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "trailandtales_delight:ancient_coffee"
+			}
+			id: "35E46B952A1F2DAD"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "340936C05E3517B4"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "616B9BAAC3897BA4"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"42F38B958F2CDAB0"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "createcafe:coffee_grounds"
+			}
+			id: "37E286B11ED01CB9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "78EC1EE84D8ED9EF"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "561CFEEFDE78E6C7"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6462CD448C3B791C"
+				"2BEF70CE526D3061"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:rumia_hairband"
+			}
+			id: "3A359158124360BA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "144AD2E27779245B"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "481333B30E810364"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"65C058041032162F"
+				"1CC439738E5A030F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:black_tea_leaves"
+			}
+			id: "3ABCE05AAE7D94B1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1E3E19BE4A6A2D59"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "545BBAF265A99B61"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"480ED2CC514C6B62"
+				"2265CBB2249941E0"
+			]
+			icon: {
+				id: "minecraft:spawner"
+			}
+			id: "3D4D941EEB188436"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "5FB4AFDB2D11040D"
+				item: {
+					count: 1
+					id: "youkaishomecoming:fairy_candy"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:sunny_milk"
+					id: "57D85406830F803A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "youkaishomecoming:star_sapphire"
+					id: "3D0A9AC3630B58E0"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "youkaishomecoming:luna_child"
+					id: "686DDBC5E50DCC2A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -1.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "youkaishomecoming:udumbara_flower"
+			}
+			id: "3D7F0A98AE45B0B0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "329854A679864F0E"
+					item: {
+						count: 1
+						id: "youkaishomecoming:scarlet_tea"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "604C62C372EC5009"
+					item: {
+						count: 1
+						id: "netmusic:music_cd"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "060F4FAE7E3CFB47"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65C058041032162F"]
+			id: "3FAEDAA973D6A546"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E950201D2ABD5C3"
+					table_id: 7374527325595499170L
+					type: "all_table"
+				}
+				{
+					count: 8
+					id: "6E87FB0FBB120799"
+					item: {
+						count: 1
+						id: "vintagedelight:salted_cod"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					id: "2D47997D82971417"
+					table_id: 3097436474397803309L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				advancement: "youkaishomecoming:main/tea_master"
+				criterion: ""
+				id: "1EF71A703D2D88C4"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "createcafe:coffee_beans"
+			}
+			id: "42F38B958F2CDAB0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "15FC0192510F3D27"
+					item: {
+						count: 1
+						id: "displaydelight:fr_small_plated_coffee_cake_slice"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39349A54671D8FCF"
+					table_id: 5977768946323017310L
+					type: "choice"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "360CB1F0CB7BD478"
+					item: { count: 1, id: "createcafe:coffee_beans" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "619369F246C5EAB2"
+					item: { count: 1, id: "createcafe:coffee_fruit" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6DBEECC86C2FCFD0"]
+			icon: {
+				id: "youkaishomecoming:spell_yukari_butterfly"
+			}
+			id: "45538B3ACB6A3CC4"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "49FC785F1B976515"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_yukari_laser"
+					}
+					type: "item"
+				}
+				{
+					id: "6255D41D49486D28"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_yukari_butterfly"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "495D4675F23B116C"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "442D5F381A5F5B65"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:red_laser"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					count: 4
+					id: "268B42C28F269D6F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:magenta_butterfly_danmaku"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:yukari"
+					id: "77DDA04053CBF0F8"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "050AE66D106B3CFE"
+					item: { count: 1, id: "youkaishomecoming:spell_yukari_laser" }
+					type: "item"
+				}
+				{
+					id: "51D24ACDB6BF88C4"
+					item: { count: 1, id: "youkaishomecoming:spell_yukari_butterfly" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6DBEECC86C2FCFD0"]
+			icon: {
+				id: "youkaishomecoming:spell_sanae"
+			}
+			id: "45610D3C4B007ED5"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "548FE58E03FA18C7"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_sanae"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47236EF42247255C"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "29DB2505642DFCCC"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:green_spark_danmaku"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:kochiya_sanae"
+					id: "537D8F1C9CF4A3AC"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "05BB278EE3B99762"
+					item: { count: 1, id: "youkaishomecoming:spell_sanae" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:pods"
+			}
+			id: "45A3A549700C3793"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "7D7B4AD740BCC94C"
+					item: {
+						count: 1
+						id: "youkaishomecoming:tofu"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "442B8A273E22EFD0"
+					item: {
+						count: 1
+						id: "youkaishomecoming:oily_bean_curd"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "12E9F5A242594C4D"
+					item: { count: 1, id: "youkaishomecoming:soybean" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1A884DB98D335D52"
+					item: { count: 1, id: "youkaishomecoming:pods" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6A06275C072AE4F0"]
+			id: "480ED2CC514C6B62"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "340573F80CEECB81"
+				item: {
+					count: 1
+					id: "youkaishomecoming:fairy_candy"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "61C691ED3B458141"
+				item: { count: 1, id: "youkaishomecoming:fairy_candy" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["053162F4AF2CBBE7"]
+			id: "4B637A0F747EAB46"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7D3AA552D1448D59"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "6AC81439A159F68F"
+					item: {
+						count: 1
+						id: "youkaishomecoming:rice_powder_pork"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				advancement: "youkaishomecoming:main/max_steamer"
+				criterion: ""
+				id: "30CCD226B6165C99"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["45A3A549700C3793"]
+			id: "4E445E64B2E79D3E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "0C80931BA8BF6377"
+				item: { count: 1, id: "youkaishomecoming:koishi_mousse" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7D27625C61712AD0"]
+			icon: {
+				id: "youkaishomecoming:spell_remilia"
+			}
+			id: "51FD4F2ACBF93F98"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "468BD5E79D229163"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_remilia"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BC338673AAFA953"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "2F7C49040C0AE7B2"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:red_bubble_danmaku"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:remilia_scarlet"
+					id: "57F7AB6D7CFB4A2B"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "422A39282EBC3C57"
+					item: { count: 1, id: "youkaishomecoming:spell_remilia" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"6462CD448C3B791C"
+				"0B8BEE27AFC5BF83"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:scarlet_mist"
+			}
+			id: "5289A73FACD896CE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "71E55174E75F01CC"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6AD61F245D034121"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			id: "53E27901B2DD24AF"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5028B29117386F4C"
+				item: {
+					count: 1
+					id: "youkaishomecoming:poor_god_soup"
+				}
+				random_bonus: 1
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "51406E53C273DB44"
+				item: { count: 1, id: "youkaishomecoming:udumbara_seeds" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"6462CD448C3B791C"
+				"480ED2CC514C6B62"
+			]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:cirno_hairband"
+			}
+			id: "53F78CC685110E6F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7D5D5092F2FA7552"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6D4FC064F83AA2B8"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["622C543679BF77E8"]
+			icon: {
+				id: "youkaishomecoming:spell_koishi"
+			}
+			id: "545E2B7AF3B7EAB9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "31740283E150974D"
+					item: {
+						count: 1
+						id: "youkaishomecoming:spell_koishi"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7427691233F1128D"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "5219E118BC7C7AD9"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:blue_laser"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					entity: "youkaishomecoming:komeiji_koishi"
+					id: "05A7BC4D3BBE0D2A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7064B6E0405FD191"
+					item: { count: 1, id: "youkaishomecoming:spell_koishi" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			id: "5687AC7BF0D290C5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "34A0C691EBE9875E"
+					item: {
+						count: 1
+						id: "farmersdelight:rice"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FE535DCDEC0F3B7"
+					item: {
+						count: 1
+						id: "minecraft:dried_kelp"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "2A81D7D0AC25D598"
+					item: {
+						count: 1
+						id: "youkaishomecoming:soy_sauce_bottle"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "0BE3607E47E5EEF7"
+				item: { count: 1, id: "youkaishomecoming:cuisine_board" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"6462CD448C3B791C"
+				"1F63260D17F05213"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:suwako_hat"
+			}
+			id: "5E037A837D8191E7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "52CC28984E737B3A"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "5C6066122C829BA4"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "vinery:red_grape"
+			}
+			id: "60521CC89812A87E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 16
+					id: "72C00DD63E3A9B66"
+					item: {
+						count: 1
+						id: "farmersdelight:rope"
+					}
+					random_bonus: 16
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "365E7D8B9F4AFDB1"
+					table_id: 7284682648027275041L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "521CEB36CB97D114"
+					item: { components: { "ftbfiltersystem:filter": "#c:fruits/grape" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0EA88FA7B3A8DF4A"
+					item: { components: { "ftbfiltersystem:filter": "#vinery:grape_seeds" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["160FB9E419A92C81"]
+			icon: {
+				id: "youkaishomecoming:koishi_hat"
+			}
+			id: "622C543679BF77E8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "58D48DE924213D02"
+					item: {
+						count: 1
+						id: "youkaishomecoming:koishi_hat"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E50C0B36896C228"
+					item: {
+						count: 1
+						id: "youkaishomecoming:koishi_mousse"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "67345CB58848EA8E"
+					item: { count: 1, id: "youkaishomecoming:koishi_hat" }
+					type: "item"
+				}
+				{
+					advancement: "youkaishomecoming:main/mary_call"
+					criterion: ""
+					id: "51A5686491974537"
+					type: "advancement"
+				}
+			]
+			x: 16.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0775224EAD50E581"]
+			icon: {
+				id: "youkaishomecoming:spell_reimu"
+			}
+			id: "624102AD1251A51D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "718FC79CAD8CF598"
+				table_id: 4393864153606541467L
+				type: "choice"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "4C52622665587273"
+					type: "checkmark"
+				}
+				{
+					id: "11BDF01CD928DD15"
+					item: { count: 1, id: "youkaishomecoming:spell_reimu" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"6462CD448C3B791C"
+				"4E445E64B2E79D3E"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:koishi_mousse"
+			}
+			id: "6254079976AD075D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3BB3E05CB7641DF5"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2717F981FBF30787"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2D225194755D9561"]
+			id: "62B370F21C77CE5C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				command: "/effect give @p youkaishomecoming:youkaified 120 0"
+				id: "30333EBD36852296"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "076A5D0FD1D41DD5"
+				item: { count: 1, id: "youkaishomecoming:scarlet_mist" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:fairy_ice_crystal"
+			}
+			id: "6462CD448C3B791C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "square"
+			tasks: [{
+				id: "670CDD4DD90BBAC7"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			icon: {
+				id: "youkaishomecoming:tea_leaves"
+			}
+			id: "65C058041032162F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EE236748A9D519C"
+					table_id: 3097436474397803309L
+					type: "choice"
+				}
+				{
+					id: "03979A120A26E335"
+					item: {
+						count: 1
+						id: "youkaishomecoming:steamer_rack"
+					}
+					type: "item"
+				}
+				{
+					id: "13DF645811EA9DC9"
+					item: {
+						count: 1
+						id: "youkaishomecoming:steamer_lid"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 4L
+					id: "28A830D4E9F706C6"
+					item: { components: { "ftbfiltersystem:filter": "#c:tea_leaves" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "60742EC7CC4360CE"
+					item: { count: 1, id: "youkaishomecoming:tea_seeds" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"1BF369C7B6D2126E"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:mandrake_root"
+			}
+			id: "65E28EDD62D277F8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4DB2B97DF111D072"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "57BA60D67A3E1748"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["31AB6B625A253F8F"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "youkaishomecoming:red_circle_danmaku"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "69AAC8A157DAD845"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 16
+					id: "77DA01FB896B7A39"
+					item: {
+						count: 1
+						id: "youkaishomecoming:flesh_chocolate_mousse"
+					}
+					random_bonus: 16
+					type: "item"
+				}
+				{
+					id: "5F19C48EB06CA9FB"
+					item: {
+						components: {
+							"ftbquests:missing_item": "youkaishomecoming:custom_spell_ring"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				entity: "youkaishomecoming:rumia"
+				id: "0D0AD922AEAB9650"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			icon: {
+				id: "youkaishomecoming:fairy_ice_crystal"
+			}
+			id: "6A06275C072AE4F0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "5F8C9AB109A2960E"
+				item: {
+					count: 1
+					id: "youkaishomecoming:frozen_frog_cold"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "18527477C8F979FB"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "youkaishomecoming:cirno"
+				type: "observation"
+			}]
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0B8BEE27AFC5BF83"]
+			id: "6DBEECC86C2FCFD0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "239256706D91E079"
+					table_id: 7284682648027275041L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "371A6B54B74E6BFD"
+					table_id: 7772018159856264947L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "684B7F30AFFC144B"
+				structure: "youkaishomecoming:hakurei_shrine"
+				type: "structure"
+			}]
+			x: 10.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["042459BE846B6E1F"]
+			hide_dependency_lines: true
+			id: "6F4F9B45E17A6126"
+			invisible: true
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0F16C6B28EF5FBC0"
+				item: {
+					count: 1
+					id: "trailandtales_delight:sniffer_eggshell_knife"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "45AEAB72C47F1F19"
+				item: { components: { "ftbquests:missing_item": "youkaishomecoming:flesh_feast" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2FA400CBF51BEF6F"]
+			id: "7108D81901F00954"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "5E02CF579465347B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "youkaishomecoming:blood_curd"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "165E0786411ABFD7"
+				item: { count: 1, id: "butchercraft:blood_fluid_bottle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3150B5F44439F2ED"]
+			id: "722DEED68B0997D9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "627B5774BC22361A"
+					table_id: 7284682648027275041L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75B2F92A263D2F3F"
+					table_id: 7284682648027275041L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				advancement: "youkaishomecoming:main/passed_out"
+				criterion: ""
+				id: "04A9CA7E878236F8"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"65C058041032162F"
+				"1CC439738E5A030F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:white_tea_leaves"
+			}
+			id: "72EDAD2B712B9A04"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0C0AB7EADA10DBFF"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6309744124F15B3D"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"60521CC89812A87E"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "brewinandchewin:beer"
+			}
+			id: "73223F233DE74941"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2BF77F856F8AE577"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "5983372BF0AE7DD7"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["53E27901B2DD24AF"]
+			id: "735DDC4E146DECBC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "1CDBA0765DBB4889"
+					item: {
+						count: 1
+						id: "youkaishomecoming:full_moons_eve"
+					}
+					type: "item"
+				}
+				{
+					id: "3A634717CD15D0AE"
+					item: {
+						count: 1
+						id: "youkaishomecoming:moon_lantern"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3DFCDC95CDD4675A"
+				item: { count: 1, id: "youkaishomecoming:udumbara_flower" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["3D7F0A98AE45B0B0"]
+			id: "739AFFDAB8449F64"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "5CF47D5D79DA5634"
+					item: {
+						count: 1
+						id: "abnormals_delight:adzuki_cake_slice"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "287B09FCE471BDDE"
+					table_id: 5977768946323017310L
+					type: "choice"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "4B5A22A23465092C"
+				item: { count: 1, id: "neapolitan:adzuki_beans" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"1CC439738E5A030F"
+				"735DDC4E146DECBC"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "youkaishomecoming:full_moons_eve"
+			}
+			id: "7A8D79BA13378DAA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "71B15E82867B7725"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3812D49153690B4A"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["042459BE846B6E1F"]
+			id: "7D27625C61712AD0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "37CFD46678CB2A95"
+				item: {
+					count: 1
+					id: "youkaishomecoming:scarlet_mist"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "3FE9B516E619E937"
+				item: { count: 1, id: "youkaishomecoming:scarlet_devil_cake" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 13.5d
+		}
+	]
+}

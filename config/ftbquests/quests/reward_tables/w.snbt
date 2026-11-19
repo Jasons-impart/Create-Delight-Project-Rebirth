@@ -1,0 +1,130 @@
+{
+	id: "4A37CEEEFC07F8A1"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			id: "515B76E557DFCF2A"
+			item: {
+				count: 1
+				id: "minecraft:glistering_melon_slice"
+			}
+			random_bonus: 3
+			weight: 0.01f
+		}
+		{
+			count: 6
+			id: "7F74F8FFEC70291B"
+			item: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			weight: 15.0f
+		}
+		{
+			id: "6C32B113FD7ABA54"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "1FA61409A2DA9EA5"
+			item: {
+				count: 1
+				id: "createcafe:cassava_seeds"
+			}
+			weight: 5.0f
+		}
+		{ id: "67FDD4FC6F85A8A8", item: { count: 1, id: "farmersdelight:cabbage_seeds" } }
+		{
+			id: "49308AFB7ACCF901"
+			item: {
+				count: 1
+				id: "farmersdelight:tomato_seeds"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 3
+			id: "52A582B3079D8A4A"
+			item: {
+				count: 1
+				id: "minecraft:sea_lantern"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 5
+			id: "6F3617B1FA01D284"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "73A901040A589543"
+			item: {
+				count: 1
+				id: "minecraft:ancient_debris"
+			}
+			weight: 0.1f
+		}
+		{
+			count: 32
+			id: "439471DE28CFF713"
+			item: {
+				count: 1
+				id: "create:raw_zinc"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 16
+			id: "30E31B0A8202C8E8"
+			item: {
+				count: 1
+				id: "minecraft:raw_copper"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "4F01705D471B0F55"
+			item: {
+				count: 1
+				id: "quark:blaze_lantern"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 8
+			id: "1756446D7B8843F6"
+			item: {
+				count: 1
+				id: "minecraft:lapis_lazuli"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 32
+			id: "7278C7C50138A2CD"
+			item: {
+				count: 1
+				id: "minecraft:coal"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 10
+			id: "5FA19DD172545E1E"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			weight: 3.0f
+		}
+	]
+}

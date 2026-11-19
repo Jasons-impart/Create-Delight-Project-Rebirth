@@ -1,0 +1,19 @@
+{
+	id: "28FED68B293AAC2F"
+	loot_size: 1
+	order_index: 23
+	rewards: [
+		{ id: "365450CC71122688", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "78A8009A8FBD477A", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "70D96757626513F9", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "65187CBE13A41FEB", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "5ECC0AA2D6558251", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "2ABC30E0EB1BA326", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "7D68139DA38F298B", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "08DD15EA6FE0D512", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "7CCC0A0A92EC2C7D", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "3340FC90B008DD40", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "0347BEF922E61A4C", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "2A5C6120C5001F4C", item: { count: 1, id: "gateways:gate_pearl" } }
+	]
+}
