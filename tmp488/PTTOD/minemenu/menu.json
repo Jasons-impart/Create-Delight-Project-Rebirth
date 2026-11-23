@@ -48,18 +48,6 @@
         }
       }
     },
-    "4": {
-      "title": "打开全息球",
-      "icon": {
-        "stack": "{Count:1b,id:\"tetra:basic_workbench\"}"
-      },
-      "action": {
-        "command": {
-          "command": "/kubejs custom_command openholo",
-          "clipboard": false
-        }
-      }
-    },
     "5": {
       "title": "开关武器挖掘方块的能力",
       "icon": {

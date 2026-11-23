@@ -1,7 +1,6 @@
 
 const $SequencedAssemblyItem = Java.loadClass("com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem")
 
-let MoneyUtil = global.MoneyUtil
 
 ItemEvents.tooltip(e => {
     clearAddShiftTooltip(e, [
@@ -123,36 +122,6 @@ const $QualityConfig = Java.loadClass("de.cadentem.quality_food.config.QualityCo
 
 let difficultyLoots = global.difficultyLoots
 ItemEvents.tooltip(e => {
-    e.addAdvancedToAll((itemStack, advanced, text) => {
-        if (!global.isAcceptableToSellBin(itemStack)) {
-            return
-        }
-
-        let value = global.MoneyUtil.calculateFoodValue(itemStack)
-        if (value > 0) {
-            if (!e.shift) {
-                if (value < 1) {
-                    text.add(Component.translate("tooltip.createdelight.single_price", (Math.round(value * 10) / 10).toString()).append(MoneyUtil.convertBaseValueToString(-1)))
-                } else {
-                    text.add(Component.translate("tooltip.createdelight.single_price", MoneyUtil.convertBaseValueToString(value)))
-                }
-            } else {
-                if (value * itemStack.count < 1) {
-                    text.add(Component.translate("tooltip.createdelight.total_price", (Math.round(value * itemStack.count * 10) / 10).toString()).append(MoneyUtil.convertBaseValueToString(-1)))
-                } else {
-                    text.add(Component.translate("tooltip.createdelight.total_price", MoneyUtil.convertBaseValueToString(value * itemStack.count)))
-                }
-            }
-        }
-    })
-    e.addAdvanced("createdelight:sell_bin", (item, advanced, text) => {
-        if (!e.ctrl) {
-            text.add(1, Text.translatable("tooltip.createdelight.hold_ctrl_to_see_more_info"))
-        } else {
-            text.add(1, Text.translatable("tooltip.createdelight.hold_ctrl"))
-            text.add(2, Text.translatable(`tooltip.createdelight.ctrl_${item.getId().split(":")[1]}`, MoneyUtil.convertBaseValueToString(1)))
-        }
-    })
     e.addAdvancedToAll((item, advanced, text) => {
         if (item.hasNBT() && item.nbt.contains("SequencedAssembly") && !(item.item instanceof $SequencedAssemblyItem)) {
             text.add(Text.translatable("tooltip.createdelight.sequenced_assembly_explanation"))

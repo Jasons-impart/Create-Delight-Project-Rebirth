@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/orientable",
-    "textures": {
-        "front": "mbd2:block/electrolyzer_front_on",
-        "side": "mbd2:block/electrolyzer_side",
-        "top": "mbd2:block/electrolyzer_top"
-    }
-}

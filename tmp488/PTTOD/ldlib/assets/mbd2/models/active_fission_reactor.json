@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/orientable",
-    "textures": {
-      "front": "create_new_age:block/reactor/core_working",
-      "side": "create_new_age:block/reactor/casing",
-      "top": "create_new_age:block/reactor/casing"
-    }
-  }

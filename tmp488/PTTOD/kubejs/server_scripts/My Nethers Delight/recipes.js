@@ -134,29 +134,7 @@ ServerEvents.recipes(e => {
             Fluid.of("createmetallurgy:molten_gold", 450)
         ]
     ).id("createdelight:filling/golden_egg")
-    create.filling(
-        "2x mynethersdelight:ghasta",
-        [
-            "mynethersdelight:ghasta",
-            Fluid.of("create:potion", 250, {Potion: "minecraft:healing"})
-        ]
-    ).id("createdelight:filling/ghasta")
-    create.filling(
-        "2x mynethersdelight:ghasmati",
-        [
-            "mynethersdelight:ghasmati",
-            Fluid.of("create:potion", 250, {Potion: "minecraft:healing"})
-        ]
-    ).id("createdelight:filling/ghasmati")
 
-    create.emptying(
-        [
-            Fluid.of("netherexp:ectoplasm", 250),
-            "minecraft:bowl",
-            "mynethersdelight:ghasta"
-        ], 
-        "mynethersdelight:plate_of_ghasta_with_cream"
-    ).id("createdelight:emptying/ghasta")
     create.mixing(
         'mynethersdelight:ghast_sourdough',
         [

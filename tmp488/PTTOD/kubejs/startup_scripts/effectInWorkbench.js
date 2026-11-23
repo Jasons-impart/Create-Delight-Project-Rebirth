@@ -1,3 +1,4 @@
+// 已迁移并经维护者测试的六个属性栏已清理；余下注册仍待关联内容核对。
 
 //来自kubejs交流群 忆然群友的代码
 
@@ -32,12 +33,6 @@ if (Platform.isClientEnvironment())
 
 
         simpleRegWorkbenchBar('createdelight:forstall', 5)
-        simpleRegWorkbenchBar('createdelight:overwhelm', 100)
-        simpleRegWorkbenchBar('createdelight:irradiation', 5)
-        simpleRegWorkbenchBar('createdelight:frozen', 30)
-        simpleRegWorkbenchBar('createdelight:ice_dragon_restraint', 30)
-        simpleRegWorkbenchBar('createdelight:fire_dragon_restraint', 30)
-        simpleRegWorkbenchBar('createdelight:lightning_dragon_restraint', 30)
         simpleRegWorkbenchBar('createdelight:life_drain', 100)
         simpleRegWorkbenchBar('createdelight:fiber_proliferation', 100)
         simpleRegWorkbenchBar('createdelight:charge', 20)

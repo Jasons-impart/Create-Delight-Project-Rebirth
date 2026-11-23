@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/orientable",
-    "textures": {
-      "front": "mbd2:block/steel_import_bus",
-      "side": "createdelightcore:block/steel_casing",
-      "top": "createdelightcore:block/steel_casing"
-    }
-  }
