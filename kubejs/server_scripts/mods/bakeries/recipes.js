@@ -185,7 +185,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       .id(id('emptying/bottle_yeast'));
 
     if (global.hasMod('createdieselgenerators')) {
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .basin_fermenting(Fluid.of('createdelightcore:yeast', 250), [
           Ingredient.of('#c:mushrooms'),
           'create:wheat_flour',
@@ -194,7 +194,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         ])
         .processingTime(300)
         .id(id('basin_fermenting/yeast_from_mushrooms'));
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .bulk_fermenting(Fluid.of('createdelightcore:yeast', 250), [
           Ingredient.of('#c:mushrooms'),
           'create:wheat_flour',
@@ -203,21 +203,21 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         ])
         .processingTime(150)
         .id(id('bulk_fermenting/yeast_from_mushrooms'));
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .basin_fermenting(Fluid.of('createdelightcore:yeast', 500), [
           Fluid.of('createdelightcore:yeast', 250),
           'create:wheat_flour',
         ])
         .processingTime(300)
         .id(id('basin_fermenting/yeast_from_yeast'));
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .bulk_fermenting(Fluid.of('createdelightcore:yeast', 500), [
           Fluid.of('createdelightcore:yeast', 250),
           'create:wheat_flour',
         ])
         .processingTime(150)
         .id(id('bulk_fermenting/yeast_from_yeast'));
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .basin_fermenting(Fluid.of('createdelightcore:yeast', 500), [
           'createdelightcore:dry_yeast',
           'create:wheat_flour',
@@ -225,7 +225,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         ])
         .processingTime(300)
         .id(id('basin_fermenting/yeast_from_dry_yeast'));
-      createdieselgenerators
+      event.recipes.createdieselgenerators
         .bulk_fermenting(Fluid.of('createdelightcore:yeast', 500), [
           'createdelightcore:dry_yeast',
           'create:wheat_flour',
