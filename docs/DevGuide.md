@@ -267,6 +267,9 @@ ServerEvents.recipes((event) => {
 - ResourceLocation 使用小写，避免空格和非法字符。
 - 自定义配方必须有明确 id。
 - 旧命名空间 `createdelight` 迁移到本仓库时改为 `createdelightcore`，除非目标对象明确属于其它 mod。
+- 自定义配方 id 使用 `createdelightcore:<模组id>/<path>` 形式，通常由各模组 server 脚本里的 `id()` 助手生成。
+- path 按配方类型分段，例如工作台或无形状合成写 `crafting/<物品id>`，搅拌写 `mixing/...`，序列组装写 `sequenced_assembly/...`。物品 id 取 ResourceLocation 的 path（冒号后一段）。
+- 从旧仓库迁移工作台配方时，按上述 `crafting/<物品id>` 编写即可，不必再加旧 id 里的 `_manual_only` 后缀。已经迁入并仍带该后缀的配方保持原 id，不要为了统一去改已经在用的配方 id。
 - `createdelightcore` 的物品、方块、流体注册和语言键由 core/对应注册层维护；迁移 server recipe 时不要为了让配方通过而临时补 startup 注册或 lang。
 - 优先按层迁移：工具函数、注册、标签、配方、客户端脚本、可选联动。
 - 每迁移一层都启动或 reload 验证，不要一次性塞入大量旧脚本。
