@@ -185,35 +185,54 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       .id(id('emptying/bottle_yeast'));
 
     if (global.hasMod('createdieselgenerators')) {
-      const addDieselFermenting = (path, results, ingredients, processingTime) => {
-        createdieselgenerators
-          .basin_fermenting(results, ingredients)
-          .processingTime(processingTime || 100)
-          .id(id(`basin_fermenting/${path}`));
-        createdieselgenerators
-          .bulk_fermenting(results, ingredients)
-          .processingTime(Math.floor((processingTime || 100) / 2))
-          .id(id(`bulk_fermenting/${path}`));
-      };
-
-      addDieselFermenting(
-        'yeast_from_mushrooms',
-        Fluid.of('createdelightcore:yeast', 250),
-        [Ingredient.of('#c:mushrooms'), 'create:wheat_flour', 'minecraft:sugar', Fluid.water(250)],
-        300
-      );
-      addDieselFermenting(
-        'yeast_from_yeast',
-        Fluid.of('createdelightcore:yeast', 500),
-        [Fluid.of('createdelightcore:yeast', 250), 'create:wheat_flour'],
-        300
-      );
-      addDieselFermenting(
-        'yeast_from_dry_yeast',
-        Fluid.of('createdelightcore:yeast', 500),
-        ['createdelightcore:dry_yeast', 'create:wheat_flour', Fluid.water(500)],
-        300
-      );
+      createdieselgenerators
+        .basin_fermenting(Fluid.of('createdelightcore:yeast', 250), [
+          Ingredient.of('#c:mushrooms'),
+          'create:wheat_flour',
+          'minecraft:sugar',
+          Fluid.water(250),
+        ])
+        .processingTime(300)
+        .id(id('basin_fermenting/yeast_from_mushrooms'));
+      createdieselgenerators
+        .bulk_fermenting(Fluid.of('createdelightcore:yeast', 250), [
+          Ingredient.of('#c:mushrooms'),
+          'create:wheat_flour',
+          'minecraft:sugar',
+          Fluid.water(250),
+        ])
+        .processingTime(150)
+        .id(id('bulk_fermenting/yeast_from_mushrooms'));
+      createdieselgenerators
+        .basin_fermenting(Fluid.of('createdelightcore:yeast', 500), [
+          Fluid.of('createdelightcore:yeast', 250),
+          'create:wheat_flour',
+        ])
+        .processingTime(300)
+        .id(id('basin_fermenting/yeast_from_yeast'));
+      createdieselgenerators
+        .bulk_fermenting(Fluid.of('createdelightcore:yeast', 500), [
+          Fluid.of('createdelightcore:yeast', 250),
+          'create:wheat_flour',
+        ])
+        .processingTime(150)
+        .id(id('bulk_fermenting/yeast_from_yeast'));
+      createdieselgenerators
+        .basin_fermenting(Fluid.of('createdelightcore:yeast', 500), [
+          'createdelightcore:dry_yeast',
+          'create:wheat_flour',
+          Fluid.water(500),
+        ])
+        .processingTime(300)
+        .id(id('basin_fermenting/yeast_from_dry_yeast'));
+      createdieselgenerators
+        .bulk_fermenting(Fluid.of('createdelightcore:yeast', 500), [
+          'createdelightcore:dry_yeast',
+          'create:wheat_flour',
+          Fluid.water(500),
+        ])
+        .processingTime(150)
+        .id(id('bulk_fermenting/yeast_from_dry_yeast'));
     }
 
     create
