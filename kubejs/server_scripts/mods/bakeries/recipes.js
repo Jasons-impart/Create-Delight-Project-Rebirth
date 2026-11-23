@@ -185,8 +185,7 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       .id(id('emptying/bottle_yeast'));
 
     if (global.hasMod('createdieselgenerators')) {
-      const { createdieselgenerators } = event.recipes;
-      const fermenting = (path, results, ingredients, processingTime) => {
+      const addDieselFermenting = (path, results, ingredients, processingTime) => {
         createdieselgenerators
           .basin_fermenting(results, ingredients)
           .processingTime(processingTime || 100)
@@ -197,19 +196,19 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
           .id(id(`bulk_fermenting/${path}`));
       };
 
-      fermenting(
+      addDieselFermenting(
         'yeast_from_mushrooms',
         Fluid.of('createdelightcore:yeast', 250),
         [Ingredient.of('#c:mushrooms'), 'create:wheat_flour', 'minecraft:sugar', Fluid.water(250)],
         300
       );
-      fermenting(
+      addDieselFermenting(
         'yeast_from_yeast',
         Fluid.of('createdelightcore:yeast', 500),
         [Fluid.of('createdelightcore:yeast', 250), 'create:wheat_flour'],
         300
       );
-      fermenting(
+      addDieselFermenting(
         'yeast_from_dry_yeast',
         Fluid.of('createdelightcore:yeast', 500),
         ['createdelightcore:dry_yeast', 'create:wheat_flour', Fluid.water(500)],
