@@ -10,7 +10,7 @@ if (global.hasMod('bakeries')) {
     ]);
     event.remove('c:doughs', 'bakeries:whole_wheat_dough');
 
-    if (global.hasMod('some_assembly_required')) {
+    if (global.hasMod('someassemblyrequired')) {
       event.add('some_assembly_required:sandwich_bread', [
         'bakeries:sliced_toast',
         'bakeries:sliced_cheese_cocoa_toast',

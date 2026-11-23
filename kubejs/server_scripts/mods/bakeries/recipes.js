@@ -58,6 +58,59 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       'bakeries:integration/create/mixing/sweet_dough',
       'bakeries:integration/create/mixing/meat_floss',
       'bakeries:integration/create/mixing/honey_butter',
+      'bakeries:compat/create/mixing/cheese_cream',
+      'bakeries:compat/create/mixing/foamed_cream',
+      'bakeries:compat/create/mixing/butter_cube',
+      'bakeries:compat/create/mixing/whole_wheat_dough',
+      'bakeries:compat/create/mixing/sweet_dough',
+      'bakeries:compat/create/mixing/meat_floss',
+      'bakeries:compat/create/mixing/honey_butter',
+      'bakeries:compat/create/milling/flour',
+      'bakeries:compat/create/bagel_dough',
+      'bakeries:compat/create/whole_wheat_bagel_dough',
+      'bakeries:compat/create/cutting/sliced_toast',
+      'bakeries:compat/create/cutting/sliced_cheese_cocoa_toast',
+      'bakeries:compat/create/cutting/country_bread_slice',
+      'bakeries:compat/create/cutting/sliced_pound_cake',
+      'bakeries:compat/create/cutting/cut_cake_base',
+      'bakeries:blender/meat_floss',
+      'bakeries:blender/mould_pound_cake_paste',
+      'bakeries:blender/mould_basque_cake_paste',
+      'bakeries:cheese_cocoa_toast_dough',
+      'bakeries:integration/create/mixing/crispy_dough',
+      'bakeries:bread_knife/sliced_toast',
+      'bakeries:bread_knife/sliced_cheese_cocoa_toast',
+      'bakeries:bread_knife/country_bread_slice',
+      'bakeries:oven/bagel',
+      'bakeries:oven/whole_wheat_bagel',
+      'bakeries:oven/round_bread',
+      'bakeries:oven/baguette',
+      'bakeries:oven/croissant',
+      'bakeries:oven/salt_croissant',
+      'bakeries:oven/brown_sugar_roll',
+      'bakeries:oven/pineapple_bun',
+      'bakeries:oven/country_bread',
+      'bakeries:oven/ciabatta',
+      'bakeries:oven/toast',
+      'bakeries:oven/cheese_cocoa_toast',
+      'bakeries:oven/focaccia',
+      'bakeries:oven/cup_cake',
+      'bakeries:oven/rice_bread',
+      'bakeries:oven/egg_tart',
+      'bakeries:oven/coffee_bean',
+      'bakeries:dough_crafting_table/bagel_dough',
+      'bakeries:dough_crafting_table/bagel_dough__fermentation_gameplay',
+      'bakeries:dough_crafting_table/baguette_dough',
+      'bakeries:dough_crafting_table/baguette_dough__fermentation_gameplay',
+      'bakeries:dough_crafting_table/ciabatta_dough',
+      'bakeries:dough_crafting_table/ciabatta_dough__fermentation_gameplay',
+      'bakeries:dough_crafting_table/country_bread_dough',
+      'bakeries:dough_crafting_table/country_bread_dough__fermentation_gameplay',
+      'bakeries:dough_crafting_table/croissant_dough',
+      'bakeries:dough_crafting_table/round_bread_dough',
+      'bakeries:dough_crafting_table/round_bread_dough__fermentation_gameplay',
+      'bakeries:dough_crafting_table/whole_wheat_bagel_dough',
+      'bakeries:dough_crafting_table/whole_wheat_bagel_dough__fermentation_gameplay',
     ].forEach(removeIfPresent);
 
     event.remove({
@@ -130,6 +183,39 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         'bakeries:bottle_yeast'
       )
       .id(id('emptying/bottle_yeast'));
+
+    if (global.hasMod('createdieselgenerators')) {
+      const { createdieselgenerators } = event.recipes;
+      const fermenting = (path, results, ingredients, processingTime) => {
+        createdieselgenerators
+          .basin_fermenting(results, ingredients)
+          .processingTime(processingTime || 100)
+          .id(id(`basin_fermenting/${path}`));
+        createdieselgenerators
+          .bulk_fermenting(results, ingredients)
+          .processingTime(Math.floor((processingTime || 100) / 2))
+          .id(id(`bulk_fermenting/${path}`));
+      };
+
+      fermenting(
+        'yeast_from_mushrooms',
+        Fluid.of('createdelightcore:yeast', 250),
+        [Ingredient.of('#c:mushrooms'), 'create:wheat_flour', 'minecraft:sugar', Fluid.water(250)],
+        300
+      );
+      fermenting(
+        'yeast_from_yeast',
+        Fluid.of('createdelightcore:yeast', 500),
+        [Fluid.of('createdelightcore:yeast', 250), 'create:wheat_flour'],
+        300
+      );
+      fermenting(
+        'yeast_from_dry_yeast',
+        Fluid.of('createdelightcore:yeast', 500),
+        ['createdelightcore:dry_yeast', 'create:wheat_flour', Fluid.water(500)],
+        300
+      );
+    }
 
     create
       .mixing('bakeries:whole_wheat_dough', [Fluid.water(50), 'create:wheat_flour'])
@@ -255,6 +341,35 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
       kubejs.shapeless(output, inputs.map(asIngredient)).id(id(`crafting/${output.split(':')[1]}`));
     });
 
+    create
+      .sequenced_assembly('bakeries:pineapple_bun_dough', 'bakeries:round_bread_dough', [
+        create.deploying('bakeries:round_bread_dough', [
+          'bakeries:round_bread_dough',
+          'createdelightcore:butter',
+        ]),
+        create.deploying('bakeries:round_bread_dough', [
+          'bakeries:round_bread_dough',
+          'minecraft:sugar',
+        ]),
+      ])
+      .loops(1)
+      .transitionalItem('bakeries:round_bread_dough')
+      .id(id('sequenced_assembly/pineapple_bun_dough'));
+    create
+      .sequenced_assembly('bakeries:brown_sugar_roll_dough', 'bakeries:round_bread_dough', [
+        create.deploying('bakeries:round_bread_dough', [
+          'bakeries:round_bread_dough',
+          'createdelightcore:butter',
+        ]),
+        create.deploying('bakeries:round_bread_dough', [
+          'bakeries:round_bread_dough',
+          'bakeries:brown_sugar_cube',
+        ]),
+      ])
+      .loops(1)
+      .transitionalItem('bakeries:round_bread_dough')
+      .id(id('sequenced_assembly/brown_sugar_roll_dough'));
+
     if (global.hasAllMods(['trailandtales_delight', 'ratatouille'])) {
       kubejs
         .shapeless('bakeries:mould_cheese_cocoa_toast_dough', [
@@ -267,6 +382,36 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
           'ratatouille:cocoa_powder',
         ])
         .id(id('crafting/mould_cheese_cocoa_toast_dough'));
+      create
+        .sequenced_assembly('bakeries:mould_cheese_cocoa_toast_dough', 'bakeries:mould', [
+          create.deploying('bakeries:mould', ['bakeries:mould', 'bakeries:round_bread_dough']),
+          create.deploying('bakeries:mould', [
+            'bakeries:mould',
+            'trailandtales_delight:cheese_slice',
+          ]),
+          create.deploying('bakeries:mould', ['bakeries:mould', 'ratatouille:cocoa_powder']),
+        ])
+        .loops(3)
+        .transitionalItem('bakeries:mould')
+        .id(id('sequenced_assembly/mould_cheese_cocoa_toast_dough'));
+      create
+        .sequenced_assembly(
+          'bakeries:mould_cheese_cocoa_toast_dough',
+          'bakeries:mould_toast_dough',
+          [
+            create.deploying('bakeries:mould_toast_dough', [
+              'bakeries:mould_toast_dough',
+              'trailandtales_delight:cheese_slice',
+            ]),
+            create.deploying('bakeries:mould_toast_dough', [
+              'bakeries:mould_toast_dough',
+              'ratatouille:cocoa_powder',
+            ]),
+          ]
+        )
+        .loops(3)
+        .transitionalItem('bakeries:mould_toast_dough')
+        .id(id('sequenced_assembly/mould_cheese_cocoa_toast_dough_from_toast'));
     }
 
     if (global.hasMod('vintagedelight')) {
@@ -418,6 +563,100 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
     create
       .mixing('2x bakeries:cheese_cream', ['bakeries:foamed_cream', Ingredient.of('#c:cheese')])
       .id(id('mixing/cheese_cream'));
+
+    create
+      .sequenced_assembly('bakeries:mould_pound_cake_paste', 'bakeries:mould', [
+        create.filling('bakeries:mould', [
+          'bakeries:mould',
+          Fluid.of('createdelightcore:cake_batter', 500),
+        ]),
+        create.deploying('bakeries:mould', ['bakeries:mould', Ingredient.of('#c:animal_oil')]),
+      ])
+      .loops(1)
+      .transitionalItem('bakeries:mould')
+      .id(id('sequenced_assembly/mould_pound_cake_paste'));
+    create
+      .sequenced_assembly('bakeries:mould_basque_cake_paste', 'bakeries:mould_two', [
+        create.filling('bakeries:mould_two', [
+          'bakeries:mould_two',
+          Fluid.of('createdelightcore:cake_batter', 500),
+        ]),
+        create.deploying('bakeries:mould_two', ['bakeries:mould_two', Ingredient.of('#c:cheese')]),
+      ])
+      .loops(1)
+      .transitionalItem('bakeries:mould_two')
+      .id(id('sequenced_assembly/mould_basque_cake_paste'));
+
+    if (global.hasMod('ratatouille')) {
+      if (global.hasMod('cosmopolitan')) {
+        create
+          .sequenced_assembly('bakeries:cream_cake', 'bakeries:cut_cake_base', [
+            create.filling('bakeries:cut_cake_base', [
+              'bakeries:cut_cake_base',
+              Fluid.of('cosmopolitan:cream', 250),
+            ]),
+            create.deploying('bakeries:cut_cake_base', [
+              'bakeries:cut_cake_base',
+              'bakeries:cut_cake_base',
+            ]),
+            create.filling('bakeries:cut_cake_base', [
+              'bakeries:cut_cake_base',
+              Fluid.of('cosmopolitan:cream', 250),
+            ]),
+            create.deploying('bakeries:cut_cake_base', [
+              'bakeries:cut_cake_base',
+              'minecraft:sweet_berries',
+            ]),
+          ])
+          .loops(1)
+          .transitionalItem('bakeries:cut_cake_base')
+          .id(id('sequenced_assembly/cream_cake'));
+      }
+      create
+        .sequenced_assembly('bakeries:cream_cake', 'bakeries:cut_cake_base', [
+          create.deploying('bakeries:cut_cake_base', [
+            'bakeries:cut_cake_base',
+            Ingredient.of('#c:creams'),
+          ]),
+          create.deploying('bakeries:cut_cake_base', [
+            'bakeries:cut_cake_base',
+            'bakeries:cut_cake_base',
+          ]),
+          create.deploying('bakeries:cut_cake_base', [
+            'bakeries:cut_cake_base',
+            Ingredient.of('#c:creams'),
+          ]),
+          create.deploying('bakeries:cut_cake_base', [
+            'bakeries:cut_cake_base',
+            'minecraft:sweet_berries',
+          ]),
+        ])
+        .loops(1)
+        .transitionalItem('bakeries:cut_cake_base')
+        .id(id('sequenced_assembly/cream_cake_from_item_cream'));
+      create
+        .sequenced_assembly('bakeries:tiramisu', 'bakeries:soak_coffee_cut_cake_base', [
+          create.deploying('bakeries:soak_coffee_cut_cake_base', [
+            'bakeries:soak_coffee_cut_cake_base',
+            'bakeries:cheese_cream',
+          ]),
+          create.deploying('bakeries:soak_coffee_cut_cake_base', [
+            'bakeries:soak_coffee_cut_cake_base',
+            'bakeries:soak_coffee_cut_cake_base',
+          ]),
+          create.deploying('bakeries:soak_coffee_cut_cake_base', [
+            'bakeries:soak_coffee_cut_cake_base',
+            'bakeries:cheese_cream',
+          ]),
+          create.deploying('bakeries:soak_coffee_cut_cake_base', [
+            'bakeries:soak_coffee_cut_cake_base',
+            'ratatouille:cocoa_powder',
+          ]),
+        ])
+        .loops(1)
+        .transitionalItem('bakeries:soak_coffee_cut_cake_base')
+        .id(id('sequenced_assembly/tiramisu'));
+    }
     // 呃呃啊啊: bakeries:scone_dough is missing for now.
     // create
     //   .cutting('8x bakeries:scone_dough', 'createdelightcore:puff_pastry')
@@ -481,5 +720,30 @@ if (global.hasAllMods(['bakeries', 'create', 'createdelightcore'])) {
         A: 'bakeries:silicone_paper',
       })
       .id(id('crafting/paper_cup'));
+
+    bakeries
+      .dough_crafting_table('2x bakeries:bagel_dough', 'bakeries:sweet_dough')
+      .id(id('dough_crafting_table/bagel_dough'));
+    bakeries
+      .dough_crafting_table('4x bakeries:round_bread_dough', 'bakeries:sweet_dough')
+      .id(id('dough_crafting_table/round_bread_dough'));
+    bakeries
+      .dough_crafting_table('2x bakeries:whole_wheat_bagel_dough', 'bakeries:whole_wheat_dough')
+      .id(id('dough_crafting_table/whole_wheat_bagel_dough'));
+    bakeries
+      .dough_crafting_table('bakeries:croissant_dough', 'createdelightcore:puff_pastry')
+      .id(id('dough_crafting_table/croissant_dough'));
+
+    if (global.hasMod('ratatouille')) {
+      bakeries
+        .dough_crafting_table('bakeries:baguette_dough', 'ratatouille:salty_dough')
+        .id(id('dough_crafting_table/baguette_dough'));
+      bakeries
+        .dough_crafting_table('2x bakeries:ciabatta_dough', 'ratatouille:salty_dough')
+        .id(id('dough_crafting_table/ciabatta_dough'));
+      bakeries
+        .dough_crafting_table('bakeries:country_bread_dough', 'ratatouille:salty_dough')
+        .id(id('dough_crafting_table/country_bread_dough'));
+    }
   });
 }

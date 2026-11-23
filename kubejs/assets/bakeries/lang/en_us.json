@@ -1,0 +1,6 @@
+{
+  "block.bakeries.cup_cake": "Muffin",
+  "item.bakeries.paper_cup_cake_paste": "Unbaked Muffin",
+  "effect.bakeries.soft.description": "Increases armor and knockback resistance, and bounces off attackers.",
+  "item.bakeries.cup_cake": "Muffin"
+}
