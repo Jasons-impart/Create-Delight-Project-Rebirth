@@ -19,13 +19,27 @@ if (global.hasMod('youkaishomecoming')) {
       ])
     );
 
-    addCommonAndForge('tea_leaves/green', ['farmersrespite:green_tea_leaves']);
-    addCommonAndForge('tea_leaves/oolong', ['farmersrespite:yellow_tea_leaves']);
-    addCommonAndForge('tea_leaves/black', ['farmersrespite:black_tea_leaves']);
+    addCommonAndForge('tea_leaves/green', [
+      'farmersrespite:green_tea_leaves',
+      'youkaishomecoming:green_tea_leaves',
+    ]);
+    addCommonAndForge('tea_leaves/oolong', [
+      'farmersrespite:yellow_tea_leaves',
+      'youkaishomecoming:oolong_tea_leaves',
+    ]);
+    addCommonAndForge('tea_leaves/black', [
+      'farmersrespite:black_tea_leaves',
+      'youkaishomecoming:black_tea_leaves',
+    ]);
 
     event.add('minecraft:ice', existingItems(['youkaishomecoming:ice_cube']));
 
-    addCommonAndForge('roe', ['oceanic_delight:salmon_eggs', 'oceanic_delight:ancient_fish_eggs']);
+    addCommonAndForge('roe', [
+      'oceanic_delight:salmon_eggs',
+      'oceanic_delight:ancient_fish_eggs',
+      'youkaishomecoming:roe',
+      'youkaishomecoming:crab_roe',
+    ]);
     addCommonAndForge('tropical', [
       'minecraft:tropical_fish',
       'crabbersdelight:tropical_fish_slice',
