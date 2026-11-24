@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-    const { create, farmersdelight, youkaishomecoming, kubejs, ratatouille } = e.recipes
+    const { create, farmersdelight, kubejs } = e.recipes
     create.compacting('supplementaries:ash', 'create:limestone')
         .heated()
         .id("createdelight:compacting/ash")
@@ -86,16 +86,6 @@ ServerEvents.recipes(e => {
             'youkaishomecoming:soybean'
         ]
     ).heated().id("createdelight:compacting/soya_milk")
-    youkaishomecoming.drying_rack(
-        "trailandtales_delight:dried_cherry_petal",
-        "trailandtales_delight:cherry_petal"
-    ).id("createdelight:dried_cherry_petal_drying")
-    ratatouille.baking(
-        "trailandtales_delight:dried_cherry_petal",
-        "trailandtales_delight:cherry_petal"
-    )
-    .processingTime(200)
-    .id("createdelight:baking/dried_cherry_petal")
     create.pressing("youkaishomecoming:clay_saucer", "minecraft:clay_ball")
         .id("createdelight:pressing/clay_saucer")
 
@@ -118,32 +108,6 @@ ServerEvents.recipes(e => {
     cutting_2(e, "youkaishomecoming:raw_lamprey", [["youkaishomecoming:raw_lamprey_fillet", 1]])
     cutting_2(e, "youkaishomecoming:red_velvet_cake", [["youkaishomecoming:red_velvet_cake_slice", 7]])
 
-        
-    e.custom({
-        "type": "youkaishomecoming:simple_fermentation",
-        "ingredients": [
-            {
-                tag: "forge:mushrooms"
-            },
-            {
-                tag: "forge:flour"
-            },
-            {
-                item: "minecraft:sugar"
-            }
-        ],
-        "inputFluid": {
-            "amount": 250,
-            "fluid": "minecraft:water"
-        },
-        "outputFluid": {
-            "amount": 250,
-            "fluid": "createdelight:yeast"
-        },
-        "results": [],
-        "time": 2400
-    })
-        .id("createdelight:simple_fermentation/yeast")
     create.milling("youkaishomecoming:matcha", "#forge:tea_leaves/green")
         .id("createdelight:milling/matcha")
 
