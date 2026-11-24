@@ -12,6 +12,28 @@ if (global.hasMod('youkaishomecoming')) {
         .processingTime(Math.floor(processingTime / 2))
         .id(id(`bulk_fermenting/${path}`));
     };
+    const fillAndEmptyBottle = (itemId, fluidId, fillingPath, emptyingPath) => {
+      event
+        .custom({
+          type: 'create:filling',
+          ingredients: [
+            { item: 'minecraft:glass_bottle' },
+            { type: 'fluid_stack', amount: 250, fluid: fluidId },
+          ],
+          results: [{ item: { id: itemId } }],
+        })
+        .id(id(`filling/${fillingPath}`));
+      event
+        .custom({
+          type: 'create:emptying',
+          ingredients: [{ item: itemId }],
+          results: [
+            { item: { id: 'minecraft:glass_bottle' } },
+            { amount: 250, id: fluidId },
+          ],
+        })
+        .id(id(`emptying/${emptyingPath}`));
+    };
 
     remove_recipes_id(event, [
       'youkaishomecoming:cooking/onigili',
@@ -21,7 +43,6 @@ if (global.hasMod('youkaishomecoming')) {
       'youkaishomecoming:cutting/mandrake_root_cutting',
       'youkaishomecoming:cutting/pods_cutting',
       'youkaishomecoming:cutting/raw_lamprey_cutting',
-      'youkaishomecoming:cutting/red_velvet',
     ]);
 
     create.compacting('supplementaries:ash', 'create:limestone').heated().id(id('compacting/ash'));
@@ -107,28 +128,6 @@ if (global.hasMod('youkaishomecoming')) {
         '2x youkaishomecoming:raw_lamprey_fillet',
       ])
       .id(id('cutting/raw_lamprey'));
-    farmersdelight
-      .cutting('youkaishomecoming:red_velvet', Ingredient.of('#c:tools/knife'), [
-        '4x youkaishomecoming:red_velvet_slice',
-      ])
-      .id(id('cutting/red_velvet'));
-
-    [
-      'salmon_futomaki',
-      'california_roll',
-      'volcano_roll',
-      'roe_california_roll',
-      'salmon_lover_roll',
-      'rainbow_roll',
-      'egg_futomaki',
-      'rainbow_futomaki',
-    ].forEach((roll) => {
-      farmersdelight
-        .cutting(`youkaishomecoming:${roll}`, Ingredient.of('#c:tools/knife'), [
-          { id: `youkaishomecoming:${roll}_slice`, count: 3 },
-        ])
-        .id(id(`cutting/${roll}`));
-    });
 
     create
       .crushing(
@@ -153,11 +152,6 @@ if (global.hasMod('youkaishomecoming')) {
       .heated()
       .id(id('compacting/tamagoyaki'));
 
-    event.replaceInput(
-      { id: 'youkaishomecoming:cooking/imitation_crab' },
-      Ingredient.of('#c:raw_fishes/cod'),
-      Ingredient.of('#c:raw_fishes')
-    );
     event.replaceInput(
       { output: 'youkaishomecoming:flesh_chocolate_mousse' },
       'minecraft:wheat',
@@ -400,7 +394,7 @@ if (global.hasMod('youkaishomecoming')) {
     create
       .mixing(Fluid.of('createdelightcore:green_water', 500), [
         Fluid.water(500),
-        Ingredient.of('#c:salad_ingredients/cabbage'),
+        Ingredient.of('#c:foods/cabbage'),
       ])
       .id(id('mixing/green_water'));
     create
@@ -409,10 +403,22 @@ if (global.hasMod('youkaishomecoming')) {
         'youkaishomecoming:white_tea_leaves',
       ])
       .id(id('mixing/white_tea'));
+    if (global.hasMod('ratatouille')) {
+      create
+        .mixing(Fluid.of('createdelightcore:tea_mocha', 1000), [
+          Fluid.water(1000),
+          Ingredient.of('#c:tea_leaves/black'),
+          'ratatouille:cocoa_powder',
+          Fluid.of('minecraft:milk', 250),
+        ])
+        .id(id('mixing/tea_mocha'));
+    }
 
+    // 4.2.1 tea bottles share IDs with Youkai fluids, so filling/emptying
+    // must use explicit item JSON. lemon_black_tea is not registered as a
+    // Youkai item or fluid in 4.2.1 (only a CDC fluid remains).
     [
       'scarlet_tea',
-      'lemon_black_tea',
       'tea_mocha',
       'saidi_tea',
       'white_tea',
@@ -421,30 +427,53 @@ if (global.hasMod('youkaishomecoming')) {
       'genmai_tea',
       'green_water',
     ].forEach((tea) => {
-      create
-        .filling(`youkaishomecoming:${tea}`, [
-          'minecraft:glass_bottle',
-          Fluid.of(`createdelightcore:${tea}`, 250),
-        ])
-        .id(id(`filling/${tea}`));
-      create
-        .emptying(
-          ['minecraft:glass_bottle', Fluid.of(`createdelightcore:${tea}`, 250)],
-          `youkaishomecoming:${tea}`
-        )
-        .id(id(`emptying/${tea}`));
+      fillAndEmptyBottle(
+        `youkaishomecoming:${tea}`,
+        `createdelightcore:${tea}`,
+        tea,
+        tea
+      );
+    });
+
+    [
+      'espresso',
+      'americano',
+      'ristretto',
+      'latte',
+      'affogato',
+      'con_panna',
+      'cappuccino',
+      'macchiato',
+      'mocha',
+    ].forEach((coffee) => {
+      fillAndEmptyBottle(
+        `youkaishomecoming:${coffee}`,
+        `createdelightcore:${coffee}_fluid`,
+        `${coffee}_from_fluid`,
+        `${coffee}_fluid_from_bottle`
+      );
     });
 
     create
-      .filling('youkaishomecoming:americano', ['youkaishomecoming:espresso', Fluid.water(250)])
+      .filling(Item.of('youkaishomecoming:americano'), [
+        'youkaishomecoming:espresso',
+        Fluid.water(250),
+      ])
       .id(id('filling/americano'));
     create
-      .filling('youkaishomecoming:latte', [
+      .filling(Item.of('youkaishomecoming:latte'), [
         'youkaishomecoming:espresso',
         Fluid.of('minecraft:milk', 250),
       ])
       .id(id('filling/latte'));
     if (global.hasMod('createcafe')) {
+      create
+        .mixing(Fluid.of('createdelightcore:espresso_fluid', 1000), [
+          Fluid.of('createdelightcore:americano_fluid', 1000),
+          'createcafe:coffee_grounds',
+        ])
+        .heated()
+        .id(id('mixing/espresso_fluid'));
       create
         .deploying('youkaishomecoming:ristretto', [
           'youkaishomecoming:espresso',
