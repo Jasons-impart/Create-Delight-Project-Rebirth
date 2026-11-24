@@ -4,10 +4,7 @@ if (global.hasMod('youkaishomecoming')) {
 
     const ingredientOf = (value) => {
       if (Array.isArray(value)) {
-        return {
-          type: 'neoforge:compound',
-          ingredients: value.map(ingredientOf),
-        };
+        return value.map(ingredientOf);
       }
       if (typeof value === 'string' && value.startsWith('#')) {
         return { tag: value.slice(1) };

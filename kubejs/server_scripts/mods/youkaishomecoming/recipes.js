@@ -2,6 +2,16 @@ if (global.hasMod('youkaishomecoming')) {
   ServerEvents.recipes((event) => {
     const { create, farmersdelight, ratatouille } = event.recipes;
     const id = (path) => `createdelightcore:youkaishomecoming/${path}`;
+    const dieselFermenting = (path, results, ingredients, processingTime) => {
+      event.recipes.createdieselgenerators
+        .basin_fermenting(results, ingredients)
+        .processingTime(processingTime)
+        .id(id(`basin_fermenting/${path}`));
+      event.recipes.createdieselgenerators
+        .bulk_fermenting(results, ingredients)
+        .processingTime(Math.floor(processingTime / 2))
+        .id(id(`bulk_fermenting/${path}`));
+    };
 
     remove_recipes_id(event, [
       'youkaishomecoming:cooking/onigili',
@@ -210,6 +220,8 @@ if (global.hasMod('youkaishomecoming')) {
       'youkaishomecoming:oily_bean_curd_from_tofu_campfire',
       'youkaishomecoming:oily_bean_curd_from_tofu_smelting',
       'youkaishomecoming:oily_bean_curd_from_tofu_smoking',
+      'youkaishomecoming:red_velvet',
+      'youkaishomecoming:red_velvet_assemble',
       'youkaishomecoming:red_velvet_cake',
       'youkaishomecoming:emptying/blood_bottle_emptying',
       'youkaishomecoming:red_velvet_cake_slice',
@@ -268,7 +280,7 @@ if (global.hasMod('youkaishomecoming')) {
 
     if (global.hasAllMods(['ratatouille', 'butchercraft'])) {
       create
-        .sequenced_assembly('youkaishomecoming:red_velvet_cake', 'ratatouille:cake_base', [
+        .sequenced_assembly('youkaishomecoming:red_velvet', 'ratatouille:cake_base', [
           create.filling('ratatouille:cake_base', [
             'ratatouille:cake_base',
             Fluid.of('butchercraft:blood_fluid'),
@@ -290,36 +302,19 @@ if (global.hasMod('youkaishomecoming')) {
           ingredients: [{ tag: 'c:mushrooms' }],
           inputFluid: {
             amount: 1000,
-            fluid: 'youkaishomecoming:mio',
+            id: 'youkaishomecoming:mio',
           },
           outputFluid: {
             amount: 1000,
-            fluid: 'createdelightcore:vinegar',
+            id: 'createdelightcore:vinegar',
           },
-          results: [
-            { id: 'vintagedelight:organic_mash' },
-            { id: 'vintagedelight:organic_mash' },
-            { id: 'vintagedelight:organic_mash' },
-            { id: 'vintagedelight:organic_mash' },
-          ],
+          results: [{ count: 4, id: 'vintagedelight:organic_mash' }],
           time: 2400,
         })
         .id(id('simple_fermentation/vinegar'));
     }
 
     if (global.hasMod('createdieselgenerators')) {
-      const { createdieselgenerators } = event.recipes;
-      const dieselFermenting = (path, results, ingredients, processingTime) => {
-        createdieselgenerators
-          .basin_fermenting(results, ingredients)
-          .processingTime(processingTime)
-          .id(id(`basin_fermenting/${path}`));
-        createdieselgenerators
-          .bulk_fermenting(results, ingredients)
-          .processingTime(Math.floor(processingTime / 2))
-          .id(id(`bulk_fermenting/${path}`));
-      };
-
       dieselFermenting(
         'mio',
         Fluid.of('youkaishomecoming:mio', 1000),
