@@ -255,13 +255,14 @@ if (global.hasMod('youkaishomecoming')) {
 
     if (global.hasMod('ratatouille')) {
       event.forEachRecipe({ type: 'youkaishomecoming:drying_rack' }, (recipe) => {
-        if (recipe.getOriginalRecipeResult().is('brewinandchewin:jerky')) {
+        const result = recipe.getOriginalRecipeResult();
+        if (String(result.getId()) === 'brewinandchewin:jerky') {
           return;
         }
         event.recipes.ratatouille
-          .baking(recipe.getOriginalRecipeResult(), recipe.getOriginalRecipeIngredients())
+          .baking(result, recipe.getOriginalRecipeIngredients())
           .processingTime(200)
-          .id(id(`baking/${recipe.getOriginalRecipeResult().getId().split(':')[1]}`));
+          .id(id(`baking/${String(result.getId()).split(':')[1]}`));
       });
     }
 
