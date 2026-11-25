@@ -1,16 +1,11 @@
 # Create Delight Project Rebirth
 
-面向 Minecraft 1.21.1 NeoForge 的 Create Delight Remake
-火热移植中
+齿轮盛宴 R 是 Create Delight Remake 向 Minecraft 1.21.1 / NeoForge 的移植。本仓库维护整合包的模组描述符、配置、资源和 KubeJS 脚本。
 
-## 协助开发
+| 我想做什么 | 从哪里开始 |
+| --- | --- |
+| 下载整合包游玩或开服 | [安装指南](docs/install/README.md) · [发布下载](https://github.com/Jasons-impart/Create-Delight-Project-Rebirth/releases) |
+| 从源码开发或测试 | [开发指南](docs/DevGuide.md) |
+| 查看迁移进度、维护规范或历史记录 | [文档目录](docs/README.md) |
 
-开发入门、维护工具和专题指南从 [开发指南](docs/DevGuide.md) 开始。
-
-客户端安装说明见启动器指南：[HMCL](docs/GettingStarted-HMCL.md)、[PCL](docs/GettingStarted-PCL.md)、[Prism Launcher](docs/GettingStarted-Prism.md)。
-
-## 协议
-
-除第三方声明另有规定外，项目自有源码、KubeJS 脚本、packwiz 元数据、配置文件、数据文件、配方定义、构建脚本和其它文本实现文件允许公开查看、学习、修改和非商业再分发。
-
-商业使用项目代码需要版权持有人事先书面授权。项目自有材质、模型和相关资产文件全部保留所有权利（All Rights Reserved）。第三方内容原样继承其上游协议。
+项目自有代码允许公开查看、学习、修改和非商业再分发。商业使用须事先取得书面授权。自有材质、模型等视觉资产保留所有权利，第三方内容沿用各自协议。完整条款见 [LICENSE](LICENSE)。

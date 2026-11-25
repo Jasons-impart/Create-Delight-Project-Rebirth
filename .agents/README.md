@@ -1,7 +1,3 @@
-# Agent Shared Instructions
+# 仓库 Agent 工作流
 
-This directory stores AI-agent-facing skills and workflows for the repository.
-
-- `.agents/skills/packwiz-modpack/SKILL.md`: bkmpw modpack maintenance workflow.
-
-These files are plain Markdown so Codex and other AI assistants can read them directly.
+通用约定在根目录的 [AGENTS.md](../AGENTS.md)。处理模组描述符、同步文件、完整性检查或导出时，进入 [packwiz-modpack](skills/packwiz-modpack/SKILL.md)。其他开发任务从 [文档目录](../docs/README.md) 选择对应指南。
