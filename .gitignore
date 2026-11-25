@@ -32,6 +32,8 @@
 !/LICENSE
 !/docs/
 !/docs/**
+/docs/local/
+/docs/generated/
 
 # Launchers and local examples
 !/devtool.bat
@@ -67,8 +69,6 @@
 !/scripts/**
 
 # Explicit runtime exclusions inside allowed directories.
-docs/generated/
-docs/generated/
 scripts/bin/*
 mods/*.jar
 mods/*.jar.disabled
