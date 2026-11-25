@@ -1,0 +1,11 @@
+{
+	id: "07353B900F4DA13F"
+	loot_size: 1
+	order_index: 20
+	rewards: [
+		{ id: "60FEE880556911DC", item: { components: { "ftbquests:missing_item": "farmersrespite:green_tea" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "2970B2B429411AA0", item: { components: { "ftbquests:missing_item": "farmersrespite:yellow_tea" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "1664E035BC7D4D82", item: { components: { "ftbquests:missing_item": "farmersrespite:black_tea" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "526FD3BD7A2247C8", item: { components: { "ftbquests:missing_item": "youkaishomecoming:white_tea" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

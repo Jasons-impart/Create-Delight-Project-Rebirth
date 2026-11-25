@@ -1,0 +1,127 @@
+{
+	icon: {
+		id: "farmersdelight:iron_knife"
+	}
+	id: "467863873CF4CF6D"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			id: "0D22A2654E2EA691"
+			item: {
+				count: 1
+				id: "farmersdelight:iron_knife"
+			}
+			weight: 100.0f
+		}
+		{
+			id: "3A114C30C96BBCDF"
+			item: {
+				count: 1
+				id: "farmersdelight:flint_knife"
+			}
+			weight: 20.0f
+		}
+		{
+			id: "6390F9C0B69E82F5"
+			item: {
+				count: 1
+				id: "farmersdelight:golden_knife"
+			}
+			weight: 5.0f
+		}
+		{
+			id: "6F2AE211899C4EFD"
+			item: {
+				count: 1
+				id: "ends_delight:end_stone_knife"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "3DE99079C36A7A5F"
+			item: {
+				count: 1
+				id: "ends_delight:purpur_knife"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "722B9598A8010F73"
+			item: {
+				components: {
+					"ftbquests:missing_item": "trailandtales_delight:cherry_iron_knife"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 100.0f
+		}
+		{
+			id: "30E2B3336ED77AE1"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dungeonsdelight:iron_cleaver"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 100.0f
+		}
+		{
+			id: "767055AA7CE44B43"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dungeonsdelight:flint_cleaver"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 20.0f
+		}
+		{
+			id: "0B99230974AEDD23"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dungeonsdelight:golden_cleaver"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 5.0f
+		}
+		{
+			id: "094A7F60FC94EC9A"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dungeonsdelight:stained_knife"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "6E661FBE2B77A578"
+			item: {
+				components: {
+					"ftbquests:missing_item": "trailandtales_delight:sniffer_eggshell_knife"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "31665EE3E8F23D5A"
+			item: {
+				components: {
+					"ftbquests:missing_item": "trailandtales_delight:sniffer_eggshell_knife"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.01f
+		}
+	]
+}

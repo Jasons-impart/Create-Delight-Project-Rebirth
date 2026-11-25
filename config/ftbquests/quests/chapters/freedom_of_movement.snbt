@@ -1,0 +1,898 @@
+{
+	autofocus_id: "7DED9A87C6CB80F0"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "freedom_of_movement"
+	group: "7A00000000000006"
+	icon: {
+		id: "minecraft:elytra"
+	}
+	id: "2EDF2DB3AA62F7A0"
+	images: [ ]
+	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1E1AD72AF2E8C254"]
+			id: "39AD415EC4A78C0C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "31E6F219B4E50227"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0C890E7F19BB1B3C"
+				item: { count: 1, id: "immersive_aircraft:engine" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E1AD72AF2E8C254"
+				"2BD079F13B42814F"
+			]
+			id: "73BB120B52863A51"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7403ABE8BE038FAC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "34135D56C95501D2"
+				item: { count: 1, id: "immersive_aircraft:steel_boiler" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39AD415EC4A78C0C"]
+			id: "372FB6DF1B0EF6F2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2D9DEBC8BE8618DE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1322A85CB519792C"
+				item: { count: 1, id: "immersive_aircraft:biplane" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39AD415EC4A78C0C"]
+			id: "3E52E051490819D0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "73F3B90E8F4AB710"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "26E4D73211447E09"
+				item: { count: 1, id: "immersive_aircraft:airship" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E52E051490819D0"]
+			id: "521B422C1BC9EB2A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0ADF5E7609AF1016"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "40D26CAD9398C731"
+				item: { count: 1, id: "immersive_aircraft:cargo_airship" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39AD415EC4A78C0C"]
+			id: "45FA4CD875807C3C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5654E4FA832DD4E1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6885E943D683E604"
+				item: { count: 1, id: "immersive_aircraft:quadrocopter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E1AD72AF2E8C254"]
+			id: "2BD079F13B42814F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "38F45EDDEB450B57"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				id: "2318B47F940EA014"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "4C5E2B1679AE4ABA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6D551BC2BF1DDE76"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5F5EF0BB956BD389"
+				item: { count: 1, id: "immersive_aircraft:eco_engine" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "61A64DA22EAC1E25"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "469BC7A5E2E35128"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0CEF48770EAE4BB5"
+				item: { count: 1, id: "immersive_aircraft:nether_engine" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "1C3CF5926342F349"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5C4E09A31E1C7B43"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "76432D7204F527D7"
+				item: { count: 1, id: "immersive_aircraft:sturdy_pipes" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "26780D7DD8148475"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "099F3FBEFE2BB0A3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0AAB5D43B422A2E6"
+				item: { count: 1, id: "immersive_aircraft:enhanced_propeller" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "564B9989DE4190F8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "21B5B4A5E892CADD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "11DC2B0814BD1EC2"
+				item: { count: 1, id: "immersive_aircraft:improved_landing_gear" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "42DB983A7D07A743"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "61DE0B9CBE31FBDA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5452F183BD45F18A"
+				item: { count: 1, id: "immersive_aircraft:gyroscope" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "28E0A0C13EDB61C8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "55EA2CA3200D76C2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2A2E11F0FAFA1E5E"
+				item: { count: 1, id: "immersive_aircraft:industrial_gears" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "07599F5D924D5F5C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0B41399764BA4C43"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "61867F9A16B8D79A"
+				item: { count: 1, id: "immersive_aircraft:hull_reinforcement" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"15B6FD274AFFE0CA"
+				"5E7D248B3C15ADFD"
+			]
+			id: "1E1AD72AF2E8C254"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1447B8D1502715B8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7537CB3054B1ACAA"
+				item: { count: 1, id: "immersive_aircraft:boiler" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1624CCC544DD8288"]
+			id: "15B6FD274AFFE0CA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "25AC5EB92EFBBEEF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "02B5B77F52AD24D4"
+				item: { count: 1, id: "create_sa:large_fueling_tank" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1DE10E0714BFF778"]
+			id: "1624CCC544DD8288"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7877CF7B81252779"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4C99C42057DF87D6"
+				item: { count: 1, id: "create_sa:medium_fueling_tank" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			hide_dependency_lines: true
+			id: "1DE10E0714BFF778"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "382B52C3658DBA01"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5C83585D863F36A4"
+				item: { count: 1, id: "create_sa:small_fueling_tank" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			id: "130011EAAAB3FA06"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "48CA53A506A8A439"
+				item: {
+					count: 1
+					id: "butchercraft:cooked_beef_roast"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FDC15B013EEFC92"
+				item: { count: 1, id: "immersive_aircraft:gyrodyne" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58A94F4B434B31CD"]
+			id: "1953677BFA82BE78"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "542A021738784E6C"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1CCF41BDB3638AFC"
+					item: {
+						count: 1
+						id: "minecraft:water_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6C1E4FAAD921C97B"
+				item: { count: 1, id: "create_sa:brass_exoskeleton_chestplate" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E7D248B3C15ADFD"]
+			id: "6B880C8734FE8D0C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "43005D9026B04874"
+				item: {
+					count: 1
+					id: "minecraft:coal_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CC7D7A885A81C7A"
+				item: { count: 1, id: "create_sa:andesite_jetpack_chestplate" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E7D248B3C15ADFD"]
+			id: "1C146812ECEF35E0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "6B28930F2CEFB90B"
+				item: {
+					count: 1
+					id: "minecraft:coal_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D75DE983D0917D3"
+				item: { count: 1, id: "create_sa:andesite_exoskeleton_chestplate" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E7D248B3C15ADFD"]
+			id: "00C0C609FD96A90D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "1CF63D40028E380C"
+				item: {
+					count: 1
+					id: "minecraft:coal_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "47F375F3B49B541E"
+				item: { count: 1, id: "create_sa:grapplin_whisk" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			id: "58A94F4B434B31CD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1362E4F2860F2E07"
+				item: { count: 1, id: "create_sa:steam_engine" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			id: "5E7D248B3C15ADFD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "232E0C5C246B1812"
+				item: { count: 1, id: "create_sa:heat_engine" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58A94F4B434B31CD"]
+			id: "3622034AE0FD46AA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "734B0CBC515EA4D9"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "029A1C877FF37BC6"
+					item: {
+						count: 1
+						id: "minecraft:water_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B724B9CA33802F1"
+				item: { count: 1, id: "create_sa:brass_jetpack_chestplate" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			id: "6FC1C0839095AC2D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32229E6063255A14"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["41C38AC7AA97CFAD"]
+			icon: {
+				id: "man_of_many_planes:economy_plane"
+			}
+			id: "7DED9A87C6CB80F0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7DE6E5BD8D3D1A81"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "52036812E8C02D60"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6B4CDEDB13CC29BC"
+				item: { count: 1, id: "immersive_aircraft:rotary_cannon" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "07C55A79B24B5FF8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "248AD33B7AACAB74"
+				item: { count: 1, id: "immersive_aircraft:heavy_crossbow" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "152B248FDC49A174"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "762AE28242A79926"
+				item: { count: 1, id: "immersive_aircraft:bomb_bay" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2BD079F13B42814F"]
+			id: "4AF11FA853E59985"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0675F2B38D9C7B23"
+				item: { count: 1, id: "immersive_aircraft:telescope" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			hide_dependency_lines: true
+			id: "2053C8AC43D015A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "427E8221A84132DA"
+				item: { count: 1, id: "create_sa:small_filling_tank" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2053C8AC43D015A0"]
+			id: "7B0F4836728F6D5D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3D704E7BD0461AC5"
+				item: { count: 1, id: "create_sa:medium_filling_tank" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7B0F4836728F6D5D"]
+			hide_dependent_lines: true
+			id: "074C76DFE4961F74"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "336BD3B045C62DBE"
+				item: { count: 1, id: "create_sa:large_filling_tank" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DED9A87C6CB80F0"]
+			id: "664A7BCA64EF8857"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "082812D6BFE92EE1"
+				item: {
+					count: 1
+					id: "create:copper_sheet"
+				}
+				random_bonus: 9
+				type: "item"
+			}]
+			tasks: [{
+				id: "432CD8441A6694B0"
+				item: { count: 1, id: "create_sa:hydraulic_engine" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["664A7BCA64EF8857"]
+			id: "3CCD7E34B8DDB3D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7DBB0F0669D2EDBA"
+				item: { count: 1, id: "create_sa:copper_jetpack_chestplate" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["664A7BCA64EF8857"]
+			id: "4AD353EACDE6DD71"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0282053DDEEB7B60"
+				item: { count: 1, id: "create_sa:copper_exoskeleton_chestplate" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DAD17F55E0D4B85"]
+			id: "21A255A324AD3CE0"
+			invisible: true
+			invisible_until_tasks: 1
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "121589E89F15DAA9"
+				item: { count: 1, id: "create_enchantment_industry:enchanting_template" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1DAD17F55E0D4B85"]
+			id: "40DE31F53D2C424C"
+			invisible: true
+			invisible_until_tasks: 1
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "37D58CAA456CDA8F"
+				item: { count: 1, id: "create:railway_casing" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40DE31F53D2C424C"]
+			id: "0C08D93D8F1DAD66"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "62326848FB146F1F"
+				item: { count: 1, id: "create:track_observer" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["40DE31F53D2C424C"]
+			id: "49DDEA93CFD2BAA5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "351C4CF3527C87D1"
+				item: { count: 1, id: "create:controls" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1DAD17F55E0D4B85"]
+			id: "270B0ACA8FAB5482"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2541BFE96AAC9309"
+				item: { count: 1, id: "create:schedule" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5A8FA422166974A0"]
+			id: "1DAD17F55E0D4B85"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "26A805D9752BC8C9"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["12DF597B6B5CD4A3"]
+			id: "3914C78F40176BB3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "360698F9348E1A09"
+				item: { count: 1, id: "create_enchantment_industry:super_experience_nugget" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"27F30A468AFE992E"
+				"6D3E4BC39109B85C"
+			]
+			dependency_requirement: "one_completed"
+			id: "12DF597B6B5CD4A3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "create_enchantment_industry:additional_order"
+				criterion: ""
+				id: "5DADDEB866CA0624"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21A255A324AD3CE0"]
+			id: "27F30A468AFE992E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "create_enchantment_industry:first_order"
+				criterion: ""
+				id: "2A9A2957E4D3D674"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21A255A324AD3CE0"]
+			id: "6D3E4BC39109B85C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "798983C0DDEEA44D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "minecraft:silverfish"
+				type: "observation"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40DE31F53D2C424C"]
+			id: "524FC60B4E4AEBAA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "142D90837EFF3B98"
+				item: { count: 1, id: "create:track_station" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["40DE31F53D2C424C"]
+			id: "5A52BEB442B35A32"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5A0EFD809F015721"
+				item: { count: 1, id: "create:track_signal" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3622034AE0FD46AA"]
+			id: "50C856849F88D673"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5EC35CD2636BF24C"
+				item: { components: { "ftbfiltersystem:filter": "(create_jetpack:netherite_jetpack | create_jetpack:jetpack)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["372FB6DF1B0EF6F2"]
+			id: "0C0CFC7F2BA5C877"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2F161BD55339EAC4"
+				item: { count: 1, id: "man_of_many_planes:scarlet_biplane" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["372FB6DF1B0EF6F2"]
+			id: "2A0807E6092A927B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C3CB0B2C074515E"
+				item: { count: 1, id: "man_of_many_planes:economy_plane" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"46E16005AA8F9C8A"
+				"7DED9A87C6CB80F0"
+				"07C28031281E5458"
+			]
+			hide_until_deps_complete: true
+			id: "6D20D47B7F514221"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "7494AC6EFB55C460"
+					item: { count: 1, id: "naturescompass:naturescompass" }
+					type: "item"
+				}
+				{
+					id: "7609894C79E62F6D"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -1.5d
+		}
+	]
+}

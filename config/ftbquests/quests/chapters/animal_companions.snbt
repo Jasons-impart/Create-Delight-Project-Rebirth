@@ -1,0 +1,3420 @@
+{
+	always_invisible: true
+	autofocus_id: "329597CAA8B8D983"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "animal_companions"
+	group: "7A00000000000006"
+	icon: {
+		id: "alexsmobsup:animal_dictionary"
+	}
+	id: "385CDEE9B44CE7DF"
+	images: [ ]
+	order_index: 5
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "329597CAA8B8D983"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 3.0d
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/root"
+				criterion: ""
+				id: "443BF498DB0DC050"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["329597CAA8B8D983"]
+			id: "2D43C89747A7B7EA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "03659C2299D467B9"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["329597CAA8B8D983"]
+			id: "72BA8A6D655609B8"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "38BC20E2B47797FA"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "2D498ED418390340"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21141AAC07BA0CBC"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "6D40B019C49B2AF0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3A5F91967D2C4E89"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "3406C96937AFB360"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7071C0A4D5CCA328"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "2CE5C6337A66E546"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5339FBF31DA6994C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "479251A439D11CC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6869DE55789C0DA6"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "2139307D0FFD9E7E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0AAAA3C5C9F0B06E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "3FA20983B3E0604E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1D86FF949B7DEC02"
+				item: {
+					count: 1
+					id: "alexsmobsup:maggot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ECEBF601C725441"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:fly"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "0F97A88646128947"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "39B0D2255DB7FBAE"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:lobster"
+					type: "observation"
+				}
+				{
+					id: "504F7B2D7C432862"
+					item: { count: 1, id: "crabbersdelight:clawster" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "3F6EFB34EF491D4B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58C8F889A7D2A4E8"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:cockroach"
+				type: "observation"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3F6EFB34EF491D4B"]
+			id: "51563CFF592AD2A1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "20D4AE0BC06F7606"
+				item: {
+					count: 1
+					id: "alexsmobsup:sombrero"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/la_cucaracha"
+					criterion: ""
+					id: "6097DF291FDF50D7"
+					type: "advancement"
+				}
+				{
+					id: "3DBAD14BE85F1168"
+					item: { count: 1, id: "alexsmobsup:maraca" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "6C115AB4149281C7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "02F0DDE020BB177A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
+				criterion: ""
+				id: "1EE8325CF046A4A1"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6C115AB4149281C7"]
+			id: "16BA0AC58478A8CE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "64AC794577999387"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/mantis_shrimp_bucket"
+				criterion: ""
+				id: "3022698C57543B0A"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C115AB4149281C7"]
+			id: "3834AFBFC5D44478"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "39D9334BE4BC8448"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "362E7CAEB6359C35"
+				item: { count: 1, id: "alexsmobsup:shrimp_fried_rice" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "46EAAF318C57196E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6704A24313E7A871"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:leafcutter_ant"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["46EAAF318C57196E"]
+			id: "495DDB24D781F836"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stomp_leafcutter_anthill"
+				criterion: ""
+				id: "251DBB51F083D318"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["46EAAF318C57196E"]
+			id: "279AA1CC6987C65C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/gongylidia"
+				criterion: ""
+				id: "5EC34C6B01FF8506"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["46EAAF318C57196E"]
+			id: "1BB0B8F4B9E12E13"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/leafcutter_ant_pupa"
+				criterion: ""
+				id: "3CBC9DF85276CBEE"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2D498ED418390340"]
+			id: "1D36D13A35180A3E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tarantula_hawk"
+				criterion: ""
+				id: "38CA26DA01C088D7"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1D36D13A35180A3E"]
+			id: "1DE8606EE07B72B2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+				criterion: ""
+				id: "7E51741312EAB0AF"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6D40B019C49B2AF0"]
+			id: "5E6EF6FD4C7F5B0C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E1EFF2702801B3B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:mimic_octopus"
+				type: "observation"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E6EF6FD4C7F5B0C"]
+			id: "46BEF70C21365072"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "65D3086861273C9E"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D40B019C49B2AF0"]
+			id: "7937050D1F568DA3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66FA6E345AD5011F"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:giant_squid"
+				type: "observation"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7937050D1F568DA3"]
+			id: "7A4B1B3974A84018"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "30CAA24EDAE2CB77"
+				item: { count: 1, id: "alexsmobsup:lost_tentacle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D40B019C49B2AF0"]
+			id: "03B6AA49836A0293"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "26D1B4E0E8419AFA"
+					item: { count: 1, id: "alexsmobsup:banana_slug_slime" }
+					type: "item"
+				}
+				{
+					id: "2BD32F4430C927AF"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:banana_slug"
+					type: "observation"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1B36D2B9486430FD"]
+			id: "3F9363544B229F76"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "70D0D7089AC6163F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "23EEA9900FFB3D35"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:rain_frog"
+				type: "observation"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "58BA5FB6997A9FA0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6B3A0FFC90C3D02F"
+					item: { count: 1, id: "alexsmobsup:bear_fur" }
+					type: "item"
+				}
+				{
+					id: "4347BE134452BC01"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:grizzly_bear"
+					type: "observation"
+				}
+			]
+			x: 11.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "20A07BF7CAE1BEAE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "539EEE1C15279DC4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "7AB61A05B823FFA8"
+					item: { count: 1, id: "alexsmobsup:gazelle_horn" }
+					type: "item"
+				}
+				{
+					id: "57EBB3E5A2509269"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:gazelle"
+					type: "observation"
+				}
+			]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "252F78F22BBA6748"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_gorilla"
+				criterion: ""
+				id: "465ECE066E6F6AE0"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["252F78F22BBA6748"]
+			id: "4D9E258D21FDC5E2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "08A42A32C658EF80"
+				type: "checkmark"
+			}]
+			x: 15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "2A952709E62C7F2E"
+			invisible_until_tasks: 1
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_capuchin"
+				criterion: ""
+				id: "031595708F4164FB"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "5679FB8E147767A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					entity: "alexsmobs:moose"
+					id: "3A62476C609E3E62"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "10FB765329FBD5C2"
+					item: { count: 1, id: "alexsmobsup:moose_ribs" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "1D54630158C99EF6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					entity: "alexsmobs:raccoon"
+					id: "36A58C7DA22DBEA7"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "37172F6EE8B6669E"
+					item: { count: 1, id: "alexsmobsup:frontier_cap" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "6EAA339D4F200827"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2C5A3D1635F30408"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:elephant"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6EAA339D4F200827"]
+			id: "61CC1CD2B4540255"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/tame_elephant"
+					criterion: ""
+					id: "12C6E4FB4E52A36E"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_elephant_tusked"
+					criterion: ""
+					id: "30A25B597D5CB5BE"
+					type: "advancement"
+				}
+			]
+			x: 15.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6EAA339D4F200827"]
+			id: "0FC8BFDE2C473840"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/elephant_swag"
+				criterion: ""
+				id: "492A5ABFBB7523BE"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "1A495CE0CAF6F56A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6B5448F23EDC603D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:snow_leopard"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "01D523FA3EA70A94"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					entity: "alexsmobs:kangaroo"
+					id: "666B13C51971E411"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1650715046A08EFF"
+					item: { count: 1, id: "alexsmobsup:kangaroo_meat" }
+					type: "item"
+				}
+				{
+					id: "04349BF6291948FF"
+					item: { count: 1, id: "alexsmobsup:kangaroo_hide" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["01D523FA3EA70A94"]
+			id: "4638A0A6517DD591"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/kangaroo"
+				criterion: ""
+				id: "2699D27E3ADD295B"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "1EAAC1270DC6D4C3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3BE604425B2C674B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1EB421ADA8329A7D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:platypus"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "7DCA89E5DFCE50DB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66C8D7D7BA72CE19"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:tasmanian_devil"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "2C872785ACB6C74F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6464994721FB94A8"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:tiger"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C872785ACB6C74F"]
+			id: "2038EA092FA0866A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tigers_blessing"
+				criterion: ""
+				id: "272CCF7459FCB77D"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "7A2C0F3AEF9C09CF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "328B93B6D0E09028"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:anteater"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A2C0F3AEF9C09CF"]
+			id: "570C5C561EF72C08"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_anteater"
+				criterion: ""
+				id: "2C9C3E14102D8117"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "391BB239A590E550"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/maned_wolf_apple"
+				criterion: ""
+				id: "5FF5CD05849D7050"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "2A654385DFA4330F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D1BE159880BD66A"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:gelada_monkey"
+				type: "observation"
+			}]
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "2DB6F8A68D183B30"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5CA317236BA0A601"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:jerboa"
+				type: "observation"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "3839E990AED323F9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1F916F8CD7859138"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:rhinoceros"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "767D768BEE5484A6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					entity: "alexsmobs:bison"
+					id: "2B7A30B9E59721C3"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "72D020C523CDBBCB"
+					item: { count: 1, id: "alexsmobsup:bison_fur" }
+					type: "item"
+				}
+				{
+					id: "6418130A40EAE332"
+					item: { count: 1, id: "alexsdelight:raw_bison" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["767D768BEE5484A6"]
+			id: "4FF63C846511501E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/bison_spyglass"
+				criterion: ""
+				id: "334118673EF20472"
+				type: "advancement"
+			}]
+			x: 10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "02A266C8DD0590A9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "025D4120A0BD28CF"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:sugar_glider"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3406C96937AFB360"]
+			id: "0E55D456F9FEB190"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1A80095E99CC468B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:skunk"
+				type: "observation"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E55D456F9FEB190"]
+			id: "7454F22C77A7885B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/skunk"
+				criterion: ""
+				id: "411B491992EA9948"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0E55D456F9FEB190"]
+			id: "7C3AE4B1343C1002"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "18AAF35A21CD54AC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stink_bottle"
+				criterion: ""
+				id: "1059EE3CF5FC3FC7"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "0761CA25B3C69985"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/orcas_might"
+				criterion: ""
+				id: "0F842D80E3F7C09E"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "450FE48802B14A3A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "286A99242267B61D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:seal"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["450FE48802B14A3A"]
+			id: "05239181F7424ABB"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "72FA6433580D62F7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "027B8E3AE10DCF3D"
+				item: { count: 1, id: "alexsmobsup:music_disc_thime" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "192FA26082D2D2E3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "30D0D562EA659B4F"
+					item: { count: 1, id: "alexsmobsup:ambergris" }
+					type: "item"
+				}
+				{
+					id: "164DD205A5729D23"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:cachalot_whale"
+					type: "observation"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["192FA26082D2D2E3"]
+			id: "7B65475E3465CD6D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+				criterion: ""
+				id: "32DFF334920BEFF8"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7DE4D2A722B1E8D3"]
+			id: "200BE0346750BD7C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "560EB658F68BFA7F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3926A3F34AD6163B"
+				item: { count: 1, id: "alexsdelight:lobster_pasta" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "08E78BF8E0F74568"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "71AF00C4C43C14D2"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:hammerhead_shark"
+					type: "observation"
+				}
+				{
+					id: "4822E0332078D4ED"
+					item: { count: 1, id: "alexsmobsup:shark_tooth" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["08E78BF8E0F74568"]
+			id: "437DFD02C894B95F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7709C1A6CCC976DD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "679E1D4E09E0679B"
+				item: { count: 1, id: "alexsmobsup:shark_tooth_arrow" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "36EB5129708FBA15"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "4084D56F83EEAD59"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:blobfish"
+					type: "observation"
+				}
+				{
+					id: "3039C767684F92ED"
+					item: { count: 1, id: "alexsmobsup:blobfish" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "4805585F92709098"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "08633932FCE0A4E5"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:frilled_shark"
+					type: "observation"
+				}
+				{
+					id: "35E9875794145D78"
+					item: { count: 1, id: "alexsmobsup:serrated_shark_tooth" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "394502E95EC5440E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3ED92A38E6A3A52E"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:comb_jelly"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "7A0E4EFDA75630CD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "33934351F56DE75F"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:devils_hole_pupfish"
+					type: "observation"
+				}
+				{
+					id: "2BA56732F5EF4986"
+					item: { count: 1, id: "alexsmobsup:pupfish_locator" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "79C56F08122BE78D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "48F1B0556A34E1C9"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:catfish"
+					type: "observation"
+				}
+				{
+					id: "25ACEBB3D7BC5210"
+					item: { count: 1, id: "alexsmobsup:raw_catfish" }
+					type: "item"
+				}
+				{
+					id: "74DEDB4C42B9E6EC"
+					item: { count: 1, id: "alexsdelight:raw_catfish_slice" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "388B2A88515A4630"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7FF9A412908134BF"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:flying_fish"
+				type: "observation"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["388B2A88515A4630"]
+			id: "50DDEB97D7753381"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "10BD7EAD65E45135"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "5A6FF92825255280"
+					item: { count: 1, id: "alexsmobsup:flying_fish" }
+					type: "item"
+				}
+				{
+					id: "50032E0DE1F1DE3E"
+					item: { count: 1, id: "alexsmobsup:flying_fish_boots" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CE5C6337A66E546"]
+			id: "2DFE321E71D79BC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "30E0B24BE7D7FDE4"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:mudskipper"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "4743C926071C0585"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76FD74CF56B41297"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:roadrunner"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4743C926071C0585"]
+			id: "2E36BDC42EC230B7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6C0667DE98929C72"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "5F9F240E131C84CF"
+					item: { count: 1, id: "alexsmobsup:roadrunner_feather" }
+					type: "item"
+				}
+				{
+					id: "034202F9303C0B42"
+					item: { count: 1, id: "alexsmobsup:roadrunner_boots" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "330DAC55A9465BE6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6075BA1F10BD43FA"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:hummingbird"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["330DAC55A9465BE6"]
+			id: "0E1C902EF4FEB5BC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4DB79DF4F1257517"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7AC21581D556F35D"
+				item: { count: 1, id: "alexsmobsup:hummingbird_feeder" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "7C45034984F4403E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "17C0AFA3F8B674BB"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:shoebill"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "61912B35E6B1D776"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "52117A6E12602464"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:crow"
+				type: "observation"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "36D42F9A4EC169F2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2B8767819E6CF62B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:emu"
+				type: "observation"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["36D42F9A4EC169F2"]
+			id: "2214C72F1AE667F8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "2C7096E9EBC701E5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6B5769DE57249D55"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "40ACB175F7ABB148"
+					item: { count: 1, id: "alexsmobsup:boiled_emu_egg" }
+					type: "item"
+				}
+				{
+					id: "779E8379F55EDFA0"
+					item: { count: 1, id: "alexsmobsup:emu_feather" }
+					type: "item"
+				}
+				{
+					id: "521D9A2DE28B8836"
+					item: { count: 1, id: "alexsmobsup:emu_leggings" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "37FE93B0077CB8B9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6F93AAA31B2ABDC1"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:bald_eagle"
+				type: "observation"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["37FE93B0077CB8B9"]
+			id: "7C6E1A08ED704B14"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3A2B5276AEAC607F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "2F2C51F0BE187DE5"
+					item: { count: 1, id: "alexsmobsup:falconry_hood" }
+					type: "item"
+				}
+				{
+					id: "00FB3AE0F99B774B"
+					item: { count: 1, id: "alexsmobsup:falconry_glove" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["37FE93B0077CB8B9"]
+			id: "3EE311AC8DEDD23E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "50F718D6564F7C40"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
+				criterion: ""
+				id: "21AEB1C2D9472EE1"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "5AEAA0F69C78AA51"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5C71A6B8F7EBAA35"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:seagull"
+				type: "observation"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "00D8B6C2E44098BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2E0E295C5E8420EF"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:toucan"
+				type: "observation"
+			}]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "53B99E7B12E2323D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10151E02D9F2D8FE"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:potoo"
+				type: "observation"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2139307D0FFD9E7E"]
+			id: "47D6511DD2B6B1A7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2E66061EBCE422BB"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:blue_jay"
+				type: "observation"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "6E3A9BF0C60F56BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2AADF4A9569858CC"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:crocodile"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6E3A9BF0C60F56BA"]
+			id: "4AA8259F19C6FAA8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6974BCA5BB02B9CD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "7AD8576992252535"
+					item: { count: 1, id: "alexsmobsup:crocodile_scute" }
+					type: "item"
+				}
+				{
+					id: "718109899A3364ED"
+					item: { count: 1, id: "alexsmobsup:crocodile_chestplate" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E3A9BF0C60F56BA"]
+			id: "42291E1CBECC1841"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1334AFFB6CB22F14"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_crocodile"
+				criterion: ""
+				id: "652579936E361641"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "6CFA5CC70593B55A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "316327683276A388"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:rattlesnake"
+				type: "observation"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "2D6683F152B6142F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6088355BA30B490B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:komodo_dragon"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "5E652FD2F0B95DD7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "392684F4BEBBEFC4"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:alligator_snapping_turtle"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E652FD2F0B95DD7"]
+			id: "0E3E76591FA54573"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4C6DB8AB09517D6F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "758303DEB25195CD"
+					item: { count: 1, id: "alexsmobsup:spiked_turtle_shell" }
+					type: "item"
+				}
+				{
+					id: "4BBEB436CA301C89"
+					item: { count: 1, id: "alexsmobsup:spiked_scute" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "52505BF5259BA8AC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10E2CA954023A34A"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:anaconda"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["52505BF5259BA8AC"]
+			id: "42482BAB4134755C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "094E7E6B8A17802C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "08D0DB8221608E76"
+					item: { count: 1, id: "alexsmobsup:vine_lasso" }
+					type: "item"
+				}
+				{
+					id: "6CA7C1E6BE4C4042"
+					item: { count: 1, id: "alexsmobsup:shed_snake_skin" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["479251A439D11CC8"]
+			id: "64076301645B2D46"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "77B3D97CEFDD33BE"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:terrapin"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72BA8A6D655609B8"]
+			hide_until_deps_visible: false
+			id: "2FA1DDD66F69F506"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "4AB12EC1A073E7F7"
+				type: "dimension"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["72BA8A6D655609B8"]
+			hide_until_deps_visible: false
+			id: "7C03FBDCD77655A6"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2A2260741F096F47"
+				type: "dimension"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72BA8A6D655609B8"]
+			hide_until_deps_visible: false
+			id: "3F57397F4636474E"
+			invisible: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "0CE127194F3B1957"
+				type: "dimension"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "6E1EE3D2E983FA61"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0F5B51349D74D268"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:sunbird"
+				type: "observation"
+			}]
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6E1EE3D2E983FA61"]
+			id: "6280AC22DE330BA5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "12E7A4C5430AB663"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/sunbird_blessing"
+				criterion: ""
+				id: "34196DA460416746"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "6F16590F869A0204"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 7
+				id: "489ADB67DA4517D0"
+				item: {
+					count: 1
+					id: "alexsmobsup:centipede_leg"
+				}
+				random_bonus: 5
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E105F16D936F3F2"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6F16590F869A0204"]
+			id: "4B6EB7EC8C98671E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1F2CEF0B681265AD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "566E51480709255B"
+					item: { count: 1, id: "alexsdelight:cooked_centipede_leg" }
+					type: "item"
+				}
+				{
+					id: "21CEB1C75A1E5BEE"
+					item: { count: 1, id: "alexsmobsup:centipede_leggings" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "01CE176BD24A481E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0B49F9768EBD4875"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:mungus"
+				type: "observation"
+			}]
+			x: -7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "6AA8FD4B9BF6CD7D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3430564BD612374D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:guster"
+				type: "observation"
+			}]
+			x: -8.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "45317DC3BB95D2B8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0C4C39694C110373"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:froststalker"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["45317DC3BB95D2B8"]
+			id: "4AF8FCD9B6C823BC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4E80560EB66119C8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "322DF16D8656B368"
+					item: { count: 1, id: "alexsmobsup:froststalker_horn" }
+					type: "item"
+				}
+				{
+					id: "786D6E4DB4A26EA1"
+					item: { count: 1, id: "alexsmobsup:froststalker_helmet" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "5DABC6DD0D628556"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4618DC8CD530D418"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:tusklin"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5DABC6DD0D628556"]
+			id: "6559835E41B08DE7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "64DA849BDD38C2B1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "65EBC654F1588A60"
+				item: { count: 1, id: "alexsmobsup:pigshoes" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "41B610E94CA650B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4A00C6FB337A6CC3"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:rocky_roller"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["41B610E94CA650B6"]
+			id: "6778D4D5AE34A39C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "028168C86A52318C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "68B27A46B853FE1C"
+					item: { count: 1, id: "alexsmobsup:rocky_shell" }
+					type: "item"
+				}
+				{
+					id: "509393342D3AA90E"
+					item: { count: 1, id: "alexsmobsup:rocky_chestplate" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "7FF00C5DE31AA3E3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0926C8F3E163A9DB"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:flutter"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "72F0394531F2BD46"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63187E3D3C2521A0"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:skelewag"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["72F0394531F2BD46"]
+			id: "72F197353ACCD96A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "2D0851980A92AB01"
+					item: {
+						count: 1
+						id: "alexsmobsup:novelty_hat"
+					}
+					type: "item"
+				}
+				{
+					id: "38558D596AE368A7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "00FA434D01D8A099"
+					item: { count: 1, id: "alexsmobsup:skelewag_sword" }
+					type: "item"
+				}
+				{
+					entity: "alexsmobs:skelewag"
+					id: "0A854F7C42D2D2B4"
+					type: "kill"
+					value: 50L
+				}
+			]
+			x: -11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "171C7E008A154EDF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "5C6283EB75B136A7"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:bunfungus"
+					type: "observation"
+				}
+				{
+					id: "62E392B294C6C199"
+					item: { count: 1, id: "alexsdelight:cooked_bunfungus_drumstick" }
+					type: "item"
+				}
+				{
+					id: "76BF32A5C0B4B8D0"
+					item: { count: 1, id: "alexsdelight:cooked_bunfungus" }
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["171C7E008A154EDF"]
+			id: "2D36E8EBFAB0A1B4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4DE233562A15AC5E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "412FCD971DA503CD"
+				item: { count: 1, id: "alexsdelight:bunfungus_sandwich" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "0D02B11D949BC139"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "393029EC949D73CF"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:farseer"
+					type: "observation"
+				}
+				{
+					id: "238213641F88C348"
+					item: { count: 1, id: "alexsmobsup:farseer_arm" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "21EE69BCBAEB1981"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "3E6310813EBBC863"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:skreecher"
+					type: "observation"
+				}
+				{
+					id: "6850E2B8FEBD907E"
+					item: { count: 1, id: "alexsmobsup:skreecher_soul" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["21EE69BCBAEB1981"]
+			id: "4E8E8BD55D6EF71A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "51E5D7E6144303E2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "183F36B66EACC217"
+				item: { count: 1, id: "alexsmobsup:sculk_boomer" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "7504E14DA69AD9EA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DCCE7098C7CC384"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:underminer"
+				type: "observation"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7504E14DA69AD9EA"]
+			id: "3E540298ED0A5EF7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/ghostly_pickaxe"
+				criterion: ""
+				id: "1A3A0D8706FD209D"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			icon: {
+				id: "alexsmobsup:unsettling_kimono"
+			}
+			id: "37A9508D29A5D25C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "31129E637DDE29F4"
+				item: {
+					count: 1
+					id: "alexsmobsup:elastic_tendon"
+				}
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				id: "7344501925EE37A5"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "77034370DF997164"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "7A19D3C2B38A0AB6"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:bone_serpent"
+					type: "observation"
+				}
+				{
+					id: "7D09A969DEEE0793"
+					item: { count: 1, id: "alexsmobsup:bone_serpent_tooth" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "51A45ACF1582C283"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "0083FF2171A68BDF"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:crimson_mosquito"
+					type: "observation"
+				}
+				{
+					id: "3FD5D6BBC2E8D229"
+					item: { count: 1, id: "alexsmobsup:mosquito_proboscis" }
+					type: "item"
+				}
+				{
+					id: "50388436C7D262BA"
+					item: { count: 1, id: "alexsmobsup:blood_sac" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51A45ACF1582C283"]
+			id: "2A2972B8CE21ECE7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6426CE97F55E8EA2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "0D7352E9243983A1"
+					item: { count: 1, id: "alexsmobsup:mosquito_larva" }
+					type: "item"
+				}
+				{
+					id: "04359A206964D600"
+					item: { count: 1, id: "alexsmobsup:blood_sprayer" }
+					type: "item"
+				}
+			]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "4A4DCA48EC7E3556"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1647E8AD4FE7B380"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:warped_toad"
+				type: "observation"
+			}]
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "1DD6153130DC4731"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "5C91A9D40E9C0823"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:soul_vulture"
+					type: "observation"
+				}
+				{
+					id: "0A5509985D3799CD"
+					item: { count: 1, id: "alexsmobsup:soul_heart" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1DD6153130DC4731"]
+			id: "17609EE1776622E9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "131B5B0749193474"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "50524D04EEFFBAEF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "1F8C2B1A51E0D24E"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:dropbear"
+					type: "observation"
+				}
+				{
+					id: "063AABD6A46B913E"
+					item: { count: 1, id: "alexsmobsup:dropbear_claw" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"50524D04EEFFBAEF"
+				"37A9508D29A5D25C"
+			]
+			hide_until_deps_visible: false
+			id: "11DA4560F059DAE2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "563F3ACB24362BFB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "47C38FDE0A2CFC4C"
+				item: { count: 1, id: "alexsmobsup:tendon_whip" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "4CE3E925A6CEA4A7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "73369EBE2CC1DEDE"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:straddler"
+					type: "observation"
+				}
+				{
+					id: "46388A0C7656C3BF"
+					item: { count: 1, id: "alexsmobsup:straddlite" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4CE3E925A6CEA4A7"]
+			id: "01FF51626D2CFEC8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "54C4B601A263CDE5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0C87A6367A9DF8C1"
+				item: { count: 1, id: "alexsmobsup:straddleboard" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "7CB3EFC3AB6B61B3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10392E75B6AEEC4B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:stradpole"
+				type: "observation"
+			}]
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "6A73332F3547EA32"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "236CD0AC211D521A"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:warped_mosco"
+				type: "observation"
+			}]
+			x: -10.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["6A73332F3547EA32"]
+			id: "6CB00C51E2BDAD4C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "70DC4CE87975A10E"
+				type: "checkmark"
+			}]
+			x: -12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6A73332F3547EA32"]
+			id: "10CCDC51A38C97D0"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "02CE781092DBACF8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "3EEEC1F63EFA4C55"
+					item: { count: 1, id: "alexsmobsup:hemolymph_sac" }
+					type: "item"
+				}
+				{
+					id: "225DBFE0A4898899"
+					item: { count: 1, id: "alexsmobsup:hemolymph_blaster" }
+					type: "item"
+				}
+				{
+					id: "4B41F9A9BBDA61C0"
+					item: { count: 1, id: "alexsmobsup:warped_muscle" }
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7C03FBDCD77655A6"]
+			id: "5E3C70C3F70CE031"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "4646A63F84C71251"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:laviathan"
+				type: "observation"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5E3C70C3F70CE031"]
+			id: "5ED895209BCBDFF2"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "06EC369A8A063E24"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "4CE416F4F99D0046"
+					item: { count: 1, id: "alexsmobsup:straddle_helmet" }
+					type: "item"
+				}
+				{
+					id: "1E461BF6593B3F14"
+					item: { count: 1, id: "alexsmobsup:straddle_saddle" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5E3C70C3F70CE031"]
+			id: "23D4F6B8D11D622A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2F6E459D09E43D15"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/laviathan_spyglass"
+				criterion: ""
+				id: "38CEB8B62BFBF56C"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "2A78205F777642B2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "53B255167E75A678"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:endergrade"
+					type: "observation"
+				}
+				{
+					id: "648ABA31A88E10F1"
+					item: { count: 1, id: "alexsmobsup:chorus_on_a_stick" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "5DAB7CB303E642BF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "261185A75FC64342"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:mimicube"
+					type: "observation"
+				}
+				{
+					id: "41C1E010675349FE"
+					item: { count: 1, id: "alexsmobsup:mimicream" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "3C5526B0A2A9A2C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21A9A687FB0F6C66"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:spectre"
+				type: "observation"
+			}]
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "63C3CE4E0436A6AC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "51D4F7E9E2B1694A"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:enderiophage"
+				type: "observation"
+			}]
+			x: -5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["63C3CE4E0436A6AC"]
+			id: "2A130E907DF2A85B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3AF452B193DE58B5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3DA93C39C3448A7F"
+				item: { count: 1, id: "alexsmobsup:capsid" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "4432D4ED599F6BF9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "78AEC66BCD3AF7C5"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:cosmaw"
+				type: "observation"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3F57397F4636474E"]
+			id: "0D1C2B358358E634"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1D08F55FC2863683"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:cosmic_cod"
+				type: "observation"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0D1C2B358358E634"]
+			id: "623CC282397D6299"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0C4ED37328C4CD0A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6CC6924D0C6211CC"
+				item: { count: 1, id: "alexsmobsup:cosmic_cod" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["46A840BE69AA3FE8"]
+			hide_until_deps_visible: false
+			id: "7C0A47296C1C91B4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A2E6CF479436EC0"
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3224A32FCB23C679"
+					table_id: 5347970608351672481L
+					type: "loot"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "5C4E8DD0F44069D6"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:void_worm"
+				type: "observation"
+			}]
+			x: -5.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7C0A47296C1C91B4"]
+			id: "521942F5C730C783"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6F72F8D02DC8CA22"
+					item: { count: 1, id: "alexsmobsup:void_worm_mandible" }
+					type: "item"
+				}
+				{
+					id: "7740937B20C063CD"
+					item: { count: 1, id: "alexsmobsup:void_worm_eye" }
+					type: "item"
+				}
+				{
+					id: "4ACEEEBD50B1B308"
+					item: { count: 1, id: "alexsmobsup:void_worm_beak" }
+					type: "item"
+				}
+				{
+					id: "29EA970576CFA283"
+					item: { count: 1, id: "alexsmobsup:void_worm_effigy" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7C0A47296C1C91B4"]
+			id: "0FABEC8E21CC98B7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "686148DC750EB8FD"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["7C0A47296C1C91B4"]
+			id: "260C6AE374824BEB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5834255098790E0E"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["521942F5C730C783"]
+			id: "7FFB5FAAC2F7B09F"
+			quest_enhance_disable_scroll_paging: false
+			size: 2.0d
+			tasks: [{
+				id: "20AE9B7BAF4B4AE3"
+				item: { count: 1, id: "alexsmobsup:dimensional_carver" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7A4B1B3974A84018"]
+			id: "654DC2C17127F82C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5E7EDDE4E0F27149"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7FCEEB59602B754E"
+				item: { count: 1, id: "alexsmobsup:squid_grapple" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["192FA26082D2D2E3"]
+			id: "46D8F6D3F4DEF03E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "013F6CA6329EC260"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "22BC82B38717AA9E"
+					item: { count: 1, id: "alexsmobsup:echolocator" }
+					type: "item"
+				}
+				{
+					id: "1EC713779B2B99C9"
+					item: { count: 1, id: "alexsmobsup:endolocator" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63C3CE4E0436A6AC"]
+			id: "1A435AE2968B49A3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1E921B1906D56D1D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "377430791422CCF4"
+				item: { count: 1, id: "alexsmobsup:enderiophage_rocket" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0D02B11D949BC139"]
+			id: "1E714C5E737542A5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C8D1BEE40369E42"
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E4016BA9521933C"
+					type: "choice"
+				}
+				{
+					id: "565B8DD2B1BBF252"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4112C25C30CEEEEB"
+				item: { count: 1, id: "alexsmobsup:transmutation_table" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A952709E62C7F2E"]
+			id: "128E816E988DC5AE"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "68651911868DAEE6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "02FE07931B151883"
+				item: { count: 1, id: "alexsmobsup:sopa_de_macaco" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6AA8FD4B9BF6CD7D"]
+			id: "063E0BC71EF735A1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "2B8893F9550542FD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "44DA85D7864F3A42"
+				item: { count: 1, id: "alexsmobsup:pocket_sand" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4805585F92709098"]
+			id: "20F09C6A41ED80E7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6A5609432DBA510D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3C2CBA18BB56AD92"
+				item: { count: 1, id: "alexsmobsup:shield_of_the_deep" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["34F1729351474031"]
+			id: "667DBE03D8426EB5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "47ACEF368AF890C3"
+				item: { count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["34F1729351474031"]
+			id: "2EAA0567FC4C247B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7477ECBE911EABBC"
+				item: { count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["34F1729351474031"]
+			id: "650C9CC1F851CAEF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7E92CFD6AE82FA4D"
+				item: { count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["34F1729351474031"]
+			id: "65A0A858CA04B30F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2F095AA05F7BEE9C"
+				item: { count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5679FB8E147767A0"]
+			id: "0819134B5318C8D7"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "7B77287CAE03140B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2DE3594456D0022B"
+				item: { count: 1, id: "alexsmobsup:moose_headgear" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1EAAC1270DC6D4C3"]
+			id: "16AA48B09044FD81"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4F8EE5ABC5F976E5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5DD62A067CF96C41"
+				item: { count: 1, id: "alexsmobsup:fedora" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["279AA1CC6987C65C"]
+			id: "01F1F20AB559D153"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "66CB59C62AAD7F6C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5EB8112B1419321E"
+				item: { count: 1, id: "alexsdelight:gongylidia_bruschetta" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["3FA20983B3E0604E"]
+			id: "6595BD1BA1CD9C36"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4102CEA8C97FE6BA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2A0D2359FE6DD582"
+				item: { count: 1, id: "alexsdelight:maggot_salad" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["767D768BEE5484A6"]
+			id: "5147C1516FF15451"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "66376ABFA4C9F201"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "117EC3E57C77938D"
+					item: { count: 1, id: "alexsdelight:bison_burger" }
+					type: "item"
+				}
+				{
+					id: "7D715DA6C66877A1"
+					item: { count: 1, id: "alexsdelight:bison_patty" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["01D523FA3EA70A94"]
+			id: "397E1B19721A295B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "28D95C3D968225CD"
+				item: { count: 1, id: "alexsdelight:kangaroo_pasta" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"72F0394531F2BD46"
+				"11DA4560F059DAE2"
+				"7C6E1A08ED704B14"
+				"767D768BEE5484A6"
+				"4B6EB7EC8C98671E"
+				"6778D4D5AE34A39C"
+				"03B6AA49836A0293"
+				"0761CA25B3C69985"
+				"1DD6153130DC4731"
+				"4D9E258D21FDC5E2"
+				"450FE48802B14A3A"
+				"2D6683F152B6142F"
+				"17609EE1776622E9"
+				"7C03FBDCD77655A6"
+				"6CB00C51E2BDAD4C"
+				"0FC8BFDE2C473840"
+				"200BE0346750BD7C"
+				"63C3CE4E0436A6AC"
+				"20A07BF7CAE1BEAE"
+				"2FA1DDD66F69F506"
+				"64076301645B2D46"
+				"01D523FA3EA70A94"
+				"53B99E7B12E2323D"
+				"61CC1CD2B4540255"
+				"5679FB8E147767A0"
+				"51563CFF592AD2A1"
+				"2214C72F1AE667F8"
+				"397E1B19721A295B"
+				"3834AFBFC5D44478"
+				"6A73332F3547EA32"
+				"1D36D13A35180A3E"
+				"2A130E907DF2A85B"
+				"4A4DCA48EC7E3556"
+				"6E1EE3D2E983FA61"
+				"479251A439D11CC8"
+				"252F78F22BBA6748"
+				"4E8E8BD55D6EF71A"
+				"6EAA339D4F200827"
+				"3E540298ED0A5EF7"
+				"6D40B019C49B2AF0"
+				"7B65475E3465CD6D"
+				"6280AC22DE330BA5"
+				"1A495CE0CAF6F56A"
+				"5AEAA0F69C78AA51"
+				"2DB6F8A68D183B30"
+				"21EE69BCBAEB1981"
+				"72BA8A6D655609B8"
+				"7504E14DA69AD9EA"
+				"7FFB5FAAC2F7B09F"
+				"7DCA89E5DFCE50DB"
+				"5DAB7CB303E642BF"
+				"5DABC6DD0D628556"
+				"0F97A88646128947"
+				"7A2C0F3AEF9C09CF"
+				"0D1C2B358358E634"
+				"50524D04EEFFBAEF"
+				"2A654385DFA4330F"
+				"1DE8606EE07B72B2"
+				"41B610E94CA650B6"
+				"3F57397F4636474E"
+				"6559835E41B08DE7"
+				"7FF00C5DE31AA3E3"
+				"4AF8FCD9B6C823BC"
+				"2A2972B8CE21ECE7"
+				"3F6EFB34EF491D4B"
+				"36EB5129708FBA15"
+				"4AA8259F19C6FAA8"
+				"623CC282397D6299"
+				"05239181F7424ABB"
+				"23D4F6B8D11D622A"
+				"0FABEC8E21CC98B7"
+				"521942F5C730C783"
+				"72F197353ACCD96A"
+				"61912B35E6B1D776"
+				"329597CAA8B8D983"
+				"394502E95EC5440E"
+				"7A0E4EFDA75630CD"
+				"6AA8FD4B9BF6CD7D"
+				"388B2A88515A4630"
+				"1D54630158C99EF6"
+				"51A45ACF1582C283"
+				"79C56F08122BE78D"
+				"0E55D456F9FEB190"
+				"0E1C902EF4FEB5BC"
+				"4638A0A6517DD591"
+				"650C9CC1F851CAEF"
+				"6595BD1BA1CD9C36"
+				"01FF51626D2CFEC8"
+				"4FF63C846511501E"
+				"36D42F9A4EC169F2"
+				"192FA26082D2D2E3"
+				"6E3A9BF0C60F56BA"
+				"08E78BF8E0F74568"
+				"3839E990AED323F9"
+				"7454F22C77A7885B"
+				"260C6AE374824BEB"
+				"2E36BDC42EC230B7"
+				"6F16590F869A0204"
+				"654DC2C17127F82C"
+				"1EAAC1270DC6D4C3"
+				"1A435AE2968B49A3"
+				"667DBE03D8426EB5"
+				"37FE93B0077CB8B9"
+				"42482BAB4134755C"
+				"7C0A47296C1C91B4"
+				"279AA1CC6987C65C"
+				"77034370DF997164"
+				"3FA20983B3E0604E"
+				"3C5526B0A2A9A2C3"
+				"20F09C6A41ED80E7"
+				"52505BF5259BA8AC"
+				"3F9363544B229F76"
+				"2D43C89747A7B7EA"
+				"3EE311AC8DEDD23E"
+				"0819134B5318C8D7"
+				"2A952709E62C7F2E"
+				"3406C96937AFB360"
+				"570C5C561EF72C08"
+				"7CB3EFC3AB6B61B3"
+				"4CE3E925A6CEA4A7"
+				"063E0BC71EF735A1"
+				"0E3E76591FA54573"
+				"4805585F92709098"
+				"437DFD02C894B95F"
+				"7C3AE4B1343C1002"
+				"1BB0B8F4B9E12E13"
+				"5147C1516FF15451"
+				"42291E1CBECC1841"
+				"4432D4ED599F6BF9"
+				"0D02B11D949BC139"
+				"50DDEB97D7753381"
+				"10CCDC51A38C97D0"
+				"5ED895209BCBDFF2"
+				"7A4B1B3974A84018"
+				"5E3C70C3F70CE031"
+				"128E816E988DC5AE"
+				"02A266C8DD0590A9"
+				"7C45034984F4403E"
+				"2139307D0FFD9E7E"
+				"16BA0AC58478A8CE"
+				"495DDB24D781F836"
+				"7937050D1F568DA3"
+				"58BA5FB6997A9FA0"
+				"171C7E008A154EDF"
+				"5E652FD2F0B95DD7"
+				"2D36E8EBFAB0A1B4"
+				"47D6511DD2B6B1A7"
+				"37A9508D29A5D25C"
+				"45317DC3BB95D2B8"
+				"16AA48B09044FD81"
+				"5E6EF6FD4C7F5B0C"
+				"00D8B6C2E44098BA"
+				"46EAAF318C57196E"
+				"391BB239A590E550"
+				"2A78205F777642B2"
+				"2D498ED418390340"
+				"46D8F6D3F4DEF03E"
+				"6C115AB4149281C7"
+				"01CE176BD24A481E"
+				"01F1F20AB559D153"
+				"65A0A858CA04B30F"
+				"6CFA5CC70593B55A"
+				"2CE5C6337A66E546"
+				"46BEF70C21365072"
+				"330DAC55A9465BE6"
+				"2EAA0567FC4C247B"
+				"2C872785ACB6C74F"
+				"2038EA092FA0866A"
+				"4743C926071C0585"
+				"2DFE321E71D79BC8"
+				"1E714C5E737542A5"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			id: "2F7AECCF9B917BA9"
+			invisible: true
+			invisible_until_tasks: 173
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 10
+				id: "7E0D781487F9766F"
+				item: {
+					count: 1
+					id: "createdelightcore:netherite_coin"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 4.0d
+			tasks: [{
+				id: "42788507008F7243"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["05239181F7424ABB"]
+			id: "63EE3D36DD276BB9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A2327F6CEE2F505"
+					table_id: 5347970608351672481L
+					type: "loot"
+				}
+				{
+					command: "/say Hi, @p!"
+					id: "3EA4DAD8A2CB6C8A"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "1D7933169D4E605A"
+				item: { count: 1, id: "alexsmobsup:music_disc_daze" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2A130E907DF2A85B"]
+			id: "46A840BE69AA3FE8"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 10
+					id: "4FBEF60FE1B491FF"
+					item: {
+						count: 1
+						id: "alexsmobsup:mosquito_larva"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6DCD46DEA00DA464"
+					item: {
+						count: 1
+						id: "alexsmobsup:mimicream"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "6D240EB0FCB09272"
+				item: { count: 1, id: "alexsmobsup:mysterious_worm" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7FFB5FAAC2F7B09F"]
+			id: "584C6AB9A906D64B"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 3
+				id: "75049C1F2587C15D"
+				item: {
+					count: 1
+					id: "alexsmobsup:mimicream"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D27CED1DCFD7814"
+				item: { count: 1, id: "alexsmobsup:shattered_dimensional_carver" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["584C6AB9A906D64B"]
+			id: "1C1089DFEAF07C73"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D3652C06327CAB2"
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexsmobs:farseer"
+				id: "08FB5D7D992E9B8A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1C1089DFEAF07C73"]
+			id: "77FD4E812B965295"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "15CF75652E59452B"
+				item: { count: 1, id: "alexsmobsup:farseer_arm" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["77FD4E812B965295"]
+			id: "48A930CAE544282F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 10
+				id: "46A3500A26700A8B"
+				item: {
+					count: 1
+					id: "minecraft:stone"
+				}
+				type: "item"
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "53B4FD4A208AF756"
+				item: { count: 1, id: "alexsmobsup:transmutation_table" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2D43C89747A7B7EA"]
+			hide_until_deps_visible: false
+			id: "1B36D2B9486430FD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3F20739647FCC439"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F97A88646128947"]
+			id: "7DE4D2A722B1E8D3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6CBF9F61D952F401"
+				item: { count: 1, id: "alexsmobsup:lobster_tail" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["329597CAA8B8D983"]
+			id: "34F1729351474031"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1A72062C39051BF9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2FA1DDD66F69F506"]
+			id: "45ADF7CA2DAD69B5"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "6B90CADE60D597DC"
+					item: {
+						count: 1
+						id: "farmersdelight:mushroom_rice"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3B52BD5A3F7DF143"
+					item: {
+						count: 1
+						id: "minecraft:mushroom_stew"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1D2BD9D6D1A30707"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:mungus"
+				type: "observation"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["394502E95EC5440E"]
+			id: "7810A2F1C9C88747"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "75D0E3EE770162B5"
+				item: { count: 1, id: "alexsmobsup:rainbow_jelly" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+	]
+}

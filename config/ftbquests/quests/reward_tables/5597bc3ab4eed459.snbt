@@ -1,0 +1,21 @@
+{
+	icon: {
+		components: {
+			"ftbquests:missing_item": "nethervinery:nether_fizz"
+		}
+		id: "ftbquests:missing_item"
+	}
+	id: "5597BC3AB4EED459"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ id: "6104FFD1ED51ED6D", item: { count: 1, id: "vinery:noir_wine" } }
+		{ id: "2F5E49D7D3F90EE4", item: { count: 1, id: "createcafe:mango_milk_tea" } }
+		{ id: "029C2CF4B59D0F72", item: { count: 1, id: "vinery:stal_wine" } }
+		{ id: "7DC37721B0B76C54", item: { count: 1, id: "vinery:kelp_cider" } }
+		{ id: "2444112B60F1A10B", item: { count: 1, id: "vinery:strad_wine" } }
+		{ id: "35B9EFA7110CE890", item: { count: 1, id: "vinery:magnetic_wine" } }
+		{ id: "16DA82F50AD58259", item: { count: 1, id: "vinery:chorus_wine" } }
+		{ id: "2218FF1DD0F21574", item: { count: 1, id: "vinery:aegis_wine" } }
+	]
+}

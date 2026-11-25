@@ -1,0 +1,40 @@
+{
+	id: "66579587DC87FAA2"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			count: 3
+			id: "6D2FBDF501A396F7"
+			item: {
+				components: {
+					"ftbquests:missing_item": "farmersrespite:green_tea_leaves"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "2234C7810DE939DA"
+			item: {
+				components: {
+					"ftbquests:missing_item": "farmersrespite:yellow_tea_leaves"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "153CBCE002887C7F"
+			item: {
+				components: {
+					"ftbquests:missing_item": "farmersrespite:black_tea_leaves"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

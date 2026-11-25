@@ -1,0 +1,62 @@
+{
+	id: "3CFA242B030A509B"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{
+			command: "/summon youkaishomecoming:yukari ~ ~ ~"
+			id: "3F63F3DC8E9CED78"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:kochiya_sanae ~ ~ ~"
+			id: "47CF173C4C3DDCDF"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:kirisame_marisa ~ ~ ~"
+			id: "254AF6B59B9721C9"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:komeiji_koishi ~ ~ ~"
+			id: "131142D8C40F6D4C"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:remilia_scarlet ~ ~ ~"
+			id: "3983BD57C6732770"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:mystia_lorelei ~ ~ ~"
+			id: "2235F74C20AA7E39"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:sunny_milk ~ ~ ~"
+			id: "4EB8C4F60E50BE00"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:clownpiece ~ ~ ~"
+			id: "08169E4D820EA4CB"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:eternity_larva ~ ~ ~"
+			id: "728F65C8219C98F4"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:luna_child ~ ~ ~"
+			id: "48FC39F9F6C6DA24"
+			type: "command"
+		}
+		{
+			command: "/summon youkaishomecoming:star_sapphire ~ ~ ~"
+			id: "1D336BD9718AD4F0"
+			type: "command"
+		}
+	]
+}

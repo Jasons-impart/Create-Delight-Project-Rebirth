@@ -1,0 +1,52 @@
+{
+	id: "52F54D2F62F1CE5E"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{
+			count: 16
+			id: "7CCEDAE55022341F"
+			item: {
+				count: 1
+				id: "minecraft:mud"
+			}
+			random_bonus: 16
+		}
+		{
+			count: 16
+			id: "409ECD6694582C74"
+			item: {
+				count: 1
+				id: "minecraft:coarse_dirt"
+			}
+			random_bonus: 16
+		}
+		{
+			count: 16
+			id: "0012AECAE28D667E"
+			item: {
+				count: 1
+				id: "minecraft:soul_soil"
+			}
+			random_bonus: 16
+		}
+		{
+			count: 16
+			id: "47D14BB8E79A032F"
+			item: {
+				count: 1
+				id: "minecraft:podzol"
+			}
+			random_bonus: 16
+		}
+		{
+			count: 16
+			id: "05A693F746700E78"
+			item: {
+				count: 1
+				id: "minecraft:clay"
+			}
+			random_bonus: 16
+		}
+	]
+}

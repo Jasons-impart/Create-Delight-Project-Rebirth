@@ -1,0 +1,89 @@
+{
+	id: "150802B9EFFFEDCA"
+	loot_size: 1
+	order_index: 18
+	rewards: [
+		{
+			count: 2
+			id: "34B29B330B0362D2"
+			item: {
+				count: 1
+				id: "dreadsteel:dreadsteel_ingot"
+			}
+		}
+		{
+			count: 2
+			id: "1FB0F754D7AC86D4"
+			item: {
+				count: 1
+				id: "dreadsteel:dreadsteel_ingot"
+			}
+		}
+		{
+			count: 4
+			id: "19DED58E86FDB482"
+			item: {
+				count: 1
+				id: "iceandfire:dragonsteel_fire_ingot"
+			}
+		}
+		{
+			count: 4
+			id: "03522BA9BFD577CF"
+			item: {
+				count: 1
+				id: "iceandfire:dragonsteel_lightning_ingot"
+			}
+		}
+		{
+			count: 4
+			id: "3EF4F82A3629D76B"
+			item: {
+				count: 1
+				id: "iceandfire:dragonsteel_ice_ingot"
+			}
+		}
+		{
+			count: 8
+			id: "599766F5DAE48BA0"
+			item: {
+				count: 1
+				id: "minecraft:netherite_ingot"
+			}
+		}
+		{ id: "15A1057408E84633", item: { count: 1, id: "createdelightcore:dread_heart" } }
+		{
+			count: 4
+			id: "1C16258975128C70"
+			item: {
+				components: {
+					"ftbquests:missing_item": "alexscaves:immortal_embryo"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			id: "38F89131EC8D2C90"
+			item: {
+				components: {
+					"ftbquests:missing_item": "alexscaves:immortal_embryo"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.2f
+		}
+		{
+			id: "59EC9B46FDBC2D85"
+			item: {
+				components: {
+					"ftbquests:missing_item": "alexscaves:pure_darkness"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.2f
+		}
+	]
+}

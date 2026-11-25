@@ -1,0 +1,170 @@
+{
+	id: "3C245C81C249772B"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{
+			id: "16A732914C728993"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "5C3AA6E3CE9D0185"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "32BE5CBFE732A7B7"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "1EEA68397C000726"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 2.0f
+		}
+		{ id: "0BE5AD02087A3C60", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "72D5E74D120E2B19", item: { count: 1, id: "gateways:gate_pearl" } }
+		{ id: "07E62D2E9772B6E5", item: { count: 1, id: "gateways:gate_pearl" } }
+		{
+			id: "28956FB04AA4BA78"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "6B5ADEFFB499C233"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "2A372B8EF9993186"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "296BD11DFB8E700F"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "6268C6318D10EBB7"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "555DCFB9C37A4F94"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "01B58A9B9100A7F0"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.1f
+		}
+		{
+			id: "0002E9A748FF75E0"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.1f
+		}
+		{
+			id: "442F617D8184F49C"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.1f
+		}
+		{
+			id: "6D5810BE59F1EEBE"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "2E4BD645A3E73361"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "5482AAF1F50923FD"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.2f
+		}
+		{
+			id: "7FDFA07B5D780A1D"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.2f
+		}
+		{
+			id: "2237BBAC7CD84E06"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.2f
+		}
+		{
+			id: "1D8FB133E4E6D83A"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "0E5D3CF7AF99B8F7"
+			item: {
+				count: 1
+				id: "gateways:gate_pearl"
+			}
+			weight: 0.5f
+		}
+	]
+}

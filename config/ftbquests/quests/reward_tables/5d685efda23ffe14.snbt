@@ -1,0 +1,88 @@
+{
+	id: "5D685EFDA23FFE14"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ id: "0A5D17CA922DB26E", item: { count: 1, id: "create:mechanical_mixer" } }
+		{ id: "01F0DEBFB59997EB", item: { count: 1, id: "create:mechanical_press" } }
+		{ id: "1851BB1788412AFB", item: { count: 1, id: "create:water_wheel" } }
+		{ id: "260DE716C9EAA755", item: { count: 1, id: "create:large_water_wheel" } }
+		{
+			count: 4
+			id: "66CB0821A60219C7"
+			item: {
+				count: 1
+				id: "create:gearbox"
+			}
+		}
+		{
+			count: 4
+			id: "670B22E50B363CBB"
+			item: {
+				count: 1
+				id: "create:belt_connector"
+			}
+		}
+		{
+			count: 32
+			id: "1B6EA7B40CA2BEA8"
+			item: {
+				count: 1
+				id: "create:shaft"
+			}
+		}
+		{
+			count: 8
+			id: "590D24BC4230B964"
+			item: {
+				count: 1
+				id: "create:large_cogwheel"
+			}
+		}
+		{
+			count: 16
+			id: "556DF3FD5A9DF509"
+			item: {
+				count: 1
+				id: "create:cogwheel"
+			}
+		}
+		{ id: "674299A9CBB9AFB2", item: { count: 1, id: "create:schematic_table" } }
+		{ id: "55CDE41152D17916", item: { count: 1, id: "create:schematicannon" } }
+		{ id: "00FE3EC7C8B16973", item: { count: 1, id: "create:encased_fan" } }
+		{ id: "154E5815B1B64B2B", item: { count: 1, id: "create:encased_fan" } }
+		{ id: "03B9AC898B8DE606", item: { count: 1, id: "create:mechanical_saw" } }
+		{ id: "1193F69B69333F38", item: { count: 1, id: "create:mechanical_drill" } }
+		{ id: "027D42B4C2ED6CD9", item: { count: 1, id: "create:depot" } }
+		{ id: "254F002B403AF9E9", item: { count: 1, id: "create:basin" } }
+		{
+			count: 16
+			id: "66FEC8B7444CECA6"
+			item: {
+				count: 1
+				id: "create:andesite_casing"
+			}
+		}
+		{ id: "025316D651FE888C", item: { count: 1, id: "create:empty_schematic" } }
+		{
+			count: 4
+			id: "5D037C7037009F51"
+			item: {
+				count: 1
+				id: "create:andesite_tunnel"
+			}
+		}
+		{
+			count: 8
+			id: "22BD37B313A90787"
+			item: {
+				count: 1
+				id: "create:andesite_funnel"
+			}
+		}
+		{ id: "04582BCC89E963FE", item: { count: 1, id: "create:mechanical_plough" } }
+		{ id: "152BAF2701B1356B", item: { count: 1, id: "create:mechanical_harvester" } }
+		{ id: "018D20AB108C00A9", item: { count: 1, id: "create:millstone" } }
+		{ id: "433B22454C27FBB1", item: { components: { "ftbquests:missing_item": "create_pattern_schematics:empty_pattern_schematic" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}
