@@ -1,11 +1,10 @@
-# 脚本
+# 开发脚本
 
-仓库辅助脚本放在这里。
+在仓库根目录使用 Windows 的 `.\devtool.bat` 或 Linux/macOS 的 `./devtool.sh`。无参数打开菜单，`help` 显示命令和参数。
 
-- 根目录 `devtool.bat` 会在 Windows 打开交互式命令行菜单，并封装常用 bkmpw 命令。
-- 根目录 `devtool.sh` 是 Linux/macOS 入口。
-- `scripts/devtool.mjs` 是实际实现，一般不需要直接运行。
-- `devtool.bat check` 会检查 bkmpw、Node.js/npm、仓库模板文件和 git 忽略规则。首次拉取仓库后需要安装 Node.js LTS/npm，在根目录运行 `npm install`，并运行 `devtool.bat setup-tools` 安装全局 `bkmpw`。
-- `devtool.bat modlist` 会从 `*.pw.toml` 和本地 `mods/*.jar` 生成 Markdown / CSV 模组清单。
-- `devtool.bat export-curseforge`、`export-client`、`export-server` 和 `export-server-installer` 封装客户端 CurseForge 安装包、客户端全量包、开箱即用服务端包和 bkmpw 下载型服务端安装包导出。
-- 开发工具使用全局 npm 包 `@bro-know-my/packwiz` 提供的 `bkmpw` 命令；本地二进制默认会被 git 忽略。
+| 要维护的功能 | 实现 | 操作指南 |
+| --- | --- | --- |
+| 本地开发工具 | [devtool.mjs](devtool.mjs)、[devtool.test.mjs](devtool.test.mjs) | [模组维护](../docs/development/pack.md) |
+| 完整性清单 | [pack-integrity.mjs](pack-integrity.mjs)、[CI 校验](validate-integrity-manifest.py) | [清单生成与诊断](../docs/development/pack.md#完整性清单) |
+| 安装源码实例 | [PCL](Install-PCL.ps1)、[Prism](install-prism.sh) | [安装指南](../docs/install/README.md) |
+| 验证发布资产 | [validate-release-artifacts.py](validate-release-artifacts.py) | [发布指南](../docs/release/README.md) |
